@@ -1,0 +1,87 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install mkdocs-material google-genai mkdocs-static-i18n
+
+      - name: Restore embeddings cache
+        uses: actions/cache@v4
+        with:
+          path: .embeddings-cache.json
+          key: embeddings-cache-${{ hashFiles('esoteric-knowledge/**/*.md', 'extended-library/**/*.md') }}
+          restore-keys: |
+            embeddings-cache-
+
+      - name: Prepare docs
+        run: |
+          rm -f docs/esoteric-knowledge
+          cp -r esoteric-knowledge docs/
+
+      - name: Build search index
+        run: python3 scripts/build-search-index.py
+
+      - name: Build embeddings
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: python3 scripts/build-embeddings.py
+
+      - name: Stash API files before MkDocs build
+        run: |
+          mv docs/api/raw /tmp/api-raw
+          mv docs/api/embeddings.bin /tmp/embeddings.bin
+          mv docs/api/chunk-index.json /tmp/chunk-index.json
+
+      - run: mkdocs build
+
+      - name: Copy API files to site output
+        run: |
+          cp -r docs/api site/api
+          cp -r /tmp/api-raw site/api/raw
+          cp /tmp/embeddings.bin site/api/embeddings.bin
+          cp /tmp/chunk-index.json site/api/chunk-index.json
+
+      - name: Build Jesus site
+        working-directory: jesus-site
+        run: mkdocs build -d ../site-jesus
+
+      - name: Merge Jesus site into main site
+        run: |
+          rm -rf site/jesus site/es/jesus
+          mkdir -p site/jesus site/es/jesus
+          rsync -a --exclude='es' site-jesus/ site/jesus/
+          rsync -a site-jesus/es/ site/es/jesus/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

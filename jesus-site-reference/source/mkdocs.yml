@@ -1,0 +1,80 @@
+site_name: The Original Message
+site_description: What Jesus actually taught — before it was rewritten.
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: assets/favicon.svg
+  font: false
+  palette:
+    scheme: slate
+  features:
+    - navigation.top
+
+plugins:
+  - i18n:
+      languages:
+        - locale: en
+          default: true
+          name: English
+          build: true
+        - locale: es
+          name: Español
+          build: true
+          nav_translations:
+            Home: Inicio
+            The Thesis: La Tesis
+            What Jesus Actually Taught: Lo Que Jesús Realmente Enseñó
+            "Was Jesus God?": "¿Era Jesús Dios?"
+            The Two Ways: Los Dos Caminos
+            The Sacrifice Culture: La Cultura del Sacrificio
+            The Paul Problem: El Problema de Pablo
+            "Paul vs. the Twelve": "Pablo vs. Los Doce"
+            The Original Communion: La Comunión Original
+            "300 Years of Pacifism": "300 Años de Pacifismo"
+            The Trinity Was Constructed: La Trinidad Fue Construida
+            After the Resurrection: Después de la Resurrección
+            The Evidence: La Evidencia
+            The Rapture Was Invented: El Rapto Fue Inventado
+            "What Replaces the Rapture?": "¿Qué Reemplaza al Rapto?"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - attr_list
+
+nav:
+  - Home: index.md
+  - The Thesis: thesis.md
+  - What Jesus Actually Taught: what-jesus-taught.md
+  - Was Jesus God?: was-jesus-god.md
+  - The Two Ways: the-two-ways.md
+  - The Sacrifice Culture: the-sacrifice-culture.md
+  - The Paul Problem: the-paul-problem.md
+  - Paul vs. the Twelve: paul-vs-the-twelve.md
+  - The Original Communion: the-original-communion.md
+  - 300 Years of Pacifism: christian-pacifism.md
+  - The Trinity Was Constructed: the-trinity.md
+  - After the Resurrection: after-the-resurrection.md
+  - The Evidence: the-evidence.md
+  - The Rapture Was Invented: the-rapture.md
+  - What Replaces the Rapture?: what-replaces-the-rapture.md
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/citations.js
+  - javascripts/mobile-menu.js
+
+extra:
+  alternate:
+    - name: English
+      link: /
+      lang: en
+    - name: Español
+      link: /es/
+      lang: es

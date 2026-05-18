@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {% if not (page and page.meta and page.meta.hide_back) %}
+    <a href="#" onclick="history.back(); return false;" class="back-btn">&larr; Back</a>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

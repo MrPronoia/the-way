@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Unrolled scroll -->
+  <path d="M6 6 C6 4, 8 3, 10 3 L24 3 C26 3, 27 4, 27 6 L27 26 C27 28, 25 29, 23 29 L9 29 C7 29, 6 28, 6 26 Z" fill="#f4e4c1" stroke="#8b7355" stroke-width="1.2"/>
+  <!-- Top scroll curl -->
+  <path d="M6 6 C6 4, 8 3, 10 3 C8 3, 5 4, 5 6 C5 8, 7 9, 9 9 L27 9" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  <ellipse cx="6" cy="6" rx="1.5" ry="3" fill="#e8d5a8" stroke="#8b7355" stroke-width="0.8"/>
+  <!-- Bottom scroll curl -->
+  <path d="M6 26 C6 28, 8 29, 10 29 C8 29, 5 28, 5 26 C5 24, 7 23, 9 23 L27 23" fill="none" stroke="#8b7355" stroke-width="1.2"/>
+  <ellipse cx="6" cy="26" rx="1.5" ry="3" fill="#e8d5a8" stroke="#8b7355" stroke-width="0.8"/>
+  <!-- Text lines -->
+  <line x1="10" y1="13" x2="24" y2="13" stroke="#c4956a" stroke-width="1" stroke-linecap="round"/>
+  <line x1="10" y1="16" x2="22" y2="16" stroke="#c4956a" stroke-width="1" stroke-linecap="round"/>
+  <line x1="10" y1="19" x2="20" y2="19" stroke="#c4956a" stroke-width="1" stroke-linecap="round"/>
+</svg>
