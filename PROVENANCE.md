@@ -15,29 +15,29 @@ A record of where the content in this repo came from, what was copied, what was 
 
 ## Source → Destination Mapping
 
-| In mr-pronoia | Copied to the-way | Notes |
-|---|---|---|
-| `esoteric-knowledge/christianity/` | `christianity/` | Full mirror — all 39+ root files plus subfolders (Incoming/, dead-sea-scrolls/, ethiopian-bible/, vegetarian-pythagorean-jesys/) |
-| `esoteric-knowledge/luminaries/meister-eckhart/` | `luminaries/meister-eckhart/` | Full copy |
-| `esoteric-knowledge/luminaries/isaac-newton/` | `luminaries/isaac-newton/` | Full copy |
-| `esoteric-knowledge/luminaries/jacob-boehme/` | `luminaries/jacob-boehme/` | Full copy |
-| `esoteric-knowledge/luminaries/st-john-of-the-cross/` | `luminaries/st-john-of-the-cross/` | Full copy |
-| `esoteric-knowledge/luminaries/william-blake/` | `luminaries/william-blake/` | Full copy |
-| `esoteric-knowledge/luminaries/walter-russell/` | `luminaries/walter-russell/` | Full copy |
-| `esoteric-knowledge/luminaries/plotinus/` | `luminaries/plotinus/` | Full copy (substantial Christianity-influence material) |
-| `esoteric-knowledge/luminaries/ramakrishna/` | `luminaries/ramakrishna/` | Full copy (Ramakrishna practiced Christianity to nirvikalpa samadhi — strongest cross-tradition proof) |
-| `esoteric-knowledge/luminaries/pythagoras/` | `luminaries/pythagoras/` | Full copy (mystery school + vegetarian lineage leading to Essene-Nazarene) |
-| `extended-library/essene-gospel-of-peace.md` | `extended-library/essene-gospel-of-peace.md` | File copy |
-| `extended-library/neville-goddard-complete-works.md` | `extended-library/neville-goddard-complete-works.md` | File copy |
-| `extended-library/david-hawkins-map-of-consciousness.md` | `extended-library/david-hawkins-map-of-consciousness.md` | File copy |
-| `esoteric-knowledge/perennial-philosophy/` (selected) | `cross-traditions/perennial-philosophy/` | 00-overview.md, essene-ayurveda-dietary-overlay.md, transmission-map.md, feminine-divine-cross-tradition-synthesis.md, perennial-medicine.md, perennial-child-rearing.md, full `patterns/` subfolder |
-| `esoteric-knowledge/gnosticism/` | `cross-traditions/gnosticism/` | Full copy (Gospel of Thomas, Gospel of Philip, Nag Hammadi — Christianity-adjacent) |
-| `esoteric-knowledge/hermeticism/` | `cross-traditions/hermeticism/` | Full copy (Corpus Hermeticum, Emerald Tablet, Renaissance-Christian synthesis) |
-| `esoteric-knowledge/law-of-one/` | `cross-traditions/law-of-one/` | Full copy (Ra Material's Christ Consciousness treatment) |
-| `jesus-site/` | `jesus-site-reference/source/` | Snapshot of the jesusactuallysaid.com source |
-| `workers/jesus-proxy/` | `jesus-site-reference/cloudflare-worker/` | Snapshot of the Cloudflare Worker |
-| `.github/workflows/deploy-site.yml` | `jesus-site-reference/deploy-workflow/deploy-site.yml` | Snapshot of the deploy workflow |
-| `private/the-jesus-way/` | `podcast-archive/the-jesus-way/` | 50+ episode raw transcripts (script `_pull_transcripts.py` and `temp-transcript.txt` excluded) |
+| In mr-pronoia                                            | Copied to the-way                                        | Notes                                                                                                                                                                                                |
+| -------------------------------------------------------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `esoteric-knowledge/christianity/`                       | `christianity/`                                          | Full mirror — all 39+ root files plus subfolders (Incoming/, dead-sea-scrolls/, ethiopian-bible/, vegetarian-pythagorean-jesus/)                                                                     |
+| `esoteric-knowledge/luminaries/meister-eckhart/`         | `luminaries/meister-eckhart/`                            | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/isaac-newton/`            | `luminaries/isaac-newton/`                               | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/jacob-boehme/`            | `luminaries/jacob-boehme/`                               | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/st-john-of-the-cross/`    | `luminaries/st-john-of-the-cross/`                       | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/william-blake/`           | `luminaries/william-blake/`                              | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/walter-russell/`          | `luminaries/walter-russell/`                             | Full copy                                                                                                                                                                                            |
+| `esoteric-knowledge/luminaries/plotinus/`                | `luminaries/plotinus/`                                   | Full copy (substantial Christianity-influence material)                                                                                                                                              |
+| `esoteric-knowledge/luminaries/ramakrishna/`             | `luminaries/ramakrishna/`                                | Full copy (Ramakrishna practiced Christianity to nirvikalpa samadhi — strongest cross-tradition proof)                                                                                               |
+| `esoteric-knowledge/luminaries/pythagoras/`              | `luminaries/pythagoras/`                                 | Full copy (mystery school + vegetarian lineage leading to Essene-Nazarene)                                                                                                                           |
+| `extended-library/essene-gospel-of-peace.md`             | `extended-library/essene-gospel-of-peace.md`             | File copy                                                                                                                                                                                            |
+| `extended-library/neville-goddard-complete-works.md`     | `extended-library/neville-goddard-complete-works.md`     | File copy                                                                                                                                                                                            |
+| `extended-library/david-hawkins-map-of-consciousness.md` | `extended-library/david-hawkins-map-of-consciousness.md` | File copy                                                                                                                                                                                            |
+| `esoteric-knowledge/perennial-philosophy/` (selected)    | `cross-traditions/perennial-philosophy/`                 | 00-overview.md, essene-ayurveda-dietary-overlay.md, transmission-map.md, feminine-divine-cross-tradition-synthesis.md, perennial-medicine.md, perennial-child-rearing.md, full `patterns/` subfolder |
+| `esoteric-knowledge/gnosticism/`                         | `cross-traditions/gnosticism/`                           | Full copy (Gospel of Thomas, Gospel of Philip, Nag Hammadi — Christianity-adjacent)                                                                                                                  |
+| `esoteric-knowledge/hermeticism/`                        | `cross-traditions/hermeticism/`                          | Full copy (Corpus Hermeticum, Emerald Tablet, Renaissance-Christian synthesis)                                                                                                                       |
+| `esoteric-knowledge/law-of-one/`                         | `cross-traditions/law-of-one/`                           | Full copy (Ra Material's Christ Consciousness treatment)                                                                                                                                             |
+| `jesus-site/`                                            | `jesus-site-reference/source/`                           | Snapshot of the jesusactuallysaid.com source                                                                                                                                                         |
+| `workers/jesus-proxy/`                                   | `jesus-site-reference/cloudflare-worker/`                | Snapshot of the Cloudflare Worker                                                                                                                                                                    |
+| `.github/workflows/deploy-site.yml`                      | `jesus-site-reference/deploy-workflow/deploy-site.yml`   | Snapshot of the deploy workflow                                                                                                                                                                      |
+| `private/the-jesus-way/`                                 | `podcast-archive/the-jesus-way/`                         | 50+ episode raw transcripts (script `_pull_transcripts.py` and `temp-transcript.txt` excluded)                                                                                                       |
 
 ---
 
@@ -45,17 +45,17 @@ A record of where the content in this repo came from, what was copied, what was 
 
 The following content from `mr-pronoia` was explicitly NOT copied:
 
-| Source | Why excluded |
-|---|---|
-| `private/matt-notes/` | **Per Matt's instruction (2026-05-16):** "Let's go ahead and not include Matt's note Christianity content." Personal research journal — not appropriate for collaborator-facing repo. |
-| `private/freemasonry/` | Transmission vehicle, not primary Christianity. Referenced in `cross-traditions/perennial-philosophy/transmission-map.md` instead. |
-| `private/skool/` | Mr. Pronoia Skool planning — unrelated to collaboration scope. |
-| `matt/`, `rex/` | Personal workspaces. |
-| `BOARD.md`, `00-roadmap.md` (mr-pronoia versions) | Project-level coordination docs for the upstream repo. |
-| `for-humanity/`, `intentional-community/`, `x-account/`, `mr-pronoia-skool/` | Unrelated parallel projects. |
+| Source                                                                                                                                                           | Why excluded                                                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `private/matt-notes/`                                                                                                                                            | **Per Matt's instruction (2026-05-16):** "Let's go ahead and not include Matt's note Christianity content." Personal research journal — not appropriate for collaborator-facing repo.  |
+| `private/freemasonry/`                                                                                                                                           | Transmission vehicle, not primary Christianity. Referenced in `cross-traditions/perennial-philosophy/transmission-map.md` instead.                                                     |
+| `private/skool/`                                                                                                                                                 | Mr. Pronoia Skool planning — unrelated to collaboration scope.                                                                                                                         |
+| `matt/`, `rex/`                                                                                                                                                  | Personal workspaces.                                                                                                                                                                   |
+| `BOARD.md`, `00-roadmap.md` (mr-pronoia versions)                                                                                                                | Project-level coordination docs for the upstream repo.                                                                                                                                 |
+| `for-humanity/`, `intentional-community/`, `x-account/`, `mr-pronoia-skool/`                                                                                     | Unrelated parallel projects.                                                                                                                                                           |
 | `esoteric-knowledge/` other traditions (Buddhism, Hinduism root, Islam, Taoism, Zoroastrianism, Native American, Ayurveda, TCM, Greco-Arabic Medicine, Kabbalah) | Not Christianity-relevant as primary content. Cross-tradition Christianity material from Kabbalah is referenced in `cross-traditions/` but the full Kabbalah folder is not duplicated. |
-| `extended-library/` items not flagged for Christianity | Only the three Christianity-relevant items copied (Essene Gospel, Neville Goddard, Hawkins). |
-| Operational files: scripts, build cache, `.obsidian/`, `.DS_Store`, etc. | Not content. |
+| `extended-library/` items not flagged for Christianity                                                                                                           | Only the three Christianity-relevant items copied (Essene Gospel, Neville Goddard, Hawkins).                                                                                           |
+| Operational files: scripts, build cache, `.obsidian/`, `.DS_Store`, etc.                                                                                         | Not content.                                                                                                                                                                           |
 
 ---
 
