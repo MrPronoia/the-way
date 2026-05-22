@@ -196,7 +196,7 @@ Cross-link targets:
 
 - **`podcast-archive/dr-tabor/30-is-marks-gospel-mainly-a-mouthpiece-for-pauls-ideas.md`** — The companion Walsh interview; Mark-as-Pauline thesis; same Stoic-*pneuma* and Adam-Christology frameworks
 - **`podcast-archive/dr-tabor/05-understanding-the-apostle-paul-a-two-hour-conversation.md`** — Tabor's most systematic exposition of "read the New Testament backwards"; Adam Christology in Philippians 2; the Albert Schweitzer apocalyptic-mystical reading that pairs with Walsh's middle-Platonist reading
-- **`podcast-archive/dr-tabor/04-paul-and-the-power-of-an-imagined-jesus.md`** — Tabor's first major presentation of the "Paul never met Jesus" framework
+- **`04-how-paul-created-his-gospel.md`** — Tabor's first major presentation of the "Paul never met Jesus" framework
 - **`podcast-archive/dr-tabor/10-what-do-we-really-know-about-paul-and-how-do-we-know-it.md`** — Tabor's prior detailed Pauline biography lecture; methodological prerequisites for Walsh's literary-culture argument
 - **`christianity/paul-false-prophet-deuteronomy-18-test.md`** — Walsh's literary-elite reading sharpens the question: if Paul is a middle-Platonist intellectual claiming direct revelation against the Jerusalem pillars, does he pass the Deuteronomy 18 prophetic test?
 - **`christianity/blood-atonement-logical-incoherence.md`** — The subjective-genitive insight (faithfulness *of* Jesus rather than faith *in* Jesus) is directly relevant; if Pauline soteriology is Jesus's faithfulness as the covenantal predicate, the substitutionary-atonement reading loses its grammatical foothold

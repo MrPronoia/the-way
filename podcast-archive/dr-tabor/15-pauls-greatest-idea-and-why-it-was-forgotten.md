@@ -191,7 +191,7 @@ This video is the **directly companion** short version of **Video #06** in the s
 
 - **`podcast-archive/dr-tabor/02-how-paul-created-christianity--his-misappropriation-of-four-hebrew-bible-texts.md`** — Companion thread. Where Video #02 documents how Paul *built* his framework on misread Hebrew scriptures (justification by faith, Abrahamic seed, etc.), this video shows what Paul was *building toward*: the glorification/apotheosis cosmology. The eschatological clock and Paul-as-mystic framework are shared across both.
 
-- **`podcast-archive/dr-tabor/08-pauls-apocalyptic-timeline.md`** (if present in playlist) — The Caligula-41-CE apocalyptic context for why Paul thought his transformation framework would be cashed out in his lifetime.
+- **`17-pauls-view-of-the-end-of-days-abandoned-by-the-church.md`** — The Caligula-41-CE apocalyptic context for why Paul thought his transformation framework would be cashed out in his lifetime.
 
 - **`christianity/eastern-orthodox-theosis-closest-to-original.md`** — Direct alignment. Eastern Orthodoxy's theosis tradition preserves more of Paul's glorification/divinization framework than Western Christianity does. Tabor's "Paul's actual gospel was apotheosis" thesis is essentially the claim that Orthodox theosis is closer to original Paul than Augustinian/Lutheran justification-only Paul.
 

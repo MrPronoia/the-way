@@ -162,7 +162,7 @@ But they were following Plato more than they were following Paul or Jesus.
 
 > "I am a child of Earth and starry heaven, but heaven alone is my home — does that sound kind of familiar? Think of all the Christian hymns. 'This world is not my home, I'm just a pilgrim passing through.' That's not the Hebrew view. That's not Paul's view."
 
-> "Coleman's reply, written by hand: 'No, my dear friend. The Christian hope is you sleep in the dust until the return of Jesus, who will raise you from the dead and give you this new glorified body. But you don't have it yet.'"
+> "Cullmann's reply, written by hand: 'No, my dear friend. The Christian hope is you sleep in the dust until the return of Jesus, who will raise you from the dead and give you this new glorified body. But you don't have it yet.'"
 
 > "Resurrection is a cosmic miracle in which the whole person is recalled to life by a new act of creation."
 

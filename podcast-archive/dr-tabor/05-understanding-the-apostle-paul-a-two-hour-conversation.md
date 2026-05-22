@@ -253,7 +253,7 @@ Tabor's preferred move: read Paul as historically situated, in his moment, with 
 | Ross Nichols | *The Moses Scroll* | Tabor's collaborator on the Shapira Scroll project; tour partner |
 | Hegesippus / Eusebius | 2nd-century church historian preserved in Eusebius | Source for James the brother of Jesus as vegetarian, ascetic, Nazirite |
 | Abraham Malherbe, Everett Ferguson | Harvard-trained scholars at Abilene Christian University | Tabor's undergraduate teachers in biblical languages |
-| Pope Pseudonymous Letters of Peter | First Peter "probably the most Pauline letter in the New Testament" | Source for the spread of Pauline ideas beyond the seven |
+| First Peter (pseudonymous) | First Peter "probably the most Pauline letter in the New Testament" | Source for the spread of Pauline ideas beyond the seven |
 | Martin Luther | Reformer | His "small print at the back" treatment of James in his Bible; the Marcionite tendency in Luther's "I just want Romans and Galatians" |
 | Marcion | 2nd-century "arch-heretic" | First Pauline canon; Luther's Marcionite tendency |
 | Hillel, Shammai, Gamaliel | First-century rabbinic figures | Paul's training context |

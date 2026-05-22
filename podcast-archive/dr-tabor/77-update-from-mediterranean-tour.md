@@ -10,7 +10,7 @@
 
 ## Summary
 
-A short check-in from Dr. Tabor near the end of a Mediterranean cruise he called **"The Seafaring Paul in His Jewish Roman World,"** advertised through *Biblical Archaeology* magazine and run for a group of about 40. He is filming from the ship in the harbor off Mykonos, looking out the window between stops. The cruise began September 2nd in Rome, then Pompeii, Athens, Corinth, Santorini, Cyprus, Rhodes, Ephesus (yesterday from his vantage), and Crete. He is letting his audience know he hasn't disappeared from YouTube — he's been at sea, leading 40 people through these ancient sites every day, with no time to film proper episodes.
+A short check-in from Dr. Tabor near the end of a Mediterranean cruise he called **"The Seafaring Paul in His Jewish Roman World,"** advertised through *Biblical Archaeology* magazine and run for a group of about 40. He is filming from the ship in the harbor off Mykonos, looking out the window between stops. The cruise began September 2nd in Rome, then Pompeii, Athens, Corinth, Santorini, Cyprus, Ephesus (yesterday from his vantage), and Crete. He is letting his audience know he hasn't disappeared from YouTube — he's been at sea, leading 40 people through these ancient sites every day, with no time to film proper episodes.
 
 The substantive note he wants to land: **traveling Paul's geography this intensely, by sea, over weeks at a time, gives you a perspective that flying in to visit individual sites never does.** He will be unpacking insights from each stop in the weeks ahead. Regular programming resumes the week of September 15. This is the final entry (#77) in the Paul playlist — the longer companion treatment of the same tour follows in episode #52.
 
@@ -20,7 +20,7 @@ The substantive note he wants to land: **traveling Paul's geography this intense
 
 ### The Seafaring Paul — A Mediterranean Itinerary Built Around Paul's Trips
 
-The cruise's framing was the same one Tabor uses across his Paul material: **not "missionary journeys" but Paul's actual trips**, sailing Roman trade routes. The itinerary tracked Paul's geography: Rome, Pompeii (the volcanic landfall point near Naples Harbor), Athens, Corinth, Cyprus, Rhodes, Ephesus, Crete — most of the major sites Paul appears at in Acts and his letters. The boat-based format mattered: students were sitting on the same waters Paul sailed, in the same weather windows, looking at the same coastlines.
+The cruise's framing was the same one Tabor uses across his Paul material: **not "missionary journeys" but Paul's actual trips**, sailing Roman trade routes. The itinerary tracked Paul's geography: Rome, Pompeii (the volcanic landfall point near Naples Harbor), Athens, Corinth, Cyprus, Ephesus — most of the major sites Paul appears at in Acts and his letters. The boat-based format mattered: students were sitting on the same waters Paul sailed, in the same weather windows, looking at the same coastlines.
 
 ### Santorini — The Bronze-Age Pompeii (Not a Paul Site, But Worth the Stop)
 

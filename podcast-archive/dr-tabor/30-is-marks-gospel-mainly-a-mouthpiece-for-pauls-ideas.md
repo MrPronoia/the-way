@@ -214,7 +214,7 @@ Tabor closes with what he calls his "professorial preacher mode" — a warning n
 
 This episode is the load-bearing piece in Tabor's "Mark-as-Pauline" thesis that runs through the playlist. Cross-link targets:
 
-- **`podcast-archive/dr-tabor/04-paul-and-the-power-of-an-imagined-jesus.md`** — Tabor's first major presentation of "read the New Testament backwards"; Mark-as-Pauline appears as a sidebar there
+- **`04-how-paul-created-his-gospel.md`** — Tabor's first major presentation of "read the New Testament backwards"; Mark-as-Pauline appears as a sidebar there
 - **`podcast-archive/dr-tabor/05-understanding-the-apostle-paul-a-two-hour-conversation.md`** — Adam Christology, the Bruce Chilton reading of the Last Supper, and the source-hierarchy method
 - **`podcast-archive/dr-tabor/10-what-do-we-really-know-about-paul-and-how-do-we-know-it.md`** — Tabor's most explicit prior statement that "Mark fits in as a way of casting the story of Jesus probably as Paul would largely agree with it"; also covers the Mark 7 "all foods clean" mistranslation
 - **`christianity/paul-false-prophet-deuteronomy-18-test.md`** — If Mark is Pauline, the Deuteronomy 18 false-prophet test applies not only to Paul but to the synoptic substrate Paul shaped

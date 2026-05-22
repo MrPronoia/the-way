@@ -102,7 +102,7 @@ Compare Luke 18 — the Pharisee and the tax collector. Both pray in the temple.
 ## Connection to Other Research
 
 - **Tabor Playlist #02 (`02-how-paul-created-christianity--his-misappropriation-of-four-hebrew-bible-texts.md`)** — Direct companion. Video #02 identifies four (really five) Pauline misappropriations including Genesis 15:6; this video is the focused deep-dive on that single text. The two should be read together.
-- **Tabor Playlist #33 (Lost in Translation — Habakkuk 2:4)** — Immediate predecessor in the series. Same argument structure, same kind of misreading, same role in Paul's gospel. Tabor explicitly calls Romans 1:17 and Romans 4:3 the *two pillar verses* of his gospel.
+- **Tabor Playlist #38 (Lost in Translation — Habakkuk 2:4)** — Immediate predecessor in the series. Same argument structure, same kind of misreading, same role in Paul's gospel. Tabor explicitly calls Romans 1:17 and Romans 4:3 the *two pillar verses* of his gospel.
 - **`christianity/paul-false-prophet-deuteronomy-18-test.md`** — Paul's misreading of Hebrew Bible texts is part of the larger case that Paul fails Deuteronomy 18's test for a true prophet/teacher in Israel.
 - **`christianity/blood-atonement-logical-incoherence.md`** — The "faith in the blood" construct Paul builds on top of his Genesis 15:6 misreading. If Abraham didn't need it, and David didn't need it, the entire blood-atonement edifice loses its scriptural anchor.
 

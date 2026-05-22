@@ -166,8 +166,6 @@ A clarification that surfaces multiple times. Tabor is interested in *what Paul 
 
 This stance lets him read Paul critically without protecting later Christian doctrinal investments. Paul can be wrong about the parousia timing, can have misread Habakkuk and Genesis 15, can have started a "creedal Christianity" that displaced Jesus — and none of this is a problem for Tabor's project.
 
-His closing reflection: "I picked the best period to study. Second Temple Judaism — the M to M, from the Maccabees to the Mishnah. Everything influencing Western history flowed out of that 400-year period."
-
 ### Matthew 16 "On This Rock" — A Matthean Editorial Addition
 
 Closing exchange. The famous Catholic prooftext for papal primacy — "you are Peter and on this rock I will build my church" — is **only in Matthew 16**. Mark's parallel (Mark 8) is the original; Matthew added the Peter-as-rock blessing material. Luke also has the parallel but does NOT include the Peter-as-foundation language.
@@ -270,8 +268,6 @@ Additional Matthew-as-late-development data: the Trinitarian baptismal formula i
 > "Don't be afraid of *Paul and Jesus*. If I got Paul right, you're going to love the book. If you don't think Paul really heard from Jesus, you'll have your own opinion. But it's not a Paul-bashing book and it's not a Paul-bolstering book."
 
 > "Whatever is hateful to you, do not do to another — that's the Torah and the prophets. The rest is commentary."
-
-> "I picked the best period. Second Temple Judaism — the M to M, from the Maccabees to the Mishnah. Everything influencing Western history flowed out of that 400-year period."
 
 > "Jesus never said 'this is my body, this is my blood.' A Jew would not say that even symbolically."
 

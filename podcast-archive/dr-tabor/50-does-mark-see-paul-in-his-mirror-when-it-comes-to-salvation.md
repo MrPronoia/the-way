@@ -192,7 +192,7 @@ This is *not* "accept the blood of Jesus and you have eternal security." It is t
 - **Video #45 in this playlist** — Further gospels-shaped-by-Paul material.
 - **`christianity/blood-atonement-logical-incoherence.md`** — Tabor's hesitation here ("is the blood something you sit back and say 'I did that, signed sealed and delivered,' or is it to participate in this way that Jesus inaugurated?") opens the door to the broader incoherence critique. If salvation requires participation in the Suffering Servant pattern, then transactional blood atonement was never the actual mechanism — even on Pauline grounds.
 - **`christianity/paul-false-prophet-deuteronomy-18-test.md`** — Tabor stops short of calling Paul a false prophet, but the move he makes here (questioning whether Paul actually holds the Augustinian reading of his own letters) is in the same neighborhood. If the Lutheran-Augustinian Paul is a later construction, the historical Paul may be much closer to the Jerusalem movement than the church admits.
-- **`christianity/historical-jesus-essene-roots.md`** — The Suffering Servant read corporately (a little flock of righteous ones whose collective suffering brings the kingdom) is exactly the self-understanding of the Qumran community and the Essene-Nazarene movement around John and Jesus.
+- **`christianity/2026-02-25-essene-nazarene-ebionite-lineage.md`** — The Suffering Servant read corporately (a little flock of righteous ones whose collective suffering brings the kingdom) is exactly the self-understanding of the Qumran community and the Essene-Nazarene movement around John and Jesus.
 
 ---
 
