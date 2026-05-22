@@ -1,0 +1,5 @@
+# Intermediate raw transcripts (deleted as each video's synthesized .md is finalized)
+.raw/
+
+# Helper scripts run locally — keep code but ignore scratch
+*.tsv

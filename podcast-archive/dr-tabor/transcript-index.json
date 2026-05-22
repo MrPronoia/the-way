@@ -1,0 +1,741 @@
+{
+  "_meta": {
+    "playlist": "Paul",
+    "playlist_id": "PLIRNAKj50kutJrPDYUnC_CJhGPvcEz8rv",
+    "playlist_total": 77,
+    "synthesized_count": 10,
+    "scraped_count": 10,
+    "speaker": "Dr. James Tabor",
+    "scrape_method": "apify call starvibe/youtube-video-transcript",
+    "template": "Jesus Way pattern — summary, key teachings, scripture, scholars, quotes, misconceptions, connections, books, full transcript at bottom"
+  },
+  "01": {
+    "file": "01-how-christianity-forgot-its-only-first-person-witness-to-jesus-resurrection.md",
+    "youtube_id": "siTrIFsQ7-8",
+    "title": "How Christianity Forgot its Only First Person Witness to Jesus' Resurrection",
+    "interviewer": "Derek Lambert (MythVision Podcast)",
+    "duration_seconds": 765,
+    "published_at": "2022-12-01",
+    "synthesized": true
+  },
+  "02": {
+    "file": "02-how-paul-created-christianity--his-misappropriation-of-four-hebrew-bible-texts.md",
+    "youtube_id": "6-fhCtoFA2Q",
+    "title": "How Paul Created Christianity--His [Mis]Appropriation of Four Hebrew Bible Texts",
+    "interviewer": "Derek Lambert (MythVision Podcast)",
+    "duration_seconds": 2015,
+    "published_at": "2022-12-23",
+    "synthesized": true
+  },
+  "03": {
+    "file": "03-the-parting-of-the-ways-when-did-the-new-religion-of-christianity-begin.md",
+    "youtube_id": "_-fLWmXiUR0",
+    "title": "The Parting of the Ways: When Did the New Religion of Christianity Begin?",
+    "interviewer": null,
+    "duration_seconds": 3445,
+    "published_at": "2022-03",
+    "synthesized": true,
+    "note": "Biblical Archaeology Society lecture — solo Tabor"
+  },
+  "04": {
+    "file": "04-how-paul-created-his-gospel.md",
+    "youtube_id": "7kzPsV1TN04",
+    "title": "How Paul Created His \"Gospel\"",
+    "interviewer": null,
+    "duration_seconds": 1995,
+    "published_at": "2022-12",
+    "synthesized": true,
+    "note": "Solo Tabor video"
+  },
+  "05": {
+    "file": "05-understanding-the-apostle-paul-a-two-hour-conversation.md",
+    "youtube_id": "qpV-EShC7PY",
+    "title": "Understanding the Apostle Paul: A Two Hour Conversation",
+    "interviewer": "David LeBlanc (Native Online Learning)",
+    "duration_seconds": 7526,
+    "published_at": "2023-01-30",
+    "synthesized": true
+  },
+  "06": {
+    "file": "06-pauls-greatest-idea-and-why-the-church-rejected-it.md",
+    "youtube_id": "giymlWuB6AY",
+    "title": "Paul's Greatest Idea and Why the Church Rejected It!",
+    "interviewer": null,
+    "duration_seconds": 5229,
+    "published_at": "2023-02",
+    "synthesized": true,
+    "note": "Solo lecture"
+  },
+  "07": {
+    "file": "07-washed-in-the-blood-of-the-messiah--where-did-that-idea-come-from.md",
+    "youtube_id": "mutYXPYYceA",
+    "title": "Washed in the Blood of the Messiah--Where Did that Idea Come From?",
+    "interviewer": null,
+    "duration_seconds": 1931,
+    "published_at": "2023-02",
+    "synthesized": true,
+    "note": "Solo Tabor video"
+  },
+  "08": {
+    "file": "08-paul-does-not-think-jesus-was-a-preexistent-divine-being---the-surprising-meaning-of-philippians-2.md",
+    "youtube_id": "25iUa37MCXM",
+    "title": "Paul Does Not Think Jesus was a Preexistent Divine Being --The Surprising Meaning of Philippians 2",
+    "interviewer": "Derek Lambert (MythVision)",
+    "duration_seconds": 2611,
+    "published_at": "2022-11-26",
+    "synthesized": true
+  },
+  "09": {
+    "file": "09-the-resurrection-of-jesus--what-really-happened.md",
+    "youtube_id": "4j6tqQlkhh8",
+    "title": "The Resurrection of Jesus--What Really Happened?",
+    "interviewer": "Paul Williams (Blogging Theology)",
+    "duration_seconds": 1383,
+    "published_at": "2022-12-17",
+    "synthesized": true
+  },
+  "10": {
+    "file": "10-what-do-we-really-know-about-paul-and-how-do-we-know-it.md",
+    "youtube_id": "aTKY7wWaMys",
+    "title": "What Do We REALLY Know About Paul and How Do We Know It?",
+    "interviewer": "Christopher Enoch",
+    "duration_seconds": 7030,
+    "published_at": "2023-04-27",
+    "synthesized": true
+  },
+  "11": {
+    "raw_file": "11-what-did-the-apostle-paul-really-think-about-peter-and-james-the-brother-of-jesu.raw.md",
+    "youtube_id": "Z_Kq06GDw70",
+    "title": "What Did the Apostle Paul Really Think About Peter and James the Brother of Jesus?",
+    "raw_status": "success",
+    "duration_seconds": 1845,
+    "published_at": "2022-11-07T12:11:55Z",
+    "synthesized_status": "pending"
+  },
+  "12": {
+    "raw_file": "12-did-the-apostle-paul-believe-that-jesus-was-god.raw.md",
+    "youtube_id": "fIj8Pe4X-OA",
+    "title": "Did the Apostle Paul Believe that Jesus was God?",
+    "raw_status": "success",
+    "duration_seconds": 2423,
+    "published_at": "2024-03-12T20:54:25Z",
+    "synthesized_status": "pending"
+  },
+  "13": {
+    "raw_file": "13-is-this-our-earliest-surviving-christian-text-opposing-pauls-claims-to-be-an-apo.raw.md",
+    "youtube_id": "Um82vqqS3XE",
+    "title": "Is This Our Earliest Surviving Christian Text Opposing Paul's Claims to be an Apostle?",
+    "raw_status": "success",
+    "duration_seconds": 1743,
+    "published_at": "2024-10-27T17:31:59Z",
+    "synthesized_status": "pending"
+  },
+  "14": {
+    "raw_file": "14-death-afterlife-do-christians-follow-plato-rather-than-jesus-or-paul.raw.md",
+    "youtube_id": "MYyXf4V8e9U",
+    "title": "Death & Afterlife: Do Christians Follow Plato rather than Jesus or Paul?",
+    "raw_status": "success",
+    "duration_seconds": 3560,
+    "published_at": "2023-07-21T20:04:29Z",
+    "synthesized_status": "pending"
+  },
+  "15": {
+    "raw_file": "15-pauls-greatest-idea-and-why-it-was-forgotten.raw.md",
+    "youtube_id": "KfmQ3_b3QJ0",
+    "title": "Paul's Greatest Idea and Why It Was Forgotten",
+    "raw_status": "success",
+    "duration_seconds": 1538,
+    "published_at": "2023-08-19T16:32:41Z",
+    "synthesized_status": "pending"
+  },
+  "16": {
+    "raw_file": "16-john-jesus-peter-paul-and-james--sorting-out-the-first-forty-years.raw.md",
+    "youtube_id": "JcrCpQGURBA",
+    "title": "John, Jesus, Peter, Paul, and James--Sorting out the First Forty Years!",
+    "raw_status": "success",
+    "duration_seconds": 4796,
+    "published_at": "2023-06-10T17:18:23Z",
+    "synthesized_status": "pending"
+  },
+  "17": {
+    "raw_file": "17-pauls-view-of-the-end-of-days-abandoned-by-the-church.raw.md",
+    "youtube_id": "qYaA2uP5Z8o",
+    "title": "Paul's View of the End of Days Abandoned by the Church",
+    "raw_status": "success",
+    "duration_seconds": 2974,
+    "published_at": "2025-02-08T00:25:41Z",
+    "synthesized_status": "pending"
+  },
+  "18": {
+    "raw_file": "18-death-afterlife-resurrection-is-not-resuscitation.raw.md",
+    "youtube_id": "JWeGqJAKUlY",
+    "title": "Death & Afterlife: Resurrection is NOT Resuscitation",
+    "raw_status": "success",
+    "duration_seconds": 3721,
+    "published_at": "2023-07-14T00:12:30Z",
+    "synthesized_status": "pending"
+  },
+  "19": {
+    "raw_file": "19-did-paul-get-his-gospel-from-james-and-the-apostles-who-knew-jesus.raw.md",
+    "youtube_id": "IcOfFHPY5VA",
+    "title": "Did Paul Get His Gospel from James and the Apostles Who Knew Jesus?",
+    "raw_status": "success",
+    "duration_seconds": 2040,
+    "published_at": "2024-10-28T13:37:59Z",
+    "synthesized_status": "pending"
+  },
+  "20": {
+    "raw_file": "20-the-dead-sea-scrolls-judaisms-and-the-jesus-movement--sorting-through-the-theori.raw.md",
+    "youtube_id": "RKoeKPUQh_M",
+    "title": "The Dead Sea Scrolls, Judaisms, and the Jesus Movement--Sorting through the Theories",
+    "raw_status": "success",
+    "duration_seconds": 3914,
+    "published_at": "2024-04-09T12:50:50Z",
+    "synthesized_status": "pending"
+  },
+  "21": {
+    "raw_file": "21-evangelical-take-down-of-dr-tabor-on-jesus-and-paul.raw.md",
+    "youtube_id": "3QoMqOP-Y-8",
+    "title": "Evangelical Take Down of Dr Tabor on Jesus and Paul",
+    "raw_status": "success",
+    "duration_seconds": 450,
+    "published_at": "2023-01-04T16:55:28Z",
+    "synthesized_status": "pending"
+  },
+  "22": {
+    "raw_file": "22-what-really-happened-easter-morning-a-look-at-our-best-historical-evidence.raw.md",
+    "youtube_id": "Knpdk0W54jU",
+    "title": "What Really Happened Easter Morning? A Look at our Best Historical Evidence",
+    "raw_status": "success",
+    "duration_seconds": 2641,
+    "published_at": "2024-03-17T20:48:09Z",
+    "synthesized_status": "pending"
+  },
+  "23": {
+    "raw_file": "23-my-latest-thoughts-on-paul--a-delightful-conversation-with-a-muslim.raw.md",
+    "youtube_id": "JB8yrD0PJwg",
+    "title": "My Latest Thoughts on Paul--A Delightful Conversation with a Muslim",
+    "raw_status": "success",
+    "duration_seconds": 3326,
+    "published_at": "2024-03-01T16:40:59Z",
+    "synthesized_status": "pending"
+  },
+  "24": {
+    "raw_file": "24-pauls-claim-to-have-ascended-to-heaven-what-did-he-experience-and-how-was-it-rel.raw.md",
+    "youtube_id": "Wzn2MABw5Lw",
+    "title": "Paul's Claim to Have Ascended to Heaven What Did He Experience and How Was it Related to his Gospel",
+    "raw_status": "success",
+    "duration_seconds": 5363,
+    "published_at": "2023-05-28T13:52:34Z",
+    "synthesized_status": "pending"
+  },
+  "25": {
+    "raw_file": "25-no-holds-barred-q-a-with-canadian-catholic.raw.md",
+    "youtube_id": "SugbfHXKQ3Y",
+    "title": "No Holds Barred Q & A with Canadian Catholic",
+    "raw_status": "success",
+    "duration_seconds": 5185,
+    "published_at": "2023-06-12T14:31:38Z",
+    "synthesized_status": "pending"
+  },
+  "26": {
+    "raw_file": "26-did-paul-think-jesus-was-god-a-deep-textual-dive.raw.md",
+    "youtube_id": "zHqSBhN0pbQ",
+    "title": "Did Paul Think Jesus Was God? A Deep Textual Dive",
+    "raw_status": "success",
+    "duration_seconds": 2621,
+    "published_at": "2025-06-30T15:20:23Z",
+    "synthesized_status": "pending"
+  },
+  "27": {
+    "raw_file": "27-all-israel-will-be-saved--what-did-paul-mean-this-interview-changes-everything.raw.md",
+    "youtube_id": "rr4ReVau0N4",
+    "title": "All Israel Will Be Saved--What Did Paul Mean? This Interview Changes Everything",
+    "raw_status": "success",
+    "duration_seconds": 4011,
+    "published_at": "2024-08-22T00:00:45Z",
+    "synthesized_status": "pending"
+  },
+  "28": {
+    "raw_file": "28-did-paul-get-his-gospel-from-james-and-the-apostles-who-knew-jesus.raw.md",
+    "youtube_id": "CBqX303SdA8",
+    "title": "Did Paul Get His Gospel from James and the Apostles Who Knew Jesus?",
+    "raw_status": "success",
+    "duration_seconds": 2040,
+    "published_at": "2024-10-01T16:11:10Z",
+    "synthesized_status": "pending"
+  },
+  "29": {
+    "raw_file": "29-death-afterlife-christianitys-unsolvable-dilemma.raw.md",
+    "youtube_id": "n4WslSLpOck",
+    "title": "Death & Afterlife: Christianity's Unsolvable Dilemma",
+    "raw_status": "success",
+    "duration_seconds": 2183,
+    "published_at": "2023-08-06T02:25:44Z",
+    "synthesized_status": "pending"
+  },
+  "30": {
+    "raw_file": "30-is-marks-gospel-mainly-a-mouthpiece-for-pauls-ideas.raw.md",
+    "youtube_id": "zodtgJIiycU",
+    "title": "Is Mark's Gospel Mainly a Mouthpiece for Paul's Ideas?",
+    "raw_status": "success",
+    "duration_seconds": 4127,
+    "published_at": "2023-05-26T01:37:08Z",
+    "synthesized_status": "pending"
+  },
+  "31": {
+    "raw_file": "31-how-greek-were-pauls-core-ideas.raw.md",
+    "youtube_id": "DVbPmXQupDA",
+    "title": "How Greek Were Paul's Core Ideas?",
+    "raw_status": "success",
+    "duration_seconds": 2791,
+    "published_at": "2025-02-24T20:20:11Z",
+    "synthesized_status": "pending"
+  },
+  "32": {
+    "raw_file": "32-what-i-learned-reading-pauls-letters-for-sixty-years-in-greek.raw.md",
+    "youtube_id": "xDIXGLsogds",
+    "title": "What I Learned Reading Paul's Letters for Sixty Years in Greek",
+    "raw_status": "success",
+    "duration_seconds": 902,
+    "published_at": "2026-05-13T16:55:39Z",
+    "synthesized_status": "pending"
+  },
+  "33": {
+    "raw_file": "33-the-apostle-paul--love-or-hate-him---dont-miss-this-interview-with-robyn-faith-w.raw.md",
+    "youtube_id": "W1ic2ZXnqVo",
+    "title": "The Apostle Paul--Love or Hate Him-- Don't Miss This Interview with Robyn Faith Walsh!",
+    "raw_status": "success",
+    "duration_seconds": 2891,
+    "published_at": "2024-08-19T21:54:32Z",
+    "synthesized_status": "pending"
+  },
+  "34": {
+    "raw_file": "34-lost-in-translation-was-abrahams-faith-counted-as-righteousness.raw.md",
+    "youtube_id": "yADts7xjbpc",
+    "title": "Lost in Translation: Was Abraham's Faith Counted as Righteousness?",
+    "raw_status": "success",
+    "duration_seconds": 1096,
+    "published_at": "2024-05-13T19:20:23Z",
+    "synthesized_status": "pending"
+  },
+  "35": {
+    "raw_file": "35-would-finding-the-bones-of-jesus-prove-that-he-was-not-resurrected-from-the-dead.raw.md",
+    "youtube_id": "fx4CBugxIHk",
+    "title": "Would Finding the Bones of Jesus Prove that He Was Not Resurrected from the Dead?",
+    "raw_status": "success",
+    "duration_seconds": 1539,
+    "published_at": "2024-11-11T19:22:00Z",
+    "synthesized_status": "pending"
+  },
+  "36": {
+    "raw_file": "36-the-burial-of-jesus--the-overlooked-key-for-understanding-how-resurrection-faith.raw.md",
+    "youtube_id": "jMrJy6rN8Xk",
+    "title": "The BURIAL of Jesus--The Overlooked Key for Understanding How Resurrection Faith Was Born!",
+    "raw_status": "success",
+    "duration_seconds": 3524,
+    "published_at": "2024-04-28T21:40:16Z",
+    "synthesized_status": "pending"
+  },
+  "37": {
+    "raw_file": "37-death-afterlife-what-the-bible-really-says-about-the-future.raw.md",
+    "youtube_id": "JV0Qpf4QPXc",
+    "title": "Death & Afterlife: What the Bible Really Says About the Future?",
+    "raw_status": "success",
+    "duration_seconds": 3306,
+    "published_at": "2023-08-01T22:28:45Z",
+    "synthesized_status": "pending"
+  },
+  "38": {
+    "raw_file": "38-lost-in-translation-how-paul-misapplies-his-favorite-bible-verse.raw.md",
+    "youtube_id": "ZCshIENR8xw",
+    "title": "Lost in Translation: How Paul Misapplies his Favorite Bible Verse",
+    "raw_status": "success",
+    "duration_seconds": 797,
+    "published_at": "2024-05-11T20:14:53Z",
+    "synthesized_status": "pending"
+  },
+  "39": {
+    "raw_file": "39-how-habermas-arguments-for-jesus-resurrection-contradict-our-earliest-testimony-.raw.md",
+    "youtube_id": "-RiOaVPS178",
+    "title": "How Habermas Arguments for Jesus' Resurrection Contradict our Earliest Testimony! Part 2",
+    "raw_status": "success",
+    "duration_seconds": 1807,
+    "published_at": "2024-09-19T11:55:36Z",
+    "synthesized_status": "pending"
+  },
+  "40": {
+    "raw_file": "40-how-habermas-arguments-for-jesus-resurrection-contradict-our-earliest-testimony-.raw.md",
+    "youtube_id": "Q3yZFnq5334",
+    "title": "How Habermas Arguments for Jesus' Resurrection Contradict our Earliest Testimony! Part 1",
+    "raw_status": "success",
+    "duration_seconds": 1309,
+    "published_at": "2024-09-17T17:33:01Z",
+    "synthesized_status": "pending"
+  },
+  "41": {
+    "raw_file": "41-finding-the-real-paul--sorting-out-fact-fiction-and-theology.raw.md",
+    "youtube_id": "DlwNys9eXZU",
+    "title": "Finding the \"Real\" Paul--Sorting out Fact, Fiction, and Theology",
+    "raw_status": "success",
+    "duration_seconds": 5229,
+    "published_at": "2023-06-03T00:32:39Z",
+    "synthesized_status": "pending"
+  },
+  "42": {
+    "raw_file": "42-and-then-came-paul.raw.md",
+    "youtube_id": "aFbIwmkYJ7A",
+    "title": "And Then Came Paul",
+    "raw_status": "success",
+    "duration_seconds": 557,
+    "published_at": "2022-10-11T13:32:31Z",
+    "synthesized_status": "pending"
+  },
+  "43": {
+    "raw_file": "43-why-a-revived-corpse-has-nothing-to-do-with-the-first-faith-in-jesus-resurrectio.raw.md",
+    "youtube_id": "_6DSql78RVU",
+    "title": "Why A Revived Corpse Has Nothing to Do with the First Faith in Jesus' Resurrection",
+    "raw_status": "success",
+    "duration_seconds": 1044,
+    "published_at": "2022-12-28T19:19:29Z",
+    "synthesized_status": "pending"
+  },
+  "44": {
+    "raw_file": "44-did-paul-think-of-himself-as-a-second-christ-figure.raw.md",
+    "youtube_id": "vJDJfLKsvOU",
+    "title": "Did Paul Think of Himself as a Second Christ Figure?",
+    "raw_status": "success",
+    "duration_seconds": 1661,
+    "published_at": "2022-12-06T17:21:49Z",
+    "synthesized_status": "pending"
+  },
+  "45": {
+    "raw_file": "45-how-pauls-ideas-shape-the-gospels-pt-1.raw.md",
+    "youtube_id": "066oyKsHBm8",
+    "title": "How Paul's Ideas Shape the Gospels! Pt 1",
+    "raw_status": "success",
+    "duration_seconds": 1455,
+    "published_at": "2024-03-15T18:57:21Z",
+    "synthesized_status": "pending"
+  },
+  "46": {
+    "raw_file": "46-top-seven-fateful-new-testament-texts-it-is-good-not-to-touch-a-woman-2.raw.md",
+    "youtube_id": "1C5pmfhvmN0",
+    "title": "Top Seven Fateful New Testament Texts: It is Good Not to Touch a Woman (2)",
+    "raw_status": "success",
+    "duration_seconds": 2063,
+    "published_at": "20240411",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "47": {
+    "raw_file": "47-my-first-and-favorite-interview-on-my-book-the-jesus-dynasty.raw.md",
+    "youtube_id": "FgsW3SNyfsk",
+    "title": "My First and Favorite Interview on My Book The Jesus Dynasty",
+    "raw_status": "success",
+    "duration_seconds": 2763,
+    "published_at": "20230414",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "48": {
+    "raw_file": "48-did-paul-really-write-these-two-texts.raw.md",
+    "youtube_id": "3vJ5q7Oxnog",
+    "title": "Did Paul Really Write These Two Texts?",
+    "raw_status": "success",
+    "duration_seconds": 1402,
+    "published_at": "20240812",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "49": {
+    "raw_file": "49-paul-within-his-hellenistic-world-understanding-cosmic-salvation.raw.md",
+    "youtube_id": "AoA4lLk4yoc",
+    "title": "Paul within His Hellenistic World: Understanding Cosmic Salvation",
+    "raw_status": "success",
+    "duration_seconds": 5366,
+    "published_at": "20230617",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "50": {
+    "raw_file": "50-does-mark-see-paul-in-his-mirror-when-it-comes-to-salvation.raw.md",
+    "youtube_id": "4fwYT1AyWBk",
+    "title": "Does Mark See Paul in His Mirror When it Comes to Salvation?",
+    "raw_status": "success",
+    "duration_seconds": 1666,
+    "published_at": "20230625",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "51": {
+    "raw_file": "51-paul-williams-interview-part-1-fresh-eyes-on-paul--moving-everything-from-earth-.raw.md",
+    "youtube_id": "8xtMED5xWho",
+    "title": "Paul Williams Interview Part 1:  Fresh Eyes on Paul--Moving Everything from Earth to Heaven",
+    "raw_status": "success",
+    "duration_seconds": 1106,
+    "published_at": "20230118",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "52": {
+    "raw_file": "52-the-seafaring-paul-what-i-learned-on-my-recent-tour-of-pompei-athens-corinth-and.raw.md",
+    "youtube_id": "hU7jnnjJPBg",
+    "title": "The Seafaring Paul:  What I Learned on My Recent Tour of Pompei, Athens, Corinth, and Ephesus",
+    "raw_status": "success",
+    "duration_seconds": 2529,
+    "published_at": "20240930",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "53": {
+    "raw_file": "53-a-most-troubled-coupling-the-hebrew-bible-ot-and-the-new-testament.raw.md",
+    "youtube_id": "6IoUVawPjPw",
+    "title": "A Most Troubled Coupling:  The Hebrew Bible (OT)  and the New Testament",
+    "raw_status": "success",
+    "duration_seconds": 941,
+    "published_at": "20250818",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "54": {
+    "raw_file": "54-the-disputation-barcelona-1263ad-is-jesus-the-messiah.raw.md",
+    "youtube_id": "l2A0Im73N2Q",
+    "title": "The Disputation: Barcelona, 1263AD: Is Jesus the Messiah?",
+    "raw_status": "success",
+    "duration_seconds": 3695,
+    "published_at": "20240407",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "55": {
+    "raw_file": "55-top-seven-fateful-new-testament-texts-jewish-bloodguilt-1.raw.md",
+    "youtube_id": "KzpYHf3LEmw",
+    "title": "Top Seven Fateful New Testament Texts: \"Jewish Bloodguilt\" (1)",
+    "raw_status": "success",
+    "duration_seconds": 1163,
+    "published_at": "20240406",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "56": {
+    "raw_file": "56-a-young-christian-believer-asks-dr-tabor-four-questions-about-paul.raw.md",
+    "youtube_id": "BEHIsCRBE_M",
+    "title": "A Young Christian Believer Asks Dr  Tabor Four Questions about Paul",
+    "raw_status": "success",
+    "duration_seconds": 2828,
+    "published_at": "20250528",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "57": {
+    "raw_file": "57-how-when-and-why-i-got-hooked-on-paul-for-life.raw.md",
+    "youtube_id": "rIjdMUMTm_A",
+    "title": "How, When, and Why I Got \"Hooked on Paul\" For Life",
+    "raw_status": "success",
+    "duration_seconds": 823,
+    "published_at": "20231213",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "58": {
+    "raw_file": "58-top-seven-fateful-new-testament-texts-women-keep-silent-be-subservient-3.raw.md",
+    "youtube_id": "fvsefd7Tmg8",
+    "title": "Top Seven Fateful New Testament Texts:  Women Keep Silent Be Subservient  (3)",
+    "raw_status": "success",
+    "duration_seconds": 1395,
+    "published_at": "20240414",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "59": {
+    "raw_file": "59-top-seven-fateful-new-testament-texts-heaven-is-my-true-home-5.raw.md",
+    "youtube_id": "bJPvMXRB4NI",
+    "title": "Top Seven Fateful New Testament Texts: Heaven is My True Home (5)",
+    "raw_status": "success",
+    "duration_seconds": 1007,
+    "published_at": "20240426",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "60": {
+    "raw_file": "60-the-real-paul-what-about-that-thirteenth-apostle.raw.md",
+    "youtube_id": "FE6P_tk-Gbw",
+    "title": "The Real Paul: What About that Thirteenth Apostle?",
+    "raw_status": "success",
+    "duration_seconds": 1365,
+    "published_at": "20250809",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "61": {
+    "raw_file": "61-top-seven-fateful-new-testament-texts-slavery-as-service-to-god-4.raw.md",
+    "youtube_id": "Wy3udtXR2i8",
+    "title": "Top Seven Fateful New Testament Texts: Slavery as Service to God? (4)",
+    "raw_status": "success",
+    "duration_seconds": 1410,
+    "published_at": "20240417",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "62": {
+    "raw_file": "62-what-do-we-really-know-about-the-historical-paul.raw.md",
+    "youtube_id": "ubXrW1Kv7AI",
+    "title": "What Do We Really Know about the Historical Paul?",
+    "raw_status": "success",
+    "duration_seconds": 423,
+    "published_at": "20241207",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "63": {
+    "raw_file": "63-paul-williams-interview-part-2-the-earliest-testimony-to-jesus-resurrection-was-.raw.md",
+    "youtube_id": "7MSk3o-ChYs",
+    "title": "Paul Williams Interview Part 2: The Earliest Testimony to Jesus' Resurrection Was Visionary",
+    "raw_status": "success",
+    "duration_seconds": 1396,
+    "published_at": "20230120",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "64": {
+    "raw_file": "64-capturing-a-moment-the-jesus-dynasty-is-released.raw.md",
+    "youtube_id": "cwD_vbEafAQ",
+    "title": "Capturing a Moment: The Jesus Dynasty is Released",
+    "raw_status": "success",
+    "duration_seconds": 3302,
+    "published_at": "20230610",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "65": {
+    "raw_file": "65-two-guys-talking-two-hours-about-paul-things-with-qa.raw.md",
+    "youtube_id": "VzWdFgWH3Xs",
+    "title": "Two Guys Talking Two Hours about Paul Things with Q&A",
+    "raw_status": "success",
+    "duration_seconds": 6990,
+    "published_at": "20230509",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "66": {
+    "raw_file": "66-did-paul-think-james-the-brother-of-jesus-was-weak-in-the-faith.raw.md",
+    "youtube_id": "LU6T2O-myXE",
+    "title": "Did Paul Think James the Brother of Jesus Was Weak in the Faith?",
+    "raw_status": "success",
+    "duration_seconds": 607,
+    "published_at": "20230519",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "67": {
+    "raw_file": "67-our-earliest-witness--was-jesus-resurrection-the-revival-of-a-corpse.raw.md",
+    "youtube_id": "SkkeIMcW_9M",
+    "title": "Our Earliest Witness--Was Jesus' Resurrection the Revival of a Corpse?",
+    "raw_status": "success",
+    "duration_seconds": 110,
+    "published_at": "20240912",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "68": {
+    "raw_file": "68-serious-students-only-is-romans-9-11-based-on-the-hebrew-bible.raw.md",
+    "youtube_id": "li47XDs6qFw",
+    "title": "Serious Students Only:  Is Romans 9-11 based on the Hebrew Bible?",
+    "raw_status": "success",
+    "duration_seconds": 2614,
+    "published_at": "20250526",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "69": {
+    "raw_file": "69-two-minutes-on-paul-the-jew.raw.md",
+    "youtube_id": "7UHl377BZA0",
+    "title": "Two Minutes on Paul the Jew",
+    "raw_status": "success",
+    "duration_seconds": 116,
+    "published_at": "20220918",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "70": {
+    "raw_file": "70-first-year-anniversary-most-viewed-episodes-on-bart-ehrmans-misquoting-jesus-pod.raw.md",
+    "youtube_id": "poyLX8aML0g",
+    "title": "First Year Anniversary: Most Viewed Episodes on Bart Ehrman's \"Misquoting Jesus\" Podcast",
+    "raw_status": "success",
+    "duration_seconds": 165,
+    "published_at": "20231020",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "71": {
+    "raw_file": "71-top-seven-fateful-texts-in-the-new-testament--obey-rulers-as-gods-ministers-6.raw.md",
+    "youtube_id": "G6R94OUVjeM",
+    "title": "Top Seven Fateful Texts in the New Testament--Obey Rulers as God's Ministers (6)",
+    "raw_status": "success",
+    "duration_seconds": 807,
+    "published_at": "20240429",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "72": {
+    "raw_file": "72-an-in-depth-conversation-about-my-new-on-line-course-on-the-apostle-paul.raw.md",
+    "youtube_id": "uQiHYrS-Py4",
+    "title": "An In Depth Conversation about My New On-line Course on the Apostle Paul",
+    "raw_status": "success",
+    "duration_seconds": 3819,
+    "published_at": "20241224",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "73": {
+    "raw_file": "73-more-with-barbara-delong-understanding-paul--apostle-or-apostate.raw.md",
+    "youtube_id": "ltRUrbaOsnw",
+    "title": "More with Barbara DeLong: Understanding Paul--Apostle or Apostate?",
+    "raw_status": "success",
+    "duration_seconds": 7240,
+    "published_at": "20230307",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "74": {
+    "raw_file": "74-new-insights-into-the-new-testament-conference-here-are-the-speakers-and-their-t.raw.md",
+    "youtube_id": "fc4DUpnaCv0",
+    "title": "New Insights Into the New Testament Conference: Here are the Speakers and their Topics",
+    "raw_status": "success",
+    "duration_seconds": 623,
+    "published_at": "20240823",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "75": {
+    "raw_file": "75-a-sneak-peek-at-my-lecture-at-the-upcoming-bart-ehrman-paul-conference.raw.md",
+    "youtube_id": "RW2Ew5D4LOE",
+    "title": "A Sneak Peek at My Lecture at the Upcoming Bart Ehrman Paul Conference",
+    "raw_status": "success",
+    "duration_seconds": 66,
+    "published_at": "20240828",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "76": {
+    "raw_file": "76-a-great-story--how-jason-staples-chose-his-phd-topic-with-bart-ehrman.raw.md",
+    "youtube_id": "Wh_osofm0PU",
+    "title": "A Great Story--How Jason Staples Chose His Ph.D. Topic with Bart Ehrman",
+    "raw_status": "success",
+    "duration_seconds": 126,
+    "published_at": "20240829",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  },
+  "77": {
+    "raw_file": "77-update-from-mediterranean-tour.raw.md",
+    "youtube_id": "Zi5o10EY5OA",
+    "title": "Update from Mediterranean Tour",
+    "raw_status": "success",
+    "duration_seconds": 170,
+    "published_at": "20240916",
+    "synthesized_status": "pending",
+    "scraped_via": "yt-dlp"
+  }
+}
