@@ -251,7 +251,7 @@ This archive is the deepest single-author treatment of Paul in `the-way`. It con
 - **`christianity/eastern-orthodox-theosis-closest-to-original.md`** — The framework that preserves Paul's cosmic-transformation gospel; cross-link in #06, #15, #49, #65.
 - **`christianity/trinity-fourth-century-construction.md`** — Adam Christology vs. Trinitarian preexistence reading of Philippians 2 (#08, #12, #26).
 - **`podcast-archive/the-jesus-way/010-essene-origins-dr-james-tabor.md`** — Tabor's "blue thread" framework (Aaron Abke + Kameron Waters); foundational for the playlist's Essene/Nazarene cluster.
-- **`podcast-archive/the-jesus-way/015-yeshuas-true-mission-dr-tabor.md`** — Tabor's second Jesus Way appearance.
+- **`podcast-archive/the-jesus-way/15-yeshuas-true-mission-dr-tabor.md`** — Tabor's second Jesus Way appearance.
 - **`podcast-archive/the-jesus-way/023-exposing-paul-false-prophet.md`** — David Notsari's parallel critique of Paul; complements Tabor's historical-critical case with a theological-typological one.
 - **`podcast-archive/the-jesus-way/046-james-rejected-paul-scriptural-proof.md`** — James-rejected-Paul thesis; complements Tabor's #11, #66.
 - **`podcast-archive/the-jesus-way/034-did-jesus-claim-to-be-god-debunking-the-trinity.md`** — Direct parallel to Tabor #08, #12, #26 on christology.
