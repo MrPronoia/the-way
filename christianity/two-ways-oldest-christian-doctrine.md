@@ -133,11 +133,11 @@ The convergence across independent traditions suggests something deeper than tex
 
 - [Dead Sea Scrolls Overview](dead-sea-scrolls/00-overview.md) -- Community Rule details, Two Spirits doctrine, Zoroastrian connection
 - [Didache Eucharist vs. Pauline Eucharist](didache-eucharist-vs-pauline-eucharist.md) -- Another Didache finding (forthcoming)
-- [The Evidence](../../docs/jesus/the-evidence.md) -- Dead Sea Scrolls discovery context, Gospel of Thomas, Ethiopian Bible
+- [The Evidence](../jesus-site-reference/source/docs/the-evidence.md) -- Dead Sea Scrolls discovery context, Gospel of Thomas, Ethiopian Bible
 - [Cliff Notes Quick Reference](cliff-notes-quick-reference.md) -- Full Jesus vs. Paul comparison table
-- [Zoroaster Cliff Notes](../zoroaster/cliff-notes-quick-reference.md) -- The Two Spirits origin in the Gathas
-- [Law of One Cliff Notes](../law-of-one/cliff-notes-quick-reference.md) -- Service to Others vs. Service to Self polarity
-- [Perennial Philosophy](../perennial-philosophy/00-overview.md) -- The meta-framework tracking cross-tradition patterns
+- Zoroaster Cliff Notes -- The Two Spirits origin in the Gathas
+- Law of One Cliff Notes -- Service to Others vs. Service to Self polarity
+- Perennial Philosophy -- The meta-framework tracking cross-tradition patterns
 
 ---
 

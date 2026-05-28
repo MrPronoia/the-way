@@ -168,9 +168,9 @@ The text describes visions received by a former slave named Hermas in Rome. An e
 
 ### Why It Matters
 - Shows what **ordinary early Christians were actually reading** — practical spirituality, not just theology
-- The "two spirits" teaching (Commandment 6) parallels the **Qumran Community Rule** and has connections to later **[Kabbalistic](../../kabbalah/00-overview.md)** good/evil inclination (yetzer) theology
+- The "two spirits" teaching (Commandment 6) parallels the **Qumran Community Rule** and has connections to later **Kabbalistic** good/evil inclination (yetzer) theology
 - The tower-building metaphor for the Church has parallels to **Freemasonic** symbolism
-- Its emphasis on repentance and inner transformation aligns with the **[perennial philosophy](../../perennial-philosophy/00-overview.md)** pattern of purification before illumination
+- Its emphasis on repentance and inner transformation aligns with the **perennial philosophy** pattern of purification before illumination
 
 ---
 
@@ -187,7 +187,7 @@ A 2nd-century text containing post-resurrection conversations between Jesus and 
 
 ### Why It Matters
 - Direct evidence of what **post-resurrection teaching traditions** circulated in early Christianity
-- The "descent through spheres" teaching connects to **[Hermetic](../../hermeticism/00-overview.md)** and **[Gnostic](../../gnosticism/00-overview.md)** cosmology
+- The "descent through spheres" teaching connects to **Hermetic** and **[Gnostic](../../gnosticism/00-overview.md)** cosmology
 - Contains the earliest known use of the "what eye has not seen" passage (1 Cor 2:9) attributed to a specific source
 
 ---
@@ -215,11 +215,11 @@ The Ethiopian version of the Apostolical Constitutions — a church order text a
 ## Connections to Other Research in This Repo
 
 - **The Jesus Way / Essenes** — 1 Enoch and Jubilees are essential context for understanding the Essene worldview that shaped the environment Jesus emerged from. The Didascalia shows how the movement he started actually organized itself. See the podcast research archive for the Essene origins episode (Episode 10, Dr. James Tabor).
-- **[Hermeticism](../../hermeticism/00-overview.md)** — The Watcher tradition (angels descending to teach hidden knowledge) parallels Hermetic themes of divine knowledge transmission. The emanation cosmology in 1 Enoch's Parables has structural similarities to Hermetic cosmology. The Epistula's "descent through spheres" teaching is directly Hermetic.
-- **[Kabbalah](../../kabbalah/00-overview.md)** — The angelic hierarchies in 1 Enoch directly influenced later Kabbalistic angelology. The Merkabah (throne-chariot) mysticism tradition draws from Enochic ascent literature. The Shepherd of Hermas' "two spirits" teaching parallels the yetzer ha-tov / yetzer ha-ra framework.
+- **Hermeticism** — The Watcher tradition (angels descending to teach hidden knowledge) parallels Hermetic themes of divine knowledge transmission. The emanation cosmology in 1 Enoch's Parables has structural similarities to Hermetic cosmology. The Epistula's "descent through spheres" teaching is directly Hermetic.
+- **Kabbalah** — The angelic hierarchies in 1 Enoch directly influenced later Kabbalistic angelology. The Merkabah (throne-chariot) mysticism tradition draws from Enochic ascent literature. The Shepherd of Hermas' "two spirits" teaching parallels the yetzer ha-tov / yetzer ha-ra framework.
 - **Freemasonry** — The Shepherd of Hermas' tower-building metaphor and the Didascalia's hierarchical church structure have resonances with Masonic temple-building symbolism and degree structures.
-- **[Law of One](../../law-of-one/00-overview.md)** — The density/harvest framework has interesting parallels to 1 Enoch's judgment/ascension structure and the Watchers' interference with human evolution.
-- **[Perennial Philosophy](../../perennial-philosophy/00-overview.md)** — The Ethiopian canon preserves texts that strengthen the "hidden knowledge transmitted through lineage" pattern found across traditions. The Shepherd of Hermas' purification-through-repentance path mirrors the universal three-stage spiritual journey (purification → illumination → union).
+- **Law of One** — The density/harvest framework has interesting parallels to 1 Enoch's judgment/ascension structure and the Watchers' interference with human evolution.
+- **Perennial Philosophy** — The Ethiopian canon preserves texts that strengthen the "hidden knowledge transmitted through lineage" pattern found across traditions. The Shepherd of Hermas' purification-through-repentance path mirrors the universal three-stage spiritual journey (purification → illumination → union).
 
 ---
 
@@ -231,7 +231,7 @@ The Ethiopian version of the Apostolical Constitutions — a church order text a
 - [ ] What other texts circulated at Qumran that Ethiopia also preserved?
 - [ ] How does the 364-day solar calendar (Enoch + Jubilees + Qumran) connect to sacred geometry and numerology research?
 - [ ] What parallels exist between the Shepherd of Hermas' "two spirits" and the Qumran Community Rule's "two spirits" passage?
-- [ ] How does the Epistula Apostolorum's "descent through spheres" compare to [Hermetic](../../hermeticism/00-overview.md) and [Gnostic](../../gnosticism/00-overview.md) ascent/descent cosmologies?
+- [ ] How does the Epistula Apostolorum's "descent through spheres" compare to Hermetic and [Gnostic](../../gnosticism/00-overview.md) ascent/descent cosmologies?
 - [ ] What can the Didascalia tell us about the transition from Jewish synagogue practice to Christian church structure?
 
 ---

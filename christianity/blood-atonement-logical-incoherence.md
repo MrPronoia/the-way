@@ -124,7 +124,7 @@ The pattern is consistent: traditions that begin with external sacrifice evolve 
 ## See Also
 
 - [Cliff Notes Quick Reference](cliff-notes-quick-reference.md) -- Jesus vs. Paul comparison table
-- [The Sacrifice Culture](../../docs/jesus/the-sacrifice-culture.md) -- Paul's Pharisaic context and why he saw the crucifixion as sacrifice
+- [The Sacrifice Culture](../jesus-site-reference/source/docs/the-sacrifice-culture.md) -- Paul's Pharisaic context and why he saw the crucifixion as sacrifice
 - [Prophetic Tradition Against Sacrifice](prophetic-tradition-against-sacrifice.md) -- Full Hebrew prophets compilation
 - [Didache Eucharist vs. Pauline Eucharist](didache-eucharist-vs-pauline-eucharist.md) -- Earliest communion had no blood theology (forthcoming)
 

@@ -212,7 +212,7 @@ If these experiences are glimpses of something real, they point toward a univers
 ### Related Research in This Knowledge Base
 
 - [Is Blood Atonement Logically Coherent?](blood-atonement-logical-incoherence.md) -- the philosophical case against penal substitutionary atonement
-- [Seven Warnings Jesus Gave About Paul](seven-warnings-jesus-gave-about-paul.md) -- Jesus's own predictions about false teachers
+- Seven Warnings Jesus Gave About Paul -- Jesus's own predictions about false teachers
 - [Paul Fails the Deuteronomy 18 Test](paul-false-prophet-deuteronomy-18-test.md) -- applying the Torah's own standard for identifying false prophets
 - [The Two Ways: Oldest Christian Doctrine](two-ways-oldest-christian-doctrine.md) -- the Didache's works-based ethic, predating Paul's letters
 - [Matthew 25:31-46 in the Christianity Cliff Notes](cliff-notes-quick-reference.md) -- the Sheep and Goats judgment passage

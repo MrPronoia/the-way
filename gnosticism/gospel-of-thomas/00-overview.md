@@ -7,7 +7,7 @@
 
 The Gospel of Thomas is the most important "alternative" Jesus text in existence. 114 sayings attributed to Jesus, discovered at Nag Hammadi in 1945, with no narrative framework whatsoever -- no birth story, no miracles, no crucifixion, no resurrection, no apocalypse. Just the raw logia (sayings). About half parallel the canonical gospels; the other half are unique and often radical.
 
-Thomas is not a "gospel" in the normal sense. There is no story. No plot. No characters doing things. It is a collection of wisdom sayings -- more like Proverbs or the [Dhammapada](../../buddhism/theravada-dhammapada/00-overview.md) than like Mark or Matthew. The Jesus who speaks here is a wisdom teacher, not a sacrificial redeemer.
+Thomas is not a "gospel" in the normal sense. There is no story. No plot. No characters doing things. It is a collection of wisdom sayings -- more like Proverbs or the Dhammapada than like Mark or Matthew. The Jesus who speaks here is a wisdom teacher, not a sacrificial redeemer.
 
 ---
 
@@ -32,12 +32,12 @@ If the early dating is correct (and serious scholars argue it is), Thomas gives 
 
 | Theme | Core Teaching | Cross-Tradition Parallel |
 |-------|--------------|-------------------------|
-| **Kingdom as present reality** | Not future, not elsewhere -- here and now, hidden in plain sight | [Advaita](../../hinduism/advaita-vedanta/00-overview.md): Brahman is always already the case; [Buddhism](../../buddhism/00-overview.md): nirvana is samsara rightly seen; [Taoism](../../lao-tzu-tao-te-ching/00-overview.md): the Tao that is always present |
-| **Self-knowledge as salvation** | Know yourself and you know God; ignorance is the only sin | Advaita: Atma Vichara; [Plotinus](../../luminaries/plotinus/00-overview.md): henosis through self-knowledge; [Ramana](../../luminaries/ramana-maharshi/00-overview.md): "Who am I?" |
-| **The divine within** | The light is inside you and in all things | [Hermeticism](../../hermeticism/00-overview.md): "The All is Mind"; [Kabbalah](../../kabbalah/00-overview.md): nitzotzot (sparks); [Eckhart](../../luminaries/meister-eckhart/00-overview.md): Seelenfunklein |
-| **The living teacher** | Jesus as ongoing living presence, not historical figure | [Law of One](../../law-of-one/00-overview.md): the ever-present Logos; [Sufism](../../islam/sufism/00-overview.md): the Beloved within |
-| **Non-duality** | "Make the two one" -- dissolve all opposites | Advaita: non-duality; [Kashmir Shaivism](../../hinduism/kashmir-shaivism/00-overview.md): Shiva-Shakti unity; Taoism: yin-yang integration |
-| **World as corpse** | The world understood materially is dead | Buddhism: anicca (impermanence); [Vedanta](../../hinduism/upanishads/00-overview.md): maya; Eckhart: creatures as "pure nothing" |
+| **Kingdom as present reality** | Not future, not elsewhere -- here and now, hidden in plain sight | Advaita: Brahman is always already the case; Buddhism: nirvana is samsara rightly seen; Taoism: the Tao that is always present |
+| **Self-knowledge as salvation** | Know yourself and you know God; ignorance is the only sin | Advaita: Atma Vichara; Plotinus: henosis through self-knowledge; Ramana: "Who am I?" |
+| **The divine within** | The light is inside you and in all things | Hermeticism: "The All is Mind"; Kabbalah: nitzotzot (sparks); Eckhart: Seelenfunklein |
+| **The living teacher** | Jesus as ongoing living presence, not historical figure | Law of One: the ever-present Logos; Sufism: the Beloved within |
+| **Non-duality** | "Make the two one" -- dissolve all opposites | Advaita: non-duality; Kashmir Shaivism: Shiva-Shakti unity; Taoism: yin-yang integration |
+| **World as corpse** | The world understood materially is dead | Buddhism: anicca (impermanence); Vedanta: maya; Eckhart: creatures as "pure nothing" |
 | **The solitary path** | The monachos (solitary one) enters the Kingdom | Buddhism: the bhikkhu; Plotinus: "the flight of the alone to the Alone" |
 | **Hidden/revealed** | Truth is hidden from the masses, revealed to the ready | Kabbalah: sod (secret level); Freemasonry: progressive revelation through degrees |
 
@@ -79,7 +79,7 @@ Mark Goodacre and Simon Gathercole argue Thomas shows knowledge of Synoptic reda
 
 - **Thomas and Q** -- Detailed comparison of Thomas sayings with the reconstructed Q source. If both derive from the same early tradition, the implications are significant.
 - **Thomas and the Gospel of John** -- Pagels's argument that John was written in part to REFUTE Thomas. The "doubting Thomas" tradition as polemic.
-- **Thomas and [Buddhism](../../buddhism/00-overview.md)** -- Multiple scholars have noted the parallels. A systematic comparison would be valuable.
+- **Thomas and Buddhism** -- Multiple scholars have noted the parallels. A systematic comparison would be valuable.
 - **The "female becoming male" problem** -- Saying 114 and the gender question. Feminist, anti-feminist, and transcendence-of-gender readings.
 - **Thomas as spiritual practice** -- Valantasis's ascetic reading. Can the 114 sayings function as a contemplative manual?
 
@@ -103,17 +103,17 @@ Thomas O. Lambdin (translation, in Meyer 2007 and Robinson 1988), Marvin Meyer (
 
 - [Gnosticism](../../gnosticism/00-overview.md) -- Gospel of Thomas is one of the major Nag Hammadi texts; the Gnosticism deep dive covers it in section 4 and the dating debate in section 9
 - [Christianity](../../christianity/00-overview.md) -- Directly supports the Jesus vs. Paul thesis; Thomas's Jesus is the "inner Kingdom" teacher, not the Pauline sacrificial Christ
-- [Meister Eckhart](../../luminaries/meister-eckhart/00-overview.md) -- Eckhart's "eye through which I see God is the same eye through which God sees me" parallels Saying 77; Gelassenheit parallels "become passers-by" (Saying 42)
-- [Ramana Maharshi](../../luminaries/ramana-maharshi/00-overview.md) -- "Who am I?" = "Know thyself" = Saying 3
-- [Nisargadatta](../../luminaries/nisargadatta/00-overview.md) -- "I Am" as living presence parallels the "living Jesus" who speaks in Thomas
-- [Rumi](../../luminaries/rumi/00-overview.md) -- The Beloved within, gnosis as love-knowledge
-- [Advaita Vedanta](../../hinduism/advaita-vedanta/00-overview.md) -- Atman is Brahman = the Kingdom within = Saying 3 and 77
-- [Hermeticism](../../hermeticism/00-overview.md) -- "I am the light over all things" (Saying 77) parallels Poimandres; the Hermetic gnosis path
-- [Kabbalah](../../kabbalah/00-overview.md) -- Hidden/revealed parallels sod (secret level of Torah); sparks in matter parallel Saying 77
-- [Plotinus](../../luminaries/plotinus/00-overview.md) -- Return to the One through self-knowledge; "the flight of the alone to the Alone" parallels the monachos
-- [Law of One](../../law-of-one/00-overview.md) -- The Creator knowing itself through each being parallels Thomas's self-knowledge teaching
-- [Tao Te Ching](../../lao-tzu-tao-te-ching/00-overview.md) -- "Become passers-by" (Saying 42) parallels wu wei; the hidden Kingdom parallels the hidden Tao
-- [Perennial Philosophy](../../perennial-philosophy/00-overview.md) -- Thomas confirms multiple perennial patterns: divine spark within, direct knowing over belief, the path of return, Kingdom/enlightenment as present reality
+- Meister Eckhart -- Eckhart's "eye through which I see God is the same eye through which God sees me" parallels Saying 77; Gelassenheit parallels "become passers-by" (Saying 42)
+- Ramana Maharshi -- "Who am I?" = "Know thyself" = Saying 3
+- Nisargadatta -- "I Am" as living presence parallels the "living Jesus" who speaks in Thomas
+- Rumi -- The Beloved within, gnosis as love-knowledge
+- Advaita Vedanta -- Atman is Brahman = the Kingdom within = Saying 3 and 77
+- Hermeticism -- "I am the light over all things" (Saying 77) parallels Poimandres; the Hermetic gnosis path
+- Kabbalah -- Hidden/revealed parallels sod (secret level of Torah); sparks in matter parallel Saying 77
+- Plotinus -- Return to the One through self-knowledge; "the flight of the alone to the Alone" parallels the monachos
+- Law of One -- The Creator knowing itself through each being parallels Thomas's self-knowledge teaching
+- Tao Te Ching -- "Become passers-by" (Saying 42) parallels wu wei; the hidden Kingdom parallels the hidden Tao
+- Perennial Philosophy -- Thomas confirms multiple perennial patterns: divine spark within, direct knowing over belief, the path of return, Kingdom/enlightenment as present reality
 
 ---
 

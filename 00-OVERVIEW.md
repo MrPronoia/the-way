@@ -22,8 +22,8 @@ That's ~60 minutes of high-density reading. The 90 includes pause time.
 
 For the person who wants the evidence chain:
 
-1. **`christianity/essene-nazarene-ebionite-lineage.md`** — The continuous Jewish-Christian tradition from before Jesus through 5th century CE
-2. **`christianity/dead-sea-scrolls/dead-sea-scrolls-selected-texts.md`** — The Essene primary sources
+1. **`christianity/2026-02-25-essene-nazarene-ebionite-lineage.md`** — The continuous Jewish-Christian tradition from before Jesus through 5th century CE
+2. **`christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`** — The Essene primary sources
 3. **`christianity/flight-to-pella-golden-thread.md`** — How Jesus's followers survived 70 CE
 4. **`christianity/clementine-literature-nazarene-writings.md`** — A surviving window into the original community
 5. **`christianity/james-the-just-key-to-understanding-jesus.md`** — Jesus's brother as theological hinge pin
@@ -50,11 +50,11 @@ For the person who's been told "Paul is the foundation of the church" and is sta
 
 For the person raised on Left Behind:
 
-1. **`christianity/darby-dispensationalism-deep-dive.md`** — John Nelson Darby's 1830s invention, traced step by step
+1. **`christianity/2026-03-08-darby-dispensationalism-deep-dive.md`** — John Nelson Darby's 1830s invention, traced step by step
 2. **`jesus-site-reference/source/docs/the-rapture.md`** — Compact version of the same case
-3. **`christianity/did-jesus-teach-apocalypse.md`** — What Jesus actually said about end-times vs. what Darby constructed
-4. **`christianity/participated-eschatology.md`** — The Kingdom is built through participation, not extraction
-5. **`christianity/combating-christian-zionism-strategy.md`** — Where this theology leads politically
+3. **`christianity/2026-03-09-did-jesus-teach-apocalypse.md`** — What Jesus actually said about end-times vs. what Darby constructed
+4. **`christianity/participatory-eschatology.md`** — The Kingdom is built through participation, not extraction
+5. **`christianity/2026-03-09-combating-christian-zionism-strategy.md`** — Where this theology leads politically
 
 ---
 
@@ -90,6 +90,8 @@ The actual published site is still built and served from `mr-pronoia/jesus-site/
 Raw transcripts from The Jesus Way podcast (Rex + Matt). 50+ episodes covering: Yeshua's true mission, the Moses Scroll, the Two Ways, Essene origins, the Saturn cult, Christ consciousness, the Jesus diet, the Mary rediscovery, NDE life reviews, refuting the rapture, the Trinity debunked, Swedenborg, three forgotten Nazarene practices, James rejected Paul, and more.
 
 **These are working transcripts, not polished episodes.** Use them for research material, source mining, and quote retrieval. Don't cite them as authoritative without verifying the underlying claims against primary sources.
+
+The folder also contains **`dr-tabor/`** — synthesized research notes on Dr. James Tabor's "Paul" YouTube playlist (77 videos: summary, key teachings, scripture citations, scholars cited, quotable moments, plus the full raw transcript per video). See `podcast-archive/dr-tabor/00-overview.md` for the thematic index.
 
 See `podcast-archive/README.md` for the full episode list and how to use them.
 

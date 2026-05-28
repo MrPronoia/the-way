@@ -185,8 +185,8 @@ The question is not whether we will be raptured. The question is whether we will
 - [Combating Christian Zionism Strategy](2026-03-09-combating-christian-zionism-strategy.md) — The geopolitical consequences of rapture theology
 - [Gospel of Thomas Cliff Notes](gospel-of-thomas-cliff-notes.md) — Kingdom-now teachings in Thomas
 - [The Two Ways — Oldest Christian Doctrine](two-ways-oldest-christian-doctrine.md) — The Didache's practical ethics
-- [Law of One Overview](../law-of-one/00-overview.md) — Harvest/graduation through service-to-others
-- [Kabbalah Cliff Notes](../kabbalah/cliff-notes-quick-reference.md) — Tikkun Olam and the shattering of the vessels
-- [Mahayana Buddhism Overview](../buddhism/mahayana/00-overview.md) — The bodhisattva vow
-- [Sufism Overview](../islam/sufism/00-overview.md) — Al-Insan al-Kamil (the Perfect Human)
-- [Perennial Philosophy Overview](../perennial-philosophy/00-overview.md) — Cross-tradition convergence patterns
+- Law of One Overview — Harvest/graduation through service-to-others
+- Kabbalah Cliff Notes — Tikkun Olam and the shattering of the vessels
+- Mahayana Buddhism Overview — The bodhisattva vow
+- Sufism Overview — Al-Insan al-Kamil (the Perfect Human)
+- Perennial Philosophy Overview — Cross-tradition convergence patterns

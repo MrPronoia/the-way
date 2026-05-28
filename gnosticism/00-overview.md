@@ -9,11 +9,11 @@ Gnosticism connects to nearly everything in this encyclopedia. It is not one tra
 
 **Why it matters for cross-tradition study:**
 - **Freemasonry/Pike** -- Pike's *Morals and Dogma* draws extensively on Gnostic concepts (the Demiurge, the divine spark, hidden truth behind appearances). The Scottish Rite higher degrees explicitly reference Gnostic and Manichaean frameworks.
-- **[Kabbalah](../kabbalah/00-overview.md)** -- Gershom Scholem's hypothesis that Jewish gnosticism (merkavah mysticism, the Shekhinah's exile, the divine sparks) preceded and shaped Christian gnosticism. Ein Sof = the Unknown God. Shevirat Hakelim = the fall of Sophia. Qliphoth = archons. Tikkun = gnosis/return.
-- **[Plotinus](../luminaries/plotinus/00-overview.md)** -- He argued directly against the Gnostics in Enneads II.9, "Against Those Who Say That the Creator of the Cosmos and the Cosmos Itself Are Evil." Shared the same metaphysical framework but drew opposite conclusions about the value of the material world.
-- **[Hermeticism](../hermeticism/00-overview.md)** -- The Nag Hammadi library contained Hermetic texts alongside Gnostic ones (Asclepius 21-29, Discourse on the Eighth and Ninth). Same milieu, overlapping cosmology, different valence toward creation.
+- **Kabbalah** -- Gershom Scholem's hypothesis that Jewish gnosticism (merkavah mysticism, the Shekhinah's exile, the divine sparks) preceded and shaped Christian gnosticism. Ein Sof = the Unknown God. Shevirat Hakelim = the fall of Sophia. Qliphoth = archons. Tikkun = gnosis/return.
+- **Plotinus** -- He argued directly against the Gnostics in Enneads II.9, "Against Those Who Say That the Creator of the Cosmos and the Cosmos Itself Are Evil." Shared the same metaphysical framework but drew opposite conclusions about the value of the material world.
+- **Hermeticism** -- The Nag Hammadi library contained Hermetic texts alongside Gnostic ones (Asclepius 21-29, Discourse on the Eighth and Ninth). Same milieu, overlapping cosmology, different valence toward creation.
 - **Early [Christianity](../christianity/00-overview.md)** -- The Gnostics claimed to carry Jesus's *secret* teaching. The Gospel of Thomas, Gospel of Philip, and Gospel of Mary present a Jesus who sounds very different from Paul's Christ -- a revealer of inner knowledge, not a sacrificial redeemer. This feeds directly into the Jesus vs. Paul thesis in the Christianity research.
-- **[Law of One](../law-of-one/00-overview.md)** -- Service-to-self archons map to the Orion group. The veil of forgetting parallels archon-imposed ignorance. Harvest parallels the Gnostic return to the pleroma. But Ra explicitly disagrees with the Gnostic view of matter as a prison.
+- **Law of One** -- Service-to-self archons map to the Orion group. The veil of forgetting parallels archon-imposed ignorance. Harvest parallels the Gnostic return to the pleroma. But Ra explicitly disagrees with the Gnostic view of matter as a prison.
 
 ---
 
@@ -27,11 +27,11 @@ Gnosticism teaches that the visible world is the product of a lesser, ignorant d
 
 | Concept | What It Means | Cross-Tradition Parallel |
 |---------|--------------|-------------------------|
-| **The Unknown God / Monad** | The true transcendent deity, beyond all names and attributes | Ein Sof ([Kabbalah](../kabbalah/00-overview.md)), The One ([Plotinus](../luminaries/plotinus/00-overview.md)), Intelligent Infinity ([Law of One](../law-of-one/00-overview.md)), Nirguna Brahman ([Vedanta](../hinduism/advaita-vedanta/00-overview.md)), Gottheit ([Eckhart](../luminaries/meister-eckhart/00-overview.md)) |
+| **The Unknown God / Monad** | The true transcendent deity, beyond all names and attributes | Ein Sof (Kabbalah), The One (Plotinus), Intelligent Infinity (Law of One), Nirguna Brahman (Vedanta), Gottheit (Eckhart) |
 | **The Demiurge (Yaldabaoth)** | The ignorant creator of the material world who thinks he is God | Sub-Logos (Law of One -- but Ra rejects the "ignorant" characterization), Maya's creator aspect (Hinduism) |
-| **Sophia (Wisdom)** | Divine feminine whose fall produced the Demiurge | Shekinah in exile (Kabbalah), Shakti ([Hinduism](../hinduism/00-overview.md)), the fallen Soul (Plotinus) |
+| **Sophia (Wisdom)** | Divine feminine whose fall produced the Demiurge | Shekinah in exile (Kabbalah), Shakti (Hinduism), the fallen Soul (Plotinus) |
 | **The divine spark** | Fragment of true divinity trapped in each human | Nitzotz (Kabbalah), Atman (Vedanta), Seelenfunklein (Eckhart), sub-sub-Logos (Law of One) |
-| **Archons** | Cosmic rulers who maintain ignorance | Qliphoth (Kabbalah), Orion group (Law of One), planetary governors ([Hermeticism](../hermeticism/00-overview.md)) |
+| **Archons** | Cosmic rulers who maintain ignorance | Qliphoth (Kabbalah), Orion group (Law of One), planetary governors (Hermeticism) |
 | **Gnosis** | Direct salvific knowledge -- knowing, not believing | Jnana (Vedanta), Henosis (Plotinus), penetration of intelligent infinity (Law of One), pratyabhijna (recognition) |
 | **Pleroma / Kenoma** | Fullness (divine realm) vs. deficiency (material realm) | Atziluth/Assiah (Kabbalah), Nous/Matter (Plotinus), time-space/space-time (Law of One) |
 | **Pneumatics / Psychics / Hylics** | Three types of humans: spiritual, soulish, material | Three gunas (Vedanta), polarity spectrum (Law of One) |
@@ -43,14 +43,14 @@ Gnosticism teaches that the visible world is the product of a lesser, ignorant d
 | Tradition | Gnostic Parallel | Key Difference |
 |-----------|-----------------|----------------|
 | **[Christianity](../christianity/00-overview.md)** | [Gospel of Thomas](gospel-of-thomas/00-overview.md) parallels canonical gospels; "the Kingdom is within" | Gnostics see Jesus as *revealer*, not sacrificial redeemer |
-| **[Kabbalah](../kabbalah/00-overview.md)** | Ein Sof = Unknown God; Shevirat = Sophia's fall; sparks = pneumatic spark | Kabbalah affirms tikkun (repair the world); Gnostics want to escape it |
-| **[Plotinus](../luminaries/plotinus/00-overview.md)** | Shared emanation framework, the One, the soul's return | Plotinus rejects world-hatred (Enneads II.9): the cosmos is beautiful |
-| **[Hermeticism](../hermeticism/00-overview.md)** | Shared cosmogony (Poimandres parallels Apocryphon of John); gnosis as path | Hermeticism sees cosmos as a living god, not a prison |
+| **Kabbalah** | Ein Sof = Unknown God; Shevirat = Sophia's fall; sparks = pneumatic spark | Kabbalah affirms tikkun (repair the world); Gnostics want to escape it |
+| **Plotinus** | Shared emanation framework, the One, the soul's return | Plotinus rejects world-hatred (Enneads II.9): the cosmos is beautiful |
+| **Hermeticism** | Shared cosmogony (Poimandres parallels Apocryphon of John); gnosis as path | Hermeticism sees cosmos as a living god, not a prison |
 | **Freemasonry** | Pike uses Gnostic concepts; higher degrees reference Gnostic schools | Freemasonry is initiatory/constructive, not world-rejecting |
-| **[Law of One](../law-of-one/00-overview.md)** | Archons = Orion group; veil = ignorance; harvest = return to pleroma | Ra views physical experience as valuable gift, not a trap |
-| **[Buddhism](../buddhism/00-overview.md)** | Samsara = kenoma; avidya = Gnostic ignorance; liberation through knowing | Buddhism doesn't posit an evil creator -- suffering is structural, not imposed |
-| **[Vedanta](../hinduism/advaita-vedanta/00-overview.md)** | Maya = Demiurge's creation; Atman = spark; Brahman = Unknown God | Vedanta sees the world as divine play (lila), not a prison |
-| **[Meister Eckhart](../luminaries/meister-eckhart/00-overview.md)** | Gottheit beyond God = Unknown God beyond the Demiurge | Eckhart affirms creation as God's self-expression |
+| **Law of One** | Archons = Orion group; veil = ignorance; harvest = return to pleroma | Ra views physical experience as valuable gift, not a trap |
+| **Buddhism** | Samsara = kenoma; avidya = Gnostic ignorance; liberation through knowing | Buddhism doesn't posit an evil creator -- suffering is structural, not imposed |
+| **Vedanta** | Maya = Demiurge's creation; Atman = spark; Brahman = Unknown God | Vedanta sees the world as divine play (lila), not a prison |
+| **Meister Eckhart** | Gottheit beyond God = Unknown God beyond the Demiurge | Eckhart affirms creation as God's self-expression |
 
 ---
 
@@ -96,7 +96,7 @@ Gnosticism teaches that the visible world is the product of a lesser, ignorant d
 ## Open Questions
 
 - **The [Gospel of Thomas](gospel-of-thomas/00-overview.md) in depth** -- 114 sayings deserve individual analysis with parallels to canonical gospels and other traditions
-- **Sophia across traditions** -- Sophia (Gnostic), Shekinah ([Kabbalah](../kabbalah/00-overview.md)), Isis (Egyptian), Mary/Magdalene ([Christianity](../christianity/00-overview.md)), Shakti ([Hindu](../hinduism/00-overview.md)), Prakriti (Samkhya) -- the feminine divine thread the roadmap identifies as a Priority 3 topic
+- **Sophia across traditions** -- Sophia (Gnostic), Shekinah (Kabbalah), Isis (Egyptian), Mary/Magdalene ([Christianity](../christianity/00-overview.md)), Shakti (Hindu), Prakriti (Samkhya) -- the feminine divine thread the roadmap identifies as a Priority 3 topic
 - **Jung and Gnosticism** -- The *Seven Sermons to the Dead*, the Abraxas material, the *Red Book*, Gnostic roots of analytical psychology
 - **Marcion and the Two-God problem** -- Marcion's radical separation of the Hebrew God from the God of Jesus; echoes in modern Christianity
 - **Mandaean and Manichaean deep dives** -- Living Gnostic traditions that survived into the present
@@ -113,14 +113,14 @@ Marvin Meyer (*The Nag Hammadi Scriptures*, 2007), Elaine Pagels (*The Gnostic G
 
 ## Connections to Other Research
 
-- [Kabbalah](../kabbalah/00-overview.md) -- Scholem's hypothesis, Ein Sof/Unknown God, shevirat/Sophia's fall, sparks, qliphoth/archons, tikkun/return
-- [Plotinus](../luminaries/plotinus/00-overview.md) -- Enneads II.9 "Against the Gnostics," shared emanation framework, opposite conclusions about matter
-- [Hermeticism](../hermeticism/00-overview.md) -- Hermetic texts found alongside Gnostic texts at Nag Hammadi; overlapping cosmogony (Poimandres/Apocryphon of John)
+- Kabbalah -- Scholem's hypothesis, Ein Sof/Unknown God, shevirat/Sophia's fall, sparks, qliphoth/archons, tikkun/return
+- Plotinus -- Enneads II.9 "Against the Gnostics," shared emanation framework, opposite conclusions about matter
+- Hermeticism -- Hermetic texts found alongside Gnostic texts at Nag Hammadi; overlapping cosmogony (Poimandres/Apocryphon of John)
 - Freemasonry -- Pike's use of Gnostic concepts in *Morals and Dogma*; higher degree references to Gnostic schools
 - [Christianity](../christianity/00-overview.md) -- Jesus as revealer (Gnostic) vs. redeemer (Pauline); Gospel of Thomas parallels; Mary Magdalene's role
-- [Law of One](../law-of-one/00-overview.md) -- Archons/Orion group, veil/ignorance, harvest/return, but key divergence on the value of matter
-- [Meister Eckhart](../luminaries/meister-eckhart/00-overview.md) -- Gottheit beyond God = Unknown God beyond the Demiurge
-- [Perennial Philosophy](../perennial-philosophy/00-overview.md) -- Gnosticism confirms "divine spark within" and "direct knowing over belief" as cross-tradition universals, but challenges "the world is good" pattern
+- Law of One -- Archons/Orion group, veil/ignorance, harvest/return, but key divergence on the value of matter
+- Meister Eckhart -- Gottheit beyond God = Unknown God beyond the Demiurge
+- Perennial Philosophy -- Gnosticism confirms "divine spark within" and "direct knowing over belief" as cross-tradition universals, but challenges "the world is good" pattern
 
 ---
 

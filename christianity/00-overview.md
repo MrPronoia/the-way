@@ -19,7 +19,7 @@ Core questions:
 ## Quick Reference
 
 **The one-pager:** `what-jesus-actually-said.md` — The entire thesis in ~1000 words. Printable front-and-back. Every claim links to a deeper atomic note. Start here if you want the full picture in 5 minutes.
-**Unified cliff notes:** `cliff-notes-quick-reference.md` — Tradition-level overview: Kingdom within, Jesus vs. Paul (with comparison table), Essene connection, [Gospel of Thomas](../gnosticism/gospel-of-thomas/00-overview.md), [Ethiopian Bible](ethiopian-bible/00-overview.md) evidence, [Newton](../luminaries/isaac-newton/00-overview.md)'s forgery findings, cross-tradition comparison.
+**Unified cliff notes:** `cliff-notes-quick-reference.md` — Tradition-level overview: Kingdom within, Jesus vs. Paul (with comparison table), Essene connection, [Gospel of Thomas](../gnosticism/gospel-of-thomas/00-overview.md), [Ethiopian Bible](ethiopian-bible/00-overview.md) evidence, Newton's forgery findings, cross-tradition comparison.
 **Text-specific cliff notes:** `gospel-of-thomas-cliff-notes.md`, `essene-gospel-of-peace-cliff-notes.md`
 **Primary texts:** `Incoming/gospel-of-thomas-full-text.md`, `Incoming/essene-gospel-of-peace-book-1-full-text.md`
 
@@ -34,7 +34,7 @@ The actual primary source documents of the Essene community. Five key scrolls cu
 The [Ethiopian canon](ethiopian-bible/00-overview.md) — texts preserved by the Ethiopian Orthodox Church that never made it into the Western Bible. Includes 1 Enoch, Jubilees, Shepherd of Hermas, and more. These texts represent a pre-Pauline Christianity that emphasizes works, commandments, and the authority of the original Twelve.
 
 ### `vegetarian-pythagorean-jesus/`
-Research connecting Jesus's movement to the [Pythagorean](../luminaries/pythagoras/00-overview.md) vegetarian tradition. The Essenes, Pythagoreans, and early Nazarenes all practiced vegetarianism, communal living, and initiation — evidence of a shared mystery school lineage.
+Research connecting Jesus's movement to the Pythagorean vegetarian tradition. The Essenes, Pythagoreans, and early Nazarenes all practiced vegetarianism, communal living, and initiation — evidence of a shared mystery school lineage.
 
 ---
 

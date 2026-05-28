@@ -122,7 +122,7 @@ The Didache's silence on blood atonement is not an omission. It is a theological
 - [Dead Sea Scrolls Overview](dead-sea-scrolls/00-overview.md) -- Community Rule meal practices and Essene-Christian connections
 - [Dead Sea Scrolls Cliff Notes](dead-sea-scrolls/cliff-notes-quick-reference.md) -- The sacred meal (1QS 6:4-5) in context
 - [Cliff Notes Quick Reference](cliff-notes-quick-reference.md) -- Jesus vs. Paul divergence table
-- [Christianity Overview](mr-pronoia/esoteric-knowledge/christianity/00-overview.md) -- The sacrifice framing and what Jesus actually taught
+- [Christianity Overview](00-overview.md) -- The sacrifice framing and what Jesus actually taught
 
 ---
 

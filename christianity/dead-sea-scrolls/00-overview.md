@@ -38,7 +38,7 @@ The prevailing scholarly consensus, supported by Pliny the Elder, Josephus, and 
 
 **Their relationship to other Jewish groups.** The Qumran community was neither Pharisee nor Sadducee -- and they opposed both. The Pharisees they saw as compromisers ("seekers of smooth things" is a recurring insult in the scrolls). The Sadducees controlled the Temple they had rejected. The Essenes occupied a distinct position: apocalyptic, messianic, communal, ascetic, anti-sacrifice (at least in the sense of opposing the current Temple's sacrificial system), and rigidly Torah-observant according to their own stricter interpretation.
 
-Josephus, who personally investigated all three major Jewish groups, explicitly compared the Essenes to the [Pythagoreans](../../luminaries/pythagoras/00-overview.md). He described their way of life as having "a Pythagorean lifestyle" -- communal property, white garments, graduated initiation, silent meals, daily purification rituals, and belief in the immortality of the soul.
+Josephus, who personally investigated all three major Jewish groups, explicitly compared the Essenes to the Pythagoreans. He described their way of life as having "a Pythagorean lifestyle" -- communal property, white garments, graduated initiation, silent meals, daily purification rituals, and belief in the immortality of the soul.
 
 ---
 
@@ -180,7 +180,7 @@ This folder sits within a broader investigation of esoteric/historical Christian
 
 ## Connections to Other Traditions
 
-### [Zoroastrian](../../zoroaster/00-overview.md) Two Spirits --> 1QS Two Spirits
+### Zoroastrian Two Spirits --> 1QS Two Spirits
 
 The Community Rule's doctrine of the "Spirit of Truth vs. Spirit of Falsehood" (1QS 3:13-4:26) is structurally identical to Zarathustra's "Two Primal Spirits" doctrine:
 
@@ -194,7 +194,7 @@ This is not a coincidence. Persian influence on Judaism during and after the Bab
 
 See `../../zoroaster/cliff-notes-quick-reference.md` for the full Zoroastrian Two Spirits analysis.
 
-### [Pythagorean](../../luminaries/pythagoras/00-overview.md) Community Rules
+### Pythagorean Community Rules
 
 Josephus himself compared the Essenes to the Pythagoreans. The structural parallels are documented in detail:
 
@@ -213,13 +213,13 @@ Scholar Joan Taylor's *Pythagoreans and Essenes: Structural Parallels* documents
 
 See `../../luminaries/pythagoras/pythagoras-connections-to-traditions.md` (The Essene Connection section).
 
-### [Kabbalistic](../../kabbalah/00-overview.md) Mysticism
+### Kabbalistic Mysticism
 
 The Hodayot's language of mystical communion -- "the inner vision," "a spring of knowledge," "living waters," "all-embracing wisdom like the splendor of eternal light" -- anticipates the later Kabbalistic concept of devekut (cleaving to God). The Qumran community may represent an early Jewish mystical tradition that fed into both Christianity and the Kabbalistic lineage. The merkavah (divine chariot) mysticism that later became central to Kabbalah has roots in the same Second Temple Jewish milieu that produced the Dead Sea Scrolls.
 
 See `../../kabbalah/00-overview.md`.
 
-### [Hermetic](../../hermeticism/00-overview.md) Correspondence
+### Hermetic Correspondence
 
 "As above, so below" -- the War Scroll's entire framework is a cosmic battle mirrored on earth. The angelic armies fight alongside human armies. The heavenly drama and the earthly drama are the same drama playing out at different scales. This is the Hermetic Principle of Correspondence applied to apocalyptic warfare. The Essene worldview was thoroughly correspondential: what happens in heaven is reflected on earth, and the community's earthly discipline mirrors heavenly order.
 

@@ -178,7 +178,7 @@ This is not a ceiling reserved for one man. It is the floor available to every h
 - [Theosis: Closest to the Original](eastern-orthodox-theosis-closest-to-original.md) — Eastern Orthodoxy's doctrine of becoming God by participation
 - [Jesus Core Teaching Distilled](jesus-core-teaching-distilled.md) — Ten principles from Jesus's own words, none dependent on Paul
 - [Gospel of Thomas Cliff Notes](gospel-of-thomas-cliff-notes.md) — Full analysis of all 114 sayings
-- [Perennial Philosophy Overview](../perennial-philosophy/00-overview.md) — Cross-tradition patterns on divine unity and the divine within
+- Perennial Philosophy Overview — Cross-tradition patterns on divine unity and the divine within
 
 ---
 

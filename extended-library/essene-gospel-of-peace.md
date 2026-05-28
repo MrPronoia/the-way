@@ -126,15 +126,15 @@ Here is where it gets interesting. While the Essene Gospel itself is almost cert
 
 | Essene Gospel Concept | Parallel | Tradition |
 |----------------------|----------|-----------|
-| Earthly Mother + Heavenly Father | Shiva (consciousness) + Shakti (creative nature) | [Hinduism](../esoteric-knowledge/hinduism/00-overview.md) (Kashmir Shaivism) |
-| The body as temple that must be honored | "Your body is a temple of the Holy Spirit" (1 Corinthians 6:19) | [Christianity](../esoteric-knowledge/christianity/00-overview.md) |
-| Healing through the four elements (air, water, sun, earth) | Panchamahabhutas -- five elements as the basis of health and disease | [Ayurveda](../esoteric-knowledge/ayurveda/00-overview.md) |
-| Fasting as purification | Panchakarma (seasonal cleansing); Upavasa (therapeutic fasting) | [Ayurveda](../esoteric-knowledge/ayurveda/00-overview.md) |
-| Disease as consequence of violating natural law | Dosha imbalance from violating Ritucharya (seasonal living) | [Ayurveda](../esoteric-knowledge/ayurveda/00-overview.md) |
-| "The superior physician prevents disease" through alignment with nature | Preventive medicine as highest medicine | [TCM](../esoteric-knowledge/traditional-chinese-medicine/00-overview.md) |
-| Living food (raw, uncooked) as spiritually superior | Sattvic diet -- fresh, light, natural foods elevate consciousness | [Hinduism](../esoteric-knowledge/hinduism/00-overview.md) (Bhagavad Gita) |
-| "As above, so below" -- body mirrors cosmos | Microcosm/macrocosm doctrine | [Hermeticism](../esoteric-knowledge/hermeticism/00-overview.md), [Ayurveda](../esoteric-knowledge/ayurveda/00-overview.md), [TCM](../esoteric-knowledge/traditional-chinese-medicine/00-overview.md) |
-| Sophia / Feminine Divine as co-equal | Shekinah (Kabbalah), Sophia (Gnosticism), Shakti (Hinduism) | [Perennial Philosophy](../esoteric-knowledge/perennial-philosophy/00-overview.md) (feminine divine thread) |
+| Earthly Mother + Heavenly Father | Shiva (consciousness) + Shakti (creative nature) | Hinduism (Kashmir Shaivism) |
+| The body as temple that must be honored | "Your body is a temple of the Holy Spirit" (1 Corinthians 6:19) | [Christianity](../christianity/00-overview.md) |
+| Healing through the four elements (air, water, sun, earth) | Panchamahabhutas -- five elements as the basis of health and disease | Ayurveda |
+| Fasting as purification | Panchakarma (seasonal cleansing); Upavasa (therapeutic fasting) | Ayurveda |
+| Disease as consequence of violating natural law | Dosha imbalance from violating Ritucharya (seasonal living) | Ayurveda |
+| "The superior physician prevents disease" through alignment with nature | Preventive medicine as highest medicine | TCM |
+| Living food (raw, uncooked) as spiritually superior | Sattvic diet -- fresh, light, natural foods elevate consciousness | Hinduism (Bhagavad Gita) |
+| "As above, so below" -- body mirrors cosmos | Microcosm/macrocosm doctrine | Hermeticism, Ayurveda, TCM |
+| Sophia / Feminine Divine as co-equal | Shekinah (Kabbalah), Sophia (Gnosticism), Shakti (Hinduism) | Perennial Philosophy (feminine divine thread) |
 
 ---
 

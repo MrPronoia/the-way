@@ -86,7 +86,7 @@ Isaac Newton -- arguably the greatest scientific mind in Western history -- spen
 
 **1 John 5:7-8 -- The Comma Johanneum.** The clause "the Father, the Word, and the Holy Ghost: and these three are one" does not appear in any early Greek manuscript. It was inserted centuries after the original text was written. Newton's argument: "In all the vehement universal and lasting controversy about the Trinity in Jerome's time and both before and long enough after it, this text of the 'three in heaven' was never once thought of." If this verse had existed during the Council of Nicaea in 325 CE, it would have been the single most powerful argument for the Trinity. It was never cited -- because it was not there yet. Modern textual scholarship unanimously confirms Newton's finding: the Comma Johanneum is absent from all Greek manuscripts before the sixteenth century.
 
-For Newton's full esoteric and theological profile, see the [Isaac Newton overview](../luminaries/isaac-newton/00-overview.md). For these forgeries in the context of broader textual corruption, see the [Cliff Notes Quick Reference](cliff-notes-quick-reference.md).
+For Newton's full esoteric and theological profile, see the Isaac Newton overview. For these forgeries in the context of broader textual corruption, see the [Cliff Notes Quick Reference](cliff-notes-quick-reference.md).
 
 ### Scholarly Support
 
@@ -131,10 +131,10 @@ The pattern is consistent: the mystical core of every major tradition teaches th
 
 ## See Also
 
-- [Isaac Newton -- Theological Writings](../luminaries/isaac-newton/00-overview.md) -- Newton's anti-Trinitarian scholarship and textual criticism
+- Isaac Newton -- Theological Writings -- Newton's anti-Trinitarian scholarship and textual criticism
 - [Cliff Notes Quick Reference](cliff-notes-quick-reference.md) -- Textual forgeries section with Newton's findings in context
-- [The Paul Problem](../../../docs/jesus/the-paul-problem.md) -- How Paul's theology diverged from Jesus's teachings
-- [Perennial Philosophy](../perennial-philosophy/00-overview.md) -- Cross-tradition patterns on divine unity
+- [The Paul Problem](../jesus-site-reference/source/docs/the-paul-problem.md) -- How Paul's theology diverged from Jesus's teachings
+- Perennial Philosophy -- Cross-tradition patterns on divine unity
 
 ---
 

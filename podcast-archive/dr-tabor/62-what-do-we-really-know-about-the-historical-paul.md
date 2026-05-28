@@ -97,8 +97,6 @@ This is the same split #10 develops in long form. In #62 it's just the labeled b
 ## Connection to Other Research
 
 - **[#10 What Do We REALLY Know About Paul and How Do We Know It?](10-what-do-we-really-know-about-paul-and-how-do-we-know-it.md)** — The **long companion** to this short. The two-hour conversation with Christopher Enoch that develops the source-hierarchy method, the Gish/Tarsus biography, the apocalyptic-celibacy reading of 1 Cor 7, Mark-as-Pauline-gospel, and the "what would Paul say today?" coda. If #62 is the course brochure, #10 is the first lecture.
-- **[#57 The Quest for the Historical Paul: Apostle or Apostate?](57-the-quest-for-the-historical-paul-apostle-or-apostate.md)** — The companion deep-dive video that shares the course's title. Treats the apostle-vs-apostate question directly rather than as promotional framing.
-- **[#32 Was Paul a False Apostle? (Deconstructing Paul)](32-was-paul-a-false-apostle-deconstructing-paul.md)** — Tabor's most direct engagement with the "Paul as apostate" side of the polarization this video names.
 - **`christianity/paul-false-prophet-deuteronomy-18-test.md`** — Cross-tradition research file applying the Deuteronomy 18 prophetic-test framework to Paul's failed parousia predictions, which is one of the specific grievances Tabor names here as a reason some Christians "intensely dislike" Paul.
 
 ---

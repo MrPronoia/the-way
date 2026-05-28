@@ -119,8 +119,8 @@ The concern about false prophets and self-appointed spiritual authorities is not
 
 ## See Also
 
-- [Paul vs. The Twelve](../../../docs/jesus/paul-vs-the-twelve.md) -- Paul's conflicts with the original apostles
-- [The Paul Problem](../../../docs/jesus/the-paul-problem.md) -- The core divergence between Jesus and Paul
+- [Paul vs. The Twelve](../jesus-site-reference/source/docs/paul-vs-the-twelve.md) -- Paul's conflicts with the original apostles
+- [The Paul Problem](../jesus-site-reference/source/docs/the-paul-problem.md) -- The core divergence between Jesus and Paul
 - [Cliff Notes Quick Reference](cliff-notes-quick-reference.md) -- Full Christianity overview including the Jesus vs. Paul thesis
 
 ---

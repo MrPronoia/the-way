@@ -245,7 +245,7 @@ Tabor mentions the 2024 American election and Project 2025 explicitly: "half the
 ## Connection to Other Research
 
 **Tabor playlist cross-links:**
-- **[#02 — Tabor on the Tarot of Paul / authentic Paul](02-*.md)** — earlier source-hierarchy treatment; the four-tier method appears in nascent form.
+- **[#02 — How Paul Created Christianity (His Misappropriation of Four Hebrew Bible Texts)](02-how-paul-created-christianity--his-misappropriation-of-four-hebrew-bible-texts.md)** — earlier source-hierarchy treatment; the four-tier method appears in nascent form.
 - **[#05 — Understanding the Apostle Paul: A Two Hour Conversation](05-understanding-the-apostle-paul-a-two-hour-conversation.md)** — the long-form theological deep-dive on Paul's cosmic salvation gospel; complement to this course-launch interview.
 - **[#10 — What Do We Really Know About Paul and How Do We Know It?](10-what-do-we-really-know-about-paul-and-how-do-we-know-it.md)** — the comprehensive biographical / methodological session. The source-hierarchy method is laid out most fully there.
 - **#41 / #62** — further Pauline overview sessions where Tabor revisits these themes with different interviewers.

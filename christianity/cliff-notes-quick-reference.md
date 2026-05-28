@@ -102,7 +102,7 @@ When directly asked "What must I do to inherit eternal life?", Jesus did not say
 
 ---
 
-## What Esoteric Christianity Contributes to the [Perennial Philosophy](../perennial-philosophy/00-overview.md)
+## What Esoteric Christianity Contributes to the Perennial Philosophy
 
 | Concept | Christian Teaching (Jesus, Not Paul) | What It Uniquely Adds |
 |---------|--------------------------------------|----------------------|
@@ -118,7 +118,7 @@ When directly asked "What must I do to inherit eternal life?", Jesus did not say
 
 ## Cross-Tradition Comparison
 
-| Christian Concept (Jesus) | [Hermetic](../hermeticism/00-overview.md) | [Kabbalistic](../kabbalah/00-overview.md) | [Sufi](../islam/sufism/00-overview.md) | [Vedantic](../hinduism/advaita-vedanta/00-overview.md) | [Buddhist](../buddhism/00-overview.md) | [Law of One](../law-of-one/00-overview.md) |
+| Christian Concept (Jesus) | Hermetic | Kabbalistic | Sufi | Vedantic | Buddhist | Law of One |
 |--------------------------|----------|-------------|------|----------|----------|------------|
 | Kingdom within you (Thomas 3, Luke 17:21) | "As within, so without" (Emerald Tablet) | Ein Sof within every soul | "I was a hidden treasure" (Hadith Qudsi) | "Tat Tvam Asi" -- Thou art That | Buddha-nature in all beings | "The Creator is within" (Ra, Session 10) |
 | Self-knowledge = God-knowledge | "Know thyself" (Hermetic commandment) | Da'at -- direct experiential knowing | Ma'rifa -- gnosis of the heart | Atma-jnana -- Self-realization | Prajna -- liberating wisdom | "You are the Creator experiencing itself" |
@@ -159,7 +159,7 @@ The Ethiopian Orthodox canon (81 books) preserves a Christianity that branched o
 
 ### The Textual Forgeries
 
-Two key Trinitarian proof-texts in the Western Bible were proven to be fabrications -- by [Isaac Newton](../luminaries/isaac-newton/00-overview.md) himself, in his manuscript *An Historical Account of Two Notable Corruptions of Scripture* (kept secret because anti-Trinitarianism was illegal in his time):
+Two key Trinitarian proof-texts in the Western Bible were proven to be fabrications -- by Isaac Newton himself, in his manuscript *An Historical Account of Two Notable Corruptions of Scripture* (kept secret because anti-Trinitarianism was illegal in his time):
 
 **1 Timothy 3:16 -- the altered verse.** The original Greek read OC ("who was manifest in the flesh"). A single horizontal stroke was added to change it to ΘC ("God was manifest in the flesh" -- ΘΣ being the abbreviation for Theos/God). One pen stroke turned a verse about a person appearing in human form into a declaration that Jesus IS God. Newton's words: *"The word 'God' was not in this text originally... The reading 'God was manifest in the flesh' was changed from 'who was manifest in the flesh' -- and the change was deliberate."*
 
@@ -205,7 +205,7 @@ The biblical test for a false prophet (Deuteronomy 18:21-22): if what a prophet 
 - Elaine Pagels, *Beyond Belief: The Secret Gospel of Thomas* (2003)
 - April DeConick, *The Original Gospel of Thomas in Translation* (2006)
 - Helmut Koester -- Thomas as independent early tradition
-- [Isaac Newton](../luminaries/isaac-newton/00-overview.md), *An Historical Account of Two Notable Corruptions of Scripture* (written c. 1690, published posthumously 1754)
+- Isaac Newton, *An Historical Account of Two Notable Corruptions of Scripture* (written c. 1690, published posthumously 1754)
 - Hegesippus -- 2nd century historian, source for James the Just's vegetarianism
 - Eusebius -- 4th century church historian, Flight to Pella, apostolic diet
 - Epiphanius -- 4th century heresiologist, Nazarene sect documentation

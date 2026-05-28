@@ -104,7 +104,7 @@ Don't take our word for any of this. The texts are available. The translations e
 
 ---
 
-![Scan for the full interactive version with sources and deep dives](../../docs/images/qr-one-pager.png){ width=120px }
+**Scan or visit for the full interactive version with sources and deep dives:**
 
 **mrpronoia.com/jesus**
 

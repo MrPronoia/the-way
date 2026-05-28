@@ -16,7 +16,7 @@ Gnosticism is the version of Christianity that lost. For the first three centuri
 
 In 367 CE, Bishop Athanasius of Alexandria issued his famous Easter letter listing the 27 books of the New Testament — the first time anyone defined the canon we know today. Everything else was to be excluded from use — and many scholars believe this campaign led to the destruction or hiding of alternative texts. Somewhere near Nag Hammadi in Upper Egypt, someone buried a sealed jar containing 52 texts in 13 leather-bound codices rather than burn them. That jar sat underground for 1,600 years until a farmer found it in 1945. Inside was an entirely different Christianity: the Gospel of Thomas (114 sayings of Jesus with no crucifixion, no resurrection, no atonement), the Apocryphon of John (a complete alternative cosmology), the Gospel of Philip (the Holy Spirit as feminine, Mary Magdalene as the primary disciple), and dozens more.
 
-What makes this matter for the perennial philosophy is that Gnosticism sits at the exact intersection of Judaism, Christianity, Greek philosophy, and Egyptian religion. It shares its emanation cosmology with [Kabbalah](../kabbalah/00-overview.md) and [Neoplatonism](../luminaries/plotinus/00-overview.md). Its concept of the divine spark matches [Vedanta](../hinduism/advaita-vedanta/00-overview.md)'s Atman, Kabbalah's nitzotzot, and [Eckhart](../luminaries/meister-eckhart/00-overview.md)'s Seelenfunklein. Its insistence on direct knowing over belief aligns with every mystical tradition in this repo. And its central claim — that an ignorant creator keeps humanity asleep through systems of control — is either the most paranoid theology ever devised or the most honest.
+What makes this matter for the perennial philosophy is that Gnosticism sits at the exact intersection of Judaism, Christianity, Greek philosophy, and Egyptian religion. It shares its emanation cosmology with Kabbalah and Neoplatonism. Its concept of the divine spark matches Vedanta's Atman, Kabbalah's nitzotzot, and Eckhart's Seelenfunklein. Its insistence on direct knowing over belief aligns with every mystical tradition in this repo. And its central claim — that an ignorant creator keeps humanity asleep through systems of control — is either the most paranoid theology ever devised or the most honest.
 
 ---
 
@@ -26,7 +26,7 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 *"It is not corporeal. It is not incorporeal. It is not large. It is not small. It is not a quantity. It is not a creature. No one can think of it. It is not something among existing things, but something far superior."* — Apocryphon of John
 
-**The true God is so far beyond anything we can name that even calling it "God" is already wrong.** The Monad — the Invisible Spirit, Bythos (Depth), the Unknown Father — cannot be described, only pointed toward through negation. Not this. Not that. Not even "being," because being is a category and the Monad transcends categories. This is negative theology (apophatic theology) at its most radical. It matches Ein Sof in [Kabbalah](../kabbalah/00-overview.md), The One in [Plotinus](../luminaries/plotinus/00-overview.md), Nirguna Brahman in [Vedanta](../hinduism/advaita-vedanta/00-overview.md), and Intelligent Infinity in the [Law of One](../law-of-one/00-overview.md). The point is the same everywhere: the ultimate reality is beyond the reach of language.
+**The true God is so far beyond anything we can name that even calling it "God" is already wrong.** The Monad — the Invisible Spirit, Bythos (Depth), the Unknown Father — cannot be described, only pointed toward through negation. Not this. Not that. Not even "being," because being is a category and the Monad transcends categories. This is negative theology (apophatic theology) at its most radical. It matches Ein Sof in Kabbalah, The One in Plotinus, Nirguna Brahman in Vedanta, and Intelligent Infinity in the Law of One. The point is the same everywhere: the ultimate reality is beyond the reach of language.
 
 ### 2. The Demiurge — The God Who Thinks He Is God
 
@@ -38,7 +38,7 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 *"She wanted to bring forth a likeness out of herself without the consent of the Spirit — it had not approved — and without her consort, and without his consideration."* — Apocryphon of John
 
-**The material world exists because Wisdom made a mistake.** Sophia (Wisdom), one of the highest aeons in the divine Pleroma, acted alone — without her consort, without divine approval — and produced something deformed: the Demiurge. This is the Gnostic "original sin," but it happens at the cosmic level, not the human level. Creation is not the result of divine intention but of divine error. The parallel to [Kabbalah](../kabbalah/00-overview.md)'s Shevirat HaKelim (Shattering of the Vessels) is striking — in both systems, something goes wrong in the emanation process, and the task becomes gathering what was scattered.
+**The material world exists because Wisdom made a mistake.** Sophia (Wisdom), one of the highest aeons in the divine Pleroma, acted alone — without her consort, without divine approval — and produced something deformed: the Demiurge. This is the Gnostic "original sin," but it happens at the cosmic level, not the human level. Creation is not the result of divine intention but of divine error. The parallel to Kabbalah's Shevirat HaKelim (Shattering of the Vessels) is striking — in both systems, something goes wrong in the emanation process, and the task becomes gathering what was scattered.
 
 ### 4. The Divine Spark (Pneuma)
 
@@ -46,13 +46,13 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 *"If a pearl is cast down into mud, it is not thereby held in less esteem."* — Gospel of Philip
 
-**You are not your body. You are a fragment of the true God, smuggled into a prison you did not build.** When the Demiurge's archons created the human body, they could not animate it — until the divine realm tricked Yaldabaoth into breathing his stolen light into Adam, planting a spark of the true God inside every human. The archons do not know it is there. The spark is your real identity — untouched by circumstances, undiminished by the mud of material existence. This maps directly to Atman ([Vedanta](../hinduism/advaita-vedanta/00-overview.md)), nitzotzot ([Kabbalah](../kabbalah/00-overview.md)), Seelenfunklein ([Eckhart](../luminaries/meister-eckhart/00-overview.md)), and the sub-sub-Logos ([Law of One](../law-of-one/00-overview.md)).
+**You are not your body. You are a fragment of the true God, smuggled into a prison you did not build.** When the Demiurge's archons created the human body, they could not animate it — until the divine realm tricked Yaldabaoth into breathing his stolen light into Adam, planting a spark of the true God inside every human. The archons do not know it is there. The spark is your real identity — untouched by circumstances, undiminished by the mud of material existence. This maps directly to Atman (Vedanta), nitzotzot (Kabbalah), Seelenfunklein (Eckhart), and the sub-sub-Logos (Law of One).
 
 ### 5. The Archons — The Rulers Who Keep You Asleep
 
 *"They enclosed him in the shadow of death. They enclosed him in a body of matter, in the bond of forgetfulness."* — Apocryphon of John
 
-**The system is designed to keep you from remembering who you are.** The archons are cosmic rulers who serve the Demiurge and maintain the prison of ignorance. They did not just build the cage — they installed forgetfulness as a feature. You are born not knowing you carry a divine spark, and everything in the material system is structured to keep it that way. This parallels the [Kabbalistic](../kabbalah/00-overview.md) qliphoth (shells that trap the sparks), the [Law of One](../law-of-one/00-overview.md)'s Orion group (service-to-self entities that maintain the veil), and in a structural sense, the [Buddhist](../buddhism/00-overview.md) concept of samsara as a self-reinforcing cycle of ignorance.
+**The system is designed to keep you from remembering who you are.** The archons are cosmic rulers who serve the Demiurge and maintain the prison of ignorance. They did not just build the cage — they installed forgetfulness as a feature. You are born not knowing you carry a divine spark, and everything in the material system is structured to keep it that way. This parallels the Kabbalistic qliphoth (shells that trap the sparks), the Law of One's Orion group (service-to-self entities that maintain the veil), and in a structural sense, the Buddhist concept of samsara as a self-reinforcing cycle of ignorance.
 
 ### 6. Gnosis — Knowing, Not Believing
 
@@ -60,13 +60,13 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 *"Whoever finds the interpretation of these sayings will not experience death."* — Gospel of Thomas, Saying 1
 
-**Gnosticism does not ask you to believe. It asks you to know.** The Greek word *gnosis* does not mean intellectual knowledge — it means direct, experiential, transformative knowing. You do not learn it from a book or receive it from a priest. It is the moment of recognition: *I am not this body. I am not this world. I am a spark of the infinite, and I remember where I came from.* This is identical to [Vedanta](../hinduism/advaita-vedanta/00-overview.md)'s *jnana* (salvific knowledge), [Plotinus](../luminaries/plotinus/00-overview.md)'s *henosis* (mystical union through knowing), and [Kashmir Shaivism](../hinduism/kashmir-shaivism/00-overview.md)'s *pratyabhijna* (recognition). Every mystical tradition in this repo agrees that direct knowing trumps secondhand belief. Gnosticism just makes it the entire system.
+**Gnosticism does not ask you to believe. It asks you to know.** The Greek word *gnosis* does not mean intellectual knowledge — it means direct, experiential, transformative knowing. You do not learn it from a book or receive it from a priest. It is the moment of recognition: *I am not this body. I am not this world. I am a spark of the infinite, and I remember where I came from.* This is identical to Vedanta's *jnana* (salvific knowledge), Plotinus's *henosis* (mystical union through knowing), and Kashmir Shaivism's *pratyabhijna* (recognition). Every mystical tradition in this repo agrees that direct knowing trumps secondhand belief. Gnosticism just makes it the entire system.
 
 ### 7. The Pleroma — The Fullness Above
 
 *"She appeared before it in the shine of its light. This is the first power that was before all of them... the Forethought of the All."* — Apocryphon of John (on Barbelo)
 
-**Above the broken world of the Demiurge, there is a realm of total divine fullness.** The Pleroma is the "home" of the divine spark — the realm of light populated by aeons (eternal divine beings) that emanate from the Monad. The opposite of the Pleroma is the Kenoma — the deficiency, the emptiness, the material world we inhabit. The entire Gnostic drama is about the spark finding its way back from Kenoma to Pleroma. This maps to [Kabbalah](../kabbalah/00-overview.md)'s four worlds (Atziluth as the divine realm, Assiah as the material), to [Plotinus](../luminaries/plotinus/00-overview.md)'s hierarchy (Nous/Matter), and to the [Law of One](../law-of-one/00-overview.md)'s time-space/space-time distinction.
+**Above the broken world of the Demiurge, there is a realm of total divine fullness.** The Pleroma is the "home" of the divine spark — the realm of light populated by aeons (eternal divine beings) that emanate from the Monad. The opposite of the Pleroma is the Kenoma — the deficiency, the emptiness, the material world we inhabit. The entire Gnostic drama is about the spark finding its way back from Kenoma to Pleroma. This maps to Kabbalah's four worlds (Atziluth as the divine realm, Assiah as the material), to Plotinus's hierarchy (Nous/Matter), and to the Law of One's time-space/space-time distinction.
 
 ### 8. The Six Major Schools
 
@@ -102,7 +102,7 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 ---
 
-## What Gnosticism Contributes to the [Perennial Philosophy](../perennial-philosophy/00-overview.md)
+## What Gnosticism Contributes to the Perennial Philosophy
 
 | Concept | Gnostic Teaching | What It Uniquely Adds |
 |---------|-----------------|----------------------|
@@ -117,7 +117,7 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 ## Cross-Tradition Comparison
 
-| Gnostic Concept | [Kabbalistic](../kabbalah/00-overview.md) | [Hermetic](../hermeticism/00-overview.md) | [Christian](../christianity/00-overview.md) (Orthodox) | [Vedic/Hindu](../hinduism/00-overview.md) | [Law of One](../law-of-one/00-overview.md) |
+| Gnostic Concept | Kabbalistic | Hermetic | [Christian](../christianity/00-overview.md) (Orthodox) | Vedic/Hindu | Law of One |
 |----------------|-------------|----------|---------------------|-------------|------------|
 | Unknown God / Monad | Ein Sof (the Infinite) | The All / The One | God the Father | Nirguna Brahman | Intelligent Infinity |
 | Demiurge (Yaldabaoth) | — (no ignorant creator) | — (cosmos is a living god) | God the Creator (same being as the true God) | Maya's creative aspect | Sub-Logos (but not ignorant) |
@@ -140,7 +140,7 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 
 **The Gospel of Philip is the hardest.** It is not a narrative — it is a damaged notebook of theological reflections. Read it in chunks, not straight through. The best passages are on truth in types and images, the bridal chamber, Mary Magdalene, and the pearl in the mud.
 
-**Keep the cross-tradition lens active.** These texts become exponentially richer when you read them alongside [Kabbalah](../kabbalah/00-overview.md) (Ein Sof, the sparks, the shattering), [Neoplatonism](../luminaries/plotinus/00-overview.md) (the One, emanation, the soul's return), and [Hermeticism](../hermeticism/00-overview.md) (the Poimandres cosmogony closely parallels the Apocryphon of John). The connections are not coincidental — these traditions shared the same Alexandrian intellectual milieu in the 1st-3rd centuries CE.
+**Keep the cross-tradition lens active.** These texts become exponentially richer when you read them alongside Kabbalah (Ein Sof, the sparks, the shattering), Neoplatonism (the One, emanation, the soul's return), and Hermeticism (the Poimandres cosmogony closely parallels the Apocryphon of John). The connections are not coincidental — these traditions shared the same Alexandrian intellectual milieu in the 1st-3rd centuries CE.
 
 **Remember what was at stake.** These texts were buried because possessing them could get you killed. Someone in the 4th century CE risked everything to preserve them rather than let them be destroyed. Sixteen centuries later, they resurfaced. Read them with that weight.
 
@@ -160,4 +160,4 @@ What makes this matter for the perennial philosophy is that Gnosticism sits at t
 - Karen King, *What Is Gnosticism?* (2003) — the category critique
 - Birger Pearson, *Ancient Gnosticism* (2007) — up-to-date scholarly treatment
 - David Brakke, *The Gnostics* (2010) — recent synthesis
-- Gershom Scholem, *Jewish Gnosticism, Merkabah Mysticism, and Talmudic Tradition* (1960) — the [Kabbalah](../kabbalah/00-overview.md)-Gnosticism connection
+- Gershom Scholem, *Jewish Gnosticism, Merkabah Mysticism, and Talmudic Tradition* (1960) — the Kabbalah-Gnosticism connection
