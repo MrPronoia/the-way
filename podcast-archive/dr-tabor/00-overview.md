@@ -263,8 +263,7 @@ This archive is the deepest single-author treatment of Paul in `the-way`. It con
 - **File naming:** `NN-slugified-title.md` matching the playlist position (#1-77). Special case: `28-...-v2.md` is a stub for the playlist-duplicate of #19.
 - **File structure:** Header block → `---` → Summary → Key Teachings → Scripture Citations → Historical Sources & Scholars Cited → Quotable Moments → Misconceptions Addressed (where applicable) → Connection to Other Research → Books & Resources Mentioned → Full Transcript (raw, at the bottom). The same template used by `podcast-archive/the-jesus-way/` episodes.
 - **Cross-link convention:** Within this folder, files reference each other by filename (e.g., `08-...md`). Outside this folder, links use repo-relative paths (e.g., `christianity/blood-atonement-logical-incoherence.md`).
-- **Scripts in this folder** (hidden dotfiles): `.scrape-transcripts.py` (Apify scraper), `.scrape-via-ytdlp.py` (yt-dlp fallback), `.append-transcripts.py` (idempotent transcript-append helper), `.audit.py` (structural audit), `.migrate-existing.py` (one-time migration), plus TSVs of video lists.
-- **`.raw/`** subfolder: transient — intermediate scratch space used during the scrape→synthesize pipeline. Empty in the steady state.
+- **Build tooling:** the scrape/synthesize pipeline (Apify + yt-dlp scrapers, transcript-append helper, structural audit, one-time migration script) plus scratch TSVs and a `.raw/` working folder were used to build this archive. They were **removed from the shared repo** as operational clutter — the synthesized `.md` notes are the deliverable. The scripts remain in local/upstream history if a re-scrape is ever needed.
 - **Updates:** When new Tabor content is added to the playlist (or new related content emerges), add the file following the same template and update this overview's thematic groupings. The synthesis pattern is documented by the existing #01 and #02 examples.
 
 ## Project Provenance
@@ -276,4 +275,4 @@ The 77-file synthesis was produced over two sessions (2026-05-20 / 2026-05-21) u
 - **Parallel general-purpose subagents** for the remaining 73 videos, in batches of 5
 - **Phase 4 quality review** (2026-05-22): automated structural audit + 8 parallel content-review subagents flagging hallucinated quotes, broken cross-links, and tonal drift. 11 issues fixed across 9 files.
 
-Total budget: $0.44 Apify spend + Claude API tokens. Subagent retries occasionally overwrote files post-append (the `.append-transcripts.py` script is idempotent to handle this — just re-run after any retry).
+Total budget: $0.44 Apify spend + Claude API tokens. Subagent retries occasionally overwrote files post-append; the append tooling (since removed from this repo) was idempotent to handle that.
