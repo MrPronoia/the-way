@@ -1,6 +1,11 @@
-# podcast-archive — The Jesus Way
+# podcast-archive
 
-Raw working transcripts from The Jesus Way podcast (Rex + Matt). 50+ episodes, ~12 MB.
+Raw working transcripts and synthesized research notes from two sources:
+
+- **`the-jesus-way/`** — The Jesus Way podcast (Rex + Matt). 52 episodes, ~12 MB. Documented in detail below.
+- **`dr-tabor/`** — Dr. James Tabor's "Paul" YouTube playlist: 77 videos synthesized into structured notes (summary, key teachings, scripture citations, scholars cited, quotable moments, plus the full raw transcript per file). See **`dr-tabor/00-overview.md`** for its thematic index and project notes.
+
+The rest of this file documents the **The Jesus Way** archive.
 
 ---
 
@@ -70,7 +75,7 @@ Episodes are numbered. The numbering reflects production order (some early episo
 | 042 | Spiritual Benefits of Fat Loss | 91 KB |
 | 043 | Minister of Wellness — Church of Satan | 103 KB |
 | 044 | Three Forgotten Nazarene Practices | 126 KB |
-| 045 | Three Temples Unlock Christ Consciousness | 10 KB *(short — possibly stub)* |
+| 045 | Three Temples Unlock Christ Consciousness | 10 KB *(short synthesis)* |
 | 046 | James Rejected Paul — Scriptural Proof | 183 KB |
 | 047 | Jesus Died Because of Sins | 93 KB |
 | 048 | What Really Happened at Resurrection | 172 KB |
@@ -79,7 +84,7 @@ Episodes are numbered. The numbering reflects production order (some early episo
 | 051 | Was Jesus Jacked? Fitness & Self-Mastery | 86 KB |
 | 052 | How Jesus Healed — Scalar Energy | 51 KB |
 
-**Other files in this folder:**
+**Other files in `the-jesus-way/`:**
 - `00-overview.md` — Notes on the podcast as a whole
 - `TRANSCRIPT-STATUS.md` — Tracking which episodes have been transcribed
 - `transcript-datasets.json` — Metadata for the transcription pipeline

@@ -39,6 +39,8 @@ A record of where the content in this repo came from, what was copied, what was 
 | `.github/workflows/deploy-site.yml`                      | `jesus-site-reference/deploy-workflow/deploy-site.yml`   | Snapshot of the deploy workflow                                                                                                                                                                      |
 | `private/the-jesus-way/`                                 | `podcast-archive/the-jesus-way/`                         | 50+ episode raw transcripts (script `_pull_transcripts.py` and `temp-transcript.txt` excluded)                                                                                                       |
 
+> **Note:** The `luminaries/`, `cross-traditions/perennial-philosophy/`, `cross-traditions/hermeticism/`, `cross-traditions/law-of-one/`, and two `extended-library/` rows above were copied at assembly but **removed on 2026-05-18** to tighten scope — see "Scope Refinement — 2026-05-18" below. `cross-traditions/gnosticism/` was kept and promoted to top-level `gnosticism/`.
+
 ---
 
 ## Explicitly Excluded
@@ -123,6 +125,17 @@ After initial assembly, Matt reviewed the repo and decided several folders were 
 **Result:** Repo dropped from ~22 MB / ~250 files to ~19 MB / fewer files. Tighter scope, cleaner focus.
 
 The deletions are in git history (initial commit `f...` includes everything), so if Matt ever changes his mind about wanting Eckhart or the perennial-philosophy material here, it's recoverable. But the default going forward: The Way stays Jesus-focused.
+
+---
+
+## Added After Assembly — Dr. Tabor Paul Playlist (2026-05-20/21)
+
+Unlike everything above (copied from `mr-pronoia` at assembly), `podcast-archive/dr-tabor/` was produced **natively in `the-way`** after the initial snapshot. It is synthesized research notes for Dr. James Tabor's public "Paul" YouTube playlist — 77 videos.
+
+- **Source:** public YouTube playlist `PLIRNAKj50kutJrPDYUnC_CJhGPvcEz8rv`
+- **Method:** transcripts scraped via Apify (`starvibe/youtube-video-transcript`, videos #1–45) and yt-dlp (#46–77), then synthesized into per-video notes (summary, key teachings, scripture citations, scholars cited, quotable moments, full raw transcript). Phase-4 content review 2026-05-22.
+- **Not in mr-pronoia:** this archive is currently unique to `the-way`. If it should also live upstream, propagate it manually (per the no-auto-sync policy above).
+- See `podcast-archive/dr-tabor/00-overview.md` for the full thematic index and project notes.
 
 ---
 

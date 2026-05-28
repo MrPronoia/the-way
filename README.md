@@ -39,10 +39,11 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | Public-facing intro pages (English & Spanish) | `jesus-site-reference/source/docs/start-here.md` |
 | Primary texts (Gospel of Thomas, Essene Gospel of Peace, Dead Sea Scrolls, Ethiopian Bible) | `christianity/Incoming/`, `christianity/dead-sea-scrolls/`, `christianity/ethiopian-bible/`, `extended-library/essene-gospel-of-peace.md` |
 | The Paul problem | `christianity/paul-false-prophet-deuteronomy-18-test.md`, plus the jesus-site `the-paul-problem.md` |
-| Rapture deconstruction | `christianity/darby-dispensationalism-deep-dive.md` |
+| Rapture deconstruction | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` |
 | The Gnostic gospels (Thomas, Philip, Nag Hammadi) | `gnosticism/` |
 | The published website source | `jesus-site-reference/` |
-| The Jesus Way podcast raw transcripts | `podcast-archive/` |
+| The Jesus Way podcast raw transcripts | `podcast-archive/the-jesus-way/` |
+| Dr. James Tabor's "Paul" playlist, synthesized (77 videos) | `podcast-archive/dr-tabor/` |
 
 A more detailed reading guide is in `00-OVERVIEW.md`.
 
@@ -82,9 +83,10 @@ the-way/
 │   ├── cloudflare-worker/  ← The proxy that serves jesusactuallysaid.com
 │   └── deploy-workflow/    ← The GitHub Action that builds + publishes
 │
-└── podcast-archive/        ← The Jesus Way podcast raw transcripts
+└── podcast-archive/        ← Raw transcripts + synthesized research notes (working material)
     ├── README.md
-    └── the-jesus-way/      ← 50+ episodes (raw working transcripts, not polished)
+    ├── the-jesus-way/      ← The Jesus Way podcast (Rex + Matt) — 52 episodes, raw transcripts
+    └── dr-tabor/           ← Dr. James Tabor's "Paul" YouTube playlist — 77 videos, synthesized
 ```
 
 ---
