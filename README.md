@@ -80,8 +80,7 @@ the-way/
 │   ├── README.md
 │   ├── HOW-ITS-BUILT.md    ← Architecture explainer
 │   ├── source/             ← The MkDocs site source (17 EN + 17 ES pages)
-│   ├── cloudflare-worker/  ← The proxy that serves jesusactuallysaid.com
-│   └── deploy-workflow/    ← The GitHub Action that builds + publishes
+│   └── cloudflare-worker/  ← The proxy that serves jesusactuallysaid.com
 │
 └── podcast-archive/        ← Raw transcripts + synthesized research notes (working material)
     ├── README.md

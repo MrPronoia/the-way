@@ -41,9 +41,11 @@ This pattern — "dedicated domain via Cloudflare Worker proxy" — is reusable.
 
 ---
 
-### 2. The Deploy Workflow (`deploy-workflow/deploy-site.yml`)
+### 2. The Deploy Workflow (lives in the private `mr-pronoia` repo)
 
 **What it is:** A GitHub Actions workflow that runs on every push to `main` of the `mr-pronoia` repo. Builds both the main mrpronoia.com site and the jesus-site, then merges them.
+
+> **Not included here.** The workflow file itself is the private mr-pronoia build pipeline and is intentionally not snapshotted into this repo — it discloses the upstream private repo's internal structure and isn't reusable for a standalone the-way site. The flow below documents the architecture for reference; a future standalone deploy would write its own, simpler workflow (see "Replicating This Pattern" below).
 
 **The flow:**
 
@@ -73,7 +75,7 @@ push to main
 **Required secrets:**
 - `GOOGLE_API_KEY` (for embeddings — main site only, jesus-site doesn't use this)
 
-**Important:** This workflow is in the **mr-pronoia repo**, not in the-way. The copy here is a reference snapshot.
+**Important:** This workflow lives in the **mr-pronoia repo**, not in the-way. It is not copied here.
 
 ---
 

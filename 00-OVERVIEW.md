@@ -75,7 +75,7 @@ See `gnosticism/00-overview.md` for the navigation, `cliff-notes-quick-reference
 
 ## What's In jesus-site-reference
 
-A reference snapshot of the source for [jesusactuallysaid.com](https://jesusactuallysaid.com). 17 English pages + 17 Spanish translations, plus the Cloudflare Worker that serves them, plus the deploy workflow.
+A reference snapshot of the source for [jesusactuallysaid.com](https://jesusactuallysaid.com). 17 English pages + 17 Spanish translations, plus the Cloudflare Worker that serves them. (The deploy workflow itself — the private mr-pronoia build pipeline — is documented in prose in `HOW-ITS-BUILT.md` but not snapshotted.)
 
 This is here for two reasons:
 1. **Notes on architecture** — See `HOW-ITS-BUILT.md`. Documents how the site is structured (MkDocs + Material theme + i18n + reverse-proxy Worker) for future reference or replication.

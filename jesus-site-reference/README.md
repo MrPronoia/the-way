@@ -14,12 +14,14 @@ jesus-site-reference/
 │   ├── mkdocs.yml           ← site config (i18n EN + ES, Material theme, plugins)
 │   ├── docs/                ← 17 English pages + 17 Spanish translations + assets
 │   └── overrides/           ← Material theme overrides (back button, etc.)
-├── cloudflare-worker/       ← The reverse proxy that serves jesusactuallysaid.com
-│   ├── worker.js            ← URL rewriting from jesusactuallysaid.com → mrpronoia.com/jesus
-│   └── wrangler.toml        ← deployment config
-└── deploy-workflow/
-    └── deploy-site.yml      ← GitHub Action that builds + publishes to mrpronoia.com
+└── cloudflare-worker/       ← The reverse proxy that serves jesusactuallysaid.com
+    ├── worker.js            ← URL rewriting from jesusactuallysaid.com → mrpronoia.com/jesus
+    └── wrangler.toml        ← deployment config
 ```
+
+> **Note:** The deploy workflow itself (the GitHub Action that builds + publishes the live
+> site) is **not** snapshotted here — it's the private `mr-pronoia` build pipeline and lives
+> in that repo. Its architecture is documented in prose in `HOW-ITS-BUILT.md`.
 
 ---
 
