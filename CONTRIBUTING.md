@@ -77,6 +77,14 @@ If you bring an AI assistant into your work here:
 
 ---
 
+## For Admins: Inviting New People
+
+When you invite a new collaborator, give them **Write** access by default. Write lets them fully push, pull, and contribute — everything a research collaborator needs.
+
+Reserve **Admin** for the core stewards (Rex, Matt, Kam). Admin includes destructive powers (deleting the repo, changing visibility, managing access), so keeping it to the inner circle protects the project while the contributor crew grows freely at Write level.
+
+---
+
 ## Questions?
 
 Open an **Issue** on the repo, or reach out to Matt or Rex directly. Welcome aboard — let's recover this thing together.
