@@ -87,7 +87,7 @@ The actual published site is still built and served from `mr-pronoia/jesus-site/
 
 ## What's In podcast-archive
 
-Raw transcripts from The Jesus Way podcast (Rex + Matt). 50+ episodes covering: Yeshua's true mission, the Moses Scroll, the Two Ways, Essene origins, the Saturn cult, Christ consciousness, the Jesus diet, the Mary rediscovery, NDE life reviews, refuting the rapture, the Trinity debunked, Swedenborg, three forgotten Nazarene practices, James rejected Paul, and more.
+Raw transcripts from The Jesus Way podcast (Aaron Abke & James Benefico). 55 episodes covering: Yeshua's true mission, the Moses Scroll, the Two Ways, Essene origins, the Saturn cult, Christ consciousness, the Jesus diet, the Mary rediscovery, NDE life reviews, refuting the rapture, the Trinity debunked, Swedenborg, three forgotten Nazarene practices, James rejected Paul, and more.
 
 **These are working transcripts, not polished episodes.** Use them for research material, source mining, and quote retrieval. Don't cite them as authoritative without verifying the underlying claims against primary sources.
 

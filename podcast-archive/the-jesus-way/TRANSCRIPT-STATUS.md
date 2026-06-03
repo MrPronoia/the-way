@@ -1,12 +1,14 @@
 # Jesus Way Podcast Transcript Status
 
-**Last Updated:** 2026-05-12
+**Last Updated:** 2026-06-02
 
 ---
 
-## ✅ TRANSCRIPTS COMPLETE (50 of 51 episodes)
+## ✅ TRANSCRIPTS COMPLETE (54 of 55 episodes)
 
 All available transcripts have been pulled from YouTube and appended to their respective markdown files. Episode 045 is the only known gap — YouTube has not generated auto-captions for that video; revisit when captions become available or manually transcribe.
+
+Episodes 053–055 (Gregg Braden, Eastern Orthodox / Braden Wuerch, John St. Julien) were mined and added on 2026-06-02 — each file includes a synthesized research summary plus the full auto-generated transcript.
 
 | Episode | File | Status |
 |---------|------|--------|
@@ -62,6 +64,9 @@ All available transcripts have been pulled from YouTube and appended to their re
 | 50 | `050-debunking-wes-huff-hell-theology.md` | ✅ Done (2026-05-12) |
 | 51 | `051-was-jesus-jacked-fitness-self-mastery.md` | ✅ Done (2026-05-12) |
 | 52 | `052-how-jesus-healed-scalar-energy.md` | ✅ Done (2026-05-12) |
+| 53 | `053-gregg-braden-essene-origins.md` | ✅ Done (2026-06-02) |
+| 54 | `054-eastern-orthodox-search-original-christianity.md` | ✅ Done (2026-06-02) |
+| 55 | `055-rescuing-children-from-witch-doctors.md` | ✅ Done (2026-06-02) |
 
 ---
 
@@ -69,9 +74,9 @@ All available transcripts have been pulled from YouTube and appended to their re
 
 | Status | Count |
 |--------|-------|
-| ✅ Completed | 50 |
+| ✅ Completed | 54 |
 | ⚠️ Blocked (no YouTube captions) | 1 |
-| **Total** | **51** |
+| **Total** | **55** |
 
 ---
 

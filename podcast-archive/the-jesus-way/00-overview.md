@@ -2,7 +2,7 @@
 
 This folder contains episode-by-episode research notes for **The Jesus Way Podcast**, hosted by Aaron Abke and James Benefico (with frequent co-host Kameron Waters). The podcast recovers what Jesus (Yeshua) actually taught -- before Paul, before Nicaea, before institutional Christianity reshaped the message. Core thesis: Jesus was a Jewish reformer from the Nazarene/Essene tradition who taught salvation through repentance, love, and works -- not through blood atonement or belief-based confession.
 
-45 episodes are documented here, spanning foundational theology, historical origins, the Paul critique, diet and health, spiritual warfare, mystical practice, and guest deep dives. Each file contains a full summary, key teachings, scripture citations, and cross-tradition connections.
+55 episodes are documented here, spanning foundational theology, historical origins, the Paul critique, diet and health, spiritual warfare, mystical practice, and guest deep dives. Most files contain a full summary, key teachings, scripture citations, and cross-tradition connections. (Episodes 43 and 47–52 are transcript-complete but their synthesized notes are still pending, so their index entries below are derived from the episode titles; episodes 53–55 include full synthesized research notes.)
 
 **Connection to the broader repo:** This is the backbone of the Christianity research. Findings here feed directly into `esoteric-knowledge/perennial-philosophy/`, the Ethiopian Bible collection (`esoteric-knowledge/christianity/ethiopian-bible/`), and Matt's synthesis docs (`esoteric-knowledge/christianity/matt-notes/`). The Jesus Way's "Two Ways" doctrine, works-based soteriology, and anti-sacrifice theology are confirmed independently by Hermetic, Kabbalistic, Law of One, and Sufi sources across the knowledge base.
 
@@ -22,6 +22,7 @@ The core theology of the Jesus Way -- what Jesus actually taught about God, salv
 | 22 | `022-the-jesus-way-axioms.md` | The 10 Jesus Way Axioms -- distilled principles |
 | 31 | `031-mind-of-christ.md` | Christ Vision, Kingdom Consciousness, perception as creation |
 | 40 | `040-art-of-loving-relationship.md` | Giving/receiving vs. taking/keeping -- the core rubric |
+| 49 | `049-top-10-heresies-of-the-jesus-way.md` | The 10 "heresies" of the Jesus Way -- why the first disciples were heretics |
 
 ### Historical Origins: Essenes, Nazarenes, and the Real Jesus
 Who Jesus actually was, where his movement came from, and what early Jewish Christianity looked like.
@@ -37,6 +38,8 @@ Who Jesus actually was, where his movement came from, and what early Jewish Chri
 | 15 | `15-yeshuas-true-mission-dr-tabor.md` | Dr. Tabor: Restoring Abrahamic faith, the Way of Yahweh |
 | 27 | `027-the-lost-mary-rediscovering-mother-of-jesus.md` | Dr. Tabor: Mary's real history, erasure of James |
 | 44 | `044-three-forgotten-nazarene-practices.md` | Scott Shepard: vegetarianism, fasting, prayer as Nazarene core practices |
+| 53 | `053-gregg-braden-essene-origins.md` | Gregg Braden: Essene origins, Gnostic cosmology, DNA, transhumanism |
+| 54 | `054-eastern-orthodox-search-original-christianity.md` | Braden Wuerch: Eastern Orthodoxy and the search for original Christianity |
 
 ### The Paul Critique
 Systematic case that Paul hijacked Jesus's message and that "Christianity" is really "Paulianity."
@@ -58,6 +61,9 @@ Direct challenges to blood atonement, the Trinity, the rapture, and eternal hell
 | 33 | `033-refuting-the-rapture.md` | Participatory eschatology vs. apocalyptic escapism |
 | 34 | `034-did-jesus-claim-to-be-god-debunking-the-trinity.md` | Unitarianism vs. Trinitarianism, 4th-century construction |
 | 39 | `039-demonic-spirituality-global-elites.md` | Blood sacrifice as satanic inversion, Didache vs. Paul's Eucharist |
+| 47 | `047-jesus-died-because-of-sins.md` | Jesus died BECAUSE of sins, not FOR them -- reframing the crucifixion |
+| 48 | `048-what-really-happened-at-resurrection.md` | What the resurrection actually was, apart from atonement theology |
+| 50 | `050-debunking-wes-huff-hell-theology.md` | Reaction/rebuttal to Wes Huff's defense of eternal hell |
 
 ### Diet, Health, and the Body as Temple
 The "Jesus Diet" -- vegetarianism, fasting, and physical health as spiritual practice.
@@ -70,6 +76,7 @@ The "Jesus Diet" -- vegetarianism, fasting, and physical health as spiritual pra
 | 24 | `024-new-studies-prove-the-jesus-diet-works.md` | Protein myth debunked, longevity research, Blue Zones |
 | 36 | `036-powerful-spiritual-practice-removed.md` | Fasting removed from the Bible, the three temples concept |
 | 42 | `042-spiritual-benefits-of-fat-loss.md` | Spiritual benefits of fat loss, "biological static," Jesus40 Challenge results |
+| 51 | `051-was-jesus-jacked-fitness-self-mastery.md` | Was Jesus "jacked"? Fitness and discipline as vehicles for self-mastery |
 
 ### Spiritual Warfare and the Demonic
 Entity attachment, demonic patterns, addiction, and how love and Christ repel darkness.
@@ -80,6 +87,8 @@ Entity attachment, demonic patterns, addiction, and how love and Christ repel da
 | 29 | `029-demonic-possession-dr-marzinsky.md` | Dr. Marzinsky: voices as entities, not hallucinations |
 | 32 | `032-overcoming-meth-and-demons-boston2percent.md` | Addiction testimony, meth as demonic gateway, prodigal son |
 | 37 | `037-23-patterns-demonic-attacks.md` | 23 patterns of demonic voices, recovery without medication |
+| 43 | `043-minister-of-wellness-church-of-satan.md` | "Minister of Wellness" vs. the Church of Satan -- self-worship vs. self-giving |
+| 55 | `055-rescuing-children-from-witch-doctors.md` | John St. Julien: rescuing children from witch-doctor sacrifice in Tanzania |
 
 ### Mystical Christianity and Consciousness
 Christ consciousness, shadow work, Swedenborg, Steiner, DNA activation, and inner transformation.
@@ -91,6 +100,7 @@ Christ consciousness, shadow work, Swedenborg, Steiner, DNA activation, and inne
 | 35 | `035-secrets-of-swedenborg-curtis-childs.md` | Swedenborg: afterlife, heaven/hell as states of mind |
 | 38 | `038-12-strand-dna.md` | 12-strand DNA, base-12 math, breath as spiritual key |
 | 41 | `041-shadow-work-xavier-dagba.md` | Shadow integration, the dark face of the higher self |
+| 52 | `052-how-jesus-healed-scalar-energy.md` | John White: scalar energy and bioenergetic healing as a lens on Jesus's miracles |
 | 45 | `045-three-temples-unlock-christ-consciousness.md` | Three temples (body/mind/spirit) as the path to Christ consciousness |
 
 ### NDEs and Afterlife Evidence
@@ -180,6 +190,16 @@ After that, follow any thread that pulls you.
 | 40 | The Art of Loving Relationship | The master key: giving/receiving (Christ) vs. taking/keeping (ego) as a moment-by-moment spiritual litmus test. | Giving/receiving, ego mechanics, Philippians hymn, polarization |
 | 41 | Shadow Work | Shadow integration as the missing half of Christianity -- embracing darkness for wholeness, not spiritual bypassing. | Shadow work, integration, spiritual bypassing, self-love, the cross |
 | 42 | Spiritual Benefits of Fat Loss | Reducing "biological static" sharpens spiritual clarity; Jesus40 Challenge winners share transformations. | Fat loss, biological static, self-mastery, Jesus40 Challenge, body as temple |
+| 43 | The "Minister of Wellness" Goes Scorched Earth on the Church of Satan | A wellness-minister guest dismantles Church-of-Satan philosophy, contrasting self-worship with Jesus's self-giving love. *(notes pending)* | Church of Satan, self-worship vs. service, polarity, wellness |
 | 44 | 3 Forgotten Nazarene Practices | Scott Shepard on the three concrete practices of the Nazarene way: vegetarianism, fasting, and prayer. | Nazarene practices, vegetarianism, fasting, prayer, Eusebius |
 | 45 | Three Temples: Unlock Christ Consciousness | The three temples (body, mind, spirit) as the sequential path to embodying Christ consciousness. | Three temples, Christ consciousness, body-mind-spirit, Holy of Holies, purification |
 | 46 | James Rejected Paul: Scriptural Proof | Scriptural evidence that James the Just -- Jesus's brother and successor -- actively opposed Paul's theology. | James vs. Paul, Acts 21:21, apostasia, Epistle of James, Ebionites |
+| 47 | Jesus Died BECAUSE of Sins, Not FOR Them | Reframes the crucifixion: Jesus was killed by the sins of a corrupt system, not as a blood payment God required. *(notes pending)* | Anti-blood-atonement, crucifixion, "devil's playbook," scapegoat |
+| 48 | What Really Happened at the Resurrection? | Examines what the resurrection actually was and what it means apart from later atonement theology. *(notes pending)* | Resurrection, empty tomb, interpretation |
+| 49 | The Top 10 Heresies of the Jesus Way | Lists ten Jesus Way positions modern orthodoxy brands heretical -- and argues the first disciples held them too. *(notes pending)* | Heresy, orthodoxy critique, original teaching |
+| 50 | Debunking Wes Huff's Hell Theology | Reaction/rebuttal to apologist Wes Huff's defense of eternal conscious torment. *(notes pending)* | Hell, conditionalism/universalism, apologetics reaction |
+| 51 | Was Jesus Jacked? | The case that physical fitness and discipline are vehicles for spiritual self-mastery. *(notes pending)* | Fitness, self-mastery, body as temple, discipline |
+| 52 | How Jesus Healed: Scalar Energy | Guest John White explores energetic/scalar (Rife-style) healing as a lens on Jesus's healing miracles. *(notes pending)* | Healing, scalar energy, Rife, bioenergetics |
+| 53 | Gregg Braden on the Essene Origins of Christianity | Braden ties the Essenes, Gnostic texts, and ancient creation accounts to a warning that humanity's DNA-encoded divine spark is threatened by transhumanism. | Essenes, Gnostic cosmology, DNA, transhumanism, prayer-as-field, kingdom within |
+| 54 | Eastern Orthodox and the Search for Original Christianity | EO guest Braden Wuerch and the hosts find common ground in theosis, fasting, and works -- while differing on church authority and the Eucharist. | Eastern Orthodoxy, theosis, Jesus Prayer, fasting, synergistic salvation |
+| 55 | The Man Who Rescues Children from Witch Doctors | Christian mystic John St. Julien recounts rescuing special-needs children from witch-doctor sacrifice in Tanzania and frames surrendered innocence as Jesus's core. | Missions, spiritual warfare, blood-atonement critique, innocence, deliverance |

@@ -2,7 +2,7 @@
 
 Raw working transcripts and synthesized research notes from two sources:
 
-- **`the-jesus-way/`** — The Jesus Way podcast (Rex + Matt). 52 episodes, ~12 MB. Documented in detail below.
+- **`the-jesus-way/`** — The Jesus Way podcast (Aaron Abke & James Benefico). 55 episodes, ~12 MB. Documented in detail below.
 - **`dr-tabor/`** — Dr. James Tabor's "Paul" YouTube playlist: 77 videos synthesized into structured notes (summary, key teachings, scripture citations, scholars cited, quotable moments, plus the full raw transcript per file). See **`dr-tabor/00-overview.md`** for its thematic index and project notes.
 
 The rest of this file documents the **The Jesus Way** archive.
@@ -11,7 +11,7 @@ The rest of this file documents the **The Jesus Way** archive.
 
 ## What This Is
 
-The Jesus Way is the podcast where Rex and Matt do deep dives on what Jesus actually taught, what got distorted, and what the evidence actually says. These transcripts are the raw episode content — what was actually said, not edited summaries.
+The Jesus Way is the podcast where Aaron Abke and James Benefico do deep dives on what Jesus actually taught, what got distorted, and what the evidence actually says. These transcripts are the raw episode content — what was actually said, not edited summaries.
 
 **These are working transcripts, not polished episodes.** Treat them as:
 - Research material — quotes, source mining, primary speakers' words

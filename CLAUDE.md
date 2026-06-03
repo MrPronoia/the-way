@@ -83,7 +83,7 @@ When users ask about Christian theology:
 ## Two Users (and growing)
 
 - **Matt Fracek** — Founder of Nature Backs, lifelong Jesus question, has been documenting this since 2018+
-- **Rex** — Research partner, co-host of the Jesus Way podcast, founder of VJ Academy, digital art and projection mapping artist.
+- **Rex** — Research partner, co-host of the Mr. Pronoia podcast (with Matt), founder of VJ Academy, digital art and projection mapping artist.
 - **Kameron Waters (Kam)** — Christspiracy filmmaker, runs The Way Skool community. Potential collaborator (not yet invited to this repo).
 - **Future collaborators** — As they're added, their `CLAUDE.md` context should be appended below.
 

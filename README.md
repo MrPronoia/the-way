@@ -84,7 +84,7 @@ the-way/
 │
 └── podcast-archive/        ← Raw transcripts + synthesized research notes (working material)
     ├── README.md
-    ├── the-jesus-way/      ← The Jesus Way podcast (Rex + Matt) — 52 episodes, raw transcripts
+    ├── the-jesus-way/      ← The Jesus Way podcast (Aaron Abke & James Benefico) — 55 episodes, raw transcripts
     └── dr-tabor/           ← Dr. James Tabor's "Paul" YouTube playlist — 77 videos, synthesized
 ```
 
