@@ -8,3 +8,9 @@ node_modules/
 *.log
 .env
 .env.local
+
+# Local-only staging folder — stays on Rex's laptop, never pushed/made public.
+# Leading slash anchors this to the repo ROOT only, so the tracked
+# christianity/Incoming, dead-sea-scrolls/Incoming, and gnosticism/Incoming
+# folders are NOT affected.
+/Incoming/
