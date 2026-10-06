@@ -139,11 +139,37 @@ And **load the key files before you start.** A cold session has to go searching;
 
 ---
 
-## For Admins: Inviting New People
+## Reading vs. Writing: Who Actually Needs Access
 
-When you invite a new collaborator, give them **Write** access by default. Write lets them fully push, pull, and contribute — everything a research collaborator needs.
+**This repo is public.** Anyone can read, clone, and use every file in it without an invitation — no account, no permission, nothing. That's worth saying plainly to new people, because it means most of them don't need access at all.
 
-Reserve **Admin** for the core stewards (Rex, Matt, Kam). Admin includes destructive powers (deleting the repo, changing visibility, managing access), so keeping it to the inner circle protects the project while the contributor crew grows freely at Write level.
+Three lanes. Two require nothing from us:
+
+| Lane | What they do | Access needed |
+|---|---|---|
+| **Send it in** | Hand us files; we convert and file them with their provenance notes. | None |
+| **Read and use** | Clone it, browse in Obsidian, point an AI assistant at it, pull updates whenever. | None — it's public |
+| **Write directly** | Edit and push themselves. | Collaborator invite |
+
+**Default to the first two.** Don't hand out write access pre-emptively at an onboarding meeting — not as gatekeeping, but because lane 2 already delivers the full value of the collection. Grant Write when someone is contributing often enough that routing through Matt or Rex has become the bottleneck, and they've said so.
+
+Nothing here can be permanently broken — git keeps every version of every file, so any mistake is one `git revert` away. The reason to be deliberate isn't fear of data loss; it's that untangling a messy history costs someone an afternoon.
+
+**If the contributor crew grows past a handful of writers,** turn on branch protection for `main` (Settings → Branches) requiring changes to arrive via Pull Request. That lets you be generous with access and still have every change reviewed before it lands. Anyone can also contribute via **fork + pull request** with no collaborator access at all — the standard open-source path.
+
+### Permission levels
+
+Reserve **Admin** for the core stewards (Rex, Matt, Kam). Admin includes destructive powers — deleting the repo, changing visibility, managing access — so keeping it to the inner circle protects the project while the contributor crew grows freely at Read or Write level.
+
+---
+
+## Reading the Files: Use Obsidian
+
+The files are plain text, so any editor opens them. But [Obsidian](https://obsidian.md) is free and makes the collection genuinely pleasant to browse: choose **"Open folder as vault"** and point it at this repo folder.
+
+You get the folder tree in a sidebar, rendered text instead of raw `#` symbols, instant full-text search across all 281 files, and the `[[links]]` between files become clickable. What's in that sidebar is literally the folder structure on disk — the same thing File Explorer shows. Nothing is hidden in a database.
+
+Two notes: Obsidian edits the real files, so changes are local until you push them (it's a reader/editor, not a sync tool). And it creates a `.obsidian/` settings folder — already in `.gitignore`, so personal setups never get committed.
 
 ---
 
