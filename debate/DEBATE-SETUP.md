@@ -15,6 +15,8 @@ Open **two Claude sessions** in this repo (terminal tabs, or two Claude Desktop 
 
 Tab 1 is the Jamie — *"Jamie, pull that up."* That's exactly the job: somebody off to the side who finds the thing in seconds while the conversation keeps moving. Name it that in your own head and you'll use it correctly, because it tells you what *not* to send there. Jamie pulls up sources. Jamie doesn't build your argument for you — that's Tab 2.
 
+(Doing this by hand with a tab is the manual version of a tool worth building: live transcription that surfaces sources on its own. Sketched in `ideas/jamie.md`.)
+
 In the terminal: `claude --model sonnet` in one tab, `claude` (default/Fable or Opus) in the other. In Claude Desktop: pick the model per conversation.
 
 Why two tabs: you never wait on the slow model for a fast question, and the deep tab keeps its train of thought instead of being interrupted by lookups.
