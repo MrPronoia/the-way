@@ -32,6 +32,7 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 
 | Start here if you want… | Go to |
 |---|---|
+| **To get oriented as a new contributor** | `ONBOARDING.md` — what a repo is, how to send us material, what's already here, which AI model to use |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
 | **To argue the case out loud** | `debate/00-INDEX.md` — fourteen stage-ready cards with evidence, objections, and rebuttals |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |

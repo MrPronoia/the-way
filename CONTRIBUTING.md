@@ -2,7 +2,7 @@
 
 Welcome. If you're reading this, someone trusted you with the keys — this is a shared, living research repository, and you're invited to help it grow.
 
-New here? Read **`README.md`** first (what this is), then **`00-OVERVIEW.md`** (reading paths). This file is about *how to contribute* once you're oriented.
+New here? Read **`ONBOARDING.md`** first — the short brief on what this is, how to browse it, how to hand us material, and what's already in the collection. Then **`README.md`** (navigation) and **`00-OVERVIEW.md`** (reading paths). This file is about *how to contribute* once you're oriented.
 
 ---
 
