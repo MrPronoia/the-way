@@ -62,14 +62,20 @@ And in Matthew's Gospel, Jesus twice quotes **Hosea 6:6**:
 
 This is not an ambiguous teaching. Jesus explicitly places mercy above the sacrificial system, and his temple action physically interrupted that system by freeing the animals destined for slaughter.
 
-### The Hebrew Gospel of Matthew
+### The Gospel of the Ebionites
 
-The Hebrew Gospel of Matthew, used by the Nazarene and Ebionite communities (attested by Jerome, Epiphanius, and others), contains a variant of the Last Supper that does not appear in the Greek gospels:
+The Gospel of the Ebionites -- a Jewish-Christian gospel known only through Epiphanius's quotations -- contains a variant of the Last Supper that does not appear in the Greek gospels:
 
 > "I have no desire to eat the flesh of this Passover lamb with you."
-> -- Hebrew Gospel of Matthew (cited by Jerome and Epiphanius, 4th century CE)
+> -- Gospel of the Ebionites, quoted in Epiphanius, *Panarion* 30.22.4 (c. 375 CE)
 
-Whether this represents an original reading or an early sectarian tradition, it reflects what Jesus's closest Jewish followers -- his own family's community -- believed he said.
+**Attribute this carefully.** Three points an informed critic will raise, and all three are fair:
+
+1. The source is the **Gospel of the Ebionites**, not "the Hebrew Gospel of Matthew." The two are often conflated in popular treatments, but Epiphanius (*Panarion* 30) and Jerome describe distinct documents. See `hebrew-gospel-of-matthew.md` for the distinction.
+2. Epiphanius presents this reading as the Ebionites' **alteration** of the text — he is a hostile witness quoting it to discredit them, not a neutral transmitter.
+3. The Greek is a negated wordplay on Luke 22:15 (μὴ ἐπιθυμίᾳ ἐπεθύμησα inverting ἐπιθυμίᾳ ἐπεθύμησα), which marks it as secondary and Greek-composed rather than an independent Semitic tradition.
+
+So: this is solid evidence of what the **Ebionites believed** about Jesus and meat — which is genuinely significant, since they claimed descent from his own community through James. It is not evidence of what Jesus said, and presenting it as the text "Jesus's own community used" invites a reversal into "you cited a document your own source calls an alteration."
 
 ### The Passover Substitution
 
@@ -238,7 +244,7 @@ The convergence is significant. These traditions developed across different cent
 | **Clementine Homilies** | 2nd-3rd century CE | Jewish Christian text | Peter: flesh-eating "as polluting as heathen worship of devils" |
 | **Eusebius** | c. 313 CE | Father of Church History | "The twelve apostles embraced abstinence from wine and meat" |
 | **Council of Ancyra** | 314 CE | Church council canon | Forced priests to at least taste meat -- proving widespread abstention |
-| **Hebrew Gospel of Matthew** | Uncertain (attested 4th c.) | Jewish Christian gospel | Jesus: "I have no desire to eat the flesh of this Passover lamb" |
+| **Gospel of the Ebionites** | Quoted 4th c. (Epiphanius, *Panarion* 30.22.4) | Jewish Christian gospel, known only via a hostile witness who calls this reading their alteration | "I have no desire to eat the flesh of this Passover lamb" -- evidence of Ebionite belief, not of Jesus's words |
 | **St. Jerome** | c. 380 CE | Doctor of the Church | "Jesus joined the end with the beginning -- no more animal flesh" |
 | **Epiphanius** | c. 375 CE | Church father | Nazarenes/Ebionites: vegetarian, anti-sacrifice, direct apostolic succession |
 

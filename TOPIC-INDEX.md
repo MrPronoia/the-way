@@ -1,6 +1,8 @@
 # TOPIC-INDEX — Claim → Source Lookup
 
-This is the routing table for the repo: a question comes in, you find the row, you open one file at the named section. For live debate, start with the nine cards in `debate/` — they carry the quotes, the objections, and the rebuttals already assembled. Come here when the question goes past the cards, when someone wants the fuller argument, or when you need to verify a quote against a primary text.
+This is the routing table for the repo: a question comes in, you find the row, you open one file at the named section. For live debate, start with the fourteen cards in `debate/` — they carry the quotes, the objections, and the rebuttals already assembled. Come here when the question goes past the cards, when someone wants the fuller argument, or when you need to verify a quote against a primary text.
+
+**Four cards are not topic cards and aren't indexed by claim below** — they answer attacks on method rather than on evidence, and they're the ones that keep an exchange from being lost on credibility: `debate/method-and-criteria.md` (what's your criterion? / the Marcion charge), `debate/how-we-read-john.md` (John cuts both ways, and every belief-condition verse lives there), `debate/the-gospel-of-thomas.md` (its date, and Thomas 114), `debate/what-we-actually-offer.md` (the pastoral question — "I've failed the standard, what do you give me?").
 
 ## How to use this
 

@@ -21,7 +21,9 @@ The Way of Death is likewise behavioral: murder, adultery, greed, malice, arroga
 
 What is absent is as significant as what is present. There is no creed. No requirement to believe that Jesus died for sins. No atonement theology. No Pauline framework at all. The Didache presents an ethical system -- how to live -- not a theological system -- what to believe.
 
-Jonathan Draper, the world's leading Didache scholar, demonstrated that the Didache drew on the Community Rule from the Dead Sea Scrolls as a source for its Two Ways material -- establishing direct textual continuity between the Essene community and the earliest Christian catechism.
+Jonathan Draper, a leading Didache scholar, argues that the Didache's Two Ways material and the Community Rule both draw on a **common Jewish Two Ways tradition** -- the same tradition standing behind the Epistle of Barnabas 18-20 and the Latin *Doctrina Apostolorum*. That is shared tradition, not direct textual dependency on 1QS.
+
+**State it that way.** The careful claim is strong enough: the oldest Christian catechism is a Jewish Two Ways document, the framework is demonstrably pre-Christian, and the earliest Christians catechized converts in it a century before Nicaea. Claiming Draper "demonstrated direct textual continuity" from Qumran into the Didache overstates him, and anyone who has read him will say so.
 
 ### Dead Sea Scrolls: The Two Spirits
 
@@ -46,7 +48,7 @@ The Essene version maps specific virtues and vices to each spirit:
 - **Spirit of Truth:** humility, patience, abundant compassion, eternal goodness, understanding, insight, wisdom, zeal for righteous decrees
 - **Spirit of Falsehood:** greed, slackness in the search for righteousness, wickedness, falsehood, pride, deception, cruelty, impatience, folly
 
-The structural parallel to the Didache's Way of Life and Way of Death is unmistakable -- and the textual dependency has been confirmed by Draper's scholarship.
+The structural parallel to the Didache's Way of Life and Way of Death is unmistakable. What the scholarship supports is a shared underlying Jewish tradition behind both documents -- not that the Didache copied 1QS.
 
 ### The Four Key First-Century Sources
 

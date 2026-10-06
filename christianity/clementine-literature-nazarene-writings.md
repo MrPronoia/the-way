@@ -18,11 +18,19 @@ Multiple scholars — Robert Eisenman, Hans-Joachim Schoeps, and F.C. Baur — a
 
 ### The Torah Was Corrupted
 
-The most explosive Clementine teaching is that portions of the Torah mandating animal sacrifice were **later additions**, not original Mosaic commands:
+The most explosive Clementine teaching is that portions of the Torah mandating animal sacrifice were **later additions**, not original Mosaic commands. Quote it from the text:
 
-> "The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices." — Clementine Recognitions
+> "For the Scriptures have had joined to them many falsehoods against God on this account... after a little the written law had added to it certain falsehoods contrary to the law of God."
+> — *Clementine Homilies* 2.38, "Corruption of the Law" (the "false pericopes" doctrine, developed through Homilies 3.42-50)
 
-This directly echoes Jeremiah 8:8 — "How can you say, 'We are wise, and the law of the Lord is with us'? But behold, the lying pen of the scribes has made it into a lie." It also aligns with Jesus quoting Hosea 6:6 twice: "I desire mercy, not sacrifice."
+And on sacrifice specifically, the Recognitions have Peter describe baptism as what replaced it:
+
+> "...being purified not by the blood of beasts, but by the purification of the Wisdom of God."
+> — *Clementine Recognitions* 1.39
+
+**A caution on a quote in circulation.** A line reading *"The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices"* has been attributed to the Clementine Recognitions in this collection and elsewhere. **It is not in either Clementine text** — a search of the full Recognitions and Homilies returns nothing. It appears to be a paraphrase of Jeremiah 8:8 that acquired a Clementine attribution somewhere along the way. Use Homilies 2.38 for the corruption-of-the-law point and cite Jeremiah 8:8 as Jeremiah.
+
+Jeremiah 8:8 itself is real and says: "How can you say, 'We are wise, and the law of the Lord is with us'? But behold, the lying pen of the scribes has made it into a lie." Note that the verse establishes scribal falsification of written law; applying it specifically to the *sacrificial* legislation is an inference from Jeremiah 7:21-22, not something the verse states. It also aligns with Jesus quoting Hosea 6:6 twice: "I desire mercy, not sacrifice."
 
 The Clementine position is that Moses gave the Ten Commandments and the ethical law. The elaborate sacrificial system was added later by scribes influenced by surrounding pagan cultures — particularly during and after the Babylonian captivity.
 

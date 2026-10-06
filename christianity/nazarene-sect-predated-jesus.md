@@ -95,7 +95,13 @@ If Jesus independently arrived at every single belief this pre-existing sect alr
 
 The Clementine writings — the *Recognitions* and *Homilies* — preserve Nazarene teachings that scholars date in kernel form to the 1st–2nd century CE. These texts explicitly state:
 
-> "The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices." — Clementine Recognitions
+> "For the Scriptures have had joined to them many falsehoods against God on this account... after a little the written law had added to it certain falsehoods contrary to the law of God."
+> — *Clementine Homilies* 2.38, "Corruption of the Law"
+
+> "...being purified not by the blood of beasts, but by the purification of the Wisdom of God."
+> — *Clementine Recognitions* 1.39, on what replaced sacrifice
+
+(Both verified against the full texts in `Incoming/`. A frequently repeated line — *"The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices," — Clementine Recognitions* — is **not in either Clementine document**; it is a paraphrase of Jeremiah 8:8 that picked up a false attribution. Don't use it.)
 
 This matches Jeremiah 8:8, which Jesus's movement treated as a key proof-text. The Clementine writings present Peter as a vegetarian living on bread, olives, and rarely pot herbs — consistent with Nazarene practice, not Greco-Roman Christianity.
 

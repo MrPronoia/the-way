@@ -1,66 +1,141 @@
 # Did Jesus Claim to Be God? Is the Trinity Original Christianity?
 
-**Position:** Jesus never claimed to be the one and only God, and the Trinity is a fourth-century settlement, not a first-century teaching. In the red text Jesus distinguishes himself from God, defers to the Father, denies his own omniscience, and — when accused of claiming divinity — deflects the charge by pointing out that Scripture already calls everyone gods. What he taught was shared divinity: the unity he had with the Father is the unity he prays his followers will have, and the Gospel of Thomas states the goal as becoming what he was. The word "Trinity" appears nowhere in the Bible; the vocabulary required to state the doctrine (*ousia*, *hypostasis*, *homoousios*) is Greek metaphysics, and the earliest fathers who used it were subordinationists, several later condemned. The doctrine reaches its mature form at Constantinople in 381 and Chalcedon in 451 — three and four centuries after the crucifixion. This isn't an attack on reverence for Jesus. It's the difference between worshipping a ceiling and being shown a floor.
+**Position:** Be precise about the target, because the easy version of this argument attacks a doctrine nobody holds. We are **not** arguing that the New Testament fails to distinguish Father from Son — Trinitarianism asserts that distinction too. Pointing at two speakers in one sentence refutes modalism, not Nicaea. The claim is narrower and much harder to answer:
+
+1. **Nothing Jesus says asserts what Nicaea asserts.** The specific claim at issue is *homoousios* — that the Son is of one identical substance with the Father and co-equal to him. In the red text the traffic runs one way: the Father is greater, the Father is the only true God, authority is *given* to the Son, the Son can do nothing of himself, the Son does not know the day. Jesus never once reverses it, and no one in the gospels states co-equality of substance.
+2. **The doctrine that resolves those texts is a fourth- and fifth-century product.** The vocabulary required to state it — *ousia*, *hypostasis*, *homoousios* — is Greek metaphysics, the word "Trinity" is in no biblical text, the earliest fathers who theorized the triad ranked its members, and the formula was assembled across 325, 381, and 451 under imperial pressure.
+3. **What Jesus actually taught was participatory divinity.** The unity he had with the Father is the unity he prays his followers will have, and the Gospel of Thomas states the goal as becoming what he was.
+
+This is not an attack on reverence for Jesus. It's the difference between worshipping a ceiling and being shown a floor.
+
+**Two methodological commitments, stated up front.** (a) We quote John constantly on this card, so we don't get to dismiss John when it's inconvenient. Every argument here has to work *inside* John, and it does. (b) Where we argue a text was altered, we apply one criterion in both directions: distrust redaction that moves toward the redactor's own theology and away from his source; trust material preserved against the preserver's interest. Where that criterion cuts against us, we say so (see Mark 14:62 below).
 
 ---
 
 ## Strongest Evidence
 
-### 1. Jesus separates himself from God, flatly
+### 1. The subordination runs one direction and is never reversed
 > "Why do you call me good? No one is good except God alone." — Mark 10:18
-
-The earliest gospel, and Jesus declines the adjective on the grounds that it belongs to God alone. If he is ontologically God, this answer is actively misleading. Matthew and Luke both soften it; Mark's version is the one with the best claim to being first.
-
-### 2. He calls the Father "the only true God" and himself the one sent
 > "This is eternal life: that they know you, the only true God, and Jesus Christ whom you have sent." — John 17:3
 > "The Father is greater than I." — John 14:28
+> "The Son can do nothing of himself, but only what he sees the Father doing." — John 5:19
+> "All authority has been *given* to me." — Matthew 28:18
+> "Go to my brothers and tell them, 'I am ascending to my Father and your Father, to my God and your God.'" — John 20:17
 
-These are from John — the latest and most exalted gospel, the one apologists lean on hardest. Even there, in Jesus's own prayer, there are two distinct identities in one sentence and an explicit statement of subordination. Co-equality cannot survive "greater than I."
+Mark 10:18 is the earliest gospel, and Jesus declines the adjective on the grounds that it belongs to God alone; Matthew and Luke both soften it, which is the expected direction of change. John 17:3 and 14:28 are from the latest and most exalted gospel — the one apologists lean on hardest — and they are in Jesus's own prayer. And 1 Corinthians 15:28 has even the Pauline trajectory ending with the Son "subjected to him who put everything under him."
 
-### 3. He admits he does not know something
+The standard Trinitarian reply is that this is *economic* subordination — role, not substance — or the human nature speaking. That reply is coherent on its own terms. Notice what it is, though: a fourth- and fifth-century framework applied backwards to texts that never supply the correction themselves. The texts rank; the framework un-ranks them. Nobody in the red text ever says the Son is equal in substance to the Father, and that is the proposition the councils made a test of salvation.
+
+### 2. He admits he does not know something — and scribes fixed it
 > "But about that day or hour no one knows, not even the angels in heaven, nor the Son, but only the Father." — Mark 13:32
 
-An omniscient being cannot lack information. The textual history is the tell: Bart Ehrman documents in *The Orthodox Corruption of Scripture* (1993) that later scribes deleted "nor the Son" from the parallel at Matthew 24:36. Earlier manuscripts have it; later ones don't. Scribes were fixing a problem the text created for a doctrine that didn't yet exist when the text was written.
+An omniscient being cannot lack information. The textual history is the real evidence: Bart Ehrman documents in *The Orthodox Corruption of Scripture* (1993) that later scribes deleted "nor the Son" from the parallel at Matthew 24:36 — earlier manuscripts have it, later ones don't. That is the criterion above working in our favor: the change moves toward the copyist's theology and away from his source. Scribes were repairing a problem the text created for a doctrine that did not yet exist when the text was written.
 
-### 4. Accused of claiming divinity, Jesus universalizes it instead of claiming it
+### 3. Accused of claiming divinity, Jesus universalizes it instead of claiming it
 > "Is it not written in your Law, 'I have said you are gods'?" — John 10:34 (quoting Psalm 82:6)
 
-This is the sentence after "I and the Father are one," when they pick up stones. His defense is not "yes, I alone am God" — it's "Scripture calls all of you gods." And four chapters later he prays "that they may be one as we are one — I in them and you in me" (John 17:21-23) and promises his followers "will do even greater things than these" (John 14:12). If John 10:30 proves unique deity, John 17:22 grants it to everyone, and John 14:12 has them surpassing him.
+This is the sentence after "I and the Father are one," when they pick up stones. His defense is not "yes, I alone am God" — it's "Scripture calls all of you gods," and then "the Scripture cannot be set aside" (10:35). Four chapters later he prays "that they may be one as we are one — I in them and you in me" (John 17:21-23) and promises his followers "will do even greater things than these" (14:12). If John 10:30 proves unique deity, John 17:22 grants it to everyone and John 14:12 has them surpassing him. This matters for the whole card: **Jesus himself has authorized a non-*homoousios* sense in which a human being can be called "god."** Keep it in hand for John 20:28.
 
-### 5. Thomas makes the goal explicit: become it, don't worship it
+### 4. Thomas makes the goal explicit: become it, don't worship it
 > "He who will drink from my mouth will become like me. I myself shall become he, and the things that are hidden will be revealed to him." — Gospel of Thomas 108 (Lambdin)
 > "I am not your master. Because you have drunk, you have become intoxicated from the bubbling spring which I have measured out." — Gospel of Thomas 13 (Lambdin)
 
-Thomas 3 names the result: "when you come to know yourselves... you will realize that it is you who are the sons of the living father." Mutual identity, not permanent hierarchy. This is also exactly what Eastern Orthodoxy preserved as *theosis* — the oldest continuous institutional stream of Christianity teaches becoming, not just believing.
+Thomas 3 names the result: "when you come to know yourselves... you will realize that it is you who are the sons of the living father." Mutual identity, not permanent hierarchy. Cite Thomas as an independent sayings tradition, not as a 50s-CE document — the mainstream date for the collection as received is c. 140 CE. The point doesn't need the early date, because the same theology is institutionally preserved: this is what Eastern Orthodoxy carried forward as *theosis*. The oldest continuous institutional stream of Christianity teaches becoming, not just believing.
+
+### 5. The timeline: triadic language is early, co-equal substance is not
+Separate the two and the development case becomes very hard to dislodge.
+
+- **Three-fold naming is first-generation.** Matthew 28:19, 2 Corinthians 13:14, 1 Corinthians 12:4-6, Didache 7. We concede this freely and address it below.
+- **The men who first theorized the triad ranked it.** Tertullian coins *trinitas* c. 213, and Justin, Tertullian, and Origen all place the Son below the Father. Origen was formally condemned at Constantinople in 553; Tertullian ended his life outside the church as a Montanist. Neither is a saint in the tradition that inherited their vocabulary. (Make this as a position claim, by paraphrase — we have no primary texts for these fathers in this repo, so no quotation marks.)
+- **325 does not finish it.** Nicaea's creed asserts *homoousios* of the Son over objection, and says of the Spirit only "and in the Holy Spirit" — no co-equality, no substance language. The Spirit's full divinity is added at **Constantinople in 381**, after fifty-six years in which the empire's official Christology reversed repeatedly.
+- **The vocabulary isn't stable until the end of the fourth century.** R.P.C. Hanson's *The Search for the Christian Doctrine of God* (1988) shows the *ousia*/*hypostasis* distinction wasn't settled until then. **Chalcedon, 451**, supplies the two-natures formula that most apologetic answers on this card depend on.
+
+A doctrine cannot have been "always believed" before the language to state it existed — and the specific proposition, co-equal consubstantiality of three persons, has a datable construction history.
 
 ## Objections & Rebuttals
 
-### "'I and the Father are one' (John 10:30) and 'before Abraham was, I am' (John 8:58) settle it."
-Both are in John alone, written c. 90-100 CE, and the Synoptics have essentially none of these declarations — there Jesus asks "who do *you* say I am?" and silences people who answer. More importantly, John 10:30 has Jesus's own commentary attached: when the crowd reads it as a divinity claim, he corrects them with Psalm 82:6. You cannot cite verse 30 and skip verse 34.
+### "Thomas says 'My Lord and my God' and Jesus accepts it. John 20:28 ends the argument."
+This is the strongest verse in the gospels for the other side, and we should raise it before they do rather than look like we've never read chapter 20. Thomas says *ὁ κύριός μου καὶ ὁ θεός μου*, and Jesus does not correct him.
+
+Four things, and we don't need the first two to win.
+
+**Jesus's own reply isn't an affirmation of deity.** He answers with a rebuke about seeing and believing (20:29) — not "yes, I am God." And the evangelist then tells you what the confession was *for*: "these are written that you may believe that Jesus is the Messiah, the Son of God, and that by believing you may have life" (20:31). John's own summary of his own climax is a messianic title, not a substance claim.
+
+**Jesus already defined the category, eleven verses earlier.** John 20:17: "my God and your God." The same chapter has Jesus calling the Father his God. And John 10:34-35 is Jesus's own authorization of calling human beings "gods" from Scripture. Within John, *theos* applied to Jesus cannot mean something John has already had Jesus deny.
+
+**The usage has Hebrew precedent.** Psalm 45:6 addresses the Davidic king as "God"; Exodus 7:1 has God making Moses "as God to Pharaoh"; Psalm 82:6 is the verse Jesus himself reaches for. Calling a figure *theos* in a Jewish idiom does not by itself assert identity of substance — which is the proposition at issue.
+
+**And it is the closing confession of the latest gospel.** John is c. 90-100 CE with the most developed Christology in the New Testament; it tells you where John's community arrived. We say that *without* dismissing John, because we quote John all over this card — the first three answers all come from inside John, and they're the ones doing the work.
+
+### "Mark 14:61-64. Asked if he is the Messiah, the Son of the Blessed One, he says 'I am,' adds Daniel 7, and the high priest tears his robes and calls it blasphemy."
+The strongest Synoptic text, and the honest place to show our criterion cutting against us. Matthew 26:64 ("You have said so") and Luke 22:67-70 ("you say that I am") both hedge Mark's flat "I am" — and by the rule we stated up front, that makes **Mark's version the harder reading and probably the earlier one.** We're not going to argue it away. Take the scene as it stands:
+
+**Daniel 7's figure is not God.** The "one like a son of man" *comes to* the Ancient of Days and *is given* dominion (Dan 7:13-14) — two beings, and a transfer. The giving is the point, and it is the same "given" as Matthew 28:18. Four verses later Daniel hands that same kingdom to "the people of the holy ones of the Most High" (7:27). Jesus's answer claims enthronement and vindication, which is enormous — and which is not consubstantiality.
+
+**"Blasphemy" here is a hostile verdict, not a definition.** It's what the court concludes, narrated by a writer who wants the court to be wrong. Claiming to be seated at God's right hand and to come as judge over the high priest who is judging you is provocation enough; the Mishnah's own blasphemy rule (m. Sanhedrin 7:5) restricts the capital offense to pronouncing the Name, which nobody alleges he did.
+
+**Note what gets written on the cross.** "The King of the Jews" (Mark 15:26). A political-messianic charge. If the trial had established a claim to be God, the titulus is a strange place to lose it.
+
+### "Mark 2:5-10. He forgives sins, and the scribes say 'who can forgive sins but God alone?'"
+Their objection is in the text; so is his answer, and his answer is the whole point. He does not say "because I am God." He says "the Son of Man has *authority* on earth to forgive sins" (2:10) — *exousia*, delegated, the same vocabulary as Matthew 28:18. Matthew's parallel closes the scene with the crowd glorifying "God, who had given such authority *to men*" (Matt 9:8, *ἀνθρώποις*, plural). And Jesus hands the authority on: "if you forgive anyone's sins, their sins are forgiven" (John 20:23); "whatever you loose on earth will be loosed in heaven" (Matt 18:18). A power that is given, and then given away, is not evidence of unique divine substance.
+
+*Consistency note, because we use this verse twice:* our blood-atonement card cites Mark 2:5 to show sins forgiven with no altar, no priest, and no blood. That's the same reading, not a competing one — forgiveness is dispensed by authorization rather than by sacrifice, and the authorization is shareable. Both uses stand together; say so if challenged.
+
+### "John 5:18 — the Jews sought to kill him because he was 'making himself equal with God.'"
+Read verse 19. John 5:18 is the narrator reporting what *his opponents* concluded, and Jesus's immediate reply is the flattest subordination statement in the gospel: "the Son can do nothing of himself, but only what he sees the Father doing" (5:19), then "I can do nothing on my own... I seek not my own will but the will of him who sent me" (5:30). Same structure as John 10:30 → 10:34: the accusation is in one verse and Jesus's correction is in the next. Citing the charge as though it were the verdict skips his answer.
+
+### "John 8:58 — 'before Abraham was, I am.' That's the divine name from Exodus 3:14."
+The deliberate echo is real and we concede it; John is loading the phrase. Three limits. The same absolute construction *ἐγώ εἰμι* is on the lips of the healed blind man one chapter later — "I am he" (John 9:9) — so the words are not self-identifying as deity. Pre-existence is a different claim than co-equal substance: Second Temple Judaism grants pre-existence to Wisdom (Prov 8:22-31), to Torah, and to the Messiah's name (1 Enoch 48:3, canonical in Ethiopia). And it is John alone, with no Synoptic parallel — in a gospel whose own Jesus says "the Father is greater than I" six chapters later.
+
+### "He accepts worship — *proskuneō* — at Matthew 14:33, Matthew 28:17, John 9:38. Only God may be worshipped."
+The verb is there; the English over-translates it. *Proskuneō* is the ordinary word for prostration before a superior, and the LXX and NT use it of people: the servant before the king (Matt 18:26), Joseph's brothers before Joseph (LXX Gen 42:6; 43:26), David before Saul (1 Sam 24:8 LXX), the Shunammite before Elisha (2 Kgs 4:37 LXX). It means homage.
+
+The real tell is what happens where the New Testament *does* mean exclusive divine worship: the recipient refuses it. Peter pulls Cornelius off the floor — "Stand up; I am only a man" (Acts 10:25-26). Paul and Barnabas tear their clothes at Lystra (Acts 14:11-15). The angel in Revelation refuses it twice (19:10; 22:8-9). Those texts prove the writers knew the difference and marked it. Jesus accepting homage places him where Daniel's son of man and the Davidic king are, not where the Father is. (John 9:38 is additionally textually uncertain — the clause is omitted by P75 and the original hand of Sinaiticus and is bracketed in critical editions. Footnote it; don't lead with it.)
+
+### "Your own star witness is Trinitarian. The Didache — which you date to about 70 CE — baptizes in the triune name. Either it's late or triadic faith is first-generation."
+The sharpest internal problem on the card, and the quote is real and in our own primary-text file:
+
+> "Now about baptism: this is how to baptize... 'baptize' in running water, 'in the name of the Father and of the Son and of the Holy Spirit.'" — Didache 7 (`christianity/Incoming/didache-full-text.md`)
+
+So answer it directly, and in this order.
+
+**Triadic naming is not *homoousios*, and that distinction is the entire card.** We are not claiming nobody said "Father, Son, and Holy Spirit" in the first century — Matthew 28:19, 2 Corinthians 13:14, and 1 Corinthians 12:4-6 say it too, and we list them in the evidence above rather than hide them. Didache 7 names three. It does not rank them, define their relation, assert one substance in three persons, or make any of that a condition of salvation. The proposition with a fourth-century birthdate is co-equal consubstantiality — and the Didache says nothing about it, in either direction.
+
+**The Didache's content is the opposite of a developed Christology.** Its eucharistic prayers thank God for "the holy vine of David" and for "life and knowledge" (ch. 9-10), with no body, no blood, no death, no incarnation; its Christology calls Jesus God's *pais*, servant or child. A community that had formulated the Trinity would not pray that way. (Note for our own side: Didache 14 *does* use *thusia* three times, applying sacrifice to the assembly's own offering — never to Jesus's death. Know that before an opponent reads it aloud.)
+
+**Dating, last and lightly.** The Didache is composite; the Two Ways material in chapters 1-6 is the oldest layer and the liturgical rubrics may be later within the 50-120 CE range the field actually works with. We mention it for completeness, but we don't lean on it — leading with a date adjustment here, after citing the Didache as early elsewhere, is exactly the move that looks like date-shifting. We don't need it. Argument one is sufficient.
 
 ### "Mark 13:32 is just Jesus speaking from his human nature — the hypostatic union handles this."
-That's Chalcedon's answer (451 CE), and it's a coherent formulation on its own terms — but it is the doctrine being defended, used as the premise. It also multiplies the same problem rather than solving it: "all authority has been *given* to me" (Matthew 28:18) requires a God who lacked authority, and genuine temptation (Matthew 4:1) requires a God who can be tempted, which James 1:13 denies.
+That's Chalcedon's answer (451 CE), and it's coherent on its own terms — but it is the doctrine being defended, used as the premise. It also multiplies the problem rather than solving it: "all authority has been *given* to me" (Matt 28:18) requires a God who lacked authority, and genuine temptation (Matt 4:1) requires a God who can be tempted, which James 1:13 denies. And it empties the imitation: "follow me" and "be perfect as your heavenly Father is perfect" only mean something if the one commanding them could have failed.
 
 ### "The Trinity is in Scripture even if the word isn't — Matthew 28:19 and 1 John 5:7."
-1 John 5:7-8 is the strongest-sounding and the weakest: the Comma Johanneum appears in no Greek manuscript before the 16th century, and modern textual scholarship is unanimous that it's an insertion. Newton's argument still holds — if that verse had existed in 325, Nicaea would have quoted it constantly, and nobody did. Matthew 28:19 names three; it does not assert one substance in three persons, which is the actual claim at issue.
+Matthew 28:19 names three. It does not assert one substance in three co-equal persons, which is the claim at issue — see the Didache answer above; the same response covers both.
+
+1 John 5:7-8 is the strongest-sounding and the weakest. **Get the date right, because being corrected on this is expensive:** the Comma Johanneum appears in **no Greek manuscript before the 14th century.** The earliest is Codex Ottobonianus (GA 629); the handful of others are 16th-century or later, and in some the clause stands as a margin note rather than in the text. No Greek father ever cites it — not once, through the whole Arian controversy, when it would have settled everything. It first appears in Latin writers in the late fourth century, as a marginal gloss that migrated into the text, and enters Latin Bible manuscripts later still. Newton's argument holds exactly: if that verse had existed in 325, Nicaea would have quoted it constantly, and nobody did.
 
 ### "The church always believed this — the councils only clarified what was already held."
-Honest version of the history: the triadic language is early (Tertullian coins *trinitas* c. 213), so something was being articulated. But the men articulating it were subordinationists — Justin, Tertullian, and Origen all rank the Son below the Father, and Origen and Tertullian were both later condemned. R.P.C. Hanson's *The Search for the Christian Doctrine of God* (1988) shows the *ousia*/*hypostasis* distinction wasn't stabilized until the late 4th century. A doctrine cannot have been "always believed" before the language to state it existed.
+The honest version of the history is in evidence #5 above. Triadic language is early, so something was being articulated. But the men articulating it ranked the Son below the Father; the Spirit's co-equality isn't in the 325 creed and arrives in 381; the *ousia*/*hypostasis* vocabulary isn't stable until the late fourth century; and the two-natures formula that answers half the objections on this card is 451. "Clarification" is doing a great deal of work in that sentence.
 
 ### "Denying the Trinity means you don't think Jesus is divine."
-We think he is divine — and that he said the same thing about you. That's the actual disagreement. Ours is a *higher* anthropology, not a lower Christology: "be perfect, therefore, as your heavenly Father is perfect" (Matthew 5:48) is a command, not a compliment.
+We think he is divine — and that he said the same thing about you. That's the actual disagreement. Ours is a *higher* anthropology, not a lower Christology: "be perfect, therefore, as your heavenly Father is perfect" (Matthew 5:48) is addressed to everyone listening, and "the works that I do, he will do also" (John 14:12) is said about them, not about himself. (On Matthew 5:48, *teleios* is completeness/maturity and the verse's own context is enemy-love in 5:43-47 — it names a horizon to walk toward, not a bar you clear. Don't deploy it as "a command, not a compliment"; that wins a debating point and creates a pastoral problem. See `what-we-actually-offer.md`.)
 
 ## Sound Bites
 
+- We're not arguing Jesus isn't distinct from the Father — your own doctrine says that. We're asking where he ever says he's the same substance.
 - "The Father is greater than I." That's not our reading. That's the quote.
-- The one verse that states the Trinity outright isn't in any Greek manuscript for 1,500 years.
+- Authority *given*. A day he doesn't know. A God he calls "my God." The traffic in those verses only runs one direction.
+- The one verse that states the Trinity outright isn't in a single Greek manuscript until the 14th century, and no Greek father ever quotes it.
 - Jesus got accused of claiming to be God, and his defense was "Scripture says you all are."
-- "Follow me" only means something if he could have failed.
-- 325, 381, 451 — three councils, four centuries, and the vocabulary is Aristotle's.
+- 325 left the Holy Spirit a single clause. It took another fifty-six years and another council to make the Spirit co-equal. That's not clarification.
 
 ## Go Deeper
 
-- `christianity/trinity-fourth-century-construction.md` — the Plato-to-Chalcedon timeline, the logical problems, Newton on both forged verses
+- `christianity/trinity-fourth-century-construction.md` — the Plato-to-Chalcedon timeline, the logical problems, Newton on both forged verses (note: its Comma Johanneum paragraph still says "sixteenth century" — use the 14th-century figure above)
 - `christianity/was-jesus-god-incarnate-red-text-evidence.md` — full red-text tables both directions, plus the twelve things the unique-incarnation reading has to ignore
+- `christianity/Incoming/didache-full-text.md` — primary source; chapter 7 for the baptismal formula, 9-10 for the eucharistic prayers, 14 for *thusia*
 - `christianity/Incoming/gospel-of-thomas-full-text.md` — primary source; sayings 3, 13, 50, 70, 77, 108
+- `debate/how-we-read-john.md` — the stated principle behind commitment (a) above: why we can quote John 14:28 and answer John 20:28 without a double standard
+- `debate/method-and-criteria.md` — the redaction criterion, applied in both directions
+- `debate/the-gospel-of-thomas.md` — the dating position, so Thomas 108 and 13 can be cited without overclaiming
+- `debate/CITATION-NOTES.md` — the corrected-claims table; read the Comma Johanneum and Thomas-dating rows before going on stage
 - `jesus-site-reference/source/docs/was-jesus-god.md` — the condensed public-facing version of this argument

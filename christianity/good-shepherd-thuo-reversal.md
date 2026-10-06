@@ -94,7 +94,10 @@ The Nazarene sect — the pre-existing Jewish movement Jesus emerged from — he
 
 The Clementine Homilies elaborate the theological basis:
 
-> "The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices." — Clementine Recognitions
+> "For the Scriptures have had joined to them many falsehoods against God on this account... after a little the written law had added to it certain falsehoods contrary to the law of God."
+> — *Clementine Homilies* 2.38, "Corruption of the Law"
+
+(Verified in `Incoming/clementine-homilies-full-text.md`. The line often quoted here as *"The Torah was falsified by 'the lying pen of the scribes' to institute sacrifices" — Clementine Recognitions* is not in either Clementine text; it's a misattributed paraphrase of Jeremiah 8:8.)
 
 James the Just — Jesus's brother and successor — "drank no wine nor strong drink, nor did he eat flesh" from birth (Hegesippus). If the family Jesus grew up in practiced this, the Good Shepherd teaching becomes not just theology but autobiography.
 
