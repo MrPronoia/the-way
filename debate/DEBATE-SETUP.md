@@ -10,8 +10,10 @@ Open **two Claude sessions** in this repo (terminal tabs, or two Claude Desktop 
 
 | Tab | Model | Use it for |
 |---|---|---|
-| **Tab 1 — Fast** | Sonnet (or Haiku) | Citation lookups, "what's the verse where...", pulling a quote, checking a date. Near-instant. |
+| **Tab 1 — "Jamie"** | Sonnet (or Haiku) | Citation lookups, "what's the verse where...", pulling a quote, checking a date. Near-instant. |
 | **Tab 2 — Deep** | Fable / Opus | Multi-step theology questions, "how do we respond to X's argument", anything needing judgment. Slower but stronger. |
+
+Tab 1 is the Jamie — *"Jamie, pull that up."* That's exactly the job: somebody off to the side who finds the thing in seconds while the conversation keeps moving. Name it that in your own head and you'll use it correctly, because it tells you what *not* to send there. Jamie pulls up sources. Jamie doesn't build your argument for you — that's Tab 2.
 
 In the terminal: `claude --model sonnet` in one tab, `claude` (default/Fable or Opus) in the other. In Claude Desktop: pick the model per conversation.
 
