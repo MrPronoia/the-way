@@ -61,7 +61,7 @@ This is not bureaucratic. In October 2026 a verification pass found three quotes
 | Source | Scope | Notes |
 |---|---|---|
 | **The Jesus Way** — Aaron Abke & James Benefico | 65 episodes | Complete. One gap: ep. 045 has captions disabled at the source and needs manual transcription. |
-| **Dr. James Tabor** — his "Paul" playlist | 77 videos | The most processed set here: each file has a synthesized summary, key teachings, scripture citations and scholars cited, *plus* the raw transcript. See `dr-tabor/00-overview.md`. |
+| **Dr. James Tabor** — his "Paul" playlist | 77 videos | The most processed set here: each file has a synthesized summary, key teachings, scripture citations and scholars cited, *plus* the raw transcript. See `podcast-archive/dr-tabor/00-overview.md`. |
 | **Kam Waters** — Christspiracy / The Way Skool | 7 videos | Complete channel. One video is in Spanish and kept in the original. |
 
 **These are auto-generated captions.** They contain typos, mangled names, and garbled Hebrew/Greek. Treat them as **pointers, not proof** — excellent for finding which thread to pull, never quoted as a source. Anything we stand behind gets traced to a primary text first. `CLAUDE.md` instructs every AI assistant working in this repo to follow that rule.

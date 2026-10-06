@@ -70,7 +70,9 @@ When users ask about Christian theology:
 | `gnosticism/` | The Gnostic gospels — Gospel of Thomas, Gospel of Philip, Nag Hammadi (Christianity's mystical wing, suppressed but recovered) |
 | `extended-library/` | Jesus-relevant secondary works — currently just `essene-gospel-of-peace.md` (with provenance caveats) |
 | `jesus-site-reference/` | Source for jesusactuallysaid.com + architectural notes |
-| `podcast-archive/` | The Jesus Way podcast raw transcripts (50+ episodes — working material, not polished) |
+| `podcast-archive/` | Raw auto-caption transcripts — The Jesus Way (65 episodes), Dr. James Tabor's "Paul" playlist (77 videos, synthesized), Kam Waters' channel (7 videos). Working material: **pointers, not proof** — never quote as a source |
+| `debate/` | 14 stage-ready cards (claim, evidence, objections + rebuttals, sound bites) + `CITATION-NOTES.md`, which logs citations found to be fabricated or reversed. Read that file before quoting |
+| `scripts/` | `semantic-search.py` — meaning-based search over the whole repo (Gemini embeddings). Setup in `scripts/README.md` |
 
 **Scope:** This repo is tight by design — Jesus directly, early Christianity, the distortion, the recovery. Broader perennial-philosophy / comparative-mysticism / Christian-adjacent luminaries (Eckhart, Newton, etc.) live upstream in `mr-pronoia`, not here. Don't propose adding them back without checking with Matt — the 2026-05-18 scope refinement was deliberate.
 

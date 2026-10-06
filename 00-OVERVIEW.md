@@ -2,6 +2,8 @@
 
 A more detailed orientation than `README.md`. Four reading paths, each pointing to specific files.
 
+**Just need to look something up?** Skip the reading paths and go to `TOPIC-INDEX.md` (claim → exact file and section) or `debate/00-INDEX.md` (14 cards with the evidence and rebuttals already assembled). See **Finding Things Fast** below.
+
 ---
 
 ## Reading Path 1: The Thesis in 90 Minutes
@@ -87,13 +89,27 @@ The actual published site is still built and served from `mr-pronoia/jesus-site/
 
 ## What's In podcast-archive
 
-Raw transcripts from The Jesus Way podcast (Aaron Abke & James Benefico). 55 episodes covering: Yeshua's true mission, the Moses Scroll, the Two Ways, Essene origins, the Saturn cult, Christ consciousness, the Jesus diet, the Mary rediscovery, NDE life reviews, refuting the rapture, the Trinity debunked, Swedenborg, three forgotten Nazarene practices, James rejected Paul, and more.
+Three transcript collections:
 
-**These are working transcripts, not polished episodes.** Use them for research material, source mining, and quote retrieval. Don't cite them as authoritative without verifying the underlying claims against primary sources.
+- **`the-jesus-way/`** — The Jesus Way podcast (Aaron Abke & James Benefico). **65 episodes**, covering Yeshua's true mission, the Moses Scroll, the Two Ways, Essene origins, the Saturn cult, Christ consciousness, the Jesus diet, the Mary rediscovery, NDE life reviews, refuting the rapture, the Trinity debunked, Swedenborg, the Nazarene practices, James rejected Paul, and more. One gap: episode 045 has captions disabled at the source and needs manual transcription.
+- **`dr-tabor/`** — Dr. James Tabor's "Paul" YouTube playlist, **77 videos**. The most processed set here: each file carries a summary, key teachings, scripture citations, scholars cited, and quotable moments, *plus* the full raw transcript. See `podcast-archive/dr-tabor/00-overview.md` for the thematic index.
+- **`kameron-waters/`** — Kam Waters' channel (Christspiracy, The Way Skool), **7 videos** — the complete channel. One is in Spanish and kept in the original.
 
-The folder also contains **`dr-tabor/`** — synthesized research notes on Dr. James Tabor's "Paul" YouTube playlist (77 videos: summary, key teachings, scripture citations, scholars cited, quotable moments, plus the full raw transcript per video). See `podcast-archive/dr-tabor/00-overview.md` for the thematic index.
+**These are auto-generated captions, not polished episodes.** They contain typos, mangled names, and garbled Hebrew/Greek. Treat them as **pointers, not proof** — good for finding which thread to pull, never quoted as a source. Trace anything you want to stand behind back to a primary text first.
 
-See `podcast-archive/README.md` for the full episode list and how to use them.
+See `podcast-archive/README.md` for the full episode list and `podcast-archive/the-jesus-way/TRANSCRIPT-STATUS.md` for how new transcripts get pulled.
+
+---
+
+## Finding Things Fast
+
+Three purpose-built entry points, in this order:
+
+1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor verified.
+2. **`debate/`** — **14 stage-ready cards**: the claim, the strongest primary-source evidence, the objections an apologist actually raises with rebuttals, sound bites, and go-deeper paths. Start at `debate/00-INDEX.md`. **Read `debate/CITATION-NOTES.md` before quoting anything** — it logs three citations found to be fabricated or reversed in our own research, plus a do-not-use list.
+3. **`scripts/semantic-search.py`** — semantic (meaning-based) search across the whole repo via Gemini embeddings, for when a question comes from an angle the index doesn't anticipate. One-time setup in `scripts/README.md`.
+
+For live use — a debate, a recording, a public Q&A — `debate/DEBATE-SETUP.md` has the session warm-up prompt and the two-model pattern.
 
 ---
 
