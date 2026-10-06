@@ -56,7 +56,9 @@ The useful insight is that **the stages get radically easier in reverse**, and v
 
 **v1 — Transcribe, then review.** No real-time anything. Record the conversation, transcribe it afterwards, produce a report: claims made, what the repo says about each, citations, anything that looks wrong. Zero latency pressure, immediately useful for podcast post-production, and it proves out retrieval quality before any hard engineering. Could be built in an afternoon on top of what exists.
 
-**v2 — Push-to-check.** A hotkey. You hit it, Jamie checks the last ~30 seconds of audio and surfaces what it has. **This skips the hard problem entirely** by keeping a human on the "when" decision — which is also the part humans are much better at than models. Roughly 90% of the value for 20% of the difficulty. *This is probably where to stop unless v3 proves necessary.*
+**v2 — Push-to-check.** A hotkey. You hit it, Jamie checks the last ~30 seconds and surfaces what it has; tap again to widen the window. **This skips the hard problem entirely** by keeping a human on the "when" decision — which is also the part humans are much better at than models. Roughly 90% of the value for 20% of the difficulty. *This is probably where to stop unless v3 proves necessary.*
+
+→ **Full build framework for v2: `jamie-mvp.md`.**
 
 **v3 — Autonomous.** Continuous listening with a claim-detection gate. Only worth building if v2 gets used constantly and the hotkey becomes the annoyance.
 
