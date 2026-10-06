@@ -13,7 +13,7 @@ Listen to a live conversation, transcribe it as it happens, and surface relevant
 Use cases, in order of how well it fits:
 
 1. **Podcasting** — a second screen with citations arriving as you talk
-2. **Debating** — the case the `debate/` cards were built for
+2. **Debating** — the case the `questions/` cards were built for
 3. **Normal conversation** — the Bible Belt sauna problem that started this whole project: having the answer *while* the conversation is still happening, not two hours later
 
 ---
@@ -28,8 +28,8 @@ On top of that, the corpus is unusually well-prepared for this:
 
 - ~11,900 chunks across 16 MB, each carrying its source file and line number
 - Primary texts sit in `christianity/Incoming/` so a hit can be traced to the actual document
-- The `debate/` cards are pre-digested — a good hit could surface an entire prepared card (claim, evidence, rebuttals) rather than a raw paragraph
-- `debate/CITATION-NOTES.md` encodes which quotes are *not* safe to use, so Jamie could warn rather than mislead
+- The `questions/` cards are pre-digested — a good hit could surface an entire prepared card (claim, evidence, the responses) rather than a raw paragraph
+- `questions/CITATION-NOTES.md` encodes which quotes are *not* safe to use, so Jamie could warn rather than mislead
 
 ## What's missing
 
@@ -69,4 +69,4 @@ The useful insight is that **the stages get radically easier in reverse**, and v
 - Scope of the corpus: just this repo, or `mr-pronoia` too? Starting narrow makes precision much easier.
 - Does it ever speak, or is it screen-only? Screen-only for a recorded podcast seems obviously right.
 - How does it handle *disagreeing* with the host mid-sentence? The "you were off about this date" case is socially delicate and probably wants a different visual treatment than a supporting citation.
-- Could the fast/deep split from `debate/DEBATE-SETUP.md` apply here — Jamie handles lookups, and anything needing judgment escalates to a second model on request?
+- Could the fast/deep split from `questions/LIVE-SETUP.md` apply here — Jamie handles lookups, and anything needing judgment escalates to a second model on request?

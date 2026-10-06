@@ -17,10 +17,10 @@ See `README.md` for orientation and `PROVENANCE.md` for the assembly story.
 Don't search the repo blind — there are three purpose-built entry points, in this order:
 
 1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor is verified.
-2. **`debate/`** — nine stage-ready cards (claim, strongest primary-source evidence, objections with rebuttals, sound bites, go-deeper paths). Start with `debate/00-INDEX.md`. **Read `debate/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
+2. **`questions/`** — fourteen cards on the hard questions (claim, strongest primary-source evidence, the questions people raise with honest responses, one-sentence versions, go-deeper paths). Start with `questions/00-INDEX.md`. **Read `questions/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
 3. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
 
-**For live/debate use**, `debate/DEBATE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
+**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
 
 ---
 
@@ -71,7 +71,7 @@ When users ask about Christian theology:
 | `extended-library/` | Jesus-relevant secondary works — currently just `essene-gospel-of-peace.md` (with provenance caveats) |
 | `jesus-site-reference/` | Source for jesusactuallysaid.com + architectural notes |
 | `podcast-archive/` | Raw auto-caption transcripts — The Jesus Way (65 episodes), Dr. James Tabor's "Paul" playlist (77 videos, synthesized), Kam Waters' channel (7 videos). Working material: **pointers, not proof** — never quote as a source |
-| `debate/` | 14 stage-ready cards (claim, evidence, objections + rebuttals, sound bites) + `CITATION-NOTES.md`, which logs citations found to be fabricated or reversed. Read that file before quoting |
+| `questions/` | 14 cards on the hard questions (claim, evidence, questions people raise + responses, one-sentence versions) + `CITATION-NOTES.md`, which logs citations found to be fabricated or reversed. Read that file before quoting |
 | `scripts/` | `semantic-search.py` — meaning-based search over the whole repo (Gemini embeddings). Setup in `scripts/README.md` |
 
 **Scope:** This repo is tight by design — Jesus directly, early Christianity, the distortion, the recovery. Broader perennial-philosophy / comparative-mysticism / Christian-adjacent luminaries (Eckhart, Newton, etc.) live upstream in `mr-pronoia`, not here. Don't propose adding them back without checking with Matt — the 2026-05-18 scope refinement was deliberate.

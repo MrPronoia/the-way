@@ -119,7 +119,7 @@ If you own a book and it's genuinely important, tell us. We'll pull the specific
 
 **Where it came from.** Author, title, date, and — critically — *which translation or edition*, plus the chapter or page. Thirty seconds from you saves an hour of detective work on our end, and sometimes it isn't recoverable at all.
 
-This matters more than it sounds. A verification pass in October 2026 found three quotes circulating in this repo's own research that pointed at sources where the text simply wasn't there — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `debate/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
+This matters more than it sounds. A verification pass in October 2026 found three quotes circulating in this repo's own research that pointed at sources where the text simply wasn't there — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `questions/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
 
 ---
 
@@ -132,7 +132,7 @@ This matters more than it sounds. A verification pass in October 2026 found thre
 | **Primary texts** | Gospel of Thomas, the Didache, the Clementine Homilies *and* Recognitions (both complete), a Q-source reconstruction, Dead Sea Scrolls selections, the Gospel of Philip, the Apocryphon of John |
 | **Ethiopian canon** | 1 Enoch, Jubilees, Meqabyan, the Shepherd of Hermas, the Didascalia, the Epistula Apostolorum |
 | **Research & analysis** | ~60 files — blood atonement, the Trinity's construction, the rapture's 1830s origin, the Essene–Nazarene lineage, the Moses Scroll, James the Just, textual-criticism deep dives |
-| **Debate kit** | 14 topic cards with evidence, objections and rebuttals, plus a claim-to-file index for fast lookup |
+| **The questions** | 14 cards on the hard questions — the evidence, the pushback people raise, and honest responses — plus a claim-to-file index for fast lookup |
 
 And the transcript archive — raw material for finding threads:
 
@@ -159,11 +159,11 @@ The tradeoff is speed against depth. Pick deliberately.
 | **Sonnet** or **Haiku**<br>*(the Jamie)* | Seconds | Looking up a citation, finding the verse, checking a date, "where in the repo is…". Anything where you need the answer while the conversation is still on the topic. |
 | **Opus** or **Fable** | A minute or two | Building an argument, weighing competing readings, synthesizing across sources, anything needing real judgment. Noticeably better answers — worth the wait when you have it. |
 
-For anything live — a debate, a recorded conversation, a public Q&A — open **two tabs**: a fast model for lookups and a deep model for the hard questions. You never wait on the slow one for a quick answer, and the deep one keeps its train of thought instead of being interrupted.
+For anything live — a conversation, a recording, a public Q&A — open **two tabs**: a fast model for lookups and a deep model for the hard questions. You never wait on the slow one for a quick answer, and the deep one keeps its train of thought instead of being interrupted.
 
 Think of tab one as **the Jamie** — *"Jamie, pull that up."* That's exactly the job: somebody off to the side who finds the thing in seconds while the conversation keeps moving. Naming it that also tells you what *not* to send there. Jamie pulls up sources; Jamie doesn't build your argument — that's tab two.
 
-One habit that matters more than the model choice: **load the key files before you start.** A cold session has to go searching; a warmed one already has the material in context and answers immediately. `debate/DEBATE-SETUP.md` has the exact prompt to paste.
+One habit that matters more than the model choice: **load the key files before you start.** A cold session has to go searching; a warmed one already has the material in context and answers immediately. `questions/LIVE-SETUP.md` has the exact prompt to paste.
 
 ---
 

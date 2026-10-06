@@ -69,14 +69,14 @@ Embedding that returns mush. A small fast model turns the window into clean quer
 
 ### Ranking: what gets shown first
 
-1. **A matching `debate/` card** — pre-digested, with evidence and rebuttals already assembled. Highest value by far.
+1. **A matching `questions/` card** — pre-digested, with the evidence and the responses already assembled. Highest value by far.
 2. **A primary text passage** — `christianity/Incoming/`, Dead Sea Scrolls, Ethiopian canon.
 3. **An analysis file passage.**
 
 Two filters before anything renders:
 
 - **Score threshold.** Below a similarity floor, show nothing. Showing nothing is a feature; showing something irrelevant costs you attention mid-sentence, which is the scarcest thing you have.
-- **Citation safety.** If a hit touches something flagged in `debate/CITATION-NOTES.md`, render it as a *warning* ("this quote doesn't check out — see notes") rather than as support. Jamie keeping you from using a bad citation on air is arguably the single highest-value thing it can do.
+- **Citation safety.** If a hit touches something flagged in `questions/CITATION-NOTES.md`, render it as a *warning* ("this quote doesn't check out — see notes") rather than as support. Jamie keeping you from using a bad citation on air is arguably the single highest-value thing it can do.
 
 ---
 

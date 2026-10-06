@@ -22,7 +22,7 @@ Then look at where John put his thesis: "Behold, the Lamb of God" (John 1:29), c
 In Mark, Jesus silences messianic confession (Mark 8:29-30), refuses to give a sign (Mark 8:11-12), teaches in short aphorisms and parables, and deflects a compliment with "no one is good except God alone" (Mark 10:18). In John, Jesus delivers multi-chapter first-person monologues organized around seven signs and seven "I am" declarations — material with essentially no Synoptic parallel at all. Both portraits cannot be verbatim. Mark is earlier, shorter, less theologically processed, and rougher on Jesus; John is later, longer, smoother, and more exalted. The direction of development is not ambiguous.
 
 ### 4. The belief vocabulary spikes in John and nowhere else
-The verb *pisteuein* ("to believe") occurs around a hundred times in John and roughly a dozen times in each of Matthew, Mark, and Luke. The noun *pistis* ("faith") never appears in the Gospel of John at all — only the verb. (Standard concordance work; keep it at that level and don't overclaim the exact counts on stage.)
+The verb *pisteuein* ("to believe") occurs around a hundred times in John and roughly a dozen times in each of Matthew, Mark, and Luke. The noun *pistis* ("faith") never appears in the Gospel of John at all — only the verb. (Standard concordance work; keep it at that level and don't overclaim the exact counts out loud.)
 
 A theme that appears a hundred times in one source and a dozen times in three others is that source's emphasis. That is the ordinary rule everyone already applies to Luke's interest in the poor and Matthew's interest in fulfilled prophecy. Applied to John, it means the belief-condition sayings are John's theology of John's community — the thing we are most interested in, and the thing least likely to be a transcript.
 
@@ -38,7 +38,7 @@ A redactor adds what helps. He does not invent what hurts. So when the most exal
 
 This is the criterion of embarrassment doing real work. We are not claiming these are tape recordings. We are claiming something more useful: that even the community with the highest Christology in the first century did not hold co-equality, did not hold belief-alone, and preserved a Jesus who worshipped God. That is a claim about John, sourced from John, and it does not require John to be a transcript.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "You cite John when it helps and dismiss it when it doesn't."
 Fair challenge, and here is the stated rule, auditable in three clauses:
@@ -59,13 +59,13 @@ Three answers, in ascending order of weight.
 **Third, John contradicts the belief-alone reading inside John.** John 5:24 says whoever believes "has eternal life." Five verses later, John 5:28-29 says the dead come out of the tombs sorted by whether they "have done good" or "have done evil." And John conditions on obedience repeatedly: "If you love me, keep my commands" (14:15), "If you keep my commands, you will remain in my love" (15:10), "You are my friends if you do what I command" (15:14). The belief-condition list is a cherry-pick from a gospel that also has a works judgment and an obedience condition in the same discourses.
 
 ### "John 6:53-56 — 'unless you eat the flesh of the Son of Man and drink his blood you have no life in you.' That's your whole anti-blood case, gone."
-This is the hardest verse in the kit, so take it in order.
+This is the hardest verse in the collection, so take it in order.
 
 **John de-literalizes it himself, ten verses later:** "It is the Spirit that gives life; the flesh is of no avail. The words I have spoken to you are spirit and life" (John 6:63). That is the discourse's own resolution, in the same chapter, in the same mouth. Any reading of 6:53 that survives 6:63 has to explain why the author immediately undercut it.
 
 **The chapter's own refrain is coming and believing, not eating:** "I am the bread of life; whoever comes to me will never be hungry" (6:35), "everyone who looks to the Son and believes" (6:40), "whoever believes has eternal life" (6:47). The flesh-and-blood section restates the bread-of-life argument in sacramental imagery; it does not introduce a transaction.
 
-**And here is the part an apologist usually doesn't finish reading:** "Whoever eats my flesh and drinks my blood **abides in me, and I in him**" (John 6:56). The stated result is mutual indwelling — the same thing as "that they may be one as we are one, I in them and you in me" (John 17:21-23). Nowhere in the passage does blood pay a debt, satisfy wrath, or purchase forgiveness. The verse quoted against us is actually a participation text. It is on our side of the ledger, not theirs.
+**And here is the part that usually goes unread:** "Whoever eats my flesh and drinks my blood **abides in me, and I in him**" (John 6:56). The stated result is mutual indwelling — the same thing as "that they may be one as we are one, I in them and you in me" (John 17:21-23). Nowhere in the passage does blood pay a debt, satisfy wrath, or purchase forgiveness. The verse quoted against us is actually a participation text. It is on our side of the ledger, not theirs.
 
 **Then the historical point.** Leviticus 17:10-14 forbids consuming blood absolutely, under penalty of being cut off from the people. A Torah-observant Jewish teacher commanding his Jewish followers to drink blood is close to historically unintelligible — and John records the reaction: "From this time many of his disciples turned back" (6:66). A Greek-speaking community two generations later, developing a sacramental meal, is the natural setting for this language. Rudolf Bultmann argued that 6:51b-58 is a later eucharistic insertion, on the literary ground that it interrupts the bread-and-believing argument and that the disciples' objection at 6:60-63 responds to the *discourse*, not to the eucharistic section. That is a minority position and we present it as a named hypothesis, not a fact — but the literary seam is real and it is not our invention.
 
@@ -94,12 +94,12 @@ If John's discourses are discounted, we lose or demote the following, and we acc
 - **"Essene vocabulary verbatim in the mouth of Jesus"** (John 12:36, "children of light"; John 14:17, "Spirit of truth"). The claim has to be stated as *the Johannine tradition inherited Qumran's vocabulary* — which is still a significant and defensible finding about transmission, and arguably a cleaner one. It is not evidence that Jesus said those words.
 - **John 17:3 and 14:28** are kept, but on a narrower basis than "Jesus said this": they are kept because a high-christology author preserved them against his own interest, which is evidence about first-century belief rather than about verbatim speech.
 
-Three demoted verses in exchange for a rule that can't be turned against us is a good trade. A kit that cites a source as authoritative in one card and late in the next loses the room regardless of who's right on the exegesis.
+Three demoted verses in exchange for a rule that can't be turned against us is a good trade. A collection that cites a source as authoritative in one card and late in the next loses the room regardless of who's right on the exegesis.
 
 ### "If John isn't reliable, you've gutted the New Testament. Why trust any of it?"
 We didn't say unreliable. We said *interpretive* — and that is the mainstream critical position on John across the field, not a fringe one. Interpretation is not fabrication: John preserves early tradition (the Qumran vocabulary cluster, the Bethesda and Siloam topography, the Passover-preparation chronology that many historians actually prefer to Mark's) alongside heavy theological development. The job is to tell the layers apart. That is the same tool we use on Matthew 26:28 — where "for the forgiveness of sins" appears in Matthew alone and in neither Mark, Luke, nor Paul — and on the Comma Johanneum at 1 John 5:7. We use it consistently or we don't use it at all.
 
-## Sound Bites
+## In One Sentence
 
 - "John tells you why he wrote it: 'so that you may believe.' Chapter 20, verse 31. That's the author, not us."
 - "Every verse that makes belief the condition of salvation is in one gospel. The one written last, by the author who said he wrote it to produce belief."
@@ -112,11 +112,11 @@ We didn't say unreliable. We said *interpretive* — and that is the mainstream 
 
 ## Go Deeper
 
-- `debate/CITATION-NOTES.md` — the standing rule on verification; read before quoting anything on stage
-- `debate/the-gospel-of-thomas.md` — the companion source-reliability card; same discipline applied to Thomas
-- `debate/trinity-deity-of-jesus.md` — where John 17:3, 14:28, and 10:34 are used, and on what basis
-- `debate/sacrifice-culture-vegetarian-jesus.md` — where John 10:10-11 and 2:15 appear; read with the demotions above
-- `debate/blood-atonement-and-salvation.md` — the four direct "how am I saved" questions and their Synoptic answers
+- `questions/CITATION-NOTES.md` — the standing rule on verification; read before quoting anything publicly
+- `questions/the-gospel-of-thomas.md` — the companion source-reliability card; same discipline applied to Thomas
+- `questions/trinity-deity-of-jesus.md` — where John 17:3, 14:28, and 10:34 are used, and on what basis
+- `questions/sacrifice-culture-vegetarian-jesus.md` — where John 10:10-11 and 2:15 appear; read with the demotions above
+- `questions/blood-atonement-and-salvation.md` — the four direct "how am I saved" questions and their Synoptic answers
 - `christianity/was-jesus-god-incarnate-red-text-evidence.md` — full red-text tables in both directions, Synoptic vs. Johannine
 - `christianity/good-shepherd-thuo-reversal.md` — the θύω lexical argument in full, with LSJ sourcing
 - `christianity/matt-26-28-textual-layers.md` — the layer method demonstrated on a single verse: who added "for the forgiveness of sins"

@@ -56,7 +56,7 @@ Acts 24:5 has Paul prosecuted as "a ringleader of the sect of the Nazarenes" —
 
 *Held more lightly:* Epiphanius also describes, at *Panarion* 18, a group he calls the Nasaraioi who existed **before** Jesus — "Jews by nationality, originally from Gilead, Bashan, and the Trans-Jordan" — who held that "it was unlawful to eat meat or make sacrifices with it" and that the sacrificial books of the Torah were forgeries. That would be a striking confirmation. But it is a single late source, and it is the same source whose reliability we question elsewhere on this card. We offer the pre-Christian Nazarene sect as a plausible possibility, not as an established fact, and nothing above depends on it.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Jesus can't have been an Essene — he ate with sinners, healed on the Sabbath, and drank wine. The Essenes were rigid separatists."
 Correct on the facts, and we're not claiming membership — we're claiming *stream*. Reform movements criticize their own parent tradition most sharply; that's what makes them reform movements. The argument isn't that Jesus kept every Qumran rule, it's that his vocabulary, his proof texts, his initiation rite, his communal economics, his twelve-plus-three structure, and his break with the Temple establishment all come from that milieu and from no other available one. The Pharisees and Sadducees share none of it.
@@ -94,7 +94,7 @@ So we use him where he is a witness and not where he is a historian. That is why
 ### "The flight to Pella is a late legend — Eusebius is writing in 325 about 70 CE."
 A real objection, and the Pella tradition is genuinely contested among scholars. But it does not stand alone. The leadership succession through Jesus's family comes from Hegesippus around 170 CE — much closer to the events — and is independently corroborated for James by Josephus. Epiphanius, writing separately in 374, locates actual Nazarene communities at Berea near Pella in his own day. Even if the "revelation" detail is hagiography, Jewish-Christian communities in the Trans-Jordan preserving a non-Pauline Jesus are attested on the ground for four centuries.
 
-## Sound Bites
+## In One Sentence
 
 - "Children of Light" isn't in the Hebrew Bible. It's Qumran vocabulary — and it turns up in John, in Luke, and in Paul. The whole first generation was speaking Essene.
 - Twelve with an inner three, shared purse, bread and wine, water immersion, a break with the Temple. That blueprint was already written at Qumran.
@@ -111,5 +111,5 @@ A real objection, and the Pella tradition is genuinely contested among scholars.
 - `christianity/2026-02-25-essene-nazarene-ebionite-lineage.md` — the three-stage lineage and why the Ebionites lost politically rather than theologically
 - `christianity/nazarene-sect-predated-jesus.md` — *Panarion* 18 and the pre-Christian Nazarene case; read with the Epiphanius caveats above
 - `christianity/flight-to-pella-golden-thread.md` — the Eusebius/Epiphanius/Hegesippus chain and the succession through Jesus's family
-- `debate/method-and-criteria.md` — the stated source-weighting rules behind the Epiphanius position above
-- `debate/the-gospel-of-thomas.md` — the dating position for Saying 12
+- `questions/method-and-criteria.md` — the stated source-weighting rules behind the Epiphanius position above
+- `questions/the-gospel-of-thomas.md` — the dating position for Saying 12

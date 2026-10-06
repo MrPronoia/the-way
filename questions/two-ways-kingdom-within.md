@@ -11,14 +11,14 @@
 
 > "What must I do to inherit eternal life?" ... "Do this and you will live." — Luke 10:25–28
 
-**Count it accurately — an opponent will.** This is **two distinct scenes**, not three: the rich man, preserved in all three Synoptics, and the lawyer's question at Luke 10:25–28, whose love-God-and-neighbor answer appears independently at Mark 12:28–34 and Matthew 22:34–40. So: two separate questions, triple-attested answers, zero mention of believing in his death. That is still the strongest shape in the gospels, and it holds without inflating the count. (On why we trust Matthew here and not at 26:28, see *"Pick a criterion"* below. Also know the rest of the rich-man pericope — verses 21–31 — before you quote verse 17; the prepared answer is on the blood-atonement card.)
+**Count it accurately — a careful reader will.** This is **two distinct scenes**, not three: the rich man, preserved in all three Synoptics, and the lawyer's question at Luke 10:25–28, whose love-God-and-neighbor answer appears independently at Mark 12:28–34 and Matthew 22:34–40. So: two separate questions, triple-attested answers, zero mention of believing in his death. That is still the strongest shape in the gospels, and it holds without inflating the count. (On why we trust Matthew here and not at 26:28, see *"Pick a criterion"* below. Also know the rest of the rich-man pericope — verses 21–31 — before you quote verse 17; the prepared answer is on the blood-atonement card.)
 
 ### 2. The final judgment scene is entirely behavioral
 > "I was hungry and you gave me food. I was thirsty and you gave me drink. I was a stranger and you welcomed me. I was naked and you clothed me. I was sick and you visited me. I was in prison and you came to me." — Matthew 25:35–36
 
 This is Jesus's own picture of the last judgment, and there is not one question in it about doctrine, Christology, or atonement. The sheep don't even recognize who they were serving. The criterion is what they did.
 
-**Single-source Matthew — and that's defensible here.** 25:31–46 has no Markan parallel, and the opponent will note that we reject Matthew 26:28 on exactly that basis. Short answer: this scene gives Matthew nothing. He is the evangelist of church order, Peter's keys, and "whoever confesses me before men" (10:32) — and he hands down a last-judgment scene where confession is never asked about. Redactors don't invent material that undercuts their own program. Full criterion below.
+**Single-source Matthew — and that's defensible here.** 25:31–46 has no Markan parallel, and a careful reader will note that we reject Matthew 26:28 on exactly that basis. Short answer: this scene gives Matthew nothing. He is the evangelist of church order, Peter's keys, and "whoever confesses me before men" (10:32) — and he hands down a last-judgment scene where confession is never asked about. Redactors don't invent material that undercuts their own program. Full criterion below.
 
 ### 3. The kingdom is here, inside and outside, unseen
 > "The kingdom of God is within you." — Luke 17:21
@@ -29,7 +29,7 @@ This is Jesus's own picture of the last judgment, and there is not one question 
 
 Two independent source streams — canonical Luke and Thomas — agree on location and timing. The obstacle is perception, not chronology.
 
-**Hold present *and* future — don't let Luke 17 be cut in half.** Verses 20–21 answer the Pharisees' question about *the kingdom's* arrival: no observable signs, it is already here. Verses 22–37 then turn to the disciples about "the day the Son of Man is revealed" — a different subject, explicitly future. Our position is both/and: the kingdom is a present reality that is also moving toward consummation ("your kingdom come," Matthew 6:10; "the kingdom of God has come near," Mark 1:15). What we deny is that it is *only* future, located elsewhere, and entered postmortem by holding correct beliefs. **This is also how the rapture card can use Luke 17:34–37 without contradicting this one** — see the objection below, and keep the two readings aligned on stage.
+**Hold present *and* future — don't let Luke 17 be cut in half.** Verses 20–21 answer the Pharisees' question about *the kingdom's* arrival: no observable signs, it is already here. Verses 22–37 then turn to the disciples about "the day the Son of Man is revealed" — a different subject, explicitly future. Our position is both/and: the kingdom is a present reality that is also moving toward consummation ("your kingdom come," Matthew 6:10; "the kingdom of God has come near," Mark 1:15). What we deny is that it is *only* future, located elsewhere, and entered postmortem by holding correct beliefs. **This is also how the rapture card can use Luke 17:34–37 without contradicting this one** — see the objection below, and keep the two readings aligned when you speak.
 
 ### 4. The Didache: the oldest Christian catechism opens with the Two Ways, not a creed
 > "There are two ways, one of life and one of death; and between the two ways there is a great difference. Now, this is the way of life: 'First, you must love God who made you, and second, your neighbor as yourself.' And whatever you want people to refrain from doing to you, you must not do to them." — Didache 1:1–2
@@ -49,16 +49,16 @@ The Didache (c. 50–120 CE), "The Teaching of the Twelve Apostles," was the pre
 
 Qumran, c. 100 BCE: two ways, mapped virtue- and vice-lists, and expiation through inner transformation rather than ritual transaction.
 
-**State the relationship carefully — this is where the kit previously overclaimed.** Jonathan Draper and the mainstream of Didache scholarship argue that the Didache's Two Ways and 1QS draw on a **common Jewish Two Ways tradition** — the same tradition standing behind Barnabas 18–20 and the Latin *Doctrina Apostolorum* — not that the Didache is textually dependent on the Community Rule. **Shared tradition, not direct dependency.** Do not say Draper "demonstrated direct textual continuity from Qumran into the Didache"; anyone who has read him will correct you.
+**State the relationship carefully — this is where the cards previously overclaimed.** Jonathan Draper and the mainstream of Didache scholarship argue that the Didache's Two Ways and 1QS draw on a **common Jewish Two Ways tradition** — the same tradition standing behind Barnabas 18–20 and the Latin *Doctrina Apostolorum* — not that the Didache is textually dependent on the Community Rule. **Shared tradition, not direct dependency.** Do not say Draper "demonstrated direct textual continuity from Qumran into the Didache"; anyone who has read him will correct you.
 
 The softer claim already wins the point: the oldest Christian catechism is a Jewish Two Ways document, the framework is demonstrably pre-Christian, and the earliest Christians catechized converts in it a century before Nicaea.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Multiple attestation when it suits you, single-source Matthew when it doesn't. Pick a criterion."
 *The full form: "You reject Matthew 26:28 as lone Matthean editing of Mark — then you build on Matthew 19, Matthew 25:31–46, Matthew 6:14–15, and Matthew 11:30."*
 
-**Same attack as on the atonement card; same answer. Memorize it.** The test is not how many gospels carry a saying. It is **which direction the editor's hand is moving.** When a writer alters his own source toward his own known theology, the alteration is evidence about the writer. When material has no such motive — or costs the writer something — single attestation is not an objection. That is standard redaction criticism plus the criterion of embarrassment, and the scholars on the other side of the table use both.
+**Same challenge as on the atonement card; same answer. Memorize it.** The test is not how many gospels carry a saying. It is **which direction the editor's hand is moving.** When a writer alters his own source toward his own known theology, the alteration is evidence about the writer. When material has no such motive — or costs the writer something — single attestation is not an objection. That is standard redaction criticism plus the criterion of embarrassment, and scholars who hold the traditional view use both.
 
 - **Matthew 26:28 fails it.** Matthew has Mark in front of him and *adds* "for the forgiveness of sins," moving toward his own program (compare Matthew 1:21, also his addition, also absent from Mark).
 - **Matthew 19:17 passes — and isn't single-source.** "Keep the commandments" is in Mark 10:19 and Luke 18:20 too. Matthew *does* edit this pericope: he softens Mark's "no one is good but God alone" into "why do you ask me about what is good?" What he edited is the Christology, not the answer.
@@ -66,7 +66,7 @@ The softer claim already wins the point: the oldest Christian catechism is a Jew
 - **Matthew 6:14–15 passes on substance.** Reciprocal forgiveness is independently in Mark 11:25 and the Lord's Prayer at Luke 11:4.
 - **Matthew 11:30 is the weakest.** No Synoptic parallel; the shared Q block ends at 11:27. Use it as corroboration, not a pillar — and note it is corroborated outside the gospels by Didache 6:2.
 
-**Concede the limit out loud:** the criterion is directional and probabilistic, not proof, and it can be aimed at us. Which is precisely why the load-bearing claims here are the multiply attested ones. Full version on `debate/blood-atonement-and-salvation.md`.
+**Concede the limit out loud:** the criterion is directional and probabilistic, not proof, and it can be aimed at us. Which is precisely why the load-bearing claims here are the multiply attested ones. Full version on `questions/blood-atonement-and-salvation.md`.
 
 ### "Your Didache quote is from the latest layer in the book. Didache 1:3–2:1 is the *sectio evangelica* — a secondary insertion of gospel material."
 **They are right about the passage, and we say so first.** Niederwimmer, Kloppenborg, and most Didache specialists treat 1:3b–2:1 as a secondary insertion drawing on harmonized synoptic tradition. It is the one block in chapters 1–6 you must not lean on for an early-dating argument.
@@ -89,7 +89,7 @@ Our position is both/and, and always was: the kingdom is a present reality ("has
 On verse 37: "Where the corpse is, there the vultures will gather." Whatever that day is, the ones "taken" in verses 34–35 are taken where the corpses are. That is not a rescue — which is the rapture card's point, and it is the same exegesis of the same pericope, not a different one.
 
 ### "'Within you' is a mistranslation — *entos hymon* means 'among you,' 'in your midst.'"
-Both readings defeat the apologist's position. "Among you" still means present, local, and now — not a destination after death or after a rapture. And the ambiguity in Luke is resolved by Thomas 3, which says both at once: "the kingdom is inside of you, and it is outside of you." Thomas 113 closes it: already "spread out upon the earth," and people "do not see it."
+Both readings answer the traditional position. "Among you" still means present, local, and now — not a destination after death or after a rapture. And the ambiguity in Luke is resolved by Thomas 3, which says both at once: "the kingdom is inside of you, and it is outside of you." Thomas 113 closes it: already "spread out upon the earth," and people "do not see it."
 
 ### "Works are the fruit of salvation, not its basis. Matthew 25 describes saved people, it doesn't tell you how they got saved."
 That frame is read backwards from Romans into the gospels. When Jesus is asked point-blank how to obtain eternal life, he answers with commandments every time (Matthew 19:17; Mark 10:17–19; Luke 18:18–20), and when he draws the line explicitly he draws it at doing: "Not everyone who says to me, 'Lord, Lord,' will enter the kingdom of heaven, but only the one who *does* the will of my Father" (Matthew 7:21); "Why do you call me Lord, Lord, and not do what I say?" (Luke 6:46). His own brother, leading the Jerusalem church, states the conclusion flatly: "A person is justified by what they do, and not by faith alone" (James 2:24).
@@ -100,7 +100,7 @@ Silence in an arbitrary document isn't an argument. Silence in *the* document wh
 ### "The Two Ways is just generic ancient ethics — every culture had something like it. It says nothing distinctive about Christianity."
 Agreed, and that is the point. The earliest Christian catechism is continuous with Essene Judaism and the broader wisdom tradition (Deuteronomy 30:15–19, "therefore choose life"), not with a novel salvation mechanism. If the distinctive doctrines were the heart of the message, they should appear in the first thing converts were taught. They appear later, in Paul and then in the councils.
 
-## Sound Bites
+## In One Sentence
 
 - "The oldest Christian document asks what you do. The modern church asks what you believe. Those are different religions wearing the same name."
 - "He was asked how to inherit eternal life. He answered with commandments — in Matthew, in Mark, and in Luke. Nobody disputes the verses. They just don't preach them."
@@ -114,7 +114,7 @@ Agreed, and that is the point. The earliest Christian catechism is continuous wi
 
 - `christianity/two-ways-oldest-christian-doctrine.md` — full build-out: Didache, 1QS, 4Q473, Q, Barnabas 18, James; cross-tradition table. **Caution:** that file states Draper as showing textual *dependency* on 1QS — apply the softening used on this card (shared Jewish Two Ways tradition, not direct dependency), and apply the *sectio evangelica* caveat to any Didache 1:3–2:1 quote in it.
 - `christianity/Incoming/didache-full-text.md` — the Didache in full; Two Ways is chapters 1–6 (quote 1:1–2, 3–5, 4:14, 6:2; avoid 1:3–2:1), Eucharist is 9–10
-- `debate/blood-atonement-and-salvation.md` — the full redaction criterion, the Jeremiah 33:18 and Isaiah 53 pre-builds, and the rest of the rich-man pericope
+- `questions/blood-atonement-and-salvation.md` — the full redaction criterion, the Jeremiah 33:18 and Isaiah 53 pre-builds, and the rest of the rich-man pericope
 - `christianity/Incoming/gospel-of-thomas-full-text.md` — all 114 sayings; see 2, 3, 70, 113
 - `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` — 1QS Two Spirits passage (3:13–4:26) with virtue/vice lists
 - `christianity/jesus-core-teaching-distilled.md` — the ten core teachings, each with citation

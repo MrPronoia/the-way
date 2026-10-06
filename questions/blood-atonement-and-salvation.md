@@ -38,12 +38,12 @@ The Didache (c. 50-120 CE) is the oldest Christian church manual we have. Its Eu
 
 **Say it that precisely.** Didache 14 *does* use sacrifice language — "first confessing your sins so that your sacrifice may be pure," quoting Malachi 1:11 — but it applies *thusia* to the assembly's own offering of praise and a reconciled community, not to Jesus's death. That distinction is the whole point: the earliest Christians had a concept of sacrifice, and it was theirs to offer, not his to pay. If you claim "the Didache has no sacrifice," someone reads chapter 14 aloud and you lose the exchange.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Multiple attestation when it suits you, single-source Matthew when it doesn't. Pick a criterion."
-*The full form of the attack: "You reject Matthew 26:28 because it's lone Matthean editing of Mark — then you build your whole case on Matthew 25:31-46, Matthew 6:14-15, Matthew 11:30, and Matthew 19:17, none of which Mark has."*
+*The full form of the challenge: "You reject Matthew 26:28 because it's lone Matthean editing of Mark — then you build your whole case on Matthew 25:31-46, Matthew 6:14-15, Matthew 11:30, and Matthew 19:17, none of which Mark has."*
 
-**This is the sharpest attack on the entire kit. Memorize the answer. We do have a criterion, and it is a standard one.**
+**This is the sharpest challenge to the whole collection. Memorize the answer. We do have a criterion, and it is a standard one.**
 
 **The criterion, stated plainly:** Counting sources is not the test. *Direction of editing* is the test. When we can watch a writer alter his own source in the direction of his own known theology, the alteration is evidence about the writer, not about Jesus. When material has no such motive — or costs the writer something — the fact that one gospel preserves it is not an objection. This is ordinary redaction criticism plus the criterion of embarrassment (contra-tendency). Every historical-Jesus scholar on the other side of the table uses both.
 
@@ -53,7 +53,7 @@ The Didache (c. 50-120 CE) is the oldest Christian church manual we have. Its Eu
 - **Matthew 19:17 — passes, and it isn't single-source.** "Keep the commandments" is in Mark 10:19 and Luke 18:20 too. Matthew *does* edit this pericope: Mark's "Why do you call me good? No one is good but God alone" (Mark 10:18) becomes "Why do you ask me about what is good?" Notice *what* he edited — the Christology, not the soteriology. He fixed the line that embarrassed him and left the commandment answer standing.
 - **Matthew 25:31-46 — passes on embarrassment.** No Markan parallel to deviate from, and the scene gives Matthew nothing. He is the gospel of church order, Peter's keys, and "whoever confesses me before men" (10:32) — and he preserves a last-judgment scene where confession is never asked about and the righteous don't recognize Christ at all. Editors do not invent material that undercuts their own program.
 - **Matthew 6:14-15 — passes on substance.** Reciprocal forgiveness is independently attested: Mark 11:25 ("forgive... so that your Father also may forgive you") and the Lord's Prayer in Luke 11:4. Matthew 6:14-15 is Matthew's *wording* of a multiply attested teaching, not a Matthean idea.
-- **Matthew 11:30 — weakest of the set. Cite it as corroboration, not as a pillar.** "My yoke is easy" has no Synoptic parallel; the shared Q block ends at 11:27 (= Luke 10:22). What it has going for it is contra-tendency: Matthew is the evangelist demanding righteousness "exceeding that of the scribes and Pharisees" (5:20) and "be perfect" (5:48). An easy yoke is not what his program wants. And if an opponent discounts it entirely, nothing moves — the same point is corroborated outside the gospels by Didache 6:2 ("If you can bear the Lord's full yoke, you will be perfect. But if you cannot, then do what you can.") and inside them by Luke 10:28.
+- **Matthew 11:30 — weakest of the set. Cite it as corroboration, not as a pillar.** "My yoke is easy" has no Synoptic parallel; the shared Q block ends at 11:27 (= Luke 10:22). What it has going for it is contra-tendency: Matthew is the evangelist demanding righteousness "exceeding that of the scribes and Pharisees" (5:20) and "be perfect" (5:48). An easy yoke is not what his program wants. And if someone discounts it entirely, nothing moves — the same point is corroborated outside the gospels by Didache 6:2 ("If you can bear the Lord's full yoke, you will be perfect. But if you cannot, then do what you can.") and inside them by Luke 10:28.
 
 **Concede the limit out loud.** The criterion is directional and probabilistic, not proof. It can be aimed at us, and we accept that — which is exactly why the load-bearing claims on this card are the multiply attested ones (the salvation question, reciprocal forgiveness, the Hosea citations), not the single-source ones.
 
@@ -146,7 +146,7 @@ One-liner: "The New Perspective says Paul didn't mean what the pulpit says he me
 ### "You're reducing the cross to nothing."
 No — we're relocating its meaning. The cross is what empire and priesthood do to a man who confronts them, and it is a demonstration that love does not retaliate even under maximal pressure. That reading honors the event without requiring an omnipotent God who cannot forgive until someone bleeds.
 
-## Sound Bites
+## In One Sentence
 
 - Jesus was asked how to be saved. He answered. It wasn't "believe I'm about to die."
 - "Forgive and you will be forgiven" and "without blood there is no forgiveness" cannot both be the mechanism.

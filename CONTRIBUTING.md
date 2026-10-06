@@ -39,7 +39,7 @@ A few ground rules that keep the repo trustworthy:
 
 The one thing we cannot reconstruct later is **where it came from**: author, title, date, *which translation or edition*, and the chapter or page. Thirty seconds from you saves an hour on our end, and sometimes the trail is genuinely unrecoverable.
 
-This is not bureaucratic. In October 2026 a verification pass found three quotes circulating in this repo's own research that pointed at sources where the text was not present — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `debate/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
+This is not bureaucratic. In October 2026 a verification pass found three quotes circulating in this repo's own research that pointed at sources where the text was not present — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `questions/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
 
 ---
 
@@ -53,7 +53,7 @@ This is not bureaucratic. In October 2026 a verification pass found three quotes
 | **Dead Sea Scrolls** (`christianity/dead-sea-scrolls/`) | Curated selections (1QS, CD, 1QM, 1QHa, 4QMMT) with translator attributions, plus overview and cliff notes |
 | **Ethiopian canon** (`christianity/ethiopian-bible/`) | 1 Enoch, Jubilees, Meqabyan, Shepherd of Hermas, Didascalia, Epistula Apostolorum |
 | **Research & analysis** (`christianity/`, `gnosticism/`) | ~60 files: blood atonement, Trinity construction, the rapture's 1830s origin, Essene–Nazarene–Ebionite lineage, the Moses Scroll, James the Just, textual-criticism deep dives |
-| **Debate kit** (`debate/`) | 14 topic cards (evidence, objections, rebuttals, sound bites), a setup playbook, and the citation-corrections log |
+| **The questions** (`questions/`) | 14 cards on the hard questions (evidence, the pushback people raise, honest responses, one-sentence versions), a live-session playbook, and the citation-corrections log |
 | **Lookup tools** | `TOPIC-INDEX.md` (claim → file + section) and `scripts/semantic-search.py` (meaning-based search across the whole repo) |
 
 ### The transcript archive (`podcast-archive/`)
@@ -124,9 +124,9 @@ The tradeoff is speed against depth, so pick deliberately:
 | **Sonnet** or **Haiku** | Seconds | Citation lookups, finding a verse, checking a date, "where in the repo is…". Anything you need while a conversation is still on the topic. |
 | **Opus** or **Fable** | A minute or two | Building an argument, weighing competing readings, synthesizing across sources. Noticeably better answers — worth the wait when you have it. |
 
-For anything live — a debate, a recording, a public Q&A — open **two sessions**: a fast model for lookups and a deep model for the hard questions. You never wait on the slow one for a quick answer, and the deep one keeps its train of thought instead of being interrupted by lookups.
+For anything live — a conversation, a recording, a public Q&A — open **two sessions**: a fast model for lookups and a deep model for the hard questions. You never wait on the slow one for a quick answer, and the deep one keeps its train of thought instead of being interrupted by lookups.
 
-And **load the key files before you start.** A cold session has to go searching; a warmed one has the material in context and answers immediately. `debate/DEBATE-SETUP.md` has the exact warm-up prompt to paste.
+And **load the key files before you start.** A cold session has to go searching; a warmed one has the material in context and answers immediately. `questions/LIVE-SETUP.md` has the exact warm-up prompt to paste.
 
 ---
 

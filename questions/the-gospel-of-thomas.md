@@ -1,6 +1,6 @@
 # How Reliable Is the Gospel of Thomas?
 
-**Position:** Thomas is a real, ancient, independently circulating collection of 114 Jesus sayings with no narrative, no passion, no atonement, and no apocalypse — and the honest claim about it is narrower than the one our own notes have sometimes made. The defensible position is layered: a *kernel* of early sayings tradition inside a collection whose received form is late and accretive. The mainstream dating of the collection is c. 140 CE; the 50-70 CE date is a real position held by real specialists (Koester, Patterson, Crossan, Davies) but it is a **minority** one, and anyone who tells you "many scholars date it to 50-70" is overstating the field. April DeConick's rolling-corpus model is the most defensible frame: an early kernel with accretions running to roughly 120 CE. So we use Thomas as **corroboration** where it parallels Synoptic material, as **evidence about a documented early community** where it stands alone, and never as a standalone trump card. It also contains sayings we do not defend and would not read aloud, and we name them below rather than get ambushed with them. If Thomas were subtracted entirely, every argument in this kit would still stand on the red text — Thomas strengthens the case; it does not carry it.
+**Position:** Thomas is a real, ancient, independently circulating collection of 114 Jesus sayings with no narrative, no passion, no atonement, and no apocalypse — and the honest claim about it is narrower than the one our own notes have sometimes made. The defensible position is layered: a *kernel* of early sayings tradition inside a collection whose received form is late and accretive. The mainstream dating of the collection is c. 140 CE; the 50-70 CE date is a real position held by real specialists (Koester, Patterson, Crossan, Davies) but it is a **minority** one, and anyone who tells you "many scholars date it to 50-70" is overstating the field. April DeConick's rolling-corpus model is the most defensible frame: an early kernel with accretions running to roughly 120 CE. So we use Thomas as **corroboration** where it parallels Synoptic material, as **evidence about a documented early community** where it stands alone, and never as a standalone proof. It also contains sayings we do not defend and would not read aloud, and we name them below rather than be caught off guard by them. If Thomas were subtracted entirely, every argument in this collection would still stand on the red text — Thomas strengthens the case; it does not carry it.
 
 ---
 
@@ -53,7 +53,7 @@ Whatever its date, Thomas documents a Christian community that transmitted Jesus
 
 If Thomas is early, this is a window onto pre-Pauline tradition. If Thomas is late, it is proof that a substantial Christian community in the second century still read Jesus this way and the canonical process excluded them. **Both conclusions are useful to us, and one of them is certainly true.** Never let the conversation become "prove Thomas is early" — that's a bet we don't need to take.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Goodacre settled this in 2012. Thomas shows Synoptic redactional fingerprints — it read the finished gospels."
 Goodacre's argument is serious and partially correct, and pretending otherwise is how you lose a room. He identifies verbal agreements between Thomas and material that is demonstrably Matthean or Lukan *editing* of Mark, plus a diffuse pattern in which Thomas agrees now with Matthew against Mark, now with Luke against Mark, now with material unique to one of them — a pattern most simply explained by access to all three. Concede that.
@@ -99,7 +99,7 @@ The quotes, verbatim, so nobody gets to spring them:
 
 **And it isn't unique to Thomas.** "Whoever loves their life loses it" (John 12:25); "whoever does not hate father and mother... cannot be my disciple" (Luke 14:26); "deny themselves and take up their cross" (Mark 8:34-35); "do not love the world" (1 John 2:15). Paul's flesh/spirit dualism in Romans 7-8 and Galatians 5 is harsher than anything in Thomas and it's canonical. If world-renunciation language disqualifies a text, it disqualifies most of the New Testament.
 
-**On Thomas 7, say the true thing:** nobody knows what it means. There is no scholarly consensus on the lion saying. Do not improvise an interpretation under stage pressure — "that one's genuinely obscure and I'm not going to pretend otherwise" is a stronger answer than a guess, and it buys credibility for everything else on the card.
+**On Thomas 7, say the true thing:** nobody knows what it means. There is no scholarly consensus on the lion saying. Do not improvise an interpretation under pressure — "that one's genuinely obscure and I'm not going to pretend otherwise" is a stronger answer than a guess, and it buys credibility for everything else on the card.
 
 ### "Thomas has no love-of-enemies command and no love-of-neighbor command. Your whole case is that love is the law."
 Verified, and it's the most substantive criticism on this page. Across all 114 sayings the closest thing to a love command is:
@@ -124,7 +124,7 @@ Correct, and we should say it first. Thomas 55: *"whoever does not hate his brot
 Nobody applies that standard to the canon, and the person making the objection doesn't either — they already distinguish the Comma Johanneum from 1 John, and Mark 16:9-20 from Mark. Layer analysis is the ordinary tool of the field. We use it on Thomas 114, on John's discourses, and on Matthew 26:28's "for the forgiveness of sins" alike. Applying it consistently is the position; applying it only to the other side's texts is what we're objecting to.
 
 ### How to actually use it — and which cards need reading this way
-Seven cards in this kit cite Thomas. Here is the correct weight for each:
+Seven cards in this collection cite Thomas. Here is the correct weight for each:
 
 | Card | Thomas sayings used | How to carry it |
 |---|---|---|
@@ -136,7 +136,7 @@ Seven cards in this kit cite Thomas. Here is the correct weight for each:
 | `resurrection.md` | 70, 1 | Reframe to the date-proof version: "an early Jesus community built a complete soteriology with no empty tomb in it." Don't argue Thomas's priority here. |
 | `hell-afterlife.md` | 1, 18, 19, 111 | **Weakest form — an argument from silence, and it carries the dating overstatement.** "Many scholars date to 50-70 CE" should be "a minority of specialists argue for 50-70 CE; the collection as received is later." Also note that 18 and 19 read "will not experience death" while 111 reads "will not **see** death." The no-hell observation is still worth making; frame it as a silence, not a proof. |
 
-## Sound Bites
+## In One Sentence
 
 - "Mainstream dating is around 140. A real minority of specialists argue 50 to 70. We'll argue the layered model, and we'll tell you which layer we're standing on."
 - "Whether Thomas is early or late, it proves a Christian community transmitted Jesus with no cross, no blood, and no judgment day. One of those two conclusions is true, and both help us."
@@ -150,8 +150,8 @@ Seven cards in this kit cite Thomas. Here is the correct weight for each:
 ## Go Deeper
 
 - `christianity/Incoming/gospel-of-thomas-full-text.md` — primary source, all 114 sayings, Lambdin translation. **Verify here before quoting; sayings are inline as `**(N)**`, there are no section headings.**
-- `debate/CITATION-NOTES.md` — the Lambdin-vs-our-notes translation variants table (sayings 12, 13, 113) and the standing verification rule
-- `debate/how-we-read-john.md` — the companion source-reliability card; the same layered method applied to the Fourth Gospel
+- `questions/CITATION-NOTES.md` — the Lambdin-vs-our-notes translation variants table (sayings 12, 13, 113) and the standing verification rule
+- `questions/how-we-read-john.md` — the companion source-reliability card; the same layered method applied to the Fourth Gospel
 - `gnosticism/gospel-of-thomas/2026-02-22-gospel-of-thomas-deep-dive.md` — section 1 for the manuscripts and the Oxyrhynchus table, section 2 for the full dating debate and DeConick's model, plus the scholarly-positions table
 - `gnosticism/gospel-of-thomas/00-overview.md` — the dating debate in brief, the recommended reading list, and the "female becoming male" problem in Open Questions
 - `christianity/gospel-of-thomas-cliff-notes.md` — the three-position dating table with named proponents; the Thomas-and-Q section
