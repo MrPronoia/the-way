@@ -19,6 +19,55 @@ A few ground rules that keep the repo trustworthy:
 
 ---
 
+## Sending Us Material (the no-effort path)
+
+**You don't need GitHub, Markdown, or any AI tool to contribute.** If you have research, send it in whatever form it already exists and we'll convert it. Converting documents to Markdown is fast on our end — it is not worth your time to reformat anything.
+
+**Send as-is:** PDFs (books, papers, scans) · Word documents · Google Docs (link or export) · plain text and Notes exports · photos of book pages · YouTube and web links · a pile of mixed files in one email.
+
+**Flag these before sending:**
+
+| Format | Why |
+|---|---|
+| Audio or video | Needs transcribing first. We have a pipeline (see `podcast-archive/the-jesus-way/TRANSCRIPT-STATUS.md`) — just tell us it's coming. |
+| Scans with no text layer | Readable, but we verify by eye, so turnaround is slower. |
+| Handwriting | Works if the photo is legible — send one test page first. |
+| Old `.doc` files | Save as `.docx` or PDF first. |
+| Anything not yours to share | In-copyright books, paywalled papers, private material. Tell us and we'll cite it rather than copy it. |
+
+### Always include the provenance
+
+The one thing we cannot reconstruct later is **where it came from**: author, title, date, *which translation or edition*, and the chapter or page. Thirty seconds from you saves an hour on our end, and sometimes the trail is genuinely unrecoverable.
+
+This is not bureaucratic. In October 2026 a verification pass found three quotes circulating in this repo's own research that pointed at sources where the text was not present — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `debate/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
+
+---
+
+## What's Already In Here
+
+281 markdown files, ~16 MB. Current as of 2026-10-06.
+
+| Collection | Contents |
+|---|---|
+| **Primary texts** (`christianity/Incoming/`, `gnosticism/Incoming/`) | Gospel of Thomas, Didache, Clementine Homilies *and* Recognitions (both complete), Q-source reconstruction, Gospel of Philip, Apocryphon of John |
+| **Dead Sea Scrolls** (`christianity/dead-sea-scrolls/`) | Curated selections (1QS, CD, 1QM, 1QHa, 4QMMT) with translator attributions, plus overview and cliff notes |
+| **Ethiopian canon** (`christianity/ethiopian-bible/`) | 1 Enoch, Jubilees, Meqabyan, Shepherd of Hermas, Didascalia, Epistula Apostolorum |
+| **Research & analysis** (`christianity/`, `gnosticism/`) | ~60 files: blood atonement, Trinity construction, the rapture's 1830s origin, Essene–Nazarene–Ebionite lineage, the Moses Scroll, James the Just, textual-criticism deep dives |
+| **Debate kit** (`debate/`) | 14 topic cards (evidence, objections, rebuttals, sound bites), a setup playbook, and the citation-corrections log |
+| **Lookup tools** | `TOPIC-INDEX.md` (claim → file + section) and `scripts/semantic-search.py` (meaning-based search across the whole repo) |
+
+### The transcript archive (`podcast-archive/`)
+
+| Source | Scope | Notes |
+|---|---|---|
+| **The Jesus Way** — Aaron Abke & James Benefico | 65 episodes | Complete. One gap: ep. 045 has captions disabled at the source and needs manual transcription. |
+| **Dr. James Tabor** — his "Paul" playlist | 77 videos | The most processed set here: each file has a synthesized summary, key teachings, scripture citations and scholars cited, *plus* the raw transcript. See `dr-tabor/00-overview.md`. |
+| **Kam Waters** — Christspiracy / The Way Skool | 7 videos | Complete channel. One video is in Spanish and kept in the original. |
+
+**These are auto-generated captions.** They contain typos, mangled names, and garbled Hebrew/Greek. Treat them as **pointers, not proof** — excellent for finding which thread to pull, never quoted as a source. Anything we stand behind gets traced to a primary text first. `CLAUDE.md` instructs every AI assistant working in this repo to follow that rule.
+
+---
+
 ## How to Contribute
 
 ### First time: get access + tools
@@ -65,6 +114,19 @@ If you bring an AI assistant into your work here:
 - Let it read `CLAUDE.md`, `README.md`, and `00-OVERVIEW.md` first.
 - Keep it honest to the source hierarchy — it should cite primary texts, not invent citations.
 - Treat its output as a draft you verify, not gospel. Same standard we hold ourselves to.
+
+### Which model, and when
+
+The tradeoff is speed against depth, so pick deliberately:
+
+| Model | Speed | Use it for |
+|---|---|---|
+| **Sonnet** or **Haiku** | Seconds | Citation lookups, finding a verse, checking a date, "where in the repo is…". Anything you need while a conversation is still on the topic. |
+| **Opus** or **Fable** | A minute or two | Building an argument, weighing competing readings, synthesizing across sources. Noticeably better answers — worth the wait when you have it. |
+
+For anything live — a debate, a recording, a public Q&A — open **two sessions**: a fast model for lookups and a deep model for the hard questions. You never wait on the slow one for a quick answer, and the deep one keeps its train of thought instead of being interrupted by lookups.
+
+And **load the key files before you start.** A cold session has to go searching; a warmed one has the material in context and answers immediately. `debate/DEBATE-SETUP.md` has the exact warm-up prompt to paste.
 
 ---
 
