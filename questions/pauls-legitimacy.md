@@ -15,7 +15,7 @@ This is not a claim about Paul's character. He was a brilliant, sincere man work
 
 He presses the point: "I did not go up to Jerusalem to see those who were apostles before me" (Gal 1:16-17), and of the Jerusalem pillars — "whatever they were makes no difference to me... they added nothing to my preaching" (Gal 2:6).
 
-**And three verses after that first quote, he says he did go to Jerusalem.** Finish the passage yourself, because the opponent will: "Then after three years I went up to Jerusalem to get acquainted with Cephas and stayed with him fifteen days. I saw none of the other apostles — only James, the Lord's brother" (Gal 1:18-19). The verb is ἱστορῆσαι — to make inquiry of, to interview. So yes, Paul met Peter and James and asked them things.
+**And three verses after that first quote, he says he did go to Jerusalem.** Finish the passage yourself, because a careful reader will: "Then after three years I went up to Jerusalem to get acquainted with Cephas and stayed with him fifteen days. I saw none of the other apostles — only James, the Lord's brother" (Gal 1:18-19). The verb is ἱστορῆσαι — to make inquiry of, to interview. So yes, Paul met Peter and James and asked them things.
 
 Notice what the whole paragraph is *for*. Every clause minimizes dependence: not immediately, not to the apostles, three years later, fifteen days, only James, and then "added nothing." Paul brings the visit up in order to argue that it did not make him anyone's student. That is his claim, not ours. He is not hiding the contact; he is denying that the contact is where his gospel came from.
 
@@ -42,7 +42,7 @@ Luther understood the problem perfectly well. His resolution was to downgrade Ja
 
 The Clementine Homilies stage Peter against an opponent whose credentials are a vision: "If, then, our Jesus appeared to you in a vision, made Himself known to you, and spoke to you, it was as one who is enraged with an adversary... if you were seen and taught by Him, and became His apostle for a single hour, proclaim His utterances, interpret His sayings, love His apostles, contend not with me who companied with Him" (Homilies 17.19). The named target is "Simon," but the argument is about a man who claims apostleship from a vision and whom Peter says "stood condemned" — Paul's own word for Peter at Galatians 2:11, reversed. Epiphanius (*Panarion* 30) records the Ebionites and Nazarenes rejecting Paul as an apostate from the law.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Galatians 1:18-19 destroys your whole premise. He spent fifteen days with Peter and met James."
 Correct, and we raise it ourselves above rather than wait for it. Three things. First, those verses are Paul's, in a paragraph whose every clause is designed to minimize what he owed that visit — he is the one insisting it didn't make him a disciple of the Twelve. Second, fifteen days with Peter three years after his call is not an apprenticeship in a teaching corpus, and the proof is the letters: whatever he inquired about, Jesus's sayings are not what came back. Third, and decisively, Paul tells you what the authority of his gospel rests on, and it isn't that visit: "not from any man, nor was I taught it" (1:12), "added nothing" (2:6). Our claim is about the source of the gospel's authority and its content. Verse 18 adjusts the biography; it doesn't touch either.
@@ -84,7 +84,7 @@ Agreed that they are not first-century documents, and we don't cite them as eyew
 ### "Paul's prophecies about the return didn't fail — he spoke of a general future hope."
 He used the first-person plural and framed it as revelation: "we who are still alive, who are left until the coming of the Lord" (1 Thess 4:15-17); "we will not all sleep, but we will all be changed" (1 Cor 15:51); "the night is nearly over" (Rom 13:12). Ehrman, Allison, and Schweitzer all read this as genuine imminent expectation. We are not running Deuteronomy 18:22 as a verdict on the man — that's a character argument and we don't need one. The structural point is enough: imminence was load-bearing for Paul's ethics (stay as you are, 1 Cor 7:29-31) and for his soteriology, and it didn't happen. A framework built on a timetable has to be re-engineered when the timetable fails, and the church spent the next two centuries doing exactly that.
 
-## Sound Bites
+## In One Sentence
 
 - Paul told us himself what his gospel rested on: "not from any man, nor was I taught it." That's the quote, and it's in his own letter.
 - The men who ate with Jesus for three years "added nothing" to his message — his words, not ours.
@@ -99,6 +99,6 @@ He used the first-person plural and framed it as revelation: "we who are still a
 - `christianity/acts-15-james-four-decrees.md` — what James actually required, and Paul's reversal of it
 - `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` §5 — 4QMMT, *ma'ase ha-torah*, and our own statement of the New Perspective reading
 - `christianity/Incoming/clementine-homilies-full-text.md` — primary source; see the prefatory Epistle of Peter to James, and Homilies 17.13-19 on visions vs. eyewitness
-- `debate/method-and-criteria.md` — the stated source-weighting rules, including how we read Acts
-- `debate/jesus-and-the-torah.md` — the "keep the commandments" side of the James/Paul dispute
+- `questions/method-and-criteria.md` — the stated source-weighting rules, including how we read Acts
+- `questions/jesus-and-the-torah.md` — the "keep the commandments" side of the James/Paul dispute
 - `jesus-site-reference/source/docs/paul-vs-the-twelve.md` and `the-paul-problem.md` — the side-by-side divergence tables

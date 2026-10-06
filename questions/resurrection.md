@@ -15,7 +15,7 @@
 
 Post-resurrection scenes across three books, and the content of the commission is the same every time: the commandments, forgiveness delegated directly to human beings with no blood mechanism attached, and the kingdom of God. If believing in the atoning death were the saving message, this was the moment and this was the audience.
 
-**Luke 24:46-47 — own it, don't lead with it.** A prepared opponent will put this verse up before we do: *"Thus it is written, that the Christ should suffer and on the third day rise from the dead, and that repentance for the forgiveness of sins should be proclaimed in his name to all nations"* — with Luke 24:26 behind it ("Was it not necessary that the Messiah should suffer these things?"). Concede the obvious half: Luke's risen Jesus does read the suffering as scripturally necessary, and Luke is writing in a milieu where that reading is already established. Then read the rest of the sentence. What gets *proclaimed* is **repentance** for the forgiveness of sins. Not belief in a transaction, not assent to a mechanism, not a doctrine of substitution — a change of life. Luke 24:47 is the earliest statement of the commission's content in that gospel, and its content is repentance. "Necessary that he suffer" and "therefore believe his death paid your debt" are two different claims, and Luke only makes the first one.
+**Luke 24:46-47 — own it, don't lead with it.** A well-read Christian will raise this verse before we do: *"Thus it is written, that the Christ should suffer and on the third day rise from the dead, and that repentance for the forgiveness of sins should be proclaimed in his name to all nations"* — with Luke 24:26 behind it ("Was it not necessary that the Messiah should suffer these things?"). Concede the obvious half: Luke's risen Jesus does read the suffering as scripturally necessary, and Luke is writing in a milieu where that reading is already established. Then read the rest of the sentence. What gets *proclaimed* is **repentance** for the forgiveness of sins. Not belief in a transaction, not assent to a mechanism, not a doctrine of substitution — a change of life. Luke 24:47 is the earliest statement of the commission's content in that gospel, and its content is repentance. "Necessary that he suffer" and "therefore believe his death paid your debt" are two different claims, and Luke only makes the first one.
 
 ### 2. He answered the salvation question before the cross existed as a doctrine
 > "If you want to enter eternal life, keep the commandments." — Matthew 19:17 (parallels: Mark 10:17–19; Luke 18:18–20)
@@ -43,7 +43,7 @@ Mark (c. 70 CE) ends at 16:8 in our oldest complete manuscripts — Codex Sinait
 
 114 sayings, no passion narrative, no empty tomb, no appearances, no atonement. Thomas's answer to death is recognition and interpretation — bringing forth what is already within. Whatever you conclude about Thomas's date, it is evidence that an early Jesus community built its entire soteriology without the event.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "If Christ has not been raised, your faith is futile — 1 Corinthians 15:14. The whole thing collapses without it."
 That is Paul's criterion, stated inside Paul's system, and it is the same system that makes confession and belief the mechanism of salvation (Romans 10:9). Jesus, asked the identical question, pointed to the commandments (Matthew 19:17). You are entitled to prefer Paul's standard — but then say so plainly, because the two standards are not the same and only one of them comes from Jesus.
@@ -60,7 +60,7 @@ Correct, and irrelevant to the question. Sincerity establishes belief, not accur
 ### "Denying the bodily resurrection means you aren't a Christian."
 We are not denying it. We are declining to make an unverifiable event the gate, because the earliest Christians didn't. The Didache — the pre-baptismal catechism of "the Twelve Apostles" — has no creed, no resurrection requirement, and no blood language in its Eucharistic prayers (Didache 1–6, 9–10; chapter 14's sacrifice language is the assembly's own offering, not Jesus's death). The "unless you affirm X" boundary line enters with Paul and hardens at Nicaea in 325 CE. If the first converts could be baptized without it, the word "Christian" is doing work here that history won't support.
 
-## Sound Bites
+## In One Sentence
 
 - "We're not saying it didn't happen. We're saying nothing in his own words makes your standing with God depend on your opinion about it."
 - "If believing in the resurrection were the saving message, forty days was the time to say it. He talked about the kingdom."
@@ -78,5 +78,5 @@ We are not denying it. We are declining to make an unverifiable event the gate, 
 - `christianity/matt-26-28-textual-layers.md` — the manuscript layering of the cup saying; useful when atonement comes up mid-argument
 - `christianity/Incoming/gospel-of-thomas-full-text.md` — all 114 sayings; see 1, 3, 70, 113
 - `gnosticism/gospel-of-thomas/2026-02-22-gospel-of-thomas-deep-dive.md` — the table of what Thomas has no trace of (passion narrative, empty tomb, appearances)
-- `christianity/blood-atonement-logical-incoherence.md` — the philosophical case against penal substitution, if the debate turns that way
-- `podcast-archive/dr-tabor/` — Tabor's resurrection/burial episodes exist here as background reading only; auto-captioned, never quote them on stage
+- `christianity/blood-atonement-logical-incoherence.md` — the philosophical case against penal substitution, if the conversation turns that way
+- `podcast-archive/dr-tabor/` — Tabor's resurrection/burial episodes exist here as background reading only; auto-captioned, never quote them publicly

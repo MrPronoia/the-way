@@ -1,6 +1,6 @@
-# Debate Cards — Index
+# The Questions — Index
 
-One card per contested topic. Each carries the claim as we'd state it on stage, the strongest primary-source evidence, the objections an apologist will actually raise (with rebuttals), sound bites, and pointers into the repo for going deeper live.
+One card per question people actually ask about Jesus's teaching. Each carries the claim as we'd state it, the strongest primary-source evidence, the questions and pushback people raise (with honest responses), the whole thing in one sentence, and pointers into the repo for going deeper. Built so you can understand the position well enough to explain it to someone who was taught otherwise.
 
 **Ground rule:** every quote is cited to primary sources per the repo hierarchy (red text → Thomas → early non-canonical → DSS → Didache/Clementines → Ethiopian canon → scholarship). Podcast transcripts are never the source.
 
@@ -10,8 +10,8 @@ One card per contested topic. Each carries the claim as we'd state it on stage, 
 
 | File | Why |
 |---|---|
-| `CITATION-NOTES.md` | **Non-optional.** Quotes that were found wrong and corrected, a do-not-use list, and the claims an opponent can check instantly. Two citations in circulation in our research were wrong; several others were overstated. |
-| `DEBATE-SETUP.md` | The live playbook: two-tab model setup, the session warm-up prompt, how to phrase questions under time pressure. |
+| `CITATION-NOTES.md` | **Non-optional.** Quotes that were found wrong and corrected, a do-not-use list, and the claims anyone can check instantly. Two citations in circulation in our research were wrong; several others were overstated. |
+| `LIVE-SETUP.md` | For live conversations, recordings and Q&A: the two-tab model setup, the session warm-up prompt, how to phrase questions under time pressure. |
 
 ## The topic cards
 
@@ -28,13 +28,13 @@ One card per contested topic. Each carries the claim as we'd state it on stage, 
 | `resurrection.md` | What does the resurrection evidence actually support? |
 | `jesus-and-the-torah.md` | What did Jesus teach about the Law? |
 
-## The four cards that keep us from getting ambushed
+## The four cards about method
 
-These exist because a hostile-apologist stress test found that the topic cards alone could be beaten on method rather than on evidence. Each closes a hole that was costing us credibility, not just points.
+These exist because a stress test against the strongest traditional case found that the topic cards alone could be challenged on method rather than on evidence. Each closes a hole that was costing us credibility.
 
-| Card | The attack it answers |
+| Card | The question it answers |
 |---|---|
-| `method-and-criteria.md` | *"What's your criterion? You trust Matthew when it suits you."* Also the Marcion charge — the most quotable attack available to them. |
+| `method-and-criteria.md` | *"What's your criterion? You trust Matthew when it suits you."* Also the Marcion charge — the most quotable objection to our position. |
 | `how-we-read-john.md` | *"John is late and exalted when it says 'drink my blood,' and Jesus's own prayer when it says 'the Father is greater.'"* Plus every belief-condition verse, which all live in John. |
 | `the-gospel-of-thomas.md` | Thomas is cited across seven cards. This defends its date and pre-handles Thomas 114, which otherwise ends the Thomas argument when read aloud. |
 | `what-we-actually-offer.md` | *"I agree the standard is works. I have failed it. What do you give me?"* The pastoral question — this is where the room is actually won or lost. |

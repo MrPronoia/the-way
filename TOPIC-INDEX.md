@@ -1,12 +1,12 @@
 # TOPIC-INDEX — Claim → Source Lookup
 
-This is the routing table for the repo: a question comes in, you find the row, you open one file at the named section. For live debate, start with the fourteen cards in `debate/` — they carry the quotes, the objections, and the rebuttals already assembled. Come here when the question goes past the cards, when someone wants the fuller argument, or when you need to verify a quote against a primary text.
+This is the routing table for the repo: a question comes in, you find the row, you open one file at the named section. For a live conversation, start with the fourteen cards in `questions/` — they carry the quotes, the questions people raise, and the responses already assembled. Come here when the question goes past the cards, when someone wants the fuller argument, or when you need to verify a quote against a primary text.
 
-**Four cards are not topic cards and aren't indexed by claim below** — they answer attacks on method rather than on evidence, and they're the ones that keep an exchange from being lost on credibility: `debate/method-and-criteria.md` (what's your criterion? / the Marcion charge), `debate/how-we-read-john.md` (John cuts both ways, and every belief-condition verse lives there), `debate/the-gospel-of-thomas.md` (its date, and Thomas 114), `debate/what-we-actually-offer.md` (the pastoral question — "I've failed the standard, what do you give me?").
+**Four cards are not topic cards and aren't indexed by claim below** — they answer challenges to method rather than to evidence, and they're the ones that keep a conversation from being lost on credibility: `questions/method-and-criteria.md` (what's your criterion? / the Marcion charge), `questions/how-we-read-john.md` (John cuts both ways, and every belief-condition verse lives there), `questions/the-gospel-of-thomas.md` (its date, and Thomas 114), `questions/what-we-actually-offer.md` (the pastoral question — "I've failed the standard, what do you give me?").
 
 ## How to use this
 
-Find the cluster, scan the "If they claim / ask" column, jump to the file at the named section. All paths are repo-relative. Section names are real H2/H3 headings — searchable verbatim. Files whose H1 is already a question are indexed by that question. Before any live use, read `debate/CITATION-NOTES.md` — it lists the quotes that were corrected, the ones not to use on stage, and where our notes differ from our own primary texts.
+Find the cluster, scan the "If they claim / ask" column, jump to the file at the named section. All paths are repo-relative. Section names are real H2/H3 headings — searchable verbatim. Files whose H1 is already a question are indexed by that question. Before any live use, read `questions/CITATION-NOTES.md` — it lists the quotes that were corrected, the ones not to use on stage, and where our notes differ from our own primary texts.
 
 ---
 
@@ -28,7 +28,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Jesus died for your sins" / penal substitution | `debate/blood-atonement-and-salvation.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "Jesus died for your sins" / penal substitution | `questions/blood-atonement-and-salvation.md` → `## Strongest Evidence` | the case + responses |
 | "This is my blood of the covenant" (Matt 26:28) | `christianity/matt-26-28-textual-layers.md` → `## The Textual Problem: Comparing the Sources` | manuscript layering of the cup saying |
 | Is substitutionary atonement even coherent? | `christianity/blood-atonement-logical-incoherence.md` → `## The Evidence` | philosophical case against |
 | Faith alone vs. works | `christianity/nde-life-reviews-validate-works-based-salvation.md` → `## How NDE Findings Contradict Pauline Theology` | works/love review, no doctrine check |
@@ -47,7 +47,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Paul was an apostle, his letters are scripture" | `debate/pauls-legitimacy.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "Paul was an apostle, his letters are scripture" | `questions/pauls-legitimacy.md` → `## Strongest Evidence` | the case + responses |
 | Does Paul pass the biblical false-prophet test? | `christianity/paul-false-prophet-deuteronomy-18-test.md` → `## The Biblical Test (Deuteronomy 18:20-22)` | Deut 18 applied to Paul |
 | Paul's failed predictions | same file → `## Paul's Prophecies That Did Not Come True` | itemized |
 | Paul vs. James on faith and works | `jesus-site-reference/source/docs/paul-vs-the-twelve.md` → `## Paul vs. James — Faith vs. Works` | the direct contradiction |
@@ -65,7 +65,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Jesus claimed to be God" | `debate/trinity-deity-of-jesus.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "Jesus claimed to be God" | `questions/trinity-deity-of-jesus.md` → `## Strongest Evidence` | the case + responses |
 | "I and the Father are one" / "before Abraham was" | `christianity/was-jesus-god-incarnate-red-text-evidence.md` → `## The Passages Used to Claim Exclusive Divinity` | each proof text, in context |
 | Where Jesus separates himself from God | same file → `## Where Jesus DISTINGUISHES Himself from God` | red text, collected |
 | Thomas on shared divinity | same file → `## The Gospel of Thomas — The Clearest Red Text on This Question` | Thomas 108, 77, 3 |
@@ -82,7 +82,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "The rapture is biblical" | `debate/rapture-end-times.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "The rapture is biblical" | `questions/rapture-end-times.md` → `## Strongest Evidence` | the case + responses |
 | Who invented it, and when? | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` → `## John Nelson Darby — The Man and His Innovation` | 1830s origin |
 | How a footnote became doctrine | same file → `## The Scofield Reference Bible — How One Man's Footnotes Became "What the Bible Says"` | transmission chain |
 | "One will be taken, one left" | `christianity/2026-03-09-did-jesus-teach-apocalypse.md` → `## 3. "One Will Be Taken and One Will Be Left" — The Great Reversal` | who gets removed |
@@ -103,7 +103,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Jesus taught eternal conscious torment" | `debate/hell-afterlife.md` → `## Strongest Evidence` | Matt 25, Gehenna, *destroy*, Thomas, NDEs |
+| "Jesus taught eternal conscious torment" | `questions/hell-afterlife.md` → `## Strongest Evidence` | Matt 25, Gehenna, *destroy*, Thomas, NDEs |
 | "What about hell in the Gospels?" (Gehenna) | `christianity/blood-magic-origins-saturn-sacrifice.md` → `## The Ancient Near Eastern Roots` | Valley of Hinnom; 2 Kgs 23:10, Jer 32:35 |
 | Who added hell to Christianity? | `christianity/jesus-core-teaching-distilled.md` → `## What's Missing From This List` | Gehenna/Tartarus, who-invented-what |
 | Is there evidence about what happens after? | `christianity/nde-life-reviews-validate-works-based-salvation.md` → `## The Life Review Phenomenon` | fifty years of published research |
@@ -119,7 +119,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Jesus founded Christianity" | `debate/essene-nazarene-origins.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "Jesus founded Christianity" | `questions/essene-nazarene-origins.md` → `## Strongest Evidence` | the case + responses |
 | The lineage, start to finish | `christianity/2026-02-25-essene-nazarene-ebionite-lineage.md` → `## The Three Stages` | Essenes → Nazarenes → Ebionites |
 | Did the Nazarenes predate Jesus? | `christianity/nazarene-sect-predated-jesus.md` → `## How Do We Know They Predated Jesus?` | the pre-dating evidence |
 | Jesus/Essene overlap, itemized | `christianity/dead-sea-scrolls/cliff-notes-quick-reference.md` → `## The Jesus-Essene Connection -- 12 Shared Characteristics` | fast list |
@@ -136,7 +136,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "What was the earliest Christian teaching?" | `debate/two-ways-kingdom-within.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "What was the earliest Christian teaching?" | `questions/two-ways-kingdom-within.md` → `## Strongest Evidence` | the case + responses |
 | The Two Ways doctrine | `christianity/two-ways-oldest-christian-doctrine.md` → `## The Evidence` | Didache 1-6, DSS Two Spirits |
 | Same, site version | `jesus-site-reference/source/docs/the-two-ways.md` → `## The Didache's Two Ways` | compressed, quotable |
 | "The kingdom is a future place" | `jesus-site-reference/source/docs/what-jesus-taught.md` → `## The Kingdom Is Within You — Now` | Luke 17:21, Thomas 3 and 113 |
@@ -155,7 +155,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "Jesus endorsed the Temple system" | `debate/sacrifice-culture-vegetarian-jesus.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
+| "Jesus endorsed the Temple system" | `questions/sacrifice-culture-vegetarian-jesus.md` → `## Strongest Evidence` | the case + responses |
 | "Jesus ate fish, so he wasn't vegetarian" | `christianity/biblical-case-for-vegetarian-jesus.md` → `## V. The "Fish" Question` | the fish passages examined |
 | Jesus's own words and actions on diet | same file → `## II. Jesus's Own Actions and Words` | red text + Temple action |
 | One-screen evidence summary | same file → `## VIII. Evidence Summary Table` | fast scan |
@@ -173,8 +173,8 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 
 | If they claim / ask | Go to | What's there |
 |---|---|---|
-| "The resurrection proves the atonement" | `debate/resurrection.md` → `## Strongest Evidence` | stage-ready case + rebuttals |
-| "Minimal facts" / 1 Cor 15 argument | same file → `## Objections & Rebuttals` | what the evidence does and doesn't reach |
+| "The resurrection proves the atonement" | `questions/resurrection.md` → `## Strongest Evidence` | the case + responses |
+| "Minimal facts" / 1 Cor 15 argument | same file → `## Questions People Raise` | what the evidence does and doesn't reach |
 | What did the risen Jesus actually say? | `jesus-site-reference/source/docs/after-the-resurrection.md` → `## Every Post-Resurrection Appearance — What He Said` | every appearance, scored |
 | The tally | same file → `## The Score` | no atonement instruction in any of them |
 | Thomas has no passion or empty tomb | `gnosticism/gospel-of-thomas/2026-02-22-gospel-of-thomas-deep-dive.md` | what Thomas has no trace of |
@@ -202,7 +202,7 @@ Mirror of the same page inside the research tree: `christianity/what-jesus-actua
 | Gospel of Philip | `gnosticism/Incoming/gospel-of-philip-full-text.md` | selected passages by theme (`## On the Bridal Chamber`, etc.) |
 | Essene Gospel of Peace, Bk 1 | `christianity/Incoming/essene-gospel-of-peace-book-1-full-text.md` | **provenance-disputed — see caveat below** |
 
-Translation-variant warnings live in `debate/CITATION-NOTES.md` → `## Translation variants — our notes vs. our primary text`.
+Translation-variant warnings live in `questions/CITATION-NOTES.md` → `## Translation variants — our notes vs. our primary text`.
 
 ---
 
@@ -219,6 +219,6 @@ Translation-variant warnings live in `debate/CITATION-NOTES.md` → `## Translat
 
 ## Background / Not Quotable
 
-- `podcast-archive/` — raw auto-caption transcripts: `the-jesus-way/` (65 eps), `dr-tabor/` (77 videos), `kameron-waters/` (7 videos). Useful for finding *where* a topic was discussed. Never quote on stage — the captions are machine-generated and unverified.
+- `podcast-archive/` — raw auto-caption transcripts: `the-jesus-way/` (65 eps), `dr-tabor/` (77 videos), `kameron-waters/` (7 videos). Useful for finding *where* a topic was discussed. Never quote publicly — the captions are machine-generated and unverified.
 - `extended-library/essene-gospel-of-peace.md` — Szekely's text with a provenance warning. Scholarly consensus disputes it as an ancient source. Cliff notes at `christianity/essene-gospel-of-peace-cliff-notes.md`. Usable as devotional material, never as evidence for what Jesus taught.
 - Repo orientation: `README.md`, `00-OVERVIEW.md`, `PROVENANCE.md`, `christianity/00-overview.md`, `gnosticism/00-overview.md`.

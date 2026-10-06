@@ -37,14 +37,14 @@ Darby left the Church of Ireland c. 1828 and became the leading theologian of th
 
 **Do not use the Margaret MacDonald argument.** The MacPherson thesis — that Darby lifted the rapture from a Scottish teenager's 1830 vision — is rejected by essentially every historian who has examined the primary document, including critics of dispensationalism, because MacDonald's vision doesn't describe a pre-tribulational removal. It is the single easiest way to lose this exchange. The Tregelles testimony and the publication record do the work without it.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "I agree with you about Darby. I'm not pretrib either. Next topic." — PLAN FOR THIS, IT IS THE LIKELY MOVE
 Neither Wes Huff nor Mike Winger is a pretribulation dogmatist; Winger has publicly argued *against* pretrib. If we arrive loaded for *Left Behind* and they concede Darby in the first ninety seconds, we've spent our prep fighting 1970s pop theology and we look like we're swinging at a target nobody is defending. So concede the concession, warmly and fast, and then take the point we actually came for:
 
 **"Good — then we agree on the thing that matters here, and it's not the rapture. The rapture is the symptom. Here's the transferable point: a doctrine can be a hundred and ninety-five years old, be absent from every creed, every council, and every church father, and still feel to a hundred million believers like it has always been there and like doubting it is doubting the Bible. You just agreed that happened. So the only remaining question is how many other things that happened to."**
 
-That is the hinge, and it opens directly onto the two arguments where there is a real disagreement: the Trinity's development from Nicaea (325) through Constantinople (381), and penal substitutionary atonement's development from Anselm's *Cur Deus Homo* (1098) through the Reformers. The rapture is the one case where the opponent will already grant the pattern — which makes it the cheapest possible demonstration that the pattern exists. Use it as the on-ramp, not the destination. **Never let the rapture be the last word on this card.**
+That is the hinge, and it opens directly onto the two arguments where there is a real disagreement: the Trinity's development from Nicaea (325) through Constantinople (381), and penal substitutionary atonement's development from Anselm's *Cur Deus Homo* (1098) through the Reformers. The rapture is the one case where a traditional reader will already grant the pattern — which makes it the cheapest possible demonstration that the pattern exists. Use it as the on-ramp, not the destination. **Never let the rapture be the last word on this card.**
 
 ### "1 Thessalonians 4:17 says we'll be 'caught up to meet the Lord in the air' — that *is* the rapture."
 That's Paul, not Jesus — a different question and a different stack of sources. And even on its own terms it doesn't give Darby what he needs: the Greek *apantesis* ("to meet") was the technical term for a civic reception, where citizens went **out** to greet an arriving king and then escorted him **back into** the city — the movement ends on earth, as N.T. Wright argues. Paul also plainly expected it within his own lifetime ("we who are still alive," 4:15), which is precisely the failed timeline Darby's system was built to rescue.
@@ -58,7 +58,7 @@ Some early Christians did expect a literal thousand-year reign (chiliasm) — th
 ### "Scholars like Ehrman say Jesus *was* an apocalyptic prophet — so he did teach a coming end."
 Honest answer: that's a serious position, held by Schweitzer, Ehrman, Dale Allison, E.P. Sanders, and others, and the debate is not settled — Crossan, Borg, and the Thomas-is-early scholars (Koester, DeConick, Patterson) read it the other way. But notice what the argument is *about*. It's about whether Jesus expected imminent divine intervention in first-century Judea. Not one scholar in either camp reconstructs a Jesus who taught a secret pre-tribulation removal of believers. Ehrman's own *Armageddon* (2023) demolishes the rapture. On this question both camps are on our side.
 
-## Sound Bites
+## In One Sentence
 
 - The rapture is 195 years old. The Lord's Prayer asks for the kingdom to come *on earth*.
 - In Jesus's parables, the ones who get taken away are the weeds.
@@ -69,7 +69,7 @@ Honest answer: that's a serious position, held by Schweitzer, Ehrman, Dale Allis
 
 ## Go Deeper
 
-- `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` — Darby's biography, the Powerscourt conferences, the full transmission chain with dates. **Treat the Margaret MacDonald / MacPherson section as background only — do not take it on stage.** Same for Scofield's biography: his personal history is irrelevant to whether his notes are true, and reaching for it hands the opponent a free genetic-fallacy point
+- `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` — Darby's biography, the Powerscourt conferences, the full transmission chain with dates. **Treat the Margaret MacDonald / MacPherson section as background only — do not use it publicly.** Same for Scofield's biography: his personal history is irrelevant to whether his notes are true, and reaching for it hands the other person a free genetic-fallacy point
 - `christianity/2026-03-09-did-jesus-teach-apocalypse.md` — verse-by-verse on the Olivet Discourse, Matt 24:40-41, Matt 16:28, and the apocalyptic-Jesus scholarly debate
 - `christianity/participatory-eschatology.md` — the positive replacement: what we build instead of what we wait for
 - `jesus-site-reference/source/docs/the-rapture.md` and `what-replaces-the-rapture.md` — the two-page public-facing version

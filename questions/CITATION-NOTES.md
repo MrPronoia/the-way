@@ -1,6 +1,6 @@
 # Citation Notes — Verified, Corrected, and Do-Not-Use
 
-Produced 2026-10-06 while building the debate cards. Every non-biblical quote on the cards was checked against the primary-text files in this repo. That process surfaced real problems in our own research notes. **Read this before the debate** — knowing which quote not to reach for matters as much as knowing the good ones.
+Produced 2026-10-06 while building the question cards. Every non-biblical quote on the cards was checked against the primary-text files in this repo. That process surfaced real problems in our own research notes. **Read this before the debate** — knowing which quote not to reach for matters as much as knowing the good ones.
 
 ---
 
@@ -42,11 +42,11 @@ The lesson for live use: a citation's *appearance* of precision ("Recognitions 1
 
 ---
 
-## Do not use on stage (unverifiable or misread)
+## Do not use publicly (unverifiable or misread)
 
 | Claim | Problem |
 |---|---|
-| Gehenna was "a burning garbage dump" | Appears only in a podcast transcript. The medieval sourcing is contested and an informed apologist will know it. **Use instead:** the child-sacrifice history, which is primary-source backed (2 Kings 23:10, Jeremiah 32:35, Josiah's desecration of Topheth). |
+| Gehenna was "a burning garbage dump" | Appears only in a podcast transcript. The medieval sourcing is contested and an informed reader will know it. **Use instead:** the child-sacrifice history, which is primary-source backed (2 Kings 23:10, Jeremiah 32:35, Josiah's desecration of Topheth). |
 | 1 Enoch 102:11 as annihilation evidence | Misread. That line is the *sinners'* mocking speech about the righteous, not Enoch's verdict. 1 Enoch 56:8 is verified and usable. |
 | *Ebionim* ("the poor ones") as a Dead Sea Scrolls self-designation | Asserted in `2026-02-25-essene-nazarene-ebionite-lineage.md`; no supporting text anywhere in `christianity/dead-sea-scrolls/`. Left off the cards. |
 | Origen, "The Father is superior to every being that exists"; Justin Martyr, "another God and Lord" | Only in our secondary notes — no primary text in the repo. The subordinationism argument stands without the quotes; make it without quotation marks. |
@@ -56,19 +56,19 @@ The lesson for live use: a citation's *appearance* of precision ("Recognitions 1
 
 ---
 
-## Claims corrected after the hostile-apologist stress test (2026-10-06)
+## Claims corrected after the stress test (2026-10-06)
 
-A second pass ran the cards against the strongest arguments a prepared evangelical apologist would actually bring. These claims were in the cards and were **wrong or overstated** — all now fixed, but know what they were, because the old phrasings are memorable and easy to fall back into.
+A second pass ran the cards against the strongest arguments a well-prepared evangelical reader would actually bring. These claims were in the cards and were **wrong or overstated** — all now fixed, but know what they were, because the old phrasings are memorable and easy to fall back into.
 
 | The claim we were making | Why it fails | Say this instead |
 |---|---|---|
-| "The Didache has no sacrifice" | **Didache 14 uses *thusia* three times** — "so that your sacrifice may be pure," quoting Malachi 1:11. It's in our own `christianity/Incoming/didache-full-text.md`. This claim appeared on four cards; an opponent reads chapter 14 aloud and four cards fall at once. | The Eucharistic **prayers** (Didache 9-10) have no body/blood/death language. Ch. 14 applies sacrifice to the *assembly's own offering*, never to Jesus's death. That narrower claim is true and still makes the point. |
+| "The Didache has no sacrifice" | **Didache 14 uses *thusia* three times** — "so that your sacrifice may be pure," quoting Malachi 1:11. It's in our own `christianity/Incoming/didache-full-text.md`. This claim appeared on four cards; someone reads chapter 14 aloud and four cards fall at once. | The Eucharistic **prayers** (Didache 9-10) have no body/blood/death language. Ch. 14 applies sacrifice to the *assembly's own offering*, never to Jesus's death. That narrower claim is true and still makes the point. |
 | Hosea 6:6's *lo* is "a flat negative, not a comparison" | Hosea 6:6b's synonymous parallel uses the comparative **מִן** ("knowledge of God *more than* burnt offerings"). The second half of the verse we're quoting defeats the claim. Wes Huff reads Hebrew. | The prophetic idiom subordinates cult to mercy so sharply that Jesus deploys it as a rebuke. Don't claim "not a comparison." |
-| *kolasis* means "pruning / correction" | Etymological fallacy from *kolazō*. In Hellenistic usage *kolasis* is simply "punishment" (1 John 4:18; 4 Macc 8:9; Josephus). It's a known apologetics-forum talking point with canned rebuttals. | Lead with Matthew 25's judgment criterion, which is fatal to faith-alone however *aiōnios* is rendered. |
+| *kolasis* means "pruning / correction" | Etymological fallacy from *kolazō*. In Hellenistic usage *kolasis* is simply "punishment" (1 John 4:18; 4 Macc 8:9; Josephus). It's a known apologetics-forum talking point with canned responses. | Lead with Matthew 25's judgment criterion, which is fatal to faith-alone however *aiōnios* is rendered. |
 | θύω means specifically "sacrifice" | By the Koine period it routinely means plain "slaughter for food" — Luke 15:23 (fatted calf), Acts 10:13 ("kill and eat"), Luke 22:7. LSJ carries both senses, and John 10's context is a thief butchering a sheep. | Footnote-level observation at most. Never a top-three argument. |
-| Thomas dates to 50-70 CE, "many scholars" | Overstates badly. Mainstream consensus is c. 140 CE; the early date is a minority position (Koester, Patterson), and DeConick's own kernel model makes the received collection accretive to ~120. | A kernel of independent sayings tradition, with the collection as received being later. See `debate/the-gospel-of-thomas.md`. |
+| Thomas dates to 50-70 CE, "many scholars" | Overstates badly. Mainstream consensus is c. 140 CE; the early date is a minority position (Koester, Patterson), and DeConick's own kernel model makes the received collection accretive to ~120. | A kernel of independent sayings tradition, with the collection as received being later. See `questions/the-gospel-of-thomas.md`. |
 | "Children of Light" / "Spirit of Truth" appear in the DSS and the NT "and nowhere else" | False, and our own `dead-sea-scrolls-selected-texts.md` says so — it lists Luke 16:8 and **1 Thessalonians 5:5** (Paul). Also Ephesians 5:8, and "spirit of truth / spirit of deceit" is in the Testaments of the Twelve Patriarchs (T. Judah 20). Worse: if the vocabulary proves Jesus's movement spoke Essene, it proves Paul did too. | Claim density and cluster, not exclusivity. |
-| Comma Johanneum: "no Greek manuscript for 1,500 years" | It appears in Codex Ottobonianus (629, **14th c.**) and Montfortianus (61). Being corrected on a sound bite is disproportionately expensive. | No Greek manuscript before the 14th century, no Greek Father ever cites it, and it originates as a Latin marginal gloss. Still devastating, and accurate. |
+| Comma Johanneum: "no Greek manuscript for 1,500 years" | It appears in Codex Ottobonianus (629, **14th c.**) and Montfortianus (61). Being corrected on a one-liner is disproportionately expensive. | No Greek manuscript before the 14th century, no Greek Father ever cites it, and it originates as a Latin marginal gloss. Still devastating, and accurate. |
 | The Passover "flesh of the lamb" saying is from the Hebrew Matthew "used by Jesus's own community" | It's from the **Gospel of the Ebionites** via Epiphanius, *Panarion* 30.22.4 — who presents it as *their alteration*. The Greek is a wordplay inversion of Luke 22:15, marking it secondary. Anyone with Ehrman's *Lost Scriptures* knows this. | Evidence of what the Ebionites believed, not of what Jesus said. |
 | "Hebrews 9:22 doesn't count — Hebrews is anonymous" | All four gospels are anonymous and we build our entire case on them. This hands over a criterion that cuts our own throat. | It's a post-hoc Levitical reading, and it isn't from Jesus. Drop "anonymous" entirely. |
 | "Peter set the qualifications for apostle in Acts 1; Paul meets neither" | Acts 1:21-22 is the criterion for filling *Judas's seat among the Twelve*, not a definition of apostleship. The NT calls Barnabas (Acts 14:14), James (Gal 1:19), and Andronicus and Junia (Rom 16:7) apostles. | Paul is not an eyewitness source for Jesus's *teaching* — which is the real point and doesn't need Acts 1. |
@@ -76,7 +76,7 @@ A second pass ran the cards against the strongest arguments a prepared evangelic
 
 ### Three verses that must never be absent again
 
-The stress test found these missing from all nine original cards. They are the opponent's opening moves:
+The stress test found these missing from all nine original cards. They are the first things a well-read Christian will raise:
 
 - **Mark 10:45** — "to give his life as a ransom for many." Ransom language *in Mark*, with no redaction escape hatch. Now Objection #1 on the blood-atonement card.
 - **Matt 8:4 / Mark 1:44 / Luke 5:14** — Jesus sends the healed leper to offer the Mosaic sacrifice. Triple-attested red text, Jesus directing a man *into* the sacrificial system.
@@ -84,13 +84,13 @@ The stress test found these missing from all nine original cards. They are the o
 
 ### The methodological hole to guard
 
-We reject Matthew 26:28's atonement clause *because* it is single-source Matthean expansion of Mark — then rest load-bearing arguments on Matthew 25:31-46, which also has no parallel. The attack is one sentence: *"Multiple attestation when it suits you, single-source Matthew when it doesn't."* The stated criterion is now on the cards and in `debate/method-and-criteria.md`: **distrust redaction that moves toward the redactor's own theology and away from his source; trust material preserved against the preserver's interest.** Apply it out loud, both directions, and it holds.
+We reject Matthew 26:28's atonement clause *because* it is single-source Matthean expansion of Mark — then rest load-bearing arguments on Matthew 25:31-46, which also has no parallel. The challenge is one sentence: *"Multiple attestation when it suits you, single-source Matthew when it doesn't."* The stated criterion is now on the cards and in `questions/method-and-criteria.md`: **distrust redaction that moves toward the redactor's own theology and away from his source; trust material preserved against the preserver's interest.** Apply it out loud, both directions, and it holds.
 
 ---
 
 ## Translation variants — our notes vs. our primary text
 
-Where our analysis files paraphrase, the cards use the repo's actual primary text (Lambdin for Thomas). If someone on stage is holding a different translation, this is why the wording differs:
+Where our analysis files paraphrase, the cards use the repo's actual primary text (Lambdin for Thomas). If someone is holding a different translation, this is why the wording differs:
 
 | Passage | Our notes say | `gospel-of-thomas-full-text.md` (Lambdin) says |
 |---|---|---|
@@ -110,6 +110,6 @@ The *aiōnios* / *kolasis* / *timōria* lexical argument on the hell card is ord
 
 ## The standing rule
 
-Primary text beats our own notes. Our notes beat memory. Podcast transcripts are for finding threads, never for quoting. When a quote matters, verify it in `christianity/Incoming/` first — it takes seconds, and a bad citation on stage costs more than a missing one.
+Primary text beats our own notes. Our notes beat memory. Podcast transcripts are for finding threads, never for quoting. When a quote matters, verify it in `christianity/Incoming/` first — it takes seconds, and a bad citation said out loud costs more than a missing one.
 
-And the harder rule, the one both passes taught: **the claim that gets us in trouble is almost never the one we were unsure about.** Every error on this page was stated confidently in our own research, and several were refuted by a file sitting in this same repo. Three of them were absolute claims — "no sacrifice," "nowhere else," "not a comparison" — where the narrower, true version would have made the same point and survived. Prefer the narrow claim. State the concession yourself, before they make it for you: an argument that has already absorbed its best counter is the only kind that holds up on a stage.
+And the harder rule, the one both passes taught: **the claim that gets us in trouble is almost never the one we were unsure about.** Every error on this page was stated confidently in our own research, and several were refuted by a file sitting in this same repo. Three of them were absolute claims — "no sacrifice," "nowhere else," "not a comparison" — where the narrower, true version would have made the same point and survived. Prefer the narrow claim. State the concession yourself, before they make it for you: an argument that has already absorbed its best counter is the only kind that holds up in the open.

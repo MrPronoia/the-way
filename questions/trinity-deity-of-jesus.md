@@ -22,7 +22,7 @@ This is not an attack on reverence for Jesus. It's the difference between worshi
 > "All authority has been *given* to me." — Matthew 28:18
 > "Go to my brothers and tell them, 'I am ascending to my Father and your Father, to my God and your God.'" — John 20:17
 
-Mark 10:18 is the earliest gospel, and Jesus declines the adjective on the grounds that it belongs to God alone; Matthew and Luke both soften it, which is the expected direction of change. John 17:3 and 14:28 are from the latest and most exalted gospel — the one apologists lean on hardest — and they are in Jesus's own prayer. And 1 Corinthians 15:28 has even the Pauline trajectory ending with the Son "subjected to him who put everything under him."
+Mark 10:18 is the earliest gospel, and Jesus declines the adjective on the grounds that it belongs to God alone; Matthew and Luke both soften it, which is the expected direction of change. John 17:3 and 14:28 are from the latest and most exalted gospel — the one traditional readers lean on hardest — and they are in Jesus's own prayer. And 1 Corinthians 15:28 has even the Pauline trajectory ending with the Son "subjected to him who put everything under him."
 
 The standard Trinitarian reply is that this is *economic* subordination — role, not substance — or the human nature speaking. That reply is coherent on its own terms. Notice what it is, though: a fourth- and fifth-century framework applied backwards to texts that never supply the correction themselves. The texts rank; the framework un-ranks them. Nobody in the red text ever says the Son is equal in substance to the Father, and that is the proposition the councils made a test of salvation.
 
@@ -52,7 +52,7 @@ Separate the two and the development case becomes very hard to dislodge.
 
 A doctrine cannot have been "always believed" before the language to state it existed — and the specific proposition, co-equal consubstantiality of three persons, has a datable construction history.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Thomas says 'My Lord and my God' and Jesus accepts it. John 20:28 ends the argument."
 This is the strongest verse in the gospels for the other side, and we should raise it before they do rather than look like we've never read chapter 20. Thomas says *ὁ κύριός μου καὶ ὁ θεός μου*, and Jesus does not correct him.
@@ -101,7 +101,7 @@ So answer it directly, and in this order.
 
 **Triadic naming is not *homoousios*, and that distinction is the entire card.** We are not claiming nobody said "Father, Son, and Holy Spirit" in the first century — Matthew 28:19, 2 Corinthians 13:14, and 1 Corinthians 12:4-6 say it too, and we list them in the evidence above rather than hide them. Didache 7 names three. It does not rank them, define their relation, assert one substance in three persons, or make any of that a condition of salvation. The proposition with a fourth-century birthdate is co-equal consubstantiality — and the Didache says nothing about it, in either direction.
 
-**The Didache's content is the opposite of a developed Christology.** Its eucharistic prayers thank God for "the holy vine of David" and for "life and knowledge" (ch. 9-10), with no body, no blood, no death, no incarnation; its Christology calls Jesus God's *pais*, servant or child. A community that had formulated the Trinity would not pray that way. (Note for our own side: Didache 14 *does* use *thusia* three times, applying sacrifice to the assembly's own offering — never to Jesus's death. Know that before an opponent reads it aloud.)
+**The Didache's content is the opposite of a developed Christology.** Its eucharistic prayers thank God for "the holy vine of David" and for "life and knowledge" (ch. 9-10), with no body, no blood, no death, no incarnation; its Christology calls Jesus God's *pais*, servant or child. A community that had formulated the Trinity would not pray that way. (Note for our own side: Didache 14 *does* use *thusia* three times, applying sacrifice to the assembly's own offering — never to Jesus's death. Know that before someone reads it aloud.)
 
 **Dating, last and lightly.** The Didache is composite; the Two Ways material in chapters 1-6 is the oldest layer and the liturgical rubrics may be later within the 50-120 CE range the field actually works with. We mention it for completeness, but we don't lean on it — leading with a date adjustment here, after citing the Didache as early elsewhere, is exactly the move that looks like date-shifting. We don't need it. Argument one is sufficient.
 
@@ -119,7 +119,7 @@ The honest version of the history is in evidence #5 above. Triadic language is e
 ### "Denying the Trinity means you don't think Jesus is divine."
 We think he is divine — and that he said the same thing about you. That's the actual disagreement. Ours is a *higher* anthropology, not a lower Christology: "be perfect, therefore, as your heavenly Father is perfect" (Matthew 5:48) is addressed to everyone listening, and "the works that I do, he will do also" (John 14:12) is said about them, not about himself. (On Matthew 5:48, *teleios* is completeness/maturity and the verse's own context is enemy-love in 5:43-47 — it names a horizon to walk toward, not a bar you clear. Don't deploy it as "a command, not a compliment"; that wins a debating point and creates a pastoral problem. See `what-we-actually-offer.md`.)
 
-## Sound Bites
+## In One Sentence
 
 - We're not arguing Jesus isn't distinct from the Father — your own doctrine says that. We're asking where he ever says he's the same substance.
 - "The Father is greater than I." That's not our reading. That's the quote.
@@ -134,8 +134,8 @@ We think he is divine — and that he said the same thing about you. That's the 
 - `christianity/was-jesus-god-incarnate-red-text-evidence.md` — full red-text tables both directions, plus the twelve things the unique-incarnation reading has to ignore
 - `christianity/Incoming/didache-full-text.md` — primary source; chapter 7 for the baptismal formula, 9-10 for the eucharistic prayers, 14 for *thusia*
 - `christianity/Incoming/gospel-of-thomas-full-text.md` — primary source; sayings 3, 13, 50, 70, 77, 108
-- `debate/how-we-read-john.md` — the stated principle behind commitment (a) above: why we can quote John 14:28 and answer John 20:28 without a double standard
-- `debate/method-and-criteria.md` — the redaction criterion, applied in both directions
-- `debate/the-gospel-of-thomas.md` — the dating position, so Thomas 108 and 13 can be cited without overclaiming
-- `debate/CITATION-NOTES.md` — the corrected-claims table; read the Comma Johanneum and Thomas-dating rows before going on stage
+- `questions/how-we-read-john.md` — the stated principle behind commitment (a) above: why we can quote John 14:28 and answer John 20:28 without a double standard
+- `questions/method-and-criteria.md` — the redaction criterion, applied in both directions
+- `questions/the-gospel-of-thomas.md` — the dating position, so Thomas 108 and 13 can be cited without overclaiming
+- `questions/CITATION-NOTES.md` — the corrected-claims table; read the Comma Johanneum and Thomas-dating rows before saying them out loud
 - `jesus-site-reference/source/docs/was-jesus-god.md` — the condensed public-facing version of this argument

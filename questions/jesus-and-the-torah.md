@@ -18,7 +18,7 @@ Then the Sermon does exactly what v.20 announces. Murder → anger. Adultery →
 
 This is the thesis of the whole card in one verse, from his mouth. There are *weightier* matters — a comparative, inside the law, not a replacement of it. And the final clause forecloses the antinomian reading: he does not tell them to stop tithing herbs. He tells them they got the weighting wrong.
 
-**Quote the last clause every time.** If you cite 23:23 without it, an apologist will finish the verse for you and it will look like you were hiding it.
+**Quote the last clause every time.** If you cite 23:23 without it, someone who knows the text will finish the verse for you and it will look like you were hiding it.
 
 ### 3. He settles legal disputes by quoting a prophet's hierarchy
 > "Go and learn what this means: 'I desire mercy, not sacrifice.'" — Matthew 9:13 (Hosea 6:6)
@@ -35,7 +35,7 @@ Look at *how* he defends the grain-plucking in Mark 2:25-26: David and the bread
 Thomas keeps the Sabbath as a live category, independently:
 > "If you do not observe the Sabbath as a Sabbath, you will not see the father." — Gospel of Thomas 27 (Lambdin)
 
-### 5. The Law summarizes itself — and a Torah scholar agrees on stage
+### 5. The Law summarizes itself — and a Torah scholar agrees out loud
 > "'You shall love the Lord your God with all your heart...' The second is this, 'You shall love your neighbor as yourself.' There is no other commandment greater than these." — Mark 12:29-31
 
 Both halves are quotations **from Torah** (Deuteronomy 6:4-5; Leviticus 19:18). Then the scribe answers him:
@@ -60,7 +60,7 @@ And on Matthew 5:17 directly:
 
 Second-century Jewish Christianity read Jesus exactly as a Torah-ranker: the ethical core is the law, the cultic apparatus was a concession. Whatever else you think of the Clementines, **this reading is not a 21st-century invention.**
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "Matthew 8:4 / Mark 1:44 / Luke 5:14 — he sends the healed leper to the priest with the Mosaic offering. He puts a man *into* the sacrificial system."
 **This is the hardest text on the card. Triple-attested, early, and it means what it says. Concede it immediately and completely — then show that it proves our thesis rather than theirs.**
@@ -108,7 +108,7 @@ Honest answer: Jesus never addressed Gentiles on this, so we don't pretend he di
 
 A floor and a direction of travel. That is what earliest practice actually looked like — not "all of it or none of it."
 
-## Sound Bites
+## In One Sentence
 
 - He didn't lower the bar. Read Matthew 5:20 — the Pharisees weren't righteous *enough*.
 - "Weightier matters of the law." That's a comparative, inside the law, in his own mouth.

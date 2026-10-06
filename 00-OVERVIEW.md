@@ -2,7 +2,7 @@
 
 A more detailed orientation than `README.md`. Four reading paths, each pointing to specific files.
 
-**Just need to look something up?** Skip the reading paths and go to `TOPIC-INDEX.md` (claim → exact file and section) or `debate/00-INDEX.md` (14 cards with the evidence and rebuttals already assembled). See **Finding Things Fast** below.
+**Just need to look something up?** Skip the reading paths and go to `TOPIC-INDEX.md` (claim → exact file and section) or `questions/00-INDEX.md` (14 cards with the evidence and responses already assembled). See **Finding Things Fast** below.
 
 ---
 
@@ -106,10 +106,10 @@ See `podcast-archive/README.md` for the full episode list and `podcast-archive/t
 Three purpose-built entry points, in this order:
 
 1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor verified.
-2. **`debate/`** — **14 stage-ready cards**: the claim, the strongest primary-source evidence, the objections an apologist actually raises with rebuttals, sound bites, and go-deeper paths. Start at `debate/00-INDEX.md`. **Read `debate/CITATION-NOTES.md` before quoting anything** — it logs three citations found to be fabricated or reversed in our own research, plus a do-not-use list.
+2. **`questions/`** — **14 cards on the hard questions**: the claim, the strongest primary-source evidence, the questions people actually raise with honest responses, the whole thing in one sentence, and go-deeper paths. Start at `questions/00-INDEX.md`. **Read `questions/CITATION-NOTES.md` before quoting anything** — it logs three citations found to be fabricated or reversed in our own research, plus a do-not-use list.
 3. **`scripts/semantic-search.py`** — semantic (meaning-based) search across the whole repo via Gemini embeddings, for when a question comes from an angle the index doesn't anticipate. One-time setup in `scripts/README.md`.
 
-For live use — a debate, a recording, a public Q&A — `debate/DEBATE-SETUP.md` has the session warm-up prompt and the two-model pattern.
+For live use — a conversation, a recording, a public Q&A — `questions/LIVE-SETUP.md` has the session warm-up prompt and the two-model pattern.
 
 ---
 

@@ -15,7 +15,7 @@ python scripts/semantic-search.py "what did Jesus say about the kingdom being wi
 ```
 
 ...and returns the most relevant passages across `christianity/`,
-`gnosticism/`, `debate/`, `podcast-archive/`, `jesus-site-reference/`,
+`gnosticism/`, `questions/`, `podcast-archive/`, `jesus-site-reference/`,
 `extended-library/`, and the root orientation docs — ranked, with
 `file:line` citations so you can go read the source.
 
@@ -65,7 +65,7 @@ python scripts/semantic-search.py "Nag Hammadi kingdom within" --full
 | Flag | Effect |
 |---|---|
 | `--top-k N` | Number of results (default 5) |
-| `--full` | Print the entire matched chunk instead of a 200-char excerpt — useful for live debate lookups where you need the actual quote, not a teaser |
+| `--full` | Print the entire matched chunk instead of a 200-char excerpt — useful for live lookups where you need the actual quote, not a teaser |
 
 **3. Inspect the index:**
 
@@ -93,7 +93,7 @@ Current scope: **257 markdown files, ~16 MB, ~11,900 chunks.**
 | `christianity/` | 3,235 |
 | `gnosticism/` | 241 |
 | `jesus-site-reference/` | 194 |
-| `debate/` | 145 |
+| `questions/` | 145 |
 | root `*.md` | 55 |
 | `extended-library/` | 17 |
 

@@ -59,7 +59,7 @@ The woman at the well (John 4) — wrong ethnicity, wrong hill, five husbands �
 And the one everybody quotes:
 > "Neither do I condemn you. Go your way, and from now on do not sin again." — John 8:11
 
-**Say the textual status out loud before an apologist does:** the *pericope adulterae* (John 7:53-8:11) is absent from our earliest manuscripts and floats between locations in later ones — some put it in Luke. We cite it as early and treasured Christian tradition, not as textual bedrock. We flag it because flagging it costs nothing and buys credibility, and because **the case does not need it.** Luke 23:43 and Luke 15:20 are not in doubt by anyone.
+**Say the textual status out loud before someone else does:** the *pericope adulterae* (John 7:53-8:11) is absent from our earliest manuscripts and floats between locations in later ones — some put it in Luke. We cite it as early and treasured Christian tradition, not as textual bedrock. We flag it because flagging it costs nothing and buys credibility, and because **the case does not need it.** Luke 23:43 and Luke 15:20 are not in doubt by anyone.
 
 ## The Hard Questions
 
@@ -118,7 +118,7 @@ What we don't do is run the calculation. We don't say "they made a decision in t
 
 On suffering itself: he never explained it. Asked whose sin caused a man's blindness, he rejected the question outright (John 9:3) and then did something about the blindness. **That is our whole theodicy and it's his.** Grief does not need certainty about the next room. It needs somebody to stay in this one. That is what we offer, because that is what he did — and it is more than a doctrine, because somebody has to actually show up.
 
-## Sound Bites
+## In One Sentence
 
 - "What do you offer the man who failed?" The same thing Jesus offered the man dying next to him. Everything, immediately, for nothing.
 - The father ran. Before the apology finished, before a cent was repaid, before anybody bled.

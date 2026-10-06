@@ -7,7 +7,7 @@ vectors in a local ChromaDB. Search by concept, not keyword:
 
     "what did Jesus say about the kingdom being within?"
 
-...finds relevant passages across christianity/, gnosticism/, debate/,
+...finds relevant passages across christianity/, gnosticism/, questions/,
 podcast-archive/, and the rest.
 
 Run:
@@ -39,7 +39,7 @@ GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY")
 
 # Directories to SKIP — everything else in the repo gets indexed, including
 # christianity/, gnosticism/, extended-library/, jesus-site-reference/,
-# podcast-archive/, debate/ and the root-level *.md orientation docs.
+# podcast-archive/, questions/ and the root-level *.md orientation docs.
 SKIP_DIRS = {
     ".git", ".claude", ".vector-db", ".venv",
     "node_modules", "__pycache__", "scripts",

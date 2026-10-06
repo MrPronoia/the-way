@@ -34,7 +34,7 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 |---|---|
 | **To get oriented as a new contributor** | `ONBOARDING.md` — what a repo is, how to send us material, what's already here, which AI model to use |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
-| **To argue the case out loud** | `debate/00-INDEX.md` — fourteen stage-ready cards with evidence, objections, and rebuttals |
+| **The hard questions, answered from the sources** | `questions/00-INDEX.md` — fourteen cards: the claim, the evidence, the questions people raise, and honest responses |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |
 | The 1000-word version | `christianity/cliff-notes-quick-reference.md` |
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |

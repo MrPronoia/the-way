@@ -1,6 +1,6 @@
 # What Is Your Criterion? How We Decide What Jesus Actually Said
 
-**Position:** We have a stated method, it is public, and it is applied the same way to passages we like and passages we don't. Four tools do the work: multiple independent attestation; the *direction of redaction* (we distrust an editorial change that moves toward the editor's known theology and away from his own written source); the criterion of embarrassment (we trust material preserved against the preserver's interest); and the manuscript record itself, which is physical evidence rather than preference. We are not claiming the Bible is corrupt. We are claiming it has an editorial history that textual critics of every theological persuasion already document, and that the history is visible at specific, nameable seams. This method is also not a modern invention — the Jewish-Christian wing of the early church ran a version of it, and in the Clementine literature an ancient opponent asks Peter the exact question an apologist asks us, and gets a criterion in reply.
+**Position:** We have a stated method, it is public, and it is applied the same way to passages we like and passages we don't. Four tools do the work: multiple independent attestation; the *direction of redaction* (we distrust an editorial change that moves toward the editor's known theology and away from his own written source); the criterion of embarrassment (we trust material preserved against the preserver's interest); and the manuscript record itself, which is physical evidence rather than preference. We are not claiming the Bible is corrupt. We are claiming it has an editorial history that textual critics of every theological persuasion already document, and that the history is visible at specific, nameable seams. This method is also not a modern invention — the Jewish-Christian wing of the early church ran a version of it, and in the Clementine literature an ancient opponent asks Peter the exact question we get asked, and gets a criterion in reply.
 
 ---
 
@@ -35,7 +35,7 @@ Same with **Mark 10:45** ("a ransom for many"): earliest source, no redaction es
 | John 7:53-8:11 | Absent from the earliest witnesses and it *floats* — some manuscripts place it in Luke. |
 | Matthew 26:28 vs. Mark 14:24 | Not a manuscript variant but a redaction visible by direct comparison of a copy with its source. |
 
-None of that is our claim. It is in the apparatus of every critical edition and the footnotes of the Bible in the opponent's hand. **We did not find the seams. We are reading the ones textual scholarship already marked.**
+None of that is our claim. It is in the apparatus of every critical edition and the footnotes of the Bible in the other person's hand. **We did not find the seams. We are reading the ones textual scholarship already marked.**
 
 ### 4. We apply embarrassment against ourselves too
 
@@ -48,7 +48,7 @@ But it cuts our way too, and we say so: the Last Supper tradition itself is awkw
 > "For the Scriptures have had joined to them many falsehoods against God on this account... after a little the written law had added to it certain falsehoods contrary to the law of God."
 > — *Clementine Homilies* 2.38, "Corruption of the Law"
 
-The doctrine is then worked out across Homilies 3.42-51 — and the striking thing is the shape of the exchange. **Simon asks our opponent's question:**
+The doctrine is then worked out across Homilies 3.42-51 — and the striking thing is the shape of the exchange. **Simon asks the question we get asked:**
 
 > Simon: "How is it possible to recognise the other things in the law which are from the tradition of Moses, and are true, and are mixed up with these falsehoods?" — *Homilies* 3.48
 
@@ -72,10 +72,10 @@ Not "the Bible is unreliable." This:
 4. **We add no documents.** Thomas and the Nag Hammadi texts are historical witnesses to early Christianity; so are the Didache, the Clementines, and the books the Ethiopian church kept. Witnesses, not a replacement canon.
 5. **We hold scripture high enough to read it honestly.** Inerrancy asks a reader to notice less, not more. We want every seam looked at, including the ones that hurt us.
 
-## Objections & Rebuttals
+## Questions People Raise
 
 ### "That's a canon within a canon. You've just built a Bible out of your preferences."
-Everyone has a canon within a canon — the question is whether yours is **stated**. Ask the apologist how he reconciles Leviticus 11 with Mark 7, or Jeremiah 7:22 with Numbers 28, or "no one has ascended to heaven" (John 3:13) with Elijah's chariot. He has a method. He will call it "the clear teaching of scripture," which is a canon within a canon with the criterion left unspoken. Ours is written down, in section 1 of this card, with both test cases shown. **Published and falsifiable beats silent and unexaminable.**
+Everyone has a canon within a canon — the question is whether yours is **stated**. Ask how they reconcile Leviticus 11 with Mark 7, or Jeremiah 7:22 with Numbers 28, or "no one has ascended to heaven" (John 3:13) with Elijah's chariot. He has a method. He will call it "the clear teaching of scripture," which is a canon within a canon with the criterion left unspoken. Ours is written down, in section 1 of this card, with both test cases shown. **Published and falsifiable beats silent and unexaminable.**
 
 ### "If the text is corrupted, why trust the parts you like?"
 Because we are not claiming the text is corrupted. We are claiming it has a documented editorial history located at specific places, and we identify those places with external evidence: manuscripts that lack a passage, a copy that differs from its surviving source, a reading no early Father quotes. Mark 16:9-20 isn't suspect because we dislike snake-handling; it's suspect because it isn't in Sinaiticus. **"Corrupted" is a global claim we don't make. "Edited here, visibly, and here's the witness list" is a local claim, and it's the only kind we make.**
@@ -95,7 +95,7 @@ Fair, and worth conceding cleanly. The Hebrew is debated and the referent of "ma
 Then falsify it. The method makes predictions: if Matthew's atonement clause is redactional, it should be missing from his source and from independent early witnesses — and it is missing from all of them. If the longer ending of Mark were original, it should appear in our oldest codices — and it doesn't. Run it the other way: show us a passage where we claim redaction and the manuscript evidence goes against us, and we'll drop the claim. **We already keep Q's jot-and-tittle saying and Mark's ransom saying against our own interest. A method that can lose is a method.**
 
 ### "Textual criticism is a Christian discipline. The scholars who catalogued those variants mostly still believe in substitutionary atonement."
-Correct, and we say so freely — it's one of the strongest things about our evidence base. **The data is not ours and it isn't partisan.** Metzger was a devout Presbyterian; Nestle-Aland is the standard in evangelical seminaries; the brackets around Mark 16:9-20 were put there by committees of believing Christians. We are not disputing their textual findings at any point. We disagree with them about **theology** — about what the ranking of sources implies for what Jesus taught — and that is a separate argument conducted on top of shared evidence. When an apologist points out that our textual facts come from believing scholars, the right response is "yes, which is why you can't call them biased against you."
+Correct, and we say so freely — it's one of the strongest things about our evidence base. **The data is not ours and it isn't partisan.** Metzger was a devout Presbyterian; Nestle-Aland is the standard in evangelical seminaries; the brackets around Mark 16:9-20 were put there by committees of believing Christians. We are not disputing their textual findings at any point. We disagree with them about **theology** — about what the ranking of sources implies for what Jesus taught — and that is a separate argument conducted on top of shared evidence. When someone points out that our textual facts come from believing scholars, the right response is "yes, which is why you can't call them biased against you."
 
 ### "Who are you to sit in judgment over scripture? That's pride."
 It would be, if the alternative were sitting under it without choosing. But nobody does that. The moment you decide that Leviticus 20:13 doesn't govern your legal code and Matthew 22:39 does, you have made a judgment about scripture. Every tradition has — that's what a hermeneutic *is*. The choice isn't between judging and not judging; it's between **doing it in the open with a stated rule and doing it silently while calling it obedience.** We'd rather be accountable for our rule than pretend we don't have one. And the rule we chose is: whatever Jesus said outranks what anyone said about him. If that's pride, it's an odd kind.
@@ -103,7 +103,7 @@ It would be, if the alternative were sitting under it without choosing. But nobo
 ### "Fine — then what would change your mind?"
 Answer it, because the willingness is the argument. A pre-Matthean source with the atonement clause in it. A second-century Greek witness to the Comma. Mark 16:9-20 in a 4th-century codex. Evidence that Jesus directed anyone to the Temple for the forgiveness of sins rather than for civil certification. Any of those would cost us a position and we'd pay it. **Then ask the same question back,** gently, and listen to the answer — because that exchange, more than any verse, tells the room which side is doing history.
 
-## Sound Bites
+## In One Sentence
 
 - Everyone reads with a criterion. Ours is written down. Ask him for his.
 - We're not saying the Bible is corrupted. We're saying it was edited, in specific places, and the manuscripts are where we found out.
@@ -123,4 +123,4 @@ Answer it, because the willingness is the argument. A pre-Matthean source with t
 - `christianity/Incoming/q-source-reconstruction.md` — the double-attested material, including Q 16:16-18 on the law
 - `christianity/old-testament-through-jesus-lens.md` — scripture as a library; the Marcion problem and the Nazarene answer to it
 - `jesus-site-reference/source/docs/the-evidence.md` — the public-facing version of the evidence stack, in plain language
-- `debate/CITATION-NOTES.md` — the quotes that failed verification in our own files, and why we published that list
+- `questions/CITATION-NOTES.md` — the quotes that failed verification in our own files, and why we published that list
