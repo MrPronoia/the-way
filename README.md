@@ -32,6 +32,8 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 
 | Start here if you want… | Go to |
 |---|---|
+| **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
+| **To argue the case out loud** | `debate/00-INDEX.md` — nine stage-ready cards with evidence, objections, and rebuttals |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |
 | The 1000-word version | `christianity/cliff-notes-quick-reference.md` |
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |
@@ -42,10 +44,13 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | Rapture deconstruction | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` |
 | The Gnostic gospels (Thomas, Philip, Nag Hammadi) | `gnosticism/` |
 | The published website source | `jesus-site-reference/` |
-| The Jesus Way podcast raw transcripts | `podcast-archive/the-jesus-way/` |
+| The Jesus Way podcast raw transcripts | `podcast-archive/the-jesus-way/` (65 episodes) |
 | Dr. James Tabor's "Paul" playlist, synthesized (77 videos) | `podcast-archive/dr-tabor/` |
+| Kameron Waters' channel transcripts (7 videos) | `podcast-archive/kameron-waters/` |
 
 A more detailed reading guide is in `00-OVERVIEW.md`.
+
+**Semantic search:** `python scripts/semantic-search.py "your question"` searches by meaning rather than keyword across the whole repo. One-time setup in `scripts/README.md`.
 
 ---
 
