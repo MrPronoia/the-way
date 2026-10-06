@@ -30,7 +30,7 @@ Two files presented this as a direct quotation from Eusebius. Hegesippus (via Eu
 | *Ebionim* ("the poor ones") as a Dead Sea Scrolls self-designation | Asserted in `2026-02-25-essene-nazarene-ebionite-lineage.md`; no supporting text anywhere in `christianity/dead-sea-scrolls/`. Left off the cards. |
 | Origen, "The Father is superior to every being that exists"; Justin Martyr, "another God and Lord" | Only in our secondary notes — no primary text in the repo. The subordinationism argument stands without the quotes; make it without quotation marks. |
 | Pliny on Essene vegetarianism | Flagged unverified in the seed file itself. Josephus and Philo are the safe citations. |
-| 1QS 9:4-5 "prayer as sacrifice" as a direct quote | Only a paraphrase exists in our DSS selection. Cite it at reference level ("the Community Rule replaces sacrifice with prayer"), not as quoted words. 1QS 3:4-7, 3:17-19, 8:12-14 **are** verified verbatim in `dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`. |
+| 1QS 9:4-5 "prayer as sacrifice" as a direct quote | Only a paraphrase exists in our DSS selection. Cite it at reference level ("the Community Rule replaces sacrifice with prayer"), not as quoted words. 1QS 3:4-7, 3:17-19, 8:12-14 **are** verified verbatim in `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`. |
 | Any Dr. Tabor quotation | All Tabor material in this repo is auto-captioned transcript (`podcast-archive/dr-tabor/`). Attribute his *positions* by paraphrase to his published books; never quote him from a transcript. |
 
 ---

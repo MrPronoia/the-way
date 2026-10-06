@@ -14,3 +14,10 @@ node_modules/
 # christianity/Incoming, dead-sea-scrolls/Incoming, and gnosticism/Incoming
 # folders are NOT affected.
 /Incoming/
+
+# Local build artifacts from scripts/semantic-search.py — derived data,
+# regenerate with `python scripts/semantic-search.py --rebuild`.
+# (__pycache__/ is already ignored above.)
+.vector-db/
+__pycache__/
+.venv/

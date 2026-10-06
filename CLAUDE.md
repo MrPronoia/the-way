@@ -12,6 +12,18 @@ See `README.md` for orientation and `PROVENANCE.md` for the assembly story.
 
 ---
 
+## Finding Things Fast (start here for any claim lookup)
+
+Don't search the repo blind — there are three purpose-built entry points, in this order:
+
+1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor is verified.
+2. **`debate/`** — nine stage-ready cards (claim, strongest primary-source evidence, objections with rebuttals, sound bites, go-deeper paths). Start with `debate/00-INDEX.md`. **Read `debate/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
+3. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
+
+**For live/debate use**, `debate/DEBATE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
+
+---
+
 ## Core Thesis (the gravitational center)
 
 1. **Jesus's actual teaching** is recoverable from the red text + the Gospel of Thomas + cross-source historical reconstruction
