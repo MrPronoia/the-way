@@ -149,5 +149,5 @@ The Hebrew Matthew does not stand alone. It belongs to a global convergence of t
 - Jerome, *Commentary on Matthew*, Prologue (c. 398 CE) -- Caesarea library reference
 - Epiphanius of Salamis, *Panarion* (c. 374-377 CE) -- Sections 29 (Nazarenes) and 30 (Ebionites) for quotations from the Hebrew gospel tradition
 - The Didache, *Teaching of the Twelve Apostles* (c. 50-70 CE) -- Chapters 9-10 for non-Pauline Eucharist
-- Clementine Recognitions and Homilies (3rd-4th century CE) -- Recognitions 1.69 for Torah interpolation argument
+- Clementine Homilies (3rd-4th century CE) -- *Homilies* 2.38 and 3.42-50 for the Torah interpolation ("false pericopes") argument
 - Dead Sea Scrolls, Community Rule (1QS) -- Section 9:4-5 for prayer replacing sacrifice

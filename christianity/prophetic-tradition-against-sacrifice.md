@@ -116,9 +116,11 @@ If the Shapira manuscript is authentic, it means an original version of the Law 
 
 The Essenes -- the Jewish sect most closely associated with Jesus's movement in modern scholarship -- rejected Temple sacrifice entirely. First-century historians Josephus, Philo, Pliny the Elder, and Porphyry all document Essene vegetarianism. The Dead Sea Scrolls Community Rule (1QS 9:4-5) describes the community replacing animal sacrifice with "prayer rightly offered" and "perfection of way as an acceptable free-will offering."
 
-Eusebius, citing the second-century historian Hegesippus, records that James the Just -- Jesus's brother and leader of the Jerusalem church after the crucifixion -- "was a vegetarian from birth, drank no wine, wore no wool, and never entered the Temple to participate in sacrifice" (*Church History* 2.23). If Jesus's own brother and chosen successor rejected the sacrificial system entirely, the implication for Jesus's own position is significant.
+Eusebius, citing the second-century historian Hegesippus, records that James the Just -- Jesus's brother and leader of the Jerusalem church after the crucifixion -- "drank no wine nor strong drink, nor did he eat meat," never cut his hair, and wore linen rather than wool (*Church History* 2.23). A lifelong vegetarian ascetic leading the Jerusalem church is meaningful evidence about the movement's relationship to the sacrificial system.
 
-The Clementine Recognitions (3rd-4th century CE), preserving traditions attributed to Peter through Clement of Rome, state directly: "Many falsehoods have been added to scripture which oppose the true nature of God" (Recognitions 1.69).
+**Care required here:** Hegesippus does *not* say James avoided the Temple — he says James **was permitted into the Temple's holy areas**, which the same passage treats as evidence of a priestly function (see `james-the-just-key-to-understanding-jesus.md`). Any claim that James "never participated in sacrifice" is an inference from his vegetarianism, not a quotation from Hegesippus. Don't state it as a quote.
+
+The Clementine Homilies (3rd-4th century CE), preserving Jewish-Christian tradition attributed to Peter through Clement, state directly: "For the Scriptures have had joined to them many falsehoods against God on this account" (*Homilies* 2.38, "Corruption of the Law"). Verified against `Incoming/clementine-homilies-full-text.md`.
 
 ---
 
