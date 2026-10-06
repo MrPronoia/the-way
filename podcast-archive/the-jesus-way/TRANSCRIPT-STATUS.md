@@ -1,14 +1,18 @@
 # Jesus Way Podcast Transcript Status
 
-**Last Updated:** 2026-06-02
+**Last Updated:** 2026-10-06
 
 ---
 
-## ✅ TRANSCRIPTS COMPLETE (54 of 55 episodes)
+## ✅ TRANSCRIPTS COMPLETE (64 of 65 episodes)
 
-All available transcripts have been pulled from YouTube and appended to their respective markdown files. Episode 045 is the only known gap — YouTube has not generated auto-captions for that video; revisit when captions become available or manually transcribe.
+All available transcripts have been pulled from YouTube and appended to their respective markdown files.
+
+**The one remaining gap is episode 045** — captions are **disabled at the source** by the uploader (confirmed 2026-10-06 via the Apify transcript API, which reports "Captions are disabled for this video" rather than a missing-captions error). This is not a tooling problem and won't resolve on retry; it needs either a re-upload with captions enabled or manual/Whisper transcription from the audio.
 
 Episodes 053–055 (Gregg Braden, Eastern Orthodox / Braden Wuerch, John St. Julien) were mined and added on 2026-06-02 — each file includes a synthesized research summary plus the full auto-generated transcript.
+
+Episodes 056–065 were pulled on 2026-10-06 — transcript + stub summary (synthesized notes pending; indexed summaries added to `00-overview.md`).
 
 | Episode | File | Status |
 |---------|------|--------|
@@ -56,7 +60,7 @@ Episodes 053–055 (Gregg Braden, Eastern Orthodox / Braden Wuerch, John St. Jul
 | 42 | `042-spiritual-benefits-of-fat-loss.md` | ✅ Done (2026-05-12) |
 | 43 | `043-minister-of-wellness-church-of-satan.md` | ✅ Done (2026-05-12) |
 | 44 | `044-three-forgotten-nazarene-practices.md` | ✅ Done |
-| 45 | `045-three-temples-unlock-christ-consciousness.md` | ⚠️ No YouTube auto-captions available |
+| 45 | `045-three-temples-unlock-christ-consciousness.md` | ⚠️ Captions disabled at source — needs manual/Whisper transcription |
 | 46 | `046-james-rejected-paul-scriptural-proof.md` | ✅ Done (2026-05-12) |
 | 47 | `047-jesus-died-because-of-sins.md` | ✅ Done (2026-05-12) |
 | 48 | `048-what-really-happened-at-resurrection.md` | ✅ Done (2026-05-12) |
@@ -67,6 +71,16 @@ Episodes 053–055 (Gregg Braden, Eastern Orthodox / Braden Wuerch, John St. Jul
 | 53 | `053-gregg-braden-essene-origins.md` | ✅ Done (2026-06-02) |
 | 54 | `054-eastern-orthodox-search-original-christianity.md` | ✅ Done (2026-06-02) |
 | 55 | `055-rescuing-children-from-witch-doctors.md` | ✅ Done (2026-06-02) |
+| 56 | `056-responding-to-angela-scafidi.md` | ✅ Done (2026-10-06) |
+| 57 | `057-how-eating-animals-lowers-consciousness-will-tuttle.md` | ✅ Done (2026-10-06) |
+| 58 | `058-ex-hebrew-israelite-malaki-macabee.md` | ✅ Done (2026-10-06) |
+| 59 | `059-hidden-water-codes-veda-austin.md` | ✅ Done (2026-10-06) |
+| 60 | `060-kam-waters-felony-saving-dogs.md` | ✅ Done (2026-10-06) |
+| 61 | `061-secret-to-changing-reality-david-bayer.md` | ✅ Done (2026-10-06) |
+| 62 | `062-kundalini-awakening-holy-spirit-chris-sartain.md` | ✅ Done (2026-10-06) |
+| 63 | `063-9-problems-with-paul.md` | ✅ Done (2026-10-06) |
+| 64 | `064-spiritual-warfare-darius-j-wright.md` | ✅ Done (2026-10-06) |
+| 65 | `065-why-christians-hate-jesus-salvation-teachings.md` | ✅ Done (2026-10-06) |
 
 ---
 
@@ -74,18 +88,29 @@ Episodes 053–055 (Gregg Braden, Eastern Orthodox / Braden Wuerch, John St. Jul
 
 | Status | Count |
 |--------|-------|
-| ✅ Completed | 54 |
-| ⚠️ Blocked (no YouTube captions) | 1 |
-| **Total** | **55** |
+| ✅ Completed | 64 |
+| ⚠️ Blocked (captions disabled at source — ep. 045) | 1 |
+| **Total** | **65** |
 
 ---
 
 ## How To Pull New Transcripts
 
-Run `python _pull_transcripts.py` from this folder. The script uses `yt-dlp` to pull
-YouTube auto-captions, strips the stair-step duplication from VTT files, and appends
-clean prose under a `## Full Transcript` section in each episode's markdown file.
-Add new episodes to the `EPISODES` list inside the script.
+Two working methods. Both append clean prose under a `## Full Transcript` section.
+
+**1. yt-dlp (local, free).** `python _pull_transcripts.py` (script lives in mr-pronoia at
+`private/the-jesus-way/`). Uses `yt-dlp` to pull YouTube auto-captions and strips the
+stair-step duplication from VTT files. Add new episodes to the `EPISODES` list inside.
+*Caveat:* YouTube rate-limits the caption endpoint hard (HTTP 429) when you fetch several
+videos in a row. Space requests ~90s apart and install a JS runtime (`winget install DenoLand.Deno`)
+to avoid yt-dlp's deprecated no-JS path.
+
+**2. Apify (cloud, ~free, no rate limits).** When yt-dlp is throttled, run the
+`johnvc/YoutubeTranscripts` actor with a list of video URLs (costs a fraction of a cent per
+video) and write the dataset to markdown. This is how 057, 060 and the `kameron-waters/`
+folder were captured on 2026-10-06 — it runs from Apify's IPs, so our local throttling
+doesn't apply. It also distinguishes *captions disabled by the uploader* from *captions
+missing*, which is how episode 045 was finally diagnosed.
 
 ---
 

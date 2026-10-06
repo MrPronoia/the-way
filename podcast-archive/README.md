@@ -2,7 +2,8 @@
 
 Raw working transcripts and synthesized research notes from two sources:
 
-- **`the-jesus-way/`** — The Jesus Way podcast (Aaron Abke & James Benefico). 55 episodes, ~12 MB. Documented in detail below.
+- **`the-jesus-way/`** — The Jesus Way podcast (Aaron Abke & James Benefico). 65 episodes, ~13 MB. Documented in detail below.
+- **`kameron-waters/`** — Kameron Waters' YouTube channel (Christspiracy filmmaker, The Way Skool). 7 videos with full transcripts.
 - **`dr-tabor/`** — Dr. James Tabor's "Paul" YouTube playlist: 77 videos synthesized into structured notes (summary, key teachings, scripture citations, scholars cited, quotable moments, plus the full raw transcript per file). See **`dr-tabor/00-overview.md`** for its thematic index and project notes.
 
 The rest of this file documents the **The Jesus Way** archive.
@@ -75,7 +76,7 @@ Episodes are numbered. The numbering reflects production order (some early episo
 | 042 | Spiritual Benefits of Fat Loss | 91 KB |
 | 043 | Minister of Wellness — Church of Satan | 103 KB |
 | 044 | Three Forgotten Nazarene Practices | 126 KB |
-| 045 | Three Temples Unlock Christ Consciousness | 10 KB *(short synthesis)* |
+| 045 | Three Temples Unlock Christ Consciousness | 10 KB *(synthesis only — captions disabled at source)* |
 | 046 | James Rejected Paul — Scriptural Proof | 183 KB |
 | 047 | Jesus Died Because of Sins | 93 KB |
 | 048 | What Really Happened at Resurrection | 172 KB |
@@ -83,6 +84,19 @@ Episodes are numbered. The numbering reflects production order (some early episo
 | 050 | Debunking Wes Huff Hell Theology | 66 KB |
 | 051 | Was Jesus Jacked? Fitness & Self-Mastery | 86 KB |
 | 052 | How Jesus Healed — Scalar Energy | 51 KB |
+| 053 | Gregg Braden on the Essene Origins of Christianity | 104 KB |
+| 054 | Eastern Orthodox and the Search for Original Christianity | 109 KB |
+| 055 | The Man Who Rescues Children from Witch Doctors | 101 KB |
+| 056 | "Paul's Theology Is GOD'S Theology" — Responding to Angela Scafidi | 126 KB |
+| 057 | How Eating Animals Lowers Your Consciousness — Will Tuttle | 115 KB |
+| 058 | Ex-Hebrew Israelite Exposes the Bible's Dangerous Ideology — Malaki Macabee | 137 KB |
+| 059 | The Hidden Water Codes Jesus Used — Veda Austin | 117 KB |
+| 060 | Kam Waters Charged With Felony for Saving Dogs From Torture | 82 KB |
+| 061 | Jesus Revealed the Secret to Changing Your Reality — David Bayer | 133 KB |
+| 062 | Is Kundalini Awakening the Holy Spirit Yeshua Foretold? — Chris Sartain | 107 KB |
+| 063 | 9 Problems With Paul That Christian Apologists Can't Answer | 41 KB |
+| 064 | How Spiritual Warfare Actually Works — Darius J Wright | 105 KB |
+| 065 | Why Christians Hate Jesus' Real Salvation Teachings — Minister of Wellness | 120 KB |
 
 **Other files in `the-jesus-way/`:**
 - `00-overview.md` — Notes on the podcast as a whole

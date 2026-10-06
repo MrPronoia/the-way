@@ -2,7 +2,7 @@
 
 This folder contains episode-by-episode research notes for **The Jesus Way Podcast**, hosted by Aaron Abke and James Benefico (with frequent co-host Kameron Waters). The podcast recovers what Jesus (Yeshua) actually taught -- before Paul, before Nicaea, before institutional Christianity reshaped the message. Core thesis: Jesus was a Jewish reformer from the Nazarene/Essene tradition who taught salvation through repentance, love, and works -- not through blood atonement or belief-based confession.
 
-55 episodes are documented here, spanning foundational theology, historical origins, the Paul critique, diet and health, spiritual warfare, mystical practice, and guest deep dives. Most files contain a full summary, key teachings, scripture citations, and cross-tradition connections. (Episodes 43 and 47–52 are transcript-complete but their synthesized notes are still pending, so their index entries below are derived from the episode titles; episodes 53–55 include full synthesized research notes.)
+65 episodes are documented here, spanning foundational theology, historical origins, the Paul critique, diet and health, spiritual warfare, mystical practice, and guest deep dives. Most files contain a full summary, key teachings, scripture citations, and cross-tradition connections. (Episodes 43 and 47–52 are transcript-complete but their synthesized notes are still pending, so their index entries below are derived from the episode titles; episodes 53–55 include full synthesized research notes; episodes 56–65 were added 2026-10-06 with full transcripts and indexed summaries, synthesized notes pending.)
 
 **Connection to the broader repo:** This is the backbone of the Christianity research. Findings here feed directly into `esoteric-knowledge/perennial-philosophy/`, the Ethiopian Bible collection (`esoteric-knowledge/christianity/ethiopian-bible/`), and Matt's synthesis docs (`esoteric-knowledge/christianity/matt-notes/`). The Jesus Way's "Two Ways" doctrine, works-based soteriology, and anti-sacrifice theology are confirmed independently by Hermetic, Kabbalistic, Law of One, and Sufi sources across the knowledge base.
 
@@ -50,6 +50,8 @@ Systematic case that Paul hijacked Jesus's message and that "Christianity" is re
 | 25 | `025-paul-derangement-syndrome.md` | Cognitive dissonance in Pauline Christianity, the bait-and-switch |
 | 26 | `026-responding-to-john-davis.md` | Defending the Essene connection against critics |
 | 46 | `046-james-rejected-paul-scriptural-proof.md` | Scriptural proof James the Just opposed Paul's theology |
+| 56 | `056-responding-to-angela-scafidi.md` | Responding to Angela Scafidi's defense of Pauline theology, with Bart Ehrman clips |
+| 63 | `063-9-problems-with-paul.md` | Nine textual arguments that Paul was the false apostle Jesus warned about |
 
 ### Challenging Core Doctrines
 Direct challenges to blood atonement, the Trinity, the rapture, and eternal hell.
@@ -64,6 +66,7 @@ Direct challenges to blood atonement, the Trinity, the rapture, and eternal hell
 | 47 | `047-jesus-died-because-of-sins.md` | Jesus died BECAUSE of sins, not FOR them -- reframing the crucifixion |
 | 48 | `048-what-really-happened-at-resurrection.md` | What the resurrection actually was, apart from atonement theology |
 | 50 | `050-debunking-wes-huff-hell-theology.md` | Reaction/rebuttal to Wes Huff's defense of eternal hell |
+| 65 | `065-why-christians-hate-jesus-salvation-teachings.md` | Nathaniel Jordan: blood atonement as "blood magic," the no-blood gospel |
 
 ### Diet, Health, and the Body as Temple
 The "Jesus Diet" -- vegetarianism, fasting, and physical health as spiritual practice.
@@ -77,6 +80,7 @@ The "Jesus Diet" -- vegetarianism, fasting, and physical health as spiritual pra
 | 36 | `036-powerful-spiritual-practice-removed.md` | Fasting removed from the Bible, the three temples concept |
 | 42 | `042-spiritual-benefits-of-fat-loss.md` | Spiritual benefits of fat loss, "biological static," Jesus40 Challenge results |
 | 51 | `051-was-jesus-jacked-fitness-self-mastery.md` | Was Jesus "jacked"? Fitness and discipline as vehicles for self-mastery |
+| 57 | `057-how-eating-animals-lowers-consciousness-will-tuttle.md` | Will Tuttle (The World Peace Diet) on how eating animals lowers consciousness |
 
 ### Spiritual Warfare and the Demonic
 Entity attachment, demonic patterns, addiction, and how love and Christ repel darkness.
@@ -89,6 +93,7 @@ Entity attachment, demonic patterns, addiction, and how love and Christ repel da
 | 37 | `037-23-patterns-demonic-attacks.md` | 23 patterns of demonic voices, recovery without medication |
 | 43 | `043-minister-of-wellness-church-of-satan.md` | "Minister of Wellness" vs. the Church of Satan -- self-worship vs. self-giving |
 | 55 | `055-rescuing-children-from-witch-doctors.md` | John St. Julien: rescuing children from witch-doctor sacrifice in Tanzania |
+| 64 | `064-spiritual-warfare-darius-j-wright.md` | Darius J Wright: how spiritual warfare actually works, entities, energy harvesting |
 
 ### Mystical Christianity and Consciousness
 Christ consciousness, shadow work, Swedenborg, Steiner, DNA activation, and inner transformation.
@@ -102,6 +107,9 @@ Christ consciousness, shadow work, Swedenborg, Steiner, DNA activation, and inne
 | 41 | `041-shadow-work-xavier-dagba.md` | Shadow integration, the dark face of the higher self |
 | 52 | `052-how-jesus-healed-scalar-energy.md` | John White: scalar energy and bioenergetic healing as a lens on Jesus's miracles |
 | 45 | `045-three-temples-unlock-christ-consciousness.md` | Three temples (body/mind/spirit) as the path to Christ consciousness |
+| 59 | `059-hidden-water-codes-veda-austin.md` | Veda Austin: water as responsive intelligence, living-water baptism |
+| 61 | `061-secret-to-changing-reality-david-bayer.md` | David Bayer: beliefs create reality, desire plus non-resistance, Jesus on belief |
+| 62 | `062-kundalini-awakening-holy-spirit-chris-sartain.md` | Chris Sartain: Kundalini as the Holy Spirit baptism, chrism, Gospel of Philip |
 
 ### NDEs and Afterlife Evidence
 Near-death experiences as empirical validation of Jesus's works-based gospel.
@@ -118,6 +126,8 @@ Leaving fundamentalism, nonviolence, and the gap between Jesus and modern Christ
 |----|------|-------|
 | 12 | `12-bible-scholar-left-christianity.md` | Dr. CJ Cornthwaite: deconstruction, biblical inerrancy trap |
 | 14 | `14-jesus-and-war.md` | Radical nonviolence, enemy love, Christianity and war |
+| 58 | `058-ex-hebrew-israelite-malaki-macabee.md` | Malaki Macabee: leaving the Black Hebrew Israelites for the Nazarene way |
+| 60 | `060-kam-waters-felony-saving-dogs.md` | Kam Waters: felony charge for rescuing dogs from torture |
 
 ---
 
@@ -203,3 +213,13 @@ After that, follow any thread that pulls you.
 | 53 | Gregg Braden on the Essene Origins of Christianity | Braden ties the Essenes, Gnostic texts, and ancient creation accounts to a warning that humanity's DNA-encoded divine spark is threatened by transhumanism. | Essenes, Gnostic cosmology, DNA, transhumanism, prayer-as-field, kingdom within |
 | 54 | Eastern Orthodox and the Search for Original Christianity | EO guest Braden Wuerch and the hosts find common ground in theosis, fasting, and works -- while differing on church authority and the Eucharist. | Eastern Orthodoxy, theosis, Jesus Prayer, fasting, synergistic salvation |
 | 55 | The Man Who Rescues Children from Witch Doctors | Christian mystic John St. Julien recounts rescuing special-needs children from witch-doctor sacrifice in Tanzania and frames surrendered innocence as Jesus's core. | Missions, spiritual warfare, blood-atonement critique, innocence, deliverance |
+| 56 | "Paul's Theology Is GOD'S Theology" — Responding to Angela Scafidi | Point-by-point reaction to apologist Angela Scafidi's defense of Pauline theology, using Bart Ehrman clips to show the Jesus-vs-Paul contradiction is mainstream scholarship, not a fringe claim. *(notes pending)* | Paul vs. Jesus, Bart Ehrman, faith vs. works, apologetics reaction |
+| 57 | How Eating Animals Lowers Your Consciousness (ft. Will Tuttle) | Will Tuttle (The World Peace Diet) on the spiritual and consciousness costs of eating animals. *(notes pending)* | Vegetarianism, animal compassion, consciousness, World Peace Diet |
+| 58 | Ex-Hebrew Israelite Exposes the Bible's Dangerous Ideology | Former Black Hebrew Israelite leader Malaki Macabee traces his deconstruction out of the movement's supremacist end-times ideology into the Nazarene way, reading blood-sacrifice passages as false pericopes per the Clementine Homilies. *(notes pending)* | Black Hebrew Israelites, deconstruction, Nazarene way, Clementine Homilies, false pericopes |
+| 59 | The Hidden Water Codes Jesus Used (ft. Veda Austin) | Water researcher Veda Austin presents evidence that water is a responsive living intelligence, connecting her "water codes" to living-water baptism in the Didache and the overlooked role of water in the original Jesus movement. *(notes pending)* | Water crystallography, living water, baptism, Didache, Essene purification |
+| 60 | Kam Waters Charged With Felony for Saving Dogs From Torture | Kam Waters on the felony charge he faced for rescuing dogs from torture, and animal compassion as a living expression of the Jesus Way. *(notes pending)* | Animal rescue, civil disobedience, compassion, justice |
+| 61 | Jesus Revealed the Secret to Changing Your Reality (w/ David Bayer) | David Bayer, who found God through 12-step recovery, maps his "desire plus non-resistance" framework for changing reality onto Jesus's teachings about belief, forgiveness, and a loving universe. *(notes pending)* | Beliefs create reality, 12-step recovery, non-resistance, forgiveness |
+| 62 | Is Kundalini Awakening the Holy Spirit Yeshua Foretold? (w/ Chris Sartain) | Aaron and Chris Sartain unpack whether Kundalini awakening is the Holy Spirit baptism Yeshua foretold, tracing the chrism/Christ-oil theme through the Gospel of Philip and Clementine literature. *(notes pending)* | Kundalini, Holy Spirit, chrism, Gospel of Philip, pineal gland |
+| 63 | 9 Problems With Paul That Christian Apologists Can't Answer | Solo presentation of nine textual arguments that Paul was the false apostle Jesus warned about — contradicting Jesus on law and salvation, unwitnessed visions, admitted deceptions, and rejection by the Jerusalem apostles. *(notes pending)* | Paul as false apostle, law vs. grace, Galatians, apostolic rejection |
+| 64 | How Spiritual Warfare Actually Works (w/ Darius J Wright) | Out-of-body explorer Darius J Wright describes entities harvesting the energy of innocence and love, the commerce/legal control system enslaving the soul, and what his OBE journeys reveal about God as perfect innocence. *(notes pending)* | OBEs, spiritual warfare, entities, energy harvesting, innocence |
+| 65 | Why Christians Hate Jesus' Real Salvation Teachings (w/ Minister of Wellness) | Nathaniel Jordan returns to argue blood atonement is "blood magic" that makes no moral sense, contrasting the no-blood works-and-repentance gospel of the Gospel of the Holy Twelve with the Bible's darkest sacrifice passages. *(notes pending)* | Blood atonement critique, works-based salvation, Gospel of the Holy Twelve, repentance |
