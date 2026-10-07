@@ -91,6 +91,27 @@ Research and analysis files can instead close with a bibliography line, which th
 
 **For in-copyright material, `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` is the house model** — our own summaries plus short attributed excerpts, every quote carrying its translator inline (`"1QS 1:1-3, Vermes"`), and an explicit statement that it is *not* a full translation. Follow that pattern and we get the substance without the legal exposure.
 
+### Keeping a full book in your own clone — the local-only pattern
+
+You may want a whole book sitting in your copy so you can search it and work against it with an AI assistant, even though it can never be published here. **That works, and it's supported.**
+
+Put it in a gitignored folder. The repo root already has one reserved: **`/Incoming/`** — gitignored, never pushed. Or make your own and add it to `.gitignore`:
+
+```gitignore
+# Local-only copies of in-copyright books. Never pushed, never indexed.
+/my-books/
+```
+
+What you get: Obsidian reads it, Claude Code reads it, and `grep` finds it — because all of those read your disk. What you don't get: it is never committed, never pushed, and **never sent to the embedding API.**
+
+That last part is the piece worth understanding, because it isn't automatic in most setups. **`scripts/semantic-search.py` consults `.gitignore` before indexing.** A rebuild uploads the text of every indexed file to Google, so "don't publish this" and "don't upload this" are deliberately the *same switch*:
+
+> **If git won't push it, the indexer won't send it.**
+
+The practical consequence: **gitignore is the one control you need.** One line in `.gitignore` and that book is yours alone — readable locally, invisible to GitHub and to any third-party API.
+
+Two cautions. First, a gitignored file is only private on *your* machine; if you want the material in the shared collection, it has to go through the excerpt-and-cite pattern above. Second, **anything pushed to a public repo is in the history permanently**, even if you delete it in a later commit — so get the ignore rule in place *before* the first commit, not after. If something sensitive does land in history, stop and ask Matt or Rex rather than just deleting the file; removing it properly means rewriting history.
+
 Current coverage, if you're looking for something useful to do: 93% of the transcript archive and 74% of `christianity/` carry provenance. Fourteen research files still don't — mostly `cliff-notes-quick-reference.md` files, which derive from already-sourced material. Adding headers there is genuinely valuable work, but **only from what the file already documents.** Never infer a source you can't confirm; that is how the three bad citations got in.
 
 ---

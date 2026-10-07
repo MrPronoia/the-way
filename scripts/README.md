@@ -172,10 +172,18 @@ Running `--rebuild` sends the text of every indexed file to Google's
 embedding API, and each search sends your query. Everything committed to this
 repo is intended to be public, so that's fine here.
 
-The one exception is handled explicitly: the repo-root `Incoming/` folder is
-gitignored local-only staging ("stays on Rex's laptop, never pushed/made
-public"), so it is listed in `SKIP_ROOT_DIRS` and is never walked. The tracked
-primary-text folders — `christianity/Incoming/`, `gnosticism/Incoming/`,
-`christianity/dead-sea-scrolls/Incoming/` — are *not* affected and are indexed
-normally. If you add any other local-only material, add it to `SKIP_ROOT_DIRS`
-before rebuilding.
+**The indexer consults `.gitignore`, and that is the main safeguard.** Because a
+rebuild uploads indexed text, "don't publish this" and "don't upload this" are
+deliberately the same switch:
+
+> If git won't push it, the indexer won't send it.
+
+So you can keep a full in-copyright book in your own clone — gitignored,
+readable by Obsidian and by an AI assistant locally — and it will never reach
+the API. One line in `.gitignore` is the whole control. The run reports how
+many files it skipped for this reason.
+
+The repo-root `Incoming/` folder is belt-and-braces: gitignored *and* listed in
+`SKIP_ROOT_DIRS`. The tracked primary-text folders — `christianity/Incoming/`,
+`gnosticism/Incoming/`, `christianity/dead-sea-scrolls/Incoming/` — are *not*
+affected and are indexed normally.

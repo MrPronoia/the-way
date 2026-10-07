@@ -26,6 +26,7 @@ import sys
 import json
 import argparse
 import hashlib
+import subprocess
 import time
 import re
 from collections import Counter
@@ -287,9 +288,49 @@ def should_skip(path):
     return any(p in path_str for p in SKIP_PATTERNS)
 
 
+def git_ignored(paths):
+    """Return the subset of paths that git ignores.
+
+    A rebuild uploads the text of every indexed file to Google's embedding
+    API, so "don't publish this" and "don't index this" need to be the same
+    switch. Honouring .gitignore makes it one: if git won't push a file, we
+    won't send it either. That lets anyone keep an in-copyright book inside
+    their own clone — gitignored, readable by Obsidian and by an AI assistant
+    locally — with no risk of it leaving the machine.
+
+    One `git check-ignore --stdin` call for the whole list. If git is missing
+    or errors, returns an empty set and the SKIP_DIRS/SKIP_ROOT_DIRS lists
+    remain the backstop.
+    """
+    if not paths:
+        return set()
+    rels = [p.resolve().relative_to(REPO_ROOT).as_posix() for p in paths]
+    try:
+        # NUL-separated in and out (-z). On Windows, text-mode stdin would
+        # translate "\n" to "\r\n", and git would take the stray "\r" as part
+        # of the filename — then quote the result, so nothing ever matched.
+        # NUL separators avoid newline translation and git's path quoting.
+        proc = subprocess.run(
+            ["git", "check-ignore", "--stdin", "-z"],
+            input="\0".join(rels).encode("utf-8"),
+            cwd=str(REPO_ROOT),
+            capture_output=True, timeout=60,
+        )
+    except (OSError, subprocess.SubprocessError):
+        print("  Note: git unavailable — cannot honour .gitignore while indexing")
+        return set()
+    # Exit 0 = some ignored, 1 = none ignored. Anything else is a real failure.
+    if proc.returncode not in (0, 1):
+        print("  Note: git check-ignore failed — proceeding without .gitignore filtering")
+        return set()
+    out = proc.stdout.decode("utf-8", errors="replace")
+    return {part for part in out.split("\0") if part.strip()}
+
+
 def collect_files():
-    """Walk the repo and collect all .md files, skipping blacklisted dirs."""
-    files = []
+    """Walk the repo and collect all .md files, skipping blacklisted dirs
+    and anything .gitignore excludes."""
+    candidates = []
     skipped_es = 0
     for f in REPO_ROOT.rglob("*.md"):
         parts = f.relative_to(REPO_ROOT).parts
@@ -304,7 +345,13 @@ def collect_files():
             continue
         if not f.is_file():
             continue
-        files.append(f)
+        candidates.append(f)
+
+    ignored = git_ignored(candidates)
+    files = [f for f in candidates
+             if f.resolve().relative_to(REPO_ROOT).as_posix() not in ignored]
+    if ignored:
+        print(f"  Skipped {len(ignored)} gitignored file(s) — local-only, never sent to the API")
     return sorted(files), skipped_es
 
 
