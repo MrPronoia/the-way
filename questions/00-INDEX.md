@@ -6,11 +6,13 @@ One card per question people actually ask about Jesus's teaching. Each carries t
 
 ---
 
-## Live engagement dossier
+## Deep passes on a single claim
 
-| File | For |
+Most cards cover a topic. This one takes a single contested sentence apart and checks every piece — the format to reuse whenever a specific claim needs to hold up under pressure.
+
+| File | The claim |
 |---|---|
-| `DOSSIER-nazarene-sacrifice-flesh.md` | **A specific debate**, thesis: *"the historical Jesus belonged to a Nazarene sect that rejected sacrifice and flesh consumption."* Three verification passes, everything tiered by whether it can be checked against a primary text in this repo. Includes what to concede early, four unprepared holes, and a do-not-say list. **Read this before that debate, not the individual cards.** |
+| `nazarene-sect-sacrifice-and-diet.md` | *"The historical Jesus belonged to a Nazarene sect that rejected sacrifice and flesh consumption."* Three verification passes, everything tiered by whether it can be checked against a primary text here. Includes what to concede early, the four places the claim is weakest, and a do-not-say list. |
 
 ---
 

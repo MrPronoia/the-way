@@ -13,7 +13,7 @@ Listen to a live conversation, transcribe it as it happens, and surface relevant
 Use cases, in order of how well it fits:
 
 1. **Podcasting** — a second screen with citations arriving as you talk
-2. **Debating** — the case the `questions/` cards were built for
+2. **Public conversation under pressure** — interviews, panels, Q&A: the case the `questions/` cards were built for
 3. **Normal conversation** — the Bible Belt sauna problem that started this whole project: having the answer *while* the conversation is still happening, not two hours later
 
 ---

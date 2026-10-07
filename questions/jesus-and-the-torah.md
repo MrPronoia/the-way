@@ -42,7 +42,7 @@ Both halves are quotations **from Torah** (Deuteronomy 6:4-5; Leviticus 19:18). 
 
 > "'You are right, Teacher... this is much more important than all whole burnt offerings and sacrifices.' When Jesus saw that he answered wisely, he said to him, **'You are not far from the kingdom of God.'**" — Mark 12:32-34
 
-A scribe states our position in the sacrifice debate, and Jesus commends him for it. That exchange is in Mark — the earliest gospel — and it is the single cleanest proof that this was an argument *among Jews about Torah*, not a repudiation of it.
+A scribe states our position on sacrifice, and Jesus commends him for it. That exchange is in Mark — the earliest gospel — and it is the single cleanest proof that this was an argument *among Jews about Torah*, not a repudiation of it.
 
 ### 6. Asked about ritual six different ways, he redirects to the interior every time
 > Disciples: "Do you want us to fast? How shall we pray? Shall we give alms? What diet shall we observe?" Jesus: "Do not tell lies, and do not do what you hate, for all things are plain in the sight of heaven." — Thomas 6

@@ -1,9 +1,11 @@
-# Dossier — "The historical Jesus belonged to a Nazarene sect that rejected sacrifice and flesh consumption"
+# Did Jesus Belong to a Nazarene Sect That Rejected Sacrifice and Meat?
 
-**Built 2026-10-06 for a specific live debate.** Three deep verification passes over this repo, every quotation grepped against the primary texts. Tiering below is literal:
+**A deep pass on one claim, with every quotation checked.** This is the most-contested cluster in the collection — it joins three things people usually meet separately (who Jesus's movement was, what it thought of the Temple, and what it ate) into one sentence. Because it's a conjunction, it has to be argued carefully: the parts are not equally strong, and the weakest one gets attacked first.
+
+Three verification passes went into this, one per claim, every quotation grepped against the primary texts. Tiering below is literal:
 
 - **TIER A** — exact wording confirmed in a primary text *in this repo*, with `file:line`. You can read it aloud and someone can check it in ten seconds.
-- **TIER B** — appears only in our own analysis files. No primary text here. **Verify in a published edition before saying it on stage.**
+- **TIER B** — appears only in our own analysis files. No primary text here. **Verify in a published edition before relying on it publicly.**
 - **TIER C** — standard scholarship. Attribute by name, never put in quotation marks.
 
 > **The one structural fact to understand first.** This repo holds six primary texts: the two Clementine works, the Didache, the Gospel of Thomas, a Q reconstruction, the Essene Gospel of Peace, plus a curated Dead Sea Scrolls selection. **There is no Bible, no Josephus, no Philo, no Eusebius, no Epiphanius, and no Hegesippus in it.** So the Clementines and the Scrolls can be verified cold; every patristic citation cannot. That asymmetry decides which parts of this thesis you can defend hard and which you must hold loosely.
@@ -19,7 +21,7 @@
 - **A — Sect practice:** there was a Nazarene sect that rejected sacrifice and flesh consumption.
 - **B — Membership:** Jesus belonged to it.
 
-**That is a much better position than "Jesus was a vegetarian," and it is the one to argue.** Claim A is where this repo is strongest — hostile-witness attestation, verbatim Clementine text, an institutional canon. Hold the thesis at its own grammar and do not let it be restated as a claim about Jesus's plate. If an opponent paraphrases it that way, correct the paraphrase immediately; that is a thesis you never advanced.
+**That is a much better position than "Jesus was a vegetarian," and it is the one to argue.** Claim A is where this repo is strongest — hostile-witness attestation, verbatim Clementine text, an institutional canon. Hold the claim at its own grammar and don't let it be restated as a claim about Jesus's plate. If someone paraphrases it that way, correct the paraphrase right away — it's a position you never took.
 
 | Claim | Verdict |
 |---|---|
@@ -75,7 +77,7 @@ In `christianity/Incoming/clementine-homilies-full-text.md`:
 | **Hom. 12.6** | Peter: "I use only bread and olives, and rarely pot-herbs" (+ *Rec.* 7.6, line 7929) | 7208 |
 | **Hom. 7.4** | "to abstain from the table of devils, **not to taste dead flesh, not to touch blood**" | 4946 |
 
-**Hom. 3.45 is the keystone of the entire thesis** and no card used it. It derives the rejection of *sacrifice* from a prior objection to *killing* — which is exactly the bridge the debate thesis needs between its second and third claims. **Hom. 3.51 is the prepared answer to "but Jesus said he came to fulfil the Law"**, stated by an ancient Jewish-Christian source rather than by you.
+**Hom. 3.45 is the keystone of the whole claim** and no card used it. It derives the rejection of *sacrifice* from a prior objection to *killing* — which is exactly the bridge between the sacrifice half and the diet half. **Hom. 3.51 is the prepared answer to "but Jesus said he came to fulfil the Law"**, stated by an ancient Jewish-Christian source rather than by you.
 
 **One caveat to state before they do:** the Ante-Nicene Fathers editor notes at line 1846 that *Homilies* 2.27–3.28 is "coloured by the Gnostic Ebionism of the author." That covers Hom. 2.38 and 3.26 — two of our favourites. It does **not** cover 3.45, 3.51, or 3.52. **Prefer those, and prefer Recognitions 1 over all of it.**
 
@@ -113,7 +115,7 @@ Each of these is cheap, and each buys credibility for the claims that are genuin
 
 ## The four unprepared holes — full detail and prepared answers
 
-These are the four places an informed opponent scores, ranked by damage. Each had **zero coverage** in this repo outside podcast transcripts before today.
+These are the four places where someone who knows the material will have the better of us, ranked by how much it costs. Each had **zero coverage** in this repo outside podcast transcripts before today.
 
 ---
 
@@ -147,7 +149,7 @@ Reinforced by Paul's own summary at **Acts 24:17**: *"I came to bring alms to my
 
 > "…their burnt offerings and their sacrifices **will be accepted on my altar**; for my house shall be called a house of prayer for all peoples." — Isaiah 56:7
 
-**Every occurrence in this repo stops at "house of prayer."** Five files do it, and `moses-scroll-deuteronomy-without-sacrifice.md:155` goes further and presents it *as an anti-sacrifice text* — it is the opposite. An opponent opens a Bible and reads the first clause, and our own citation becomes their evidence.
+**Every occurrence in this repo stops at "house of prayer."** Five files do it, and `moses-scroll-deuteronomy-without-sacrifice.md:155` goes further and presents it *as an anti-sacrifice text* — it is the opposite. Anyone who opens a Bible and reads the first clause turns our own citation into evidence against us.
 
 **The prepared answer.**
 
@@ -199,7 +201,7 @@ And our own file's note at line 288 says: ***"Triple attestation** of the 'eat w
 
 > "He drank no wine nor strong drink, **nor** did he eat meat." — Hegesippus, via Eusebius, *Church History* 2.23
 
-If household practice transfers to Jesus, it transfers **both halves** — and Jesus would be a lifelong teetotaler. Q 7:34, in our own primary text, has him "eating and **drinking**" and called a **winebibber**. An opponent splits that sentence in one move and the inference collapses, taking some credibility with it.
+If household practice transfers to Jesus, it transfers **both halves** — and Jesus would be a lifelong teetotaler. Q 7:34, in our own primary text, has him "eating and **drinking**" and called a **winebibber**. Anyone can split that sentence in one move, and the inference collapses with some of our credibility attached to it.
 
 **What to do.** **Do not use the household argument.** It is not needed. What Hegesippus actually gives us is excellent on its own terms: the leader of the Jerusalem community, Jesus's own brother, abstained from flesh *as a lifelong discipline*. That is direct evidence about **the sect's practice** — claim A, the strong claim — and it requires no inference about Jesus at all.
 

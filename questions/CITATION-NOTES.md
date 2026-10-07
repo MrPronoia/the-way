@@ -1,6 +1,6 @@
 # Citation Notes — Verified, Corrected, and Do-Not-Use
 
-Produced 2026-10-06 while building the question cards. Every non-biblical quote on the cards was checked against the primary-text files in this repo. That process surfaced real problems in our own research notes. **Read this before the debate** — knowing which quote not to reach for matters as much as knowing the good ones.
+Produced 2026-10-06 while building the question cards. Every non-biblical quote on the cards was checked against the primary-text files in this repo. That process surfaced real problems in our own research notes. **Read this before you rely on any of this publicly** — knowing which quote not to reach for matters as much as knowing the good ones.
 
 ---
 

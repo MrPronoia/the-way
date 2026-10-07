@@ -7,7 +7,7 @@
 
 ## What it does
 
-You're mid-conversation. You tap a hotkey. Within a couple of seconds, a second screen shows what this repo has on whatever was just said — the primary text behind a quote, a prepared debate card, or nothing at all if we've got nothing worth showing.
+You're mid-conversation. You tap a hotkey. Within a couple of seconds, a second screen shows what this repo has on whatever was just said — the primary text behind a quote, a prepared `questions/` card, or nothing at all if we've got nothing worth showing.
 
 Tap again to widen the window. One tap looks back 30 seconds, each additional tap adds another 30, up to 2 minutes.
 
@@ -137,4 +137,4 @@ This thing holds an always-on microphone.
 - Is the tap-to-widen gesture better than just two hotkeys (one for 30s, one for 2 minutes)? Tapping is more elegant; two keys are more predictable under pressure.
 - Should it ever surface *audio*-free notifications — a soft chime when it has something, so you can choose when to glance?
 - Corpus scope: this repo only, or `mr-pronoia` too? Starting narrow makes precision much easier and precision is the whole game.
-- Does the debate-card hit want to be the whole card or just its claim line? Probably the claim line plus a "press to expand."
+- Does a `questions/` card hit want to be the whole card or just its claim line? Probably the claim line plus a "press to expand."
