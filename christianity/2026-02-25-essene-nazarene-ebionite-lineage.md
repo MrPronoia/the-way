@@ -42,9 +42,20 @@ Dr. James Tabor identifies 12 characteristics shared between the Essene communit
 
 Jesus's actual movement. "Jesus of Nazareth" / "the Nazarene."
 
-**Epiphanius (4th c., *Panarion*):**
-> "The Nazarene sect was before Christ."
-> "All Christians were called Nazarenes once."
+**⚠️ Two Epiphanius "quotations" removed from this section (2026-10-06).** It previously read:
+
+> ~~"The Nazarene sect was before Christ."~~
+> ~~"All Christians were called Nazarenes once."~~
+
+Neither had a section number, neither appears anywhere else in the repo, and there is **no *Panarion* text in this collection to check them against.** Tracing them, they come from an auto-caption transcript of a podcast episode (`podcast-archive/the-jesus-way/026-responding-to-john-davis.md`) — a host said them on air, the caption captured them, and they were lifted into this file with quotation marks added. That is the whole failure pathway the "pointers, not proof" rule exists to prevent.
+
+**What is defensible, stated carefully:**
+
+- Epiphanius does report that Christians were once called Nazarenes (*Panarion* 29.1.3, 29.6.2 — **verify in a published edition before using**). That is the second line's likely origin and it is probably sound.
+- The first line is **not** safely attributable. Epiphanius's pre-Christian Trans-Jordan sect in *Panarion* **18** is the **Nasaraeans** — a different catalogue entry from the Christian **Nazoraeans** of *Panarion* **29**. He treats them as distinct groups; this file collapses them, and so do three others. See the terminology warning below.
+- Epiphanius also gives **three incompatible etymologies** for the name, one of which is simply "after Nazareth." He is a usable witness to groups existing in his own day, and an unreliable one on origins.
+
+**Do not say "the Nazarene sect was before Christ" as a quotation.** The claim that a pre-Christian Nazarene sect existed is a *possibility worth naming and declining to lean on* — nothing in the broader thesis needs it.
 
 Key characteristics — identical to the Essenes:
 - Vegetarian (James "drank no wine... nor did he eat meat" — Hegesippus, 2nd c.)

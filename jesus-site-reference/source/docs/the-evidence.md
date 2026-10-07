@@ -22,7 +22,7 @@ Dr. James Tabor (University of Chicago PhD, Professor Emeritus at UNC Charlotte)
 | 2 | **Messianic** — expected the Davidic Messiah | Messianic Rule (1QSa) | The entire gospel narrative |
 | 3 | **Isaiah 40:3** as mission statement | Community Rule (1QS 8:14) | Applied to John the Baptist (Mark 1:3) |
 | 4 | **"New Covenant" people** | Damascus Document | Last Supper: "This cup is the new covenant" (Luke 22:20) |
-| 5 | **"Children of Light"** — this exact phrase | Community Rule (1QS 1:9) | John 12:36; 1 Thessalonians 5:5 |
+| 5 | **"Sons/Children of Light"** — a sectarian self-designation, not biblical vocabulary | Community Rule (1QS 1:9) | John 12:36; Luke 16:8; 1 Thessalonians 5:5 |
 | 6 | **Water immersion** for initiation | Community Rule (1QS 3:4-9) | John's baptism; Jesus's continuation |
 | 7 | **Prophet like Moses** | 4QTestimonia | Acts 3:22; 7:37 |
 | 8 | **Holy Spirit emphasis** | Community Rule (1QS 3:7) | Pentecost; "Spirit of Truth" (John 14:17) |
@@ -31,13 +31,13 @@ Dr. James Tabor (University of Chicago PhD, Professor Emeritus at UNC Charlotte)
 | 11 | **Anti-Temple** — corrupt priesthood | Damascus Document | Temple cleansing (Mark 11:15-17) |
 | 12 | **Prayer as sacrifice** — the body as temple | Community Rule (1QS 9:4-5) | "I desire mercy, not sacrifice" (Matt 9:13) |
 
-The phrase **"Spirit of Truth"** appears in only two ancient text traditions: the Dead Sea Scrolls and the Gospel of John. Jesus used Essene vocabulary.
+The phrase **"Spirit of Truth"** is strikingly concentrated in the Dead Sea Scrolls and the Gospel of John — paired against a "spirit of deceit" in both. It also appears in the Testaments of the Twelve Patriarchs (T. Judah 20), so it isn't unique to those two bodies of text; what's notable is the density and the shared opposing-spirits framework. The vocabulary of Jesus's movement is sectarian Second Temple vocabulary rather than ordinary biblical vocabulary.
 
 ### The "Works of the Law" Bombshell
 
 In 1994, scholars published a scroll called **4QMMT** — a legal letter from the Qumran leadership. Its Hebrew title translates to "Some of the Works of the Torah."
 
-The closing line: *"It will be reckoned to you as righteousness when you do what is right and good before Him."*
+The closing line: *"It will be reckoned to you as righteousness, in that you have done what is right and good before Him."* (4QMMT C 31)
 
 This is the exact phrase Paul argued against:
 
@@ -64,7 +64,7 @@ In 1945, a farmer in Nag Hammadi, Egypt, unearthed a sealed clay jar containing 
 
 ### Why It Matters
 
-Many scholars date the earliest layer of Thomas to **50-70 CE** — potentially earlier than any canonical gospel. If so, it's the closest thing we have to what Jesus actually taught before Paul reshaped the message.
+The dating is genuinely contested. Mainstream scholarship places the collection as we have it around **120-140 CE**; a minority (Koester, Patterson) argue for an early layer at **50-70 CE**, and DeConick's model has an early kernel with later accretions. On the kernel reading, Thomas preserves sayings material closer to Jesus than the canonical gospels — which is a real possibility worth weighing, not a settled fact.
 
 Thomas's Jesus doesn't want to be worshipped. He wants you to **become what he was** — to discover the same divine identity within yourself: *"Whoever drinks from my mouth will become like me."* (Saying 108)
 

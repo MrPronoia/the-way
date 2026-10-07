@@ -6,6 +6,14 @@ One card per question people actually ask about Jesus's teaching. Each carries t
 
 ---
 
+## Live engagement dossier
+
+| File | For |
+|---|---|
+| `DOSSIER-nazarene-sacrifice-flesh.md` | **A specific debate**, thesis: *"the historical Jesus belonged to a Nazarene sect that rejected sacrifice and flesh consumption."* Three verification passes, everything tiered by whether it can be checked against a primary text in this repo. Includes what to concede early, four unprepared holes, and a do-not-say list. **Read this before that debate, not the individual cards.** |
+
+---
+
 ## Read these two first
 
 | File | Why |

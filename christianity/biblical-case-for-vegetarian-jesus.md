@@ -105,10 +105,23 @@ Clement was not a fringe writer. He headed the Catechetical School of Alexandria
 
 ### Peter
 
-> "The unnatural eating of flesh meats is as polluting as the heathen worship of devils, with its sacrifices and its impure feasts."
-> -- Clementine Homilies 12.6 (2nd-3rd century CE)
+**⚠️ A fabricated citation was removed here (2026-10-06).** This section previously read:
 
-The Clementine literature presents Peter as a strict vegetarian. While the Clementine texts are pseudepigraphical (attributed to Clement of Rome but written later), they preserve traditions associated with Jewish Christianity -- the wing of the early church closest to Jesus's original community.
+> ~~"The unnatural eating of flesh meats is as polluting as the heathen worship of devils, with its sacrifices and its impure feasts." -- Clementine Homilies 12.6~~
+
+That sentence is **not in the Clementine Homilies.** Searching the full text returns zero hits for "flesh meats," "impure feast," "worship of devils," or "as polluting." And *Homilies* 12.6 is in fact the chapter on **Peter's frugality** — a different passage entirely. A paraphrase had acquired a precise-looking citation that happened to name the right chapter, which is what made it survive so long. See `../questions/CITATION-NOTES.md`.
+
+**Use these instead — both verified verbatim in `Incoming/clementine-homilies-full-text.md`:**
+
+> "...my manner of life, that I use only bread and olives, and rarely pot-herbs."
+> -- *Clementine Homilies* 12.6 (line 7208); double-attested at *Recognitions* 7.6, "I live on bread alone, with olives, and seldom even with pot-herbs" (line 7929)
+
+> "...to abstain from the table of devils, not to taste dead flesh, not to touch blood."
+> -- *Clementine Homilies* 7.4 (line 4946)
+
+The Clementine literature presents Peter living on bread and olives. While the Clementine texts are pseudepigraphical (attributed to Clement of Rome but written later), they preserve traditions associated with Jewish Christianity -- the wing of the early church closest to Jesus's original community.
+
+**State the limit yourself:** the same corpus defines "the table of devils" as the Acts 15 list — food offered to idols, carrion, strangled animals, blood (*Homilies* 7.8; *Recognitions* 4.36). So the Clementines hold both a flesh-abstaining Peter *and* a regulatory reading. Concede that before someone finds it.
 
 Peter's own canonical testimony supports this. In Acts 10:14, when presented with a vision of unclean animals, Peter responds:
 
