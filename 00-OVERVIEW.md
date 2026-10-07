@@ -133,7 +133,7 @@ The Way is intentionally tight. If you need broader context, the upstream repo h
 - Mr. Pronoia covers ~36+ traditions and ~20+ luminaries across world wisdom traditions
 - The Way distills the Jesus-and-Christianity-relevant portion only
 
-Both are housed under the `MrPronoia` GitHub organization. Mr. Pronoia is upstream (source of truth for active research); The Way is downstream (curated collaboration surface). Drift between them is expected and managed manually.
+`mr-pronoia` lives under the `MrPronoia` GitHub organization; The Way moved to its own organization, `the-way-project`, in October 2026. Mr. Pronoia is upstream (source of truth for active research); The Way is downstream (curated collaboration surface). Drift between them is expected and managed manually.
 
 ---
 
