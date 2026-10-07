@@ -10,21 +10,38 @@
 
 ---
 
-## The verdict, before the detail
+## Parse the thesis correctly first — it decides everything
 
-The thesis is a **conjunction of three claims**, which means an opponent only has to break the weakest one to take the whole sentence down. They are not equally strong.
+> "The historical Jesus belonged to a Nazarene sect that rejected sacrifice and flesh consumption."
+
+**The relative clause attaches to the sect, not to Jesus.** Read precisely, this is *not* the claim that Jesus personally was a vegetarian. It is two claims:
+
+- **A — Sect practice:** there was a Nazarene sect that rejected sacrifice and flesh consumption.
+- **B — Membership:** Jesus belonged to it.
+
+**That is a much better position than "Jesus was a vegetarian," and it is the one to argue.** Claim A is where this repo is strongest — hostile-witness attestation, verbatim Clementine text, an institutional canon. Hold the thesis at its own grammar and do not let it be restated as a claim about Jesus's plate. If an opponent paraphrases it that way, correct the paraphrase immediately; that is a thesis you never advanced.
 
 | Claim | Verdict |
 |---|---|
-| **1. Jesus belonged to an identifiable Nazarene sect** | **Split it.** "He emerged from an identifiable Second Temple reform stream rather than founding a new religion" is strong and partly TIER A. "That stream was a *Nazarene* sect that *predated him*" is TIER B throughout, rests on one passage of Epiphanius, and the key quotation turns out to be fabricated. |
-| **2. That movement rejected sacrifice** | **Strong for the movement, narrower for Jesus.** TIER A verbatim support exists and is excellent — and almost entirely unused until now. Jesus's own recorded words support *radical subordination* of the cult, not abolition. |
-| **3. It rejected flesh consumption** | **Strong for the movement. Indefensible about Jesus himself.** There is no evidence of what Jesus ate, and four texts *in this repo's own primary sources* cut against it. |
+| **A — The sect rejected sacrifice** | **Strong.** TIER A verbatim support in this repo, systematic rather than fragmentary, and largely unused until now. |
+| **A — The sect rejected flesh consumption** | **Strong, on hostile witnesses.** James, the Ebionites and Nazarenes, Paul's complaint in Romans 14:2, Ancyra Canon 14. Every source either hostile or disinterested. |
+| **B — Jesus belonged to it** | **The real battleground.** Strong on structure and succession; this is where the dietary counter-evidence actually lands. |
 
-**The reframe that holds all three:** argue the **sect**, not the man's plate.
+### Where the counter-evidence really bites
+
+The fish and wine texts do **not** disappear under the correct parsing — they **migrate**. They stop being a refutation of claim A and become an argument against claim **B**:
+
+> *"If he belonged to a sect that rejected flesh, why does your own Gospel of Thomas have him telling disciples to eat whatever a host serves? Why does Q call him a glutton and a winebibber? Why does the risen Jesus eat broiled fish?"*
+
+So the pressure point is **membership**, and that is where to have a prepared answer. Three real ones:
+
+1. **A sect's rule and a founder's recorded table habits are different categories.** The evidence for the movement's practice is about the movement; the gospel writers were not writing a dietary record of Jesus and never claim to.
+2. **Sacrifice and flesh are asymmetric in the evidence, and you should say so.** The sacrifice half has **red-text support about Jesus himself** — Mark 12:33-34, the Temple action, the two Hosea citations. The flesh half has sect-level support only. Conceding that asymmetry costs nothing and makes the rest credible.
+3. **Frame the sect's position as a non-harm ethic rather than a food law.** Thomas 14 and Q 10:8 are about *hospitality and ritual defilement* — they answer "is food clean?", not "is killing harm?" A non-harm ethic is not refuted by a fish; a dietary law is. Clementine *Homilies* 3.45 (below) makes exactly this move and is verbatim in this repo.
+
+**The sentence that holds every word:**
 
 > "The movement that claimed direct succession from Jesus through his brother James was sacrifice-rejecting and flesh-abstaining — and we know it from the people who were trying to discredit it."
-
-That sentence is defensible on every word. The version handed to you is not.
 
 ---
 
@@ -84,7 +101,7 @@ Paul, c. 57 CE: *"the weak man eats only vegetables."* The earliest attestation 
 
 Each of these is cheap, and each buys credibility for the claims that are genuinely strong.
 
-1. **No source records what Jesus ate.** Say it before they ask.
+1. **No source records what Jesus ate** — and the thesis doesn't require one. Say both halves before they ask.
 2. **Luke 24:43 has the risen Jesus eating fish**, and it is textually secure in P75, Sinaiticus and Vaticanus. Only the honeycomb is a variant. *Do not* call this verse "textually unstable" — two of our files do, and the claim is false.
 3. **Qumran was not anti-sacrifice.** The Temple Scroll prescribes it; 4QMMT argues about correct practice. Our own card says it best: **"boycott, not abolition"** — situational and eschatologically deferred, driven mainly by the calendar.
 4. **The Hosea citations are Matthew-only** (Matt 9:13 and 12:7, both inserted into Markan pericopes). One of our cards calls them "multiply attested"; that is simply false. **Then win on contra-tendency:** Matthew is the *most* Torah-affirming evangelist — "not the smallest letter" (5:17-19), "without neglecting the others" (23:23). An anti-cult proof text inserted by *that* editor runs against his own programme. That's a strong answer, but only if you say it first.
@@ -94,35 +111,99 @@ Each of these is cheap, and each buys credibility for the claims that are genuin
 
 ---
 
-## The four unprepared holes — fix these before going live
+## The four unprepared holes — full detail and prepared answers
 
-### 1. Acts 21:23-26 — James funds Temple sacrifices. This is the worst one.
+These are the four places an informed opponent scores, ranked by damage. Each had **zero coverage** in this repo outside podcast transcripts before today.
 
-James tells Paul to join four men under a Nazirite vow and **"pay for the shaving of their heads"**; Paul enters the Temple until **"the offering was made for each of them."** Acts 24:17 has Paul saying he came "to offer sacrifices."
+---
 
-The vegetarian, Nazirite brother of Jesus — our own control sample for the movement's practice — is portrayed by Luke as the man who **orchestrates and bankrolls animal offerings** to prove Torah fidelity. This appears **nowhere** in `questions/` or `christianity/`; only in podcast transcripts.
+### HOLE 1 — Acts 21:23-26. James arranges and pays for Temple sacrifices.
 
-**The available answer:** Luke is writing an irenic account two generations later with a strong interest in showing Paul as Torah-observant, and this scene exists to serve that agenda — note it is also the scene where the plan immediately fails and Paul is arrested. Second, a Nazirite vow's completion offering is a personal purity rite, not atonement. Both are real answers. Neither is prepared. **Prepare one.**
+**Threat level: highest.** This is the single most damaging unprepared item, because it attacks claim A at its strongest point — James is our control sample for what the movement actually practised.
 
-### 2. Isaiah 56:7 — we quote half the verse, and the other half contradicts us
+**The text.** James and the Jerusalem elders tell Paul to prove he is Torah-observant:
 
-The verse Jesus cites in the Temple action reads in full: *"…their burnt offerings and their sacrifices **will be accepted on my altar**; for my house shall be called a house of prayer for all peoples."*
+> "Take these men, join in their purification, and **pay for the shaving of their heads**… Then Paul took the men and… entered the temple, giving notice of the completion of the days of purification, **until the offering was made for each of them.**" — Acts 21:23-26
 
-**Every occurrence in this repo stops at "house of prayer"** — five files, including one that calls it an anti-sacrifice text. An opponent opens a Bible and reads the first half. The argument survives (Jeremiah 7:11 is still there, and quoting a verse about Gentile inclusion doesn't commit you to its every clause) but it must be pre-built.
+Reinforced by Paul's own summary at **Acts 24:17**: *"I came to bring alms to my nation and to offer sacrifices."*
 
-### 3. Thomas 14 and Q 10:8 — the best weapons against claim 3, sitting in our own `Incoming/`
+**Why it hurts.** A Nazirite vow's completion required, per Numbers 6:14-15, a male lamb, a ewe lamb, a ram, plus grain and drink offerings — **per person**, and there were four men. So the vegetarian, Nazirite brother of Jesus, leader of the Jerusalem community, is portrayed by Luke as the man who organizes and **bankrolls roughly a dozen animal offerings** specifically to demonstrate Torah fidelity. If the sect rejected sacrifice, its head apparently funded a great deal of it.
 
-**Thomas 14** (`gospel-of-thomas-full-text.md:41`): *"if they receive you, **eat what they will set before you**… **what goes into your mouth will not defile you**."*
-**Q 10:8** (`q-source-reconstruction.md:282`): *"eat such things as are set before you"* — and our own Q file labels it **"triple attestation."**
-**Q 7:34** (`:228`): *"The Son of man came eating and drinking… a man gluttonous, and a winebibber."*
+**Three prepared answers, best first.**
 
-All TIER A, in the repo's own #2-ranked source class, and addressed nowhere.
+1. **Luke is an interested witness, and this is the scene that proves it.** Acts is written two generations later with a sustained agenda of showing Paul as a loyal Torah-observant Jew, reconciled with Jerusalem. This episode exists to serve that agenda. Note what our own `questions/pauls-legitimacy.md` establishes as the house principle: **weight Acts most where it embarrasses its own irenic program, least where it serves it.** This passage serves it maximally. And notice the ending — the plan immediately fails, a riot starts, and Paul is arrested. Luke's own narrative does not treat it as a success.
+2. **Even taken at face value, it's the wrong category.** A Nazirite completion offering is a **personal purity rite terminating a vow** (Numbers 6), not an atonement sacrifice. James funding the discharge of other men's vows is not James endorsing the sacrificial system as the means of forgiveness — which is the actual claim in dispute.
+3. **The concession that costs nothing.** The leadership operated inside a functioning Temple state and used its institutions. Jeremiah preached against sacrifice *standing in the Temple gate*. Our thesis is about **where the sect located God's requirement**, not that its members never touched an altar. Hold that line and this passage is survivable.
 
-**The answer that works:** these are about **hospitality and ritual defilement**, not about whether killing is harm. Which is why the thesis must be framed as a **non-harm ethic, not a food law** — *a non-harm ethic is not refuted by a fish; a dietary law is.*
+**Do not** try to deny the passage or call it a late interpolation. There is no manuscript basis for that and the attempt would be visible.
 
-### 4. The James-household inference breaks on its own sentence
+---
 
-Our files argue: James ate no meat from birth, same household, therefore Jesus. But the Hegesippus sentence is a **pair** — *"drank no wine nor strong drink, **nor** did he eat meat."* If the household argument transfers, Jesus is a teetotaler — and Q 7:34, in our own primary text, calls him a winebibber. **Do not use the household argument.** A prepared opponent splits that sentence in one move.
+### HOLE 2 — Isaiah 56:7. We quote half of it; the other half says the opposite.
+
+**Threat level: high**, because it sits inside the second-strongest argument (the Temple action).
+
+**The text, in full** — the verse Jesus cites when he clears the Temple:
+
+> "…their burnt offerings and their sacrifices **will be accepted on my altar**; for my house shall be called a house of prayer for all peoples." — Isaiah 56:7
+
+**Every occurrence in this repo stops at "house of prayer."** Five files do it, and `moses-scroll-deuteronomy-without-sacrifice.md:155` goes further and presents it *as an anti-sacrifice text* — it is the opposite. An opponent opens a Bible and reads the first clause, and our own citation becomes their evidence.
+
+**The prepared answer.**
+
+1. **Concede it immediately and completely.** "You're right, and the first half of that verse accepts sacrifices on the altar. I'm not going to pretend otherwise."
+2. **Quoting a verse does not endorse its every clause.** Jesus cites Isaiah 56:7 for the phrase about *all peoples* — the Temple as a house of prayer for Gentiles, against a court that had been turned into a market. That is the clause that does the work in the scene.
+3. **Then move to the other half of the citation, which is the real argument.** He pairs it with **Jeremiah 7:11** ("a den of robbers") — and Jeremiah 7 is the chapter containing verse 22: *"I did not speak to them or command them concerning burnt offerings and sacrifices."* **The anti-sacrifice weight is carried by the Jeremiah citation, not the Isaiah one.** Lead with Jeremiah and Isaiah 56:7 stops being a liability.
+4. **Know the Jeremiah counter too** — Jeremiah 33:18 promises Levitical priests offering burnt offerings forever. The narrow defensible form of Jeremiah 7:22 is the origin claim: God did not command sacrifice *in the day he brought them out of Egypt* (7:22's own time marker), with verse 23 giving what he did command — "obey my voice." `questions/blood-atonement-and-salvation.md` has this pre-built; use that wording.
+
+**Do not** repeat the line that "scholars note the sacrifice clause appears grammatically inserted." No scholar is named, there is no source, and its origin in this repo is a podcast transcript.
+
+---
+
+### HOLE 3 — Thomas 14 and Q 10:8. The best weapons against us, in our own `Incoming/` folder.
+
+**Threat level: high**, and especially awkward because the Gospel of Thomas is **source #2 in this repo's own stated hierarchy.** We cannot wave it away without discarding our own method.
+
+**Yes — "Thomas 14" means the Gospel of Thomas, saying 14.** Verbatim in `christianity/Incoming/gospel-of-thomas-full-text.md:41`, Lambdin translation:
+
+> "Jesus said to them, 'If you fast, you will give rise to sin for yourselves; and if you pray, you will be condemned; and if you give alms, you will do harm to your spirits. When you go into any land and walk about in the districts, if they receive you, **eat what they will set before you**, and heal the sick among them. For **what goes into your mouth will not defile you**, but that which issues from your mouth — it is that which will defile you.'"
+
+**Q 10:8** (`christianity/Incoming/q-source-reconstruction.md:282`, KJV parallel):
+
+> "And into whatsoever city ye enter, and they receive you, **eat such things as are set before you**."
+
+And our own file's note at line 288 says: ***"Triple attestation** of the 'eat what is set before you' mission directive (Luke 10:8 + Thomas 14b)."* We have labelled it triple-attested ourselves.
+
+**Q 7:34** (`q-source-reconstruction.md:228`, 232 — double-attested, Matthew and Luke):
+
+> "The Son of man came **eating and drinking**, and they say, Behold **a man gluttonous, and a winebibber**, a friend of publicans and sinners."
+
+**The prepared answer, and it's a good one.**
+
+1. **These texts answer a different question.** Thomas 14 and Q 10:8 are **mission-hospitality instructions** about *ritual defilement* — the surrounding concern is clean and unclean, and Thomas 14's own second half makes that explicit ("what goes into your mouth will not defile you… that which issues from your mouth"). They answer *"is this food ritually clean?"* They do not answer *"is killing an animal harm?"* A non-harm ethic and a purity code are different things, and these sayings address the purity code.
+2. **Thomas 14's opening cuts against using it as a rule at all.** The same saying disparages fasting, prayer, and almsgiving — three practices the Nazarene movement demonstrably kept. Nobody reads that opening as abolishing prayer. It is a saying about not making observances into merit, and the food clause belongs to the same move.
+3. **Q 7:34 is a quotation of an insult, not a menu.** The verse's structure is a contrast: John came "neither eating nor drinking" and was called demon-possessed; the Son of Man came "eating and drinking" and was called a glutton. The point is that **his critics would say anything** — the saying's own conclusion is "wisdom is justified of all her children." Reading "winebibber" as biographical dietary data is reading the slander as the fact.
+4. **Concede the real limit.** None of this establishes that Jesus abstained. It establishes that these texts don't establish that he didn't. Which is all claim B needs, because claim B rests on structure and succession, not on his table.
+
+**This is also why the thesis must be stated as a non-harm ethic rather than a food law.** Clementine *Homilies* 3.45 does exactly that — God objected to the **slaughtering** first and the altar second — and it's verbatim in this repo at line 2882.
+
+---
+
+### HOLE 4 — The James-household inference. It breaks on its own sentence.
+
+**Threat level: moderate, but it's a self-inflicted wound** — the argument is ours, and it fails on inspection.
+
+**The argument as our files make it** (`the-essene-diet.md:50`): James was vegetarian *from birth*, therefore the household was, therefore Jesus was. *"A mother wouldn't raise one child vegetarian and the other eating flesh at the same table."*
+
+**Why it fails.** The Hegesippus description is a **matched pair**, not a single claim:
+
+> "He drank no wine nor strong drink, **nor** did he eat meat." — Hegesippus, via Eusebius, *Church History* 2.23
+
+If household practice transfers to Jesus, it transfers **both halves** — and Jesus would be a lifelong teetotaler. Q 7:34, in our own primary text, has him "eating and **drinking**" and called a **winebibber**. An opponent splits that sentence in one move and the inference collapses, taking some credibility with it.
+
+**What to do.** **Do not use the household argument.** It is not needed. What Hegesippus actually gives us is excellent on its own terms: the leader of the Jerusalem community, Jesus's own brother, abstained from flesh *as a lifelong discipline*. That is direct evidence about **the sect's practice** — claim A, the strong claim — and it requires no inference about Jesus at all.
+
+Also note the honest caveat: James's profile is **Nazirite-shaped** (Numbers 6 — no wine, uncut hair), and a Nazirite vow does **not** forbid meat. So the meat clause is either an extension beyond the vow or hagiographic amplification. Dr. Tabor's reading — Edenic or Daniel-style piety rather than a vow — is the better frame. State the caveat yourself; it makes the datum more credible, not less.
 
 ---
 
