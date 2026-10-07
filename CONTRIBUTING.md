@@ -41,6 +41,35 @@ The one thing we cannot reconstruct later is **where it came from**: author, tit
 
 This is not bureaucratic. In October 2026 a verification pass found three quotes circulating in this repo's own research that pointed at sources where the text was not present — one attributed to a specific chapter of a document that doesn't contain it, another reversing what the source actually said. See `questions/CITATION-NOTES.md`. **A citation we can't defend is worse than no citation**, because someone eventually opens the book.
 
+### The source header — and why it's load-bearing
+
+Every research or primary-text file opens with a provenance block. Not decoration: **`scripts/semantic-search.py` reads this block at index time and attaches it to every chunk from that file**, so when anyone — or any AI assistant — pulls a passage out of this repo, the citation arrives attached to it. The source can't get separated from the claim.
+
+A file with no header gets flagged `(no source header — unverified provenance)` in every search result it produces. That's deliberate. Missing provenance should be loud.
+
+The format (`christianity/Incoming/clementine-homilies-full-text.md` is the reference example):
+
+```markdown
+# Title of the Work
+
+**Attribution:** Who wrote it, and what modern scholarship thinks of that claim
+**Translation:** Translator, book title, publisher, year
+**Original Language:** Greek / Hebrew / Aramaic / Coptic
+**Estimated Date:** Composition date, with the scholarly range if contested
+**Source:** Where this specific text came from — URL, edition, or "excerpt compilation"
+**Note:** What it is and why it matters here
+```
+
+Research and analysis files can instead close with a bibliography line, which the indexer also reads:
+
+```markdown
+*Sources: Hebrew Bible (NRSV); Josephus, Antiquities (Whiston trans.); Hummel, The Rise and Fall of Dispensationalism (Eerdmans, 2023)*
+```
+
+**For in-copyright material, `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` is the house model** — our own summaries plus short attributed excerpts, every quote carrying its translator inline (`"1QS 1:1-3, Vermes"`), and an explicit statement that it is *not* a full translation. Follow that pattern and we get the substance without the legal exposure.
+
+Current coverage, if you're looking for something useful to do: 93% of the transcript archive and 74% of `christianity/` carry provenance. Fourteen research files still don't — mostly `cliff-notes-quick-reference.md` files, which derive from already-sourced material. Adding headers there is genuinely valuable work, but **only from what the file already documents.** Never infer a source you can't confirm; that is how the three bad citations got in.
+
 ---
 
 ## What's Already In Here

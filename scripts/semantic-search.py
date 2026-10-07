@@ -123,6 +123,67 @@ def split_block(block, first_line, max_chunk_chars):
         yield "\n".join(buf), buf_line
 
 
+# Provenance keys recognized in a file's top-of-document metadata block,
+# in priority order — the citation line is built from the first few found.
+PROVENANCE_KEYS = [
+    "Attribution", "Author", "Translation", "Translator", "Original Language",
+    "Estimated Date", "Date", "Source", "Sources", "Type", "Status",
+]
+PROV_LINE_RE = re.compile(r'^\*\*([A-Za-z][A-Za-z ]{0,24}):\*\*\s*(.+?)\s*$')
+# Three provenance conventions are in use across the repo. Besides the bold
+# `**Translation:** ...` block, the Nag Hammadi primary texts put the same
+# information in a leading blockquote: `> Translation: Marvin Meyer, ...`.
+# Matching only recognized keys keeps this from firing on ordinary prose.
+PROV_QUOTE_RE = re.compile(r'^>\s*([A-Za-z][A-Za-z ]{0,24}):\s*(.+?)\s*$')
+# Many research files instead close with an italic bibliography line:
+#   *Sources: Hummel, The Rise and Fall of Dispensationalism (Eerdmans, 2023); ...*
+PROV_TAIL_RE = re.compile(r'^\*Sources?:\s*(.+?)\*?\s*$')
+NO_PROVENANCE = "(no source header — unverified provenance)"
+PROV_MAX_CHARS = 300
+
+
+def extract_provenance(text):
+    """Pull the top-of-file metadata block into a single citation string.
+
+    Research and primary-text files in this repo open with lines like
+    `**Translation:** Rev. Peter Peterson (Ante-Nicene Fathers Vol 8, 1886)`.
+    Carrying that into every chunk's metadata means a search result arrives
+    with its own citation attached, instead of the citation living somewhere
+    the reader has to go look for. Files with no such block are labelled
+    explicitly, so missing provenance is visible rather than silent.
+    """
+    found = {}
+    # Scan only the preamble: stop at the first H2/H3 or the first horizontal
+    # rule, which is where the body reliably begins in this repo's files.
+    for raw in text.splitlines()[:40]:
+        line = raw.strip()
+        if line.startswith(("## ", "### ")) or line == "---":
+            break
+        m = PROV_LINE_RE.match(line) or PROV_QUOTE_RE.match(line)
+        if m:
+            key, val = m.group(1).strip(), m.group(2).strip()
+            if key in PROVENANCE_KEYS and key not in found:
+                found[key] = val
+
+    parts = [f"{k}: {found[k]}" for k in PROVENANCE_KEYS if k in found]
+
+    # Fall back to (or supplement with) a closing italic bibliography line.
+    if not parts:
+        for raw in reversed(text.splitlines()[-25:]):
+            m = PROV_TAIL_RE.match(raw.strip())
+            if m:
+                parts.append(f"Sources: {m.group(1).strip().rstrip('*')}")
+                break
+
+    if not parts:
+        return NO_PROVENANCE
+
+    citation = " · ".join(parts)
+    if len(citation) > PROV_MAX_CHARS:
+        citation = citation[:PROV_MAX_CHARS - 1].rstrip() + "…"
+    return citation
+
+
 def chunk_markdown(text, file_path, max_chunk_chars=MAX_CHUNK_CHARS):
     """Split markdown by H1/H2/H3 headers into semantic chunks.
     Sections longer than max_chunk_chars are split into sequential parts.
@@ -370,6 +431,11 @@ def rebuild_index():
             text = f.read_text(encoding="utf-8", errors="replace")
             chunks = chunk_markdown(text, f)
             if chunks:
+                # Attach the file's citation to every chunk from it, so a
+                # search hit can never come back without its provenance.
+                provenance = extract_provenance(text)
+                for c in chunks:
+                    c["source"] = provenance
                 all_chunks.extend(chunks)
             else:
                 # Empty/trivial file: nothing to embed, but record the hash so
@@ -422,6 +488,7 @@ def rebuild_index():
                 "file": c["file"],
                 "header": c["header"],
                 "start_line": c["start_line"],
+                "source": c.get("source", NO_PROVENANCE),
             } for c in batch],
         )
 
@@ -549,8 +616,11 @@ def search(query, top_k=5, full=False):
         header = meta["header"]
         start_line = meta.get("start_line", "?")
 
+        source = meta.get("source") or NO_PROVENANCE
+
         print(f"  {i + 1}. [{score:.3f}]  {file_path}:{start_line}")
         print(f"     Section: {header}")
+        print(f"     Source:  {source}")
 
         if full:
             print()

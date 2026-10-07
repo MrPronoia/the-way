@@ -19,6 +19,30 @@ python scripts/semantic-search.py "what did Jesus say about the kingdom being wi
 `extended-library/`, and the root orientation docs — ranked, with
 `file:line` citations so you can go read the source.
 
+### Every result carries its citation
+
+Each hit prints the file's **provenance block** alongside the passage:
+
+```
+  1. [0.812]  christianity/Incoming/clementine-homilies-full-text.md:1852
+     Section: Chapter XXXVIII — Corruption of the Law
+     Source:  Attribution: Anonymous (traditionally attributed to Clement of
+              Rome…) · Translation: Rev. Peter Peterson (Ante-Nicene Fathers
+              Volume 8, 1886) — from the Greek · Source: ccel.org…
+```
+
+This is deliberate and it's the point. The indexer reads each file's source
+header at index time and attaches it to every chunk, so **a passage cannot be
+retrieved without its citation.** You never have to go hunting for where a
+quote came from, and an AI assistant working from this repo can't hand you a
+claim with the provenance stripped off.
+
+Files with no source header report `(no source header — unverified
+provenance)` instead. Missing provenance is meant to be loud. Three
+conventions are recognized: a bold `**Translation:** …` block, a leading
+blockquote `> Translation: …`, or a closing `*Sources: …*` bibliography line.
+See CONTRIBUTING.md for the format.
+
 ### Setup
 
 ```bash

@@ -1,5 +1,12 @@
 # Dead Sea Scrolls -- Selected Key Texts
 
+**Attribution:** Qumran community (sectarian scrolls); compiled here as a curated selection
+**Translation:** Short fair-use excerpts from three published translations, attributed per quote -- Geza Vermes, *The Complete Dead Sea Scrolls in English* (Penguin, 7th ed., 2011); Michael Wise / Martin Abegg Jr. / Edward Cook, *The Dead Sea Scrolls: A New Translation* (HarperOne, 2005); Florentino Garcia Martinez, *The Dead Sea Scrolls Translated* (Brill/Eerdmans, 2nd ed., 1996)
+**Original Language:** Hebrew and Aramaic
+**Estimated Date:** c. 150 BCE - 70 CE (composition); discovered 1947-1956
+**Source:** Excerpt compilation -- **not a full translation.** Full scholarly translations are in copyright and belong to the translators. Every quotation below carries its translator inline (e.g. "1QS 1:1-3, Vermes").
+**Note:** Five texts selected for Essene-Jesus connection research. This file is the house model for handling in-copyright material: short attributed excerpts plus our own summaries, never a wholesale copy.
+
 *Curated collection of five essential Dead Sea Scrolls texts for Essene-Jesus connection research. Scholarly summaries with short fair-use excerpts from the most respected translations.*
 
 ---
