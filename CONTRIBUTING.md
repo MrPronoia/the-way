@@ -57,8 +57,31 @@ The format (`christianity/Incoming/clementine-homilies-full-text.md` is the refe
 **Original Language:** Greek / Hebrew / Aramaic / Coptic
 **Estimated Date:** Composition date, with the scholarly range if contested
 **Source:** Where this specific text came from — URL, edition, or "excerpt compilation"
+**Contributed by:** Your name, and the date
 **Note:** What it is and why it matters here
 ```
+
+### Put your name on what you bring
+
+**`Contributed by:` is part of the header, and the indexer reads it** — so when someone pulls a passage out of this collection months from now, your name comes with it, right next to the source.
+
+That is deliberate, and it cuts two ways on purpose. It's **credit**: you found the thing, and anyone who builds on it can see that. It's also **accountability**: if a citation turns out to be shaky, we know who to ask rather than guessing. Both matter, and the second one is why we're asking.
+
+```markdown
+**Contributed by:** Matt Fracek, 2026-10-06
+**Contributed by:** Kam Waters, 2026-10-12 — from his own research notes on the Christspiracy sources
+```
+
+Add a line rather than replacing one when material gets built on:
+
+```markdown
+**Contributed by:** Kam Waters, 2026-10-12 (original material)
+**Added by:** Rex, 2026-10-14 (cross-referenced against the Clementines, added the citation table)
+```
+
+**If you send us files rather than committing them yourself, we put your name in the header for you.** You don't have to do anything — just tell us who you are and, where it matters, where you got it.
+
+One thing to be careful about: **don't add someone else's name to material they didn't vouch for.** If you're transcribing a conversation, summarizing a book, or passing along something a friend sent, the contributor is *you* — note the origin in `Source:` or `Note:` instead. Attribution is a claim about who stands behind the material, and it should only ever be made by the person standing behind it.
 
 Research and analysis files can instead close with a bibliography line, which the indexer also reads:
 

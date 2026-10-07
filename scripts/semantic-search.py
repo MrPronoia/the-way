@@ -128,6 +128,10 @@ def split_block(block, first_line, max_chunk_chars):
 PROVENANCE_KEYS = [
     "Attribution", "Author", "Translation", "Translator", "Original Language",
     "Estimated Date", "Date", "Source", "Sources", "Type", "Status",
+    # Who brought the material into the collection. Distinct from
+    # Attribution/Author (who wrote the ancient text) — this is the
+    # contributor, so credit and accountability travel with the passage.
+    "Contributed by", "Added by",
 ]
 PROV_LINE_RE = re.compile(r'^\*\*([A-Za-z][A-Za-z ]{0,24}):\*\*\s*(.+?)\s*$')
 # Three provenance conventions are in use across the repo. Besides the bold

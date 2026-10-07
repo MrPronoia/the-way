@@ -43,6 +43,10 @@ conventions are recognized: a bold `**Translation:** …` block, a leading
 blockquote `> Translation: …`, or a closing `*Sources: …*` bibliography line.
 See CONTRIBUTING.md for the format.
 
+**`Contributed by:` is read too**, so the person who brought material in
+travels with it the same way the translator does — credit where it's earned,
+and a name to ask when a citation needs checking.
+
 ### Setup
 
 ```bash

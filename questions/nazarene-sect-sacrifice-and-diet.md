@@ -203,7 +203,19 @@ And our own file's note at line 288 says: ***"Triple attestation** of the 'eat w
 
 If household practice transfers to Jesus, it transfers **both halves** — and Jesus would be a lifelong teetotaler. Q 7:34, in our own primary text, has him "eating and **drinking**" and called a **winebibber**. Anyone can split that sentence in one move, and the inference collapses with some of our credibility attached to it.
 
-**What to do.** **Do not use the household argument.** It is not needed. What Hegesippus actually gives us is excellent on its own terms: the leader of the Jerusalem community, Jesus's own brother, abstained from flesh *as a lifelong discipline*. That is direct evidence about **the sect's practice** — claim A, the strong claim — and it requires no inference about Jesus at all.
+**What to do.** **Do not use the household argument.** It is not needed. What Hegesippus actually gives us is excellent on its own terms: the leader of the Jerusalem community, Jesus's own brother, abstained from flesh *as a lifelong discipline*. That is evidence about **the sect's practice** — claim A, the strong claim — and it requires no inference about Jesus at all.
+
+### What "direct evidence" means here, precisely
+
+Worth being exact about, because this is the strongest single datum in the whole claim and it will get probed.
+
+**It is direct in the sense that matters:** it is an *explicit statement* about James's practice, not something we inferred from a chain of reasoning. Hegesippus says what James ate. Compare that to the vegetarian-Jesus argument, which is inference stacked on inference.
+
+**But know the chain of custody, and say it before you're asked.** Hegesippus wrote around 170 CE — within living memory of people who knew James's community. His five books of *Memoirs* are **lost**. What survives is **Eusebius quoting him** in *Church History* 2.23, around 325 CE. So the chain is: Hegesippus (lost) → Eusebius (extant) → our notes. And **neither Hegesippus nor Eusebius is in this repo** — which makes this **TIER B**: verify it in a published edition (Loeb, or the standard NPNF translation) before leaning on it publicly.
+
+So the honest formulation is: *"Our earliest source on James's practice, writing within living memory and preserved by the church's own first historian, says plainly that he ate no meat."* That is strong, it is accurate, and it survives someone checking it.
+
+**Two caveats to volunteer rather than defend:** it is a single source, and James's profile is **Nazirite-shaped** (Numbers 6 — no wine, uncut hair), while a Nazirite vow does **not** forbid meat. So the meat clause either extends beyond the vow or reflects hagiographic amplification. Tabor's reading — Edenic or Daniel-style piety rather than a formal vow — handles that better than treating it as a vow. Offering the caveat yourself makes the datum more credible, not less.
 
 Also note the honest caveat: James's profile is **Nazirite-shaped** (Numbers 6 — no wine, uncut hair), and a Nazirite vow does **not** forbid meat. So the meat clause is either an extension beyond the vow or hagiographic amplification. Dr. Tabor's reading — Edenic or Daniel-style piety rather than a vow — is the better frame. State the caveat yourself; it makes the datum more credible, not less.
 
