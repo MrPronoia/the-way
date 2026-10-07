@@ -20,12 +20,14 @@ Same stream. Different names at different historical moments.
 
 ### 1. Essenes (pre-Jesus, ~200 BCE – 70 CE)
 
-The Jewish sect documented by multiple ancient sources, including three independent first-century historians and one later philosopher:
+The Jewish sect documented by multiple ancient sources — but the four witnesses do **not** each support the same claim, and this file used to imply they did. What each one actually attests:
 
-- **Josephus** (1st c.): "Their food consists of loaves of bread, a dish of vegetables with salt, and water."
-- **Philo of Alexandria** (1st c.): "They do not bring sacrifices of animals."
-- **Pliny the Elder** (1st c.): "The Essenes are a more remarkable race of men than any upon the earth."
-- **Porphyry** (3rd c., c. 234-305 CE): "The Essenes abstain from all animal food." Note: Porphyry is a Neoplatonist philosopher writing two centuries later, not a first-century witness. He likely drew on earlier sources.
+- **Philo of Alexandria** (1st c.): "They do not bring sacrifices of animals." — attests **non-sacrifice**. This is the strongest and most direct witness, and it is *not* a statement about diet.
+- **Josephus** (1st c.): often cited as "their food consists of loaves of bread, a dish of vegetables with salt, and water." Treat with care: *Jewish War* 2.8.5 has the cook set before each man "a single plate of one sort of food," with **no vegetables specified**. The vegetable-and-salt wording is probably a **conflation with Philo's description of the Therapeutae** (*De vita contemplativa* 37), a different group. What Josephus securely attests is communal meals, ritual purity, and simplicity of food.
+- **Pliny the Elder** (1st c.): "The Essenes are a more remarkable race of men than any upon the earth" (*Natural History* 5.73) — attests their existence, celibacy, renunciation of money, and location near the Dead Sea. **Pliny says nothing about diet at all.**
+- **Porphyry** (3rd c., c. 234-305 CE): "The Essenes abstain from all animal food." **This is the only witness who actually asserts Essene vegetarianism** — and he is a Neoplatonist writing two centuries later, largely paraphrasing Josephus, with his own polemical stake in the question (*De abstinentia* is an argument *for* vegetarianism).
+
+**Corrected 2026-10-06 — do not write "four independent historians."** The non-sacrifice claim has multiple first-century attestation. The **vegetarian claim rests on one late, derivative source.** Those are two different claims with two different evidentiary weights, and collapsing them is the error this file previously made (see the Vegetarian Evidence Chain below, which has been corrected to match). Reference: `../questions/nazarene-sect-sacrifice-and-diet.md` and `../questions/CITATION-NOTES.md`.
 
 Core practices:
 - Vegetarian
@@ -34,7 +36,12 @@ Core practices:
 - Water baptism (not blood atonement)
 - Nonviolent
 - Associated with the Dead Sea Scrolls community at Qumran
-- **Self-designation in the Dead Sea Scrolls: "congregation of the Ebionim"** — Hebrew for "the poor ones"
+
+**⚠️ An unverified claim was removed from this list (2026-10-06).** It previously included:
+
+> ~~**Self-designation in the Dead Sea Scrolls: "congregation of the Ebionim"** — Hebrew for "the poor ones"~~
+
+**Grepping `dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` for "ebion" or "poor ones" returns zero hits.** There is no text in this collection supporting *Ebionim* as a Qumran self-designation, and the claim is on the do-not-use list in `../questions/CITATION-NOTES.md` — it was deliberately left off the question cards for this reason. Its traceable origin is a podcast episode (Jesus Way Ep. 26), not a scroll. **Do not reinstate it without a cited published edition.** What remains true and needs no scroll: *ebyonim* is ordinary biblical Hebrew for "the poor," the Ebionites were named from it, and the Qumran community did practice voluntary poverty — but the name-level identification is unverified here.
 
 Dr. James Tabor identifies 12 characteristics shared between the Essene community and Jesus's movement, including anti-temple theology, communal living, voluntary poverty, councils of 12, and the rejection of sacrifice.
 
@@ -72,7 +79,7 @@ The Nazarenes saw Jesus as a human messiah and way-shower — not God incarnate.
 
 The continuation of the Jerusalem church after Rome destroyed the temple and scattered the community.
 
-The name comes from the same Hebrew root: **Ebion / Ebionim = "the poor ones"** — the same self-designation used in the Dead Sea Scrolls.
+The name comes from ordinary biblical Hebrew: **Ebion / Ebionim = "the poor ones"** (cf. "Blessed are the poor"). **Corrected 2026-10-06:** this sentence previously ended ~~"— the same self-designation used in the Dead Sea Scrolls"~~. That is **unverified** — no "Ebionim" or "poor ones" self-designation appears in this repo's Dead Sea Scrolls texts. See the note under the Essene section above.
 
 **Epiphanius:** "Nazarenes/Ebionites: In their eyes, it was unlawful to eat flesh or sacrifice."
 
@@ -109,7 +116,7 @@ The Ebionites didn't lose the theological argument — they lost the **political
 
 This lineage matters for the vegetarian question because it establishes **chain of custody**:
 
-1. **The Essenes were vegetarian** — four independent historians confirm this
+1. **The Essenes rejected animal sacrifice** — directly attested by Philo (1st c.), and consistent with the Qumran community's withdrawal from the Temple cult. **The vegetarian claim is weaker and must be stated separately:** only **Porphyry** (3rd c., derivative of Josephus) actually says the Essenes abstained from animal food. **Corrected 2026-10-06** — this line previously read ~~"The Essenes were vegetarian — four independent historians confirm this"~~. Pliny says nothing about diet; Philo's claim is about sacrifice; Josephus's "dish of vegetables with salt" is likely a conflation with Philo's Therapeutae (*Contempl.* 37). **One witness, not four.** See the witness breakdown at the top of this file.
 2. **James the Just was vegetarian from birth** — meaning the household Jesus grew up in was vegetarian (Hegesippus, 2nd c.)
 3. **The apostles were documented as vegetarian** — The broadest claim comes from one source: **Eusebius (*Demonstratio Evangelica*, Book 3, 4th c.): "The twelve apostles embraced abstinence from wine and meat."** Individual apostles are attested separately: Matthew (Clement of Alexandria, *Paedagogus* 2.1, 2nd c.), Thomas (Acts of Thomas, 1st-2nd c.), Peter (Clementine Homilies 12.6, 2nd-3rd c.). These are not 12 independent confirmations — it's one blanket statement from Eusebius plus three individual attestations from texts of varying reliability. Still strong, but should be stated precisely.
 4. **The Ebionites maintained vegetarianism** — the community with the most direct line of transmission from Jesus insisted on it
@@ -145,5 +152,5 @@ This pattern repeats across traditions. The Ebionite story is the Christian inst
 
 ## Related Research
 
-- Podcast episode research: The Nazarenes (Episode 9), Christ Consciousness and Ebionite Christianity (Episode 17), Ebionite/Ebionim connection and Dead Sea Scroll self-designation (Episode 26). See the podcast research archive for episode-specific analysis.
+- Podcast episode research: The Nazarenes (Episode 9), Christ Consciousness and Ebionite Christianity (Episode 17), Ebionite/Ebionim connection (Episode 26). See the podcast research archive for episode-specific analysis. **Note:** Episode 26 is also the origin of the "Dead Sea Scroll self-designation" claim for *Ebionim*, which is unverified and has been struck from this file — podcast episodes are pointers, not proof.
 - `../ethiopian-bible/00-overview.md` — Ethiopian canon preserves the James/Peter stream, not the Pauline stream

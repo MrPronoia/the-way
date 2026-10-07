@@ -69,7 +69,7 @@ Estos pasajes reciben mucha menos atención, pero son texto rojo — las propias
 
 ## El Evangelio de Tomás — El Texto Rojo Más Claro Sobre Esta Cuestión
 
-El Evangelio de Tomás — una colección temprana de dichos de Jesús encontrada en Egipto en 1945, que probablemente data de 50-70 d.C. — preserva una tradición de dichos que muchos académicos argumentan que precede o es paralela a los evangelios canónicos (Koester, Patterson, DeConick). Sobre esta cuestión, Tomás es inequívoco.
+El Evangelio de Tomás — una colección de dichos de Jesús encontrada en Egipto en 1945, cuya datación está en disputa (la erudición mayoritaria la sitúa hacia el 120-140 d.C., mientras una minoría defiende una capa temprana en torno al 50-70) — preserva una tradición de dichos que muchos académicos argumentan que precede o es paralela a los evangelios canónicos (Koester, Patterson, DeConick). Sobre esta cuestión, Tomás es inequívoco.
 
 ### Dicho 108 — El Objetivo Es Convertirse
 

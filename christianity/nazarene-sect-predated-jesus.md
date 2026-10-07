@@ -30,7 +30,7 @@ Their core beliefs, as Epiphanius documents them:
 | Rejection of sacrificial Torah texts as forgeries | *Panarion* 18 — "They claimed these books are forgeries" |
 | Water baptism for sin remission | Replacing blood atonement with water purification |
 | Nonviolence and pacifism | Consistent across Essene-type groups |
-| Communal living | Attested by Josephus, Philo, and Pliny for related Essene communities |
+| Communal living | Attested by Josephus, Philo, and Pliny for related Essene communities. (Communal living only — see the corrected witness table below before extending any of these three to *diet*.) |
 
 **Epiphanius gives multiple contradictory origin stories for the Nazarenes** — that they were named after Nazareth, that the name came from messianic prophecies, and that the sect originated from the Flight to Pella. This confusion is telling. He's trying to explain a movement that existed before his theological framework could account for it.
 
@@ -64,15 +64,18 @@ He describes them as a pre-existing group that Jesus's disciples **joined**, not
 
 ### 2. The Essene Connection
 
-Josephus, Philo, and Pliny all document Jewish communities in this region with identical practices — anti-sacrifice, vegetarian, communal, nonviolent — decades before Jesus's ministry:
+Josephus, Philo, and Pliny all document Jewish communities in this region practicing communal living, voluntary poverty, and ritual purity decades before Jesus's ministry. **Attribute each witness to what it actually supports** — the list below is corrected (2026-10-06) from an earlier version that credited all three with documenting "anti-sacrifice, vegetarian, communal, nonviolent" practices as a single bundle:
 
-| Writer | Date | Key Detail |
+| Writer | Date | What it actually attests |
 |--------|------|-----------|
-| **Philo** | c. 20 CE | Essenes numbered ~4,000; practiced communal living; rejected slavery |
-| **Josephus** | c. 75 CE | Essenes ate "a dish of vegetables with bread and the condiment of salt and water"; average age over 100 |
-| **Pliny** | c. 77 CE | Documented Essene community near the Dead Sea, "without women, renouncing money" |
+| **Philo** | c. 20 CE | Essenes numbered ~4,000; communal living; rejected slavery. **Also, directly: "They do not bring sacrifices of animals"** — the strongest attestation for anti-sacrifice, and *not* a statement about diet. |
+| **Josephus** | c. 75 CE | Communal meals, ritual purity, simple food, long lifespans; compares them to Pythagoreans. **Caution:** the familiar "a dish of vegetables with bread and the condiment of salt and water" is likely a conflation with Philo's **Therapeutae** (*De vita contemplativa* 37). *Jewish War* 2.8.5 has the cook set before each man "a single plate of one sort of food," with no vegetables specified. |
+| **Pliny** | c. 77 CE | Essene community near the Dead Sea, "without women, renouncing money." **Pliny says nothing about diet or sacrifice.** |
+| **Porphyry** | 3rd c. | "The Essenes abstain from all animal food." **The only source that actually asserts Essene vegetarianism** — late, and largely paraphrasing Josephus. Cite it as the single witness it is; **never say "four independent historians."** |
 
-The Dead Sea Scrolls community at Qumran — discovered in 1947 — confirms these practices existed in organized form by the 2nd century BCE at the latest. Their self-designation was **"Ebionim"** (the poor ones) — the same name used by the earliest Jerusalem church.
+The Dead Sea Scrolls community at Qumran — discovered in 1947 — confirms the communal, purity-focused, Temple-estranged pattern existed in organized form by the 2nd century BCE at the latest.
+
+**⚠️ A claim was removed here (2026-10-06).** This paragraph previously ended: ~~"Their self-designation was **'Ebionim'** (the poor ones) — the same name used by the earliest Jerusalem church."~~ **Unverified.** Grepping `dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` for "ebion" or "poor ones" returns **zero hits**, and the claim is on the do-not-use list in `../questions/CITATION-NOTES.md`. The Qumran community's practice of voluntary poverty is well attested; the *name* is not. Do not reinstate without a cited published edition.
 
 ### 3. Jesus's Teachings Match Nazarene Beliefs Exactly
 

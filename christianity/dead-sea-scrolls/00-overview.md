@@ -128,7 +128,9 @@ This is the centerpiece. Dr. James Tabor (PhD, University of Chicago; Professor 
 | 9 | **Council of 12 with inner 3** -- same leadership structure | Community Rule (1QS 8:1) | 12 apostles with Peter, James, John |
 | 10 | **Communal living** -- sold possessions, shared goods | Community Rule (1QS 6:19-22) | Acts 2:44-45; 4:32-35 |
 | 11 | **Anti-Temple** -- considered Jerusalem temple and priesthood corrupt | Pesharim; Damascus Document | Temple cleansing (Mark 11:15-17); Stephen's speech (Acts 7) |
-| 12 | **Prayer as sacrifice** -- the body as the true temple | Community Rule (1QS 9:4-5) | "I desire mercy, not sacrifice" (Matthew 9:13; 12:7) |
+| 12 | **Prayer as sacrifice** -- the body as the true temple | Community Rule (1QS 9:4-5) — reference level only, see note | "I desire mercy, not sacrifice" (Matthew 9:13; 12:7) |
+
+**Note on row 12 (added 2026-10-06).** "Prayer as sacrifice" is Tabor's label for the characteristic, not a quotation of the scroll. **There is no verbatim text for 1QS 9:4-5 anywhere in this repo**, including in `Incoming/dead-sea-scrolls-selected-texts.md`. Cite it as a reference ("the Community Rule replaces sacrifice with prayer and righteous living") and **never inside quotation marks**. Community Rule passages that *are* verified verbatim in that file: 1QS 3:4-7 (line 119), 3:17-19 (line 65), 8:12-14 (line 129). See `../../questions/CITATION-NOTES.md`.
 
 Beyond Tabor's 12 points, several additional connections reinforce the link:
 

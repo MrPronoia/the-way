@@ -28,7 +28,7 @@ Three passages — from three different sources — converge on the same radical
 | **Gospel of Thomas, Saying 113** | "The kingdom of the Father is spread out upon the earth, and people do not see it" | It is already here. The problem is perception, not timing |
 | **Gospel of Thomas, Saying 3** | "If your leaders say to you, 'Look, the kingdom is in the sky,' then the birds will precede you" | Looking outward or upward for the kingdom is a category error |
 
-The Gospel of Thomas is an early collection of Jesus sayings found in Egypt in 1945, likely dating to 50-70 CE. Jesus did not teach people to wait for the kingdom. He told them they were standing in it and couldn't see it. The obstacle is not God's timeline — it is human blindness.
+The Gospel of Thomas is a collection of Jesus sayings found in Egypt in 1945; its dating is contested, with mainstream scholarship around 120-140 CE and a minority arguing for an early layer near 50-70. Jesus did not teach people to wait for the kingdom. He told them they were standing in it and couldn't see it. The obstacle is not God's timeline — it is human blindness.
 
 ---
 

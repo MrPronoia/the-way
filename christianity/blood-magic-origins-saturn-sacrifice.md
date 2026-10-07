@@ -87,7 +87,9 @@ Amos makes two claims: (1) Israel did not practice sacrifice during the forty ye
 
 > **Hosea 6:6** -- "For I desire mercy, not sacrifice, and the knowledge of God rather than burnt offerings."
 
-This is the verse Jesus himself quoted -- twice (Matthew 9:13 and 12:7). The Hebrew *hesed* (steadfast love, mercy, covenant loyalty) is set in direct opposition to *zebah* (slaughter-sacrifice). God does not want sacrifice alongside mercy. God wants mercy *instead of* sacrifice.
+This is the verse Jesus himself quoted -- twice (Matthew 9:13 and 12:7). The Hebrew *hesed* (steadfast love, mercy, covenant loyalty) is set against *zebah* (slaughter-sacrifice).
+
+**Corrected 2026-10-06 -- don't reintroduce the absolute.** This passage used to end "God does not want sacrifice alongside mercy. God wants mercy *instead of* sacrifice," and elsewhere the collection called the Hebrew *lo* "a flat negative, not a comparison." That does not survive the verse's second line. Hosea 6:6a is a flat *lo*, but 6:6b's synonymous parallel uses the comparative *min* -- "knowledge of God **more than** burnt offerings" (מֵעֹלוֹת). The verse holds both idioms in two lines. What is defensible, and sharper: this is prophetic idiom subordinating cult to mercy so severely that Jesus deploys it twice as a rebuke to the men running the cult. See `../questions/CITATION-NOTES.md`.
 
 > **Isaiah 1:11-17** -- "What to me is the multitude of your sacrifices? says the LORD; I have had enough of burnt offerings of rams and the fat of fed beasts; I do not delight in the blood of bulls, or of lambs, or of goats... Wash yourselves; make yourselves clean; remove the evil of your doings from before my eyes; cease to do evil, learn to do good."
 
@@ -132,7 +134,13 @@ Jesus's confrontation with the Temple system was not a spontaneous outburst. It 
 
 The Temple cleansing targeted the dove-sellers specifically -- the merchants who supplied the cheapest sacrificial animal, the offering of the poor. This was not merely an objection to commercial corruption. It was a direct assault on the sacrificial infrastructure itself.
 
-The Essene community at Qumran had already reached a similar conclusion. The Community Rule (1QS 9:4-5) describes "prayer rightly offered" as replacing animal sacrifice -- "the offering of the lips in accordance with the law shall be as an acceptable fragrance of righteousness." The Dead Sea Scrolls community withdrew from the Temple not because of minor disagreements about calendar or purity, but because they believed the entire sacrificial priesthood had been corrupted.
+The Essene community at Qumran had already reached a similar conclusion. The Community Rule replaces animal sacrifice with prayer and righteous living (1QS 9:4-5, **reference level only** — see the note below). The Dead Sea Scrolls community withdrew from the Temple not because of minor disagreements about calendar or purity, but because they believed the entire sacrificial priesthood had been corrupted.
+
+**⚠️ A quotation was removed here (2026-10-06).** This passage previously read:
+
+> ~~The Community Rule (1QS 9:4-5) describes "prayer rightly offered" as replacing animal sacrifice -- "the offering of the lips in accordance with the law shall be as an acceptable fragrance of righteousness."~~
+
+**No verbatim text for 1QS 9:4-5 exists anywhere in this repo** — not in `dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`, not even as a paraphrase. The wording above also drifts: it renders the line "in accordance with the **law**," where Vermes reads "decree" — the signature of a quotation copied from a quotation. **Cite 1QS 9:4-5 at reference level and never inside quotation marks.** Community Rule passages that *are* verified verbatim in that file, and may be quoted: **1QS 3:4-7** (line 119), **1QS 3:17-19** (line 65), **1QS 8:12-14** (line 129). See `../questions/CITATION-NOTES.md`.
 
 Jesus's brother James the Just -- his successor as leader of the Jerusalem church -- was described by Hegesippus (preserved in Eusebius, *Church History* 2.23) as a lifelong ascetic who "drank no wine nor strong drink, nor did he eat meat," never cut his hair, and wore linen rather than wool. The leader of the earliest Christian community was a vegetarian from birth.
 

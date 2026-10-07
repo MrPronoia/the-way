@@ -27,12 +27,13 @@ PYTHAGORAS (c. 570-495 BCE)
     v
 THE ESSENES (c. 200 BCE - 70 CE)
     |
-    |--- Four independent historians confirm vegetarianism:
-    |    Josephus, Philo, Pliny the Elder, Porphyry
+    |--- Anti-sacrifice: Philo, directly -- "they do not bring
+    |    sacrifices of animals" (1st c.)
+    |--- Vegetarianism: PORPHYRY ONLY (3rd c., derivative of Josephus)
+    |    [see correction note below -- NOT "four independent historians"]
     |--- Communal property, white garments, graduated initiation,
     |    silent meals, daily purification, study of sacred texts
     |    (All structurally identical to Pythagorean practices)
-    |--- Self-designation: "the Ebionim" (the poor ones)
     |--- Dead Sea Scrolls community at Qumran
     |
     v
@@ -41,7 +42,8 @@ JESUS / THE NAZARENES (c. 4 BCE - 70 CE)
     |--- James the Just: vegetarian from birth (Hegesippus, 2nd c.)
     |    = Jesus grew up in a vegetarian household
     |--- Jesus quotes "I desire mercy, not sacrifice" (Hosea 6:6) -- twice
-    |--- Frees animals from the Temple
+    |--- Drives the sheep and oxen out of the Temple (John 2:15);
+    |    overturns the dove-sellers' seats (Mark 11:15)
     |--- Replaces Passover lamb with bread and wine (Melchizedek pattern)
     |--- Hebrew Gospel of Matthew: "I have no desire to eat the flesh
     |    of this Passover lamb with you"
@@ -71,6 +73,16 @@ SUPPRESSION
     |--- Ebionite writings destroyed
     |--- Vegetarian teachings systematically removed or ignored
 ```
+
+**⚠️ Two claims in the Essene node were corrected (2026-10-06).**
+
+> ~~Four independent historians confirm vegetarianism: Josephus, Philo, Pliny the Elder, Porphyry~~
+
+**One does, not four.** **Porphyry** alone asserts that the Essenes abstained from animal food — and he is third-century, writing *De abstinentia* as an argument for vegetarianism, and largely paraphrasing Josephus. **Philo** attests that they do not *sacrifice* animals, which is a different claim (and the strongest one we have). **Pliny says nothing about diet at all.** **Josephus**'s familiar "dish of vegetables with salt" is probably a conflation with Philo's description of the **Therapeutae** (*De vita contemplativa* 37); *Jewish War* 2.8.5 has only "a single plate of one sort of food." The Pythagoras→Essene→Jesus chain in this diagram still runs on structural parallels and the anti-sacrifice evidence; it does not need a four-witness diet claim it cannot support.
+
+> ~~Self-designation: "the Ebionim" (the poor ones)~~
+
+**Removed as unverified.** Grepping `../dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` for "ebion" or "poor ones" returns **zero hits**, and the claim is on the do-not-use list in `../../questions/CITATION-NOTES.md`. The Ebionites' *own* name does mean "the poor ones"; attributing that name to the Qumran community as a self-designation is what has no support here.
 
 ---
 
@@ -152,7 +164,7 @@ The vegetarian pattern is not limited to the Pythagoras-Essene-Jesus chain. It a
 | **Pythagoras** (c. 570-495 BCE) | Required in the mystery school (Porphyry, *Life of Pythagoras*; Iamblichus, *On the Pythagorean Life*); called "the Pythagorean diet" for 2,000 years | Metempsychosis -- souls transmigrate through animal bodies (Diogenes Laertius VIII; Ovid, *Metamorphoses* XV) |
 | **Mahavira / Jainism** (c. 599-527 BCE) | Absolute non-harm to all living beings | Ahimsa as the supreme ethical principle |
 | **Buddha** (c. 563-483 BCE) | First Precept: do not kill | Compassion for all sentient beings; all beings fear death |
-| **The Essenes** (c. 200 BCE - 70 CE) | Documented by four independent historians | Anti-sacrifice theology; purity; communal ethic |
+| **The Essenes** (c. 200 BCE - 70 CE) | Abstention asserted by Porphyry alone (3rd c., derivative); Philo attests non-sacrifice. **Not "four independent historians"** — see the correction note above the cross-tradition section. | Anti-sacrifice theology; purity; communal ethic |
 | **Jesus / James the Just** (1st century CE) | James vegetarian from birth; Jesus anti-sacrifice | "I desire mercy, not sacrifice"; Golden Rule extended |
 | **Plotinus** (204-270 CE) | Vegetarian, possibly vegan -- refused even cheese | Ascetic discipline; the soul transcending bodily attachments |
 | **St. Francis of Assisi** (1181-1226) | "All creatures are our brothers and sisters in God's family" | Universal kinship; the divine in all creation |

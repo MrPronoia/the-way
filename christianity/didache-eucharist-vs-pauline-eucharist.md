@@ -79,18 +79,39 @@ The Messiah himself presides over the bread and wine blessing in the eschatologi
 
 The pattern across all three sources:
 
-| Feature | Essene Sacred Meal (1QS) | Didache Eucharist | Paul's Eucharist |
+| Feature | Essene Sacred Meal (1QS) | Didache Eucharistic Prayers (ch. 9-10) | Paul's Eucharist |
 |---------|-------------------------|-------------------|------------------|
 | Elements | Bread and wine | Bread and wine (cup) | Bread and wine (cup) |
 | Who blesses | Priest | Community leader (implied) | Jesus (via Paul's narration) |
 | Blood symbolism | None | None | Central |
-| Sacrifice symbolism | None | None | Central |
+| Sacrifice symbolism | None | None in the prayers (but see Didache 14 below) | Central |
 | Death reference | None | None | Central |
 | Communal gathering | Yes | Yes | Yes |
 
-The Essene meal and the Didache meal are structurally continuous. Bread and wine, blessed in community, with no sacrificial overtones. Paul's version introduces an entirely new theological layer -- body, blood, death, covenant -- that appears in neither predecessor.
+**Read the "Sacrifice symbolism" row precisely.** It is a claim about the Eucharistic **prayers** of chapters 9-10, not about the whole document. Didache **14** does use sacrificial language -- see the section immediately below. The narrow claim is true and still makes the point; the absolute version ("the Didache has no sacrifice") collapses the moment someone reads chapter 14 aloud.
+
+The Essene meal and the Didache meal are structurally continuous. Bread and wine, blessed in community, with no body/blood/death overtones. Paul's version introduces an entirely new theological layer -- body, blood, death, covenant -- that appears in neither predecessor.
 
 Scholar Hartmut Stegemann (*The Library of Qumran*, 1998) and James Charlesworth (*Jesus and the Dead Sea Scrolls*, 1992) have documented these Essene-Christian meal parallels extensively. The Didache preserves the intermediate step: the Essene sacred meal adapted for the Jesus movement, before Paul reframed it as a death memorial.
+
+---
+
+## Didache 14: Where the Didache *Does* Say "Sacrifice"
+
+This is the collection's designated Didache deep dive, and until 2026-10-06 it did not mention chapter 14 anywhere — which left the whole argument resting on an absolute ("the Didache has no sacrifice") that the document itself refutes. Chapter 14 is short, and it uses *thusia* ("sacrifice") **four times**:
+
+> "On every Lord's Day — his special day — come together and break bread and give thanks, first confessing your sins so that your **sacrifice** may be pure.
+> Anyone at variance with his neighbor must not join you, until they are reconciled, lest your **sacrifice** be defiled.
+> For it was of this **sacrifice** that the Lord said, 'Always and everywhere offer me a pure **sacrifice**; for I am a great King, says the Lord, and my name is marveled at by the nations.'"
+> -- *Didache* 14 (Richardson translation; verified verbatim in `Incoming/didache-full-text.md`, lines 201-205)
+
+The closing quotation is **Malachi 1:11**, which the Didache community reads as a prophecy of its own weekly assembly.
+
+**What this does and does not concede.** The sacrificial word is applied to the **assembly's own offering** — the gathering, the thanksgiving, the reconciled relationships that must precede it. It is never applied to Jesus's death. There is no victim, no blood, no atoning transaction, no "poured out for you." Chapter 14 is in fact the prophetic-tradition move in liturgical form: the vocabulary of *thusia* is retained and relocated into right conduct and thanksgiving, exactly as Psalm 51:17 ("the sacrifices of God are a broken spirit") and Malachi do. Note that even the precondition is ethical, not ritual: confess, reconcile with your neighbor, *then* come.
+
+**So state the claim this way:** the Didache's Eucharistic **prayers** (chapters 9-10) contain no body, no blood, and no reference to Jesus's death; chapter 14 applies "sacrifice" to the community's own pure offering and never to the crucifixion. That is the whole of what the text supports, and it is enough — Paul's innovation is the *identification of the elements with a body and blood given in death*, and nothing in the Didache does that.
+
+**Do not write "the Didache has no sacrifice."** It appeared on four question cards and across the research files, and one reading of chapter 14 takes all of them down at once. See `../questions/CITATION-NOTES.md`.
 
 ---
 
@@ -102,7 +123,7 @@ Paul's version is something categorically different. It is a death memorial. The
 
 This is not a minor liturgical variation. These are two different religions wearing the same name. The Didache community -- which calls itself the community of the Twelve Apostles -- remembers Jesus as a revealer of divine knowledge. Paul -- who never met Jesus during his ministry and explicitly states he received his gospel through private revelation, not from the Twelve (Galatians 1:11-12) -- remembers Jesus as a sacrifice. The question is simple: which version is more likely to reflect what the original movement actually practiced?
 
-The Didache's silence on blood atonement is not an omission. It is a theological statement. A community that knew Paul's Eucharist theology and agreed with it would not have written chapters 9-10. The absence of sacrifice language is the evidence. As the Hebrew prophets had already declared: "I desire mercy, not sacrifice" (Hosea 6:6, quoted twice by Jesus in Matthew 9:13 and 12:7).
+The Didache's silence on blood atonement is not an omission. It is a theological statement. A community that knew Paul's Eucharist theology and agreed with it would not have written chapters 9-10. The absence of **body, blood, and death language in the Eucharistic prayers** is the evidence — and note the precision: not "the absence of sacrifice language," because chapter 14 has sacrifice language, applied to the assembly's own pure offering rather than to Jesus's death (see the Didache 14 section above). As the Hebrew prophets had already declared: "I desire mercy, not sacrifice" (Hosea 6:6, quoted twice by Jesus in Matthew 9:13 and 12:7).
 
 ---
 
@@ -126,6 +147,6 @@ The Didache's silence on blood atonement is not an omission. It is a theological
 
 ---
 
-*Sources: The Didache, chapters 9-10 (Kirsopp Lake translation, Loeb Classical Library, 1912; cross-referenced with Aaron Milavec, The Didache: Faith, Hope, and Life of the Earliest Christian Communities, 2003). 1 Corinthians 11:23-26 (standard Greek text). Dead Sea Scrolls Community Rule 1QS 6:4-6, Messianic Rule 1QSa 2:17-21 (Geza Vermes translation, The Complete Dead Sea Scrolls in English, 1997). Jonathan Draper on Didache-Qumran textual dependence (The Didache in Modern Research, 1996). Hans-Joachim Schoeps, Jewish Christianity (1969). James Tabor, The Jesus Dynasty (2006). Bart Ehrman, scholarly courses on Jesus and Paul. Hartmut Stegemann, The Library of Qumran (1998). James Charlesworth, Jesus and the Dead Sea Scrolls (1992). David Flusser, Didache commentary. Keith Akers, The Lost Religion of Jesus (2000).*
+*Sources: The Didache, chapters 9-10 and 14 (Kirsopp Lake translation, Loeb Classical Library, 1912; cross-referenced with Aaron Milavec, The Didache: Faith, Hope, and Life of the Earliest Christian Communities, 2003). 1 Corinthians 11:23-26 (standard Greek text). Dead Sea Scrolls Community Rule 1QS 6:4-6, Messianic Rule 1QSa 2:17-21 (Geza Vermes translation, The Complete Dead Sea Scrolls in English, 1997). Jonathan Draper on Didache-Qumran textual dependence (The Didache in Modern Research, 1996). Hans-Joachim Schoeps, Jewish Christianity (1969). James Tabor, The Jesus Dynasty (2006). Bart Ehrman, scholarly courses on Jesus and Paul. Hartmut Stegemann, The Library of Qumran (1998). James Charlesworth, Jesus and the Dead Sea Scrolls (1992). David Flusser, Didache commentary. Keith Akers, The Lost Religion of Jesus (2000).*
 
 *Last updated: 2026-03-11*

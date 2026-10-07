@@ -117,7 +117,9 @@ Dr. James Tabor (PhD, University of Chicago; Professor Emeritus, UNC Charlotte) 
 | 9 | **Council of 12 with inner 3** | Community Rule (1QS 8:1) | 12 apostles with Peter, James, John |
 | 10 | **Communal living** -- sold possessions, shared goods | Community Rule (1QS 6:19-22) | Acts 2:44-45; 4:32-35 |
 | 11 | **Anti-Temple** -- Jerusalem priesthood corrupt | Pesharim; Damascus Document | Temple cleansing (Mark 11:15-17); Stephen's speech (Acts 7) |
-| 12 | **Prayer as sacrifice** -- the body as the true temple | Community Rule (1QS 9:4-5) | "I desire mercy, not sacrifice" (Matthew 9:13; 12:7) |
+| 12 | **Prayer as sacrifice** -- the body as the true temple | Community Rule (1QS 9:4-5) — reference level only | "I desire mercy, not sacrifice" (Matthew 9:13; 12:7) |
+
+**Row 12 caution (2026-10-06):** "Prayer as sacrifice" is Tabor's label, not scroll wording. **No verbatim text for 1QS 9:4-5 exists in this repo** — cite it at reference level, never in quotation marks. Quotable verified Community Rule passages: 1QS 3:4-7, 3:17-19, 8:12-14 (`Incoming/dead-sea-scrolls-selected-texts.md`). See `../../questions/CITATION-NOTES.md`.
 
 **Additional connections:** "Spirit of Truth" (Essene vocabulary in the mouth of Jesus, John 14:17). Sacred meals of bread and wine (1QS 6:4-5; 1QSa 2:17-21 -- the Eucharist template). John the Baptist operating 10-15 miles from Qumran, quoting the Essene mission statement, practicing the Essene ritual. James the Just -- vegetarian from birth, wore only linen, lifelong Torah-observant -- fitting the Essene profile exactly. Geographic overlap between Qumran, John's baptism site, and Jesus's early ministry.
 

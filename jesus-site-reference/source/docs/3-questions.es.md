@@ -80,7 +80,7 @@ No una religión nueva. La original — antes de que fuera reescrita.
 
 **[Los Rollos del Mar Muerto](the-evidence.md#the-dead-sea-scrolls)** (1947) — 950 manuscritos ocultos en cuevas durante 2.000 años. Revelan la comunidad esenia de la que surgió Jesús: vocabulario compartido, prácticas compartidas, teología compartida. Anti-sacrificio. La oración por encima de la sangre. Un consejo de doce.
 
-**[El Evangelio de Tomás](the-evidence.md#the-gospel-of-thomas)** (1945) — 114 dichos de Jesús sin narrativa de crucifixión, sin teología de resurrección, sin marco paulino. Solo sus palabras: el Reino interior, el autoconocimiento como salvación, Dios en todas las cosas. Muchos eruditos datan su capa más temprana entre los años 50-70 d.C. — potencialmente antes de cualquier evangelio canónico.
+**[El Evangelio de Tomás](the-evidence.md#the-gospel-of-thomas)** (1945) — 114 dichos de Jesús sin narrativa de crucifixión, sin teología de resurrección, sin marco paulino. Solo sus palabras: el Reino interior, el autoconocimiento como salvación, Dios en todas las cosas. Su datación está en disputa: la erudición mayoritaria sitúa la colección hacia el 120-140 d.C., mientras una minoría defiende que su capa más temprana alcanza el 50-70, potencialmente antes de cualquier evangelio canónico.
 
 **[La Biblia Etíope](the-evidence.md#the-ethiopian-bible)** — 81 libros. 15 más que el canon occidental. Preservada desde el siglo IV, nunca filtrada por Nicea ni Roma. Las 13 cartas de Pablo están ahí — pero son 13 de 35 libros del Nuevo Testamento, no 13 de 27. Los textos adicionales todos enfatizan lo que Pablo minimizó: mandamientos, obras y la autoridad de los Doce que realmente conocieron a Jesús.
 

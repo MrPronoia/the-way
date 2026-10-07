@@ -51,7 +51,7 @@ The lesson for live use: a citation's *appearance* of precision ("Recognitions 1
 | *Ebionim* ("the poor ones") as a Dead Sea Scrolls self-designation | Asserted in `2026-02-25-essene-nazarene-ebionite-lineage.md`; no supporting text anywhere in `christianity/dead-sea-scrolls/`. Left off the cards. |
 | Origen, "The Father is superior to every being that exists"; Justin Martyr, "another God and Lord" | Only in our secondary notes — no primary text in the repo. The subordinationism argument stands without the quotes; make it without quotation marks. |
 | Pliny on Essene vegetarianism | Flagged unverified in the seed file itself. Josephus and Philo are the safe citations. |
-| 1QS 9:4-5 "prayer as sacrifice" as a direct quote | Only a paraphrase exists in our DSS selection. Cite it at reference level ("the Community Rule replaces sacrifice with prayer"), not as quoted words. 1QS 3:4-7, 3:17-19, 8:12-14 **are** verified verbatim in `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`. |
+| 1QS 9:4-5 "prayer as sacrifice" as a direct quote | **Not even a paraphrase** exists in our DSS selection — a repo-wide grep for "offering of the lips" or "fragrance of righteousness" finds only our own analysis files. One of them renders it "in accordance with the **law**" where Vermes has "decree," so it is a misquotation of a passage we don't hold. Cite at reference level ("the Community Rule replaces sacrifice with prayer and righteous living"), never as quoted words. **1QS 3:4-7, 3:17-19 and 8:12-14 are verified verbatim** in `christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md` and can be quoted. |
 | Any Dr. Tabor quotation | All Tabor material in this repo is auto-captioned transcript (`podcast-archive/dr-tabor/`). Attribute his *positions* by paraphrase to his published books; never quote him from a transcript. |
 
 ---
@@ -105,6 +105,14 @@ None of these change the argument. All three are worth knowing so a translation 
 ## Standard reference material (not sourced in this repo)
 
 The *aiōnios* / *kolasis* / *timōria* lexical argument on the hell card is ordinary Greek reference work, but it is **not attested anywhere in this repo** — we have no lexicon file to fall back on. Keep it brief and don't overclaim. The load-bearing argument on that card is Matthew 25:31-46: its judgment criterion is fatal to faith-alone regardless of how *aiōnios* is rendered.
+
+---
+
+## A note on line numbers
+
+This file used to give `file:line` references for the verified 1QS passages. They were wrong by exactly seven lines — because a provenance header was added to that primary-text file the same day, shifting everything below it.
+
+**So: cite the distinctive phrase, not the line number.** A grep for `"neither be purified by atonement"` finds 1QS 3:4-7 forever; `:112` found it for about four hours. Line numbers are fine for a one-off note to yourself and actively misleading in a document meant to be trusted later — which is the same failure in miniature as everything else on this page: a precise-looking reference that stopped being true and kept looking precise.
 
 ---
 

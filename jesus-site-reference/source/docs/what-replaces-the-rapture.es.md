@@ -28,7 +28,7 @@ Tres pasajes — de tres fuentes diferentes — convergen en la misma afirmació
 | **Evangelio de Tomás, Dicho 113** | "El reino del Padre está extendido sobre la tierra, y la gente no lo ve" | Ya está aquí. El problema es la percepción, no el tiempo |
 | **Evangelio de Tomás, Dicho 3** | "Si vuestros líderes os dicen: 'Mirad, el reino está en el cielo,' entonces las aves os precederán" | Mirar hacia afuera o hacia arriba buscando el reino es un error de categoría |
 
-El Evangelio de Tomás es una colección temprana de dichos de Jesús encontrada en Egipto en 1945, probablemente datada entre los años 50-70 d.C. Jesús no enseñó a la gente a esperar el reino. Les dijo que estaban parados en él y no podían verlo. El obstáculo no es el cronograma de Dios — es la ceguera humana.
+El Evangelio de Tomás es una colección de dichos de Jesús encontrada en Egipto en 1945; su datación está en disputa: la erudición mayoritaria la sitúa hacia el 120-140 d.C. y una minoría defiende una capa temprana en torno al 50-70. Jesús no enseñó a la gente a esperar el reino. Les dijo que estaban parados en él y no podían verlo. El obstáculo no es el cronograma de Dios — es la ceguera humana.
 
 ---
 

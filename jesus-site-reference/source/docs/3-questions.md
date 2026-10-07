@@ -80,7 +80,7 @@ Not a new religion. The original one — before it was rewritten.
 
 **[The Dead Sea Scrolls](the-evidence.md#the-dead-sea-scrolls)** (1947) — 950 manuscripts hidden in caves for 2,000 years. They reveal the Essene community Jesus emerged from: shared vocabulary, shared practices, shared theology. Anti-sacrifice. Prayer over blood. A council of twelve.
 
-**[The Gospel of Thomas](the-evidence.md#the-gospel-of-thomas)** (1945) — 114 sayings of Jesus with no crucifixion narrative, no resurrection theology, no Pauline framework. Just his words: the Kingdom within, self-knowledge as salvation, God in all things. Many scholars date its earliest layer to 50–70 CE — potentially before any canonical gospel.
+**[The Gospel of Thomas](the-evidence.md#the-gospel-of-thomas)** (1945) — 114 sayings of Jesus with no crucifixion narrative, no resurrection theology, no Pauline framework. Just his words: the Kingdom within, self-knowledge as salvation, God in all things. Its date is contested — mainstream scholarship puts the collection around 120–140 CE, while a minority argue its earliest layer reaches 50–70, potentially before any canonical gospel.
 
 **[The Ethiopian Bible](the-evidence.md#the-ethiopian-bible)** — 81 books. 15 more than the Western canon. Preserved since the 4th century, never filtered through Nicaea or Rome. Paul's 13 letters are there — but they're 13 out of 35 New Testament books, not 13 out of 27. The additional texts all emphasize what Paul de-emphasized: commandments, works, and the authority of the Twelve who actually knew Jesus.
 

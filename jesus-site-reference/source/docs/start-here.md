@@ -199,7 +199,7 @@ Don't take our word for any of this. The texts are available. The translations e
 ### The Five Texts That Change Everything
 
 **1. [The Gospel of Thomas](https://mrpronoia.com/esoteric-knowledge/gnosticism/gospel-of-thomas/00-overview/)**
-114 sayings of Jesus with no crucifixion, no resurrection narrative, no Pauline theology. Just his words. The Kingdom within. Self-knowledge as salvation. God in all things. Many scholars date the earliest layer to 50-70 CE — potentially before any canonical gospel. *"Whoever drinks from my mouth will become like me."* (Saying 108)
+114 sayings of Jesus with no crucifixion, no resurrection narrative, no Pauline theology. Just his words. The Kingdom within. Self-knowledge as salvation. God in all things. Its date is contested: mainstream scholarship puts the collection around 120-140 CE, while a minority argue an earliest layer near 50-70 — potentially before any canonical gospel. *"Whoever drinks from my mouth will become like me."* (Saying 108)
 
 **2. [The Dead Sea Scrolls](https://mrpronoia.com/esoteric-knowledge/christianity/dead-sea-scrolls/00-overview/)**
 950 manuscripts hidden in caves for 2,000 years, revealing the [Essene community](https://mrpronoia.com/esoteric-knowledge/christianity/2026-02-25-essene-nazarene-ebionite-lineage/) Jesus emerged from. Shared vocabulary ("Spirit of Truth," "children of light," "New Covenant"), shared practices (baptism, communal living, council of 12), shared theology (anti-Temple, [prayer as sacrifice](the-sacrifice-culture.md#what-jesus-actually-said)). The [4QMMT scroll](the-evidence.md#the-works-of-the-law-bombshell) contains the exact phrase — "works of the law" — that Paul argued against.

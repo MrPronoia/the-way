@@ -154,8 +154,16 @@ Jesus's teachings and actions align precisely with the Moses Scroll and the prop
 - "Go and learn what this means: I desire mercy, not sacrifice" (Matthew 9:13, quoting Hosea 6:6)
 - During the temple cleansing, he combined Isaiah 56:7 ("house of prayer for all nations") with Jeremiah 7:11 ("den of thieves") — both anti-sacrifice texts.
 
-**The temple cleansing as coordinated action:**
-According to Mark's Gospel, Jesus scouted the temple the night before (Mark 11:11). The next day, his disciples blocked doorways to prevent animals from being brought in while Jesus freed the animals already inside — goats, rams, and pigeons. This was not a spontaneous protest about dishonest money changers. It was a direct assault on the sacrificial system itself during Passover week, when Josephus records that approximately 250,000 animals were slaughtered. Mark 11:18 states explicitly: "Upon hearing this, the chief priests and scribes began looking for a way to kill him."
+**The temple action, as the texts actually report it:**
+Mark has Jesus enter the temple and look around the evening before, then return the next day (Mark 11:11-15). What the gospels say he then did: he drove out those buying and selling, overturned the tables of the money changers and the seats of the dove sellers (Mark 11:15), and "would not permit anyone to carry anything through the temple" (Mark 11:16). John's independent account names the animals: "he drove all of them out of the temple, both the sheep and the oxen" (John 2:15). The dove sellers matter — doves were the offering of the poor (Leviticus 5:7, 12:8). This was not a protest about dishonest exchange rates; it was an interruption of the sacrificial supply chain, staged during Passover week, when the volume of slaughter was at its annual peak. Mark 11:18 states the consequence explicitly: "When the chief priests and the scribes heard it, they began looking for a way to kill him."
+
+**⚠️ A fabricated narrative was removed here (2026-10-06).** This paragraph previously read:
+
+> ~~"his disciples blocked doorways to prevent animals from being brought in while Jesus freed the animals already inside — goats, rams, and pigeons"~~
+
+**No gospel says any of this.** No text places disciples at the doorways, none says Jesus released animals, and none mentions goats or rams in the temple action at all. Mark 11:16 is a prohibition on carrying objects through the courts, not a blockade; John 2:15 names sheep and oxen, not goats and rams. The scene appears to be a reconstruction that acquired narrative detail in retelling. If the coordinated-action reading is argued, argue it as an inference from Mark 11:11 + 11:16 and label it as one.
+
+**And the slaughter figure was hedged.** It previously read "Josephus records that approximately 250,000 animals were slaughtered." What Josephus actually gives is **255,600 paschal lambs** in a single census (*Jewish War* 6.9.3), a number **widely considered inflated** by modern historians — the count is derived from an improbable crowd estimate. Say "Josephus gives a figure of 255,600 paschal lambs for one Passover (*War* 6.9.3), a number most historians treat as inflated." The argument does not need the number to be accurate; it needs only that the Passover slaughter was industrial in scale, which nobody disputes.
 
 **The greatest commandment exchange:**
 When a scribe told Jesus that loving God and loving neighbor was "better than all burnt offerings and sacrifices," Jesus gave a response he offered to no one else in the Gospels: "You are not far from the kingdom of God" (Mark 12:28-34).
@@ -171,7 +179,7 @@ If the Moses Scroll's expanded commandments are original — "do not hate your b
 
 A geographical and ideological pattern connects multiple anti-sacrifice groups to the same region where the scroll was found:
 
-- **The Essenes** — Based near Qumran by the Dead Sea. Rejected animal sacrifice and the temple cult. Documented as vegetarian by Josephus, Philo, and Pliny the Elder. Josephus described them as "Pythagorean" in character.
+- **The Essenes** — Based near Qumran by the Dead Sea. Withdrew from the temple cult; Philo attests directly that they do not sacrifice animals. Josephus described them as "Pythagorean" in character. **Corrected 2026-10-06:** this line previously read ~~"Documented as vegetarian by Josephus, Philo, and Pliny the Elder"~~ — **Pliny says nothing about Essene diet**, and Philo attests non-*sacrifice*, which is a different claim. The only witness who actually asserts abstention from animal food is **Porphyry** (*De abstinentia*), third-century and largely paraphrasing Josephus. The vegetarian claim rests on one late source; the anti-sacrifice claim is solid. Don't say "four independent historians." See `../questions/nazarene-sect-sacrifice-and-diet.md`.
 - **The Nazarenes** — Documented by the church father Epiphanius as living in Trans-Jordan (east of the Jordan River). They "believe Moses received some legislation, but not this legislation ... they would not offer sacrifice or eat meat because they believed it was unlawful" (Epiphanius, *Panarion*).
 - **The Ebionites** — Hebrew *ebionym* means "the poor ones" (cf. "Blessed are the poor"). Followers of James the Just, Jesus's brother. Rejected Paul, rejected animal sacrifice, practiced vegetarianism. Hegesippus recorded that James himself was "vegetarian from birth."
 - **Joshua 22** — The tribes of Reuben, Gad, and half-Manasseh built an altar in Trans-Jordan explicitly "not for sacrifice."

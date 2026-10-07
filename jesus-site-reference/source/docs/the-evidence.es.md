@@ -22,7 +22,7 @@ El Dr. James Tabor (doctorado de la Universidad de Chicago, Profesor Emérito en
 | 2 | **Mesiánicos** — esperaban al Mesías davídico | Regla Mesiánica (1QSa) | Toda la narrativa evangélica |
 | 3 | **Isaías 40:3** como declaración de misión | Regla de la Comunidad (1QS 8:14) | Aplicado a Juan el Bautista (Marcos 1:3) |
 | 4 | **Pueblo del "Nuevo Pacto"** | Documento de Damasco | Última Cena: "Esta copa es el nuevo pacto" (Lucas 22:20) |
-| 5 | **"Hijos de la Luz"** — esta frase exacta | Regla de la Comunidad (1QS 1:9) | Juan 12:36; 1 Tesalonicenses 5:5 |
+| 5 | **"Hijos de la Luz"** — autodesignación sectaria, no vocabulario bíblico | Regla de la Comunidad (1QS 1:9) | Juan 12:36; Lucas 16:8; 1 Tesalonicenses 5:5 |
 | 6 | **Inmersión en agua** para iniciación | Regla de la Comunidad (1QS 3:4-9) | El bautismo de Juan; la continuación de Jesús |
 | 7 | **Profeta como Moisés** | 4QTestimonia | Hechos 3:22; 7:37 |
 | 8 | **Énfasis en el Espíritu Santo** | Regla de la Comunidad (1QS 3:7) | Pentecostés; "Espíritu de verdad" (Juan 14:17) |
@@ -31,13 +31,13 @@ El Dr. James Tabor (doctorado de la Universidad de Chicago, Profesor Emérito en
 | 11 | **Anti-Templo** — sacerdocio corrupto | Documento de Damasco | Purificación del Templo (Marcos 11:15-17) |
 | 12 | **Oración como sacrificio** — el cuerpo como templo | Regla de la Comunidad (1QS 9:4-5) | "Misericordia quiero, y no sacrificio" (Mateo 9:13) |
 
-La frase **"Espíritu de verdad"** aparece en solo dos tradiciones textuales antiguas: los Rollos del Mar Muerto y el Evangelio de Juan. Jesús usaba vocabulario esenio.
+La frase **"Espíritu de verdad"** se concentra de manera llamativa en los Rollos del Mar Muerto y en el Evangelio de Juan — contrapuesta en ambos a un "espíritu de engaño." También aparece en los Testamentos de los Doce Patriarcas (T. Judá 20), por lo que no es exclusiva de esas dos tradiciones; lo notable es la densidad y el marco compartido de espíritus opuestos. El vocabulario del movimiento de Jesús es vocabulario sectario del Segundo Templo, más que vocabulario bíblico corriente.
 
 ### La Revelación de las "Obras de la Ley"
 
 En 1994, los académicos publicaron un rollo llamado **4QMMT** — una carta legal del liderazgo de Qumrán. Su título hebreo se traduce como "Algunas de las Obras de la Torá."
 
-La línea final: *"Te será contado como justicia cuando hagas lo que es recto y bueno delante de Él."*
+La línea final: *"Te será contado como justicia, por cuanto has hecho lo que es recto y bueno delante de Él."* (4QMMT C 31)*
 
 Esta es la frase exacta contra la que Pablo argumentó:
 
@@ -64,7 +64,7 @@ En 1945, un campesino en Nag Hammadi, Egipto, desenterró una jarra de arcilla s
 
 ### Por Qué Importa
 
-Muchos académicos fechan la capa más antigua de Tomás entre **50-70 d.C.** — potencialmente anterior a cualquier evangelio canónico. Si es así, es lo más cercano que tenemos a lo que Jesús realmente enseñó antes de que Pablo remodelara el mensaje.
+La datación está genuinamente en disputa. La erudición mayoritaria sitúa la colección tal como la tenemos alrededor del **120-140 d.C.**; una minoría (Koester, Patterson) defiende una capa temprana del **50-70 d.C.**, y el modelo de DeConick propone un núcleo antiguo con añadidos posteriores. Según esa lectura del núcleo, Tomás conserva material de dichos más cercano a Jesús que los evangelios canónicos — una posibilidad real que merece ponderarse, no un hecho establecido.
 
 El Jesús de Tomás no quiere ser adorado. Quiere que te **conviertas en lo que él era** — que descubras la misma identidad divina dentro de ti mismo: *"Quien beba de mi boca se volverá como yo."* (Dicho 108)
 

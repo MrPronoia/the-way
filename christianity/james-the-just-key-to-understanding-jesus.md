@@ -57,7 +57,9 @@ The Epistle of James itself reads as a Two Ways document -- the same ethical fra
 
 This is where James becomes evidence not just for the early church but for Jesus himself.
 
-Hegesippus records that James was vegetarian *from birth*. Not by later choice. From birth. This means Mary and Joseph raised at least one child as a vegetarian from the beginning. If the household practiced vegetarianism as a religious discipline -- consistent with the Essene and Nazarene traditions documented by Josephus, Philo, Pliny, and Epiphanius -- then Jesus was raised in the same household, under the same dietary practice.
+Hegesippus records that James was vegetarian *from birth*. Not by later choice. From birth. This means Mary and Joseph raised at least one child as a vegetarian from the beginning. If the household practiced vegetarianism as a religious discipline -- consistent with the Essene and Nazarene traditions -- then Jesus was raised in the same household, under the same dietary practice.
+
+**Attribute the dietary parallel carefully (corrected 2026-10-06).** This sentence previously cited the practice as "documented by Josephus, Philo, Pliny, and Epiphanius." For *diet* specifically: **Epiphanius** does report the Nazarene/Ebionite refusal to eat meat (*Panarion* 18, 30), and that is the usable citation here. Of the three historians, **Philo** attests non-*sacrifice* rather than diet, **Pliny says nothing about diet at all**, and **Josephus**'s "dish of vegetables with salt" is likely a conflation with Philo's Therapeutae (*De vita contemplativa* 37). The only ancient writer who asserts Essene abstention from animal food is **Porphyry** (3rd c., derivative). The Hegesippus testimony about James stands on its own and is the strongest item in this paragraph -- it does not need propping up with a witness list that doesn't say what it's cited for. See `../questions/nazarene-sect-sacrifice-and-diet.md`.
 
 The logic is straightforward:
 
@@ -121,7 +123,7 @@ The fact that this figure -- Jesus's own brother, the leader of the movement for
 |-----------|------------------|--------|
 | **Buddhism** | Right action as the path -- the Eightfold Path is behavioral, not creedal | Dhammapada; Pali Canon |
 | **Hinduism** | Karma Yoga -- salvation through right action, not belief alone | Bhagavad Gita 3:4-9 |
-| **Judaism (Essene)** | "Congregation of the Ebionim" -- the Poor Ones who lived by practice | Dead Sea Scrolls, Community Rule (1QS) |
+| **Judaism (Essene)** | Voluntary poverty and communal property -- a community defined by practice rather than confession | Dead Sea Scrolls, Community Rule (1QS 6:17-22). **Corrected 2026-10-06:** this row previously read ~~"'Congregation of the Ebionim' -- the Poor Ones"~~ attributed to 1QS. **Unverified** -- "ebion" and "poor ones" return zero hits in `dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md`, and the claim is on the do-not-use list in `../questions/CITATION-NOTES.md`. |
 | **Taoism** | "The Tao that can be spoken is not the eternal Tao" -- truth is lived, not declared | Tao Te Ching, Chapter 1 |
 | **Islam** | Faith requires works -- "Those who believe and do righteous deeds" appears 50+ times in the Quran | Quran 2:25, 2:82, 4:57, et al. |
 | **Didache / Two Ways** | Behavioral catechism -- converts taught what to *do*, not what to *believe* | Didache 1-6 (c. 50-120 CE) |

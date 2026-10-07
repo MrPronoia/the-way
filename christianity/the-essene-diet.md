@@ -368,7 +368,9 @@ The Essene Diet isn't isolated — these principles appear across traditions:
 
 The Essene Gospel of Peace was published by Edmond Bordeaux Szekely, who claimed to have found Aramaic manuscripts in the Vatican archives and Slavonic manuscripts in the Habsburg archives. These manuscripts have never been independently verified. Scholarly consensus leans toward 20th-century composition.
 
-**However:** The dietary and lifestyle principles in the text are fully consistent with what Josephus, Philo, Pliny, and the Dead Sea Scrolls document about the historical Essenes. The teachings also align with cross-tradition wisdom (Ayurveda, Buddhism, Pythagoreanism). Whether the text is ancient or a modern synthesis of authentic traditions, the practices themselves are grounded in verifiable sources.
+**However:** The lifestyle principles in the text — communal simplicity, ritual purity, voluntary poverty, withdrawal from the Temple cult — are consistent with what Josephus, Philo, Pliny, and the Dead Sea Scrolls document about the historical Essenes. **Be careful with the *dietary* half of that sentence (corrected 2026-10-06).** It used to read "the dietary and lifestyle principles ... are fully consistent with what Josephus, Philo, Pliny, and the Dead Sea Scrolls document." On diet specifically: **Pliny says nothing**, **Philo** attests non-*sacrifice*, and **Josephus**'s "dish of vegetables with salt" is probably a conflation with Philo's Therapeutae (*De vita contemplativa* 37). **Porphyry** (3rd c., derivative) is the only ancient writer who asserts Essene abstention from animal food. So: "consistent with" is fair; "documented by four historians" is not. See `../questions/nazarene-sect-sacrifice-and-diet.md`.
+
+The teachings also align with cross-tradition wisdom (Ayurveda, Buddhism, Pythagoreanism). Whether the text is ancient or a modern synthesis of authentic traditions, the practices themselves are grounded in verifiable sources.
 
 ---
 

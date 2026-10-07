@@ -71,13 +71,15 @@ The Dead Sea Scrolls describe a sacred communal meal with striking parallels to 
 
 > "And when the table has been prepared for eating, and the new wine for drinking, the Priest shall be the first to stretch out his hand to bless the first-fruits of the bread and new wine."
 
-| Feature | Essene Sacred Meal | Didache Eucharist | Paul's Eucharist |
+| Feature | Essene Sacred Meal | Didache Eucharist (ch. 9-10) | Paul's Eucharist |
 |---------|-------------------|-------------------|------------------|
 | Elements | Bread and wine | Bread and wine | Bread and wine |
 | Blood symbolism | None | None | Central |
-| Sacrifice symbolism | None | None | Central |
 | Death reference | None | None | Central |
+| Jesus's death as sacrifice | None | None | Central |
 | Communal gathering | Yes | Yes | Yes |
+
+One precision worth keeping: the Didache's **prayers** (chapters 9-10) contain no body, blood, or death language at all. Chapter 14 does use the word *sacrifice* — four times, quoting Malachi 1:11 — but it applies it to **the assembly's own Lord's-Day offering**, gated on confessing sins and reconciling with a neighbour. It never once applies it to Jesus's death. That distinction is the whole point: the earliest Christians had a concept of sacrifice, and it was theirs to offer rather than his to pay.
 
 The Essene meal and the Didache meal are structurally continuous. Bread and wine, blessed in community, with no sacrificial overtones. Paul's version introduces an entirely new theological layer — body, blood, death, covenant — that appears in neither predecessor.
 
@@ -89,7 +91,7 @@ The earliest recoverable Christian communion was a thanksgiving meal — a praye
 
 Paul's version is something categorically different. It is a death memorial. The bread is a body. The cup is blood. The meal "proclaims the Lord's death until he comes." The teacher's life and wisdom are replaced by the teacher's corpse and blood.
 
-The Didache's silence on blood atonement is not an omission. It is a theological statement. A community that knew Paul's Eucharist theology and agreed with it would not have written chapters 9-10. The absence of sacrifice language is the evidence. As the Hebrew prophets had already declared: "I desire mercy, not sacrifice" (Hosea 6:6, quoted twice by Jesus in Matthew 9:13 and 12:7).
+The Didache's silence on blood atonement is not an omission. It is a theological statement. A community that knew Paul's Eucharist theology and agreed with it would not have written chapters 9-10. The absence of that language in the prayers is the evidence. As the Hebrew prophets had already declared: "I desire mercy, not sacrifice" (Hosea 6:6, quoted twice by Jesus in Matthew 9:13 and 12:7).
 
 The question is simple: which version is more likely to reflect what the original movement actually practiced — the one that claims to come from the Twelve, or the one that claims to come from [Paul's private revelation](the-paul-problem.md)?
 

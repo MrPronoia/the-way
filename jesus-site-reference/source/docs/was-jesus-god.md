@@ -69,7 +69,7 @@ These passages receive far less attention, but they are red text — Jesus's own
 
 ## The Gospel of Thomas — The Clearest Red Text on This Question
 
-The Gospel of Thomas — an early collection of Jesus sayings found in Egypt in 1945, likely dating to 50-70 CE — preserves a sayings tradition that many scholars argue predates or parallels the canonical gospels (Koester, Patterson, DeConick). On this question, Thomas is unambiguous.
+The Gospel of Thomas — a collection of Jesus sayings found in Egypt in 1945, whose dating is contested (mainstream c. 120-140 CE, with a minority arguing for an early layer around 50-70) — preserves a sayings tradition that many scholars argue predates or parallels the canonical gospels (Koester, Patterson, DeConick). On this question, Thomas is unambiguous.
 
 ### Saying 108 — The Goal Is Becoming
 

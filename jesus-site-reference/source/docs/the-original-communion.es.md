@@ -1,6 +1,6 @@
 # La Comunión Original
 
-La Didaché — título completo *La Enseñanza de los Doce Apóstoles* — es uno de los documentos cristianos más antiguos que se conservan, fechado por la mayoría de los estudiosos entre el 50 y el 120 d.C. Su liturgia de comunión contiene una oración eucarística completa. La copa representa "la santa vid de David." El pan representa "vida y conocimiento." No hay mención de cuerpo, sangre, sacrificio, muerte ni expiación. Ninguna. Cuando se coloca junto al texto de comunión de Pablo en 1 Corintios 11 — "Esto es mi cuerpo... esta copa es el nuevo pacto en mi sangre... la muerte del Señor anunciáis hasta que él venga" — el contraste es marcado. Uno es una comida de acción de gracias. El otro es un memorial de sacrificio de sangre. Ambos afirman representar lo que Jesús enseñó.
+La Didaché — título completo *La Enseñanza de los Doce Apóstoles* — es uno de los documentos cristianos más antiguos que se conservan, fechado por la mayoría de los estudiosos entre el 50 y el 120 d.C. Su liturgia de comunión contiene una oración eucarística completa. La copa representa "la santa vid de David." El pan representa "vida y conocimiento." En las oraciones eucarísticas (capítulos 9-10) no hay mención alguna de cuerpo, sangre, muerte ni expiación, y no se atribuye ningún sacrificio a Jesús. Cuando se coloca junto al texto de comunión de Pablo en 1 Corintios 11 — "Esto es mi cuerpo... esta copa es el nuevo pacto en mi sangre... la muerte del Señor anunciáis hasta que él venga" — el contraste es marcado. Uno es una comida de acción de gracias. El otro es un memorial de sacrificio de sangre. Ambos afirman representar lo que Jesús enseñó.
 
 ---
 
@@ -75,7 +75,7 @@ Los Rollos del Mar Muerto describen una comida comunitaria sagrada con paralelos
 |---------|-------------------|-------------------|------------------|
 | Elementos | Pan y vino | Pan y vino | Pan y vino |
 | Simbolismo de sangre | Ninguno | Ninguno | Central |
-| Simbolismo de sacrificio | Ninguno | Ninguno | Central |
+| La muerte de Jesús como sacrificio | Ninguno | Ninguno | Central |
 | Referencia a la muerte | Ninguna | Ninguna | Central |
 | Reunión comunitaria | Sí | Sí | Sí |
 
@@ -89,7 +89,9 @@ La comunión cristiana más antigua recuperable era una comida de acción de gra
 
 La versión de Pablo es algo categóricamente diferente. Es un memorial de muerte. El pan es un cuerpo. La copa es sangre. La comida "anuncia la muerte del Señor hasta que él venga." La vida y la sabiduría del maestro son reemplazadas por el cadáver y la sangre del maestro.
 
-El silencio de la Didaché sobre la expiación por sangre no es una omisión. Es una declaración teológica. Una comunidad que conocía la teología eucarística de Pablo y estaba de acuerdo con ella no habría escrito los capítulos 9-10. La ausencia de lenguaje sacrificial es la evidencia. Como los profetas hebreos ya habían declarado: "Misericordia quiero, y no sacrificio" (Oseas 6:6, citado dos veces por Jesús en Mateo 9:13 y 12:7).
+El silencio de la Didaché sobre la expiación por sangre no es una omisión. Es una declaración teológica. Una comunidad que conocía la teología eucarística de Pablo y estaba de acuerdo con ella no habría escrito los capítulos 9-10. La ausencia de ese lenguaje en las oraciones es la evidencia.
+
+Conviene ser preciso: el capítulo 14 de la Didaché **sí** emplea la palabra *sacrificio* (cuatro veces, citando Malaquías 1:11), pero siempre referida a **la ofrenda de la propia asamblea** en el día del Señor — condicionada a la confesión de los pecados y a la reconciliación con el prójimo. Nunca se aplica a la muerte de Jesús. Esa distinción es justamente el punto: los primeros cristianos tenían un concepto de sacrificio, y era el que ellos ofrecían, no el que él pagaba. Como los profetas hebreos ya habían declarado: "Misericordia quiero, y no sacrificio" (Oseas 6:6, citado dos veces por Jesús en Mateo 9:13 y 12:7).
 
 La pregunta es simple: ¿qué versión tiene más probabilidades de reflejar lo que el movimiento original realmente practicaba — la que afirma provenir de los Doce, o la que afirma provenir de [la revelación privada de Pablo](the-paul-problem.md)?
 
