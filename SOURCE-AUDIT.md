@@ -126,7 +126,7 @@ Worth stating, because the list above is lopsided by design — it's a defect re
 
 `christianity/cliff-notes-quick-reference.md` presents the Epistula Apostolorum as anti-Paul evidence: Paul comes *"to root up the church,"* God will *"turn back"* his *"evil desire,"* Paul is *"the last of the last."* All four fragments are verbatim.
 
-But the same two chapters in our own `ethiopian-bible/epistula-apostolorum.md` are **strongly pro-Paul**. "Root up the church" is his *pre-conversion* intent, which Jesus then reverses — and "the last of the last" opens a sentence of commendation:
+But the same two chapters in our own `christianity/ethiopian-bible/epistula-apostolorum.md` are **strongly pro-Paul**. "Root up the church" is his *pre-conversion* intent, which Jesus then reverses — and "the last of the last" opens a sentence of commendation:
 
 > "…he shall abide with the elect, as **a chosen vessel and a wall that shall not be overthrown**, yea, **the last of the last shall become a preacher unto the Gentiles, made perfect by the will of my Father**."
 
