@@ -33,6 +33,7 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | Start here if you want… | Go to |
 |---|---|
 | **To get oriented as a new contributor** | `ONBOARDING.md` — what a repo is, how to send us material, what's already here, which AI model to use |
+| **To see what needs doing** | `ROADMAP.md` — the working to-do list, prioritized |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
 | **The hard questions, answered from the sources** | `questions/00-INDEX.md` — fourteen cards: the claim, the evidence, the questions people raise, and honest responses |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |
@@ -121,7 +122,7 @@ Broader cross-tradition perennial philosophy, comparative mysticism, and tangent
 
 ## Status
 
-**Public, October 2026.** Anyone can read, clone, and use everything here — no account or invitation needed. Contributors are being onboarded; see `ONBOARDING.md` for how to send material and `CONTRIBUTING.md` for the mechanics. Because the repo is public, **don't add copyrighted books** — short quotations with citations, public-domain texts, and your own notes only.
+**Public, October 2026.** Anyone can read, clone, and use everything here — no account or invitation needed. Because it's public, accuracy work takes priority over new content: see `ROADMAP.md` for what's open and `questions/CITATION-NOTES.md` for citations we've found wrong in our own research and corrected. Contributors are being onboarded; see `ONBOARDING.md` for how to send material and `CONTRIBUTING.md` for the mechanics. Because the repo is public, **don't add copyrighted books** — short quotations with citations, public-domain texts, and your own notes only.
 
 ---
 
