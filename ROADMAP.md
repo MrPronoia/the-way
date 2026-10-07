@@ -10,7 +10,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 
 | # | Item | Why it's P0 | Status |
 |---|---|---|---|
-| 1 | **Source audit** | **Done — see `SOURCE-AUDIT.md`.** Four passes, ~2,900 claims. Found **9 more fabricated citations**, 34 absolutes that break on one counterexample, 13 quotations lifted from podcast captions, and one footnote error that caused sitewide Thomas quotation drift. The fixes below come out of it. | ✅ |
+| 1 | **Source audit** | **Done — diagnosis in `SOURCE-AUDIT.md`, work list in `FIX-LIST.md`.** Four passes, ~2,900 claims. Found **19 fabricated citations**, ~50 absolutes that break on one counterexample, 15 quotations lifted from podcast captions, 5 famous misattributions, and one footnote error that caused sitewide Thomas quotation drift. **106 actionable items**, sorted into fix / narrow / homework. | ✅ |
 | 1a | **Fix the public pages** | Highest cost of being wrong — strangers read these and owe us no benefit of the doubt. The absolutes and the Thomas-translation problem are the two biggest. Several already fixed 2026-10-07. | Partly done |
 | 1b | **Fix the Meyer-2007 error at its root, then reconcile every Thomas quotation** | `gnosticism/gospel-of-thomas/00-overview.md` claims Lambdin's translation is in Meyer 2007. It isn't — Meyer 2007 prints Meyer's own. That one footnote licensed eight-plus files to credit Lambdin while quoting Meyer, including a public page whose argument rests on a word Lambdin doesn't use. Thomas 113 now exists in six wordings. | Not started |
 | 1c | **Retire or properly source the 13 podcast-origin quotations** | Where a real book exists, get the page number. Where the subject is identified only by role ("The Baptist Preacher"), don't quote it at all. | Partly done |
