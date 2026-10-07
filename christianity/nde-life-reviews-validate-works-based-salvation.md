@@ -2,9 +2,15 @@
 
 Thousands of near-death experiences have been documented by medical researchers since the 1970s. The accounts span cultures, religions, ages, and continents. They disagree on details -- the specific imagery, the religious figures encountered, the landscapes described. But on one point they are remarkably consistent: **during the life review, people are evaluated by their actions and their capacity to love -- never by their doctrinal beliefs.**
 
-No NDE account in the published literature reports being asked, "Did you accept Jesus as your personal savior?" No experiencer has described a checkpoint where correct theology was verified. No one has been told their sins were covered by blood atonement. Instead, the questions are simple: *What did you learn? How did you love? What did you do with the time you were given?*
+In the accounts collected by the researchers cited below, the questions reported are simple: *What did you learn? How did you love? What did you do with the time you were given?*
 
-This pattern is suggestive, not proof. NDEs are subjective experiences, not controlled experiments. But the consistency of the pattern across thousands of independent accounts -- many from devout Christians who expected a very different reception -- raises a question worth sitting with: **what if the life review confirms the gospel Jesus actually preached, and contradicts the gospel Paul built in his name?**
+> **⚠️ Universal negatives removed from this paragraph (2026-10-07).** It previously read: ~~"**No** NDE account in the published literature reports being asked, 'Did you accept Jesus as your personal savior?' **No** experiencer has described a checkpoint where correct theology was verified. **No one** has been told their sins were covered by blood atonement."~~
+>
+> **Those claims are false as stated, and one counterexample defeats all three.** There is an entire evangelical NDE genre reporting exactly the structure they deny: Bill Wiese, *23 Minutes in Hell* (2006); Don Piper, *90 Minutes in Heaven* (2004); Maurice Rawlings, *Beyond Death's Door* (1978). The academic literature on distressing NDEs is also substantial — see Greyson & Bush, "Distressing Near-Death Experiences," *Psychiatry* 55 (1992). Claiming "no account anywhere" about a popular literature of thousands of self-published testimonies is unverifiable in principle and trivially refutable in practice.
+>
+> **The defensible claim is comparative, not absolute:** in the peer-reviewed research corpus, the life review is consistently reported as an evaluation of actions and capacity to love, and doctrinal-checkpoint reports are concentrated in devotional literature written to confirm a prior theology. That is a real and interesting asymmetry. It is also a claim that survives someone going to the library.
+
+This pattern is suggestive, not proof — and the limits are worth stating plainly rather than buried at the end. NDEs are subjective experiences, not controlled experiments; the corpus is self-selected; and experiencers' reports are shaped by their own frameworks, which cuts both ways. What makes the pattern worth sitting with is not that it proves anything, but the question it raises: **what if the life review looks more like the gospel Jesus preached than the gospel Paul built in his name?**
 
 ---
 
@@ -27,7 +33,9 @@ In other words, "Do unto others as you would have them do unto you" is not advic
 
 ## The Research Base
 
-NDE research is not fringe. It spans five decades of academic investigation:
+NDE research is not fringe. It spans five decades of academic investigation — but **keep the tiers separate**, because an opponent will.
+
+The first five rows are peer-reviewed or university-based researchers; van Lommel's *Lancet* study is the strongest single citation in this file. The last three are **not** of that kind, and listing them in the same table under "five decades of academic investigation" is the error this table previously made: Musgrave's three statistics carry no citation at all, Zigarelli's paper has a title but no journal or publisher, and Melissa Denyce is an independent content creator rather than a researcher. **Cite the first five. Mention the rest as what they are, or not at all.**
 
 | Researcher | Key Contribution | Significance |
 |------------|-----------------|--------------|
@@ -36,9 +44,9 @@ NDE research is not fringe. It spans five decades of academic investigation:
 | **Dr. Bruce Greyson** | *After* (2021); "Near-Death Experiences and Spirituality" (2006) | PhD psychiatrist at UVA; developed the Greyson Scale for measuring NDE depth; preeminent scholar in the field |
 | **Dr. Pim van Lommel** | *Consciousness Beyond Life* (2007); prospective study in *The Lancet* (2001) | Dutch cardiologist who conducted the largest prospective NDE study -- 344 cardiac arrest patients across 10 hospitals |
 | **Dr. Michael Sabom** | *Recollections of Death* (1982) | Cardiologist who documented veridical perceptions during NDEs -- details patients could not have known through normal means |
-| **Cassandra Musgrave** | Survey of 51 NDE experiencers | Found 82% became more compassionate after their NDE; 89% reported decreased fear of death; belief in God rose from 24% to 82% |
-| **Michael Zigarelli** | "Near-Death Experiences and the Emerging Implications for Christian Theology" (2024) | Academic analysis showing NDEs support some elements of Christian theology while contradicting others |
-| **Melissa Denyce** | Independent NDE cataloger and content creator (Love Covered Life) | Extensive cataloging of NDE accounts showing consistent works-based evaluation; analysis of how NDE findings contradict blood atonement theology |
+| **Cassandra Musgrave** ⚠️ | Survey of 51 NDE experiencers | 82% more compassionate; 89% decreased fear of death; belief in God 24% → 82%. **Three precise statistics with no citation whatever** — no journal, no year, no publication. Do not quote these numbers until the source is found. |
+| **Michael Zigarelli** ⚠️ | "Near-Death Experiences and the Emerging Implications for Christian Theology" (2024) | Title only — **no journal, publisher, or venue given.** Locate it before citing. |
+| **Melissa Denyce** ⚠️ | Independent NDE cataloger and content creator (Love Covered Life) | **Not a researcher**, and should not sit in a table headed "five decades of academic investigation." A useful collector of accounts; cite as a content creator or not at all. |
 
 An estimated 5% of the general population reports some kind of NDE. That translates to millions of accounts worldwide. The elements are consistent enough that researchers have identified a core pattern: the tunnel, the light, the life review, the encounter with deceased relatives or a being of unconditional love, and the choice or instruction to return.
 
@@ -48,15 +56,23 @@ The life review specifically is where the theological implications become unavoi
 
 ## Named NDE Accounts and What They Reveal
 
+> **⚠️ Read this before quoting anything in this section (added 2026-10-07).**
+>
+> An audit found that **seven quotations below trace only to auto-generated captions of podcast episodes** — `podcast-archive/the-jesus-way/11-christian-ndes-saved-by-works.md` and `028-nde-researcher-life-reviews-disprove-blood-atonement.md` — with no published source anywhere in this repo. In episode 11 the host says on air, *"I'm going to try to quote verbatim exactly what he says,"* which means the chain is: an experiencer's book → a researcher retelling it → a host paraphrasing from memory → an auto-caption → this file. Four removes, with quotation marks added at the end.
+>
+> One case shows how far it went. The Howard Storm shrine quote below was presented as from *My Descent Into Death* (2005). The transcript actually reads: *"I don't need people to **come and** worship me. **What I want you to do is** go back to earth and love the person **that** you're with."* The wording here was **tightened** and the citation **upgraded from a podcast caption to a published book**. That is precisely the pattern that produced five fabricated citations found in this repo on 2026-10-06 — see `../questions/CITATION-NOTES.md`.
+>
+> **Treat every quotation in this section as unverified.** The accounts are real and the books exist; what we don't have is a checked quotation from any of them. **Before using any of this publicly, get the book and the page number.** Three of the subjects below are identified only by role ("The Baptist Preacher," "The Devout Baptist Man," "The Female Pastor") with no name and no source at all — those should not be quoted under any circumstances until someone identifies them.
+
 ### Howard Storm (Atheist Art Professor)
 
 Howard Storm's NDE is one of the most extensively documented in the literature. An atheist professor of art at Northern Kentucky University, Storm experienced a hellish NDE during a medical emergency in Paris in 1985. After crying out for help, he was rescued by a being of light he identified as Jesus. During his subsequent experience, Storm asked Jesus directly: **"What is the correct religion?"**
 
 Jesus's answer: *"There are good people in bad religions and bad people in good religions. The right religion is the one that brings you closest to God."*
 
-When Storm offered to build a shrine in Jesus's honor, Jesus responded: *"I have no purpose for a shrine. I don't need people to worship me. Go back to earth and love the person you're with."*
+When Storm offered to build a shrine in Jesus's honor, Jesus responded — **as relayed on a podcast, not as quoted from Storm's book**: *"I have no purpose for a shrine. I don't need people to come and worship me. What I want you to do is go back to earth and love the person that you're with."* (Wording restored to the transcript it actually came from. **Verify against *My Descent Into Death* before using.**)
 
-Storm's account is published in *My Descent Into Death* (2005) and has been independently corroborated through medical records.
+Storm's account is published as *My Descent Into Death: A Second Chance at Life* (Doubleday, 2005). **Removed 2026-10-07:** the claim that it "has been independently corroborated through medical records" — that was unsourced, and medical records could not corroborate the content of an experience in any case. Worth knowing for context, and worth saying yourself: Storm later became an ordained United Church of Christ pastor, and his own account is explicitly Christian — he is not a neutral witness against Christian theology, and presenting him as one invites having his conclusions read back at us.
 
 ### Erica McKenzie (Registered Nurse)
 

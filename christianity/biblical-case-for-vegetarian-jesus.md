@@ -254,7 +254,7 @@ The convergence is significant. These traditions developed across different cent
 | **Hegesippus** (via Eusebius) | 2nd century CE | Church historian | James the Just: vegetarian from birth |
 | **Clement of Alexandria** | c. 200 CE | Church father | Matthew ate seeds, nuts, fruits, vegetables -- no flesh |
 | **Acts of Thomas** | 1st-2nd century CE | Early Christian text | Thomas: continual fasting, abstained from flesh |
-| **Clementine Homilies** | 2nd-3rd century CE | Jewish Christian text | Peter: flesh-eating "as polluting as heathen worship of devils" |
+| **Clementine Homilies** | 2nd-3rd century CE | Jewish Christian text | Peter lives on "bread and olives, and rarely pot-herbs" (*Hom.* 12.6, double-attested at *Rec.* 7.6); believers are "to abstain from the table of devils, not to taste dead flesh, not to touch blood" (*Hom.* 7.4). **Both verified verbatim.** The "as polluting as heathen worship of devils" line formerly in this row is **fabricated** — see the retraction in the Peter section above. |
 | **Eusebius** | c. 313 CE | Father of Church History | "The twelve apostles embraced abstinence from wine and meat" |
 | **Council of Ancyra** | 314 CE | Church council canon | Forced priests to at least taste meat -- proving widespread abstention |
 | **Gospel of the Ebionites** | Quoted 4th c. (Epiphanius, *Panarion* 30.22.4) | Jewish Christian gospel, known only via a hostile witness who calls this reading their alteration | "I have no desire to eat the flesh of this Passover lamb" -- evidence of Ebionite belief, not of Jesus's words |
@@ -301,7 +301,7 @@ The evidence does not come from a single source or a single century. It spans ca
 - **St. Jerome** (c. 347-420 CE) -- *Against Jovinianus*, Book 1; Letter 75 ("The Nazarenes also reject animal food"); references to Hebrew Gospel of Matthew
 - **Epiphanius of Salamis** (c. 310-403 CE) -- *Panarion* Ch. 18, 29, 30 (Nazarene and Ebionite beliefs and practices)
 - **St. John Chrysostom** (c. 349-407 CE) -- On the saints' gentleness toward all creatures
-- **Clementine Homilies** (2nd-3rd century CE) -- 12.6 (Peter on flesh-eating)
+- **Clementine Homilies** (2nd-3rd century CE) -- 12.6 (Peter's diet: bread, olives, rarely pot-herbs) and 7.4 ("not to taste dead flesh, not to touch blood"); both verified verbatim in `Incoming/clementine-homilies-full-text.md`. Note 7.8 defines "the table of devils" as the Acts 15 list, which is a regulatory rather than abstentionist reading -- concede it rather than be shown it.
 - **Acts of Thomas** (1st-2nd century CE) -- Thomas's dietary practice
 - **Council of Ancyra** (314 CE) -- Canon 14 (clergy forced to taste meat)
 - **Pliny the Younger** (c. 112 CE) -- Letter to Trajan on Christian practices

@@ -34,6 +34,7 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 |---|---|
 | **To get oriented as a new contributor** | `ONBOARDING.md` — what a repo is, how to send us material, what's already here, which AI model to use |
 | **To see what needs doing** | `ROADMAP.md` — the working to-do list, prioritized |
+| **To know how reliable a claim is** | `SOURCE-AUDIT.md` — what's verified, what can't be checked here, and what we found wrong in our own work |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
 | **The hard questions, answered from the sources** | `questions/00-INDEX.md` — fourteen cards: the claim, the evidence, the questions people raise, and honest responses |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |

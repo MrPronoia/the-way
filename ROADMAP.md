@@ -10,7 +10,12 @@ Working to-do list for The Way. Current as of 2026-10-07.
 
 | # | Item | Why it's P0 | Status |
 |---|---|---|---|
-| 1 | **Source audit — the list of what we can't verify** | Five fabricated citations were found on 2026-10-06, all with the same signature: quotation marks plus a precise-looking citation and no primary text to check it against. We don't yet know how many more there are. Output goes to `SOURCE-AUDIT.md`. | **In progress** |
+| 1 | **Source audit** | **Done — see `SOURCE-AUDIT.md`.** Four passes, ~2,900 claims. Found **9 more fabricated citations**, 34 absolutes that break on one counterexample, 13 quotations lifted from podcast captions, and one footnote error that caused sitewide Thomas quotation drift. The fixes below come out of it. | ✅ |
+| 1a | **Fix the public pages** | Highest cost of being wrong — strangers read these and owe us no benefit of the doubt. The absolutes and the Thomas-translation problem are the two biggest. Several already fixed 2026-10-07. | Partly done |
+| 1b | **Fix the Meyer-2007 error at its root, then reconcile every Thomas quotation** | `gnosticism/gospel-of-thomas/00-overview.md` claims Lambdin's translation is in Meyer 2007. It isn't — Meyer 2007 prints Meyer's own. That one footnote licensed eight-plus files to credit Lambdin while quoting Meyer, including a public page whose argument rests on a word Lambdin doesn't use. Thomas 113 now exists in six wordings. | Not started |
+| 1c | **Retire or properly source the 13 podcast-origin quotations** | Where a real book exists, get the page number. Where the subject is identified only by role ("The Baptist Preacher"), don't quote it at all. | Partly done |
+| 1d | **Downgrade every absolute to its narrow true version** | ~34 of them. In every case examined, the narrow version made the same point and would have survived. | Not started |
+| 1e | **Add loci to the ~53 vague citations, or drop the quotation marks** | Author-only attributions with no work or page. This is the category fabrications hide in. | Not started |
 | 2 | **Run the semantic search for the first time** | It has never been run. One of the three lookup tools in `ONBOARDING.md` doesn't actually work yet, which is a poor first impression for new contributors. Needs a `GOOGLE_API_KEY` and one `--rebuild`. | Blocked on Rex (API key) |
 | 3 | **Add provenance headers to the 14 files that lack them** | `scripts/semantic-search.py` now carries each file's source block into every search result, so a file with no header returns "(no source header — unverified provenance)". Mostly `cliff-notes-quick-reference.md` files. **Only from what each file already documents** — never infer a source. | Not started |
 

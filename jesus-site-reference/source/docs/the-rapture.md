@@ -1,6 +1,6 @@
 # The Rapture Was Invented
 
-Most of what 200+ million American evangelicals believe about "the end times" was invented by one man in the 1830s.
+Most of what tens of millions of American evangelicals believe about "the end times" was invented by one man in the 1830s.
 
 Not ancient. Not apostolic. Not even from the Reformation. The rapture, the seven-year tribulation, the Antichrist as a future political figure, the idea that true Christians will be secretly snatched away before the suffering starts — **none of this existed before 1830.**
 
@@ -133,7 +133,7 @@ Every mystical tradition agrees:
 | **Taoism** | Harmony with the Tao NOW |
 | **Dispensationalism** | Wait to be removed LATER |
 
-Dispensationalism is the singular outlier — the one framework that makes the present irrelevant by design. It tells 200 million people to wait for rescue instead of doing the work.
+Dispensationalism is the singular outlier — the one framework that makes the present irrelevant by design. It tells tens of millions of people to wait for rescue instead of doing the work.
 
 ---
 

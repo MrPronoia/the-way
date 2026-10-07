@@ -1,6 +1,6 @@
 # What Replaces the Rapture?
 
-The case against the rapture is [well-documented](the-rapture.md). Darby invented it in the 1830s. No one taught it for 1,800 years. The Greek words don't support it. Jesus's own parables contradict it. But dismantling a false framework is only half the work. The 200 million people who believe in the rapture aren't just holding a theological position — they're holding a **story about what human beings are for.** In that story, we're passengers. We wait. We get extracted. The world burns. God handles the rest.
+The case against the rapture is [well-documented](the-rapture.md). Darby invented it in the 1830s. No one taught it for 1,800 years. The Greek words don't support it. Jesus's own parables contradict it. But dismantling a false framework is only half the work. The tens of millions of people who believe in the rapture aren't just holding a theological position — they're holding a **story about what human beings are for.** In that story, we're passengers. We wait. We get extracted. The world burns. God handles the rest.
 
 If that story is wrong, what replaces it?
 
