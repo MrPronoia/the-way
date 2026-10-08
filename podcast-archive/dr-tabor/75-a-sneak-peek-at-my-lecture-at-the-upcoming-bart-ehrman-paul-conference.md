@@ -5,6 +5,7 @@
 **Published:** August 28, 2024
 **Duration:** 1.1 minutes
 **Playlist:** Paul (#75 of 77)
+**Use:** auto-captioned transcript. Attribute Dr. Tabor's *positions* by paraphrase to his published books (*Paul and Jesus*, *The Jesus Dynasty*); never quote him from this file. See `questions/CITATION-NOTES.md`.
 
 ---
 
@@ -81,8 +82,6 @@ The introducer flags Tabor's talk as one of four conference papers that "challen
 
 ## Full Transcript
 
-*Below is the raw auto-generated YouTube transcript, preserved as-is for reference. Punctuation, capitalization, and speaker attribution are YouTube-quality and may contain errors. The synthesis above is the curated version.*
+*Auto-generated YouTube captions, pulled 2026-10-08 with timestamps ([source](https://www.youtube.com/watch?v=RW2Ew5D4LOE)). Cite a moment as `tabor-75 @ mm:ss`; the link plus `&t=` seconds jumps straight to it. Captions carry no speaker labels (`>>` appears only where YouTube marks a change) and are **pointers, not proof** — verify in the primary text before quoting.*
 
-
-and another one fourth one that challenges what many of us have long thought is by James tab uh James is a very popular author and uh blogger uh he's retired from UNCC uh Charlotte University North Carolina at Charlotte his title of his talk is Paul's greatest idea and how it was superseded what he's going to be arguing is that Paul's views uh during his lifetime shifted away from his views after his death for Paul James is going to be arguing for Paul Jesus wasn't the only figure to be exalted and glorified Paul's gospel is that all of us would also be transformed into Divine beings as Christ himself was only later did Christian Believers maintain that it was Jesus himself who was the one who is exalted and this led to the theological views about Christ as God in later times these are all going to be interesting but those are challenging what many of us think several of the talks are going to be uh t topics that most lay folk have not actually thought much about and that most Scholars I'd say probably have not thought about enough
-
+**[00:02]** and another one fourth one that challenges what many of us have long thought is by James tab uh James is a very popular author and uh blogger uh he's retired from UNCC uh Charlotte University North Carolina at Charlotte his title of his talk is Paul's greatest idea and how it was superseded what he's going to be arguing is that Paul's views uh during his lifetime shifted away from his views after his death for Paul James is going to be arguing for Paul Jesus wasn't the only figure to be exalted and glorified Paul's gospel is that all of us would also be transformed into Divine beings as Christ himself was only later did Christian Believers maintain that it was Jesus himself who was the one who is exalted and this led to the theological views about Christ as God in later times these are all going to be interesting but those are challenging what many of us think several of the talks are going to be uh t topics that most lay folk have not actually thought much about and that most Scholars I'd say probably have not thought about enough

@@ -4,7 +4,7 @@
 
 ---
 
-## ✅ TRANSCRIPTS COMPLETE (64 of 65 episodes)
+## ✅ TRANSCRIPTS COMPLETE (65 of 65 episodes) — all timestamped as of 2026-10-08
 
 All available transcripts have been pulled from YouTube and appended to their respective markdown files.
 
@@ -60,7 +60,7 @@ Episodes 056–065 were pulled on 2026-10-06 — transcript + stub summary (synt
 | 42 | `042-spiritual-benefits-of-fat-loss.md` | ✅ Done (2026-05-12) |
 | 43 | `043-minister-of-wellness-church-of-satan.md` | ✅ Done (2026-05-12) |
 | 44 | `044-three-forgotten-nazarene-practices.md` | ✅ Done |
-| 45 | `045-three-temples-unlock-christ-consciousness.md` | ⚠️ Captions disabled at source — needs manual/Whisper transcription |
+| 45 | `045-three-temples-unlock-christ-consciousness.md` | ✅ Captions disabled at source — transcribed locally with Whisper (large-v3-turbo), 2026-10-08 |
 | 46 | `046-james-rejected-paul-scriptural-proof.md` | ✅ Done (2026-05-12) |
 | 47 | `047-jesus-died-because-of-sins.md` | ✅ Done (2026-05-12) |
 | 48 | `048-what-really-happened-at-resurrection.md` | ✅ Done (2026-05-12) |
@@ -89,12 +89,14 @@ Episodes 056–065 were pulled on 2026-10-06 — transcript + stub summary (synt
 | Status | Count |
 |--------|-------|
 | ✅ Completed | 64 |
-| ⚠️ Blocked (captions disabled at source — ep. 045) | 1 |
+| ✅ Captions disabled at source, transcribed locally with Whisper (ep. 045) | 1 |
 | **Total** | **65** |
 
 ---
 
 ## How To Pull New Transcripts
+
+**Current method (2026-10-08): `python scripts/pull-transcripts.py <file>`** from the repo root — pulls captions *with timestamps* and rewrites the `## Full Transcript` section. See `scripts/README.md`. The two older methods below still work but produce untimed prose; don't use them for new episodes.
 
 Two working methods. Both append clean prose under a `## Full Transcript` section.
 

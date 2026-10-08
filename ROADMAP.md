@@ -28,7 +28,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | 4 | **Hell / afterlife has no research file** | The only one of the nine topic clusters with no `christianity/` home. `questions/hell-afterlife.md` is all there is behind it. If the subject comes up publicly, that's the thinnest ground in the collection. |
 | 5 | **Acts 21:23-26 — James funds Temple sacrifices** | Appears nowhere outside podcast transcripts. It is the strongest counter-evidence to the sacrifice claim and currently has no prepared treatment. See `questions/nazarene-sect-sacrifice-and-diet.md`. |
 | 6 | **Isaiah 56:7 is quoted truncated in five files** | The omitted first half reads "their burnt offerings and their sacrifices will be accepted on my altar" — the opposite of how we use the verse. Needs fixing at the source, not just noting on a card. |
-| 7 | **Episode 045 transcript** | The one gap in the Jesus Way archive. Captions are disabled at the source, so it needs Whisper or manual transcription from audio. |
+| 7 | **Episode 045 transcript** | **Done 2026-10-08** — transcribed locally with Whisper (large-v3-turbo) from the audio, since captions are disabled at the source. Labeled as such in the file. |
 | 8 | **Matthew 2:23 has zero coverage** | "He shall be called a Nazarene" — no such OT prophecy exists verbatim. It's the first thing a prepared critic raises about the Nazarene claim and the repo says nothing about it. |
 
 ---

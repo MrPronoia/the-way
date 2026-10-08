@@ -9,7 +9,9 @@ caption with quotation marks added; timed captions make that mistake visible.
 What it does, per archive file:
   1. finds the YouTube ID (a `youtube.com/watch?v=` link in the header, or an
      explicit map passed with --map)
-  2. fetches the English auto-captions as timed JSON via yt-dlp
+  2. fetches the English captions as timed segments — from Apify when
+     APIFY_TOKEN is set (no rate limits, a fraction of a cent per video), else
+     from yt-dlp (free, but YouTube throttles after a few videos)
   3. rewrites everything from `## Full Transcript` down as timestamped
      paragraphs, leaving the synthesized header above it untouched
 
@@ -21,10 +23,12 @@ Usage:
 
 Options:
   --map FILE        JSON of {"<file path>": "<youtube id>"} for files whose header has no link
-  --sleep N         seconds between YouTube requests (default 12; YouTube 429s if you hurry)
+  --source apify|yt-dlp|auto   default auto: Apify if APIFY_TOKEN is set, else yt-dlp
+  --lang CODE       caption language for the Apify path (default en; Kam's Costa Rica video is es)
+  --sleep N         seconds between yt-dlp requests (default 12; YouTube 429s if you hurry)
   --only-missing    skip files whose transcript already carries timestamps
   --dry-run         fetch and convert, print a sample, write nothing
-  --cache DIR       where to keep the raw .json3 files (default: scripts/.caption-cache, git-ignored)
+  --cache DIR       where to keep the raw caption files (default: scripts/.caption-cache, git-ignored)
 
 Captions are pointers, not proof. Nothing here is a source; verify in the
 primary text before quoting. YouTube auto-captions carry no speaker labels;
@@ -36,10 +40,12 @@ import argparse
 import datetime as dt
 import html
 import json
+import os
 import re
 import subprocess
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -48,6 +54,8 @@ ID_RE = re.compile(r"(?:youtube\.com/watch\?v=|youtu\.be/)([A-Za-z0-9_-]{11})")
 SENTENCE_END = re.compile(r"[.!?][\"')\]]?$")
 PARA_SECONDS = 40        # start a new paragraph at the first sentence end after this many seconds
 PARA_MAX_SECONDS = 90    # ...or unconditionally after this many (captions without punctuation)
+APIFY_ACTOR = "johnvc~YoutubeTranscripts"   # returns timed snippets; no daily cap on a paid token
+# (starvibe~youtube-video-transcript also works but caps free use at 50 videos/day)
 
 
 def mmss(ms: int) -> str:
@@ -57,47 +65,84 @@ def mmss(ms: int) -> str:
     return f"{h}:{m:02d}:{sec:02d}" if h else f"{m:02d}:{sec:02d}"
 
 
-def fetch_json3(yt_id: str, cache: Path) -> Path | None:
-    cache.mkdir(parents=True, exist_ok=True)
+# ---------------------------------------------------------------- fetchers --
+
+def fetch_ytdlp(yt_id: str, cache: Path, sleep: float) -> list[tuple[int, str]] | None:
     out = cache / f"{yt_id}.en.json3"
-    if out.exists() and out.stat().st_size > 0:
-        return out
-    cmd = [
-        "yt-dlp", "--skip-download", "--write-auto-sub", "--sub-lang", "en",
-        "--sub-format", "json3", "--no-warnings", "-o", str(cache / "%(id)s"),
-        f"https://www.youtube.com/watch?v={yt_id}",
-    ]
-    for attempt in range(3):
-        r = subprocess.run(cmd, capture_output=True, text=True)
-        if out.exists() and out.stat().st_size > 0:
-            return out
-        err = (r.stderr or r.stdout)[-300:].replace("\n", " ")
-        if "429" in err or "Too Many Requests" in err:
-            wait = 120 * (attempt + 1)
-            print(f"    rate-limited; sleeping {wait}s", file=sys.stderr)
-            time.sleep(wait)
-            continue
-        print(f"    yt-dlp: {err}", file=sys.stderr)
-        return None
-    return None
-
-
-def events(json3_path: Path) -> list[tuple[int, str]]:
-    """(start_ms, text) for every caption event that carries words."""
-    d = json.loads(json3_path.read_text(encoding="utf-8"))
-    out = []
+    if not (out.exists() and out.stat().st_size > 0):
+        cmd = [
+            "yt-dlp", "--skip-download", "--write-auto-sub", "--sub-lang", "en",
+            "--sub-format", "json3", "--no-warnings", "-o", str(cache / "%(id)s"),
+            f"https://www.youtube.com/watch?v={yt_id}",
+        ]
+        got = False
+        for attempt in range(3):
+            r = subprocess.run(cmd, capture_output=True, text=True)
+            if out.exists() and out.stat().st_size > 0:
+                got = True
+                break
+            err = (r.stderr or r.stdout)[-300:].replace("\n", " ")
+            if "429" in err or "Too Many Requests" in err:
+                wait = 120 * (attempt + 1)
+                print(f"    rate-limited; sleeping {wait}s", file=sys.stderr)
+                time.sleep(wait)
+                continue
+            print(f"    yt-dlp: {err}", file=sys.stderr)
+            return None
+        time.sleep(sleep)
+        if not got:
+            return None
+    d = json.loads(out.read_text(encoding="utf-8"))
+    evs = []
     for e in d.get("events", []):
         segs = e.get("segs")
         if not segs:
             continue
         text = "".join(s.get("utf8", "") for s in segs)
-        text = html.unescape(text).replace("\n", " ").strip()
-        text = re.sub(r"\s+", " ", text)
-        if not text:
-            continue
-        out.append((int(e.get("tStartMs", 0)), text))
-    return out
+        text = re.sub(r"\s+", " ", html.unescape(text).replace("\n", " ")).strip()
+        if text:
+            evs.append((int(e.get("tStartMs", 0)), text))
+    return evs
 
+
+def fetch_apify(yt_id: str, cache: Path, token: str, lang: str = "en") -> list[tuple[int, str]] | None:
+    out = cache / f"{yt_id}.{lang}.apify.json" if lang != "en" else cache / f"{yt_id}.apify.json"
+    if not (out.exists() and out.stat().st_size > 0):
+        url = (f"https://api.apify.com/v2/acts/{APIFY_ACTOR}/run-sync-get-dataset-items"
+               f"?token={token}&timeout=180")
+        body = json.dumps({"youtube_url": f"https://www.youtube.com/watch?v={yt_id}", "languages": [lang]}).encode()
+        req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
+        try:
+            with urllib.request.urlopen(req, timeout=240) as resp:
+                raw = resp.read()
+        except Exception as ex:  # noqa: BLE001
+            print(f"    apify: {ex}", file=sys.stderr)
+            return None
+        out.write_bytes(raw)
+    try:
+        items = json.loads(out.read_text(encoding="utf-8"))
+    except json.JSONDecodeError:
+        out.unlink(missing_ok=True)
+        return None
+    if not items or not isinstance(items, list):
+        return None
+    item = items[0]
+    # johnvc: item["timestamped"] = [{text,start,duration}]; starvibe: item["transcript"] = [{text,start,end}]
+    segs = item.get("timestamped") or item.get("transcript") or []
+    if not segs:
+        msg = item.get("error") or item.get("message") or "no transcript field"
+        print(f"    apify: {msg}", file=sys.stderr)
+        out.unlink(missing_ok=True)
+        return None
+    evs = []
+    for s in segs:
+        text = re.sub(r"\s+", " ", html.unescape(str(s.get("text", ""))).replace("\n", " ")).strip()
+        if text:
+            evs.append((int(float(s.get("start", 0)) * 1000), text))
+    return evs
+
+
+# --------------------------------------------------------------- formatting --
 
 def to_paragraphs(evs: list[tuple[int, str]]) -> str:
     paras: list[str] = []
@@ -157,15 +202,29 @@ def rewrite(path: Path, yt_id: str, body_transcript: str) -> None:
     path.write_text(new, encoding="utf-8")
 
 
+# -------------------------------------------------------------------- main --
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("files", nargs="+")
     ap.add_argument("--map", type=Path)
+    ap.add_argument("--source", choices=["apify", "yt-dlp", "auto"], default="auto")
+    ap.add_argument("--lang", default="en", help="caption language code (Apify path); e.g. es for Kam's Costa Rica video")
     ap.add_argument("--sleep", type=float, default=12)
     ap.add_argument("--only-missing", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--cache", type=Path, default=REPO / "scripts" / ".caption-cache")
     a = ap.parse_args()
+    a.cache.mkdir(parents=True, exist_ok=True)
+
+    token = os.environ.get("APIFY_TOKEN", "")
+    source = a.source
+    if source == "auto":
+        source = "apify" if token else "yt-dlp"
+    if source == "apify" and not token:
+        print("APIFY_TOKEN is not set; use --source yt-dlp", file=sys.stderr)
+        return 2
+    print(f"caption source: {source}", file=sys.stderr)
 
     idmap: dict[str, str] = {}
     if a.map:
@@ -178,7 +237,7 @@ def main() -> int:
         if not path.exists() or re.search(r"overview|readme|status", path.name, re.I):
             continue
         text = path.read_text(encoding="utf-8")
-        if a.only_missing and "**[0" in text.split(MARKER, 1)[-1][:400]:
+        if a.only_missing and "**[0" in text.split(MARKER, 1)[-1][:600]:
             skipped.append(path.name)
             continue
         m = ID_RE.search(text)
@@ -188,12 +247,16 @@ def main() -> int:
             print(f"[{i+1}/{len(a.files)}] {path.name}: no YouTube id", file=sys.stderr)
             continue
         print(f"[{i+1}/{len(a.files)}] {path.name}  ({yt_id})", file=sys.stderr)
-        j = fetch_json3(yt_id, a.cache)
-        if not j:
+        if source == "apify":
+            evs = fetch_apify(yt_id, a.cache, token, a.lang)
+            if evs is None:
+                # a cached yt-dlp pull is just as good
+                evs = fetch_ytdlp(yt_id, a.cache, 0) if (a.cache / f"{yt_id}.en.json3").exists() else None
+        else:
+            evs = fetch_ytdlp(yt_id, a.cache, a.sleep)
+        if not evs:
             failed.append((path.name, "no captions"))
-            time.sleep(a.sleep)
             continue
-        evs = events(j)
         if len(evs) < 20:
             failed.append((path.name, f"only {len(evs)} caption events"))
             continue
@@ -203,10 +266,6 @@ def main() -> int:
         else:
             rewrite(path, yt_id, body)
         ok += 1
-        if i + 1 < len(a.files) and not (a.cache / f"{yt_id}.en.json3").exists():
-            time.sleep(a.sleep)
-        elif i + 1 < len(a.files):
-            time.sleep(a.sleep)
 
     print(f"\n{ok} rewritten, {len(skipped)} skipped, {len(failed)} failed", file=sys.stderr)
     for name, why in failed:
