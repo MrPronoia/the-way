@@ -43,6 +43,7 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |
 | The Christ-consciousness vision (4-min read) | `christianity/christconsciousnessvision.md` |
 | Public-facing intro pages (English & Spanish) | `jesus-site-reference/source/docs/start-here.md` |
+| **What counts as a source** — which files may be quoted as ground truth, and what we cite but don't hold | `VERIFIED-SOURCES.md` |
 | Primary texts (Gospel of Thomas, Essene Gospel of Peace, Dead Sea Scrolls, Ethiopian Bible) | `christianity/Incoming/`, `christianity/dead-sea-scrolls/`, `christianity/ethiopian-bible/`, `extended-library/essene-gospel-of-peace.md` |
 | The Paul problem | `christianity/paul-false-prophet-deuteronomy-18-test.md`, plus the jesus-site `the-paul-problem.md` |
 | Rapture deconstruction | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` |
