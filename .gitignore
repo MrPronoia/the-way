@@ -21,3 +21,6 @@ node_modules/
 .vector-db/
 __pycache__/
 .venv/
+
+# raw YouTube caption cache from scripts/pull-transcripts.py
+scripts/.caption-cache/
