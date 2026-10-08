@@ -20,7 +20,9 @@ Don't search the repo blind — there are three purpose-built entry points, in t
 2. **`questions/`** — fourteen cards on the hard questions (claim, strongest primary-source evidence, the questions people raise with honest responses, one-sentence versions, go-deeper paths). Start with `questions/00-INDEX.md`. **Read `questions/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
 3. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
 
-**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
+**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology). **For an objection someone has actually raised**, check `questions/OBJECTIONS.md` first: it maps real critics' words to the card heading that answers them, and says honestly which ones are still open.
+
+**Looking for something to work on?** `OPEN-RESEARCH.md` lists the gaps (sized, with what "done" looks like). `FIX-LIST.md` is for repairing existing claims; `OPEN-RESEARCH.md` is for new ground.
 
 ---
 
