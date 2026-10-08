@@ -1,4 +1,4 @@
-# Digging Deeper – Lesson 1 – The Nazarenes (by Craig Wescoe)
+# The Nazarenes (by Craig Wescoe)
 
 **Attribution:** Craig Wescoe
 
