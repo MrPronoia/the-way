@@ -24,7 +24,7 @@ This repository documents the gap. Not to tear down anyone's faith — to recove
 
 This repo began in May 2026 as a curated snapshot from a larger research base ([mr-pronoia](https://github.com/MrPronoia/mr-pronoia), private). The Christianity-focused content from that base was collected here, and the collection has grown well beyond it since. See `PROVENANCE.md` for the full assembly story and the May 18 scope refinement.
 
-As of October 2026 the repo lives in its own organization, [`the-way-project`](https://github.com/the-way-project), stewarded by a group of contributors who take the question of what Jesus actually taught seriously. The old `MrPronoia/the-way` address redirects here permanently.
+As of October 2026 the repo lives in its own organization, [`the-nazarene`](https://github.com/the-nazarene), stewarded by a group of contributors who take the question of what Jesus actually taught seriously. The old `MrPronoia/the-way` address redirects here permanently.
 
 ---
 

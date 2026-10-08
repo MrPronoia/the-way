@@ -146,11 +146,11 @@ Current coverage, if you're looking for something useful to do: 93% of the trans
 ### First time: get access + tools
 1. **Make a free GitHub account** at [github.com](https://github.com) if you don't have one. Send your **username** to Matt or Rex so they can add you as a collaborator.
 2. **Install [GitHub Desktop](https://desktop.github.com/)** — the free app that lets you clone, edit, and push **without the command line**. Easiest path for everyone.
-3. In GitHub Desktop: **File → Clone repository → `the-way-project/the-way`** → pick a local folder. Now you have your own copy on your machine.
+3. In GitHub Desktop: **File → Clone repository → `the-nazarene/way`** → pick a local folder. Now you have your own copy on your machine.
 
 ### Making changes — two ways
 
-**Quick edit (no app needed):** On [github.com](https://github.com/the-way-project/the-way), open any file → click the **pencil ✏️** → edit → "Commit changes." Great for fixing a typo or adding a paragraph.
+**Quick edit (no app needed):** On [github.com](https://github.com/the-nazarene/way), open any file → click the **pencil ✏️** → edit → "Commit changes." Great for fixing a typo or adding a paragraph.
 
 **Real work (GitHub Desktop):**
 1. **Pull first** (top bar → "Pull origin") so you have everyone's latest changes.

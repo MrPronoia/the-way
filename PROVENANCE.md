@@ -8,7 +8,7 @@ A record of where the content in this repo came from, what was copied, what was 
 
 **Date:** 2026-05-16
 **Source repo:** `MrPronoia/mr-pronoia` (private)
-**Current home:** `the-way-project/the-way` (public) — transferred from `MrPronoia/the-way` on 2026-10-07 so the project could have its own owners and unlimited collaborators; the old URL redirects.
+**Current home:** `the-nazarene/way` (public) — transferred from `MrPronoia/the-way` on 2026-10-07 (briefly `the-way-project/the-way` the same day) so the project could have its own owners and unlimited collaborators; the old URL redirects.
 **Source commit at assembly:** `71831cc` (the commit that documented the org migration to GitHub Team plan)
 **Assembled by:** Matt Fracek (with Claude assistance) — autonomous overnight execution while Matt was away.
 
