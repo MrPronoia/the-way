@@ -43,11 +43,13 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |
 | The Christ-consciousness vision (4-min read) | `christianity/christconsciousnessvision.md` |
 | Public-facing intro pages (English & Spanish) | `jesus-site-reference/source/docs/start-here.md` |
+| **The Bible itself (KJV, all 66 books, one verse per line)** | `christianity/Incoming/kjv/` — the red text, the prophets, Paul and Hebrews, grep-able and public domain |
 | Primary texts (Gospel of Thomas, Essene Gospel of Peace, Dead Sea Scrolls, Ethiopian Bible) | `christianity/Incoming/`, `christianity/dead-sea-scrolls/`, `christianity/ethiopian-bible/`, `extended-library/essene-gospel-of-peace.md` |
 | The Paul problem | `christianity/paul-false-prophet-deuteronomy-18-test.md`, plus the jesus-site `the-paul-problem.md` |
 | Rapture deconstruction | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` |
 | The Gnostic gospels (Thomas, Philip, Nag Hammadi) | `gnosticism/` |
 | The published website source | `jesus-site-reference/` |
+| **The Reading Room — the public front door to the cards** | `site/` — static site built from `questions/`, every source stamped HELD / NOT YET HELD by the build. See `site/README.md` |
 | The Jesus Way podcast raw transcripts | `podcast-archive/the-jesus-way/` (65 episodes) |
 | Dr. James Tabor's "Paul" playlist, synthesized (77 videos) | `podcast-archive/dr-tabor/` |
 | Kameron Waters' channel transcripts (7 videos) | `podcast-archive/kameron-waters/` |
@@ -69,7 +71,8 @@ the-way/
 │
 ├── christianity/           ← The main research folder
 │   ├── (39 root files: thesis, deep dives, deliverables)
-│   ├── Incoming/           ← Primary texts (Gospel of Thomas, Essene Gospel of Peace)
+│   ├── Incoming/           ← Primary texts (Gospel of Thomas, Didache, Clementines, Essene Gospel of Peace)
+│   │   └── kjv/            ← The King James Bible, 66 files, one verse per line (public domain)
 │   ├── dead-sea-scrolls/   ← Essene primary sources
 │   ├── ethiopian-bible/    ← Pre-Pauline canonical preservation (1 Enoch, Jubilees, Shepherd of Hermas, etc.)
 │   └── vegetarian-pythagorean-jesus/
@@ -84,6 +87,8 @@ the-way/
 │
 ├── extended-library/       ← Jesus-relevant secondary works
 │   └── essene-gospel-of-peace.md   ← Szekely (1928), Essene-Jesus connection (provenance caveats noted)
+│
+├── site/                   ← The Reading Room: public front door to the question cards (GitHub Pages)
 │
 ├── jesus-site-reference/   ← Snapshot of jesusactuallysaid.com source
 │   ├── README.md

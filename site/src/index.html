@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Way · Reading Room</title>
+<meta name="description" content="Pull a question from the drawer. The case file for it opens on the desk. Every source is stamped with whether we hold the text.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#card">Skip to the card</a>
+
+<header class="top">
+  <div class="brand">THE WAY · READING ROOM</div>
+  <p class="tag">Pull a question from the drawer. The case file for it opens on the desk. Every source is stamped with whether we hold the text.</p>
+  <nav class="nav" aria-label="Repository">
+    <a href="https://github.com/the-nazarene/way/tree/main/questions">questions/</a>
+    <a href="https://github.com/the-nazarene/way/blob/main/SOURCE-AUDIT.md">source audit</a>
+    <a href="https://github.com/the-nazarene/way/blob/main/FIX-LIST.md">fix list</a>
+    <a href="https://github.com/the-nazarene/way">the repo</a>
+  </nav>
+</header>
+
+<div class="lamp" aria-hidden="true"></div>
+
+<form class="drawer-form" id="search" autocomplete="off" role="search">
+  <label for="q" class="drawer-label">DRAWER</label>
+  <div class="drawer-input-wrap">
+    <input id="q" type="search" placeholder="Ask a question, or pull a card below" aria-describedby="hint" aria-controls="suggest" aria-expanded="false">
+    <ul id="suggest" class="suggest" role="listbox" hidden></ul>
+  </div>
+  <button type="submit" class="pull">PULL</button>
+  <span id="hint" class="hint"></span>
+</form>
+
+<main class="room">
+  <section class="left">
+    <article class="card" id="card" aria-live="polite">
+      <div class="card-top">
+        <span class="call" id="call"></span>
+        <span class="checked" id="checked">CHECKED</span>
+      </div>
+      <h1 class="question" id="question">Pull a card</h1>
+      <p class="subtitle" id="subtitle"></p>
+      <p class="finding" id="finding">Type a question above, or pull one of the cards from the drawer.</p>
+      <p class="see" id="see"></p>
+    </article>
+
+    <div class="drawer">
+      <div class="drawer-lip"></div>
+      <div class="drawer-title">THE OTHER QUESTIONS IN THIS DRAWER · pull any</div>
+      <ul class="drawer-cards" id="drawer"></ul>
+    </div>
+    <div class="drawer-front"><span class="label" id="drawerLabel">THE HARD QUESTIONS</span></div>
+  </section>
+
+  <section class="right">
+    <div class="folder-tab" id="folderTab">CASE FILE</div>
+    <div class="folder">
+      <div class="board" id="board">
+        <svg class="strings" id="strings" aria-hidden="true"></svg>
+        <div class="col col-for">
+          <div class="col-label" id="labelFor">FOR</div>
+          <ul class="pins" id="pinsFor"></ul>
+        </div>
+        <div class="col col-mid">
+          <div class="qcard" id="qcard">
+            <span class="pin red"></span>
+            <div class="eyebrow">THE QUESTION</div>
+            <div class="qtext" id="qtext"></div>
+          </div>
+          <div class="pad" id="pad">
+            <div class="eyebrow">WHERE THE CASE STANDS</div>
+            <ul class="oneliners" id="oneLiners"></ul>
+            <div class="count" id="count"></div>
+          </div>
+        </div>
+        <div class="col col-against">
+          <div class="col-label" id="labelAgainst">AGAINST</div>
+          <ul class="pins" id="pinsAgainst"></ul>
+          <div class="col-label other" id="labelOther">THE OTHER STACK</div>
+          <ul class="pins" id="pinsOther"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="below">
+      <div class="donot" id="donotWrap">
+        <div class="eyebrow">DO NOT SAY</div>
+        <ul id="doNotSay"></ul>
+      </div>
+      <div class="deeper" id="deeperWrap">
+        <div class="eyebrow">GO DEEPER · in the repo</div>
+        <ul id="goDeeper"></ul>
+      </div>
+    </div>
+
+    <div class="next" id="nextWrap">
+      <span class="eyebrow">NEXT CARD IN THE DRAWER</span>
+      <span id="next"></span>
+    </div>
+  </section>
+</main>
+
+<section class="nocard" id="nocard" hidden>
+  <div class="eyebrow">NO CARD FOR THAT YET</div>
+  <p>The drawer has <span id="cardCount"></span> cards so far. The nearest ones are below. If none of them is your question, <a id="requestLink" href="https://github.com/the-nazarene/way/issues/new">ask for a card</a> and it goes on the research list.</p>
+  <ul id="nearest"></ul>
+</section>
+
+<footer class="foot">
+  <span>Stamps are a build result, not an opinion: HELD means the text is in the repo and the cited phrase was found in it; NOT YET HELD means public domain and on the roadmap. Transcripts are pointers, not proof.</span>
+  <a href="https://github.com/the-nazarene/way/issues/new?title=Wrong%20citation">found a wrong citation? file it →</a>
+</footer>
+
+<div class="reader-backdrop" id="readerBackdrop" hidden></div>
+<aside class="reader" id="reader" hidden aria-label="Source text" role="dialog" aria-modal="true">
+  <div class="reader-top">
+    <div>
+      <div class="eyebrow" id="readerTier"></div>
+      <div class="reader-title" id="readerTitle"></div>
+    </div>
+    <button type="button" class="close" id="readerClose" aria-label="Close">×</button>
+  </div>
+  <div class="reader-status" id="readerStatus"></div>
+  <div class="reader-body" id="readerBody"></div>
+  <div class="reader-note" id="readerNote"></div>
+  <div class="reader-foot" id="readerFoot"></div>
+</aside>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/7.0.0/fuse.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
