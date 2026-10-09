@@ -50,7 +50,6 @@ a { color: var(--blue); }
 
 .top { max-width: 1380px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
 .brand { font-family: var(--type); font-size: 24px; letter-spacing: 2px; color: var(--text-light); }
-.tag { margin: 0; font-size: 13px; color: var(--muted-light); flex: 1 1 320px; }
 .nav { display: flex; gap: 18px; font-size: 13px; flex-wrap: wrap; }
 .nav a { color: var(--text-light); text-decoration: none; }
 .nav a:hover { text-decoration: underline; }
