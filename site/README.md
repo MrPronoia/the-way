@@ -8,7 +8,7 @@ A static site that lets a stranger pull one of the `questions/` cards from a dra
 
 ```
 site/
-├── data/cards/*.json   ← one structured record per questions/ card (hand-written, checked)
+├── data/cards/*.json   ← one structured record per questions/ card (all 14; hand-written from the card, build-checked)
 ├── src/                ← index.html, styles.css, app.js (the room)
 ├── build.py            ← checks every source against the repo, writes dist/
 └── dist/               ← build output (git-ignored; the Action builds it)
@@ -38,6 +38,8 @@ cd site/dist && python -m http.server 8000
 2. Every source has a `side` (`for`, `against`, `other`), a `tier` (the repo's source hierarchy, in words), a `note` (what the card says about it, including the response to an objection), and **one** of `ref` (scripture), `path` (a held repo file), or `link` (not held yet). Give `ref` and `path` sources a `phrase`: the distinctive words to grep.
 3. Run `python site/build.py --check`. Fix anything it refuses.
 4. The content must follow the card in `questions/`, not improve on it. The card is the reviewed artifact; the site is a view of it. If the card is wrong, fix the card first.
+
+**Links and copying.** Every card is `#/<slug>`; every source is `#/<slug>/<n>` and opens the reader pane directly. The reader has "copy citation" (the distinctive phrase, the reference, the translation, and the permalink) and "copy link"; each one-liner on the legal pad has a copy button. That is the push-one-line tool for live use: paste it into a comment reply and the reader lands on the verse.
 
 **Open decision (Matt + Rex):** whether these records should move into front-matter on the `questions/*.md` files themselves, so a contributor fixing a citation fixes the site in the same edit. The JSON folder is easy to migrate when that's settled.
 

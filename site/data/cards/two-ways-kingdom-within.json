@@ -1,0 +1,50 @@
+{
+  "slug": "two-ways-kingdom-within",
+  "call": "Q 231.7",
+  "drawer": "THE KINGDOM · THE TWO WAYS",
+  "question": "What is the oldest Christian doctrine? Where is the kingdom?",
+  "subtitle": "The Two Ways, and the kingdom within",
+  "card": "questions/two-ways-kingdom-within.md",
+  "aliases": ["where is the kingdom of God", "the kingdom is within you", "the two ways", "oldest Christian teaching", "Didache", "what did the first Christians believe", "is the kingdom of heaven a place", "entos hymon", "how do I enter the kingdom", "way of life and way of death"],
+  "finding": "The oldest recoverable teaching of the Jesus movement is not a creed. It is the Two Ways: there is a way of life and a way of death, and you choose by what you do. This is the framework Jesus taught (narrow gate, good tree, sheep and goats), the framework his community catechized converts in before baptism (Didache 1-6), and the framework the Jewish world around him already taught, Qumran included. In that framework the kingdom is not a postmortem destination you qualify for by believing the right thing. It is a present reality, within and among people, that most of them walk past without seeing. Salvation is participatory: you enter the way by walking it. We are pointing at the earliest documents the church itself produced and noting what is in them and what is not.",
+  "oneLiners": [
+    "The oldest Christian document asks what you do. The modern church asks what you believe. Those are different religions wearing the same name.",
+    "He was asked how to inherit eternal life. He answered with commandments, in Matthew, in Mark, and in Luke. Nobody disputes the verses. They just don't preach them.",
+    "The kingdom isn't late. We're blind. That's his diagnosis, not mine. Thomas 113.",
+    "Before there was a creed, there was a choice.",
+    "Yes, the oldest Christian catechism has a late layer in it. The late layer is more ethics. Nobody ever went back and added a creed."
+  ],
+  "doNotSay": [
+    "Don't count three salvation questions. It's two distinct scenes (the rich man, in all three Synoptics; the lawyer, Luke 10:25-28), triple-attested answers.",
+    "Don't quote Didache 1:3-2:1. That block is the sectio evangelica, widely held to be the latest layer. Quote 1:1-2, chapters 3-5, 4:14 and 6:2.",
+    "Don't say \"chapters 1-6 are possibly pre-Pauline.\" The tradition in them is Jewish and pre-Christian; the compilation is composite, 50-120 CE.",
+    "Don't say Draper demonstrated direct textual continuity from Qumran into the Didache. Shared Jewish Two Ways tradition, not dependency."
+  ],
+  "boardLabels": {"for": "FOR", "against": "AGAINST · READ THESE FIRST", "other": "THE OTHER STACK"},
+  "sources": [
+    {"side": "for", "tier": "red text · triple-attested", "ref": "Matthew 19:17", "phrase": "keep the commandments", "note": "Asked the salvation question directly, he answers with commandments. Mark 10:17-19 and Luke 18:18-20 have it too."},
+    {"side": "for", "tier": "red text", "ref": "Luke 10:28", "phrase": "this do, and thou shalt live", "note": "The lawyer's question, a separate scene: love God, love your neighbor, \"this do, and thou shalt live.\" Independently at Mark 12:28-34 and Matthew 22:34-40."},
+    {"side": "for", "tier": "red text · single-source, and defensible", "ref": "Matthew 25:35", "phrase": "ye gave me meat", "note": "The final judgment scene is entirely behavioral, and the sheep don't recognize who they served. No Markan parallel, and it gives Matthew, the evangelist of church order and confession, nothing. Redactors don't invent material that undercuts their own program."},
+    {"side": "for", "tier": "red text", "ref": "Luke 17:21", "phrase": "the kingdom of God is within you", "note": "Present, local, now. \"Among you\" answers the traditional position just as well; Thomas 3 resolves the ambiguity by saying both."},
+    {"side": "for", "tier": "Thomas · Lambdin", "title": "Gospel of Thomas 3 and 113", "path": "christianity/Incoming/gospel-of-thomas-full-text.md", "phrase": "sons of the living father", "edition": "Lambdin", "note": "\"The kingdom is inside of you, and it is outside of you... it is you who are the sons of the living father.\" And 113: \"spread out upon the earth, and men do not see it.\" Two independent streams agree on location and timing. The obstacle is perception, not chronology."},
+    {"side": "for", "tier": "early church · the catechism", "title": "Didache 1:1-2", "path": "christianity/Incoming/didache-full-text.md", "phrase": "two ways, one of life", "edition": "Richardson (1953)", "note": "The oldest Christian catechism opens with the Two Ways, not a creed: love God, love neighbor, the negative Golden Rule. Chapters 1-6 are the entire entry requirement, and they are all behavior."},
+    {"side": "for", "tier": "early church", "title": "Didache 4:14", "path": "christianity/Incoming/didache-full-text.md", "phrase": "That is the way of life", "edition": "Richardson (1953)", "note": "The catechism's own closing verdict on four chapters of conduct."},
+    {"side": "for", "tier": "early church", "title": "Didache 6:2", "path": "christianity/Incoming/didache-full-text.md", "phrase": "then do what you can", "edition": "Richardson (1953)", "note": "A floor and a direction of travel. The same point as Matthew 11:30, corroborated outside the gospels."},
+    {"side": "for", "tier": "Dead Sea Scrolls · excerpts", "title": "1QS 3:17-19 and 3:4-7, the Two Spirits", "path": "christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md", "phrase": "spirits of truth and injustice", "edition": "Vermes", "note": "Qumran, c. 100 BCE: two ways, mapped virtue and vice lists, expiation through inner transformation. Shared Jewish Two Ways tradition (with Barnabas 18-20 and the Doctrina Apostolorum), not textual dependency. The framework is demonstrably pre-Christian."},
+    {"side": "for", "tier": "Torah", "ref": "Deuteronomy 30:19", "phrase": "therefore choose life", "note": "The Two Ways is continuous with the wisdom tradition. Agreed that it isn't distinctive; that is the point. If the distinctive doctrines were the heart of the message, they'd appear in the first thing converts were taught."},
+    {"side": "against", "tier": "early church · the late layer", "title": "Didache 1:3-2:1, the sectio evangelica", "path": "christianity/Incoming/didache-full-text.md", "phrase": "Bless those who curse you", "edition": "Richardson (1953)", "note": "\"Your Didache quote is from the latest layer.\" Right about this passage, and we say so first (Niederwimmer, Kloppenborg). So don't lean on it. And notice: even the latest layer is still ethics. A second-century editor inserting Jesus-sayings produced more conduct material, not a creed."},
+    {"side": "against", "tier": "red text · the future half of Luke 17", "ref": "Luke 17:24", "phrase": "as the lightning", "note": "\"Verses 22-37 are explicitly future; you quoted 21 and stopped.\" Two addressees, two questions. Our position is both/and: present reality plus future consummation (\"thy kingdom come,\" Matthew 6:10). What the Two Ways denies is a kingdom exclusively future, located elsewhere, entered by holding correct beliefs. Same exegesis as the rapture card."},
+    {"side": "against", "tier": "red text", "ref": "Matthew 7:21", "phrase": "Lord, Lord", "note": "\"Works are the fruit of salvation, not its basis.\" That frame is read backwards from Romans. When Jesus draws the line he draws it at doing: \"Not every one that saith unto me, Lord, Lord... but he that doeth the will of my Father.\" Luke 6:46 likewise."},
+    {"side": "against", "tier": "early church · Didache 14", "title": "Didache 14, the assembly's own sacrifice", "path": "christianity/Incoming/didache-full-text.md", "phrase": "your sacrifice may be pure", "edition": "Richardson (1953)", "note": "\"The Didache is non-canonical, possibly late, and silence isn't an argument.\" Silence in the document whose purpose was to state what a convert must know before baptism is evidence. Chapter 14 does call the assembly's offering a thusia (Malachi 1:11): a sacrifice the community makes, not one Jesus paid. Concede it cleanly."},
+    {"side": "other", "tier": "Jerusalem church", "ref": "James 2:24", "phrase": "not by faith only", "note": "Jesus's brother, leading the Jerusalem church, states the conclusion flatly."}
+  ],
+  "goDeeper": [
+    {"title": "Full build-out: Didache, 1QS, 4Q473, Q, Barnabas 18, James (apply this card's softenings)", "path": "christianity/two-ways-oldest-christian-doctrine.md"},
+    {"title": "The Didache in full; Two Ways is chapters 1-6, Eucharist 9-10", "path": "christianity/Incoming/didache-full-text.md"},
+    {"title": "The full redaction criterion and the rest of the rich-man pericope", "path": "questions/blood-atonement-and-salvation.md"},
+    {"title": "1QS Two Spirits passage with virtue and vice lists", "path": "christianity/dead-sea-scrolls/Incoming/dead-sea-scrolls-selected-texts.md"},
+    {"title": "The ten core teachings, each with citation", "path": "christianity/jesus-core-teaching-distilled.md"},
+    {"title": "The short public-facing version, good for reading aloud", "path": "jesus-site-reference/source/docs/the-two-ways.md"}
+  ],
+  "next": ["blood-atonement-and-salvation", "rapture-end-times", "essene-nazarene-origins"]
+}

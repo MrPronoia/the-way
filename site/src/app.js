@@ -44,10 +44,38 @@
       foot.appendChild(el('span', 'open', 'open →'));
       foot.appendChild(stampFor(src));
       b.appendChild(foot);
-      b.addEventListener('click', function () { openReader(src); });
+      b.addEventListener('click', function () {
+        var idx = current.sources.indexOf(src);
+        history.replaceState(null, '', '#/' + current.slug + '/' + idx);
+        openReader(src);
+      });
       li.appendChild(b);
       ul.appendChild(li);
     });
+  }
+
+  function copyText(text, btn) {
+    var done = function () { var t = btn.textContent; btn.textContent = 'copied'; setTimeout(function () { btn.textContent = t; }, 1400); };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallbackCopy(text); done(); });
+    } else { fallbackCopy(text); done(); }
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea');
+    ta.value = text; ta.setAttribute('readonly', ''); ta.style.position = 'fixed'; ta.style.left = '-9999px';
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand('copy'); } catch (e) { /* no clipboard; the text is still selected */ }
+    document.body.removeChild(ta);
+  }
+  function permalink(slug, idx) {
+    var base = location.origin + location.pathname;
+    return base + '#/' + slug + (idx != null ? '/' + idx : '');
+  }
+  function citationLine(src) {
+    var ref = src.title || src.ref;
+    var where = src.passages && src.passages.length ? ref + ', KJV' : (src.edition ? ref + ' (' + src.edition + ')' : ref);
+    var quote = src.phrase ? '“' + src.phrase + '” — ' : '';
+    return quote + where + ' · ' + permalink(current.slug, current.sources.indexOf(src));
   }
 
   function drawStrings() {
@@ -108,7 +136,15 @@
 
     var ol = $('oneLiners');
     ol.innerHTML = '';
-    (card.oneLiners || []).slice(0, 3).forEach(function (t) { ol.appendChild(el('li', null, t)); });
+    (card.oneLiners || []).slice(0, 3).forEach(function (t) {
+      var li = el('li', null, t + ' ');
+      var cb = el('button', 'copy-mini', 'copy');
+      cb.type = 'button';
+      cb.setAttribute('aria-label', 'Copy this line with a link to the card');
+      cb.addEventListener('click', function () { copyText(t + ' · ' + permalink(card.slug), cb); });
+      li.appendChild(cb);
+      ol.appendChild(li);
+    });
     var held = card.sources.filter(function (s) { return s.status === 'held'; }).length;
     $('count').textContent = fors.length + ' for · ' + against.length + ' against · ' + other.length + ' other stack · ' + held + ' of ' + card.sources.length + ' held in the repo';
 
@@ -140,14 +176,25 @@
 
     var drawer = $('drawer');
     drawer.innerHTML = '';
+    var groups = [];
     DATA.cards.forEach(function (c) {
-      var li = el('li');
-      var a4 = el('a', c.slug === card.slug ? 'current' : '');
-      a4.href = '#/' + c.slug;
-      a4.appendChild(el('small', null, c.call));
-      a4.appendChild(el('span', null, c.question));
-      li.appendChild(a4);
-      drawer.appendChild(li);
+      var g = groups.filter(function (x) { return x.label === c.drawer; })[0];
+      if (!g) { g = { label: c.drawer, cards: [] }; groups.push(g); }
+      g.cards.push(c);
+    });
+    groups.forEach(function (g) {
+      var gl = el('li', 'drawer-group');
+      gl.appendChild(el('span', 'drawer-group-label', g.label));
+      drawer.appendChild(gl);
+      g.cards.forEach(function (c) {
+        var li = el('li');
+        var a4 = el('a', c.slug === card.slug ? 'current' : '');
+        a4.href = '#/' + c.slug;
+        a4.appendChild(el('small', null, c.call));
+        a4.appendChild(el('span', null, c.question));
+        li.appendChild(a4);
+        drawer.appendChild(li);
+      });
     });
 
     $('nocard').hidden = true;
@@ -182,13 +229,16 @@
     if (src.passages && src.passages.length) {
       src.passages.forEach(function (p) {
         var d = el('div', 'passage');
-        d.appendChild(el('div', 'plabel', p.label + ' (KJV)'));
-        p.verses.forEach(function (v) {
-          var s = el('span', 'v');
+        d.appendChild(el('div', 'plabel', p.label + ' (KJV) · in context'));
+        var addVerse = function (v, dim, hl) {
+          var s = el('span', dim ? 'v dim' : 'v');
           s.appendChild(el('span', 'vn', v.n));
-          s.appendChild(highlight(v.text, src.phrase));
+          s.appendChild(hl ? highlight(v.text, src.phrase) : document.createTextNode(v.text));
           d.appendChild(s);
-        });
+        };
+        (p.before || []).forEach(function (v) { addVerse(v, true, false); });
+        p.verses.forEach(function (v) { addVerse(v, false, true); });
+        (p.after || []).forEach(function (v) { addVerse(v, true, false); });
         body.appendChild(d);
       });
     } else if (src.snippet) {
@@ -213,12 +263,25 @@
       g.appendChild(el('code', null, src.phrase));
       foot.appendChild(g);
     }
+    var row = el('div', 'copy-row');
+    var c1 = el('button', 'copy', 'copy citation');
+    c1.type = 'button';
+    c1.addEventListener('click', function () { copyText(citationLine(src), c1); });
+    row.appendChild(c1);
+    var c2 = el('button', 'copy', 'copy link to this source');
+    c2.type = 'button';
+    c2.addEventListener('click', function () { copyText(permalink(current.slug, current.sources.indexOf(src)), c2); });
+    row.appendChild(c2);
+    foot.appendChild(row);
     $('readerBackdrop').hidden = false;
     $('reader').hidden = false;
     $('readerClose').focus();
   }
 
-  function closeReader() { $('reader').hidden = true; $('readerBackdrop').hidden = true; }
+  function closeReader() {
+    $('reader').hidden = true; $('readerBackdrop').hidden = true;
+    if (current && /^#\/[a-z0-9-]+\/\d+/.test(location.hash)) history.replaceState(null, '', '#/' + current.slug);
+  }
 
   function search(q) {
     if (!q.trim()) return [];
@@ -279,14 +342,24 @@
   }
 
   function route() {
-    var m = /^#\/([a-z0-9-]+)/.exec(location.hash);
+    var m = /^#\/([a-z0-9-]+)(?:\/(\d+))?/.exec(location.hash);
     var card = m ? DATA.cards.filter(function (c) { return c.slug === m[1]; })[0] : null;
-    renderCard(card || DATA.cards[0]);
+    if (!current || !card || current.slug !== card.slug) renderCard(card || DATA.cards[0]);
+    if (m && m[2] && card && card.sources[+m[2]]) openReader(card.sources[+m[2]]); else closeReader();
   }
 
   fetch('data.json').then(function (r) { return r.json(); }).then(function (d) {
     DATA = d;
-    fuse = new Fuse(d.cards, { keys: [{ name: 'question', weight: 0.6 }, { name: 'aliases', weight: 0.4 }], threshold: 0.5, ignoreLocation: true, includeScore: true });
+    fuse = new Fuse(d.cards, {
+      keys: [
+        { name: 'question', weight: 0.5 },
+        { name: 'aliases', weight: 0.3 },
+        { name: 'oneLiners', weight: 0.1 },
+        { name: 'sources.title', weight: 0.05 },
+        { name: 'sources.ref', weight: 0.05 }
+      ],
+      threshold: 0.5, ignoreLocation: true, includeScore: true, minMatchCharLength: 3
+    });
     $('drawerLabel').textContent = 'THE HARD QUESTIONS · ' + d.cards.length + ' CARDS';
     var input = $('q');
     input.addEventListener('input', function () { showSuggest(input.value); });
