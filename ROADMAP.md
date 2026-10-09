@@ -38,6 +38,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | # | Item | Notes |
 |---|---|---|
 | 9 | **Ray Pritz, *Nazarene Jewish Christianity*** | The standard monograph on exactly our central claim, and it's absent from the bibliography. Cite it rather than copying it (see the copyright rule in `CONTRIBUTING.md`). |
+| 9a | **The Reading Room — public front door** | `site/` is live from `main` via GitHub Pages: three cards structured (atonement, Paul, what-we-offer), every source stamped by the build. Next: structure the other 11 cards (`site/README.md`, "Adding a card"); decide with Rex whether the records move into card front-matter. Phase 2/3 (smarter drawer; grounded answers for no-card questions) wait on P0. |
 | 10 | **Jamie — push-to-check lookup tool** | Spec'd and ready to build in `ideas/jamie-mvp.md`. Milestone M2 (console output from real retrieval) is the gate: everything before it is plumbing, everything after is polish. |
 | 11 | **Delete the merged `questions-not-debate` branch** | Fully merged into `main`; it'll read as work-in-progress to new contributors. Matt's branch, Matt's call. |
 | 12 | **Spanish mirrors drift** | 17 `*.es.md` files translate the English pages. When an English page is corrected, the Spanish needs the same fix — there's no automation, so it has to be deliberate. |
@@ -55,7 +56,10 @@ Working to-do list for The Way. Current as of 2026-10-07.
 
 ---
 
-## Done recently (2026-10-06 / 10-07)
+## Done recently (2026-10-06 / 10-09)
+
+- **2026-10-09: the KJV is held.** All 66 books in `christianity/Incoming/kjv/`, one verse per line, public domain, imported by `scripts/import-kjv.py`. The repo's number-one source tier finally has a file; every gospel quotation can now be checked in ten seconds. `VERIFIED-SOURCES.md` (PR #3) should move "the canonical gospels" from *Not held* to Tier 1 when it merges.
+- **2026-10-09: the Reading Room (`site/`).** A static front door over the cards; see P2 item 9a.
 
 - Jesus Way archive brought current: 55 → 65 episodes. Kam Waters' channel archived (7 videos). Episode 045 diagnosed as captions-disabled-at-source rather than merely missing.
 - `questions/` built out to 18 files, including four cards that exist specifically to stop us being ambushed on method (how we read John, the Gospel of Thomas, criteria, and what we actually offer).

@@ -1,0 +1,193 @@
+#!/usr/bin/env python3
+"""Build the Reading Room: the public front door to this repo.
+
+Reads site/data/cards/*.json, checks every source against the repo, and
+writes a static site to site/dist/ (index.html, app.js, styles.css,
+data.json). No server, no AI, no secrets.
+
+What "checks every source against the repo" means, concretely:
+
+  * A scripture reference ("Matthew 9:13; 12:7", "Luke 18:13-14") is
+    resolved against christianity/Incoming/kjv/. If the verses are there the
+    source is stamped HELD and the verse text is embedded so the reader pane
+    can show the passage itself, with the cited phrase highlighted. If the
+    phrase is NOT in the verse, the build fails loudly: a card may not claim
+    wording the text doesn't contain.
+  * A repo file + phrase ("christianity/Incoming/didache-full-text.md",
+    "holy vine of David") is grepped. Found: HELD, with the matching line as
+    the snippet. Not found: the build fails.
+  * A link with no repo path is NOT YET HELD: public domain but not in the
+    collection. The reader pane links out and says so.
+
+So the stamps on the site are never hand-written. They are a build result,
+and the build refuses to publish a citation it can't find.
+
+Usage:
+    python site/build.py            # writes site/dist/
+    python site/build.py --check    # verify only, write nothing
+"""
+
+import json
+import re
+import shutil
+import sys
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SITE = ROOT / "site"
+CARDS = SITE / "data" / "cards"
+KJV = ROOT / "christianity" / "Incoming" / "kjv"
+DIST = SITE / "dist"
+REPO_URL = "https://github.com/the-nazarene/way/blob/main/"
+
+BOOK_FILES = {}
+for p in sorted(KJV.glob("[0-9][0-9]-*.md")) if KJV.exists() else []:
+    first = p.read_text(encoding="utf-8").splitlines()[0]
+    m = re.match(r"# (.+?) \(King James Version\)", first)
+    if m:
+        BOOK_FILES[m.group(1).lower()] = p
+
+ALIASES = {
+    "mt": "matthew", "mk": "mark", "lk": "luke", "jn": "john", "rom": "romans",
+    "1 cor": "1 corinthians", "2 cor": "2 corinthians", "gal": "galatians",
+    "heb": "hebrews", "jas": "james", "1 pet": "1 peter", "2 pet": "2 peter",
+    "hos": "hosea", "jer": "jeremiah", "isa": "isaiah", "ps": "psalms", "psalm": "psalms",
+}
+
+REF_RE = re.compile(r"^\s*([1-3]?\s?[A-Za-z ]+?)\s+(\d+):(\d+)(?:-(\d+))?\s*$")
+
+
+def norm(s):
+    return re.sub(r"[^a-z0-9 ]", "", s.lower().replace("’", "'"))
+
+
+def load_book(name):
+    key = ALIASES.get(name.lower(), name.lower())
+    path = BOOK_FILES.get(key)
+    if not path:
+        return None, None
+    verses = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"\*\*(\d+):(\d+)\*\* (.*)", line)
+        if m:
+            verses[(int(m.group(1)), int(m.group(2)))] = m.group(3)
+    return path, verses
+
+
+def parse_refs(ref):
+    """'Matthew 9:13; 12:7' -> [('Matthew', 9, 13, 13), ('Matthew', 12, 7, 7)]"""
+    out = []
+    book = None
+    for part in ref.split(";"):
+        part = part.strip()
+        m = REF_RE.match(part)
+        if m:
+            book = m.group(1).strip()
+            ch, v1 = int(m.group(2)), int(m.group(3))
+            v2 = int(m.group(4)) if m.group(4) else v1
+        else:
+            m2 = re.match(r"^\s*(\d+):(\d+)(?:-(\d+))?\s*$", part)
+            if not (m2 and book):
+                raise SystemExit(f"Cannot parse reference: {ref!r}")
+            ch, v1 = int(m2.group(1)), int(m2.group(2))
+            v2 = int(m2.group(3)) if m2.group(3) else v1
+        out.append((book, ch, v1, v2))
+    return out
+
+
+def resolve_scripture(src, problems):
+    passages = []
+    phrase_hit = False
+    for book, ch, v1, v2 in parse_refs(src["ref"]):
+        path, verses = load_book(book)
+        if not verses:
+            problems.append(f"{src['ref']}: no KJV file for {book}")
+            return {"status": "not-held", "statusText": "NOT YET HELD", "passages": []}
+        lines = []
+        for v in range(v1, v2 + 1):
+            txt = verses.get((ch, v))
+            if txt is None:
+                problems.append(f"{src['ref']}: {book} {ch}:{v} not in file")
+                continue
+            if "phrase" in src and norm(src["phrase"]) in norm(txt):
+                phrase_hit = True
+            lines.append({"n": f"{ch}:{v}", "text": txt})
+        passages.append({"book": book, "label": f"{book} {ch}:{v1}" + (f"-{v2}" if v2 != v1 else ""),
+                         "file": str(path.relative_to(ROOT)), "verses": lines})
+    if "phrase" in src and not phrase_hit:
+        problems.append(f"{src['ref']}: phrase {src['phrase']!r} not found in the cited verses")
+    return {"status": "held", "statusText": "HELD · KJV", "passages": passages,
+            "open": REPO_URL + passages[0]["file"] if passages else None}
+
+
+def resolve_repo(src, problems):
+    path = ROOT / src["path"]
+    if not path.exists():
+        problems.append(f"{src.get('title')}: missing file {src['path']}")
+        return {"status": "not-held", "statusText": "FILE MISSING", "passages": []}
+    text = path.read_text(encoding="utf-8")
+    snippet = None
+    if "phrase" in src:
+        flat = re.sub(r"\s+", " ", text)
+        i = norm(flat).find(norm(src["phrase"]))
+        if i < 0:
+            problems.append(f"{src.get('title')}: phrase {src['phrase']!r} not found in {src['path']}")
+        else:
+            # map back approximately: take a window around the phrase in the flattened text
+            lo = max(0, i - 220)
+            hi = min(len(flat), i + len(src["phrase"]) + 220)
+            snippet = ("…" if lo > 0 else "") + flat[lo:hi].strip() + ("…" if hi < len(flat) else "")
+    return {"status": "held", "statusText": "HELD", "snippet": snippet,
+            "open": REPO_URL + src["path"]}
+
+
+def build_card(card, problems):
+    out = dict(card)
+    out["sources"] = []
+    for src in card["sources"]:
+        s = dict(src)
+        if "ref" in src:
+            s.update(resolve_scripture(src, problems))
+            s["title"] = s.get("title") or src["ref"]
+        elif "path" in src:
+            s.update(resolve_repo(src, problems))
+        else:
+            s.update({"status": "not-held", "statusText": "NOT YET HELD · public domain", "passages": []})
+        out["sources"].append(s)
+    out["cardUrl"] = REPO_URL + card["card"]
+    for g in out.get("goDeeper", []):
+        if not (ROOT / g["path"]).exists():
+            problems.append(f"{card['slug']}: go-deeper path missing {g['path']}")
+        g["url"] = REPO_URL + g["path"]
+    return out
+
+
+def main():
+    check_only = "--check" in sys.argv
+    problems = []
+    cards = []
+    for p in sorted(CARDS.glob("*.json")):
+        card = json.loads(p.read_text(encoding="utf-8"))
+        cards.append(build_card(card, problems))
+    held = sum(1 for c in cards for s in c["sources"] if s["status"] == "held")
+    total = sum(len(c["sources"]) for c in cards)
+    print(f"{len(cards)} cards, {total} sources, {held} held in repo, {total - held} not yet held")
+    if problems:
+        print("\nPROBLEMS (the build will not publish a citation it can't find):")
+        for pr in problems:
+            print("  -", pr)
+        sys.exit(1)
+    if check_only:
+        return
+    DIST.mkdir(parents=True, exist_ok=True)
+    for name in ("index.html", "app.js", "styles.css"):
+        shutil.copy(SITE / "src" / name, DIST / name)
+    (DIST / "data.json").write_text(json.dumps({"cards": cards, "repo": REPO_URL,
+                                                "kjvHeld": bool(BOOK_FILES)}, ensure_ascii=False, indent=1),
+                                    encoding="utf-8")
+    (DIST / ".nojekyll").write_text("")
+    print(f"wrote {DIST}")
+
+
+if __name__ == "__main__":
+    main()
