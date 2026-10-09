@@ -112,8 +112,11 @@ def resolve_scripture(src, problems):
             if "phrase" in src and norm(src["phrase"]) in norm(txt):
                 phrase_hit = True
             lines.append({"n": f"{ch}:{v}", "text": txt})
+        # Three verses either side, so the reader pane shows the line in its paragraph.
+        before = [{"n": f"{ch}:{v}", "text": verses[(ch, v)]} for v in range(max(1, v1 - 3), v1) if (ch, v) in verses]
+        after = [{"n": f"{ch}:{v}", "text": verses[(ch, v)]} for v in range(v2 + 1, v2 + 4) if (ch, v) in verses]
         passages.append({"book": book, "label": f"{book} {ch}:{v1}" + (f"-{v2}" if v2 != v1 else ""),
-                         "file": str(path.relative_to(ROOT)), "verses": lines})
+                         "file": str(path.relative_to(ROOT)), "verses": lines, "before": before, "after": after})
     if "phrase" in src and not phrase_hit:
         problems.append(f"{src['ref']}: phrase {src['phrase']!r} not found in the cited verses")
     return {"status": "held", "statusText": "HELD · KJV", "passages": passages,
@@ -134,8 +137,8 @@ def resolve_repo(src, problems):
             problems.append(f"{src.get('title')}: phrase {src['phrase']!r} not found in {src['path']}")
         else:
             # map back approximately: take a window around the phrase in the flattened text
-            lo = max(0, i - 220)
-            hi = min(len(flat), i + len(src["phrase"]) + 220)
+            lo = max(0, i - 600)
+            hi = min(len(flat), i + len(src["phrase"]) + 600)
             snippet = ("…" if lo > 0 else "") + flat[lo:hi].strip() + ("…" if hi < len(flat) else "")
     return {"status": "held", "statusText": "HELD", "snippet": snippet,
             "open": REPO_URL + src["path"]}
