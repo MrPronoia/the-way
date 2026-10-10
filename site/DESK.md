@@ -1,5 +1,7 @@
 # The Desk — a second mode for the Reading Room
 
+**Working on it?** Start with [`DESK-DEVELOPERS.md`](DESK-DEVELOPERS.md): how to run it, the code map, the rules, the tests, and a prompt to hand your AI assistant.
+
 **Status: prototype, for review.** Built by Rex, October 2026. Nothing here is merged or deployed; it is a working page you can open and judge, rather than a proposal you have to imagine.
 
 The Reading Room hands a reader one case at a time, laid out the way the card lays it out. The Desk is the same evidence on an open surface: pull sources from any case file, put them where you want, group them, tie your own string, keep the result. The case file argues. The desk lets someone else argue.
@@ -49,10 +51,13 @@ Additive only, and each one comes out cleanly.
 |---|---|
 | `site/build.py` | four filenames added to the list copied into `dist/`; one import; six lines at the end of `main()` that write `dist/desk.json` and print a summary |
 | `site/src/index.html` | one `<a href="canvas.html">the desk</a>` in the existing nav; one `<script src="desk-door.js">` after `app.js` |
+| `CLAUDE.md` | one paragraph pointing assistants at the Desk's docs |
+
+**Research content (brief D, 2026-10-10)** is a separate kind of change, and it's yours to review on its merits: six sources appended to the sacrifice card and two to the Essene card, three upgraded to held with their wording corrected; a new heading on `questions/sacrifice-culture-vegetarian-jesus.md`; objection 8 and brief D in `questions/OBJECTIONS.md` and `site/data/objections.json`; corrected quotations in `christianity/the-essene-diet.md`, `christianity/nazarene-sect-predated-jesus.md` and `christianity/2026-02-25-essene-nazarene-ebionite-lineage.md`; rows in `VERIFIED-SOURCES.md`, `FIX-LIST.md` and `OPEN-RESEARCH.md`. Every quotation behind them is in `christianity/Incoming/witnesses-on-flesh-and-sacrifice-selected-texts.md`.
 
 Nothing else of yours is touched. `app.js` and `styles.css` are unmodified, and none of your citation checks change: the build still fails on exactly what it failed on before. `desk.json` never fails the build. A verse reference in a card's prose that the KJV file does not contain just gets no desk card, and is listed in the build output so the prose can be checked. Today there are none.
 
-**New files:** `site/src/canvas.html`, `site/src/canvas.css`, `site/src/canvas.js`, `site/src/desk-door.js`, `site/desk_links.py`, `site/data/desks/essene-debate.json`, `site/tier-families.py`, and this file.
+**New files:** `site/src/canvas.html`, `site/src/canvas.css`, `site/src/canvas.js`, `site/src/desk-door.js`, `site/desk_links.py`, `site/data/desks/essene-debate.json`, `site/tier-families.py`, `site/tests/desk/` (browser tests, not part of the build), `site/DESK-DEVELOPERS.md`, the witnesses file, and this file.
 
 ---
 
