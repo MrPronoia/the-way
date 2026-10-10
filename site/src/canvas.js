@@ -681,6 +681,7 @@
     renderSelection();
     renderTrayPlaced();
     renderHere();
+    if (presenting) { applySpotlight(); setNotesReadOnly(true); }
     drawLinks();
     updateCounts();
     $('emptyDesk').hidden = items.length > 0;
@@ -748,6 +749,7 @@
       var pa = pinPoint(a), pb = pinPoint(b);
       var sa = srcOf(a), sb = srcOf(b);
       var isOther = (sa && sa.side === 'other') || (sb && sb.side === 'other');
+      var dim = presFocus && !(presFocus[a.id] || presFocus[b.id]);
 
       var hit = svgEl('line');
       hit.setAttribute('class', 'string-hit');
@@ -757,6 +759,7 @@
       (function (idx) {
         hit.addEventListener('click', function (e) {
           e.stopPropagation();
+          if (presenting) return;
           pushUndo();
           links.splice(idx, 1);
           drawLinks(); updateCounts(); save();
@@ -766,7 +769,7 @@
       svg.appendChild(hit);
 
       var line = svgEl('line');
-      line.setAttribute('class', 'string-line' + (isOther ? ' other' : ''));
+      line.setAttribute('class', 'string-line' + (isOther ? ' other' : '') + (dim ? ' dim' : ''));
       line.setAttribute('x1', pa.x); line.setAttribute('y1', pa.y);
       line.setAttribute('x2', pb.x); line.setAttribute('y2', pb.y);
       line.setAttribute('vector-effect', 'non-scaling-stroke');
@@ -905,7 +908,7 @@
       }
     }, { passive: false });
 
-    var pan = null, marq = null, drag = null, frameDrag = null, resize = null, string = null;
+    var pan = null, marq = null, drag = null, frameDrag = null, resize = null, string = null, presPress = null;
     var touches = {}, pinch = null;
 
     function nodeFromEvent(e) {
@@ -941,6 +944,20 @@
       }
 
       var holder = nodeFromEvent(e);
+
+      /* Presenting: a card or a section title is clicked, never dragged; the
+         background pans. Nothing on the desk can move by accident. */
+      if (presenting) {
+        if (holder) presPress = { holder: holder, x: e.clientX, y: e.clientY };
+        else {
+          surface.setPointerCapture(e.pointerId);
+          pan = { lx: e.clientX, ly: e.clientY };
+          surface.classList.add('is-panning');
+        }
+        e.preventDefault();
+        return;
+      }
+
       var isPin = e.target.classList && e.target.classList.contains('pin');
       var isGrip = e.target.classList && e.target.classList.contains('frame-grip');
       var isBar = !!(e.target.closest && e.target.closest('.frame-title'));
@@ -1116,6 +1133,17 @@
     function endPointer(e) {
       if (e.pointerType === 'touch') { delete touches[e.pointerId]; if (Object.keys(touches).length < 2) pinch = null; }
 
+      if (presPress) {
+        var pp = presPress;
+        presPress = null;
+        if (Math.abs(e.clientX - pp.x) + Math.abs(e.clientY - pp.y) < 6) {
+          var pid = pp.holder.getAttribute('data-id'), pit = itemById(pid);
+          if (pit && pit.t === 'frame') goSlide(slideIndexOf(pid));
+          else openItem(pit);
+        }
+        return;
+      }
+
       if (string && !string.click) {
         var holder = nodeAtPoint(e.clientX, e.clientY);
         var tied = false;
@@ -1149,11 +1177,7 @@
         else {
           undoStack.pop();
           /* a click, not a drag: open the source */
-          var it = itemById(leadId);
-          if (it && it.t === 'src') { var s = srcOf(it); if (s) openReader(s, cardBySlug(it.c), it.id); }
-          else if (it && it.t === 'q') openCaseReader(it.c, it.id);
-          else if (it && it.t === 'v') openVerseReader(it.k, it.id);
-          else if (it && it.t === 'd') openDocReader(it.k, it.id);
+          openItem(itemById(leadId));
         }
         return;
       }
@@ -1199,6 +1223,8 @@
     });
 
     document.addEventListener('keydown', function (e) {
+      if (presentKey(e)) return;
+      if (!isTyping(e) && (e.key === 'p' || e.key === 'P') && !e.ctrlKey && !e.metaKey && !e.altKey) { startPresent(0, true); e.preventDefault(); return; }
       if (e.code === 'Space' && !isTyping(e)) { spaceDown = true; $('surface').classList.add('is-spacing'); e.preventDefault(); }
       if (isTyping(e)) return;
       if ((e.key === 'Delete' || e.key === 'Backspace')) { removeSelection(); e.preventDefault(); }
@@ -1224,6 +1250,15 @@
     document.addEventListener('keyup', function (e) {
       if (e.code === 'Space') { spaceDown = false; $('surface').classList.remove('is-spacing'); }
     });
+  }
+
+  /* A click on a card opens its reader; a note is read where it sits. */
+  function openItem(it) {
+    if (!it) return;
+    if (it.t === 'src') { var s = srcOf(it); if (s) openReader(s, cardBySlug(it.c), it.id); }
+    else if (it.t === 'q') openCaseReader(it.c, it.id);
+    else if (it.t === 'v') openVerseReader(it.k, it.id);
+    else if (it.t === 'd') openDocReader(it.k, it.id);
   }
 
   function isTyping(e) {
@@ -1270,14 +1305,20 @@
     if (b) fitBox(b);
   }
 
-  function fitBox(b) {
+  /* The view that fits box b inside the surface, less the padding on each
+     side, no larger than maxScale. */
+  function fitTarget(b, pad, maxScale) {
+    pad = pad || { t: 56, r: 56, b: 56, l: 56 };
     var r = $('surface').getBoundingClientRect();
-    var pad = 56;
-    var sx = (r.width - pad * 2) / Math.max(1, b.x2 - b.x1);
-    var sy = (r.height - pad * 2) / Math.max(1, b.y2 - b.y1);
-    tf.scale = clamp(Math.min(sx, sy), MIN_Z, 1.15);
-    tf.x = (r.width - (b.x2 - b.x1) * tf.scale) / 2 - b.x1 * tf.scale;
-    tf.y = (r.height - (b.y2 - b.y1) * tf.scale) / 2 - b.y1 * tf.scale;
+    var w = Math.max(1, r.width - pad.l - pad.r), h = Math.max(1, r.height - pad.t - pad.b);
+    var bw = Math.max(1, b.x2 - b.x1), bh = Math.max(1, b.y2 - b.y1);
+    var s = clamp(Math.min(w / bw, h / bh), MIN_Z, maxScale || 1.15);
+    return { scale: s, x: pad.l + (w - bw * s) / 2 - b.x1 * s, y: pad.t + (h - bh * s) / 2 - b.y1 * s };
+  }
+
+  function fitBox(b) {
+    var t = fitTarget(b);
+    tf.x = t.x; tf.y = t.y; tf.scale = t.scale;
     applyTransform(); drawLinks();
   }
 
@@ -1428,6 +1469,15 @@
         else location.hash = 'desk=' + d.slug;
       });
       li.appendChild(b);
+      var pres = el('button', 'tray-present', '▶ PRESENT IT');
+      pres.type = 'button';
+      pres.title = 'Open this desk and walk it section by section, full screen';
+      pres.addEventListener('click', function () {
+        toggleFull(true);
+        if (viewingShared && sharedMeta && sharedMeta.slug === d.slug) startPresent(0, false);
+        else location.hash = 'desk=' + d.slug + '&present';
+      });
+      li.appendChild(pres);
       ul.appendChild(li);
     });
   }
@@ -1482,7 +1532,7 @@
     var q = trayQuery(), ul = $('trayHere');
     ul.innerHTML = '';
     var frames = items.filter(function (x) { return x.t === 'frame'; })
-      .sort(function (a, b) { return (a.y - b.y) || (a.x - b.x); });
+      .sort(readingOrder);
     var rows = frames.filter(function (f) { return matches(itemText(f), q); });
     if (q) {
       var hits = items.filter(function (x) { return x.t !== 'frame' && matches(itemText(x), q); });
@@ -1499,6 +1549,15 @@
       b.title = 'Go to it on the desk';
       b.addEventListener('click', function () { focusOn(it); });
       li.appendChild(b);
+      if (it.t === 'frame') {
+        var play = el('button', 'here-play', '▶');
+        play.type = 'button';
+        play.title = 'Present from this section';
+        play.setAttribute('aria-label', 'Present from ' + (it.title || 'this section'));
+        play.addEventListener('click', function () { startPresent(slideIndexOf(it.id), true); });
+        li.appendChild(play);
+        li.className = 'has-play';
+      }
       ul.appendChild(li);
     });
     $('trayHereNote').textContent = q ? 'On the desk now. Click one to go to it.' : 'The sections on this desk. Click one to go there.';
@@ -1566,6 +1625,235 @@
     }
     var here = renderHere();
     $('trayNone').hidden = !q || any > 0 || here > 0;
+  }
+
+  /* ================= present mode =================
+     A desk shown one section at a time: an overview of the whole board, then
+     every frame in reading order. The camera glides between sections, the
+     section on screen stays lit and the rest of the board dims, and nothing
+     can be moved by accident. Arrow keys, space and page keys move; a card
+     can still be clicked to read it. */
+
+  var presenting = null;     // { slides, i, before, full, anim, idle }
+  var presFocus = null;      // id -> true for the section on screen, null for the overview
+  var PRES_PAD = { t: 70, r: 64, b: 96, l: 64 };     // minimums; the caption and bar are measured per slide
+
+  /* Rows first, then left to right; frames whose tops are within a card's
+     height of each other count as one row. */
+  function readingOrder(a, b) { return Math.abs(a.y - b.y) < 120 ? a.x - b.x : a.y - b.y; }
+
+  function presentSlides() {
+    var frames = items.filter(function (x) { return x.t === 'frame'; }).sort(readingOrder);
+    return [{ kind: 'overview' }].concat(frames.map(function (f) { return { kind: 'frame', id: f.id }; }));
+  }
+
+  function slideIndexOf(frameId) {
+    var s = presentSlides();
+    for (var i = 0; i < s.length; i++) if (s[i].id === frameId) return i;
+    return 0;
+  }
+
+  function startPresent(at, full) {
+    if (!items.length) { hint('There is nothing on the desk to present yet.'); return; }
+    if (presenting) { goSlide(at || 0); return; }
+    closeReader();
+    var slides = presentSlides();
+    presenting = { slides: slides, i: 0, before: { x: tf.x, y: tf.y, scale: tf.scale }, full: false, anim: 0, idle: 0 };
+    sel = {}; renderSelection();
+    document.body.classList.add('presenting');
+    setNotesReadOnly(true);
+    buildDots();
+    $('presCaption').hidden = false;
+    $('presBar').hidden = false;
+    wakeBar();
+    if (full) toggleFull(true);
+    /* The surface has just changed size; fit once the browser has laid it out. */
+    requestAnimationFrame(function () { requestAnimationFrame(function () { goSlide(clamp(at || 0, 0, slides.length - 1), true); }); });
+  }
+
+  function exitPresent() {
+    var P = presenting;
+    if (!P) return;
+    presenting = null; presFocus = null;
+    cancelAnimationFrame(P.anim);
+    clearTimeout(P.idle);
+    document.body.classList.remove('presenting', 'pres-idle');
+    $('presCaption').hidden = true;
+    $('presBar').hidden = true;
+    setNotesReadOnly(false);
+    applySpotlight();
+    if (document.fullscreenElement && document.exitFullscreen) document.exitFullscreen().catch(function () { /* already out */ });
+    if (/[#&]present/.test(location.hash)) {
+      var h = location.hash.replace(/&?present(=\d+)?/, '').replace(/^#&/, '#');
+      history.replaceState(null, '', location.pathname + location.search + (h === '#' ? '' : h));
+    }
+    requestAnimationFrame(function () {
+      tf.x = P.before.x; tf.y = P.before.y; tf.scale = P.before.scale;
+      applyTransform(); drawLinks();
+    });
+    hint('Presentation ended. Press P, or the PRESENT button, to start again.');
+  }
+
+  function goSlide(i, instant) {
+    var P = presenting;
+    if (!P) return;
+    i = clamp(i, 0, P.slides.length - 1);
+    P.i = i;
+    var s = P.slides[i], box, f = s.kind === 'frame' ? itemById(s.id) : null;
+    if (f) {
+      presFocus = {};
+      presFocus[f.id] = true;
+      membersOf(f).forEach(function (m) { presFocus[m.id] = true; });
+      box = { x1: f.x - 24, y1: f.y - 36, x2: f.x + f.w + 24, y2: f.y + f.h + 24 };
+      $('presEyebrow').textContent = 'SECTION ' + i + ' OF ' + (P.slides.length - 1);
+      $('presTitle').textContent = f.title || 'UNTITLED';
+      $('presSub').textContent = membersOf(f).length + ' on the board in this section';
+    } else {
+      presFocus = null;
+      box = bounds();
+      $('presEyebrow').textContent = P.slides.length > 1 ? 'OVERVIEW · ' + (P.slides.length - 1) + ' SECTIONS' : 'OVERVIEW';
+      $('presTitle').textContent = sharedMeta ? sharedMeta.title : 'This desk';
+      $('presSub').textContent = P.slides.length > 1 ? (sharedMeta ? sharedMeta.subtitle : 'Press → to walk it section by section.') :
+        'Frames become slides: put + FRAME around a group of cards and each one becomes a section here.';
+    }
+    /* The board fits between the caption and the bar, measured each slide,
+       so a long title or a two-line subtitle never sits on the cards. */
+    var sr = $('surface').getBoundingClientRect();
+    var cap = $('presCaption').getBoundingClientRect(), bar = $('presBar').getBoundingClientRect();
+    var pad = { t: Math.max(PRES_PAD.t, cap.bottom - sr.top + 26), r: PRES_PAD.r, l: PRES_PAD.l,
+                b: Math.max(PRES_PAD.b, sr.bottom - bar.top + 22) };
+    if (box) animateTo(fitTarget(box, pad, 1.8), instant ? 0 : 700);
+    applySpotlight(); drawLinks();
+    var dots = $('presDots').children;
+    for (var d = 0; d < dots.length; d++) {
+      dots[d].classList.toggle('is-on', d === i);
+      dots[d].setAttribute('aria-selected', d === i ? 'true' : 'false');
+    }
+    $('presPrev').disabled = i === 0;
+    $('presNext').disabled = i === P.slides.length - 1;
+  }
+
+  /* The camera glides: centre and zoom are interpolated, the zoom on a log
+     scale, so a move between distant sections reads as one smooth motion. */
+  function animateTo(t, ms) {
+    var P = presenting;
+    cancelAnimationFrame(P ? P.anim : 0);
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var set = function (x, y, s) { tf.x = x; tf.y = y; tf.scale = s; $('world').style.transform = 'translate3d(' + x + 'px,' + y + 'px,0) scale(' + s + ')'; };
+    if (!ms || reduce) { set(t.x, t.y, t.scale); drawLinks(); return; }
+    var r = $('surface').getBoundingClientRect(), cx = r.width / 2, cy = r.height / 2;
+    var a = { s: tf.scale, wx: (cx - tf.x) / tf.scale, wy: (cy - tf.y) / tf.scale };
+    var b = { s: t.scale, wx: (cx - t.x) / t.scale, wy: (cy - t.y) / t.scale };
+    var t0 = performance.now();
+    var step = function (now) {
+      var k = Math.min(1, (now - t0) / ms);
+      var e = k < 0.5 ? 4 * k * k * k : 1 - Math.pow(-2 * k + 2, 3) / 2;
+      var s = Math.exp(Math.log(a.s) + (Math.log(b.s) - Math.log(a.s)) * e);
+      var wx = a.wx + (b.wx - a.wx) * e, wy = a.wy + (b.wy - a.wy) * e;
+      set(cx - wx * s, cy - wy * s, s);
+      if (k < 1 && presenting) presenting.anim = requestAnimationFrame(step);
+      else { set(t.x, t.y, t.scale); drawLinks(); }
+    };
+    if (P) P.anim = requestAnimationFrame(step);
+  }
+
+  function applySpotlight() {
+    var ns = $('nodes').children, fr = $('frames').children, i;
+    for (i = 0; i < ns.length; i++) ns[i].classList.toggle('pres-dim', !!presFocus && !presFocus[ns[i].getAttribute('data-id')]);
+    for (i = 0; i < fr.length; i++) fr[i].classList.toggle('pres-dim', !!presFocus && !presFocus[fr[i].getAttribute('data-id')]);
+  }
+
+  function setNotesReadOnly(on) {
+    var tas = $('nodes').querySelectorAll('textarea');
+    for (var i = 0; i < tas.length; i++) tas[i].readOnly = on;
+  }
+
+  function buildDots() {
+    var wrap = $('presDots');
+    wrap.innerHTML = '';
+    presenting.slides.forEach(function (s, i) {
+      var b = el('button', 'pres-dot' + (s.kind === 'overview' ? ' is-overview' : ''));
+      b.type = 'button';
+      b.setAttribute('role', 'tab');
+      var f = s.kind === 'frame' ? itemById(s.id) : null;
+      b.title = f ? i + ' · ' + f.title : 'Overview';
+      b.setAttribute('aria-label', b.title);
+      b.addEventListener('click', function () { this.blur(); closeReader(); goSlide(i); });
+      wrap.appendChild(b);
+    });
+  }
+
+  /* Full screen is the browser's to grant, and only on a click or a key. */
+  function toggleFull(on) {
+    var want = on == null ? !document.fullscreenElement : on;
+    if (want && !document.fullscreenElement && document.documentElement.requestFullscreen) {
+      document.documentElement.requestFullscreen().catch(function () { /* refused: the window still fills */ });
+    } else if (!want && document.fullscreenElement && document.exitFullscreen) {
+      document.exitFullscreen().catch(function () { /* already out */ });
+    }
+  }
+
+  /* The bar fades when the pointer rests, like a slideshow, and comes back on any movement. */
+  function wakeBar(e) {
+    var P = presenting;
+    if (!P) return;
+    document.body.classList.remove('pres-idle');
+    clearTimeout(P.idle);
+    if (e && e.target && e.target.closest && e.target.closest('.pres-bar')) return;
+    P.idle = setTimeout(function () { if (presenting) document.body.classList.add('pres-idle'); }, 2600);
+  }
+
+  function presentLink() {
+    var base = location.origin + location.pathname;
+    var at = presenting ? presenting.i : 0;
+    if (viewingShared && sharedMeta && deskSig() === sharedSig) return base + '#desk=' + sharedMeta.slug + '&present=' + at;
+    return base + '#b=' + encodeURIComponent(encode()) + '&present=' + at;
+  }
+
+  /* Keys while presenting. Returns true when the key was the presentation's. */
+  function presentKey(e) {
+    if (!presenting) return false;
+    var k = e.key, last = presenting.slides.length - 1;
+    if (k === 'Escape') { if (!$('reader').hidden) closeReader(); else exitPresent(); }
+    else if (k === 'ArrowRight' || k === 'ArrowDown' || k === 'PageDown' || (k === ' ' && !e.shiftKey)) { closeReader(); goSlide(presenting.i + 1); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp' || (k === ' ' && e.shiftKey)) { closeReader(); goSlide(presenting.i - 1); }
+    else if (k === 'Home' || k === 'o' || k === 'O') { closeReader(); goSlide(0); }
+    else if (k === 'End') { closeReader(); goSlide(last); }
+    else if (/^[0-9]$/.test(k)) { closeReader(); goSlide(+k); }
+    else if (k === 'f' || k === 'F') toggleFull();
+    /* Nothing on a presented desk is deleted, undone or nudged by accident. */
+    else if (k === 'Delete' || k === 'Backspace' || ((e.ctrlKey || e.metaKey) && /^[az]$/i.test(k))) { /* swallowed */ }
+    else return false;
+    e.preventDefault();
+    return true;
+  }
+
+  function wirePresent() {
+    $('btnPresent').addEventListener('click', function () { this.blur(); startPresent(0, true); });
+    $('presPrev').addEventListener('click', function () { this.blur(); closeReader(); goSlide(presenting.i - 1); });
+    $('presNext').addEventListener('click', function () { this.blur(); closeReader(); goSlide(presenting.i + 1); });
+    $('presOverview').addEventListener('click', function () { this.blur(); closeReader(); goSlide(0); });
+    $('presFull').addEventListener('click', function () { this.blur(); toggleFull(); });
+    $('presExit').addEventListener('click', function () { this.blur(); exitPresent(); });
+    $('presLink').addEventListener('click', function () { copyText(presentLink(), this); this.blur(); });
+    /* The bar and caption are not the desk: no panning starts on them. */
+    ['presBar', 'presCaption'].forEach(function (id) {
+      $(id).addEventListener('pointerdown', function (e) { e.stopPropagation(); });
+    });
+    document.addEventListener('mousemove', wakeBar);
+    document.addEventListener('fullscreenchange', function () {
+      if (!presenting) return;
+      if (document.fullscreenElement) presenting.full = true;
+      else if (presenting.full) { exitPresent(); return; }   // Esc in full screen ends the show, as in any slideshow
+      goSlide(presenting.i, true);
+    });
+    window.addEventListener('resize', function () { if (presenting) goSlide(presenting.i, true); });
+  }
+
+  /* canvas.html#desk=<slug>&present[=n] opens straight into the show. */
+  function presentFromHash() {
+    var m = /[#&]present(?:=(\d+))?(?:&|$)/.exec(location.hash);
+    if (m) startPresent(m[1] ? +m[1] : 0, false);
   }
 
   /* ================= a case file, open in the tray =================
@@ -2505,6 +2793,7 @@
     renderTray();
     wireSurface();
     wireTools();
+    wirePresent();
     watchLateFonts();
     var asked = sharedInHash();
     var restored = load();
@@ -2525,10 +2814,15 @@
       hint('Searches the held sources only. Nothing on this desk is generated.');
     }
     arrive();
+    presentFromHash();
     /* A link pasted into this tab's address bar changes only the hash. */
     window.addEventListener('hashchange', function () {
       var s = sharedInHash();
-      if (s && s.json) openShared(s);
+      if (s && s.json) {
+        if (presenting) exitPresent();
+        openShared(s);
+        presentFromHash();
+      }
       else if (s) hint(sharedHint(s));
       else if (viewingShared) backToMine();
       else arrive();

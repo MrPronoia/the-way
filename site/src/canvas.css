@@ -431,3 +431,106 @@ body.is-carrying, body.is-carrying * { cursor: grabbing !important; user-select:
 }
 .frame.is-selected { border-width: 3px; }
 @media (prefers-reduced-motion: reduce) { .node.is-found .pincard, .node.is-found .qcard, .node.is-found .notepad, .node.is-found .doccard { animation: none; } }
+
+/* ---------- present mode ---------- */
+
+.tool.present { background: var(--pad); color: var(--ink); border-color: var(--pad); }
+.tool.present:hover { background: #fff8c4; color: var(--ink); }
+
+/* The stage: only the desk, edge to edge. */
+body.presenting { overflow: hidden; }
+body.presenting .top, body.presenting .desk-form, body.presenting .shared-bar, body.presenting .desk-tools,
+body.presenting .tray, body.presenting .hud, body.presenting .foot, body.presenting .desk-narrow, body.presenting .skip {
+  display: none !important;
+}
+body.presenting .surface {
+  position: fixed; inset: 0; width: 100vw; height: 100vh; min-height: 0;
+  border: 0; z-index: 25; box-shadow: inset 0 0 160px rgba(0, 0, 0, 0.75);
+}
+body.presenting .surface, body.presenting .node .pincard, body.presenting .node .qcard,
+body.presenting .node .doccard, body.presenting .node .notepad { cursor: pointer; }
+body.presenting .surface.is-panning { cursor: grabbing; }
+body.presenting .node-tools, body.presenting .frame-grip, body.presenting .frame-del { display: none !important; }
+body.presenting .frame-title { cursor: pointer; }
+body.presenting .frame-title input { pointer-events: none; }
+body.presenting .node .notepad textarea { cursor: pointer; }
+body.presenting .node.is-selected .pincard, body.presenting .node.is-selected .qcard { outline: 0; }
+
+/* The spotlight: the section on screen stays lit, the rest of the board recedes. */
+.node, .frame { transition: opacity 0.45s ease; }
+.node.pres-dim, .frame.pres-dim { opacity: 0.13; }
+.string-line { transition: opacity 0.45s ease; }
+.string-line.dim { opacity: 0.1; }
+
+.pres-caption {
+  position: absolute; left: 32px; top: 26px; z-index: 9; max-width: min(860px, 72vw);
+  pointer-events: none;
+}
+.pres-caption .eyebrow { color: var(--pad); letter-spacing: 3px; font-size: 12px; }
+.pres-title {
+  margin-top: 4px; font-family: var(--type); font-size: clamp(22px, 2.7vw, 38px); line-height: 1.12;
+  color: var(--cream); text-shadow: 0 2px 14px rgba(0, 0, 0, 0.85);
+}
+.pres-sub { margin-top: 7px; font-family: var(--mono); font-size: 13px; line-height: 1.45; color: var(--muted-light); max-width: 640px; }
+
+.pres-bar {
+  position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); z-index: 9;
+  display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;
+  max-width: calc(100vw - 32px); padding: 8px 10px;
+  background: rgba(24, 24, 27, 0.94); border: 1px solid var(--board-border);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.65);
+  transition: opacity 0.35s ease;
+}
+.pres-bar button {
+  font-family: var(--type); font-size: 11px; letter-spacing: 1px; min-height: 34px; padding: 6px 11px;
+  background: transparent; color: var(--text-light); border: 1px solid var(--board-border); cursor: pointer;
+}
+.pres-bar button:hover, .pres-bar button:focus-visible { background: var(--drawer); color: #ffffff; }
+.pres-bar button:disabled { opacity: 0.3; cursor: default; background: transparent; }
+.pres-bar .pres-arrow { font-size: 20px; line-height: 1; width: 42px; padding: 0; }
+.pres-dots { display: flex; align-items: center; gap: 7px; padding: 0 6px; }
+.pres-bar .pres-dot {
+  width: 11px; height: 11px; min-height: 0; padding: 0; border: 0; border-radius: 50%;
+  background: var(--muted); transition: transform 0.2s ease, background 0.2s ease;
+}
+.pres-bar .pres-dot.is-overview { border-radius: 2px; }
+.pres-bar .pres-dot:hover { background: var(--muted-light); }
+.pres-bar .pres-dot.is-on { background: var(--pad); transform: scale(1.35); }
+.pres-sep { width: 1px; align-self: stretch; background: var(--board-border); margin: 0 2px; }
+.pres-keys { font-family: var(--mono); font-size: 10px; color: var(--muted-light); padding: 0 4px; white-space: nowrap; }
+
+/* Resting pointer: the bar and cursor get out of the way. */
+body.pres-idle .pres-bar { opacity: 0; pointer-events: none; }
+body.pres-idle.presenting .surface { cursor: none; }
+
+/* Present from the tray: the section list and the prepared desks. */
+.tray-here li.has-play { display: flex; gap: 5px; align-items: stretch; }
+.tray-here li.has-play .here-row { flex: 1 1 auto; min-width: 0; }
+.here-play {
+  flex: 0 0 34px; background: var(--drawer); color: var(--pad); border: 1px solid var(--board-border);
+  cursor: pointer; font-size: 12px;
+}
+.here-play:hover, .here-play:focus-visible { background: var(--pad); color: var(--ink); }
+.tray-present {
+  width: 100%; margin-top: 4px; padding: 6px 8px; cursor: pointer;
+  font-family: var(--type); font-size: 11px; letter-spacing: 1px;
+  background: var(--drawer); color: var(--pad); border: 1px solid var(--board-border);
+}
+.tray-present:hover, .tray-present:focus-visible { background: var(--pad); color: var(--ink); }
+
+@media (max-width: 820px) {
+  .pres-keys { display: none; }
+  .pres-caption { left: 16px; top: 14px; max-width: calc(100vw - 32px); }
+  .pres-bar { bottom: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .node, .frame, .string-line, .pres-bar { transition: none; }
+}
+
+/* A soft fade under the caption and the bar, so whatever the dimmed board
+   has behind them never competes with the words. */
+body.presenting .surface::before, body.presenting .surface::after {
+  content: ""; position: absolute; left: 0; right: 0; z-index: 8; pointer-events: none;
+}
+body.presenting .surface::before { top: 0; height: 190px; background: linear-gradient(rgba(16, 16, 18, 0.92), rgba(16, 16, 18, 0)); }
+body.presenting .surface::after { bottom: 0; height: 130px; background: linear-gradient(rgba(16, 16, 18, 0), rgba(16, 16, 18, 0.85)); }
