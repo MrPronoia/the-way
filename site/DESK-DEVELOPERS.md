@@ -105,11 +105,11 @@ The file is organized under banner comments. Search for the banner, not a line n
 |---|---|
 | `source families` | `FAMILIES`, `familyOf()`, `tierClass()` |
 | `the viewport` | `tf` (pan and zoom), `toWorld()`, `zoomAt()` |
-| `the model` / `adding things` | `items`, `links`, `addSource`, `addQuestion`, `addVerse`, `addDoc`, `addNote`, `addFrame`, `freeSpot` |
+| `the model` / `adding things` | `items`, `links`, `pushUndo` / `cancelUndo` / `undo` / `redo`, `addSource`, `addQuestion`, `addVerse`, `addDoc`, `addNote`, `addFrame`, `freeSpot` |
 | `pulling a whole case` | `pullCase()`, `caseRoomAt()` (never lays a case on top of other cards), `flowAndSettle()` |
 | `the thread` | `spawn()`: a link becomes a card beside its origin, tied by string |
 | `rendering` | one builder per card kind; `renderAll()` redraws everything |
-| `string`, `snapping`, `frames` | `drawLinks()`, `snapDelta()` (22px stack gap), `membersOf()` (spatial, never stored) |
+| `string`, `snapping`, `frames` | `drawLinks()`, `selectLink()` / `cutLink()` (select a string, then Delete or its x), `snapDelta()` (22px stack gap), `membersOf()` (spatial, never stored), `startRename()` |
 | `interaction` | pointer and keyboard handling; `openItem()` opens a card's reader |
 | `fit and tidy` | `fitTarget()`, `fitBox()`, `tidy()` |
 | `the trays` / `a case file, open in the tray` | tray rendering, `openTrayCase()` |
@@ -182,7 +182,7 @@ npm test             # builds the site, serves it, runs every suite
 npm test -- present  # one suite
 ```
 
-About three minutes for all of it. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
+About three minutes for all of it, 234 checks. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
 
 | Suite | Covers |
 |---|---|
@@ -191,6 +191,7 @@ About three minutes for all of it. Chrome is found automatically. Set `CHROME_PA
 | `sharing` | A shared link never overwrites your own desk; keep, back, reload, Back button |
 | `search` | Prepared desks, short links, tray search, jumping to sections and cards |
 | `present` | Present mode end to end, including that the caption and bar never cover the board |
+| `edit` | Editing a laid-out desk: moving and renaming sections, tying, selecting and deleting string, undo and redo, group moves |
 
 Two things that bite when writing tests: Chrome doesn't paint background tabs, so call `bringToFront()` on a page before measuring or screenshotting it after opening another. And scroll a tray item into view before dragging it.
 

@@ -31,6 +31,11 @@
   var flat = [];             // every source on every card, flattened for search
   var seq = 1;               // id counter for notes and frames
   var undoStack = [];
+  var redoStack = [];
+  var heldRedo = null;       // redo history parked while a press might still turn out to be a click
+  var selLink = null;        // the selected string, as "a|b"
+  var editingTitle = null;   // the frame whose title is being renamed
+  var lastBarClick = null;   // {id, t}: two quick clicks on a section's name rename it
   var snapOn = true;
   var stringMode = false;
   var readerOrigin = null;   // the desk card whose reader is open, so its thread ties back to it
@@ -145,16 +150,42 @@
     return { x: it.x, y: it.y, w: e ? e.offsetWidth : (it.w || SRC_W), h: e ? e.offsetHeight : 120 };
   }
 
+  function snapshot() { return JSON.stringify({ it: items, ln: links }); }
+
+  /* Every change records the desk before it. A new change ends the redo
+     history, but only once it is real: a press that turns out to be a click
+     calls cancelUndo() and the redo history comes back untouched. */
   function pushUndo() {
-    undoStack.push(JSON.stringify({ it: items, ln: links }));
-    if (undoStack.length > 40) undoStack.shift();
+    undoStack.push(snapshot());
+    if (undoStack.length > 60) undoStack.shift();
+    heldRedo = redoStack;
+    redoStack = [];
+  }
+
+  function cancelUndo() {
+    undoStack.pop();
+    if (heldRedo) redoStack = heldRedo;
+    heldRedo = null;
+  }
+
+  function restore(json) {
+    var s = JSON.parse(json);
+    items = s.it; links = s.ln; sel = {}; selLink = null;
+    renderAll(); save();
   }
 
   function undo() {
-    if (!undoStack.length) return;
-    var s = JSON.parse(undoStack.pop());
-    items = s.it; links = s.ln; sel = {};
-    renderAll(); save();
+    if (!undoStack.length) { hint('Nothing to undo.'); return; }
+    redoStack.push(snapshot());
+    restore(undoStack.pop());
+    hint('Undone. Ctrl-Y puts it back.');
+  }
+
+  function redo() {
+    if (!redoStack.length) { hint('Nothing to redo.'); return; }
+    undoStack.push(snapshot());
+    restore(redoStack.pop());
+    hint('Redone.');
   }
 
   /* ================= adding things ================= */
@@ -372,7 +403,7 @@
     }
 
     if (q && !added && links.length === linksBefore) {
-      undoStack.pop();
+      cancelUndo();
       flash(qid);
       hint('Every source from ' + card.call + ' is already on the desk.');
       if (after) after();
@@ -450,7 +481,7 @@
       spot = freeSpot(Math.round(c.x), Math.round(c.y), SRC_W, 150);
     }
     var it = addThing(p, spot.x, spot.y);
-    if (!it) { undoStack.pop(); return; }
+    if (!it) { cancelUndo(); return; }
     if (origin && origin !== id) links.push({ a: origin, b: id });
     renderAll();
     /* A dropped card locks to its neighbours the same way a dragged one does. */
@@ -618,6 +649,26 @@
     inp.style.width = 'calc(' + n + 'ch + ' + (n * 2) + 'px)';
   }
 
+  function startRename(it) {
+    var e = nodeEl(it.id), inp = e && e.querySelector('.frame-title input');
+    if (!inp) return;
+    editingTitle = it.id;
+    inp.setAttribute('data-was', inp.value);
+    inp.readOnly = false;
+    inp.classList.add('is-editing');
+    inp.focus(); inp.select();
+    hint('Type the section name. Enter keeps it, Esc puts the old one back.');
+  }
+
+  function endRename(it, inp) {
+    if (inp.readOnly) return;
+    inp.readOnly = true;
+    inp.classList.remove('is-editing');
+    editingTitle = null;
+    if (!inp.value.trim()) { inp.value = inp.getAttribute('data-was') || 'UNTITLED'; it.title = inp.value; sizeTitle(inp); }
+    save(); renderHere();
+  }
+
   function buildFrame(it) {
     var f = el('div', 'frame');
     f.setAttribute('data-id', it.id);
@@ -626,14 +677,24 @@
     var bar = el('div', 'frame-title');
     var inp = el('input');
     inp.value = it.title;
-    inp.setAttribute('aria-label', 'Frame title');
-    inp.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
+    inp.readOnly = true;
+    inp.tabIndex = -1;
+    inp.setAttribute('aria-label', 'Frame title. Double-click to rename.');
+    bar.title = 'Drag to move the section with everything in it. Double-click the name to rename it.';
+    /* Only while renaming does the title take the pointer; otherwise the
+       whole bar is a handle for moving the section. */
+    inp.addEventListener('pointerdown', function (e) { if (!inp.readOnly) e.stopPropagation(); });
     inp.addEventListener('input', function () {
       it.title = inp.value;
       sizeTitle(inp);
       save();
       renderHere();
     });
+    inp.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') { e.preventDefault(); inp.blur(); }
+      if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); inp.value = inp.getAttribute('data-was') || ''; it.title = inp.value; sizeTitle(inp); inp.blur(); }
+    });
+    inp.addEventListener('blur', function () { endRename(it, inp); });
     sizeTitle(inp);
     bar.appendChild(inp);
     var cnt = el('span', 'frame-count', '');
@@ -751,31 +812,75 @@
       var isOther = (sa && sa.side === 'other') || (sb && sb.side === 'other');
       var dim = presFocus && !(presFocus[a.id] || presFocus[b.id]);
 
+      var key = linkKey(links[i]);
+      var picked = selLink === key;
+
       var hit = svgEl('line');
       hit.setAttribute('class', 'string-hit');
+      hit.setAttribute('data-link', key);
       hit.setAttribute('x1', pa.x); hit.setAttribute('y1', pa.y);
       hit.setAttribute('x2', pb.x); hit.setAttribute('y2', pb.y);
       hit.setAttribute('vector-effect', 'non-scaling-stroke');
-      (function (idx) {
+      (function (k) {
+        /* A click selects the string; Delete or its x takes it off. Nothing is cut by a stray click. */
+        hit.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
         hit.addEventListener('click', function (e) {
           e.stopPropagation();
           if (presenting) return;
-          pushUndo();
-          links.splice(idx, 1);
-          drawLinks(); updateCounts(); save();
-          hint('String cut. Ctrl-Z puts it back.');
+          selectLink(selLink === k ? null : k);
         });
-      })(i);
+      })(key);
       svg.appendChild(hit);
 
       var line = svgEl('line');
-      line.setAttribute('class', 'string-line' + (isOther ? ' other' : '') + (dim ? ' dim' : ''));
+      line.setAttribute('class', 'string-line' + (isOther ? ' other' : '') + (dim ? ' dim' : '') + (picked ? ' is-picked' : ''));
       line.setAttribute('x1', pa.x); line.setAttribute('y1', pa.y);
       line.setAttribute('x2', pb.x); line.setAttribute('y2', pb.y);
       line.setAttribute('vector-effect', 'non-scaling-stroke');
       svg.appendChild(line);
+
+      if (picked && !presenting) svg.appendChild(cutButton(key, (pa.x + pb.x) / 2, (pa.y + pb.y) / 2));
     }
     if (tempLine) svg.appendChild(tempLine);
+  }
+
+  function linkKey(l) { return l.a + '|' + l.b; }
+
+  function selectLink(key) {
+    selLink = key;
+    if (key) { sel = {}; renderSelection(); }
+    drawLinks();
+    if (key) hint('String selected. Delete, or the x on it, takes it off. Esc lets go.');
+  }
+
+  function cutLink(key) {
+    var at = -1;
+    for (var i = 0; i < links.length; i++) if (linkKey(links[i]) === key) at = i;
+    if (at < 0) return;
+    pushUndo();
+    links.splice(at, 1);
+    selLink = null;
+    drawLinks(); updateCounts(); save();
+    hint('String taken off. Ctrl-Z puts it back.');
+  }
+
+  /* The x at the middle of a selected string, the same size at any zoom. */
+  function cutButton(key, x, y) {
+    var g = svgEl('g');
+    g.setAttribute('class', 'string-cut');
+    g.setAttribute('transform', 'translate(' + x + ',' + y + ') scale(' + (1 / tf.scale) + ')');
+    var c = svgEl('circle');
+    c.setAttribute('r', '11');
+    g.appendChild(c);
+    var t = svgEl('path');
+    t.setAttribute('d', 'M-4,-4 L4,4 M4,-4 L-4,4');
+    g.appendChild(t);
+    var label = svgEl('title');
+    label.textContent = 'Take this string off';
+    g.appendChild(label);
+    g.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
+    g.addEventListener('click', function (e) { e.stopPropagation(); cutLink(key); });
+    return g;
   }
 
   var tempLine = null;
@@ -1015,6 +1120,7 @@
           e.preventDefault();
           return;
         }
+        if (selLink) { selLink = null; drawLinks(); }
         if (!sel[nid] && !e.shiftKey) { sel = {}; sel[nid] = true; }
         else if (e.shiftKey) { if (sel[nid]) delete sel[nid]; else sel[nid] = true; }
         renderSelection();
@@ -1067,6 +1173,16 @@
 
       if (string && !string.click) {
         var p = toWorld(e.clientX, e.clientY);
+        var over = nodeAtPoint(e.clientX, e.clientY);
+        var oid = over && over.getAttribute('data-id');
+        if (oid === string.id) { over = null; oid = null; }
+        if (string.target && string.target !== over) string.target.classList.remove('is-target');
+        string.target = over;
+        if (over) {
+          over.classList.add('is-target');
+          var tp = pinPoint(itemById(oid));
+          p = { x: tp.x, y: tp.y };
+        }
         tempLine.setAttribute('x1', string.from.x); tempLine.setAttribute('y1', string.from.y);
         tempLine.setAttribute('x2', p.x); tempLine.setAttribute('y2', p.y);
         return;
@@ -1151,19 +1267,31 @@
           var other = holder.getAttribute('data-id');
           if (other !== string.id && !linkExists(string.id, other)) { tieString(string.id, other); tied = true; }
         }
+        if (string.target) string.target.classList.remove('is-target');
+        var already = holder && holder.getAttribute('data-id') !== string.id && !tied;
         string = null; tempLine = null;
         surface.classList.remove('is-stringing');
         drawLinks();
-        hint(tied ? 'String tied. Click a string to cut it.' : 'No source under there, so no string was tied.');
+        hint(tied ? 'String tied. Click a string to select it; Delete takes it off.' :
+          already ? 'Those two are already tied.' : 'Let go on a card to tie the string. Nothing was tied.');
         return;
       }
 
       if (resize) { resize = null; save(); return; }
 
       if (frameDrag) {
-        var moved = frameDrag.moved;
+        var moved = frameDrag.moved, fid = frameDrag.it.id;
         frameDrag = null;
-        if (moved) { drawLinks(); save(); } else undoStack.pop();
+        if (moved) { drawLinks(); save(); lastBarClick = null; }
+        else {
+          cancelUndo();
+          /* Two clicks on the same name in quick succession rename it. The
+             browser's own dblclick never reaches the bar, because the press
+             captured the pointer for a possible drag. */
+          var now = Date.now();
+          if (lastBarClick && lastBarClick.id === fid && now - lastBarClick.t < 450) { lastBarClick = null; startRename(itemById(fid)); }
+          else lastBarClick = { id: fid, t: now };
+        }
         return;
       }
 
@@ -1175,7 +1303,7 @@
         drag = null;
         if (wasMoved) { updateCounts(); save(); }
         else {
-          undoStack.pop();
+          cancelUndo();
           /* a click, not a drag: open the source */
           openItem(itemById(leadId));
         }
@@ -1189,6 +1317,7 @@
         var y1 = Math.min(marq.ay, marq.by), y2 = Math.max(marq.ay, marq.by);
         var isClick = (x2 - x1) < 4 && (y2 - y1) < 4;
         if (!marq.add) sel = {};
+        if (selLink) { selLink = null; drawLinks(); }
         if (!isClick) {
           /* Hit test in screen space, which is correct at any zoom and needs
              no stored heights. */
@@ -1206,6 +1335,19 @@
     }
 
     surface.addEventListener('pointerup', endPointer);
+
+    /* A double-click arrives at the surface (the press captured the pointer),
+       so find the section name under it by position. Two quick presses are
+       also caught in endPointer; renaming twice is harmless. */
+    surface.addEventListener('dblclick', function (e) {
+      if (presenting) return;
+      var t = document.elementFromPoint(e.clientX, e.clientY);
+      var bar = t && t.closest && t.closest('.frame-title');
+      var fr = bar && bar.parentNode;
+      if (!fr || !fr.getAttribute) return;
+      var it = itemById(fr.getAttribute('data-id'));
+      if (it && it.t === 'frame' && editingTitle !== it.id) { lastBarClick = null; startRename(it); }
+    });
     surface.addEventListener('pointercancel', endPointer);
 
     /* click-to-link, the touch-friendly path */
@@ -1227,8 +1369,12 @@
       if (!isTyping(e) && (e.key === 'p' || e.key === 'P') && !e.ctrlKey && !e.metaKey && !e.altKey) { startPresent(0, true); e.preventDefault(); return; }
       if (e.code === 'Space' && !isTyping(e)) { spaceDown = true; $('surface').classList.add('is-spacing'); e.preventDefault(); }
       if (isTyping(e)) return;
-      if ((e.key === 'Delete' || e.key === 'Backspace')) { removeSelection(); e.preventDefault(); }
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { undo(); e.preventDefault(); }
+      if ((e.key === 'Delete' || e.key === 'Backspace')) {
+        if (selLink) cutLink(selLink); else removeSelection();
+        e.preventDefault();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') { if (e.shiftKey) redo(); else undo(); e.preventDefault(); }
+      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') { redo(); e.preventDefault(); }
       if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'a') {
         sel = {};
         for (var i = 0; i < items.length; i++) if (items[i].t !== 'frame') sel[items[i].id] = true;
@@ -1236,7 +1382,7 @@
       }
       if (e.key === 'Escape') {
         if (!$('reader').hidden) closeReader();
-        else { sel = {}; renderSelection(); }
+        else { sel = {}; renderSelection(); if (selLink) { selLink = null; drawLinks(); } }
       }
       var step = e.shiftKey ? 10 : 1;
       var moved = false;
@@ -1261,9 +1407,11 @@
     else if (it.t === 'd') openDocReader(it.k, it.id);
   }
 
+  /* A read-only field (a frame title not being renamed, a note while
+     presenting) is not somewhere the reader is typing. */
   function isTyping(e) {
     var t = e.target;
-    return t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA');
+    return !!t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA') && !t.readOnly;
   }
 
   function nudge(dx, dy) {
@@ -1968,7 +2116,7 @@
     var spot = freeSpot(Math.round(c.x), Math.round(c.y), SRC_W, 150);
     pushUndo();
     var it = addSource(row.slug, row.i, spot.x, spot.y);
-    if (!it) { hint('That one is already on the desk.'); undoStack.pop(); return; }
+    if (!it) { hint('That one is already on the desk.'); cancelUndo(); return; }
     renderAll(); save();
     hint('Pinned ' + (row.src.title || row.src.ref) + ' from ' + row.card.call + '.');
   }
@@ -2074,7 +2222,7 @@
       var it = addSource(res[i].slug, res[i].i, at.x, at.y);
       if (it) added.push(it); else skipped++;
     }
-    if (!added.length) { undoStack.pop(); hint('Those are all on the desk already.'); return; }
+    if (!added.length) { cancelUndo(); hint('Those are all on the desk already.'); return; }
     renderAll();
     hint('Pinned ' + added.length + ' held source' + (added.length === 1 ? '' : 's') + ' for “' + q + '”' +
       (skipped ? ', skipped ' + skipped + ' already down' : '') + '. Nothing was generated.');
@@ -2685,8 +2833,7 @@
       else { var c = viewCenter(); at = { x: Math.round(c.x - FRAME_W / 2), y: Math.round(c.y - FRAME_H / 2) }; }
       var f = addFrame(at.x, at.y);
       renderAll(); save(); fit();
-      var inp = nodeEl(f.id).querySelector('input');
-      if (inp) { inp.focus(); inp.select(); }
+      startRename(f);
       hint('Frame added. Anything you drag inside belongs to it, and dragging the title bar carries the contents.');
     });
 

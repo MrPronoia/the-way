@@ -534,3 +534,32 @@ body.presenting .surface::before, body.presenting .surface::after {
 }
 body.presenting .surface::before { top: 0; height: 190px; background: linear-gradient(rgba(16, 16, 18, 0.92), rgba(16, 16, 18, 0)); }
 body.presenting .surface::after { bottom: 0; height: 130px; background: linear-gradient(rgba(16, 16, 18, 0), rgba(16, 16, 18, 0.85)); }
+
+/* ---------- editing: sections, strings, ties ---------- */
+
+/* The whole title bar moves the section; the name only takes the pointer while it is being renamed. */
+.frame-title input[readonly] { pointer-events: none; cursor: inherit; caret-color: transparent; }
+.frame-title input.is-editing {
+  pointer-events: auto; cursor: text; caret-color: auto;
+  background: rgba(255, 255, 255, 0.4); outline: 1px dashed rgba(0, 0, 0, 0.55); outline-offset: 1px;
+}
+.frame-title:active { cursor: grabbing; }
+
+/* A card's pin is its connector: it says so on hover. */
+.node:hover .pin { box-shadow: 0 0 0 5px rgba(208, 53, 42, 0.22); }
+.node .pin { transition: transform 0.12s ease, box-shadow 0.12s ease; }
+.node .pin:hover { transform: scale(1.3); }
+
+/* While tying, the card under the pointer is the one that will be tied. */
+.node.is-target .pincard, .node.is-target .qcard, .node.is-target .doccard, .node.is-target .notepad {
+  outline: 3px solid var(--string); outline-offset: 3px;
+}
+
+/* A string answers the pointer, and a selected one wears the pad yellow with an x to take it off. */
+.links .string-hit:hover + .string-line { stroke-width: 4; }
+.string-line.is-picked { stroke: var(--pad); stroke-width: 4; stroke-dasharray: none; }
+.links .string-cut { pointer-events: all; cursor: pointer; }
+.string-cut circle { fill: #18181b; stroke: var(--pad); stroke-width: 2; }
+.string-cut path { stroke: var(--pad); stroke-width: 2.2; stroke-linecap: round; fill: none; }
+.string-cut:hover circle { fill: var(--pad); }
+.string-cut:hover path { stroke: var(--ink); }

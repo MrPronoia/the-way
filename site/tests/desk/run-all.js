@@ -13,7 +13,8 @@ const SUITES = [
   ['features', 'the Reading Room door, the tray, dragging out, the thread'],
   ['sharing', 'shared links never overwrite your own desk'],
   ['search', 'prepared desks, short links, tray search, going to a section'],
-  ['present', 'present mode']
+  ['present', 'present mode'],
+  ['edit', 'editing a laid-out desk: sections, renaming, tying and cutting string, undo and redo']
 ];
 
 const ROOT = path.join(__dirname, '..', '..', '..');
