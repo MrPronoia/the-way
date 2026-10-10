@@ -16,6 +16,7 @@ See `README.md` for orientation and `PROVENANCE.md` for the assembly story.
 
 Don't search the repo blind — there are three purpose-built entry points, in this order:
 
+0. **`VERIFIED-SOURCES.md`** (repo root) — which files may be quoted as ground truth, by tier, with the edition behind each. If a quotation matters, it comes from a file on this list or it doesn't get said.
 1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor is verified.
 2. **`questions/`** — fourteen cards on the hard questions (claim, strongest primary-source evidence, the questions people raise with honest responses, one-sentence versions, go-deeper paths). Start with `questions/00-INDEX.md`. **Read `questions/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
 3. **The Bible text itself:** `christianity/Incoming/kjv/` holds all 66 books of the KJV, one verse per line. `grep -rn "I will have mercy, and not sacrifice" christianity/Incoming/kjv/` finds the verse. Quote from the file and cite as (KJV).
@@ -62,6 +63,8 @@ When users ask about Christian theology:
 7. **Recognized scholarship** (Tabor, Ehrman, Eisenman, Crossan, Pagels)
 
 **Do not put Pauline epistles in the "what Jesus taught" stack.** They go in the "what Paul taught" stack — a separate question.
+
+**Which files hold that evidence: `VERIFIED-SOURCES.md`.** Quote only from the files listed there (Tier 1 full texts, Tier 2 excerpts), and name the translator. Anything not on that list is our reading of a source, not a source — check it against a listed file before repeating it. Sources we cite but don't hold (the canonical gospels, Josephus, Eusebius, Epiphanius…) are cited at reference level, without quotation marks, until a text is added and registered there.
 
 ---
 

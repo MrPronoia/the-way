@@ -61,6 +61,10 @@ The format (`christianity/Incoming/clementine-homilies-full-text.md` is the refe
 **Note:** What it is and why it matters here
 ```
 
+### Primary texts also get registered
+
+If what you're adding is a *source* — an ancient text, a translation, an excerpt collection — it also gets a row in **`VERIFIED-SOURCES.md`**, in the right tier, with its edition and rights. That page is the list every AI assistant and every contributor uses to decide what may be quoted. A text that isn't on it can't be quoted, however good it is. The steps are at the bottom of that page.
+
 ### Put your name on what you bring
 
 **`Contributed by:` is part of the header, and the indexer reads it** — so when someone pulls a passage out of this collection months from now, your name comes with it, right next to the source.

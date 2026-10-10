@@ -17,6 +17,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | 1d | **Downgrade every absolute to its narrow true version** | ~34 of them. In every case examined, the narrow version made the same point and would have survived. | Not started |
 | 1e | **Add loci to the ~53 vague citations, or drop the quotation marks** | Author-only attributions with no work or page. This is the category fabrications hide in. | Not started |
 | 2 | **Run the semantic search for the first time** | It has never been run. One of the three lookup tools in `ONBOARDING.md` doesn't actually work yet, which is a poor first impression for new contributors. Needs a `GOOGLE_API_KEY` and one `--rebuild`. | Blocked on Rex (API key) |
+| 3a | **Register every primary text in `VERIFIED-SOURCES.md`, then add the red text** | The source hierarchy's tier 1 (the canonical gospels) has no file in the repo; Josephus, Eusebius, Hegesippus and Epiphanius are each cited on five cards with no text behind them. The manifest now says so. First add: a public-domain gospels text (WEB and/or KJV). | Manifest done 2026-10-07; texts not started |
 | 3 | **Add provenance headers to the 14 files that lack them** | `scripts/semantic-search.py` now carries each file's source block into every search result, so a file with no header returns "(no source header — unverified provenance)". Mostly `cliff-notes-quick-reference.md` files. **Only from what each file already documents** — never infer a source. | Not started |
 
 ---
