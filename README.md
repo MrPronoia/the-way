@@ -38,6 +38,8 @@ As of October 2026 the repo lives in its own organization, [`the-nazarene`](http
 | **To help fix something** | `FIX-LIST.md` — 106 checkboxed items sorted into: known-wrong, overstated, and needs-a-book |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
 | **The hard questions, answered from the sources** | `questions/00-INDEX.md` — fourteen cards: the claim, the evidence, the questions people raise, and honest responses |
+| **What critics have actually said, and where we answer it** | `questions/OBJECTIONS.md` — real objections from named critics, each pointed to its moment in the archive and to the card heading that answers it, or marked open |
+| **To pick up a research job** | `OPEN-RESEARCH.md` — new ground nobody has covered yet, sized, with what "done" looks like; put your name on one |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |
 | The 1000-word version | `christianity/cliff-notes-quick-reference.md` |
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |

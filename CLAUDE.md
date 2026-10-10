@@ -21,7 +21,9 @@ Don't search the repo blind — there are three purpose-built entry points, in t
 3. **The Bible text itself:** `christianity/Incoming/kjv/` holds all 66 books of the KJV, one verse per line. `grep -rn "I will have mercy, and not sacrifice" christianity/Incoming/kjv/` finds the verse. Quote from the file and cite as (KJV).
 4. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
 
-**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
+**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology). **For an objection someone has actually raised**, check `questions/OBJECTIONS.md` first: it maps real critics' words to the card heading that answers them, and says honestly which ones are still open.
+
+**Looking for something to work on?** `OPEN-RESEARCH.md` lists the gaps (sized, with what "done" looks like). `FIX-LIST.md` is for repairing existing claims; `OPEN-RESEARCH.md` is for new ground.
 
 ---
 

@@ -30,6 +30,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | 6 | **Isaiah 56:7 is quoted truncated in five files** | The omitted first half reads "their burnt offerings and their sacrifices will be accepted on my altar" — the opposite of how we use the verse. Needs fixing at the source, not just noting on a card. |
 | 7 | **Episode 045 transcript** | The one gap in the Jesus Way archive. Captions are disabled at the source, so it needs Whisper or manual transcription from audio. |
 | 8 | **Matthew 2:23 has zero coverage** | "He shall be called a Nazarene" — no such OT prophecy exists verbatim. It's the first thing a prepared critic raises about the Nazarene claim and the repo says nothing about it. |
+| 8a | **Open research jobs for contributors** | `OPEN-RESEARCH.md` — eight sized jobs from a read of the podcast archive against the research files (Romans 14, Paul's four texts, the Baptist's diet, Mark and Paul, the five open objections in `questions/OBJECTIONS.md`, the critics' originals, Josephus/Philo/Eusebius as held texts, episode 045). New ground, not repairs. |
 
 ---
 
