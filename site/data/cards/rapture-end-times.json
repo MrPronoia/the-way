@@ -1,0 +1,49 @@
+{
+  "slug": "rapture-end-times",
+  "call": "Q 236.1",
+  "drawer": "THE END TIMES",
+  "question": "Is the rapture biblical?",
+  "subtitle": "",
+  "card": "questions/rapture-end-times.md",
+  "aliases": ["when is the rapture", "left behind", "pre-tribulation", "end times", "second coming", "one will be taken and one will be left", "Darby", "dispensationalism", "tribulation", "will Christians be taken up", "caught up in the air"],
+  "finding": "No. The pre-tribulation rapture, the seven-year tribulation, the Israel/Church distinction and the two-phase second coming are a single system assembled by John Nelson Darby in the 1820s and 30s, embedded in the page layout of scripture by the Scofield Reference Bible (1909), and sold to the world through The Late Great Planet Earth and Left Behind. Jesus taught something else: a kingdom already present and growing, entered by participation, not extraction. Where Jesus describes a sorting, the direction is the opposite of the rapture. The wicked are gathered up and removed, and the righteous remain to inherit the earth.",
+  "oneLiners": [
+    "The rapture is 195 years old. The Lord's Prayer asks for the kingdom to come on earth.",
+    "In Jesus's parables, the ones who get taken away are the weeds.",
+    "\"One will be taken, one will be left,\" and three verses earlier Jesus tells you the flood did the taking.",
+    "No creed has it. No council has it. No church father has it. Then a man publishes study notes in 1909 and three generations read them as if they were verses.",
+    "A hundred and ninety-five years old, and it feels eternal. If it happened once, you have to ask what else it happened to."
+  ],
+  "doNotSay": [
+    "Do not use the Margaret MacDonald argument. The MacPherson thesis is rejected by essentially every historian who has read the primary document, critics of dispensationalism included. It is the easiest way to lose this exchange.",
+    "Don't misread the Tregelles quote. He names Edward Irving's congregation and a charismatic \"utterance\" around 1830-31, not Darby. That's the stronger argument anyway.",
+    "Don't cut Luke 17 in half. Verses 20-21 say the kingdom is present and not sign-detectable; 22-37 are the future day of the Son of Man. Our position is present reality plus future consummation; what the chapter rules out is a datable, sign-tracked, two-phase schedule.",
+    "Never let the rapture be the last word. If they concede Darby in ninety seconds, take the transferable point: a doctrine can be 195 years old and feel eternal. Then ask what else that happened to."
+  ],
+  "boardLabels": {"for": "FOR", "against": "AGAINST · READ THESE FIRST", "other": "THE OTHER STACK · Paul and Darby"},
+  "sources": [
+    {"side": "for", "tier": "red text", "ref": "Matthew 24:38-39", "phrase": "took them all away", "note": "Jesus's own analogy makes \"taken\" the bad outcome: the flood took them all away, \"so shall also the coming of the Son of man be.\" Then, three verses later, \"one shall be taken, and the other left.\" He defined \"taken\" as swept away in judgment before he said it."},
+    {"side": "for", "tier": "red text", "ref": "Luke 17:37", "phrase": "thither will the eagles be gathered together", "note": "The disciples ask where the taken ones go. The answer: where the body is. The rapture reading inverts the analogy Jesus supplied himself."},
+    {"side": "for", "tier": "red text", "ref": "Matthew 13:30", "phrase": "Gather ye together first the tares", "note": "The wheat and the tares, sequence stated explicitly: weeds collected first and burned, then the wheat gathered. Jesus interprets his own parable at 13:41-43: the angels weed out the evil and \"then shall the righteous shine forth.\" If anything gets raptured, it's the wicked."},
+    {"side": "for", "tier": "red text", "ref": "Luke 17:20-21", "phrase": "cometh not with observation", "note": "The kingdom does not come by watching for signs, and sign-watching is the engine of the whole system."},
+    {"side": "for", "tier": "Thomas · Lambdin", "title": "Gospel of Thomas 113", "path": "christianity/Incoming/gospel-of-thomas-full-text.md", "phrase": "spread out upon the earth", "edition": "Lambdin", "note": "\"It will not come by waiting for it... the kingdom of the father is spread out upon the earth, and men do not see it.\" Two independent sources, one point: not a scheduled future event you watch the news for."},
+    {"side": "for", "tier": "early church", "title": "Didache 16, the end-times chapter", "path": "christianity/Incoming/didache-full-text.md", "phrase": "fiery trial", "edition": "Richardson (1953)", "note": "The oldest Christian manual puts the church through the trial: fiery trial, then the signs, then the resurrection, then one visible coming. No removal, no gap, no two phases. Chapter 8 has believers praying \"thy Kingdom come, thy will be done on earth\" three times a day."},
+    {"side": "for", "tier": "the paper trail · research file", "title": "Darby, Powerscourt 1833, Scofield 1909, the transmission chain", "path": "christianity/2026-03-08-darby-dispensationalism-deep-dive.md", "phrase": "Powerscourt", "note": "Darby openly taught the rapture of the saints at the third Powerscourt conference, late September 1833. Darby → Brookes → Scofield (1909) → Moody Bible Institute → Dallas Theological Seminary (1924) → Lindsey (1970) → LaHaye (1995). Every link documented in print. Treat the file's MacDonald section as background only."},
+    {"side": "against", "tier": "red text", "ref": "Matthew 24:40", "phrase": "the one shall be taken, and the other left", "note": "\"It's right there.\" It is, and the three verses above it are the interpretive key. If Matthew 24 and 1 Thessalonians 4 both fail, the doctrine has no biblical foundation left (Middleton)."},
+    {"side": "against", "tier": "red text · the future half of the chapter", "ref": "Luke 17:24", "phrase": "as the lightning", "note": "\"Luke 17:22-37 is explicitly future.\" Yes. Verses 20-21 answer the Pharisees about the kingdom: present, unobservable. Verses 22-37 turn to the disciples about the day of the Son of Man: future, sudden, uncalendared, like the flood. A future judgment you cannot calendar is the opposite of a prophecy chart."},
+    {"side": "against", "tier": "scholarship · the apocalyptic Jesus", "title": "Schweitzer, Ehrman, Allison, Sanders vs. Crossan, Borg, the Thomas-is-early scholars", "link": "https://en.wikipedia.org/wiki/Apocalypticism#Jesus", "note": "\"Ehrman says Jesus was an apocalyptic prophet.\" A serious position and the debate is not settled. But it is about whether Jesus expected imminent divine intervention; not one scholar in either camp reconstructs a secret pre-tribulation removal. Ehrman's own Armageddon (2023) demolishes the rapture. On this question both camps are on our side."},
+    {"side": "against", "tier": "early church · chiliasm", "title": "Irenaeus, Justin and the premillennial fathers", "link": "https://www.ccel.org/ccel/schaff/anf01.html", "edition": "ANF vol. 1, public domain; not held", "note": "\"The early church was premillennial.\" Some expected a literal thousand-year reign; grant it. Chiliasm is not the rapture. Nobody before the 1830s taught a secret coming, a two-phase return, a seven-year tribulation, an Israel/Church split, or a gap in Daniel 9. Augustine's amillennial reading held the West for ~1,400 years."},
+    {"side": "other", "tier": "what Paul taught", "ref": "1 Thessalonians 4:17", "phrase": "to meet the Lord in the air", "note": "\"That is the rapture.\" That's Paul, not Jesus: a different stack. And even on its own terms apantēsis was the civic reception, citizens going out to greet an arriving king and escorting him back into the city; the movement ends on earth (N. T. Wright)."},
+    {"side": "other", "tier": "what Paul taught", "ref": "1 Thessalonians 4:15", "phrase": "we which are alive and remain", "note": "Paul expected it within his own lifetime, which is precisely the failed timeline Darby's system was built to rescue."},
+    {"side": "other", "tier": "the 1864 insider witness · not held", "title": "S. P. Tregelles, The Hope of Christ's Second Coming (1864)", "link": "https://archive.org/search?query=Tregelles+Hope+of+Christ%27s+Second+Coming", "edition": "public domain; not yet held", "note": "\"I am not aware that there was any definite teaching that there would be a secret rapture of the Church at a secret coming, until this was given forth as an 'utterance' in Mr. Irving's Church.\" A hostile insider, within living memory, locating the earliest secret-rapture teaching in an ecstatic utterance in a revivalist congregation. Quote only once the text is held; cite at reference level until then."}
+  ],
+  "goDeeper": [
+    {"title": "Darby's biography, the Powerscourt conferences, the full transmission chain with dates", "path": "christianity/2026-03-08-darby-dispensationalism-deep-dive.md"},
+    {"title": "Verse-by-verse on the Olivet Discourse and the apocalyptic-Jesus debate", "path": "christianity/2026-03-09-did-jesus-teach-apocalypse.md"},
+    {"title": "The positive replacement: what we build instead of what we wait for", "path": "christianity/participatory-eschatology.md"},
+    {"title": "The oldest canon on earth is saturated with apocalyptic and has no rapture in it", "path": "christianity/ethiopian-bible/2026-03-09-ethiopian-eschatology-vs-rapture-theology.md"},
+    {"title": "The two-page public-facing version", "path": "jesus-site-reference/source/docs/the-rapture.md"},
+    {"title": "The Didache, primary source: chapters 8 and 16", "path": "christianity/Incoming/didache-full-text.md"}
+  ],
+  "next": ["two-ways-kingdom-within", "hell-afterlife", "trinity-deity-of-jesus"]
+}
