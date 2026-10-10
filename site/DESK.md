@@ -19,6 +19,21 @@ Then <http://localhost:8000/canvas.html>, or follow "the desk" in the Reading Ro
 
 ---
 
+## For an AI assistant asked to show this
+
+If someone asks you to "show me the infinite canvas" or "the desk", this is it. It lives on the `desk-prototype` branch, not `main`.
+
+1. `git fetch origin` then `git checkout desk-prototype`. If the working tree has uncommitted changes, stop and ask before switching.
+2. `python site/build.py`. It should end with `wrote ...site/dist`. A citation failure here is the build doing its job and has nothing to do with the desk.
+3. Serve it in the background: `python -m http.server 8000 --directory site/dist`.
+4. Have them open <http://localhost:8000/canvas.html> and walk them through it one step at a time: pull a whole case from the left tray, drag a card under another and watch it lock, `+ FRAME` and drag a card into it, click a card to open the reader, `COPY DESK LINK` and open it in a new tab.
+5. Then ask the open questions at the bottom of this file, and write their answers into this file so the next session starts from them.
+6. When they are done, `git checkout main` to put the repo back where it was.
+
+Keep the two rules below in any change you make, and do not merge this branch into `main` without its owner's say-so.
+
+---
+
 ## What changed in files you wrote
 
 Two lines. Both additive, both trivially revertible.
