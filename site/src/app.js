@@ -337,15 +337,54 @@
   function submit(e) {
     e.preventDefault();
     var q = $('q').value;
+    if (!q.trim()) { location.hash = '#/'; return; }
     var res = search(q);
     if (res.length && res[0].score <= 0.55) go(res[0].card); else noCard(q);
+  }
+
+  function renderHome() {
+    current = null;
+    document.title = 'The Way \u00b7 Reading Room';
+    $('home').hidden = false;
+    $('room').hidden = true;
+    $('nocard').hidden = true;
+    $('homeCount').textContent = DATA.cards.length;
+    var wrap = $('drawers');
+    wrap.innerHTML = '';
+    var groups = [];
+    DATA.cards.forEach(function (c) {
+      var g = groups.filter(function (x) { return x.label === c.drawer; })[0];
+      if (!g) { g = { label: c.drawer, cards: [] }; groups.push(g); }
+      g.cards.push(c);
+    });
+    var ORDER = ['ATONEMENT \u00b7 SALVATION', 'WHO JESUS WAS', 'THE KINGDOM \u00b7 THE TWO WAYS', 'SACRIFICE \u00b7 DIET', 'ORIGINS \u00b7 THE NAZARENES', 'PAUL \u00b7 THE SOURCES', 'JESUS AND THE LAW', 'THE RESURRECTION', 'THE END TIMES', 'JUDGMENT \u00b7 AFTERLIFE', 'METHOD \u00b7 HOW WE READ'];
+    groups.sort(function (a, b) { var ia = ORDER.indexOf(a.label), ib = ORDER.indexOf(b.label); return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib); });
+    groups.forEach(function (g) {
+      var d = el('div', 'drawer-unit');
+      d.appendChild(el('div', 'drawer-plate', g.label));
+      var inner = el('div', 'drawer-inner');
+      g.cards.forEach(function (c) {
+        var a = el('a', 'drawer-card');
+        a.href = '#/' + c.slug;
+        a.appendChild(el('small', null, c.call));
+        a.appendChild(el('span', null, c.question));
+        inner.appendChild(a);
+      });
+      d.appendChild(inner);
+      wrap.appendChild(d);
+    });
+    closeReader();
+    window.scrollTo(0, 0);
   }
 
   function route() {
     var m = /^#\/([a-z0-9-]+)(?:\/(\d+))?/.exec(location.hash);
     var card = m ? DATA.cards.filter(function (c) { return c.slug === m[1]; })[0] : null;
-    if (!current || !card || current.slug !== card.slug) renderCard(card || DATA.cards[0]);
-    if (m && m[2] && card && card.sources[+m[2]]) openReader(card.sources[+m[2]]); else closeReader();
+    if (!card) { renderHome(); return; }
+    $('home').hidden = true;
+    $('room').hidden = false;
+    if (!current || current.slug !== card.slug) renderCard(card);
+    if (m[2] && card.sources[+m[2]]) openReader(card.sources[+m[2]]); else closeReader();
   }
 
   fetch('data.json').then(function (r) { return r.json(); }).then(function (d) {

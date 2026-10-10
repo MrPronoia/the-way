@@ -17,7 +17,7 @@
 <a class="skip" href="#card">Skip to the card</a>
 
 <header class="top">
-  <div class="brand">THE WAY · READING ROOM</div>
+  <a class="brand" href="#/">THE WAY · READING ROOM</a>
   <nav class="nav" aria-label="Repository">
     <a href="https://github.com/the-nazarene/way/tree/main/questions">questions/</a>
     <a href="https://github.com/the-nazarene/way/blob/main/SOURCE-AUDIT.md">source audit</a>
@@ -38,7 +38,41 @@
   <span id="hint" class="hint"></span>
 </form>
 
-<main class="room">
+<section class="home" id="home" hidden>
+  <article class="welcome">
+    <div class="eyebrow">A READING ROOM · OPEN TO ANYONE</div>
+    <h1 class="welcome-q">What did Jesus actually teach?</h1>
+    <p class="welcome-p">Fourteen hard questions, answered from the sources. Pull a card and the case file opens beside it: the evidence pinned for and against, and every source stamped with whether we hold the text.</p>
+    <ul class="welcome-rules">
+      <li>Primary sources only. The red text first, then the earliest documents.</li>
+      <li>Nothing here is generated. Every card was written and checked by a person.</li>
+      <li>The against side is on every board. Read it before you quote us.</li>
+    </ul>
+    <p class="welcome-cta"><a href="#drawer-cabinet" class="welcome-btn">Pull a card</a> <a href="https://github.com/the-nazarene/way" class="welcome-link">or read the whole repository on GitHub →</a></p>
+  </article>
+
+  <div class="cabinet" id="drawer-cabinet">
+    <div class="cabinet-top">THE HARD QUESTIONS · <span id="homeCount"></span> CARDS</div>
+    <div class="drawers" id="drawers"></div>
+  </div>
+
+  <div class="howto">
+    <div>
+      <div class="eyebrow">1 · THE CARD</div>
+      <p>The answer as we'd say it out loud, typed on an index card. Short. The full card, with every objection and our response, is one link away in the repo.</p>
+    </div>
+    <div>
+      <div class="eyebrow">2 · THE CASE FILE</div>
+      <p>The evidence, pinned. FOR on the left, AGAINST on the right, the question in the middle with red string between them. Click any pin to read the passage itself.</p>
+    </div>
+    <div>
+      <div class="eyebrow">3 · THE STAMPS</div>
+      <p><span class="stamp held">HELD</span> means the text is in the repository and the cited phrase was found in it. <span class="stamp not-held">NOT YET HELD</span> means public domain and on the roadmap. Podcast transcripts are pointers, not proof.</p>
+    </div>
+  </div>
+</section>
+
+<main class="room" id="room">
   <section class="left">
     <article class="card" id="card" aria-live="polite">
       <div class="card-top">
