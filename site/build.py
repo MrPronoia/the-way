@@ -165,6 +165,84 @@ def build_card(card, problems):
     return out
 
 
+ARCHIVE = ROOT / "podcast-archive"
+TS_RE = re.compile(r"\*\*\[(\d{1,2}:)?(\d{1,2}):(\d{2})\]\*\*")
+YT_RE = re.compile(r"https://www\.youtube\.com/watch\?v=[A-Za-z0-9_-]+")
+
+
+def pointer_file(key):
+    if key.startswith("kam-"):
+        pat = ARCHIVE / "kameron-waters"; n = key[4:]
+    elif key.startswith("tabor-"):
+        pat = ARCHIVE / "dr-tabor"; n = key[6:]
+    else:
+        pat = ARCHIVE / "the-jesus-way"; n = key
+    hits = sorted(pat.glob(f"{n}-*.md"))
+    return hits[0] if hits else None
+
+
+def resolve_pointer(ptr, problems):
+    path = pointer_file(ptr["file"])
+    out = {"key": ptr["file"], "phrase": ptr["phrase"]}
+    if not path:
+        problems.append(f"objection pointer {ptr['file']}: no transcript file")
+        return out
+    text = path.read_text(encoding="utf-8")
+    out["path"] = str(path.relative_to(ROOT))
+    out["open"] = REPO_URL + out["path"]
+    yt = YT_RE.search(text)
+    i = norm(text).find(norm(ptr["phrase"]))
+    if i < 0:
+        problems.append(f"objection pointer {ptr['file']}: phrase {ptr['phrase']!r} not found")
+        return out
+    # norm() keeps length only roughly; locate via a case-insensitive raw search instead
+    j = text.lower().find(ptr["phrase"].lower().replace("\u2019", "'"))
+    if j < 0:
+        j = i
+    last = None
+    for m in TS_RE.finditer(text[:j]):
+        last = m
+    if last:
+        h = int(last.group(1)[:-1]) if last.group(1) else 0
+        mm, ss = int(last.group(2)), int(last.group(3))
+        secs = h * 3600 + mm * 60 + ss
+        out["timestamp"] = (f"{h}:{mm:02d}:{ss:02d}" if h else f"{mm}:{ss:02d}")
+        out["label"] = f"{ptr['file']} @ {out['timestamp']}"
+        if yt:
+            out["video"] = yt.group(0) + f"&t={secs}s"
+    return out
+
+
+def build_objections(cards, problems):
+    data = json.loads((SITE / "data" / "objections.json").read_text(encoding="utf-8"))
+    rows = []
+    for o in data["objections"]:
+        r = dict(o)
+        r["id"] = f"b{o['id']}"
+        r["kind"] = "raised"
+        r["pointers"] = [resolve_pointer(pt, problems) for pt in o.get("pointers", [])]
+        if o.get("brief"):
+            r["briefText"] = data["briefs"][o["brief"]]
+        rows.append(r)
+    # The prepared objections: every AGAINST pin on every card, in the words the card uses.
+    for c in cards:
+        for i, src in enumerate(c["sources"]):
+            if src.get("side") != "against":
+                continue
+            note = src.get("note", "")
+            m = re.match(r"\s*[\u201c\"](.+?)[\u201d\"]", note)
+            if m:
+                text = m.group(1)
+            else:
+                first = re.split(r"(?<=[.!?])\s", note.strip(), maxsplit=1)[0] if note.strip() else ""
+                text = f"{src.get('title') or src.get('ref')}: {first}" if first else (src.get("title") or src.get("ref"))
+            rows.append({"id": f"p-{c['slug']}-{i}", "kind": "prepared", "cluster": c["drawer"],
+                         "objection": text, "who": "prepared on the card", "card": c["slug"], "sourceIndex": i,
+                         "answer": note[m.end():].strip() if m else note, "status": "PREPARED",
+                         "source": src.get("title") or src.get("ref")})
+    return {"objections": rows, "briefs": data["briefs"]}
+
+
 def main():
     check_only = "--check" in sys.argv
     problems = []
@@ -172,6 +250,10 @@ def main():
     for p in sorted(CARDS.glob("*.json")):
         card = json.loads(p.read_text(encoding="utf-8"))
         cards.append(build_card(card, problems))
+    obj = build_objections(cards, problems)
+    raised = sum(1 for o in obj["objections"] if o["kind"] == "raised")
+    prepared = len(obj["objections"]) - raised
+    print(f"{raised} objections raised by critics, {prepared} prepared on the cards")
     held = sum(1 for c in cards for s in c["sources"] if s["status"] == "held")
     total = sum(len(c["sources"]) for c in cards)
     print(f"{len(cards)} cards, {total} sources, {held} held in repo, {total - held} not yet held")
@@ -185,8 +267,8 @@ def main():
     DIST.mkdir(parents=True, exist_ok=True)
     for name in ("index.html", "app.js", "styles.css", "favicon.svg", "apple-touch-icon.png"):
         shutil.copy(SITE / "src" / name, DIST / name)
-    (DIST / "data.json").write_text(json.dumps({"cards": cards, "repo": REPO_URL,
-                                                "kjvHeld": bool(BOOK_FILES)}, ensure_ascii=False, indent=1),
+    (DIST / "data.json").write_text(json.dumps({"cards": cards, "repo": REPO_URL, "kjvHeld": bool(BOOK_FILES),
+                                                "objections": obj["objections"], "briefs": obj["briefs"]}, ensure_ascii=False, indent=1),
                                     encoding="utf-8")
     (DIST / ".nojekyll").write_text("")
     print(f"wrote {DIST}")

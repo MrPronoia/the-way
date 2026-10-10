@@ -227,3 +227,22 @@ a { color: var(--blue); }
 .howto .stamp { font-size: 10px; transform: none; display: inline-block; padding: 1px 5px; }
 @media (max-width: 900px) { .drawers { grid-template-columns: repeat(2, minmax(0, 1fr)); } .howto { grid-template-columns: 1fr; } }
 @media (max-width: 560px) { .drawers { grid-template-columns: 1fr; } .welcome { padding: 22px 20px; transform: none; } .welcome-q { font-size: 26px; } }
+
+/* Objections cabinet */
+.objections-cabinet { border-color: #3a2a2a; }
+.obj-legend { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; padding: 10px 18px 0; font-size: 11px; color: var(--muted-light); }
+.ostamp { font-family: var(--type); font-size: 9px; letter-spacing: 1px; padding: 1px 5px; border: 1.5px solid currentColor; white-space: nowrap; display: inline-block; }
+.ostamp.answered { color: var(--held); } .ostamp.prepared { color: #5f8fbf; } .ostamp.thin { color: var(--not-held); } .ostamp.open { color: var(--string); } .ostamp.na { color: #8a8580; }
+.obj-legend .ostamp { margin-right: 4px; }
+.obj-card { background: var(--cream); }
+.obj-card.raised-card { background: #fff7e6; border-left: 4px solid var(--string); }
+.obj-top { display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+.obj-top small { font-family: var(--mono); font-size: 10px; color: var(--muted); }
+.obj-answer { font-size: 15px; line-height: 1.6; }
+.obj-brief { margin-top: 8px; background: var(--pad); padding: 10px 12px; font-size: 14px; line-height: 1.5; display: flex; flex-direction: column; gap: 6px; }
+.obj-pointers { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; font-size: 13px; }
+.obj-pointer code { background: var(--cream-2); border: 1px solid var(--rule); padding: 1px 5px; font-size: 12px; }
+.raised { margin-top: 16px; background: #2a2224; border: 1px solid #4a3a3a; padding: 14px 16px; }
+.raised .eyebrow { color: var(--muted-light); }
+.raised ul { margin: 8px 0 0; padding-left: 16px; font-size: 13px; line-height: 1.5; display: flex; flex-direction: column; gap: 6px; color: var(--text-light); }
+.raised a { color: #ffd6a6; }

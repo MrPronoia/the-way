@@ -197,6 +197,7 @@
       });
     });
 
+    renderRaised(card);
     $('nocard').hidden = true;
     requestAnimationFrame(function () { drawStrings(); setTimeout(drawStrings, 300); });
   }
@@ -281,6 +282,7 @@
   function closeReader() {
     $('reader').hidden = true; $('readerBackdrop').hidden = true;
     if (current && /^#\/[a-z0-9-]+\/\d+/.test(location.hash)) history.replaceState(null, '', '#/' + current.slug);
+    if (/^#\/o\//.test(location.hash)) history.replaceState(null, '', current ? '#/' + current.slug : '#/');
   }
 
   function search(q) {
@@ -373,13 +375,130 @@
       d.appendChild(inner);
       wrap.appendChild(d);
     });
+    renderObjectionCabinet();
     closeReader();
     window.scrollTo(0, 0);
+  }
+
+  var OBJ_ORDER = ['ATONEMENT \u00b7 SALVATION', 'WHO JESUS WAS', 'THE KINGDOM \u00b7 THE TWO WAYS', 'SACRIFICE \u00b7 DIET', 'ORIGINS \u00b7 THE NAZARENES', 'PAUL \u00b7 THE SOURCES', 'JESUS AND THE LAW', 'THE RESURRECTION', 'THE END TIMES', 'JUDGMENT \u00b7 AFTERLIFE', 'METHOD \u00b7 HOW WE READ'];
+  var STATUS_RANK = { OPEN: 0, THIN: 1, ANSWERED: 2, 'N/A': 3, PREPARED: 4 };
+
+  function ostamp(status) {
+    var cls = { ANSWERED: 'answered', PREPARED: 'prepared', THIN: 'thin', OPEN: 'open', 'N/A': 'na' }[status] || 'na';
+    return el('span', 'ostamp ' + cls, status);
+  }
+
+  function renderObjectionCabinet() {
+    var list = DATA.objections || [];
+    $('objCount').textContent = list.length;
+    var wrap = $('objDrawers');
+    wrap.innerHTML = '';
+    var groups = [];
+    list.forEach(function (o) {
+      var g = groups.filter(function (x) { return x.label === o.cluster; })[0];
+      if (!g) { g = { label: o.cluster, items: [] }; groups.push(g); }
+      g.items.push(o);
+    });
+    groups.sort(function (a, b) { var ia = OBJ_ORDER.indexOf(a.label), ib = OBJ_ORDER.indexOf(b.label); return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib); });
+    groups.forEach(function (g) {
+      g.items.sort(function (a, b) { return (STATUS_RANK[a.status] || 9) - (STATUS_RANK[b.status] || 9); });
+      var d = el('div', 'drawer-unit');
+      d.appendChild(el('div', 'drawer-plate', g.label));
+      var inner = el('div', 'drawer-inner');
+      g.items.forEach(function (o) {
+        var a = el('a', 'drawer-card obj-card' + (o.kind === 'raised' ? ' raised-card' : ''));
+        a.href = '#/o/' + o.id;
+        var top = el('div', 'obj-top');
+        top.appendChild(el('small', null, o.kind === 'raised' ? o.who : 'prepared on the card'));
+        top.appendChild(ostamp(o.status));
+        a.appendChild(top);
+        a.appendChild(el('span', null, o.objection));
+        inner.appendChild(a);
+      });
+      d.appendChild(inner);
+      wrap.appendChild(d);
+    });
+  }
+
+  function openObjection(o) {
+    var card = o.card ? DATA.cards.filter(function (c) { return c.slug === o.card; })[0] : null;
+    $('readerTier').textContent = (o.kind === 'raised' ? 'RAISED BY ' + o.who : 'PREPARED \u00b7 ' + (card ? card.question : '')).toUpperCase();
+    $('readerTitle').textContent = '\u201c' + o.objection + '\u201d';
+    var st = $('readerStatus');
+    st.innerHTML = '';
+    st.appendChild(ostamp(o.status));
+    if (o.heading && card) st.appendChild(el('span', null, 'card heading: \u201c' + o.heading + '\u201d'));
+    var body = $('readerBody');
+    body.innerHTML = '';
+    body.appendChild(el('div', 'plabel', o.status === 'OPEN' ? 'WHERE IT STANDS' : 'OUR ANSWER, IN SHORT'));
+    body.appendChild(el('div', 'obj-answer', o.answer || ''));
+    if (o.briefText) {
+      var b = el('div', 'obj-brief');
+      b.appendChild(el('div', 'plabel', 'THE BRIEF \u00b7 ' + o.brief + ' \u00b7 ' + o.briefText.title));
+      b.appendChild(el('div', null, o.briefText.text));
+      body.appendChild(b);
+    }
+    if (o.pointers && o.pointers.length) {
+      var pl = el('div', 'obj-pointers');
+      pl.appendChild(el('div', 'plabel', 'WHERE IT CAME UP \u00b7 pointers, not proof'));
+      o.pointers.forEach(function (pt) {
+        var row = el('div', 'obj-pointer');
+        row.appendChild(el('code', null, pt.label || pt.key));
+        row.appendChild(document.createTextNode(' \u201c' + pt.phrase + '\u201d '));
+        if (pt.video) { var v = el('a', null, 'watch at that moment \u2192'); v.href = pt.video; v.target = '_blank'; v.rel = 'noopener'; row.appendChild(v); }
+        if (pt.open) { row.appendChild(document.createTextNode(' \u00b7 ')); var t = el('a', null, 'transcript'); t.href = pt.open; t.target = '_blank'; t.rel = 'noopener'; row.appendChild(t); }
+        pl.appendChild(row);
+      });
+      body.appendChild(pl);
+    }
+    $('readerNote').textContent = '';
+    var foot = $('readerFoot');
+    foot.innerHTML = '';
+    if (card) {
+      var a = el('a', null, 'Open the card: ' + card.question + ' \u2192');
+      a.href = '#/' + card.slug + (o.sourceIndex != null ? '/' + o.sourceIndex : '');
+      foot.appendChild(a);
+    }
+    var bank = el('a', null, 'The objections bank in the repo (questions/OBJECTIONS.md) \u2192');
+    bank.href = DATA.repo + 'questions/OBJECTIONS.md'; bank.target = '_blank'; bank.rel = 'noopener';
+    foot.appendChild(bank);
+    var row2 = el('div', 'copy-row');
+    var c2 = el('button', 'copy', 'copy link to this objection');
+    c2.type = 'button';
+    c2.addEventListener('click', function () { copyText(location.origin + location.pathname + '#/o/' + o.id, c2); });
+    row2.appendChild(c2);
+    foot.appendChild(row2);
+    $('readerBackdrop').hidden = false;
+    $('reader').hidden = false;
+    $('readerClose').focus();
+  }
+
+  function renderRaised(card) {
+    var ul = $('raised');
+    ul.innerHTML = '';
+    var items = (DATA.objections || []).filter(function (o) { return o.kind === 'raised' && o.card === card.slug; });
+    $('raisedWrap').hidden = items.length === 0;
+    items.forEach(function (o) {
+      var li = el('li');
+      var a = el('a', null, '\u201c' + o.objection + '\u201d');
+      a.href = '#/o/' + o.id;
+      li.appendChild(a);
+      li.appendChild(document.createTextNode(' \u2014 ' + o.who + (o.pointers && o.pointers[0] && o.pointers[0].label ? ', ' + o.pointers[0].label : '') + ' '));
+      li.appendChild(ostamp(o.status));
+      ul.appendChild(li);
+    });
   }
 
   function route() {
     var m = /^#\/([a-z0-9-]+)(?:\/(\d+))?/.exec(location.hash);
     var card = m ? DATA.cards.filter(function (c) { return c.slug === m[1]; })[0] : null;
+    var om = /^#\/o\/([A-Za-z0-9_-]+)/.exec(location.hash);
+    if (om) {
+      var o = (DATA.objections || []).filter(function (x) { return x.id === om[1]; })[0];
+      if (current) { /* stay on the card view if we came from one */ } else { renderHome(); }
+      if (o) openObjection(o); else renderHome();
+      return;
+    }
     if (!card) { renderHome(); return; }
     $('home').hidden = true;
     $('room').hidden = false;
