@@ -31,6 +31,7 @@ If someone asks you to "show me the infinite canvas" or "the desk", this is it. 
    - In the tray, drag a source or the case's question card onto the desk. Click **‹ ALL CASE FILES** and drag a whole case file out.
    - Click the question card on the desk: it opens the case hub. Click a verse, a NEXT IN THE DRAWER case, or a GO DEEPER file. Each lands beside the card it came from, tied by string. Click the new card and keep following the thread.
    - Drag a card under another and watch it lock. `+ FRAME`, then drag a card into it. Type `hosea 6:6` in the search box and press Enter.
+   - Open <http://localhost:8000/canvas.html#desk=essene-debate>, the prepared debate desk. Walk its sections from ON THIS DESK at the top of the tray, then type `hosea` in the tray's search box and click the match.
    - `COPY DESK LINK` and open it in a new tab.
 5. Then ask the open questions at the bottom of this file, and write their answers into this file so the next session starts from them.
 6. When they are done, `git checkout main` to put the repo back where it was.
@@ -50,7 +51,7 @@ Additive only, and each one comes out cleanly.
 
 Nothing else of yours is touched. `app.js` and `styles.css` are unmodified, and none of your citation checks change: the build still fails on exactly what it failed on before. `desk.json` never fails the build. A verse reference in a card's prose that the KJV file does not contain just gets no desk card, and is listed in the build output so the prose can be checked. Today there are none.
 
-**New files:** `site/src/canvas.html`, `site/src/canvas.css`, `site/src/canvas.js`, `site/src/desk-door.js`, `site/desk_links.py`, `site/tier-families.py`, and this file.
+**New files:** `site/src/canvas.html`, `site/src/canvas.css`, `site/src/canvas.js`, `site/src/desk-door.js`, `site/desk_links.py`, `site/data/desks/essene-debate.json`, `site/tier-families.py`, and this file.
 
 ---
 
@@ -71,7 +72,10 @@ Nothing else of yours is touched. `app.js` and `styles.css` are unmodified, and 
 - **String.** Drag from any pin head to another card to tie it. Click a string to cut it.
 - **Notes.** Your own words, on the legal pad, visibly not a source and never stamped.
 - **Tidy.** Puts everything loose back into the case-file arrangement. Framed cards stay where they are.
-- **Keep it.** The desk saves to this browser and COPY DESK LINK gives a URL that rebuilds it exactly, for anyone. No account, no server, nothing stored anywhere but the link.
+- **Keep it.** The desk saves to this browser and COPY DESK LINK gives a URL that rebuilds it exactly, for anyone. No account, no server, nothing stored anywhere but the link. Opening someone's link never touches your own desk: it opens as a separate view with a bar offering KEEP THIS AS MY DESK (it asks first if yours isn't empty) or BACK TO MY DESK. COPY JSON copies the same layout as raw data, which is the format a prepared desk is kept in.
+- **Prepared desks.** A whole argument laid out ahead of time and kept in the repo at `site/data/desks/<slug>.json`, listed at the top of the tray, and opened by a short link: `canvas.html#desk=<slug>`. The build checks every card, verse, file and string in it against the current build, and drops anything that no longer resolves with a warning. A prepared desk can never show a card the build cannot stand behind. COPY DESK LINK on an unchanged prepared desk gives the short link; once someone has moved things, it gives their whole layout.
+  - **`essene-debate`** is the first one: *Jesus, the Essenes, sacrifice and meat*, laid out for the upcoming debate. It covers the resolution, how to hold it (the three claims and their real strength, from `questions/nazarene-sect-sacrifice-and-diet.md`), then: where he came from, he opposed the sacrifices, the prophets he stood in, the movement after him, what they will say and the answer, DO NOT SAY, and GO DEEPER. That's 50 cards and notes in seven sections, with 22 strings. Every source on it is a verified card source; the notes are the repo's own analysis, marked NOTE · NOT A SOURCE.
+- **Search the trays.** A box at the top of the tray filters prepared desks, case files (by question, call number and every alias), sources by family (opening the families that match), and the case file open in the tray. Above them, ON THIS DESK lists the desk's sections (frames) in reading order when nothing is typed, and every matching card when something is. Clicking one takes the view there: a section fills the view, and a card comes to the centre at a readable size with a brief highlight. Enter goes to the first match and Escape clears.
 - **Click a card** to open the same reader pane, with the same verse text, the same highlighted phrase, the same stamp, and a link back to its case file. On the desk, the reader also carries the card's thread.
 - Undo with Ctrl-Z, delete with Delete, select all with Ctrl-A.
 
@@ -144,6 +148,8 @@ Two more were my test being wrong rather than the page: the question-card offset
 - **The sources in an open case were out of reach.** A long finding pushed them below the window, so the most useful part of the tray needed scrolling before it could be used. The finding is now clamped to five lines with a toggle.
 - **A case could be laid out on top of cards already down.** Laying out a question that had arrived beside another case put its columns wherever that left them. Every layout now checks that the space is clear, and moves somewhere clear when it isn't.
 
+**Sharing, prepared desks and search** have two more: 25 assertions on shared links (your own desk survives opening, editing and reloading one; keep, decline, back, a link pasted into an open tab, the Back button, a broken link) and 24 on the prepared debate desk and the tray search (every card, frame and string arrives; no two cards or sections overlap; the short link and the whole-layout link; an unknown desk name; sections in reading order; jumping to a section and to a card; filtering every tray; Enter and Escape). Building the debate desk also turned up a bug from the first round, now fixed: frame titles were cut short, because the title box was sized in characters without its letter-spacing.
+
 The reference detector was checked against every scripture-shaped string in the cards' prose. It links every KJV reference, including cross-chapter ranges (`John 7:53-8:11`), half-verses (`6:51b`), same-book continuations (`Matthew 9:13; 12:7`) and your abbreviations (`1 Cor`, `Psalm`), and it correctly refuses `Didache 1:3`, `1 Enoch 48:3` and `4 Maccabees 8:9`.
 
 ---
@@ -153,10 +159,10 @@ The reference detector was checked against every scripture-shaped string in the 
 1. **Does this belong on the site at all,** or is it a side door that dilutes "pull a card, read the answer"? It costs one nav link to find out and one line to remove.
 2. **The reader pane is duplicated.** `canvas.js` carries its own copy so `app.js` stays untouched. If the desk stays, the two should become one shared module, and that is a change to your file.
 3. **Mobile.** The desk tells a phone to use the Reading Room instead. That seems right for an infinite canvas, but it is a judgment call.
-4. **Should a desk be shareable into the repo** as a saved layout, the way a card is? The share link already encodes one completely, so a `desks/` folder of JSON would need no new machinery.
+4. **Prepared desks are in the repo now** (`site/data/desks/`), validated by the build like cards. Is that the right home, and who gets to add one? A desk is an argument with the stamps attached, so it probably wants the same review a card gets.
 5. **The door on your case file.** Is OPEN ON THE DESK the right word and the right spot? It sits on the folder-tab row, right-aligned. If you'd rather it lived in `app.js` with the rest of the case view, `desk-door.js` folds in as about six lines.
 6. **`desk.json` in your build.** It is written from `site/desk_links.py`, a separate module, so `build.py` only grew an import and six lines. If you'd rather the verse index lived in `data.json`, say so. And if the desk doesn't stay, deleting those lines and the module is the whole removal.
 
-**Known issue, to fix next: opening a shared desk link overwrites your own saved desk.** The desk keeps one layout per browser, and a link's layout is saved over it as soon as it loads. The planned fix opens a shared link as its own copy, with a "keep this desk" button and a way back to yours. Until then, COPY DESK LINK on your own desk first if it matters. Also: links copied on `localhost` only work on that machine. They work for anyone once the desk is served from nazareneway.com. COPY JSON copies the same layout as raw data, which is the format a future `desks/` folder of saved layouts would use (open question 4). Nothing loads it back in yet.
+**Links copied on `localhost` only work on that machine.** They work for anyone once the desk is served from nazareneway.com, and so does `nazareneway.com/canvas.html#desk=essene-debate`.
 
 **Not built, on purpose: asking Claude.** A question box on the desk, with answers drawn only from held sources and drawn on the desk as UNCHECKED cards that are visibly not sources. It needs a small server to keep an API key private (a Cloudflare Worker, like the one in front of jesusactuallysaid.com), and it is your README's phase 3, so it waits for you.

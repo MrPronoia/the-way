@@ -392,3 +392,42 @@ body.is-carrying, body.is-carrying * { cursor: grabbing !important; user-select:
 .reader-body .case-lines { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.55; }
 .reader-body .case-lines li { margin-bottom: 5px; }
 .reader .lay-out { align-self: flex-start; }
+
+/* A prepared desk in the tray: the legal-pad yellow, with the string's red edge. */
+.tray-desk { background: var(--pad); border-left: 5px solid var(--string); }
+.tray-desk:hover, .tray-desk:focus { background: #fff8c4; }
+
+/* ---------- searching the trays ---------- */
+
+.tray [hidden] { display: none !important; }
+.tray-search { position: sticky; top: 44px; z-index: 3; padding: 10px 12px; background: var(--drawer-dark); border-bottom: 1px solid var(--drawer-darker); }
+.tray.is-collapsed .tray-search { display: none; }
+#tq {
+  width: 100%; font-family: var(--mono); font-size: 13px; padding: 7px 9px;
+  border: 1px solid var(--drawer-darker); background: var(--cream); color: var(--ink);
+}
+#tq:focus { outline: 2px solid var(--pad); outline-offset: 0; }
+.tray-none { margin: 8px 0 0; font-size: 11px; line-height: 1.45; color: var(--muted-light); }
+.tray-here { list-style: none; margin: 0 0 12px; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.here-row {
+  display: flex; flex-direction: column; gap: 1px; width: 100%; text-align: left; cursor: pointer;
+  padding: 6px 9px; background: var(--drawer); color: var(--text-light);
+  border: 1px solid var(--board-border); border-left: 3px solid var(--muted-light);
+  font-family: var(--mono); font-size: 11.5px; line-height: 1.35;
+}
+.here-row small { font-family: var(--type); font-size: 9px; letter-spacing: 1px; color: var(--muted-light); }
+.here-row:hover, .here-row:focus-visible { background: var(--drawer-dark); color: #ffffff; border-left-color: var(--pad); }
+.here-row.here-frame { border-left-color: var(--frame-1); font-family: var(--type); letter-spacing: 1px; }
+.here-row.here-v { border-left-color: var(--red); }
+.here-row.here-note { border-left-color: var(--pad); }
+
+/* The card the view was just taken to says so, briefly. */
+.node.is-found .pincard, .node.is-found .qcard, .node.is-found .notepad, .node.is-found .doccard {
+  animation: found 1.5s ease-out;
+}
+@keyframes found {
+  0%, 30% { box-shadow: 0 0 0 6px rgba(255, 244, 160, 0.95), 0 10px 22px rgba(0, 0, 0, 0.7); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 244, 160, 0), 0 10px 22px rgba(0, 0, 0, 0.7); }
+}
+.frame.is-selected { border-width: 3px; }
+@media (prefers-reduced-motion: reduce) { .node.is-found .pincard, .node.is-found .qcard, .node.is-found .notepad, .node.is-found .doccard { animation: none; } }

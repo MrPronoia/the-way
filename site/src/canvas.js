@@ -593,7 +593,7 @@
     n.style.setProperty('--tilt', '1.2deg');
     n.appendChild(tools(it));
     var p = el('div', 'notepad');
-    p.appendChild(el('div', 'eyebrow', 'MY NOTE'));
+    p.appendChild(el('div', 'eyebrow', 'NOTE · NOT A SOURCE'));
     var ta = el('textarea');
     ta.value = it.text || '';
     ta.rows = 3;
@@ -612,6 +612,12 @@
     return n;
   }
 
+  /* A title's width in ch plus its 2px letter-spacing, or the end gets cut. */
+  function sizeTitle(inp) {
+    var n = Math.max(4, inp.value.length + 1);
+    inp.style.width = 'calc(' + n + 'ch + ' + (n * 2) + 'px)';
+  }
+
   function buildFrame(it) {
     var f = el('div', 'frame');
     f.setAttribute('data-id', it.id);
@@ -624,10 +630,11 @@
     inp.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
     inp.addEventListener('input', function () {
       it.title = inp.value;
-      inp.style.width = Math.max(4, inp.value.length + 1) + 'ch';
+      sizeTitle(inp);
       save();
+      renderHere();
     });
-    inp.style.width = Math.max(4, it.title.length + 1) + 'ch';
+    sizeTitle(inp);
     bar.appendChild(inp);
     var cnt = el('span', 'frame-count', '');
     bar.appendChild(cnt);
@@ -673,6 +680,7 @@
     }
     renderSelection();
     renderTrayPlaced();
+    renderHere();
     drawLinks();
     updateCounts();
     $('emptyDesk').hidden = items.length > 0;
@@ -1259,7 +1267,10 @@
 
   function fit() {
     var b = bounds();
-    if (!b) return;
+    if (b) fitBox(b);
+  }
+
+  function fitBox(b) {
     var r = $('surface').getBoundingClientRect();
     var pad = 56;
     var sx = (r.width - pad * 2) / Math.max(1, b.x2 - b.x1);
@@ -1316,6 +1327,7 @@
   /* ================= the trays ================= */
 
   function renderTray() {
+    renderPrepared();
     var cases = $('trayCases');
     cases.innerHTML = '';
     var ordered = DATA.cards.slice().sort(function (a, b) { return a.call < b.call ? -1 : 1; });
@@ -1325,6 +1337,7 @@
         var btn = el('button', 'tray-case');
         btn.type = 'button';
         btn.setAttribute('data-slug', card.slug);
+        btn.setAttribute('data-search', searchText([card.call, card.drawer, card.question, card.subtitle].concat(card.aliases || [])));
         btn.title = 'Open it here to browse. Drag it onto the desk to lay out the whole case.';
         btn.appendChild(el('small', null, card.call + ' · ' + card.sources.length + ' sources'));
         btn.appendChild(el('span', null, card.question));
@@ -1374,6 +1387,7 @@
             var b = el('button', 'fam-src side-' + (row.src.side || 'for'));
             b.type = 'button';
             b.setAttribute('data-src-id', 's:' + row.slug + ':' + row.i);
+            b.setAttribute('data-search', searchText([row.title, row.tier, row.phrase, row.card.call, row.question]));
             b.appendChild(el('span', 'fs-tier', (row.src.tier || '').toUpperCase()));
             b.appendChild(el('span', 'fs-title', row.src.title || row.src.ref));
             b.title = 'Pin to the desk, or drag it where you want it — ' + row.card.call;
@@ -1393,11 +1407,165 @@
     renderTrayPlaced();
   }
 
+  /* Prepared desks: whole arguments laid out and kept in the repo
+     (site/data/desks/). Opening one is the same as opening a shared link. */
+  function renderPrepared() {
+    var all = LINKS.desks || [];
+    var ul = $('trayDesks');
+    ul.innerHTML = '';
+    $('trayDesksSection').hidden = !all.length;
+    all.forEach(function (d) {
+      var li = el('li');
+      var b = el('button', 'tray-case tray-desk');
+      b.type = 'button';
+      b.setAttribute('data-desk', d.slug);
+      b.setAttribute('data-search', searchText([d.title, d.subtitle, d.by]));
+      b.appendChild(el('small', null, 'PREPARED · ' + d.desk.it.length + ' on the desk' + (d.by ? ' · ' + d.by : '')));
+      b.appendChild(el('span', null, d.title));
+      b.title = d.subtitle;
+      b.addEventListener('click', function () {
+        if (location.hash === '#desk=' + d.slug) openShared({ json: JSON.stringify(d.desk), prepared: d });
+        else location.hash = 'desk=' + d.slug;
+      });
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+  }
+
   function renderTrayPlaced() {
     var btns = document.querySelectorAll('[data-src-id], [data-item-id]');
     for (var i = 0; i < btns.length; i++) {
       btns[i].classList.toggle('is-placed', has(btns[i].getAttribute('data-src-id') || btns[i].getAttribute('data-item-id')));
     }
+  }
+
+  /* ================= searching the trays and the desk =================
+     One box filters everything in the trays, and lists what on the desk
+     matches. With nothing typed, the desk list is its sections (frames), so a
+     big board can be walked one section at a time. */
+
+  function searchText(parts) {
+    return parts.filter(function (x) { return !!x; }).join(' ').toLowerCase().replace(/[’‘]/g, "'");
+  }
+
+  function trayQuery() { return ($('tq').value || '').toLowerCase().replace(/[’‘]/g, "'").trim(); }
+
+  function matches(text, q) {
+    if (!q) return true;
+    var words = q.split(/\s+/);
+    for (var i = 0; i < words.length; i++) if (text.indexOf(words[i]) < 0) return false;
+    return true;
+  }
+
+  function itemText(it) {
+    if (it.t === 'src') { var s = srcOf(it); return s ? searchText([s.title || s.ref, s.tier, s.phrase, s.note]) : ''; }
+    if (it.t === 'q') { var c = cardBySlug(it.c); return c ? searchText([c.call, c.drawer, c.question]) : ''; }
+    if (it.t === 'v') { var v = LINKS.verses[it.k]; return v ? searchText([v.label, v.verses.map(function (x) { return x.text; }).join(' ')]) : ''; }
+    if (it.t === 'd') { var d = LINKS.docs[it.k]; return d ? searchText([d.title, d.path]) : ''; }
+    if (it.t === 'note') return searchText([it.text]);
+    if (it.t === 'frame') return searchText([it.title]);
+    return '';
+  }
+
+  function itemLabel(it) {
+    if (it.t === 'src') { var s = srcOf(it); return s ? (s.title || s.ref) : ''; }
+    if (it.t === 'q') { var c = cardBySlug(it.c); return c ? c.question : ''; }
+    if (it.t === 'v') return it.k;
+    if (it.t === 'd') return LINKS.docs[it.k] ? LINKS.docs[it.k].title : it.k;
+    if (it.t === 'note') { var t = (it.text || '').replace(/\s+/g, ' ').trim(); return t.length > 70 ? t.slice(0, 67) + '…' : t || '(empty note)'; }
+    return it.title || 'UNTITLED';
+  }
+
+  var KIND = { src: 'SOURCE', q: 'QUESTION', v: 'VERSE', d: 'GO DEEPER', note: 'NOTE', frame: 'SECTION' };
+
+  function renderHere() {
+    var q = trayQuery(), ul = $('trayHere');
+    ul.innerHTML = '';
+    var frames = items.filter(function (x) { return x.t === 'frame'; })
+      .sort(function (a, b) { return (a.y - b.y) || (a.x - b.x); });
+    var rows = frames.filter(function (f) { return matches(itemText(f), q); });
+    if (q) {
+      var hits = items.filter(function (x) { return x.t !== 'frame' && matches(itemText(x), q); });
+      rows = rows.concat(hits.slice(0, 14));
+    }
+    rows.forEach(function (it) {
+      var li = el('li');
+      var b = el('button', 'here-row here-' + it.t);
+      b.type = 'button';
+      var kind = KIND[it.t] || '';
+      if (it.t === 'frame') kind += ' · ' + membersOf(it).length + ' in it';
+      b.appendChild(el('small', null, kind));
+      b.appendChild(el('span', null, itemLabel(it)));
+      b.title = 'Go to it on the desk';
+      b.addEventListener('click', function () { focusOn(it); });
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+    $('trayHereNote').textContent = q ? 'On the desk now. Click one to go to it.' : 'The sections on this desk. Click one to go there.';
+    $('trayHereSection').hidden = !rows.length;
+    return rows.length;
+  }
+
+  /* Takes the view to a thing on the desk: a section fills the view, a card
+     comes to the centre at a readable size, and either is briefly marked. */
+  function focusOn(it) {
+    if (!itemById(it.id)) return;
+    if (it.t === 'frame') fitBox({ x1: it.x - 30, y1: it.y - 50, x2: it.x + it.w + 30, y2: it.y + it.h + 30 });
+    else {
+      var r = $('surface').getBoundingClientRect(), b = boxOf(it);
+      tf.scale = clamp(Math.max(tf.scale, 0.9), MIN_Z, 1.15);
+      tf.x = r.width / 2 - (b.x + b.w / 2) * tf.scale;
+      tf.y = r.height / 2 - (b.y + b.h / 2) * tf.scale;
+      applyTransform(); drawLinks();
+    }
+    sel = {}; sel[it.id] = true;
+    renderSelection();
+    var e = nodeEl(it.id);
+    if (e) {
+      e.classList.remove('is-found');
+      void e.offsetWidth;
+      e.classList.add('is-found');
+      setTimeout(function () { e.classList.remove('is-found'); }, 1600);
+    }
+    hint((it.t === 'frame' ? 'Section: ' : '') + itemLabel(it));
+  }
+
+  function hostOf(row) { return row.parentNode && row.parentNode.tagName === 'LI' ? row.parentNode : row; }
+
+  function shown(row) {
+    var h = hostOf(row);
+    return !h.hidden && !(h.closest && h.closest('.fam[hidden]'));
+  }
+
+  function filterTray() {
+    var q = trayQuery();
+    var listMode = $('trayOpen').hidden;
+    var rows = $('tray').querySelectorAll('[data-search]');
+    for (var i = 0; i < rows.length; i++) hostOf(rows[i]).hidden = !matches(rows[i].getAttribute('data-search'), q);
+    /* A family opens when it holds a match, and closes again when the search is cleared. */
+    var fams = $('trayFamilies').children;
+    for (var f = 0; f < fams.length; f++) {
+      var hits = fams[f].querySelectorAll('.fam-list > li:not([hidden])').length;
+      fams[f].hidden = !!q && !hits;
+      if (q && hits) { fams[f].classList.add('is-open'); fams[f].setAttribute('data-auto-open', '1'); }
+      else if (!q && fams[f].getAttribute('data-auto-open')) { fams[f].classList.remove('is-open'); fams[f].removeAttribute('data-auto-open'); }
+    }
+    var any = 0;
+    var section = function (id, listId, base) {
+      var all = $(listId).querySelectorAll('[data-search]'), vis = 0;
+      for (var k = 0; k < all.length; k++) if (shown(all[k])) vis++;
+      $(id).hidden = !listMode || !base || !all.length || (!!q && !vis);
+      if (!$(id).hidden) any += vis;
+    };
+    section('trayDesksSection', 'trayDesks', (LINKS.desks || []).length);
+    section('trayCasesSection', 'trayCases', true);
+    section('trayFamiliesSection', 'trayFamilies', true);
+    if (!listMode) {
+      var open = $('trayOpen').querySelectorAll('[data-search]');
+      for (var o = 0; o < open.length; o++) if (shown(open[o])) any++;
+    }
+    var here = renderHere();
+    $('trayNone').hidden = !q || any > 0 || here > 0;
   }
 
   /* ================= a case file, open in the tray =================
@@ -1410,6 +1578,7 @@
     if (!card) return;
     $('trayCasesSection').hidden = true;
     $('trayFamiliesSection').hidden = true;
+    $('trayDesksSection').hidden = true;
     var w = $('trayOpen');
     w.innerHTML = '';
     w.hidden = false;
@@ -1464,6 +1633,7 @@
         var b = el('button', 'fam-src side-' + sd[0]);
         b.type = 'button';
         b.setAttribute('data-item-id', thingId(p));
+        b.setAttribute('data-search', searchText([s.title || s.ref, s.tier, s.phrase, s.note]));
         b.title = 'Click to pin it, or drag it where you want it';
         b.appendChild(el('span', 'fs-tier', (s.tier || '').toUpperCase()));
         b.appendChild(el('span', 'fs-title', s.title || s.ref));
@@ -1492,6 +1662,7 @@
 
     $('tray').scrollTop = 0;
     renderTrayPlaced();
+    filterTray();
   }
 
   function closeTrayCase() {
@@ -1499,7 +1670,9 @@
     $('trayOpen').innerHTML = '';
     $('trayCasesSection').hidden = false;
     $('trayFamiliesSection').hidden = false;
+    $('trayDesksSection').hidden = !(LINKS.desks || []).length;
     $('tray').scrollTop = 0;
+    filterTray();
   }
 
   function pinSource(row) {
@@ -1667,15 +1840,37 @@
      the reader's own saved desk. It stays in the address bar, so a reload
      reopens it, until they keep it or go back to their own. */
   var viewingShared = false;
+  var sharedMeta = null;     // the prepared desk on screen, if it is one
+  var sharedSig = null;      // its layout as opened, to tell whether it has been changed
 
   function save() {
     if (viewingShared) return;
     try { localStorage.setItem(STORE, encode()); } catch (err) { /* private window, blocked storage: the desk still works */ }
   }
 
+  /* The desk's layout without the viewport: what "changed" means. */
+  function deskSig() {
+    var s = JSON.parse(encode());
+    return JSON.stringify([s.it, s.ln]);
+  }
+
+  function preparedBySlug(slug) {
+    var all = LINKS.desks || [];
+    for (var i = 0; i < all.length; i++) if (all[i].slug === slug) return all[i];
+    return null;
+  }
+
+  /* What the address bar asks for: a prepared desk by name (#desk=slug), or a
+     whole desk packed into the link (#b=...). */
   function sharedInHash() {
+    var p = /[#&]desk=([a-z0-9-]+)/.exec(location.hash);
+    if (p) {
+      var d = preparedBySlug(p[1]);
+      return d ? { json: JSON.stringify(d.desk), prepared: d } : { missing: p[1] };
+    }
     var h = /[#&]b=([^&]+)/.exec(location.hash);
-    return h ? h[1] : null;
+    if (!h) return null;
+    try { return { json: decodeURIComponent(h[1]) }; } catch (err) { return { bad: true }; }
   }
 
   function readOwn() {
@@ -1691,10 +1886,19 @@
     try { var s = JSON.parse(localStorage.getItem(STORE) || 'null'); return s && s.it ? s.it.length : 0; } catch (err) { return 0; }
   }
 
+  function sharedHint(s) {
+    if (s.missing) return 'There is no prepared desk called “' + s.missing + '” in this build. Showing your own desk.';
+    return 'That desk link could not be read. Showing your own desk.';
+  }
+
   function load() {
-    var h = sharedInHash();
-    if (h) {
-      try { decode(decodeURIComponent(h)); viewingShared = true; return true; } catch (err) { hint('That desk link could not be read. Showing your own desk.'); }
+    var s = sharedInHash();
+    if (s && s.json) {
+      try {
+        decode(s.json);
+        viewingShared = true; sharedMeta = s.prepared || null;
+        return true;
+      } catch (err) { /* unreadable: fall through to the reader's own desk */ }
     }
     return readOwn();
   }
@@ -1703,22 +1907,29 @@
     $('sharedBar').hidden = !viewingShared;
     var n = ownCount();
     $('btnBackMine').textContent = 'BACK TO MY DESK' + (n ? ' (' + n + ')' : '');
+    if (!viewingShared) return;
+    $('sharedEyebrow').textContent = sharedMeta ? 'A PREPARED DESK · ' + sharedMeta.title.toUpperCase() : 'A SHARED DESK';
+    $('sharedText').textContent = (sharedMeta ? sharedMeta.subtitle + ' ' : 'Someone’s layout, opened from a link. ') +
+      'Your own desk is safe and untouched. Changes here are not saved unless you keep it.';
   }
 
   function leaveShared() {
     viewingShared = false;
+    sharedMeta = null; sharedSig = null;
     history.replaceState(null, '', location.pathname + location.search);
     undoStack = [];
     sel = {};
   }
 
-  function openShared(enc) {
-    try { decode(decodeURIComponent(enc)); } catch (err) { hint('That desk link could not be read.'); return; }
+  function openShared(s) {
+    try { decode(s.json); } catch (err) { hint('That desk link could not be read.'); return; }
     viewingShared = true;
+    sharedMeta = s.prepared || null;
     undoStack = []; sel = {};
     closeReader();
     renderAll(); fit(); renderShared();
-    hint('A shared desk: ' + items.length + ' things on it. Your own desk is untouched.');
+    sharedSig = deskSig();
+    hint((sharedMeta ? sharedMeta.title : 'A shared desk') + ': ' + items.length + ' things on it. Click any card to read it. Your own desk is untouched.');
   }
 
   function backToMine() {
@@ -1832,6 +2043,7 @@
     var b = el('button', 'chip chip-' + p.kind + (inline ? ' inline' : ''));
     b.type = 'button';
     if (p.kind !== 'case') b.setAttribute('data-item-id', thingId(p));
+    if (!inline) b.setAttribute('data-search', searchText([label]));
     b.title = (ctx.tray && p.kind === 'case') ? 'Open this case file here. Drag it onto the desk to lay it out.' :
       'Click to put it on the desk beside this card, tied by string. Or drag it where you want it.';
     if (inline) b.textContent = label;
@@ -2222,6 +2434,12 @@
 
     $('btnShare').addEventListener('click', function () {
       var base = location.origin + location.pathname;
+      /* An unchanged prepared desk has a short name; anything else travels whole. */
+      if (viewingShared && sharedMeta && deskSig() === sharedSig) {
+        copyText(base + '#desk=' + sharedMeta.slug, this);
+        hint('Link to the prepared desk “' + sharedMeta.title + '” copied. Anyone who opens it walks the same argument.');
+        return;
+      }
       copyText(base + '#b=' + encodeURIComponent(encode()), this);
       hint('Desk link copied. It rebuilds this exact layout for anyone who opens it. No account, nothing stored on a server.');
     });
@@ -2256,6 +2474,22 @@
     input.addEventListener('keydown', function (e) { if (e.key === 'Escape') $('dsuggest').hidden = true; });
     $('deskSearch').addEventListener('submit', submitSearch);
 
+    var tq = $('tq');
+    tq.addEventListener('input', filterTray);
+    tq.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { tq.value = ''; filterTray(); }
+      /* Enter takes the first match: a place on the desk first, then the trays. */
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        var first = $('tray').querySelector('.here-row');
+        if (!first) {
+          var all = $('tray').querySelectorAll('[data-search]');
+          for (var i = 0; i < all.length && !first; i++) if (shown(all[i]) && all[i].offsetParent) first = all[i];
+        }
+        if (first) first.click();
+      }
+    });
+
     $('btnKeepShared').addEventListener('click', keepShared);
     $('btnBackMine').addEventListener('click', backToMine);
 
@@ -2272,13 +2506,18 @@
     wireSurface();
     wireTools();
     watchLateFonts();
+    var asked = sharedInHash();
     var restored = load();
     applyTransform();
     renderAll();
     renderShared();
     if (viewingShared) {
-      hint('A shared desk: ' + items.length + ' things on it. Your own desk is untouched.');
+      sharedSig = deskSig();
+      hint((sharedMeta ? sharedMeta.title : 'A shared desk') + ': ' + items.length + ' things on it. Click any card to read it. Your own desk is untouched.');
       fit();
+    } else if (asked) {
+      hint(sharedHint(asked));
+      if (items.length) fit();
     } else if (restored && items.length) {
       hint('Your desk from last time. ' + items.length + ' things on it.');
       fit();
@@ -2288,8 +2527,9 @@
     arrive();
     /* A link pasted into this tab's address bar changes only the hash. */
     window.addEventListener('hashchange', function () {
-      var enc = sharedInHash();
-      if (enc) openShared(enc);
+      var s = sharedInHash();
+      if (s && s.json) openShared(s);
+      else if (s) hint(sharedHint(s));
       else if (viewingShared) backToMine();
       else arrive();
     });

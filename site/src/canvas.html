@@ -39,8 +39,8 @@
 
 <div class="shared-bar" id="sharedBar" role="status" hidden>
   <div class="shared-text">
-    <span class="eyebrow">A SHARED DESK</span>
-    <span>Someone's layout, opened from a link. Your own desk is safe and untouched. Changes here are not saved unless you keep it.</span>
+    <span class="eyebrow" id="sharedEyebrow">A SHARED DESK</span>
+    <span id="sharedText">Someone's layout, opened from a link. Your own desk is safe and untouched. Changes here are not saved unless you keep it.</span>
   </div>
   <div class="shared-actions">
     <button type="button" class="tool" id="btnKeepShared">KEEP THIS AS MY DESK</button>
@@ -73,6 +73,23 @@
     <div class="tray-top">
       <span class="tray-title">THE TRAYS</span>
       <button type="button" class="tray-collapse" id="trayCollapse" aria-label="Collapse the trays">‹</button>
+    </div>
+
+    <div class="tray-search">
+      <input id="tq" type="search" placeholder="Search the trays and this desk" aria-label="Search the trays and the cards on this desk" autocomplete="off">
+      <p class="tray-none" id="trayNone" hidden>Nothing in the trays matches. The trays hold only what the build verified, so a gap here is a real gap.</p>
+    </div>
+
+    <div class="tray-section" id="trayHereSection" hidden>
+      <div class="eyebrow">ON THIS DESK</div>
+      <p class="tray-note" id="trayHereNote">The sections on the desk. Click one to go there.</p>
+      <ul class="tray-here" id="trayHere"></ul>
+    </div>
+
+    <div class="tray-section" id="trayDesksSection" hidden>
+      <div class="eyebrow">PREPARED DESKS</div>
+      <p class="tray-note">Whole arguments, already laid out. Open one to walk it; your own desk stays as it is.</p>
+      <ul class="tray-cases" id="trayDesks"></ul>
     </div>
 
     <div class="tray-section" id="trayCasesSection">

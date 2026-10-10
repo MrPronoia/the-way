@@ -15,6 +15,7 @@ The reference grammar here and in canvas.js (refPattern / refKey) must match:
 the desk links a reference only when the key it computes is in this index.
 """
 
+import json
 import re
 
 MAX_VERSES = 20     # a longer range is shown truncated, and says so
@@ -164,4 +165,57 @@ def build(cards, book_files, load_book, aliases, repo_url, root):
             if card["slug"] not in d["cards"]:
                 d["cards"].append(card["slug"])
 
-    return {"names": names, "verses": verses, "docs": docs}, warnings
+    desks = _prepared_desks(root, cards, verses, docs, warnings)
+    return {"names": names, "verses": verses, "docs": docs, "desks": desks}, warnings
+
+
+def _prepared_desks(root, cards, verses, docs, warnings):
+    """site/data/desks/*.json: whole arguments laid out ahead of time.
+
+    Each file is {slug, title, subtitle, by, desk}, where desk is exactly what
+    the desk's COPY JSON produces. Every card, verse, file and string in it is
+    checked against this build; anything that no longer resolves is dropped
+    with a warning, so a prepared desk can never show a card the build cannot
+    stand behind."""
+    folder = root / "site" / "data" / "desks"
+    if not folder.exists():
+        return []
+    by_slug = {c["slug"]: c for c in cards}
+    out = []
+    for path in sorted(folder.glob("*.json")):
+        d = json.loads(path.read_text(encoding="utf-8"))
+        name = path.name
+        kept, ids, seq = [], set(), 1
+        for it in d["desk"].get("it", []):
+            kind, ok = it[0], True
+            if kind == "s":
+                card = by_slug.get(it[1])
+                ok = bool(card) and 0 <= it[2] < len(card["sources"])
+                iid = f"s:{it[1]}:{it[2]}"
+            elif kind == "q":
+                ok, iid = it[1] in by_slug, f"q:{it[1]}"
+            elif kind == "v":
+                ok, iid = it[1] in verses, f"v:{it[1]}"
+            elif kind == "d":
+                ok, iid = it[1] in docs, f"d:{it[1]}"
+            elif kind in ("n", "f"):
+                # Notes and frames are numbered in order, exactly as canvas.js decodes them.
+                iid = f"{kind}:{seq}"
+                seq += 1
+            else:
+                ok, iid = False, kind
+            if ok:
+                kept.append(it)
+                ids.add(iid)
+            else:
+                warnings.append(f"desks/{name}: {iid} is not in this build, left off the desk")
+        links = []
+        for a, b in d["desk"].get("ln", []):
+            if a in ids and b in ids:
+                links.append([a, b])
+            else:
+                warnings.append(f"desks/{name}: string {a} -> {b} has a missing end, left off")
+        desk = dict(d["desk"], it=kept, ln=links)
+        out.append({"slug": d["slug"], "title": d["title"], "subtitle": d.get("subtitle", ""),
+                    "by": d.get("by", ""), "desk": desk})
+    return out
