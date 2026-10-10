@@ -64,17 +64,19 @@
       <button type="button" class="tray-collapse" id="trayCollapse" aria-label="Collapse the trays">‹</button>
     </div>
 
-    <div class="tray-section">
-      <div class="eyebrow">PULL A WHOLE CASE</div>
-      <p class="tray-note">Drops the question and every pin from one case file, laid out for and against.</p>
+    <div class="tray-section" id="trayCasesSection">
+      <div class="eyebrow">THE CASE FILES</div>
+      <p class="tray-note">Open one to read it here. Drag it onto the desk to lay out the whole case.</p>
       <ul class="tray-cases" id="trayCases"></ul>
     </div>
 
-    <div class="tray-section">
+    <div class="tray-section" id="trayFamiliesSection">
       <div class="eyebrow">BY SOURCE FAMILY</div>
-      <p class="tray-note">Derived from each source's tier, so new cards file themselves.</p>
+      <p class="tray-note">Derived from each source's tier, so new cards file themselves. Drag one out, or click to pin it.</p>
       <ul class="tray-families" id="trayFamilies"></ul>
     </div>
+
+    <div class="tray-section tray-open" id="trayOpen" hidden></div>
   </aside>
 
   <section class="surface-wrap">
@@ -89,8 +91,8 @@
       <div class="empty-desk" id="emptyDesk">
         <div class="empty-inner">
           <div class="eyebrow">AN EMPTY DESK</div>
-          <p>Pull a whole case from the trays on the left, or type a subject above and the held sources come to you.</p>
-          <p class="small">Drag a card to move it. Drag from its pin head to tie string. Drag the desk to box-select. Middle-drag or hold space to pan. Ctrl-scroll to zoom.</p>
+          <p>Drag a case file from the trays on the left onto the desk, or type a subject or a verse above and the held sources come to you.</p>
+          <p class="small">Click a card to read it and follow its thread: every verse and case it points to can come onto the desk, tied to it by string. Drag a card to move it. Drag from its pin head to tie string. Drag the desk to box-select. Middle-drag or hold space to pan. Ctrl-scroll to zoom.</p>
         </div>
       </div>
     </div>
@@ -122,6 +124,7 @@
   <div class="reader-status" id="readerStatus"></div>
   <div class="reader-body" id="readerBody"></div>
   <div class="reader-note" id="readerNote"></div>
+  <div class="reader-thread" id="readerThread" hidden></div>
   <div class="reader-foot" id="readerFoot"></div>
 </aside>
 

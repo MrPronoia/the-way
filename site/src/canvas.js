@@ -10,12 +10,20 @@
         that build.py already verified; it never writes a new one. A card that
         arrives on the desk carries the stamp it was built with, unchanged.
      2. Source families are DERIVED from each source's tier string by
-        familyOf() below, never hand-assigned. A new card files itself. */
+        familyOf() below, never hand-assigned. A new card files itself.
+
+   The thread. Every verse reference written in a card's prose, every case it
+   points to and every go-deeper file is a link, and a link can come onto the
+   desk as its own card: dragged out, or clicked, in which case it lands beside
+   the card it came from with string tied between them. The path a reader
+   takes stays on the board. Verse cards obey rule 1 like everything else:
+   desk.json only lists a reference build.py found in the held KJV. */
 
 (function () {
   'use strict';
 
   var DATA = null;
+  var LINKS = { names: {}, verses: {}, docs: {} };   // desk.json; empty if it fails to load
   var fuse = null;
   var items = [];            // every thing on the desk, in paint order
   var links = [];            // {a: id, b: id}
@@ -25,6 +33,7 @@
   var undoStack = [];
   var snapOn = true;
   var stringMode = false;
+  var readerOrigin = null;   // the desk card whose reader is open, so its thread ties back to it
 
   var SRC_W = 250, Q_W = 270, NOTE_W = 230, FRAME_W = 380, FRAME_H = 280;
   var GAP = 22;              // the gap between pins on his case board, reused here
@@ -181,6 +190,25 @@
     return it;
   }
 
+  /* A verse the cards cite, as its own card. Only a key the build resolved
+     against the held KJV exists in LINKS.verses, so nothing else can land. */
+  function addVerse(key, x, y) {
+    var id = 'v:' + key;
+    if (has(id) || !LINKS.verses[key]) return null;
+    var it = { id: id, t: 'v', k: key, x: x, y: y, w: SRC_W };
+    items.push(it);
+    return it;
+  }
+
+  /* A go-deeper file: the repo's own research notes, never stamped as a source. */
+  function addDoc(path, x, y) {
+    var id = 'd:' + path;
+    if (has(id) || !LINKS.docs[path]) return null;
+    var it = { id: id, t: 'd', k: path, x: x, y: y, w: SRC_W };
+    items.push(it);
+    return it;
+  }
+
   function flash(id) {
     var e = nodeEl(id);
     if (!e) return;
@@ -286,34 +314,169 @@
     });
   }
 
-  function pullCase(slug) {
+  /* Is the block a case would fill, with its top-left at `at`, free of every
+     card that is not already part of this case? Heights are not known before
+     render, so each new card is reckoned at a generous 150. */
+  function caseRoomAt(card, at) {
+    var per = { for: 0, other: 0, against: 0 };
+    for (var i = 0; i < card.sources.length; i++) {
+      if (has('s:' + card.slug + ':' + i)) continue;
+      var side = card.sources[i].side || 'for';
+      per[per[side] != null ? side : 'other']++;
+    }
+    var tall = Math.max(per.for, per.other, per.against);
+    if (!tall && has('q:' + card.slug)) return true;
+    var x1 = at.x - 10, y1 = at.y - 10, x2 = at.x + COL * 3, y2 = at.y + 200 + tall * 150;
+    for (var k = 0; k < items.length; k++) {
+      var it = items[k];
+      if (it.t === 'frame' || it.c === card.slug) continue;
+      var b = boxOf(it);
+      if (b.x < x2 && b.x + b.w > x1 && b.y < y2 && b.y + b.h > y1) return false;
+    }
+    return true;
+  }
+
+  /* Lays a case out as the case board does. `at` is the top-left of the block
+     (default: below everything already down). If the question card is already
+     on the desk, the case lays out under it instead, and any of its sources
+     already down stay where the reader put them and are just tied back. */
+  function pullCase(slug, at, after) {
     var card = cardBySlug(slug);
     if (!card) return;
     pushUndo();
-    var at = landingSpot();
     var qid = 'q:' + slug;
-    addQuestion(slug, at.x + COL, at.y);
+    var q = itemById(qid);
+    var linksBefore = links.length;
+    var moved = false;
+    if (q) at = { x: q.x - COL, y: q.y };
+    else at = at || landingSpot();
+    /* The block must not land on cards already down. If its spot is taken it
+       goes below everything instead, and a question already down moves with
+       it, its strings stretching to follow. */
+    if (!caseRoomAt(card, at)) {
+      at = landingSpot();
+      moved = true;
+      if (q) { q.x = at.x + COL; q.y = at.y; }
+    }
+    if (!q) addQuestion(slug, at.x + COL, at.y);
     var cols = { for: [], other: [], against: [] };
+    var added = 0;
 
     for (var i = 0; i < card.sources.length; i++) {
       var side = card.sources[i].side || 'for';
       if (!cols[side]) side = 'other';
-      var it = addSource(slug, i, at.x, at.y);
-      if (!it) continue;
-      cols[side].push(it);
-      if (!linkExists(qid, it.id)) links.push({ a: qid, b: it.id });
+      var sid = 's:' + slug + ':' + i;
+      var it = itemById(sid);
+      if (!it) { it = addSource(slug, i, at.x, at.y); cols[side].push(it); added++; }
+      if (!linkExists(qid, sid)) links.push({ a: qid, b: sid });
+    }
+
+    if (q && !added && links.length === linksBefore) {
+      undoStack.pop();
+      flash(qid);
+      hint('Every source from ' + card.call + ' is already on the desk.');
+      if (after) after();
+      return;
     }
 
     /* Render first, so every card has a real height to flow against. */
     renderAll();
     var qe = nodeEl(qid);
     var top = at.y + (qe ? qe.offsetHeight + 60 : 140);
-    hint(card.sources.length + ' sources pinned from ' + card.call + '. The string ties each one back to the question.');
+    hint(added + ' source' + (added === 1 ? '' : 's') + ' pinned from ' + card.call +
+      (moved ? ', laid out below the desk because the space was taken' : '') +
+      '. The string ties each one back to the question. Click any card to follow its thread.');
     flowAndSettle([
       { list: cols.for, x: at.x, y: top },
       { list: cols.other, x: at.x + COL, y: top },
       { list: cols.against, x: at.x + COL * 2, y: top }
-    ], fit);
+    ], function () { fit(); if (after) after(); });
+  }
+
+  /* ================= the thread =================
+     A link becomes a card. Clicked, it lands beside the card it came from with
+     string between them; dropped, it lands where it was dropped and still ties
+     back. Either way one undo takes it off again. */
+
+  function addThing(p, x, y) {
+    if (p.kind === 'src') return addSource(p.slug, p.i, x, y);
+    if (p.kind === 'v') return addVerse(p.key, x, y);
+    if (p.kind === 'd') return addDoc(p.path, x, y);
+    if (p.kind === 'case') return addQuestion(p.slug, x, y);
+    return null;
+  }
+
+  function thingId(p) {
+    if (p.kind === 'src') return 's:' + p.slug + ':' + p.i;
+    if (p.kind === 'v') return 'v:' + p.key;
+    if (p.kind === 'd') return 'd:' + p.path;
+    if (p.kind === 'case') return 'q:' + p.slug;
+    return null;
+  }
+
+  function thingLabel(p) {
+    if (p.kind === 'src') { var c = cardBySlug(p.slug), s = c && c.sources[p.i]; return s ? (s.title || s.ref) : 'source'; }
+    if (p.kind === 'v') return p.key;
+    if (p.kind === 'd') return LINKS.docs[p.path] ? LINKS.docs[p.path].title : p.path;
+    if (p.kind === 'case') { var cc = cardBySlug(p.slug); return cc ? cc.question : 'case'; }
+    return '';
+  }
+
+  /* origin: the id of the card this came from, to tie string to (or null).
+     at: a world point to drop at, or null to land beside the origin. */
+  function spawn(p, origin, at) {
+    var id = thingId(p);
+    if (!id) return;
+    if (origin && !itemById(origin)) origin = null;
+    var existing = itemById(id);
+    if (existing) {
+      if (origin && origin !== id && !linkExists(origin, id)) {
+        pushUndo();
+        links.push({ a: origin, b: id });
+        drawLinks(); updateCounts(); save();
+        hint(thingLabel(p) + ' was already on the desk, so the string was tied to it there.');
+      } else hint(thingLabel(p) + ' is already on the desk.');
+      flash(id);
+      return;
+    }
+    pushUndo();
+    var spot;
+    if (at) spot = { x: Math.round(at.x - 28), y: Math.round(at.y - 16) };
+    else if (origin) {
+      var ob = boxOf(itemById(origin));
+      spot = freeSpot(Math.round(ob.x + ob.w + 70), Math.round(ob.y), SRC_W, 150);
+    } else {
+      var c = viewCenter();
+      spot = freeSpot(Math.round(c.x), Math.round(c.y), SRC_W, 150);
+    }
+    var it = addThing(p, spot.x, spot.y);
+    if (!it) { undoStack.pop(); return; }
+    if (origin && origin !== id) links.push({ a: origin, b: id });
+    renderAll();
+    /* A dropped card locks to its neighbours the same way a dragged one does. */
+    sel = {}; sel[id] = true;
+    if (at) {
+      var s = snapDelta(it, it.x, it.y);
+      it.x += Math.round(s.dx); it.y += Math.round(s.dy);
+      position(it);
+    }
+    renderSelection(); drawLinks(); updateCounts(); save();
+    if (!at) ensureVisible(it);
+    hint(thingLabel(p) + (origin ? ' is on the desk, tied to the card it came from.' : ' is on the desk.') + ' Ctrl-Z takes it off.');
+  }
+
+  /* Pans just enough to show a card, without re-zooming the reader's view. */
+  function ensureVisible(it) {
+    var r = $('surface').getBoundingClientRect();
+    var b = boxOf(it), m = 40;
+    var sx = b.x * tf.scale + tf.x, sy = b.y * tf.scale + tf.y;
+    var sw = b.w * tf.scale, sh = b.h * tf.scale;
+    var dx = 0, dy = 0;
+    if (sx + sw > r.width - m) dx = (r.width - m) - (sx + sw);
+    if (sx + dx < m) dx = m - sx;
+    if (sy + sh > r.height - m) dy = (r.height - m) - (sy + sh);
+    if (sy + dy < m) dy = m - sy;
+    if (dx || dy) { tf.x += dx; tf.y += dy; applyTransform(); drawLinks(); }
   }
 
   /* ================= rendering ================= */
@@ -374,6 +537,53 @@
     q.appendChild(el('div', 'eyebrow', card.call + ' · ' + card.drawer));
     q.appendChild(el('div', 'qtext', card.question));
     n.appendChild(q);
+    return n;
+  }
+
+  /* A verse card wears the pincard face and the stamp the build earned: the
+     text was found in the held KJV, or the card would not exist. */
+  function buildVerseNode(it) {
+    var v = LINKS.verses[it.k];
+    if (!v) return null;
+    var n = el('div', 'node');
+    n.setAttribute('data-id', it.id);
+    n.style.setProperty('--tilt', '-0.6deg');
+    n.appendChild(tools(it));
+    var b = el('button', 'pincard verse');
+    b.type = 'button';
+    var pin = el('span', 'pin');
+    pin.title = 'Drag to tie string to another card';
+    b.appendChild(pin);
+    b.appendChild(el('div', 'tier', 'SCRIPTURE · ' + v.book.toUpperCase()));
+    b.appendChild(el('div', 'ptitle', v.label));
+    var text = v.verses.map(function (x) { return x.text; }).join(' ');
+    b.appendChild(el('div', 'pquote', text.length > 150 ? text.slice(0, 147).replace(/\s+\S*$/, '') + '…' : text));
+    var foot = el('div', 'pfoot');
+    foot.appendChild(el('span', 'open', 'KJV'));
+    foot.appendChild(stampFor({ status: 'held', statusText: 'HELD · KJV' }));
+    b.appendChild(foot);
+    n.appendChild(b);
+    return n;
+  }
+
+  /* A go-deeper file is the repo's own research, so it is drawn as an index
+     card from the case file, never as a pinned source, and it gets no stamp. */
+  function buildDocNode(it) {
+    var d = LINKS.docs[it.k];
+    if (!d) return null;
+    var n = el('div', 'node');
+    n.setAttribute('data-id', it.id);
+    n.style.setProperty('--tilt', '0.5deg');
+    n.appendChild(tools(it));
+    var b = el('button', 'doccard');
+    b.type = 'button';
+    var pin = el('span', 'pin');
+    pin.title = 'Drag to tie string to another card';
+    b.appendChild(pin);
+    b.appendChild(el('div', 'eyebrow', 'GO DEEPER · OUR NOTES IN THE REPO'));
+    b.appendChild(el('div', 'ptitle', d.title));
+    b.appendChild(el('div', 'dpath', d.path));
+    n.appendChild(b);
     return n;
   }
 
@@ -453,6 +663,8 @@
       var it = items[i], e = null;
       if (it.t === 'src') e = buildSrcNode(it);
       else if (it.t === 'q') e = buildQNode(it);
+      else if (it.t === 'v') e = buildVerseNode(it);
+      else if (it.t === 'd') e = buildDocNode(it);
       else if (it.t === 'note') e = buildNoteNode(it);
       else if (it.t === 'frame') e = buildFrame(it);
       if (!e) continue;
@@ -479,7 +691,7 @@
       if (items[i].t === 'frame') continue;
       n++;
       var s = srcOf(items[i]);
-      if (s && s.status === 'held') held++;
+      if ((s && s.status === 'held') || items[i].t === 'v') held++;
     }
     var frames = items.filter(function (x) { return x.t === 'frame'; }).length;
     $('hudCounts').textContent = n + ' on the desk · ' + held + ' held in the repo · ' +
@@ -930,8 +1142,10 @@
           undoStack.pop();
           /* a click, not a drag: open the source */
           var it = itemById(leadId);
-          if (it && it.t === 'src') { var s = srcOf(it); if (s) openReader(s, cardBySlug(it.c)); }
-          else if (it && it.t === 'q') { var c = cardBySlug(it.c); if (c) window.open('index.html#/' + c.slug, '_blank'); }
+          if (it && it.t === 'src') { var s = srcOf(it); if (s) openReader(s, cardBySlug(it.c), it.id); }
+          else if (it && it.t === 'q') openCaseReader(it.c, it.id);
+          else if (it && it.t === 'v') openVerseReader(it.k, it.id);
+          else if (it && it.t === 'd') openDocReader(it.k, it.id);
         }
         return;
       }
@@ -1110,9 +1324,15 @@
         var li = el('li');
         var btn = el('button', 'tray-case');
         btn.type = 'button';
+        btn.setAttribute('data-slug', card.slug);
+        btn.title = 'Open it here to browse. Drag it onto the desk to lay out the whole case.';
         btn.appendChild(el('small', null, card.call + ' · ' + card.sources.length + ' sources'));
         btn.appendChild(el('span', null, card.question));
-        btn.addEventListener('click', function () { pullCase(card.slug); });
+        btn.addEventListener('click', function () {
+          if (Date.now() - carryEndedAt < 400) return;
+          openTrayCase(card.slug);
+        });
+        carriable(btn, { kind: 'case', slug: card.slug }, {});
         li.appendChild(btn);
         cases.appendChild(li);
       })(ordered[i]);
@@ -1156,8 +1376,12 @@
             b.setAttribute('data-src-id', 's:' + row.slug + ':' + row.i);
             b.appendChild(el('span', 'fs-tier', (row.src.tier || '').toUpperCase()));
             b.appendChild(el('span', 'fs-title', row.src.title || row.src.ref));
-            b.title = 'Pin to the desk — ' + row.card.call;
-            b.addEventListener('click', function () { pinSource(row); });
+            b.title = 'Pin to the desk, or drag it where you want it — ' + row.card.call;
+            b.addEventListener('click', function () {
+              if (Date.now() - carryEndedAt < 400) return;
+              pinSource(row);
+            });
+            carriable(b, { kind: 'src', slug: row.slug, i: row.i }, {});
             li2.appendChild(b);
             ul.appendChild(li2);
           })(group.rows[r]);
@@ -1170,10 +1394,112 @@
   }
 
   function renderTrayPlaced() {
-    var btns = document.querySelectorAll('[data-src-id]');
+    var btns = document.querySelectorAll('[data-src-id], [data-item-id]');
     for (var i = 0; i < btns.length; i++) {
-      btns[i].classList.toggle('is-placed', has(btns[i].getAttribute('data-src-id')));
+      btns[i].classList.toggle('is-placed', has(btns[i].getAttribute('data-src-id') || btns[i].getAttribute('data-item-id')));
     }
+  }
+
+  /* ================= a case file, open in the tray =================
+     The Reading Room's case file, small enough to read beside the desk. Every
+     piece of it can be dragged out; a source pinned from here ties back to
+     its question if the question is already down. */
+
+  function openTrayCase(slug) {
+    var card = cardBySlug(slug);
+    if (!card) return;
+    $('trayCasesSection').hidden = true;
+    $('trayFamiliesSection').hidden = true;
+    var w = $('trayOpen');
+    w.innerHTML = '';
+    w.hidden = false;
+    var qid = 'q:' + slug;
+    var ctx = { tray: true, origin: function () { return itemById(qid) ? qid : null; } };
+
+    var back = el('button', 'tray-back', '‹ ALL CASE FILES');
+    back.type = 'button';
+    back.addEventListener('click', closeTrayCase);
+    w.appendChild(back);
+
+    var head = el('button', 'tray-qcard');
+    head.type = 'button';
+    head.title = 'Drag onto the desk to lay out the whole case';
+    head.appendChild(el('span', 'pin red'));
+    head.appendChild(el('div', 'eyebrow', card.call + ' · ' + card.drawer));
+    head.appendChild(el('div', 'qtext', card.question));
+    carriable(head, { kind: 'case', slug: slug }, {});
+    w.appendChild(head);
+
+    var lay = el('button', 'tool tray-lay', 'LAY OUT THE WHOLE CASE');
+    lay.type = 'button';
+    lay.addEventListener('click', function () { pullCase(slug); });
+    w.appendChild(lay);
+
+    /* The finding is clamped to a few lines so the sources below it are in
+       reach without scrolling; one click reads the rest. */
+    w.appendChild(el('div', 'eyebrow', 'THE FINDING'));
+    var f = el('p', 'tray-finding is-clamped');
+    f.appendChild(linkify(card.finding, ctx));
+    w.appendChild(f);
+    var more = el('button', 'tray-more', 'read the whole finding');
+    more.type = 'button';
+    more.addEventListener('click', function () {
+      var clamped = f.classList.toggle('is-clamped');
+      more.textContent = clamped ? 'read the whole finding' : 'less';
+    });
+    w.appendChild(more);
+
+    var labels = card.boardLabels || {};
+    var sides = [['for', labels.for || 'FOR'], ['other', labels.other || 'THE OTHER STACK'], ['against', labels.against || 'AGAINST']];
+    sides.forEach(function (sd) {
+      var rows = [];
+      card.sources.forEach(function (s, i) { if ((s.side || 'for') === sd[0]) rows.push(i); });
+      if (!rows.length) return;
+      w.appendChild(el('div', 'eyebrow tray-side', sd[1] + ' · ' + rows.length));
+      var ul = el('ul', 'tray-pins');
+      rows.forEach(function (i) {
+        var s = card.sources[i];
+        var p = { kind: 'src', slug: slug, i: i };
+        var li = el('li');
+        var b = el('button', 'fam-src side-' + sd[0]);
+        b.type = 'button';
+        b.setAttribute('data-item-id', thingId(p));
+        b.title = 'Click to pin it, or drag it where you want it';
+        b.appendChild(el('span', 'fs-tier', (s.tier || '').toUpperCase()));
+        b.appendChild(el('span', 'fs-title', s.title || s.ref));
+        b.appendChild(el('span', 'fs-stamp ' + (s.status === 'held' ? 'held' : 'not-held'), s.status === 'held' ? 'HELD' : 'NOT YET HELD'));
+        b.addEventListener('click', function () {
+          if (Date.now() - carryEndedAt < 400) return;
+          spawn(p, ctx.origin(), null);
+        });
+        carriable(b, p, ctx);
+        li.appendChild(b);
+        ul.appendChild(li);
+      });
+      w.appendChild(ul);
+    });
+
+    var trayGroup = function (label, chips) {
+      if (!chips.length) return;
+      w.appendChild(el('div', 'eyebrow tray-side', label));
+      var row = el('div', 'chips');
+      chips.forEach(function (c) { row.appendChild(c); });
+      w.appendChild(row);
+    };
+    trayGroup('VERSES THIS CASE CITES', versesOf(slug).map(function (k) { return chip({ kind: 'v', key: k }, k, ctx); }));
+    trayGroup('NEXT IN THE DRAWER', compact((card.next || []).map(function (s) { return caseChip(s, ctx); })));
+    trayGroup('GO DEEPER · in the repo', compact((card.goDeeper || []).map(function (g) { return docChip(g.path, ctx); })));
+
+    $('tray').scrollTop = 0;
+    renderTrayPlaced();
+  }
+
+  function closeTrayCase() {
+    $('trayOpen').hidden = true;
+    $('trayOpen').innerHTML = '';
+    $('trayCasesSection').hidden = false;
+    $('trayFamiliesSection').hidden = false;
+    $('tray').scrollTop = 0;
   }
 
   function pinSource(row) {
@@ -1222,11 +1548,31 @@
     return fuse.search(q, { limit: 8 }).map(function (r) { return r.item; });
   }
 
+  /* Prose references are matched by their written capitals; a typed search
+     is not, so "hosea 6:6" is read as "Hosea 6:6". */
+  function heldRefs(q) {
+    var typed = q.replace(/(^|\s)([a-z])/g, function (m, a, b) { return a + b.toUpperCase(); });
+    return refRuns(typed).filter(function (r) { return !!r.key; }).map(function (r) { return r.key; });
+  }
+
   function showSuggest(q) {
     var ul = $('dsuggest'), input = $('dq');
     var res = searchSources(q);
     ul.innerHTML = '';
-    if (!res.length) { ul.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
+    var keys = heldRefs(q);
+    for (var k = 0; k < keys.length; k++) {
+      (function (key) {
+        var li = el('li');
+        li.setAttribute('role', 'option');
+        li.setAttribute('aria-selected', 'false');
+        li.appendChild(document.createTextNode(key));
+        li.appendChild(el('small', null, 'SCRIPTURE · KJV · HELD · cited on ' + LINKS.verses[key].mentioned.length + ' case file' +
+          (LINKS.verses[key].mentioned.length === 1 ? '' : 's')));
+        li.addEventListener('mousedown', function (e) { e.preventDefault(); spawn({ kind: 'v', key: key }, null, null); ul.hidden = true; });
+        ul.appendChild(li);
+      })(keys[k]);
+    }
+    if (!res.length && !keys.length) { ul.hidden = true; input.setAttribute('aria-expanded', 'false'); return; }
     for (var i = 0; i < res.length; i++) {
       (function (row, first) {
         var li = el('li');
@@ -1248,6 +1594,12 @@
     $('dsuggest').hidden = true;
     var q = $('dq').value;
     if (!q.trim()) return;
+    /* A typed reference the cards cite comes onto the desk as its verse card. */
+    var keys = heldRefs(q);
+    if (keys.length) {
+      for (var k = 0; k < keys.length; k++) spawn({ kind: 'v', key: keys[k] }, null, null);
+      return;
+    }
     var res = searchSources(q);
     if (!res.length) {
       hint('Nothing held matches that. The desk only lays out sources the build already verified, so a gap here is a real gap: ' +
@@ -1278,6 +1630,8 @@
       var o = items[i];
       if (o.t === 'src') it.push(['s', o.c, o.i, o.x, o.y, o.w]);
       else if (o.t === 'q') it.push(['q', o.c, o.x, o.y, o.w]);
+      else if (o.t === 'v') it.push(['v', o.k, o.x, o.y, o.w]);
+      else if (o.t === 'd') it.push(['d', o.k, o.x, o.y, o.w]);
       else if (o.t === 'note') it.push(['n', o.text || '', o.x, o.y, o.w]);
       else if (o.t === 'frame') it.push(['f', o.title || '', o.x, o.y, o.w, o.h, o.ci || 0]);
     }
@@ -1293,6 +1647,9 @@
       var a = s.it[i];
       if (a[0] === 's') items.push({ id: 's:' + a[1] + ':' + a[2], t: 'src', c: a[1], i: a[2], x: a[3], y: a[4], w: a[5] || SRC_W });
       else if (a[0] === 'q') items.push({ id: 'q:' + a[1], t: 'q', c: a[1], x: a[2], y: a[3], w: a[4] || Q_W });
+      /* A verse or file the current build no longer holds is dropped, not drawn blank. */
+      else if (a[0] === 'v' && LINKS.verses[a[1]]) items.push({ id: 'v:' + a[1], t: 'v', k: a[1], x: a[2], y: a[3], w: a[4] || SRC_W });
+      else if (a[0] === 'd' && LINKS.docs[a[1]]) items.push({ id: 'd:' + a[1], t: 'd', k: a[1], x: a[2], y: a[3], w: a[4] || SRC_W });
       else if (a[0] === 'n') items.push({ id: 'n:' + (seq++), t: 'note', text: a[1], x: a[2], y: a[3], w: a[4] || NOTE_W });
       else if (a[0] === 'f') items.push({ id: 'f:' + (seq++), t: 'frame', title: a[1], x: a[2], y: a[3], w: a[4] || FRAME_W, h: a[5] || FRAME_H, ci: a[6] || 0 });
     }
@@ -1338,12 +1695,172 @@
     document.body.removeChild(ta);
   }
 
+  function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+  /* ================= references in prose =================
+     The same grammar as site/desk_links.py, which is the authority: a
+     reference becomes a link only when the key computed here is one the build
+     resolved against the held KJV. Anything else stays plain text. */
+
+  var refHead = null, refMore = null;
+
+  function buildRefPattern() {
+    var names = Object.keys(LINKS.names).sort(function (a, b) { return b.length - a.length; });
+    if (!names.length) return;
+    var span = '(\\d+):(\\d+)[a-c]?(?:\\s*[-\\u2013]\\s*(?:(\\d+):)?(\\d+)[a-c]?)?';
+    refHead = new RegExp('(^|[^A-Za-z0-9])(' + names.map(escapeRe).join('|') + ')\\.?\\s+' + span, 'g');
+    refMore = new RegExp('^\\s*;\\s*' + span);
+  }
+
+  function refKey(book, c1, v1, c2, v2) {
+    if (c2 == null) c2 = c1;
+    if (v2 == null) v2 = v1;
+    if (c2 < c1 || (c2 === c1 && v2 < v1)) return null;
+    if (c2 === c1 && v2 === v1) return book + ' ' + c1 + ':' + v1;
+    if (c2 === c1) return book + ' ' + c1 + ':' + v1 + '-' + v2;
+    return book + ' ' + c1 + ':' + v1 + '-' + c2 + ':' + v2;
+  }
+
+  /* Splits text into runs: {text} for prose, {text, key} for a held verse. */
+  function refRuns(text) {
+    text = text || '';
+    if (!refHead) return [{ text: text }];
+    var out = [], pos = 0, m;
+    var push = function (s, e, key) {
+      if (s > pos) out.push({ text: text.slice(pos, s) });
+      out.push(key && LINKS.verses[key] ? { text: text.slice(s, e), key: key } : { text: text.slice(s, e) });
+      pos = e;
+    };
+    refHead.lastIndex = 0;
+    while ((m = refHead.exec(text))) {
+      var book = LINKS.names[m[2]];
+      var start = m.index + m[1].length, end = refHead.lastIndex;
+      push(start, end, refKey(book, +m[3], +m[4], m[5] ? +m[5] : null, m[6] ? +m[6] : null));
+      for (;;) {
+        var n = refMore.exec(text.slice(end));
+        if (!n) break;
+        var lead = n[0].length - n[0].replace(/^\s*;\s*/, '').length;
+        push(end + lead, end + n[0].length, refKey(book, +n[1], +n[2], n[3] ? +n[3] : null, n[4] ? +n[4] : null));
+        end += n[0].length;
+      }
+      refHead.lastIndex = end;
+    }
+    if (pos < text.length) out.push({ text: text.slice(pos) });
+    return out;
+  }
+
+  /* Prose with every held verse turned into a chip. */
+  function linkify(text, ctx) {
+    var frag = document.createDocumentFragment();
+    var runs = refRuns(text);
+    for (var i = 0; i < runs.length; i++) {
+      if (runs[i].key) frag.appendChild(chip({ kind: 'v', key: runs[i].key }, runs[i].text, ctx, true));
+      else frag.appendChild(document.createTextNode(runs[i].text));
+    }
+    return frag;
+  }
+
+  /* ================= chips: a link that can become a card =================
+     ctx.origin() names the card to tie string back to, ctx.tray says the chip
+     lives in the tray (where clicking a case browses it rather than pinning
+     it), and ctx.onLift runs as a drag begins (the reader gets out of the way). */
+
+  var carryEndedAt = 0;
+
+  function chip(p, label, ctx, inline) {
+    var b = el('button', 'chip chip-' + p.kind + (inline ? ' inline' : ''));
+    b.type = 'button';
+    if (p.kind !== 'case') b.setAttribute('data-item-id', thingId(p));
+    b.title = (ctx.tray && p.kind === 'case') ? 'Open this case file here. Drag it onto the desk to lay it out.' :
+      'Click to put it on the desk beside this card, tied by string. Or drag it where you want it.';
+    if (inline) b.textContent = label;
+    else {
+      b.appendChild(el('span', 'chip-mark', p.kind === 'v' ? '§' : p.kind === 'd' ? '¶' : p.kind === 'case' ? '▣' : '•'));
+      b.appendChild(el('span', 'chip-label', label));
+    }
+    b.addEventListener('click', function () {
+      if (Date.now() - carryEndedAt < 400) return;
+      if (ctx.tray && p.kind === 'case') { openTrayCase(p.slug); return; }
+      var origin = ctx.origin ? ctx.origin() : null;
+      if (ctx.onLift) ctx.onLift();
+      spawn(p, origin, null);
+    });
+    carriable(b, p, ctx);
+    return b;
+  }
+
+  /* ================= carrying: from a tray or a reader onto the desk =================
+     Pointer-driven rather than HTML5 drag-and-drop, so it also works with a
+     pen and with a finger: carriable things take touch-action pan-y, so a
+     vertical swipe still scrolls the tray and a sideways one carries. */
+
+  function overSurface(x, y) {
+    var t = document.elementFromPoint(x, y);
+    return !!(t && $('surface').contains(t));
+  }
+
+  function carriable(node, p, ctx) {
+    node.addEventListener('pointerdown', function (e) {
+      if (e.button !== 0) return;
+      var c = { x: e.clientX, y: e.clientY, id: e.pointerId, started: false, ghost: null, origin: null };
+      var move = function (ev) {
+        if (ev.pointerId !== c.id) return;
+        if (!c.started) {
+          if (Math.abs(ev.clientX - c.x) + Math.abs(ev.clientY - c.y) < 6) return;
+          c.started = true;
+          c.origin = ctx.origin ? ctx.origin() : null;
+          if (ctx.onLift) ctx.onLift();
+          c.ghost = el('div', 'carry-ghost carry-' + p.kind);
+          c.ghost.appendChild(el('small', null, p.kind === 'case' ? 'THE WHOLE CASE' : p.kind === 'v' ? 'SCRIPTURE · KJV' :
+            p.kind === 'd' ? 'GO DEEPER' : 'SOURCE'));
+          c.ghost.appendChild(el('span', null, thingLabel(p)));
+          document.body.appendChild(c.ghost);
+          document.body.classList.add('is-carrying');
+        }
+        c.ghost.style.transform = 'translate(' + (ev.clientX + 14) + 'px,' + (ev.clientY + 12) + 'px)';
+        $('surface').classList.toggle('is-drop', overSurface(ev.clientX, ev.clientY));
+        ev.preventDefault();
+      };
+      var up = function (ev) {
+        if (ev.pointerId !== c.id) return;
+        document.removeEventListener('pointermove', move);
+        document.removeEventListener('pointerup', up);
+        document.removeEventListener('pointercancel', up);
+        if (!c.started) return;
+        carryEndedAt = Date.now();
+        document.body.removeChild(c.ghost);
+        document.body.classList.remove('is-carrying');
+        $('surface').classList.remove('is-drop');
+        if (ev.type === 'pointerup' && overSurface(ev.clientX, ev.clientY)) dropOnDesk(p, c.origin, ev.clientX, ev.clientY);
+        else hint('Let go off the desk, so nothing was pinned.');
+      };
+      document.addEventListener('pointermove', move);
+      document.addEventListener('pointerup', up);
+      document.addEventListener('pointercancel', up);
+    });
+  }
+
+  function dropOnDesk(p, origin, x, y) {
+    var w = toWorld(x, y);
+    if (p.kind === 'case') {
+      /* A whole case, with its question card under the pointer. */
+      var qid = 'q:' + p.slug;
+      pullCase(p.slug, { x: Math.round(w.x - COL - Q_W / 2), y: Math.round(w.y - 20) }, function () {
+        if (origin && origin !== qid && itemById(origin) && !linkExists(origin, qid)) {
+          links.push({ a: origin, b: qid });
+          drawLinks(); updateCounts(); save();
+        }
+      });
+      return;
+    }
+    spawn(p, origin, w);
+  }
+
   /* ================= the reader =================
      Same markup, same classes and the same behaviour as the Reading Room's
      reader pane. Kept local so app.js is untouched; if this mode is adopted,
-     the two should become one shared module. */
-
-  function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+     the two should become one shared module. On the desk it also carries the
+     thread: the verses, cases and files a card points to. */
 
   function highlight(text, phrase) {
     if (!phrase) return document.createTextNode(text);
@@ -1362,33 +1879,96 @@
     return base + '#/' + card.slug + (idx != null ? '/' + idx : '');
   }
 
-  function openReader(src, card) {
-    $('readerTier').textContent = (src.tier || '').toUpperCase();
-    $('readerTitle').textContent = src.title || src.ref;
+  function readerCtx() {
+    return { origin: function () { return readerOrigin; }, onLift: closeReader };
+  }
+
+  function resetReader(origin, tier, title) {
+    readerOrigin = origin || null;
+    $('readerTier').textContent = tier;
+    $('readerTitle').textContent = title;
+    $('readerStatus').innerHTML = '';
+    $('readerBody').innerHTML = '';
+    $('readerNote').innerHTML = '';
+    $('readerFoot').innerHTML = '';
+    var th = $('readerThread');
+    th.innerHTML = '';
+    th.hidden = true;
+  }
+
+  function showReader() {
+    $('readerBackdrop').hidden = false;
+    $('reader').hidden = false;
+    $('reader').scrollTop = 0;
+    $('readerClose').focus();
+  }
+
+  /* One labelled row of chips in the reader's thread, skipped when empty. */
+  function threadGroup(label, chips) {
+    if (!chips.length) return;
+    var th = $('readerThread');
+    if (th.hidden) {
+      th.hidden = false;
+      th.appendChild(el('div', 'thread-head', 'FOLLOW THE THREAD · click to pin it beside this card, or drag it out'));
+    }
+    var g = el('div', 'thread-group');
+    g.appendChild(el('div', 'eyebrow', label));
+    var row = el('div', 'chips');
+    for (var i = 0; i < chips.length; i++) row.appendChild(chips[i]);
+    g.appendChild(row);
+    th.appendChild(g);
+  }
+
+  function caseChip(slug, ctx) {
+    var c = cardBySlug(slug);
+    return c ? chip({ kind: 'case', slug: slug }, c.call + ' · ' + c.question, ctx) : null;
+  }
+
+  function sourceChip(slug, i, ctx) {
+    var c = cardBySlug(slug), s = c && c.sources[i];
+    return s ? chip({ kind: 'src', slug: slug, i: i }, (s.title || s.ref) + ' · ' + c.call, ctx) : null;
+  }
+
+  function docChip(path, ctx) {
+    var d = LINKS.docs[path];
+    return d ? chip({ kind: 'd', path: path }, d.title, ctx) : null;
+  }
+
+  function versesOf(slug) {
+    var out = [];
+    for (var k in LINKS.verses) if (LINKS.verses[k].mentioned.indexOf(slug) >= 0) out.push(k);
+    return out;
+  }
+
+  function compact(list) { return list.filter(function (x) { return !!x; }); }
+
+  function passageBlock(label, before, verses, after, phrase) {
+    var d = el('div', 'passage');
+    d.appendChild(el('div', 'plabel', label + ' (KJV) · in context'));
+    var addVerse = function (v, dim, hl) {
+      var s = el('span', dim ? 'v dim' : 'v');
+      s.appendChild(el('span', 'vn', v.n));
+      s.appendChild(hl ? highlight(v.text, phrase) : document.createTextNode(v.text));
+      d.appendChild(s);
+    };
+    (before || []).forEach(function (v) { addVerse(v, true, false); });
+    verses.forEach(function (v) { addVerse(v, false, true); });
+    (after || []).forEach(function (v) { addVerse(v, true, false); });
+    return d;
+  }
+
+  function openReader(src, card, origin) {
+    resetReader(origin, (src.tier || '').toUpperCase(), src.title || src.ref);
     var st = $('readerStatus');
-    st.innerHTML = '';
     st.appendChild(stampFor(src));
     if (src.edition) st.appendChild(el('span', null, src.edition));
     if (src.status === 'held' && src.passages && src.passages.length) st.appendChild(el('span', null, 'King James Version, public domain'));
 
     var body = $('readerBody');
-    body.innerHTML = '';
     if (src.passages && src.passages.length) {
       for (var p = 0; p < src.passages.length; p++) {
-        (function (pas) {
-          var d = el('div', 'passage');
-          d.appendChild(el('div', 'plabel', pas.label + ' (KJV) · in context'));
-          var addVerse = function (v, dim, hl) {
-            var s = el('span', dim ? 'v dim' : 'v');
-            s.appendChild(el('span', 'vn', v.n));
-            s.appendChild(hl ? highlight(v.text, src.phrase) : document.createTextNode(v.text));
-            d.appendChild(s);
-          };
-          (pas.before || []).forEach(function (v) { addVerse(v, true, false); });
-          pas.verses.forEach(function (v) { addVerse(v, false, true); });
-          (pas.after || []).forEach(function (v) { addVerse(v, true, false); });
-          body.appendChild(d);
-        })(src.passages[p]);
+        var pas = src.passages[p];
+        body.appendChild(passageBlock(pas.label, pas.before, pas.verses, pas.after, src.phrase));
       }
     } else if (src.snippet) {
       var sn = el('div', 'snippet');
@@ -1399,9 +1979,12 @@
       body.appendChild(el('div', 'plabel', 'Not in the collection yet. The words stay out of quotation marks until the text is held; the link below goes to a public-domain edition.'));
     }
 
-    $('readerNote').textContent = src.note || '';
+    /* The note is where a card argues, so its verse references are live. */
+    var ctx = readerCtx();
+    $('readerNote').appendChild(linkify(src.note || '', ctx));
+    if (card) threadGroup('ITS CASE FILE', compact([caseChip(card.slug, ctx)]));
+
     var foot = $('readerFoot');
-    foot.innerHTML = '';
     if (card) {
       var idx = card.sources.indexOf(src);
       var rl = el('a', null, 'See it in its case file: ' + card.question + ' →');
@@ -1431,15 +2014,102 @@
     });
     row.appendChild(c1);
     foot.appendChild(row);
+    showReader();
+  }
 
-    $('readerBackdrop').hidden = false;
-    $('reader').hidden = false;
-    $('readerClose').focus();
+  /* A question card opens its case as a hub: the finding with its verses
+     live, and every way out of it. */
+  function openCaseReader(slug, origin) {
+    var card = cardBySlug(slug);
+    if (!card) return;
+    resetReader(origin, card.call + ' · ' + card.drawer, card.question);
+    var held = card.sources.filter(function (s) { return s.status === 'held'; }).length;
+    var st = $('readerStatus');
+    if (card.subtitle) st.appendChild(el('span', null, card.subtitle));
+    st.appendChild(el('span', null, card.sources.length + ' sources · ' + held + ' held in the repo'));
+
+    var ctx = readerCtx();
+    var body = $('readerBody');
+    body.appendChild(el('div', 'eyebrow', 'THE FINDING'));
+    var f = el('p', 'case-finding');
+    f.appendChild(linkify(card.finding, ctx));
+    body.appendChild(f);
+    if (card.oneLiners && card.oneLiners.length) {
+      body.appendChild(el('div', 'eyebrow', 'WHERE THE CASE STANDS'));
+      var ul = el('ul', 'case-lines');
+      card.oneLiners.forEach(function (t) { var li = el('li'); li.appendChild(linkify(t, ctx)); ul.appendChild(li); });
+      body.appendChild(ul);
+    }
+
+    var lay = el('button', 'tool lay-out', 'LAY OUT ITS SOURCES');
+    lay.type = 'button';
+    lay.title = 'Pin every source on this case file under the question, for and against';
+    lay.addEventListener('click', function () { closeReader(); pullCase(slug); });
+    $('readerNote').appendChild(lay);
+
+    threadGroup('VERSES THIS CASE CITES', versesOf(slug).map(function (k) {
+      return chip({ kind: 'v', key: k }, k, ctx);
+    }));
+    threadGroup('NEXT IN THE DRAWER', compact((card.next || []).map(function (s) { return caseChip(s, ctx); })));
+    threadGroup('GO DEEPER · in the repo', compact((card.goDeeper || []).map(function (g) { return docChip(g.path, ctx); })));
+
+    var foot = $('readerFoot');
+    var rl = el('a', null, 'Read it in the Reading Room →');
+    rl.href = roomLink(card); rl.target = '_blank'; rl.rel = 'noopener';
+    foot.appendChild(rl);
+    var cl = el('a', null, 'The full card, with every objection, in the repo →');
+    cl.href = card.cardUrl; cl.target = '_blank'; cl.rel = 'noopener';
+    foot.appendChild(cl);
+    showReader();
+  }
+
+  function openVerseReader(key, origin) {
+    var v = LINKS.verses[key];
+    if (!v) return;
+    resetReader(origin, 'SCRIPTURE · ' + v.book.toUpperCase(), v.label);
+    var st = $('readerStatus');
+    st.appendChild(stampFor({ status: 'held', statusText: 'HELD · KJV' }));
+    st.appendChild(el('span', null, 'King James Version, public domain'));
+
+    var body = $('readerBody');
+    body.appendChild(passageBlock(v.label, v.before, v.verses, v.after, null));
+    if (v.truncated) body.appendChild(el('div', 'plabel', 'The first ' + v.verses.length + ' verses of the range are shown. The rest are in the held file.'));
+    $('readerNote').textContent = 'A verse the case files cite in their own words. The build found it in the held KJV, which is the only reason it can be on the desk.';
+
+    var ctx = readerCtx();
+    threadGroup('PINNED AS A SOURCE ON', compact(v.cited.map(function (ci) { return sourceChip(ci[0], ci[1], ctx); })));
+    threadGroup('CITED IN THE PROSE OF', compact(v.mentioned.map(function (s) { return caseChip(s, ctx); })));
+
+    var foot = $('readerFoot');
+    var a = el('a', null, 'Open the file in the repo →');
+    a.href = (DATA.repo || '') + v.file; a.target = '_blank'; a.rel = 'noopener';
+    foot.appendChild(a);
+    var row = el('div', 'copy-row');
+    var c1 = el('button', 'copy', 'copy citation');
+    c1.type = 'button';
+    c1.addEventListener('click', function () { copyText(v.label + ', KJV', c1); });
+    row.appendChild(c1);
+    foot.appendChild(row);
+    showReader();
+  }
+
+  function openDocReader(path, origin) {
+    var d = LINKS.docs[path];
+    if (!d) return;
+    resetReader(origin, 'GO DEEPER · OUR NOTES IN THE REPO', d.title);
+    $('readerStatus').appendChild(el('span', null, 'The collection’s own research, not a primary source, so it carries no stamp.'));
+    $('readerBody').appendChild(el('div', 'plabel', d.path));
+    threadGroup('LISTED TO GO DEEPER ON', compact(d.cards.map(function (s) { return caseChip(s, readerCtx()); })));
+    var a = el('a', null, 'Read it in the repo →');
+    a.href = d.url; a.target = '_blank'; a.rel = 'noopener';
+    $('readerFoot').appendChild(a);
+    showReader();
   }
 
   function closeReader() {
     $('reader').hidden = true;
     $('readerBackdrop').hidden = true;
+    readerOrigin = null;
   }
 
   /* ================= wiring ================= */
@@ -1547,6 +2217,27 @@
     } else {
       hint('Searches the held sources only. Nothing on this desk is generated.');
     }
+    arrive();
+  }
+
+  /* The Reading Room's door: canvas.html#pull=<case>[&open=<source index>]
+     lays the case out (under whatever is already on the desk, which is kept),
+     opens it in the tray, and opens the source the reader was looking at. The
+     hash is cleared afterwards so a reload does not pull it a second time. */
+  function arrive() {
+    var m = /[#&]pull=([a-z0-9-]+)(?:&open=(\d+))?/.exec(location.hash);
+    if (!m) return;
+    history.replaceState(null, '', location.pathname + location.search);
+    var card = cardBySlug(m[1]);
+    if (!card) { hint('That case file is not in this build, so nothing was pulled.'); return; }
+    openTrayCase(card.slug);
+    var open = m[2] != null && card.sources[+m[2]] ? +m[2] : null;
+    pullCase(card.slug, null, function () {
+      if (open == null) return;
+      var id = 's:' + card.slug + ':' + open;
+      flash(id);
+      openReader(card.sources[open], card, id);
+    });
   }
 
   /* Every layout decision here measures real card heights, and the typewriter
@@ -1580,8 +2271,13 @@
     }
   }
 
+  /* desk.json is the link index. The desk works without it, with no verse or
+     go-deeper cards, so a failure there never costs the reader the desk. */
+  var linksReady = fetch('desk.json').then(function (r) { return r.ok ? r.json() : null; })
+    .then(function (l) { if (l && l.verses) LINKS = l; buildRefPattern(); }, function () { /* no links; still a desk */ });
+
   fetch('data.json').then(function (r) { return r.json(); }).then(function (d) {
-    whenFontsReady(function () { boot(d); });
+    linksReady.then(function () { whenFontsReady(function () { boot(d); }); });
   }).catch(function (err) {
     $('hudCounts').textContent = 'The card data failed to load. ' + err;
   });

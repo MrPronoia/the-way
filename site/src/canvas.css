@@ -274,3 +274,107 @@
   /* On a phone the groups themselves may wrap, so the rail never overflows. */
   .desk-tools .tool-group { flex-wrap: wrap; }
 }
+
+/* ---------- the thread: links that become cards ---------- */
+
+/* A chip is a link that can be pinned: click it, or carry it onto the desk.
+   pan-y keeps a vertical swipe scrolling the tray while a sideways one carries. */
+.chips { display: flex; flex-wrap: wrap; gap: 5px; margin: 4px 0 10px; }
+.chip {
+  display: inline-flex; align-items: baseline; gap: 5px; max-width: 100%;
+  font-family: var(--mono); font-size: 11px; line-height: 1.3; text-align: left;
+  padding: 4px 8px; background: var(--cream-2); color: var(--ink);
+  border: 1px solid var(--card-border); cursor: grab; touch-action: pan-y;
+}
+.chip:hover, .chip:focus-visible { background: var(--pad); border-color: var(--muted); }
+.chip-mark { font-family: var(--type); font-size: 10px; color: var(--muted); flex: 0 0 auto; }
+.chip-v .chip-mark { color: var(--red); }
+.chip-label { min-width: 0; overflow-wrap: anywhere; }
+.chip.is-placed { opacity: 0.55; }
+/* Inline, a verse reads as part of the sentence: a link with a dotted rule. */
+.chip.inline {
+  display: inline; padding: 0 1px; font: inherit; color: var(--red); background: transparent;
+  border: 0; border-bottom: 1px dotted var(--red);
+}
+.chip.inline:hover, .chip.inline:focus-visible { background: var(--pad); color: var(--ink); }
+.chip.inline.is-placed { opacity: 1; border-bottom-style: solid; }
+
+/* ---------- a case file open in the tray ---------- */
+
+.tray-section[hidden] { display: none; }
+.tray-open { display: flex; flex-direction: column; gap: 6px; padding-bottom: 14px; }
+.tray-open .eyebrow { color: var(--muted-light); }
+.tray-open .eyebrow.tray-side { margin-top: 8px; }
+.tray-back {
+  align-self: flex-start; font-family: var(--type); font-size: 10px; letter-spacing: 1px;
+  padding: 4px 8px; background: transparent; color: var(--muted-light);
+  border: 1px solid var(--board-border); cursor: pointer;
+}
+.tray-back:hover { color: #ffffff; border-color: var(--muted-light); }
+.tray-qcard {
+  position: relative; margin-top: 10px; display: flex; flex-direction: column; gap: 4px; text-align: left;
+  background: var(--cream); color: var(--ink); border: 0; padding: 12px 11px 10px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.55); cursor: grab; touch-action: pan-y;
+}
+.tray-qcard .eyebrow { color: var(--muted); }
+.tray-qcard .qtext { font-family: var(--type); font-size: 14px; line-height: 1.3; }
+.tray-qcard:hover { outline: 2px solid rgba(255, 244, 160, 0.5); }
+.tray-lay { width: 100%; margin: 4px 0 4px; }
+.tray-finding { margin: 0; font-size: 11.5px; line-height: 1.55; color: var(--text-light); }
+.tray-finding.is-clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 5; line-clamp: 5; overflow: hidden; }
+.tray-more {
+  align-self: flex-start; padding: 0; background: transparent; border: 0; cursor: pointer;
+  font-family: var(--mono); font-size: 10px; color: var(--muted-light); text-decoration: underline;
+}
+.tray-more:hover { color: #ffffff; }
+.tray-finding .chip.inline { color: #ff9b8f; border-bottom-color: #ff9b8f; }
+.tray-finding .chip.inline:hover { color: var(--ink); }
+.tray-pins { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 5px; }
+.fam-src { touch-action: pan-y; }
+.fam-src .fs-stamp { display: inline-block; margin-top: 3px; font-family: var(--type); font-size: 8px; padding: 0 3px; border: 1px solid currentColor; }
+.fam-src .fs-stamp.held { color: var(--held); }
+.fam-src .fs-stamp.not-held { color: var(--not-held); }
+.tray-case { touch-action: pan-y; cursor: pointer; }
+
+/* ---------- carrying ---------- */
+
+.carry-ghost {
+  position: fixed; left: 0; top: 0; z-index: 60; pointer-events: none; max-width: 240px;
+  display: flex; flex-direction: column; gap: 2px; padding: 8px 10px;
+  background: var(--cream); color: var(--ink); font-family: var(--mono); font-size: 11px; line-height: 1.35;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.8); transform: translate(-999px, -999px); opacity: 0.94;
+}
+.carry-ghost small { font-family: var(--type); font-size: 9px; color: var(--muted); letter-spacing: 1px; }
+.carry-ghost.carry-case { background: var(--folder); border-top: 4px solid var(--string); }
+.carry-ghost.carry-v { border-left: 4px solid var(--red); }
+body.is-carrying, body.is-carrying * { cursor: grabbing !important; user-select: none; }
+.surface.is-drop { outline: 3px dashed var(--pad); outline-offset: -7px; }
+
+/* ---------- verse and go-deeper cards on the desk ---------- */
+
+.node .pincard.verse { border-top: 3px solid var(--red); }
+.node .pincard.verse .tier { color: var(--red); }
+
+/* An index card from the case file: the collection's own notes, never a source. */
+.node .doccard {
+  position: relative; display: flex; flex-direction: column; gap: 4px; width: 100%; text-align: left;
+  background: var(--folder); color: var(--ink); border: 1px solid var(--folder-border); border-left: 5px solid var(--frame-1);
+  padding: 12px 12px 10px; font-family: var(--mono); font-size: 12px; cursor: grab;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.7);
+}
+.node .doccard .eyebrow { font-size: 9px; }
+.node .doccard .ptitle { font-weight: 700; font-size: 12px; line-height: 1.35; }
+.node .doccard .dpath { font-size: 10px; color: var(--muted); overflow-wrap: anywhere; }
+.node .doccard:hover, .node .doccard:focus { outline: 2px solid rgba(255, 244, 160, 0.5); }
+.node.is-selected .doccard { outline: 2px solid var(--sel); }
+
+/* ---------- the reader's thread ---------- */
+
+.reader-thread { border-top: 1px solid var(--rule); padding-top: 10px; display: flex; flex-direction: column; gap: 4px; }
+.reader-thread[hidden] { display: none; }
+.thread-head { font-family: var(--type); font-size: 11px; letter-spacing: 1px; color: var(--red); margin-bottom: 4px; }
+.reader-note .chip.inline { font-size: inherit; }
+.reader-body .case-finding { margin: 0; font-size: 14px; line-height: 1.65; }
+.reader-body .case-lines { margin: 0; padding-left: 18px; font-size: 13px; line-height: 1.55; }
+.reader-body .case-lines li { margin-bottom: 5px; }
+.reader .lay-out { align-self: flex-start; }
