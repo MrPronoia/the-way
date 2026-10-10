@@ -1,0 +1,49 @@
+{
+  "slug": "hell-afterlife",
+  "call": "Q 236.2",
+  "drawer": "JUDGMENT · AFTERLIFE",
+  "question": "Did Jesus teach eternal conscious torment?",
+  "subtitle": "",
+  "card": "questions/hell-afterlife.md",
+  "aliases": ["is hell real", "eternal hell", "what happens when you die", "Gehenna", "lake of fire", "annihilation", "universalism", "eternal punishment", "did Jesus talk about hell", "the rich man and Lazarus", "will I go to hell"],
+  "finding": "No. Jesus warned about judgment constantly, and we don't soften that. But the judgment he described is by deeds, the place he named was a real valley outside Jerusalem, and the fate he threatened was destruction, not endless conscious torture. Eternal conscious torment as popularly preached owes more to Greco-Roman Tartarus and medieval theology than to the red text. Our reading is conditional immortality: the wicked are destroyed, not preserved in pain. Universal restoration is a secondary possibility we respect and do not require. Both readings falsify eternal torment, and neither changes the criterion: the one judgment scene Jesus narrates at length sorts people by what they did.",
+  "oneLiners": [
+    "Gehenna is a valley you can stand in. It's on the south side of Jerusalem.",
+    "In the one judgment scene Jesus describes at length, nobody is asked what they believed.",
+    "Jesus said God could destroy soul and body. Destruction is not a synonym for permanent survival in pain.",
+    "One hundred fourteen sayings of Jesus in the Gospel of Thomas, and not one hell.",
+    "We say the wicked are destroyed. Some good people say they're eventually healed. Your doctrine needs us both to be wrong."
+  ],
+  "doNotSay": [
+    "Do not use the \"kolasis means pruning\" argument. In Hellenistic Greek it simply means punishment (1 John 4:18, 4 Maccabees 8:9, Josephus); the etymology is a fallacy with canned rebuttals, and we hold no lexicon in this repo.",
+    "Don't overstate Thomas's date. \"Many scholars date it 50-70\" invites a correction you don't need. The 120-140 collection date is mainstream; argue DeConick's early kernel.",
+    "Don't lead with near-death experiences. They're subjective testimony, the literature includes hellish accounts (Rawlings 1978; Greyson & Bush 1992), and Howard Storm was ordained in the UCC. The red text is the reason, not NDEs.",
+    "Don't claim the early tradition is unanimous on annihilation. Epistula Apostolorum 26 contains \"everlasting torment.\" What it is unanimous on is the criterion: deeds."
+  ],
+  "boardLabels": {"for": "FOR", "against": "AGAINST · READ THESE FIRST", "other": "THE OTHER STACK"},
+  "sources": [
+    {"side": "for", "tier": "red text", "ref": "Matthew 25:40", "phrase": "unto one of the least of these my brethren", "note": "The only judgment scene Jesus narrates at length has no doctrinal test in it. Six criteria: fed, gave drink, welcomed, clothed, visited the sick, visited the prisoner. Nobody is asked what they believed."},
+    {"side": "for", "tier": "prophets · the address", "ref": "2 Kings 23:10", "phrase": "defiled Topheth", "note": "Gehenna is Greek for ge-hinnom, the Valley of Hinnom: a ravine south of Jerusalem, infamous as the site of child sacrifice to Molech, which Josiah defiled. When Jesus said Gehenna, his audience heard a location they could walk to. English Bibles translate it \"hell\" and the geography disappears."},
+    {"side": "for", "tier": "prophets", "ref": "Jeremiah 32:35", "phrase": "neither came it into my mind", "note": "The same valley, in God's own voice: an abomination that never entered his mind."},
+    {"side": "for", "tier": "red text", "ref": "Matthew 10:28", "phrase": "destroy both soul and body in hell", "note": "Jesus's own verb is destroy, not torture. Read alongside chaff burned and weeds bundled and burned (Matthew 3:12; 13:30), the consistent picture is of something consumed and finished."},
+    {"side": "for", "tier": "red text", "ref": "Matthew 3:12", "phrase": "burn up the chaff", "note": "The harvest register: chaff is burned up. Termination, not perpetual sensation."},
+    {"side": "for", "tier": "Ethiopian canon · 1 Enoch", "title": "1 Enoch 56:8", "path": "christianity/ethiopian-bible/unique-ethiopian-texts.md", "phrase": "destruction shall be at an end", "edition": "R. H. Charles (1917), public domain", "note": "\"Sheol shall open its jaws, and they shall be swallowed up therein and their destruction shall be at an end.\" Destruction that comes to an end is not torment without end. The file wraps lines mid-phrase; verify by reading."},
+    {"side": "for", "tier": "Thomas · Lambdin", "title": "Gospel of Thomas 1, 18, 19, 111", "path": "christianity/Incoming/gospel-of-thomas-full-text.md", "phrase": "will not experience death", "edition": "Lambdin", "note": "114 sayings and no hell in any of them. Thomas's contrast is life versus death, never life versus torment. An argument from silence, framed as a silence, not a proof."},
+    {"side": "for", "tier": "early church", "title": "Didache 1, the Two Ways", "path": "christianity/Incoming/didache-full-text.md", "phrase": "two ways, one of life", "edition": "Richardson (1953)", "note": "The way of death is a vice list with no doctrinal error in it, and the alternative it names is death, not torment."},
+    {"side": "for", "tier": "Ethiopian canon · Epistula Apostolorum", "title": "Epistula Apostolorum 26-27", "path": "christianity/ethiopian-bible/epistula-apostolorum.md", "phrase": "runneth a vain race", "edition": "M. R. James (1924)", "note": "The resurrected are judged \"in regard of that that they have done,\" and the one who confesses the name without the commandments \"hath no profit therefrom but runneth a vain race.\" Concede first: chapter 26 also contains \"everlasting torment.\""},
+    {"side": "against", "tier": "red text · the grammar objection", "ref": "Matthew 25:46", "phrase": "everlasting punishment", "note": "\"Same word as eternal life.\" Grant the grammar and keep the verse: whichever way you render aiōnios, the criterion in that verse is still feeding the hungry and visiting the prisoner. Matthew 25 is fatal to faith-alone however long the punishment lasts. Say one sentence about aiōn (\"age\") and pivot back to the criterion."},
+    {"side": "against", "tier": "red text · a parable", "ref": "Luke 16:19", "phrase": "a certain rich man", "note": "\"The rich man and Lazarus describes conscious torment.\" A parable in a folk-tale form already circulating; the punchline is about this life: he stepped over a starving man at his gate. He is not there for wrong belief; Lazarus is not comforted for right belief. Reading stage furniture as a map of the afterlife is the move that produces the rapture out of Matthew 24."},
+    {"side": "against", "tier": "Ethiopian canon · we concede it", "title": "Epistula Apostolorum 26, \"everlasting torment\"", "path": "christianity/ethiopian-bible/epistula-apostolorum.md", "phrase": "everlasting torment", "edition": "M. R. James (1924)", "note": "The early Jewish-Christian tradition is not unanimous on annihilation; this phrase is in our own held text. It is unanimous on the criterion, which is what we argue."},
+    {"side": "against", "tier": "the word-count objection", "ref": "Matthew 5:22", "phrase": "in danger of hell fire", "note": "\"Jesus talked about hell more than anyone.\" He talked about Gehenna, a named valley, about eleven times. English collapses four words into one: Gehenna, Hades, Tartarus (once, in 2 Peter, not Jesus), and Revelation's lake of fire (John of Patmos, c. 90-96, not Jesus). The count only works if you first assume the translation."},
+    {"side": "other", "tier": "two readings, both ours · pick-one pressure", "ref": "Matthew 13:30", "phrase": "bind them in bundles to burn them", "note": "\"Annihilation or restoration? Pick one.\" Annihilation; the verbs are why. Restoration is honest and we're not required to hold it. The question tries to make a disagreement inside the non-torment camp look like a weakness; our side disagreeing about which no doesn't give you a yes."}
+  ],
+  "goDeeper": [
+    {"title": "The Didache: what is and isn't in the way of death", "path": "christianity/Incoming/didache-full-text.md"},
+    {"title": "Epistula Apostolorum 26-27 in full, including the phrase we concede", "path": "christianity/ethiopian-bible/epistula-apostolorum.md"},
+    {"title": "Judgment by deeds across 1 Enoch, Jubilees and the Epistula", "path": "christianity/ethiopian-bible/2026-03-09-ethiopian-eschatology-vs-rapture-theology.md"},
+    {"title": "The who-invented-what table, including Gehenna vs Tartarus", "path": "christianity/jesus-core-teaching-distilled.md"},
+    {"title": "The Valley of Hinnom's actual history, with 2 Kings and Jeremiah in context", "path": "christianity/blood-magic-origins-saturn-sacrifice.md"},
+    {"title": "The NDE research base, background only, with the caveats the card attaches", "path": "christianity/nde-life-reviews-validate-works-based-salvation.md"}
+  ],
+  "next": ["two-ways-kingdom-within", "what-we-actually-offer", "the-gospel-of-thomas"]
+}

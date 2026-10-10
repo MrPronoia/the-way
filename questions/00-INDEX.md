@@ -16,11 +16,12 @@ Most cards cover a topic. This one takes a single contested sentence apart and c
 
 ---
 
-## Read these two first
+## Read these three first
 
 | File | Why |
 |---|---|
 | `CITATION-NOTES.md` | **Non-optional.** Quotes that were found wrong and corrected, a do-not-use list, and the claims anyone can check instantly. Two citations in circulation in our research were wrong; several others were overstated. |
+| `OBJECTIONS.md` | What named critics have *actually* said (John Davis, Wes Huff, Angela Scafidi, Dr. Pete), each with a pointer to the moment and the card heading that answers it, or OPEN with a brief. The cards are what we would say; this is what we have been asked. |
 | `LIVE-SETUP.md` | For live conversations, recordings and Q&A: the two-tab model setup, the session warm-up prompt, how to phrase questions under time pressure. |
 
 ## The topic cards

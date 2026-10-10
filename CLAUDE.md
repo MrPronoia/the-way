@@ -6,7 +6,7 @@
 
 ## What This Repo Is
 
-A curated Christianity research collection. Snapshot from [mr-pronoia](https://github.com/MrPronoia/mr-pronoia) (the larger esoteric-knowledge base), packaged for collaboration with the broader Jesus-research community (including Cameron Waters / The Way Skool community).
+A curated Christianity research collection, now at `the-nazarene/way`. Began as a snapshot from [mr-pronoia](https://github.com/MrPronoia/mr-pronoia) (the larger esoteric-knowledge base), packaged for collaboration with the broader Jesus-research community (including Cameron Waters / The Way Skool community).
 
 See `README.md` for orientation and `PROVENANCE.md` for the assembly story.
 
@@ -19,9 +19,12 @@ Don't search the repo blind — there are three purpose-built entry points, in t
 0. **`VERIFIED-SOURCES.md`** (repo root) — which files may be quoted as ground truth, by tier, with the edition behind each. If a quotation matters, it comes from a file on this list or it doesn't get said.
 1. **`TOPIC-INDEX.md`** (repo root) — the routing table. A claim or question comes in, you find the row, you open one file at the named section. ~117 entries across nine topic clusters plus the primary texts. Every path and section anchor is verified.
 2. **`questions/`** — fourteen cards on the hard questions (claim, strongest primary-source evidence, the questions people raise with honest responses, one-sentence versions, go-deeper paths). Start with `questions/00-INDEX.md`. **Read `questions/CITATION-NOTES.md` before quoting anything** — it records two citations that were found to be wrong, plus a do-not-use list.
-3. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
+3. **The Bible text itself:** `christianity/Incoming/kjv/` holds all 66 books of the KJV, one verse per line. `grep -rn "I will have mercy, and not sacrifice" christianity/Incoming/kjv/` finds the verse. Quote from the file and cite as (KJV).
+4. **`python scripts/semantic-search.py "your question"`** — semantic (meaning-based, not keyword) search over the whole repo via Gemini embeddings. Use it when the question comes from an angle the index doesn't anticipate. Needs a one-time `--rebuild`; see `scripts/README.md`.
 
-**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology).
+**For live use** (a conversation, recording, or Q&A), `questions/LIVE-SETUP.md` has the session-warmup prompt and the two-tab pattern (fast model for lookups, Fable/Opus for deep theology). **For an objection someone has actually raised**, check `questions/OBJECTIONS.md` first: it maps real critics' words to the card heading that answers them, and says honestly which ones are still open.
+
+**Looking for something to work on?** `OPEN-RESEARCH.md` lists the gaps (sized, with what "done" looks like). `FIX-LIST.md` is for repairing existing claims; `OPEN-RESEARCH.md` is for new ground.
 
 ---
 
@@ -74,6 +77,7 @@ When users ask about Christian theology:
 | `extended-library/` | Jesus-relevant secondary works — currently just `essene-gospel-of-peace.md` (with provenance caveats) |
 | `jesus-site-reference/` | Source for jesusactuallysaid.com + architectural notes |
 | `podcast-archive/` | Raw auto-caption transcripts — The Jesus Way (65 episodes), Dr. James Tabor's "Paul" playlist (77 videos, synthesized), Kam Waters' channel (7 videos). Working material: **pointers, not proof** — never quote as a source |
+| `site/` | The Reading Room — the public static site over the question cards. `site/build.py` stamps every source HELD / NOT YET HELD by checking the repo, and refuses to build a citation it can't find. Content follows the cards; fix the card first |
 | `questions/` | 14 cards on the hard questions (claim, evidence, questions people raise + responses, one-sentence versions) + `CITATION-NOTES.md`, which logs citations found to be fabricated or reversed. Read that file before quoting |
 | `scripts/` | `semantic-search.py` — meaning-based search over the whole repo (Gemini embeddings). Setup in `scripts/README.md` |
 

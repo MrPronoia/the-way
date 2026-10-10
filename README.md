@@ -22,9 +22,9 @@ This repository documents the gap. Not to tear down anyone's faith — to recove
 
 ## Origin
 
-This repo is a curated snapshot from a larger research base ([mr-pronoia](https://github.com/MrPronoia/mr-pronoia), private). The Christianity-focused content from that base is collected here, organized for collaboration. See `PROVENANCE.md` for the full assembly story and the May 18 scope refinement.
+This repo began in May 2026 as a curated snapshot from a larger research base ([mr-pronoia](https://github.com/MrPronoia/mr-pronoia), private). The Christianity-focused content from that base was collected here, and the collection has grown well beyond it since. See `PROVENANCE.md` for the full assembly story and the May 18 scope refinement.
 
-The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitHub — a small private research collective. `the-way` is the Jesus-and-Christianity-focused subset, intended for collaboration with the broader Jesus-research community.
+As of October 2026 the repo lives in its own organization, [`the-nazarene`](https://github.com/the-nazarene), stewarded by a group of contributors who take the question of what Jesus actually taught seriously. The old `MrPronoia/the-way` address redirects here permanently.
 
 ---
 
@@ -38,17 +38,21 @@ The umbrella organization is [`MrPronoia`](https://github.com/MrPronoia) on GitH
 | **To help fix something** | `FIX-LIST.md` — 106 checkboxed items sorted into: known-wrong, overstated, and needs-a-book |
 | **To look up a specific claim fast** | `TOPIC-INDEX.md` — the routing table: claim → exact file and section |
 | **The hard questions, answered from the sources** | `questions/00-INDEX.md` — fourteen cards: the claim, the evidence, the questions people raise, and honest responses |
+| **What critics have actually said, and where we answer it** | `questions/OBJECTIONS.md` — real objections from named critics, each pointed to its moment in the archive and to the card heading that answers it, or marked open |
+| **To pick up a research job** | `OPEN-RESEARCH.md` — new ground nobody has covered yet, sized, with what "done" looks like; put your name on one |
 | The thesis in one sitting | `christianity/what-jesus-actually-said.md` (~8K words, printable) |
 | The 1000-word version | `christianity/cliff-notes-quick-reference.md` |
 | A daily practice grounded in Jesus's own words | `christianity/the-practice.md` |
 | The Christ-consciousness vision (4-min read) | `christianity/christconsciousnessvision.md` |
 | Public-facing intro pages (English & Spanish) | `jesus-site-reference/source/docs/start-here.md` |
 | **What counts as a source** — which files may be quoted as ground truth, and what we cite but don't hold | `VERIFIED-SOURCES.md` |
+| **The Bible itself (KJV, all 66 books, one verse per line)** | `christianity/Incoming/kjv/` — the red text, the prophets, Paul and Hebrews, grep-able and public domain |
 | Primary texts (Gospel of Thomas, Essene Gospel of Peace, Dead Sea Scrolls, Ethiopian Bible) | `christianity/Incoming/`, `christianity/dead-sea-scrolls/`, `christianity/ethiopian-bible/`, `extended-library/essene-gospel-of-peace.md` |
 | The Paul problem | `christianity/paul-false-prophet-deuteronomy-18-test.md`, plus the jesus-site `the-paul-problem.md` |
 | Rapture deconstruction | `christianity/2026-03-08-darby-dispensationalism-deep-dive.md` |
 | The Gnostic gospels (Thomas, Philip, Nag Hammadi) | `gnosticism/` |
 | The published website source | `jesus-site-reference/` |
+| **The Reading Room — the public front door to the cards** | `site/` — static site built from `questions/`, every source stamped HELD / NOT YET HELD by the build. See `site/README.md` |
 | The Jesus Way podcast raw transcripts | `podcast-archive/the-jesus-way/` (65 episodes) |
 | Dr. James Tabor's "Paul" playlist, synthesized (77 videos) | `podcast-archive/dr-tabor/` |
 | Kameron Waters' channel transcripts (7 videos) | `podcast-archive/kameron-waters/` |
@@ -70,7 +74,8 @@ the-way/
 │
 ├── christianity/           ← The main research folder
 │   ├── (39 root files: thesis, deep dives, deliverables)
-│   ├── Incoming/           ← Primary texts (Gospel of Thomas, Essene Gospel of Peace)
+│   ├── Incoming/           ← Primary texts (Gospel of Thomas, Didache, Clementines, Essene Gospel of Peace)
+│   │   └── kjv/            ← The King James Bible, 66 files, one verse per line (public domain)
 │   ├── dead-sea-scrolls/   ← Essene primary sources
 │   ├── ethiopian-bible/    ← Pre-Pauline canonical preservation (1 Enoch, Jubilees, Shepherd of Hermas, etc.)
 │   └── vegetarian-pythagorean-jesus/
@@ -85,6 +90,8 @@ the-way/
 │
 ├── extended-library/       ← Jesus-relevant secondary works
 │   └── essene-gospel-of-peace.md   ← Szekely (1928), Essene-Jesus connection (provenance caveats noted)
+│
+├── site/                   ← The Reading Room: public front door to the question cards (GitHub Pages)
 │
 ├── jesus-site-reference/   ← Snapshot of jesusactuallysaid.com source
 │   ├── README.md

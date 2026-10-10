@@ -31,6 +31,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | 6 | **Isaiah 56:7 is quoted truncated in five files** | The omitted first half reads "their burnt offerings and their sacrifices will be accepted on my altar" — the opposite of how we use the verse. Needs fixing at the source, not just noting on a card. |
 | 7 | **Episode 045 transcript** | The one gap in the Jesus Way archive. Captions are disabled at the source, so it needs Whisper or manual transcription from audio. |
 | 8 | **Matthew 2:23 has zero coverage** | "He shall be called a Nazarene" — no such OT prophecy exists verbatim. It's the first thing a prepared critic raises about the Nazarene claim and the repo says nothing about it. |
+| 8a | **Open research jobs for contributors** | `OPEN-RESEARCH.md` — eight sized jobs from a read of the podcast archive against the research files (Romans 14, Paul's four texts, the Baptist's diet, Mark and Paul, the five open objections in `questions/OBJECTIONS.md`, the critics' originals, Josephus/Philo/Eusebius as held texts, episode 045). New ground, not repairs. |
 
 ---
 
@@ -39,6 +40,7 @@ Working to-do list for The Way. Current as of 2026-10-07.
 | # | Item | Notes |
 |---|---|---|
 | 9 | **Ray Pritz, *Nazarene Jewish Christianity*** | The standard monograph on exactly our central claim, and it's absent from the bibliography. Cite it rather than copying it (see the copyright rule in `CONTRIBUTING.md`). |
+| 9a | **The Reading Room — public front door** | `site/` is live from `main` via GitHub Pages. **All 14 cards structured** (218 sources, 204 held in the repo, 14 public-domain-not-held), drawers grouped by topic, permalinks and copy-a-citation on every source, KJV passages shown in context. Open: Rex on JSON records vs card front-matter; the objections bank (PR #5) as a second cabinet once merged; a smarter drawer (embeddings) needs an API key as an Actions secret; analytics needs an account; Phase 3 (grounded answers for no-card questions, stamped UNCHECKED) waits on P0. |
 | 10 | **Jamie — push-to-check lookup tool** | Spec'd and ready to build in `ideas/jamie-mvp.md`. Milestone M2 (console output from real retrieval) is the gate: everything before it is plumbing, everything after is polish. |
 | 11 | **Delete the merged `questions-not-debate` branch** | Fully merged into `main`; it'll read as work-in-progress to new contributors. Matt's branch, Matt's call. |
 | 12 | **Spanish mirrors drift** | 17 `*.es.md` files translate the English pages. When an English page is corrected, the Spanish needs the same fix — there's no automation, so it has to be deliberate. |
@@ -56,7 +58,10 @@ Working to-do list for The Way. Current as of 2026-10-07.
 
 ---
 
-## Done recently (2026-10-06 / 10-07)
+## Done recently (2026-10-06 / 10-09)
+
+- **2026-10-09: the KJV is held.** All 66 books in `christianity/Incoming/kjv/`, one verse per line, public domain, imported by `scripts/import-kjv.py`. The repo's number-one source tier finally has a file; every gospel quotation can now be checked in ten seconds. `VERIFIED-SOURCES.md` (PR #3) should move "the canonical gospels" from *Not held* to Tier 1 when it merges.
+- **2026-10-09: the Reading Room (`site/`).** A static front door over the cards; see P2 item 9a.
 
 - Jesus Way archive brought current: 55 → 65 episodes. Kam Waters' channel archived (7 videos). Episode 045 diagnosed as captions-disabled-at-source rather than merely missing.
 - `questions/` built out to 18 files, including four cards that exist specifically to stop us being ambushed on method (how we read John, the Gospel of Thomas, criteria, and what we actually offer).

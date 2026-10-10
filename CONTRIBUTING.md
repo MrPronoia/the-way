@@ -148,13 +148,13 @@ Current coverage, if you're looking for something useful to do: 93% of the trans
 ## How to Contribute
 
 ### First time: get access + tools
-1. **Make a free GitHub account** at [github.com](https://github.com) if you don't have one. Send your **username** to Matt or Rex so they can add you as a collaborator.
+1. **Make a free GitHub account** at [github.com](https://github.com) if you don't have one — takes about two minutes. Then post your **GitHub username** in the group. (Username, not email — email invites only work if it's the exact address on your GitHub account, and otherwise they quietly go nowhere.) **Any maintainer can add you**; you don't need a specific person.
 2. **Install [GitHub Desktop](https://desktop.github.com/)** — the free app that lets you clone, edit, and push **without the command line**. Easiest path for everyone.
-3. In GitHub Desktop: **File → Clone repository → `MrPronoia/the-way`** → pick a local folder. Now you have your own copy on your machine.
+3. In GitHub Desktop: **File → Clone repository → `the-nazarene/way`** → pick a local folder. Now you have your own copy on your machine.
 
 ### Making changes — two ways
 
-**Quick edit (no app needed):** On [github.com](https://github.com/MrPronoia/the-way), open any file → click the **pencil ✏️** → edit → "Commit changes." Great for fixing a typo or adding a paragraph.
+**Quick edit (no app needed):** On [github.com](https://github.com/the-nazarene/way), open any file → click the **pencil ✏️** → edit → "Commit changes." Great for fixing a typo or adding a paragraph.
 
 **Real work (GitHub Desktop):**
 1. **Pull first** (top bar → "Pull origin") so you have everyone's latest changes.
@@ -165,7 +165,26 @@ Current coverage, if you're looking for something useful to do: 93% of the trans
 > **Golden rule:** *Pull before you push.* It avoids 95% of conflicts. With a handful of people on a text repo, conflicts are rare and easy to resolve.
 
 ### Bigger or experimental changes — use a branch
-If you're reworking something substantial, create a **branch** (GitHub Desktop → "Current Branch" → New Branch), do your work there, then open a **Pull Request** on github.com. Matt/Rex review and merge. This keeps `main` clean and gives a natural checkpoint.
+If you're reworking something substantial, create a **branch** (GitHub Desktop → "Current Branch" → New Branch), do your work there, then open a **Pull Request** on github.com. This keeps `main` clean and gives a natural checkpoint.
+
+### Who reviews and merges — nobody in particular
+
+**Any contributor with write access can review and merge any other contributor's work.** You do not need Matt or Rex. An earlier version of this file said "Matt/Rex review and merge" — that was wrong, and it made people wait on two specific humans for no good reason.
+
+What a reviewer is actually checking is short and mostly mechanical:
+
+- **Can every quote be traced to a real source?** If the source is a text we hold in `christianity/Incoming/` or `gnosticism/Incoming/`, grep it and confirm the wording. If it isn't, the citation needs enough detail that someone could look it up.
+- **No absolutes** unless they're genuinely true — "never," "no manuscript," "every scholar," "nowhere else." These are what break most often. The narrower version almost always makes the same point.
+- **Nothing quoted from `podcast-archive/`.** Those are auto-generated captions. Great for finding a thread, never a source.
+- **Does the file have a provenance header?** See the source-header section above.
+
+That's it. It isn't a taste judgment and it isn't a gate — it's a second pair of eyes on whether a claim can be checked. We found a run of citations that couldn't be, which is exactly why one more person glancing helps (`questions/CITATION-NOTES.md` has that story).
+
+**Two places everyone slows down**, because the cost of being wrong is higher: `jesus-site-reference/` (published to the open web, read by strangers) and the primary texts in any `Incoming/` folder (the ground truth everything else gets checked against). Changes there want a careful look.
+
+### Contributing without write access
+
+You don't need to be added to anything. **Fork** the repo — your own complete copy under your own account, no permission required — make your changes there, and open a pull request. Any maintainer can review and merge it. That's the normal path for anyone outside the core group, and it's also a perfectly good path if you'd just rather work that way.
 
 ---
 

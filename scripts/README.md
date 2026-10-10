@@ -187,3 +187,31 @@ The repo-root `Incoming/` folder is belt-and-braces: gitignored *and* listed in
 `SKIP_ROOT_DIRS`. The tracked primary-text folders — `christianity/Incoming/`,
 `gnosticism/Incoming/`, `christianity/dead-sea-scrolls/Incoming/` — are *not*
 affected and are indexed normally.
+
+
+---
+
+## import-kjv.py — the King James Bible, one verse per line
+
+Imports the public-domain KJV (Project Gutenberg eBook #10) into
+`christianity/Incoming/kjv/`, one file per book, every verse on its own line:
+
+```
+**9:13** But go ye and learn what that meaneth, I will have mercy, and not sacrifice: ...
+```
+
+Gutenberg's text wraps verses mid-sentence, which defeats exact-phrase search;
+the import unwraps them so `grep -rn "I will have mercy, and not sacrifice"
+christianity/Incoming/kjv/` lands on one line. Each file carries the repo's
+provenance header, so the semantic index attaches "KJV, Project Gutenberg #10,
+public domain" to every verse it returns.
+
+```
+python scripts/import-kjv.py             # downloads pg10.txt and writes 66 files + 00-README.md
+python scripts/import-kjv.py pg10.txt    # from a local copy
+```
+
+Idempotent: re-running overwrites the same 66 files. The site build
+(`site/build.py`) reads these files to stamp scripture citations HELD and to
+show the verse text in the reader pane. Note for the semantic index: this adds
+~4.5 MB of text (31,102 verses), so the next `--rebuild` is larger than before.
