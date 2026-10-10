@@ -17,7 +17,6 @@ The fix-and-verify list for *existing* claims is `FIX-LIST.md`. This file is for
 | 5 | The five open objections (see `questions/OBJECTIONS.md`) | half a session each | |
 | 6 | Archive the critics' own words | one message each | |
 | 7 | Josephus, Philo, Eusebius as held texts | one session | |
-| 8 | Episode 045 transcript (captions disabled) | mechanical | |
 
 ---
 
@@ -69,10 +68,4 @@ Listed with full briefs in `questions/OBJECTIONS.md` under "Open". In short: "Ch
 
 **What to add.** Whiston's Josephus (the Essene passages: *War* 2.119-161, *Antiquities* 18.18-22, and 20.200 on James); Yonge's Philo (*Every Good Man Is Free* 75-91, *Hypothetica* 11.1-18); the NPNF2 Eusebius *Church History* 2.23 (Hegesippus on James) and 3.5 (Pella), and the Ferrar *Demonstratio* 3.5. Excerpts, not whole works, each with its translator and edition in the header. Then the index rows.
 
-## 8. Episode 045 transcript
-
-Captions are disabled at the source, so it needs audio plus a local transcription model. Mechanical; whoever runs the transcript script can do it with `yt-dlp -x` and Whisper. Not research, listed here so it is not forgotten.
-
----
-
-*When you take a job, put your name in the table above in the same commit as your first file, so two people don't do the same work. When it's done, move the row to `ROADMAP.md`'s "Done recently" and delete it here.*
+*Job 8 (Episode 045 transcript) was done 2026-10-08: transcribed locally with Whisper, in `podcast-archive/the-jesus-way/`.*

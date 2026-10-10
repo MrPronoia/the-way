@@ -76,7 +76,7 @@ Episodes are numbered. The numbering reflects production order (some early episo
 | 042 | Spiritual Benefits of Fat Loss | 91 KB |
 | 043 | Minister of Wellness — Church of Satan | 103 KB |
 | 044 | Three Forgotten Nazarene Practices | 126 KB |
-| 045 | Three Temples Unlock Christ Consciousness | 10 KB *(synthesis only — captions disabled at source)* |
+| 045 | Three Temples Unlock Christ Consciousness | 165 KB *(captions disabled at source; transcribed locally with Whisper, 2026-10-08)* |
 | 046 | James Rejected Paul — Scriptural Proof | 183 KB |
 | 047 | Jesus Died Because of Sins | 93 KB |
 | 048 | What Really Happened at Resurrection | 172 KB |
@@ -107,7 +107,9 @@ Episodes are numbered. The numbering reflects production order (some early episo
 
 ## How These Were Generated
 
-Episodes were transcribed from YouTube via an automated pipeline (`_pull_transcripts.py`, kept in mr-pronoia, not copied here). Quality varies — speaker attribution, technical terms, names, and Hebrew/Aramaic/Greek transliterations may be inaccurate. When using a quote, listen to the original audio to verify.
+Every transcript was re-pulled on 2026-10-08 **with timestamps** by `scripts/pull-transcripts.py` (in this repo; see `scripts/README.md`). Each paragraph opens with `**[mm:ss]**`, so a line can be cited as `046 @ 41:12` and checked against the audio; the YouTube link in each file's transcript note plus `&t=<seconds>` jumps straight to it. Captions carry no speaker labels; `>>` appears only where YouTube marks a change of speaker. Episode 045 (captions disabled at source) was transcribed locally with Whisper and is labeled as such.
+
+Before that, episodes were transcribed via `_pull_transcripts.py` (kept in mr-pronoia). Quality varies — speaker attribution, technical terms, names, and Hebrew/Aramaic/Greek transliterations may be inaccurate. When using a quote, listen to the original audio to verify.
 
 ---
 

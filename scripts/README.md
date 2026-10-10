@@ -5,6 +5,30 @@ are optional research aids that run on your own machine.
 
 ---
 
+## pull-transcripts.py — timestamped transcripts for the podcast archive
+
+Every file in `podcast-archive/` carries its transcript as timestamped paragraphs
+(`**[41:12]** …`) so a line can be cited as `046 @ 41:12` and checked against the
+audio in ten seconds. This script pulls or refreshes them:
+
+```
+python scripts/pull-transcripts.py podcast-archive/the-jesus-way/066-*.md   # a new episode
+python scripts/pull-transcripts.py --only-missing podcast-archive/*/*.md    # anything not yet timestamped
+```
+
+It reads the YouTube link in each file's header, fetches the captions with
+timestamps, and rewrites everything from `## Full Transcript` down, leaving the
+synthesized header alone. With `APIFY_TOKEN` set it uses the Apify
+`johnvc~YoutubeTranscripts` actor (a fraction of a cent per video, no throttling);
+without it, `yt-dlp` (free, but YouTube rate-limits after a few videos).
+`--lang es` for a non-English video. A video with captions disabled (episode 045)
+needs audio plus a local Whisper; drop the segments into the cache in the same
+shape and the script will format them.
+
+Captions are pointers, not proof. Nothing the script writes is a source.
+
+---
+
 ## semantic-search.py — search the whole collection by meaning
 
 Keyword search (`grep`, GitHub search) only finds the words you already
