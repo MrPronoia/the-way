@@ -61,6 +61,9 @@
   </div>
   <div class="tool-group right">
     <button type="button" class="tool present" id="btnPresent" title="Walk the desk section by section, full screen. Arrow keys move, Esc ends. (P)">▶ PRESENT</button>
+    <button type="button" class="tool" id="btnSaveFile" title="Save this desk as a file you keep. Clearing the browser can't lose it. (Ctrl-S)">SAVE FILE</button>
+    <button type="button" class="tool" id="btnOpenFile" title="Open a desk file, or drop one onto the desk. Your own desk stays as it is. (Ctrl-O)">OPEN FILE</button>
+    <input type="file" id="fileOpen" accept=".json,application/json" hidden>
     <button type="button" class="tool" id="btnShare" title="Copy a link that rebuilds this exact desk">COPY DESK LINK</button>
     <button type="button" class="tool" id="btnJson" title="Copy the desk as JSON">COPY JSON</button>
     <button type="button" class="tool danger" id="btnClear">CLEAR</button>
@@ -122,6 +125,7 @@
           <div class="eyebrow">AN EMPTY DESK</div>
           <p>Drag a case file from the trays on the left onto the desk, or type a subject or a verse above and the held sources come to you.</p>
           <p class="small">Click a card to read it and follow its thread: every verse and case it points to can come onto the desk, tied to it by string. Drag a card to move it. Drag from its pin head to tie string. Drag the desk to box-select. Middle-drag or hold space to pan. Ctrl-scroll to zoom.</p>
+          <p class="small">Press <kbd>?</kbd> any time for the controls.</p>
         </div>
       </div>
 
@@ -148,8 +152,53 @@
         <button type="button" class="tool mini" id="btnZoomOut" aria-label="Zoom out">−</button>
         <span id="hudZoom">100%</span>
         <button type="button" class="tool mini" id="btnZoomIn" aria-label="Zoom in">+</button>
+        <button type="button" class="tool mini help-btn" id="btnHelp" aria-label="How to move around the desk (?)" title="How to move around the desk (?)" aria-expanded="false" aria-controls="helpPanel">?</button>
       </span>
     </div>
+
+    <aside class="help-panel" id="helpPanel" role="dialog" aria-labelledby="helpTitle" hidden>
+      <div class="help-top">
+        <div class="help-title" id="helpTitle">HOW TO MOVE AROUND THE DESK</div>
+        <button type="button" class="help-close" id="helpClose" aria-label="Close">×</button>
+      </div>
+      <div class="help-group">
+        <div class="eyebrow">MOVE AROUND</div>
+        <dl>
+          <dt>Pan</dt><dd>Scroll, or hold <kbd>Space</kbd> and drag, or drag with the middle mouse button</dd>
+          <dt>Zoom</dt><dd><kbd data-mod>Ctrl</kbd> + scroll, pinch on a trackpad, or <kbd>−</kbd> <kbd>+</kbd> below the desk</dd>
+          <dt>See it all</dt><dd><strong>FIT</strong> on the toolbar</dd>
+          <dt>Find</dt><dd>Search the trays; click a section in <strong>ON THIS DESK</strong> to go there</dd>
+        </dl>
+      </div>
+      <div class="help-group">
+        <div class="eyebrow">CARDS</div>
+        <dl>
+          <dt>Read</dt><dd>Click a card</dd>
+          <dt>Move</dt><dd>Drag it; it snaps to its neighbours (<strong>SNAP</strong> turns that off)</dd>
+          <dt>Select</dt><dd>Drag a box on empty desk; <kbd>Shift</kbd>-click adds one; drag any of them to move them all</dd>
+          <dt>Nudge</dt><dd>Arrow keys (<kbd>Shift</kbd> for bigger steps); <kbd>Delete</kbd> takes the selection off</dd>
+        </dl>
+      </div>
+      <div class="help-group">
+        <div class="eyebrow">SECTIONS AND STRING</div>
+        <dl>
+          <dt>Section</dt><dd><strong>+ FRAME</strong>; drag its name bar to move it with everything inside; double-click the name to rename</dd>
+          <dt>Tie</dt><dd>Drag from a card's pin to another card</dd>
+          <dt>Untie</dt><dd>Click the string, then <kbd>Delete</kbd> or its ×</dd>
+        </dl>
+      </div>
+      <div class="help-group">
+        <div class="eyebrow">KEYS</div>
+        <dl class="help-keys">
+          <dt><kbd data-mod>Ctrl</kbd> <kbd>Z</kbd> · <kbd data-mod>Ctrl</kbd> <kbd>Y</kbd></dt><dd>Undo · redo</dd>
+          <dt><kbd data-mod>Ctrl</kbd> <kbd>S</kbd> · <kbd data-mod>Ctrl</kbd> <kbd>O</kbd></dt><dd>Save to a file · open a file</dd>
+          <dt><kbd data-mod>Ctrl</kbd> <kbd>A</kbd></dt><dd>Select everything</dd>
+          <dt><kbd>P</kbd></dt><dd>Present, section by section (<kbd>←</kbd> <kbd>→</kbd> to move, <kbd>Esc</kbd> to end)</dd>
+          <dt><kbd>?</kbd></dt><dd>This help</dd>
+          <dt><kbd>Esc</kbd></dt><dd>Close a reader, let go of a selection</dd>
+        </dl>
+      </div>
+    </aside>
   </section>
 </main>
 

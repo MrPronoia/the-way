@@ -1366,6 +1366,11 @@
 
     document.addEventListener('keydown', function (e) {
       if (presentKey(e)) return;
+      if (!$('helpPanel').hidden && e.key === 'Escape') { toggleHelp(false); e.preventDefault(); return; }
+      /* Not while presenting: the show's bar carries its own keys. */
+      if (e.key === '?' && !presenting && !isTyping(e) && !e.ctrlKey && !e.metaKey) { toggleHelp(); e.preventDefault(); return; }
+      if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === 's' || e.key === 'S')) { e.preventDefault(); saveFile(); return; }
+      if ((e.ctrlKey || e.metaKey) && !e.altKey && (e.key === 'o' || e.key === 'O')) { e.preventDefault(); $('fileOpen').value = ''; $('fileOpen').click(); return; }
       if (!isTyping(e) && (e.key === 'p' || e.key === 'P') && !e.ctrlKey && !e.metaKey && !e.altKey) { startPresent(0, true); e.preventDefault(); return; }
       if (e.code === 'Space' && !isTyping(e)) { spaceDown = true; $('surface').classList.add('is-spacing'); e.preventDefault(); }
       if (isTyping(e)) return;
@@ -1805,6 +1810,7 @@
     if (!items.length) { hint('There is nothing on the desk to present yet.'); return; }
     if (presenting) { goSlide(at || 0); return; }
     closeReader();
+    toggleHelp(false);
     var slides = presentSlides();
     presenting = { slides: slides, i: 0, before: { x: tf.x, y: tf.y, scale: tf.scale }, full: false, anim: 0, idle: 0 };
     sel = {}; renderSelection();
@@ -1954,7 +1960,7 @@
   function presentLink() {
     var base = location.origin + location.pathname;
     var at = presenting ? presenting.i : 0;
-    if (viewingShared && sharedMeta && deskSig() === sharedSig) return base + '#desk=' + sharedMeta.slug + '&present=' + at;
+    if (viewingShared && sharedMeta && sharedMeta.slug && deskSig() === sharedSig) return base + '#desk=' + sharedMeta.slug + '&present=' + at;
     return base + '#b=' + encodeURIComponent(encode()) + '&present=' + at;
   }
 
@@ -2344,7 +2350,8 @@
     var n = ownCount();
     $('btnBackMine').textContent = 'BACK TO MY DESK' + (n ? ' (' + n + ')' : '');
     if (!viewingShared) return;
-    $('sharedEyebrow').textContent = sharedMeta ? 'A PREPARED DESK · ' + sharedMeta.title.toUpperCase() : 'A SHARED DESK';
+    $('sharedEyebrow').textContent = !sharedMeta ? 'A SHARED DESK' :
+      (sharedMeta.file ? 'A DESK FROM A FILE · ' : 'A PREPARED DESK · ') + sharedMeta.title.toUpperCase();
     $('sharedText').textContent = (sharedMeta ? sharedMeta.subtitle + ' ' : 'Someone’s layout, opened from a link. ') +
       'Your own desk is safe and untouched. Changes here are not saved unless you keep it.';
   }
@@ -2385,6 +2392,109 @@
     save();
     renderShared();
     hint('This desk is yours now, and it saves as you work.');
+  }
+
+  /* ================= help =================
+     The controls, one press away: the ? button under the desk, or the ? key.
+     It is a panel, not a modal: the desk stays usable behind it, and a click
+     anywhere else, Esc, or ? again closes it. */
+
+  function toggleHelp(on) {
+    var p = $('helpPanel'), want = on == null ? p.hidden : on;
+    if (want === !p.hidden) return;
+    p.hidden = !want;
+    $('btnHelp').setAttribute('aria-expanded', want ? 'true' : 'false');
+    $('btnHelp').classList.toggle('is-on', want);
+    if (want) $('helpClose').focus();
+    else if (p.contains(document.activeElement)) $('btnHelp').focus();
+  }
+
+  function wireHelp() {
+    /* A Mac's key is Command, not Control. */
+    if (/Mac|iPhone|iPad/.test(navigator.platform || '')) {
+      var mods = document.querySelectorAll('#helpPanel [data-mod]');
+      for (var i = 0; i < mods.length; i++) mods[i].textContent = '⌘';
+    }
+    $('btnHelp').addEventListener('click', function () { toggleHelp(); });
+    $('helpClose').addEventListener('click', function () { toggleHelp(false); });
+    document.addEventListener('pointerdown', function (e) {
+      if ($('helpPanel').hidden) return;
+      if ($('helpPanel').contains(e.target) || $('btnHelp').contains(e.target)) return;
+      toggleHelp(false);
+    }, true);
+  }
+
+  /* ================= desk files =================
+     A desk saved as a file the reader keeps: in Downloads, a cloud folder, an
+     email to themselves. Clearing the browser cannot touch it, and it opens
+     on any computer. Opening one never overwrites the reader's own desk: it
+     arrives in the shared view, with KEEP THIS AS MY DESK. */
+
+  var DESK_FILE = 'nazarene-way-desk';
+
+  function deskFileName() {
+    var base = sharedMeta && sharedMeta.slug ? sharedMeta.slug :
+      sharedMeta && sharedMeta.fileName ? sharedMeta.fileName.replace(/\.json$/i, '').replace(/-\d{4}-\d{2}-\d{2}( \(\d+\))?$/, '') : 'my-desk';
+    var d = new Date(), two = function (n) { return (n < 10 ? '0' : '') + n; };
+    return base + '-' + d.getFullYear() + '-' + two(d.getMonth() + 1) + '-' + two(d.getDate()) + '.json';
+  }
+
+  function saveFile() {
+    if (!items.length) { hint('The desk is empty, so there is nothing to save yet.'); return; }
+    var body = { format: DESK_FILE, version: 1, saved: new Date().toISOString(),
+                 title: sharedMeta ? sharedMeta.title : 'My desk', desk: JSON.parse(encode()) };
+    var url = window.URL.createObjectURL(new Blob([JSON.stringify(body, null, 1)], { type: 'application/json' }));
+    var a = document.createElement('a');
+    a.href = url;
+    a.download = deskFileName();
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(function () { window.URL.revokeObjectURL(url); document.body.removeChild(a); }, 1000);
+    hint('Saved as ' + a.download + ', usually in your Downloads. Keep it anywhere; OPEN FILE brings it back on any computer.');
+  }
+
+  /* A saved desk file, or the bare layout COPY JSON gives, both open. */
+  function openDeskFile(text, name) {
+    var data;
+    try { data = JSON.parse(text); } catch (err) { hint(name + ' is not a desk file. Desk files are the .json files SAVE FILE makes.'); return; }
+    var wrapped = data && data.format === DESK_FILE;
+    var desk = wrapped ? data.desk : data;
+    if (!desk || Object.prototype.toString.call(desk.it) !== '[object Array]') { hint(name + ' is not a desk file: there is no desk in it.'); return; }
+    if (presenting) exitPresent();
+    var title = wrapped && data.title && data.title !== 'My desk' ? data.title : name.replace(/\.json$/i, '');
+    openShared({ json: JSON.stringify(desk), prepared: {
+      file: true, fileName: name, title: title,
+      subtitle: 'Opened from ' + name + (wrapped && data.saved ? ', saved ' + String(data.saved).slice(0, 10) : '') + '.'
+    } });
+  }
+
+  function readDeskFile(file) {
+    if (!file) return;
+    var r = new FileReader();
+    r.onload = function () { openDeskFile(String(r.result), file.name); };
+    r.onerror = function () { hint('That file could not be read.'); };
+    r.readAsText(file);
+  }
+
+  function wireFiles() {
+    $('btnSaveFile').addEventListener('click', function () { this.blur(); saveFile(); });
+    $('btnOpenFile').addEventListener('click', function () { this.blur(); $('fileOpen').value = ''; $('fileOpen').click(); });
+    $('fileOpen').addEventListener('change', function () { readDeskFile(this.files && this.files[0]); });
+    /* A desk file dropped anywhere on the desk opens too. */
+    var surface = $('surface');
+    var hasFiles = function (e) { return e.dataTransfer && [].slice.call(e.dataTransfer.types || []).indexOf('Files') >= 0; };
+    surface.addEventListener('dragover', function (e) {
+      if (!hasFiles(e) || presenting) return;
+      e.preventDefault();
+      surface.classList.add('is-drop');
+    });
+    surface.addEventListener('dragleave', function () { surface.classList.remove('is-drop'); });
+    surface.addEventListener('drop', function (e) {
+      if (!hasFiles(e) || presenting) return;
+      e.preventDefault();
+      surface.classList.remove('is-drop');
+      readDeskFile(e.dataTransfer.files[0]);
+    });
   }
 
   function copyText(text, btn) {
@@ -2870,7 +2980,7 @@
     $('btnShare').addEventListener('click', function () {
       var base = location.origin + location.pathname;
       /* An unchanged prepared desk has a short name; anything else travels whole. */
-      if (viewingShared && sharedMeta && deskSig() === sharedSig) {
+      if (viewingShared && sharedMeta && sharedMeta.slug && deskSig() === sharedSig) {
         copyText(base + '#desk=' + sharedMeta.slug, this);
         hint('Link to the prepared desk “' + sharedMeta.title + '” copied. Anyone who opens it walks the same argument.');
         return;
@@ -2941,6 +3051,8 @@
     wireSurface();
     wireTools();
     wirePresent();
+    wireFiles();
+    wireHelp();
     watchLateFonts();
     var asked = sharedInHash();
     var restored = load();

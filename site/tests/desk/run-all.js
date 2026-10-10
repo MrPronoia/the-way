@@ -14,7 +14,9 @@ const SUITES = [
   ['sharing', 'shared links never overwrite your own desk'],
   ['search', 'prepared desks, short links, tray search, going to a section'],
   ['present', 'present mode'],
-  ['edit', 'editing a laid-out desk: sections, renaming, tying and cutting string, undo and redo']
+  ['edit', 'editing a laid-out desk: sections, renaming, tying and cutting string, undo and redo'],
+  ['file', 'desk files: save, wipe the browser, open it back'],
+  ['help', 'the ? panel of controls']
 ];
 
 const ROOT = path.join(__dirname, '..', '..', '..');

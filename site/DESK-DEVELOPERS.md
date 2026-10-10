@@ -93,6 +93,7 @@ No server, no database, no accounts. The site is static files, and a desk lives 
 | `site/tier-families.py` | Report of how every tier string maps to a family. |
 | `site/tests/desk/` | Browser tests and the debate-desk generator. |
 | `site/DESK.md` | Features, review notes, open questions for Matt. |
+| `site/PROPOSAL-SECRET-LINKS.md` | The proposal for saving desks under private links (no accounts), awaiting Matt. |
 | `christianity/Incoming/witnesses-on-flesh-and-sacrifice-selected-texts.md` | Held excerpts behind the sacrifice and diet cards; the model for adding patristic texts. |
 
 ---
@@ -182,7 +183,7 @@ npm test             # builds the site, serves it, runs every suite
 npm test -- present  # one suite
 ```
 
-About three minutes for all of it, 234 checks. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
+About three and a half minutes for all of it, 271 checks. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
 
 | Suite | Covers |
 |---|---|
@@ -192,6 +193,8 @@ About three minutes for all of it, 234 checks. Chrome is found automatically. Se
 | `search` | Prepared desks, short links, tray search, jumping to sections and cards |
 | `present` | Present mode end to end, including that the caption and bar never cover the board |
 | `edit` | Editing a laid-out desk: moving and renaming sections, tying, selecting and deleting string, undo and redo, group moves |
+| `file` | Desk files: save, clear the browser, open it back; refusing non-desk files; dropping a file on the desk |
+| `help` | The ? panel: opening, closing, focus, small screens, out of the way while presenting |
 
 Two things that bite when writing tests: Chrome doesn't paint background tabs, so call `bringToFront()` on a page before measuring or screenshotting it after opening another. And scroll a tray item into view before dragging it.
 
@@ -210,6 +213,7 @@ Two things that bite when writing tests: Chrome doesn't paint background tabs, s
 
 Ideas with a rough priority. Pick one up, or argue for a different one on the PR.
 
+0. **Secret links for saving desks.** No logins: each saved desk gets a private link, encrypted in the browser. Proposal in `site/PROPOSAL-SECRET-LINKS.md`, waiting on Matt. SAVE FILE covers it until then.
 1. **A preview site.** A free preview deploy of this branch (Cloudflare Pages or Netlify) so share and present links work for anyone before the merge. Needs Matt's OK.
 2. **Phones get a read-only desk.** A prepared desk as a scrollable list of sections and cards, each tappable to read. Today phones are sent to the Reading Room.
 3. **Objections as cards.** `data.json` already carries 19 objections raised by named critics and 73 prepared on the cards. An OBJECTIONS tray, filterable by who raises them, drags an objection onto the desk with its answer tied by string, and can show the two side by side.
