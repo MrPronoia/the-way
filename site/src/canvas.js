@@ -1420,7 +1420,7 @@
       b.type = 'button';
       b.setAttribute('data-desk', d.slug);
       b.setAttribute('data-search', searchText([d.title, d.subtitle, d.by]));
-      b.appendChild(el('small', null, 'PREPARED · ' + d.desk.it.length + ' on the desk' + (d.by ? ' · ' + d.by : '')));
+      b.appendChild(el('small', null, 'PREPARED · ' + d.desk.it.filter(function (x) { return x[0] !== 'f'; }).length + ' on the desk' + (d.by ? ' · ' + d.by : '')));
       b.appendChild(el('span', null, d.title));
       b.title = d.subtitle;
       b.addEventListener('click', function () {
