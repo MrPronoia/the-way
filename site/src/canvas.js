@@ -1663,20 +1663,81 @@
     if (s.vp) { tf.x = s.vp[0]; tf.y = s.vp[1]; tf.scale = clamp(s.vp[2] || 1, MIN_Z, MAX_Z); }
   }
 
+  /* A desk opened from someone's link is a separate view, never written over
+     the reader's own saved desk. It stays in the address bar, so a reload
+     reopens it, until they keep it or go back to their own. */
+  var viewingShared = false;
+
   function save() {
+    if (viewingShared) return;
     try { localStorage.setItem(STORE, encode()); } catch (err) { /* private window, blocked storage: the desk still works */ }
   }
 
-  function load() {
+  function sharedInHash() {
     var h = /[#&]b=([^&]+)/.exec(location.hash);
-    if (h) {
-      try { decode(decodeURIComponent(h[1])); return true; } catch (err) { hint('That desk link could not be read. Starting empty.'); }
-    }
+    return h ? h[1] : null;
+  }
+
+  function readOwn() {
     try {
       var s = localStorage.getItem(STORE);
       if (s) { decode(s); return true; }
-    } catch (err2) { /* no storage; start empty */ }
+    } catch (err) { /* no storage, or an unreadable desk; start empty */ }
+    items = []; links = [];
     return false;
+  }
+
+  function ownCount() {
+    try { var s = JSON.parse(localStorage.getItem(STORE) || 'null'); return s && s.it ? s.it.length : 0; } catch (err) { return 0; }
+  }
+
+  function load() {
+    var h = sharedInHash();
+    if (h) {
+      try { decode(decodeURIComponent(h)); viewingShared = true; return true; } catch (err) { hint('That desk link could not be read. Showing your own desk.'); }
+    }
+    return readOwn();
+  }
+
+  function renderShared() {
+    $('sharedBar').hidden = !viewingShared;
+    var n = ownCount();
+    $('btnBackMine').textContent = 'BACK TO MY DESK' + (n ? ' (' + n + ')' : '');
+  }
+
+  function leaveShared() {
+    viewingShared = false;
+    history.replaceState(null, '', location.pathname + location.search);
+    undoStack = [];
+    sel = {};
+  }
+
+  function openShared(enc) {
+    try { decode(decodeURIComponent(enc)); } catch (err) { hint('That desk link could not be read.'); return; }
+    viewingShared = true;
+    undoStack = []; sel = {};
+    closeReader();
+    renderAll(); fit(); renderShared();
+    hint('A shared desk: ' + items.length + ' things on it. Your own desk is untouched.');
+  }
+
+  function backToMine() {
+    leaveShared();
+    closeReader();
+    tf = { x: 60, y: 60, scale: 1 };
+    readOwn();
+    applyTransform(); renderAll(); renderShared();
+    if (items.length) fit();
+    hint(items.length ? 'Back to your desk. ' + items.length + ' things on it.' : 'Back to your desk, which is empty.');
+  }
+
+  function keepShared() {
+    var n = ownCount();
+    if (n && !window.confirm('Keep this shared desk as your own? It replaces your current desk (' + n + ' things on it).')) return;
+    leaveShared();
+    save();
+    renderShared();
+    hint('This desk is yours now, and it saves as you work.');
   }
 
   function copyText(text, btn) {
@@ -2195,6 +2256,9 @@
     input.addEventListener('keydown', function (e) { if (e.key === 'Escape') $('dsuggest').hidden = true; });
     $('deskSearch').addEventListener('submit', submitSearch);
 
+    $('btnKeepShared').addEventListener('click', keepShared);
+    $('btnBackMine').addEventListener('click', backToMine);
+
     window.addEventListener('resize', function () { drawLinks(); });
     window.addEventListener('beforeunload', save);
   }
@@ -2211,13 +2275,24 @@
     var restored = load();
     applyTransform();
     renderAll();
-    if (restored && items.length) {
+    renderShared();
+    if (viewingShared) {
+      hint('A shared desk: ' + items.length + ' things on it. Your own desk is untouched.');
+      fit();
+    } else if (restored && items.length) {
       hint('Your desk from last time. ' + items.length + ' things on it.');
       fit();
     } else {
       hint('Searches the held sources only. Nothing on this desk is generated.');
     }
     arrive();
+    /* A link pasted into this tab's address bar changes only the hash. */
+    window.addEventListener('hashchange', function () {
+      var enc = sharedInHash();
+      if (enc) openShared(enc);
+      else if (viewingShared) backToMine();
+      else arrive();
+    });
   }
 
   /* The Reading Room's door: canvas.html#pull=<case>[&open=<source index>]

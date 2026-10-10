@@ -26,6 +26,20 @@
   border: 1px solid var(--drawer-darker); background: var(--cream); color: var(--ink);
 }
 
+/* ---------- a shared desk ---------- */
+
+/* Shown only while a desk opened from someone's link is on screen. The pad
+   yellow says "look here" without borrowing a stamp colour. */
+.shared-bar {
+  max-width: 1380px; margin: 0 auto 10px; display: flex; gap: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  padding: 10px 14px; background: var(--pad); color: var(--ink); border-left: 6px solid var(--string);
+  font-size: 12.5px; line-height: 1.45;
+}
+.shared-bar[hidden] { display: none; }
+.shared-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1 1 320px; }
+.shared-text .eyebrow { color: var(--red); letter-spacing: 2px; }
+.shared-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+
 /* ---------- the tool rail ---------- */
 
 .desk-tools { max-width: 1380px; margin: 0 auto 10px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
