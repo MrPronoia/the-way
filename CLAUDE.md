@@ -6,7 +6,7 @@
 
 ## What This Repo Is
 
-A curated Christianity research collection. Snapshot from [mr-pronoia](https://github.com/MrPronoia/mr-pronoia) (the larger esoteric-knowledge base), packaged for collaboration with the broader Jesus-research community (including Cameron Waters / The Way Skool community).
+A curated Christianity research collection, now at `the-nazarene/way`. Began as a snapshot from [mr-pronoia](https://github.com/MrPronoia/mr-pronoia) (the larger esoteric-knowledge base), packaged for collaboration with the broader Jesus-research community (including Cameron Waters / The Way Skool community).
 
 See `README.md` for orientation and `PROVENANCE.md` for the assembly story.
 
