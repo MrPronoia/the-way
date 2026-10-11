@@ -179,8 +179,8 @@ const CASE = 'sacrifice-culture-vegetarian-jesus';
   /* Drag a case row from the list. */
   const rowSel = '.tray-case';
   const rowPt = await t.evaluate(() => {
-    const b = [].slice.call(document.querySelectorAll('.tray-case')).filter(x => /Who were the Nazarenes|Nazarene/.test(x.textContent))[0] ||
-      document.querySelectorAll('.tray-case')[3];
+    const b = [].slice.call(document.querySelectorAll('#trayCasesSection .tray-case')).filter(x => /Who were the Nazarenes|Nazarene/.test(x.textContent))[0] ||
+      document.querySelectorAll('#trayCasesSection .tray-case')[3];
     b.scrollIntoView({ block: 'center' });
     const r = b.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + 14, text: b.textContent };
   });

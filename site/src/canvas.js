@@ -140,7 +140,12 @@
     return null;
   }
 
-  function nodeEl(id) { return $('nodes').querySelector('[data-id="' + id + '"]') || $('frames').querySelector('[data-id="' + id + '"]'); }
+  /* Ids can hold anything a speaker said, quotes included, so they are escaped. */
+  function idSel(id) {
+    var s = window.CSS && CSS.escape ? CSS.escape(id) : String(id).replace(/["\\]/g, '\\$&');
+    return '[data-id="' + s + '"]';
+  }
+  function nodeEl(id) { return $('nodes').querySelector(idSel(id)) || $('frames').querySelector(idSel(id)); }
 
   function boxOf(it) {
     var e = nodeEl(it.id);
@@ -618,13 +623,84 @@
     return n;
   }
 
+  /* A moment in a podcast or video: what was said and when, from the
+     auto-captions the build checked the words against. It is a pointer for
+     finding the moment, never a source, and its stamp says so. */
+  function episodeNo(key) { var m = /(\d+)$/.exec(key || ''); return m ? m[1] : key; }
+
+  function pointerStamp(text) {
+    var s = el('span', 'stamp pointer', text);
+    s.style.setProperty('--stamp-tilt', ((Math.random() * 6) - 3).toFixed(1) + 'deg');
+    return s;
+  }
+
+  function buildMomentNode(it) {
+    var m = LINKS.moments && LINKS.moments[it.k];
+    if (!m) return null;
+    var n = el('div', 'node');
+    n.setAttribute('data-id', it.id);
+    n.style.setProperty('--tilt', '-0.4deg');
+    n.appendChild(tools(it));
+    var b = el('button', 'pincard moment');
+    b.type = 'button';
+    var pin = el('span', 'pin');
+    pin.title = 'Drag to tie string to another card';
+    b.appendChild(pin);
+    b.appendChild(el('div', 'tier', m.show + ' ' + episodeNo(m.key) + ' · ' + m.ts));
+    b.appendChild(el('div', 'ptitle', it.sp ? it.sp + ' said' : 'Said in the episode'));
+    b.appendChild(el('div', 'pquote', '“' + m.phrase + '”'));
+    var foot = el('div', 'pfoot');
+    foot.appendChild(el('span', 'open', '▶ the moment'));
+    foot.appendChild(pointerStamp('POINTER · NOT PROOF'));
+    b.appendChild(foot);
+    n.appendChild(b);
+    return n;
+  }
+
+  /* A page outside the repo that a check relied on: its exact words and a
+     link. The build cannot fetch it, so it is never stamped HELD. */
+  function urlHost(url) { var m = /^https?:\/\/([^\/]+)/.exec(url || ''); return m ? m[1].replace(/^www\./, '') : ''; }
+
+  function buildWebNode(it) {
+    var n = el('div', 'node');
+    n.setAttribute('data-id', it.id);
+    n.style.setProperty('--tilt', '0.4deg');
+    n.appendChild(tools(it));
+    var b = el('button', 'pincard outside');
+    b.type = 'button';
+    var pin = el('span', 'pin');
+    pin.title = 'Drag to tie string to another card';
+    b.appendChild(pin);
+    b.appendChild(el('div', 'tier', 'OUTSIDE SOURCE · ' + urlHost(it.url).toUpperCase()));
+    b.appendChild(el('div', 'ptitle', it.title));
+    b.appendChild(el('div', 'pquote', '“' + it.quote + '”'));
+    var foot = el('div', 'pfoot');
+    foot.appendChild(el('span', 'open', 'open the page →'));
+    foot.appendChild(pointerStamp('OUTSIDE · CHECKED BY HAND'));
+    b.appendChild(foot);
+    n.appendChild(b);
+    return n;
+  }
+
+  /* A note whose first line is a verdict (✓ HOLDS, ~ NARROWER, ✗ DOESN'T HOLD,
+     ? OPEN, ◇ INTERPRETATION, • EXPERIENCE) wears that verdict's colour. */
+  var VERDICTS = [['HOLDS', 'holds'], ['NARROWER', 'narrower'], ["DOESN'T HOLD", 'fails'], ['OPEN', 'open'],
+                  ['INTERPRETATION', 'reading'], ['EXPERIENCE', 'experience']];
+
+  function verdictOf(text) {
+    var first = (text || '').split('\n')[0].replace(/^[^A-Z]+/, '');
+    for (var i = 0; i < VERDICTS.length; i++) if (first.indexOf(VERDICTS[i][0]) === 0) return VERDICTS[i][1];
+    return null;
+  }
+
   function buildNoteNode(it) {
     var n = el('div', 'node');
     n.setAttribute('data-id', it.id);
     n.style.setProperty('--tilt', '1.2deg');
     n.appendChild(tools(it));
-    var p = el('div', 'notepad');
-    p.appendChild(el('div', 'eyebrow', 'NOTE · NOT A SOURCE'));
+    var verdict = verdictOf(it.text);
+    var p = el('div', 'notepad' + (verdict ? ' verdict verdict-' + verdict : ''));
+    p.appendChild(el('div', 'eyebrow', verdict ? 'CHECK · NOT A SOURCE' : 'NOTE · NOT A SOURCE'));
     var ta = el('textarea');
     ta.value = it.text || '';
     ta.rows = 3;
@@ -733,6 +809,8 @@
       else if (it.t === 'q') e = buildQNode(it);
       else if (it.t === 'v') e = buildVerseNode(it);
       else if (it.t === 'd') e = buildDocNode(it);
+      else if (it.t === 'm') e = buildMomentNode(it);
+      else if (it.t === 'w') e = buildWebNode(it);
       else if (it.t === 'note') e = buildNoteNode(it);
       else if (it.t === 'frame') e = buildFrame(it);
       if (!e) continue;
@@ -1410,6 +1488,8 @@
     else if (it.t === 'q') openCaseReader(it.c, it.id);
     else if (it.t === 'v') openVerseReader(it.k, it.id);
     else if (it.t === 'd') openDocReader(it.k, it.id);
+    else if (it.t === 'm') openMomentReader(it);
+    else if (it.t === 'w') openWebReader(it);
   }
 
   /* A read-only field (a frame title not being renamed, a note while
@@ -1665,6 +1745,8 @@
     if (it.t === 'q') { var c = cardBySlug(it.c); return c ? searchText([c.call, c.drawer, c.question]) : ''; }
     if (it.t === 'v') { var v = LINKS.verses[it.k]; return v ? searchText([v.label, v.verses.map(function (x) { return x.text; }).join(' ')]) : ''; }
     if (it.t === 'd') { var d = LINKS.docs[it.k]; return d ? searchText([d.title, d.path]) : ''; }
+    if (it.t === 'm') { var m = LINKS.moments && LINKS.moments[it.k]; return m ? searchText([m.phrase, m.label, it.sp, m.para && m.para.text]) : ''; }
+    if (it.t === 'w') return searchText([it.title, it.quote, it.url]);
     if (it.t === 'note') return searchText([it.text]);
     if (it.t === 'frame') return searchText([it.title]);
     return '';
@@ -1675,11 +1757,13 @@
     if (it.t === 'q') { var c = cardBySlug(it.c); return c ? c.question : ''; }
     if (it.t === 'v') return it.k;
     if (it.t === 'd') return LINKS.docs[it.k] ? LINKS.docs[it.k].title : it.k;
+    if (it.t === 'm') { var mm = LINKS.moments && LINKS.moments[it.k]; return mm ? mm.label + ' · “' + mm.phrase + '”' : ''; }
+    if (it.t === 'w') return it.title;
     if (it.t === 'note') { var t = (it.text || '').replace(/\s+/g, ' ').trim(); return t.length > 70 ? t.slice(0, 67) + '…' : t || '(empty note)'; }
     return it.title || 'UNTITLED';
   }
 
-  var KIND = { src: 'SOURCE', q: 'QUESTION', v: 'VERSE', d: 'GO DEEPER', note: 'NOTE', frame: 'SECTION' };
+  var KIND = { src: 'SOURCE', q: 'QUESTION', v: 'VERSE', d: 'GO DEEPER', note: 'NOTE', frame: 'SECTION', m: 'MOMENT', w: 'OUTSIDE SOURCE' };
 
   function renderHere() {
     var q = trayQuery(), ul = $('trayHere');
@@ -2247,6 +2331,8 @@
       else if (o.t === 'q') it.push(['q', o.c, o.x, o.y, o.w]);
       else if (o.t === 'v') it.push(['v', o.k, o.x, o.y, o.w]);
       else if (o.t === 'd') it.push(['d', o.k, o.x, o.y, o.w]);
+      else if (o.t === 'm') { var mk = o.k.split('|'); it.push(['m', mk[0], mk.slice(1).join('|'), o.x, o.y, o.w, o.sp || '']); }
+      else if (o.t === 'w') it.push(['w', o.url, o.title, o.quote, o.x, o.y, o.w]);
       else if (o.t === 'note') it.push(['n', o.text || '', o.x, o.y, o.w]);
       else if (o.t === 'frame') it.push(['f', o.title || '', o.x, o.y, o.w, o.h, o.ci || 0]);
     }
@@ -2265,6 +2351,11 @@
       /* A verse or file the current build no longer holds is dropped, not drawn blank. */
       else if (a[0] === 'v' && LINKS.verses[a[1]]) items.push({ id: 'v:' + a[1], t: 'v', k: a[1], x: a[2], y: a[3], w: a[4] || SRC_W });
       else if (a[0] === 'd' && LINKS.docs[a[1]]) items.push({ id: 'd:' + a[1], t: 'd', k: a[1], x: a[2], y: a[3], w: a[4] || SRC_W });
+      /* A moment the build could not find in its transcript is dropped, like a stale verse. */
+      else if (a[0] === 'm' && LINKS.moments && LINKS.moments[a[1] + '|' + a[2]])
+        items.push({ id: 'm:' + a[1] + '|' + a[2], t: 'm', k: a[1] + '|' + a[2], sp: a[6] || '', x: a[3], y: a[4], w: a[5] || SRC_W });
+      else if (a[0] === 'w' && /^https:\/\//.test(a[1] || '') && a[2] && a[3])
+        items.push({ id: 'w:' + a[1] + '|' + a[3], t: 'w', url: a[1], title: a[2], quote: a[3], x: a[4], y: a[5], w: a[6] || SRC_W });
       else if (a[0] === 'n') items.push({ id: 'n:' + (seq++), t: 'note', text: a[1], x: a[2], y: a[3], w: a[4] || NOTE_W });
       else if (a[0] === 'f') items.push({ id: 'f:' + (seq++), t: 'frame', title: a[1], x: a[2], y: a[3], w: a[4] || FRAME_W, h: a[5] || FRAME_H, ci: a[6] || 0 });
     }
@@ -2909,6 +3000,59 @@
     c1.addEventListener('click', function () { copyText(v.label + ', KJV', c1); });
     row.appendChild(c1);
     foot.appendChild(row);
+    showReader();
+  }
+
+  function openMomentReader(it) {
+    var m = LINKS.moments && LINKS.moments[it.k];
+    if (!m) return;
+    resetReader(it.id, m.show + ' ' + episodeNo(m.key) + ' · ' + m.ts, m.episode);
+    var st = $('readerStatus');
+    st.appendChild(pointerStamp('POINTER · NOT PROOF'));
+    st.appendChild(el('span', null, (it.sp ? it.sp + ', ' : '') + 'from the auto-captions'));
+    var body = $('readerBody');
+    var d = el('div', 'passage');
+    d.appendChild(el('div', 'plabel', m.label + ' · in context'));
+    [[m.before, true], [m.para, false], [m.after, true]].forEach(function (pair) {
+      if (!pair[0]) return;
+      var s = el('span', pair[1] ? 'v dim' : 'v');
+      s.appendChild(el('span', 'vn', pair[0].n));
+      s.appendChild(pair[1] ? document.createTextNode(pair[0].text) : highlight(pair[0].text, m.phrase));
+      d.appendChild(s);
+    });
+    body.appendChild(d);
+    $('readerNote').textContent = 'Auto-generated captions: the words are the speaker\'s, the spelling is the transcriber\'s. A moment shows what was said, not that it is so; the check beside it on the board says what the sources say.';
+    var foot = $('readerFoot');
+    if (m.video) {
+      var a = el('a', null, 'Watch this moment →');
+      a.href = m.video; a.target = '_blank'; a.rel = 'noopener';
+      foot.appendChild(a);
+    }
+    if (m.open) {
+      var t = el('a', null, 'The whole transcript in the repo →');
+      t.href = m.open; t.target = '_blank'; t.rel = 'noopener';
+      foot.appendChild(t);
+    }
+    var row = el('div', 'copy-row');
+    var c1 = el('button', 'copy', 'copy this moment');
+    c1.type = 'button';
+    c1.addEventListener('click', function () { copyText('“' + m.phrase + '” (' + m.label + ')' + (m.video ? ' ' + m.video : ''), c1); });
+    row.appendChild(c1);
+    foot.appendChild(row);
+    showReader();
+  }
+
+  function openWebReader(it) {
+    resetReader(it.id, 'OUTSIDE SOURCE · ' + urlHost(it.url).toUpperCase(), it.title);
+    $('readerStatus').appendChild(pointerStamp('OUTSIDE · CHECKED BY HAND'));
+    $('readerStatus').appendChild(el('span', null, 'Not held in the repo'));
+    var sn = el('div', 'snippet');
+    sn.textContent = '“' + it.quote + '”';
+    $('readerBody').appendChild(sn);
+    $('readerBody').appendChild(el('div', 'plabel', 'Quoted from the page when the board was made. Pages change; open it to check.'));
+    var a = el('a', null, 'Open the page →');
+    a.href = it.url; a.target = '_blank'; a.rel = 'noopener';
+    $('readerFoot').appendChild(a);
     showReader();
   }
 

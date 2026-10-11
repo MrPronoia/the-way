@@ -163,6 +163,19 @@ Excerpts go in `christianity/Incoming/`, each with its translator, edition, URL 
 
 For a layout generated in code, see `site/tests/desk/make-essene-desk.js`. It lays the board out, measures every card in a real browser, then lays it out again with the real heights, so the gaps are exact.
 
+### Make an episode board
+
+An episode board breaks one podcast episode into its topics and claims: each claim is a **moment** (the exact words, with a ▶ link to that second of the video), a **check** (a coloured note: ✓ holds, ~ narrower, ✗ doesn't hold, ? open, ◇ interpretation, • experience), and the **evidence** (KJV verses, card sources, and outside pages), tied by string. The five most recent Jesus Way episodes are done: `#desk=jesus-way-062` to `#desk=jesus-way-066`.
+
+1. **The transcript** must be in `podcast-archive/` with timestamps (`python scripts/pull-transcripts.py <file>`).
+2. **The breakdown**, `site/data/episodes/<n>.json`. Give your Claude the prompt in `site/data/episodes/README.md`. It reads the whole transcript, picks 12 to 20 claims, and checks each against the texts and the web, opening every page it cites.
+3. **Check it mechanically:** `python site/tests/desk/check-episode.py site/data/episodes/<n>.json`. Every phrase must sit in one transcript paragraph (a wrong timestamp is corrected for you), every verse must be in the KJV, every card source must exist, and every outside quote must actually be on its page (it downloads them; `--no-web` skips that). Fix every FAIL.
+4. **Check it by hand.** The script can't judge a verdict. Read every ✗ and ~ with the sources open, and a sample of the ✓. Things the first five boards needed: a quote from a sentence the repo itself flags as unreliable, a number taken from a page nobody opened, a verdict that was fair to one side but not the other.
+5. **Build it:** `node site/tests/desk/make-episode-desks.js <n>` writes `site/data/desks/jesus-way-<n>.json`, lays it out, measures it in Chrome and lays it out again. The build checks it a third time: a moment whose words aren't in the transcript, or a verse the KJV doesn't have, is left off with a warning.
+6. `npm test -- episodes`.
+
+Moments are pointers, never proof: they are stamped POINTER · NOT PROOF, and outside pages OUTSIDE · CHECKED BY HAND, never HELD.
+
 ### Add a feature to the Desk
 - **New card kind:** an `add…()` function, a builder called from `renderAll()`, a case in `encode()` and `decode()`, and a case in `openItem()`.
 - **New key:** the keyboard handler under `interaction`. While presenting, `presentKey()` runs first.
@@ -183,7 +196,7 @@ npm test             # builds the site, serves it, runs every suite
 npm test -- present  # one suite
 ```
 
-About three and a half minutes for all of it, 271 checks. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
+About four and a half minutes for all of it, 340 checks. Chrome is found automatically. Set `CHROME_PATH` if it isn't, or `DESK_URL` to test a site that's already being served. Screenshots go to your temp folder (`desk-test-shots`).
 
 | Suite | Covers |
 |---|---|
@@ -195,6 +208,7 @@ About three and a half minutes for all of it, 271 checks. Chrome is found automa
 | `edit` | Editing a laid-out desk: moving and renaming sections, tying, selecting and deleting string, undo and redo, group moves |
 | `file` | Desk files: save, clear the browser, open it back; refusing non-desk files; dropping a file on the desk |
 | `help` | The ? panel: opening, closing, focus, small screens, out of the way while presenting |
+| `episodes` | Every episode board: each card the build kept is shown, no overlaps, moments stamped pointer, readers, search, keeping a board, invented moments dropped |
 
 Two things that bite when writing tests: Chrome doesn't paint background tabs, so call `bringToFront()` on a page before measuring or screenshotting it after opening another. And scroll a tray item into view before dragging it.
 

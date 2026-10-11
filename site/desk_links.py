@@ -116,8 +116,10 @@ def _resolve(book, span, load_book):
     return path, lines, before, after, len(keys) > MAX_VERSES, set(keys)
 
 
-def build(cards, book_files, load_book, aliases, repo_url, root):
-    """Returns (index, warnings). index is what dist/desk.json holds."""
+def build(cards, book_files, load_book, aliases, repo_url, root, resolve_pointer=None):
+    """Returns (index, warnings). index is what dist/desk.json holds.
+    resolve_pointer is build.py's own transcript-pointer check, so a moment on
+    a desk is verified exactly as an objection's pointer is."""
     names = _names(book_files, aliases)
     head, more = _pattern(names)
     verses, warnings, spans = {}, [], {}
@@ -140,6 +142,20 @@ def build(cards, book_files, load_book, aliases, repo_url, root):
                 verses[key] = {"label": key, "book": book, "file": str(path.relative_to(root)).replace("\\", "/"),
                                "verses": lines, "before": before, "after": after, "truncated": cut,
                                "mentioned": [card["slug"]], "cited": []}
+
+    for key in _desk_verse_keys(root):
+        if key in verses:
+            continue
+        refs = list(find_refs(key, names, head, more))
+        got = _resolve(refs[0][1], refs[0][2], load_book) if len(refs) == 1 and refs[0][0] == key else None
+        if not got:
+            warnings.append(f"desks: {key} is not a verse the KJV file holds")
+            continue
+        path, lines, before, after, cut, keys = got
+        spans[key] = (refs[0][1], keys)
+        verses[key] = {"label": key, "book": refs[0][1], "file": str(path.relative_to(root)).replace("\\", "/"),
+                       "verses": lines, "before": before, "after": after, "truncated": cut,
+                       "mentioned": [], "cited": []}
 
     # Backlinks: which pinned sources quote any of the same verses. A source
     # may name its book by an abbreviation, so it is normalised the same way.
@@ -165,11 +181,56 @@ def build(cards, book_files, load_book, aliases, repo_url, root):
             if card["slug"] not in d["cards"]:
                 d["cards"].append(card["slug"])
 
-    desks = _prepared_desks(root, cards, verses, docs, warnings)
-    return {"names": names, "verses": verses, "docs": docs, "desks": desks}, warnings
+    moments = {}
+    desks = _prepared_desks(root, cards, verses, docs, warnings, moments, resolve_pointer)
+    return {"names": names, "verses": verses, "docs": docs, "desks": desks, "moments": moments}, warnings
 
 
-def _prepared_desks(root, cards, verses, docs, warnings):
+def _desk_verse_keys(root):
+    folder = root / "site" / "data" / "desks"
+    keys = []
+    for path in sorted(folder.glob("*.json")) if folder.exists() else []:
+        for it in json.loads(path.read_text(encoding="utf-8"))["desk"].get("it", []):
+            if it[0] == "v" and it[1] not in keys:
+                keys.append(it[1])
+    return keys
+
+
+SHOWS = {"the-jesus-way": "JESUS WAY", "kameron-waters": "KAM WATERS", "dr-tabor": "DR. TABOR"}
+
+
+def _moment(root, key, phrase, resolve_pointer, warnings, name):
+    """A transcript moment: the pointer build.py resolves, plus the paragraph
+    it sits in and its neighbours, so the reader shows it in context."""
+    if not resolve_pointer:
+        return None
+    problems = []
+    ptr = resolve_pointer({"file": key, "phrase": phrase}, problems)
+    if problems or not ptr.get("timestamp"):
+        warnings.append(f"desks/{name}: moment {key} \"{phrase[:40]}\" is not in its transcript, left off")
+        return None
+    text = (root / ptr["path"]).read_text(encoding="utf-8")
+    body = text.split("## Full Transcript", 1)[-1]
+    paras = [x.strip() for x in body.split("\n\n") if x.strip().startswith("**[")]
+    at = next((i for i, x in enumerate(paras) if phrase.lower().replace("\u2019", "'") in x.lower()), None)
+    if at is None:
+        warnings.append(f"desks/{name}: moment {key} \"{phrase[:40]}\" spans two paragraphs, left off")
+        return None
+
+    def para(i):
+        if i < 0 or i >= len(paras):
+            return None
+        head, _, rest = paras[i].partition("** ")
+        return {"n": head.strip("*[] "), "text": rest.strip()}
+
+    folder = ptr["path"].replace("\\", "/").split("/")[-2]
+    first = text.splitlines()[0].lstrip("# ").strip()
+    return {"key": key, "phrase": phrase, "label": ptr["label"], "ts": ptr["timestamp"], "video": ptr.get("video"),
+            "file": ptr["path"].replace("\\", "/"), "open": ptr.get("open"), "show": SHOWS.get(folder, folder.upper()),
+            "episode": first, "before": para(at - 1), "para": para(at), "after": para(at + 1)}
+
+
+def _prepared_desks(root, cards, verses, docs, warnings, moments=None, resolve_pointer=None):
     """site/data/desks/*.json: whole arguments laid out ahead of time.
 
     Each file is {slug, title, subtitle, by, desk}, where desk is exactly what
@@ -198,6 +259,20 @@ def _prepared_desks(root, cards, verses, docs, warnings):
                 ok, iid = it[1] in verses, f"v:{it[1]}"
             elif kind == "d":
                 ok, iid = it[1] in docs, f"d:{it[1]}"
+            elif kind == "m":
+                # ['m', transcript key, exact phrase, x, y, w, speaker?]
+                iid = f"m:{it[1]}|{it[2]}"
+                mk = f"{it[1]}|{it[2]}"
+                if mk not in moments:
+                    got = _moment(root, it[1], it[2], resolve_pointer, warnings, name)
+                    if got:
+                        moments[mk] = got
+                ok = mk in moments
+            elif kind == "w":
+                # ['w', url, title, quote, x, y, w]: a page outside the repo. The build
+                # cannot fetch it, so it is shown as checked by hand, never as HELD.
+                ok = isinstance(it[1], str) and it[1].startswith("https://") and bool(it[2]) and bool(it[3])
+                iid = f"w:{it[1]}|{it[3]}"
             elif kind in ("n", "f"):
                 # Notes and frames are numbered in order, exactly as canvas.js decodes them.
                 iid = f"{kind}:{seq}"

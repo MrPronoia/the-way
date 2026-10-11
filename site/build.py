@@ -273,7 +273,7 @@ def main():
     (DIST / "data.json").write_text(json.dumps({"cards": cards, "repo": REPO_URL, "kjvHeld": bool(BOOK_FILES),
                                                 "objections": obj["objections"], "briefs": obj["briefs"]}, ensure_ascii=False, indent=1),
                                     encoding="utf-8")
-    desk, desk_warnings = desk_links.build(cards, BOOK_FILES, load_book, ALIASES, REPO_URL, ROOT)
+    desk, desk_warnings = desk_links.build(cards, BOOK_FILES, load_book, ALIASES, REPO_URL, ROOT, resolve_pointer)
     (DIST / "desk.json").write_text(json.dumps(desk, ensure_ascii=False), encoding="utf-8")
     print(f"desk: {len(desk['verses'])} verse references held, {len(desk['docs'])} go-deeper files"
           + (f", {len(desk_warnings)} references not in the KJV file (no desk card made):" if desk_warnings else ""))

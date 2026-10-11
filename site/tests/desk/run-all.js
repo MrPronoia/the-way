@@ -16,7 +16,8 @@ const SUITES = [
   ['present', 'present mode'],
   ['edit', 'editing a laid-out desk: sections, renaming, tying and cutting string, undo and redo'],
   ['file', 'desk files: save, wipe the browser, open it back'],
-  ['help', 'the ? panel of controls']
+  ['help', 'the ? panel of controls'],
+  ['episodes', 'episode boards: transcript moments, outside sources, checks']
 ];
 
 const ROOT = path.join(__dirname, '..', '..', '..');

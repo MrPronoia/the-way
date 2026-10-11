@@ -600,3 +600,23 @@ body.presenting .surface::after { bottom: 0; height: 130px; background: linear-g
   .help-panel dl.help-keys { grid-template-columns: 1fr; }
   .help-panel dl.help-keys dd { margin-bottom: 4px; }
 }
+
+/* ---------- episode boards: moments, outside sources, checks ---------- */
+
+/* A moment from a transcript: what was said, never a source. */
+.node .pincard.moment { border-top: 3px dashed var(--string-grey); background: #ecebe6; }
+.node .pincard.moment .tier { color: var(--muted); letter-spacing: 0.5px; }
+.node .pincard.moment .pquote { font-style: italic; }
+/* A page outside the repo, checked by hand. */
+.node .pincard.outside { border-top: 3px solid var(--frame-1); }
+.node .pincard.outside .tier { color: var(--frame-1); }
+.stamp.pointer { color: #6f6f6f; }
+
+/* A check carries its verdict as a coloured edge; the words say the verdict too. */
+.node .notepad.verdict { border-left: 6px solid var(--muted); }
+.node .notepad.verdict-holds { border-left-color: var(--held); }
+.node .notepad.verdict-narrower { border-left-color: var(--not-held); }
+.node .notepad.verdict-fails { border-left-color: var(--string); }
+.node .notepad.verdict-open { border-left-color: var(--muted-light); }
+.node .notepad.verdict-reading { border-left-color: var(--blue); }
+.node .notepad.verdict-experience { border-left-color: var(--frame-4); }
